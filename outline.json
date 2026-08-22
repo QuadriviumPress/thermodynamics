@@ -1,0 +1,299 @@
+{
+  "book": {
+    "title": "Engineering Thermodynamics",
+    "subtitle": "International edition with SI units",
+    "authors": [
+      "Olivier Cleynen"
+    ],
+    "date": 2025,
+    "isbn": "9781446710067",
+    "license": "CC-BY-SA-4.0",
+    "source_url": "https://thermodynamicsbook.com",
+    "pages": 338
+  },
+  "front": {
+    "introduction": {
+      "title": "Introduction",
+      "slug": "introduction",
+      "file": "front/introduction.md",
+      "start_page": 8,
+      "end_page": 9
+    }
+  },
+  "chapters": [
+    {
+      "number": 1,
+      "title": "Fundamental Concepts",
+      "slug": "ch-01-fundamental-concepts",
+      "start_page": 9,
+      "end_page": 30,
+      "source_counts": {
+        "figures": 14,
+        "examples": 7,
+        "display_eq": 17,
+        "history": 2,
+        "problems": 14
+      }
+    },
+    {
+      "number": 2,
+      "title": "Closed Systems",
+      "slug": "ch-02-closed-systems",
+      "start_page": 31,
+      "end_page": 58,
+      "source_counts": {
+        "figures": 22,
+        "examples": 6,
+        "display_eq": 20,
+        "history": 2,
+        "problems": 12
+      }
+    },
+    {
+      "number": 3,
+      "title": "Open Systems",
+      "slug": "ch-03-open-systems",
+      "start_page": 59,
+      "end_page": 80,
+      "source_counts": {
+        "figures": 17,
+        "examples": 5,
+        "display_eq": 29,
+        "history": 2,
+        "problems": 14
+      }
+    },
+    {
+      "number": 4,
+      "title": "The Ideal Gas",
+      "slug": "ch-04-the-ideal-gas",
+      "start_page": 81,
+      "end_page": 112,
+      "source_counts": {
+        "figures": 20,
+        "examples": 8,
+        "display_eq": 58,
+        "history": 2,
+        "problems": 17
+      }
+    },
+    {
+      "number": 5,
+      "title": "Liquids and Vapors",
+      "slug": "ch-05-liquids-and-vapors",
+      "start_page": 113,
+      "end_page": 148,
+      "source_counts": {
+        "figures": 34,
+        "examples": 12,
+        "display_eq": 28,
+        "history": 2,
+        "problems": 19
+      }
+    },
+    {
+      "number": 6,
+      "title": "Thermodynamic Cycles",
+      "slug": "ch-06-thermodynamic-cycles",
+      "start_page": 149,
+      "end_page": 174,
+      "source_counts": {
+        "figures": 28,
+        "examples": 3,
+        "display_eq": 13,
+        "history": 2,
+        "problems": 15
+      }
+    },
+    {
+      "number": 7,
+      "title": "The Second Law",
+      "slug": "ch-07-the-second-law",
+      "start_page": 175,
+      "end_page": 206,
+      "source_counts": {
+        "figures": 17,
+        "examples": 5,
+        "display_eq": 29,
+        "history": 2,
+        "problems": 15
+      }
+    },
+    {
+      "number": 8,
+      "title": "Entropy",
+      "slug": "ch-08-entropy",
+      "start_page": 207,
+      "end_page": 238,
+      "source_counts": {
+        "figures": 13,
+        "examples": 9,
+        "display_eq": 33,
+        "history": 2,
+        "problems": 19
+      }
+    },
+    {
+      "number": 9,
+      "title": "Steam Power Cycles",
+      "slug": "ch-09-steam-power-cycles",
+      "start_page": 239,
+      "end_page": 266,
+      "source_counts": {
+        "figures": 24,
+        "examples": 2,
+        "display_eq": 15,
+        "history": 2,
+        "problems": 7
+      }
+    },
+    {
+      "number": 10,
+      "title": "Air-Based Power Cycles",
+      "slug": "ch-10-air-based-power-cycles",
+      "start_page": 267,
+      "end_page": 304,
+      "source_counts": {
+        "figures": 36,
+        "examples": 2,
+        "display_eq": 26,
+        "history": 2,
+        "problems": 6
+      }
+    }
+  ],
+  "appendices": [
+    {
+      "id": "A1",
+      "title": "Steam Tables",
+      "slug": "app-a1-steam-tables",
+      "start_page": 305,
+      "end_page": 313,
+      "source_counts": {
+        "figures": 0
+      }
+    },
+    {
+      "id": "A2",
+      "title": "Gauge Pressure and Real Pressure",
+      "slug": "app-a2-gauge-pressure-and-real-pressure",
+      "start_page": 314,
+      "end_page": 314,
+      "source_counts": {
+        "figures": 0
+      }
+    },
+    {
+      "id": "A3",
+      "title": "Additive Quantities",
+      "slug": "app-a3-additive-quantities",
+      "start_page": 315,
+      "end_page": 315,
+      "source_counts": {
+        "figures": 0
+      }
+    },
+    {
+      "id": "A4",
+      "title": "State Quantities and Process Quantities",
+      "slug": "app-a4-state-quantities-and-process-quantities",
+      "start_page": 316,
+      "end_page": 316,
+      "source_counts": {
+        "figures": 0
+      }
+    },
+    {
+      "id": "A5",
+      "title": "Conversion of Units to SI",
+      "slug": "app-a5-conversion-of-units-to-si",
+      "start_page": 317,
+      "end_page": 318,
+      "source_counts": {
+        "figures": 0
+      }
+    },
+    {
+      "id": "A6",
+      "title": "Notation",
+      "slug": "app-a6-notation",
+      "start_page": 319,
+      "end_page": 319,
+      "source_counts": {
+        "figures": 0
+      }
+    },
+    {
+      "id": "A7",
+      "title": "Mental Health For the Engineering Student",
+      "slug": "app-a7-mental-health-for-the-engineering-student",
+      "start_page": 320,
+      "end_page": 320,
+      "source_counts": {
+        "figures": 0
+      }
+    },
+    {
+      "id": "A8",
+      "title": "Errata & Change Log",
+      "slug": "app-a8-errata-change-log",
+      "start_page": 321,
+      "end_page": 321,
+      "source_counts": {
+        "figures": 0
+      }
+    },
+    {
+      "id": "A9",
+      "title": "Contributors",
+      "slug": "app-a9-contributors",
+      "start_page": 322,
+      "end_page": 322,
+      "source_counts": {
+        "figures": 0
+      }
+    },
+    {
+      "id": "A10",
+      "title": "Reusing This Book",
+      "slug": "app-a10-reusing-this-book",
+      "start_page": 323,
+      "end_page": 323,
+      "source_counts": {
+        "figures": 0
+      }
+    },
+    {
+      "id": "A11",
+      "title": "Citing This Book",
+      "slug": "app-a11-citing-this-book",
+      "start_page": 324,
+      "end_page": 324,
+      "source_counts": {
+        "figures": 0
+      }
+    }
+  ],
+  "back": [
+    {
+      "title": "Bibliography",
+      "slug": "bibliography",
+      "start_page": 325,
+      "end_page": 327
+    },
+    {
+      "title": "List of Symbols",
+      "slug": "list-of-symbols",
+      "start_page": 328,
+      "end_page": 330
+    }
+  ],
+  "omit": [
+    "index"
+  ],
+  "conventions": {
+    "answers": "collapsible dropdown under each exercise",
+    "equation_numbering": "chapter/equation (e.g. 2/16)",
+    "history_boxes": "admonition with hist-N-M labels"
+  }
+}

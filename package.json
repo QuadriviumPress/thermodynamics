@@ -1,0 +1,14 @@
+{
+  "name": "thermodynamics",
+  "private": true,
+  "description": "MyST Markdown edition of Engineering Thermodynamics by Olivier Cleynen",
+  "scripts": {
+    "start": "myst start",
+    "build": "myst build --html",
+    "verify": "python3 scripts/verify_book.py",
+    "convert": "sh scripts/build.sh"
+  },
+  "devDependencies": {
+    "mystmd": "1.10.1"
+  }
+}

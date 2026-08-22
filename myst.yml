@@ -1,0 +1,65 @@
+version: 1
+project:
+  id: thermodynamics
+  title: Engineering Thermodynamics
+  short_title: Thermodynamics
+  subtitle: International edition with SI units
+  description: >-
+    A web-native MyST edition of Olivier Cleynen's open textbook on
+    engineering thermodynamics — heat engines, refrigeration, and fluid energy
+    accounting.
+  authors:
+    - name: Olivier Cleynen
+  date: 2025
+  license:
+    content: CC-BY-SA-4.0
+  open_access: true
+  github: QuadriviumPress/thermodynamics
+  keywords:
+    - thermodynamics
+    - heat engines
+    - entropy
+    - steam cycles
+    - engineering
+  numbering:
+    heading_2: false
+    heading_3: false
+  toc:
+    - file: index.md
+    - file: front/introduction.md
+    - file: chapters/ch-01-fundamental-concepts.md
+    - file: chapters/ch-02-closed-systems.md
+    - file: chapters/ch-03-open-systems.md
+    - file: chapters/ch-04-the-ideal-gas.md
+    - file: chapters/ch-05-liquids-and-vapors.md
+    - file: chapters/ch-06-thermodynamic-cycles.md
+    - file: chapters/ch-07-the-second-law.md
+    - file: chapters/ch-08-entropy.md
+    - file: chapters/ch-09-steam-power-cycles.md
+    - file: chapters/ch-10-air-based-power-cycles.md
+    - title: Appendices
+      children:
+        - file: appendices/app-a1-steam-tables.md
+        - file: appendices/app-a2-gauge-pressure-and-real-pressure.md
+        - file: appendices/app-a3-additive-quantities.md
+        - file: appendices/app-a4-state-quantities-and-process-quantities.md
+        - file: appendices/app-a5-conversion-of-units-to-si.md
+        - file: appendices/app-a6-notation.md
+        - file: appendices/app-a7-mental-health-for-the-engineering-student.md
+        - file: appendices/app-a8-errata-change-log.md
+        - file: appendices/app-a9-contributors.md
+        - file: appendices/app-a10-reusing-this-book.md
+        - file: appendices/app-a11-citing-this-book.md
+    - title: Reference
+      children:
+        - file: back/bibliography.md
+        - file: back/list-of-symbols.md
+site:
+  template: book-theme
+  title: Engineering Thermodynamics
+  options:
+    favicon: images/favicon.svg
+  actions:
+    - title: Original textbook
+      url: https://thermodynamicsbook.com
+  nav: []
