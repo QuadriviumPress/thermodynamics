@@ -153,7 +153,12 @@ def page_frags(page, page_index, wide=False, two_column=False):
             bbox = tuple(line["bbox"])
             if bbox[3] < HEADER_Y or bbox[1] > FOOTER_Y:
                 continue
-            chars.sort(key=lambda c: c.x)
+            # Ligatures: PyMuPDF gives the second character of an "fi"/"fl"
+            # ligature an x-origin a fraction of a point *past* the character
+            # that follows it, so a plain sort by x transposes them ("first"
+            # -> "frist").  Round to a tenth of a point and break ties on the
+            # original reading order.
+            chars.sort(key=lambda c: round(c.x, 1))
             out.append(Frag(chars, bbox,
                             _classify_column(bbox[0], bbox[2], geom, two_column)))
     out.sort(key=lambda f: (f.bbox[1], f.bbox[0]))

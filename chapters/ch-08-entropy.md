@@ -5,7 +5,7 @@ label: ch-08-entropy
 ---
 
 :::{figure} ../images/art-p215-1.jpg
-:alt: Chapter opening illustration
+:alt: Temperature-entropy (T-S) diagram showing a hatched cyclic loop, illustrating a thermodynamic cycle traced on T-S coordinates.
 :::
 
 # 8. Entropy
@@ -17,7 +17,12 @@ Entropy
 *The Terrifying Prophecy of Professor Clausius*
 
 :::{figure} ../images/art-p207-1.svg
-:alt: Illustration from the original text
+:alt: Decorative title page rendering the chapter heading "Chapter 8 / Entropy / or / The Terrifying Prophecy of Professor Clausius" in a display typeface.
+:::
+
+:::{admonition} Executive summary
+:class: tip
+Entropy is a property of bodies. We quantify its changes in order to measure the irreversibility of energy transfers (always undesirable for the engineer). The total entropy always increases during irreversible transfers: of work (with abrupt motion), of heat (with temperature gradient).
 :::
 
 ## Introduction
@@ -32,7 +37,8 @@ possible, starting from two questions:
 
 • Why do physicists and engineers quantify its variations?
 
-**8.1 The Concept of Entropy**
+(sec-8-1)=
+## 8.1 The Concept of Entropy
 
 (sec-8-1-1)=
 ### 8.1.1 What is entropy used for?
@@ -46,7 +52,7 @@ However, our intuition and daily experience teach us that many transformations c
 :::{figure} ../images/fig-8-1.png
 :label: fig-8-1
 :enumerator: 8.1
-:alt: We have the intuition and an inner conviction that these three photos were taken in a very particular order. A calculation of the entropy in
+:alt: We have the intuition and an inner conviction that these three photos were taken in a very particular order. A calculation of the *entropy* in these three situations, in which the *energy* is the same, allows us to determine this order by associating a calculable quantity with our intuition.
 
 We have the intuition and an inner conviction that these three photos were taken in a very particular order. A calculation of the *entropy* in these three situations, in which the *energy* is the same, allows us to determine this order by associating a calculable quantity with our intuition.
 :::
@@ -66,21 +72,18 @@ In the vocabulary of thermodynamics, the concept of a “one-way change” is of
 
 Irreversible processes in fluids invariably lead to states where the temperature, pressure, or volume are greater than they would have been with a reversible process.
 
-« $^{\mathrm{For} \mathrm{this} \mathrm{purpose} \mathrm{let} \mathrm{us} \mathrm{conceive}}$ In order to quantify the irreversibility of a process, we will quantify *the* the matter, after the changes of condiamount of heat that one would need to remove from the body to bring it back*
+In order to quantify the irreversibility of a process, we will quantify *the amount of heat that one would need to remove from the body to bring it back to its initial state reversibly*. By subtracting to this amount the heat that was actually transferred, we obtain the heat that was somehow needlessly created during the process. Moreover, the lower the temperature at which this heat is created, and the less of it can be transformed into work (§7.5.1). We will thus “penalize” the heat cost by dividing it by the temperature.
 
-tion which has to be examined in this matter, reduced to its original condition *to its initial state reversibly*. By subtracting to this amount the heat that
+In this way, we will obtain a quantity in *joules* per *kelvin* – the entropy created during the process – which will be zero during reversible processes and will always be positive during irreversible processes. It is this creation that will be the unmistakable sign that the process is possible only in one direction.
 
-by any reversible operation. We shall was actually transferred, we obtain the heat that was somehow needlessly
+:::{aside}
+« For this purpose let us conceive the matter, after the changes of condition which has to be examined in this matter, reduced to its original condition by any reversible operation. We shall thereby obtain a small cyclical process, to which the equation (II) will be just as applicable as to the whole. Consequently, if we know the quantities of heat which the matter has received during the process, and the temperatures which correspond thereto, the negative integral $-\int \frac{dQ}{T}$ will give the uncompensated transformation involved therein. »
 
-thereby obtain a small cyclical process, to which the equation (II) will be just created during the process. Moreover, the lower the temperature at which
+Rudolf Clausius, 1856 [[16](#ref-16), [18](#ref-18), [20](#ref-20)]
+:::
 
-as applicable as to the whole. Consethis heat is created, and the less of it can be transformed into work (§7.5.1).
-
-quently, if we know the quantities of heat which the matter has received durWe will thus “penalize” the heat cost by dividing it by the temperature.
-
-ing the process, and the temperatures $^{\mathrm{which} \mathrm{correspond} \mathrm{thereto}, \mathrm{the} \mathrm{nega}-}$ In this way, we will obtain a quantity in $joules$ per $kelvin$ – the entropy $^{\mathrm{tive} \mathrm{integral} -\int} ^{\frac{dQ}{T}} ^{\mathrm{will} \mathrm{give} \mathrm{the} \mathrm{un}-}$ created during the process – which will be zero during reversible processes compensated transformation involved $^{\mathrm{therein}.}$ » and will always be positive during irreversible processes. It is this creation $_{\mathrm{Rudolf} \mathrm{Clausius}, 1856 [16, 18, 20]}$ that will be the unmistakable sign that the process is possible only in one direction.
-
-**8.2 Definition**
+(sec-8-2)=
+## 8.2 Definition
 
 (sec-8-2-1)=
 ### 8.2.1 Entropy is a property
@@ -211,7 +214,8 @@ Let’s add three remarks before moving on.
 
 3. Entropy changes can only be calculated along reversible processes, which is a very important limitation (no real process of interest to engineers is reversible). However, there are always multiple reversible ways, all equivalent, to reproduce the final state of an irreversible process.
 
-**8.3 Changes in Entropy**
+(sec-8-3)=
+## 8.3 Changes in Entropy
 
 (sec-8-3-1)=
 ### 8.3.1 Analogy with volume
@@ -255,7 +259,7 @@ where the subscript *rev.* indicates the calculation is done along a reversible 
 :::{figure} ../images/fig-8-2.jpg
 :label: fig-8-2
 :enumerator: 8.2
-:alt: Volume changes during adiabatic expansions. The increase in volume is calculable by integrating along a reversible path , but not along an i
+:alt: Volume changes during adiabatic expansions. The increase in volume is calculable by integrating $\delta W/p$ along a reversible path $(1 \rightarrow 2^{'})$, but not along an irreversible path $(1 \rightarrow 2)$.
 
 Volume changes during adiabatic expansions. The increase in volume is calculable by integrating $\delta W/p$ along a reversible path $(1 \rightarrow 2^{'})$, but not along an irreversible path $(1 \rightarrow 2)$.
 :::
@@ -264,35 +268,31 @@ Volume changes during adiabatic expansions. The increase in volume is calculable
 
 Then we have
 
-B
-
 :::{math}
 :label: eq-8-7
 :enumerator: 8/7
-Q_{\mathrm{A}\rightarrow \mathrm{B}}= \int (T dS)_{\mathrm{rev}.}
+Q_{\mathrm{A}\rightarrow \mathrm{B}}= \int_{A}^{B} (T dS)_{\mathrm{rev}.}
 :::
-
-A B
 
 :::{math}
 :label: eq-8-8
 :enumerator: 8/8
-q_{\mathrm{A}\rightarrow \mathrm{B}}= \int (T ds)_{\mathrm{rev}.}
+q_{\mathrm{A}\rightarrow \mathrm{B}}= \int_{A}^{B} (T ds)_{\mathrm{rev}.}
 :::
-
-A
 
 for any process, where the subscript *rev.* indicates the calculation is done along a reversible path.
 
 In this way, we are able to represent the processes on a *temperature-entropy diagram*. As shown in figure 8.3, the area under the curve of a process will represent the heat transferred in cases where the process is reversible; but in cases where the process is irreversible, it does not.
 
 :::{figure} ../images/art-p213-1.jpg
-:alt: Illustration from the original text
+:label: fig-8-3
+:enumerator: 8.3
+:alt: Temperature-entropy diagram. During a reversible process, the area under the curve of a T-s diagram represents the transmitted heat $Q_{1\rightarrow 2^{'}}$; but not when it is irreversible.
+
+Temperature-entropy diagram. During a reversible process, the area under the curve of a $T-s$ diagram represents the transmitted heat $Q_{1\rightarrow 2^{'}}$; but not when it is irreversible.
 :::
 
-Figure8.3: Temperature-entropydiagram. Duringareversibleprocess, theareaunder the curve of a $T-s$diagram represents the transmitted heat $Q_{1\rightarrow 2^{'}}$; but not when it is *Diagram* CC-0 *Olivier Cleynen*
-
-irreversible.
+*Diagram* CC-0 *Olivier Cleynen*
 
 ::::{admonition} A Bit of History
 :class: note
@@ -358,60 +358,36 @@ q_{1\rightarrow 2}+ w_{1\rightarrow 2}= \Delta u
 
 ::::
 
-If we imagine a reversible path between 1 and 2, we can quantify $q_{1\rightarrow 2}=$
-
-$-\int ^{2}_{1}T ds$ (8/8) and $w_{1\rightarrow 2}= -\int ^{2}$
+If we imagine a reversible path between 1 and 2, we can quantify $q_{1\rightarrow 2}= -\int_{1}^{2}T ds$ (8/8) and $w_{1\rightarrow 2}= -\int_{1}^{2}p dv$ (2/15) along it, and we can write:
 
 :::{math}
-2 2
+\int_{1}^{2}T ds - \int_{1}^{2}p dv = \Delta u
+:::
+
+or, in differential form, $T ds - p dv = du$, so that
+
+:::{math}
+:label: eq-8-9
+:enumerator: 8/9
+ds = \frac{du}{T} + \frac{p}{T}dv
+:::
+
+along any reversible process.[^clausius-8-9]
+
+[^clausius-8-9]: This equation 8/9 is even true for any process, but this generalization is simpler to address after equations 8/10 and 8/11.
+
+Now, if we use an ideal gas, we have $u = c_{v}T$ (4/11) and $\frac{p}{T}= \frac{R}{v}$ (4/1), thus: $ds = c_{v}\frac{dT}{T} + R\frac{dv}{v}$, and by integration:
+
+:::{math}
+:label: eq-8-10
+:enumerator: 8/10
+\Delta s = s_{2}- s_{1}= c_{v}\ln \frac{T_{2}}{T_{1}} + Rln \frac{v_{2}}{v_{1}}
 :::
 
 :::{math}
-\int T ds - \int pdv = \Delta u
-:::
-
-:::{math}
-1 1
-:::
-
-:::{math}
-T ds - pdv = du
-:::
-
-:::{math}
-ds = \frac{du}{}
-:::
-
-:::{math}
-T + p
-:::
-
-along any reversible process.$^{1}$
-
-Now, if we use an ideal gas, we have $u = c_{v}T$ (4/11) and $^{p}$
-
-:::{math}
-ds == \frac{c_{v}dT}{c_{v} \frac{TdT}{T}} + R+ Rv \frac{dvd}{} v
-:::
-
-:::{math}
-v
-:::
-
-:::{math}
-\Delta s = s_{2}- s_{1}= c_{v}\ln \frac{T_{2}}{} + Rln \frac{v_{2}}{}
-:::
-
-:::{math}
-T_{1}
-:::
-
-:::{math}
-\Delta s = s_{2}- s_{1}= c_{p}\ln \frac{T_{2}}{} - Rln \frac{p_{2}}{}
-:::
-
-:::{math}
-T_{1}
+:label: eq-8-11
+:enumerator: 8/11
+\Delta s = s_{2}- s_{1}= c_{p}\ln \frac{T_{2}}{T_{1}} - Rln \frac{p_{2}}{p_{1}}
 :::
 
 for an ideal gas, for any process from 1 to 2, reversible or not.
@@ -420,101 +396,60 @@ This equation is interesting because it indicates that the entropy change $\Delt
 
 It is therefore possible to easily calculate the change entropy of an ideal gas if its other properties are known. Unlike the internal energy $u$ which depends only on temperature, changes in entropy $(\Delta s)$ also depend on the gas pressure.
 
-In the case where pressure or specific volume is kept constant, these
-
-equations 8/10 and 8/11 become respectively:
+In the case where pressure or specific volume is kept constant, these equations 8/10 and 8/11 become respectively:
 
 :::{math}
-\Delta s_{v_{\mathrm{const}.}}= c_{v}\ln \frac{T_{2}}{}
+:label: eq-8-12
+:enumerator: 8/12
+\Delta s_{v_{\mathrm{const}.}}= c_{v}\ln \frac{T_{2}}{T_{1}}
 :::
 
 :::{math}
-T_{1}
-:::
-
-:::{math}
-\Delta s_{p_{\mathrm{const}.}}= c_{p}\ln \frac{T_{2}}{}
-:::
-
-:::{math}
-T_{1}
+:label: eq-8-13
+:enumerator: 8/13
+\Delta s_{p_{\mathrm{const}.}}= c_{p}\ln \frac{T_{2}}{T_{1}}
 :::
 
 for an ideal gas, for any process at constant volume or respectively at constant pressure.
 
 These two equations 8/12 and 8/13 allow us to plot isochoric (at constant volume) and isobaric (at constant pressure) curves for an ideal gas on a $T-s$ diagram, as shown in figure 8.7.
 
-$^{1}$This equation 8/9 is even true for any process, but this generalization is simpler
-
-to address after equations 8/10 and 8/11.
-
-$_{1}pdv$ (2/15) along it, and we can write:
-
-$T dv$ (8/9)
-
-$_{T}= \frac{R}{v}$ (4/1), thus:
-
-(8/10)
-
-$v_{1}$
-
-(8/11)
-
-$p_{1}$
-
-« $^{\mathrm{In} \mathrm{the} \mathrm{deduced} \mathrm{expression}, \mathrm{the}}$ difference $S - S_{0}$ is again perfectly determined when the initial and final conditions are given, and it is only when forming the integral $\int \frac{dQ}{T}$ that the manner in which the passage from one to the other took place must be taken into consideration. »
+:::{aside}
+« In the deduced expression, the difference $S - S_{0}$ is again perfectly determined when the initial and final conditions are given, and it is only when forming the integral $\int \frac{dQ}{T}$ that the manner in which the passage from one to the other took place must be taken into consideration. »
 
 Rudolf Clausius, 1865 [[17](#ref-17), [18](#ref-18), [19](#ref-19)]
-
-(8/12)
-
-(8/13)
-
-:::{math}
-p_{1}> p_{2} and v_{3}> v_{4} .
-:::
-
-````{prf:example}
-
-to $100^{\circ}C)$?
-
-$1R0l0n5 ^{$\frac{p_{\mathrm{B}}}{p_{\mathrm{A}}}$}\ln ^{1}$a$_{00}$n$_{+}\mathrm{d}_{2 73}$h$_{,1}$e$_{5}$re $p_{\mathrm{B}}$
-
-````
-
-:::{figure} ../images/art-p217-1.jpg
-:alt: Illustration from the original text
 :::
 
 :::{figure} ../images/fig-8-7.jpg
 :label: fig-8-7
 :enumerator: 8.7
-:alt: Isobaric and isochoric curves on a diagram, for an ideal gas. Here
+:alt: Isobaric and isochoric curves on a T-s diagram, for an ideal gas. Here $p_{1}> p_{2}$ and $v_{3}> v_{4}$.
 
-Isobaric and isochoric curves on a $T-s$ diagram, for an ideal gas. Here
+Isobaric and isochoric curves on a $T-s$ diagram, for an ideal gas. Here $p_{1}> p_{2}$ and $v_{3}> v_{4}$.
 :::
 
 *Diagram* CC-0 *Olivier Cleynen*
 
-Example 8.2
+````{prf:example}
+:label: ex-8-2
+:enumerator: 8.2
 
-What is the change in specific entropy of a mass of $2 kg (4.4 lb)$ of air, when it is heated at constant pressure of $2 bar$, from $50 ^{\circ} F$ to $212 ^{\circ} F (10^{\circ}C$
+What is the change in specific entropy of a mass of $2 kg (4.4 lb)$ of air, when it is heated at constant pressure of $2 bar$, from $50 ^{\circ} F$ to $212 ^{\circ} F (10^{\circ}C$ to $100^{\circ}C)$?
 
 The process can be drawn qualitatively (that is, without showing numerical values) on a temperature-entropy diagram as shown below.
 
-In order to calculate $\Delta S$, we start from equation 8/11, $\Delta s = c_{p}\ln \frac{T_{\mathrm{B}}}{T_{\mathrm{A}}} - = p_{\mathrm{A}}$. We thus have $\Delta s = c_{p}\ln \frac{T_{\mathrm{B}}}{T_{\mathrm{A}}} =$
+:::{figure} ../images/art-p217-1.jpg
+:alt: Temperature-entropy diagram sketching the isobaric heating process from state A (10°C) to state B (100°C) used in example 8.2.
+:::
 
-$_{10+273,15}= +277.4 J K^{-1}kg^{-1}$.
+In order to calculate $\Delta S$, we start from equation 8/11, $\Delta s = c_{p}\ln \frac{T_{\mathrm{B}}}{T_{\mathrm{A}}} - Rln \frac{p_{\mathrm{B}}}{p_{\mathrm{A}}}$, and here $p_{\mathrm{B}}= p_{\mathrm{A}}$. We thus have $\Delta s = c_{p}\ln \frac{T_{\mathrm{B}}}{T_{\mathrm{A}}} = 1005 \ln \frac{100+273.15}{10+273.15} = +277.4 J K^{-1}kg^{-1}$.
 
 The change in entropy is $\Delta S = m \Delta s = 2 \times 277.4 = +554.8 J K^{-1}$.
 
-It does not matter whether the process is reversible or not: we
+It does not matter whether the process is reversible or not: we just need to know the initial and final states.
 
-just need to know the initial and final states.
-
-We correctly state that “the entropy of the air increases” and not
-
-that “entropy is given to it” (§8.2.1).
+We correctly state that “the entropy of the air increases” and not that “entropy is given to it” (§8.2.1).
+````
 
 *Engineering Thermodynamics* by Olivier Cleynen
 
@@ -526,22 +461,15 @@ How much does the entropy of a mass of air of $0.5 kg$ change when it is slowly 
 
 The process can be drawn qualitatively on a temperature-entropy diagram as follows:
 
-````
-
 :::{figure} ../images/art-p218-1.jpg
-:alt: Illustration from the original text
+:alt: Temperature-entropy diagram sketching the isothermal compression process used in example 8.3.
 :::
-
-````{prf:example}
 
 In order to quantify $\Delta S$ we start from equation 8/11, $\Delta s = c_{p}\ln \frac{T_{B}}{T_{A}} - Rln \frac{p_{B}}{p_{A}}$ and here $T_{B}= T_{A}$. We thus have $\Delta s = -Rln \frac{p_{B}}{p_{A}} = 287 \ln \frac{5}{1} = -461.9 J K^{-1}kg^{-1}$. The change in entropy is $\Delta S = m \Delta s = 0.5 \times -461.9 = -231 J K^{-1}$.
 
-Since the process is reversible, the heat removed is obtained using equation 8/7: $Q_{\mathrm{A}\rightarrow \mathrm{B}}= \int ^{\mathrm{B}}_{\mathrm{A}}T dS = T_{\mathrm{cst}.}\int ^{\mathrm{B}}_{\mathrm{A}}dS = T_{\mathrm{cst}.}\Delta S = (50 + 273, 15) \times -231 = -74.6 kJ$.
+Since the process is reversible, the heat removed is obtained using equation 8/7: $Q_{\mathrm{A}\rightarrow \mathrm{B}}= \int ^{\mathrm{B}}_{\mathrm{A}}T dS = T_{\mathrm{cst}.}\int ^{\mathrm{B}}_{\mathrm{A}}dS = T_{\mathrm{cst}.}\Delta S = (50 + 273.15) \times -231 = -74.6 kJ$.
 
-We already knew how to quantify $Q_{\mathrm{A}\rightarrow \mathrm{B}}$ without using entropy,
-
-using equations 4/27 and 4/28.
-
+We already knew how to quantify $Q_{\mathrm{A}\rightarrow \mathrm{B}}$ without using entropy, using equations 4/27 and 4/28.
 ````
 
 ````{prf:example}
@@ -552,40 +480,23 @@ How much does the temperature of air change when adiabatically and reversibly ex
 
 The process can be drawn qualitatively on a temperature-entropy diagram as follows:
 
-````
-
 :::{figure} ../images/art-p218-2.jpg
-:alt: Illustration from the original text
+:alt: Temperature-entropy diagram sketching the reversible adiabatic (isentropic) expansion process used in example 8.4.
 :::
-
-````{prf:example}
 
 In order to quantify $\Delta S$ we again start from equation 8/11: $\Delta s = c_{p}\ln \frac{T_{\mathrm{B}}}{T_{\mathrm{A}}} - Rln \frac{p_{\mathrm{B}}}{p_{\mathrm{A}}}$ and here $\Delta s = 0$:
 
 :::{math}
-\ln \frac{T_{\mathrm{B}}0}{T_{\mathrm{A}}} == \frac{c_{p}R}{c_{p}} lnln \frac{T_{\mathrm{B}}p_{\mathrm{B}}T_{\mathrm{A}}}{p_{\mathrm{A}}} - Rln \frac{p_{\mathrm{B}}}{p_{\mathrm{A}}}
+0 = c_{p}\ln \frac{T_{\mathrm{B}}}{T_{\mathrm{A}}} - Rln \frac{p_{\mathrm{B}}}{p_{\mathrm{A}}} \quad \Rightarrow \quad \ln \frac{T_{\mathrm{B}}}{T_{\mathrm{A}}} = \frac{R}{c_{p}}\ln \frac{p_{\mathrm{B}}}{p_{\mathrm{A}}}
 :::
 
 :::{math}
-\frac{R}{} \frac{\gamma -1}{}
+\frac{T_{\mathrm{B}}}{T_{\mathrm{A}}} = (\frac{p_{\mathrm{B}}}{p_{\mathrm{A}}})^{\frac{R}{c_{p}}} = (\frac{p_{\mathrm{B}}}{p_{\mathrm{A}}})^{\frac{\gamma -1}{\gamma}}
 :::
 
-:::{math}
-( ^{\frac{T_{\mathrm{B}}}{T_{\mathrm{A}}}} ) = (\frac{p_{\mathrm{B}}}{p_{\mathrm{A}}})^{cp}= (\frac{p_{\mathrm{B}}}{p_{\mathrm{A}}}) ^{\gamma}
-:::
+Here we recognize the dreaded equation 4/37 which we have wielded in the past: $T_{\mathrm{B}}= 600 \times (\frac{1}{30})^{\frac{0.4}{1.4}}= 227 K$, approximately $-46^{\circ}C$ or $-51 ^{\circ} F$.
 
-Here we recognize the dreaded equation 4/37 which we have wielded
-
-:::{math}
-\frac{0.4}{}
-:::
-
-in the past: $T_{\mathrm{B}}= 600 \times \frac{1}{30} ^{1.4}= 227 K$, approximately $-46^{\circ}C$ or $-51 ^{\circ} F$.
-
-Using the reasoning “adiabatic reversible = isentropic” did not
-
-actually bring us anything we did not already know here, as the ideal gas model is already extremely simple and powerful. This will not be the case with liquids/vapors.
-
+Using the reasoning “adiabatic reversible = isentropic” did not actually bring us anything we did not already know here, as the ideal gas model is already extremely simple and powerful. This will not be the case with liquids/vapors.
 ````
 
 (sec-8-3-4)=
@@ -598,9 +509,9 @@ In order to quantify changes in entropy, we we will proceed exactly as we did wi
 :::{figure} ../images/fig-8-8.jpg
 :label: fig-8-8
 :enumerator: 8.8
-:alt: Temperature-entropy diagram of a liquid/vapor mixture. This figure closely resembles fgi. 5.7 p. 121.
+:alt: Temperature-entropy diagram of a liquid/vapor mixture. This figure closely resembles fig. 5.7 p. 121.
 
-Temperature-entropy diagram of a liquid/vapor mixture. This figure closely resembles fgi. 5.7 p. 121.
+Temperature-entropy diagram of a liquid/vapor mixture. This figure closely resembles fig. 5.7 p. 121.
 :::
 
 *Diagram* CC-0 *Olivier Cleynen*
@@ -652,34 +563,17 @@ s_{x}= s_{L}+ x s_{LV}
 
 How much does the entropy of water change when it goes from a state at $240^{\circ}C$ and $6 bar$, to $130^{\circ}C$ with an internal energy of $1000 kJ kg^{-1}$?
 
-A quick look at the steam tables allows us to draw the process qualitatively on a temperature-entropy diagram as shown below. We read $s_{\mathrm{A}}$ by interpolation in Steam Table 1 at $0.6 MPa$ between $200^{\circ}C$ and $300^{\circ}C$: $s_{\mathrm{A}}= 6.9683 + ^{40}$ Upon arrival, the water is in a liquid-vapor mixture (because $u_{\mathrm{B}}< u_{V130^{\circ}C})$, so we read from Steam Table 2 (5/5): $x_{\mathrm{B}}= ^{u_{\mathrm{B}}-u_{L}}$
-
-````
-
-(8/14)
-
-$_{100}\times (7.374 - 6.9683) = 7.1306 kJ K^{-1}kg^{-1}$.
-
-$u_{LV}= ^{1000-546.1}_{1993.5}=$
-
-````{prf:example}
-
-$0.228$; thus with equation 8/14 we can calculate the entropy: $s_{\mathrm{B}}= s_{L}+ x_{\mathrm{B}}s_{LV}= 1.6346 + 0.228 \times 5.3918 = 2.8623 kJ K^{-1}kg^{-1}$.
-
-````
+A quick look at the steam tables allows us to draw the process qualitatively on a temperature-entropy diagram as shown below.
 
 :::{figure} ../images/art-p221-1.jpg
-:alt: Illustration from the original text
+:alt: Temperature-entropy diagram sketching the process used in example 8.5, from a superheated-vapor state A to a liquid-vapor mixture state B.
 :::
 
-````{prf:example}
+We read $s_{\mathrm{A}}$ by interpolation in Steam Table 1 at $0.6 MPa$ between $200^{\circ}C$ and $300^{\circ}C$: $s_{\mathrm{A}}= 6.9683 + \frac{40}{100}\times (7.374 - 6.9683) = 7.1306 kJ K^{-1}kg^{-1}$. Upon arrival, the water is in a liquid-vapor mixture (because $u_{\mathrm{B}}< u_{V130^{\circ}C})$, so we read from Steam Table 2 (5/5): $x_{\mathrm{B}}= \frac{u_{\mathrm{B}}-u_{L}}{u_{LV}} = \frac{1000-546.1}{1993.5}= 0.228$; thus with equation 8/14 we can calculate the entropy: $s_{\mathrm{B}}= s_{L}+ x_{\mathrm{B}}s_{LV}= 1.6346 + 0.228 \times 5.3918 = 2.8623 kJ K^{-1}kg^{-1}$.
 
 We see that the entropy has decreased: $\Delta s = s_{\mathrm{B}}- s_{\mathrm{A}}= -4.268 kJ K^{-1}kg^{-1}$.
 
-We do not know what process took place. The less reversible it
-
-was, and the more heat had to be removed from the steam in order to bring it from A to B.
-
+We do not know what process took place. The less reversible it was, and the more heat had to be removed from the steam in order to bring it from A to B.
 ````
 
 ````{prf:example}
@@ -690,35 +584,15 @@ We slowly heat $2 kg (4.4 lb)$ of saturated liquid water at $300^{\circ}C$, main
 
 A quick look at the steam tables allows us to draw the process qualitatively on a temperature-entropy diagram as follows:
 
-````
-
 :::{figure} ../images/art-p221-2.jpg
-:alt: Illustration from the original text
+:alt: Temperature-entropy diagram sketching the isothermal heating process used in example 8.6.
 :::
 
-````{prf:example}
+Since the process is reversible, we can calculate $Q_{\mathrm{A}\rightarrow \mathrm{B}}$ by integrating the term $T ds$ between A and B. We read $s_{\mathrm{A}}$ in Steam Table 2: $s_{\mathrm{A}}= s_{L300^{\circ}C}= 3.2552 kJ kg^{-1}$. At the end, the specific volume is $v_{\mathrm{B}}= \frac{V_{\mathrm{B}}}{m} = \frac{2}{2} = 1 m^{3}kg^{-1}$; in order to obtain $s_{\mathrm{B}}$ we must interpolate between two blocks of Steam Table 1 (between $0.2 MPa$ and $0.4 MPa$ at $300^{\circ}C)$. Let $y \equiv \frac{v_{\mathrm{B}}-v_{300^{\circ}C \& 0.2 MPa}}{v_{300^{\circ}C \& 0.4 MPa}-v_{300^{\circ}C \& 0.2 MPa}} = \frac{1-1.3162}{0.65489-1.3162}= 0.4781$ and correspondingly, $s_{\mathrm{B}}= s_{300^{\circ}C \& 0.2 MPa}+ y(s_{300^{\circ}C \& 0.4 MPa}- s_{300^{\circ}C \& 0.2 MPa}) = 7.8941 +0.4781(7.5677 - 7.8941) = 7.738 kJ K^{-1}kg^{-1}$.
 
-Since the process is reversible, we can calculate $Q_{\mathrm{A}\rightarrow \mathrm{B}}$ by integrating the term $T ds$ between A and B. We read $s_{\mathrm{A}}$ in Steam Table 2: $s_{\mathrm{A}}= s_{L300^{\circ}C}= 3.2552 kJ kg^{-1}$. At the end, the specific volume is $v_{\mathrm{B}}= \frac{V_{\mathrm{B}}}{m} = \frac{2}{2} = 1 m^{3}kg^{-1}$; in order to obtain $s_{\mathrm{B}}$ we must interpolate between two blocks of Steam Table 1 (between $0.2 MPa$ and $0.4 MPa$ at $300^{\circ}C)._{v_{300}^{\circ} C \& 0.4 MPa-v_{300}^{\circ} C \& 0.2 MPav_{\mathrm{B}}-v_{300}^{\circ} C \& 0.2 MPa}= _{0.654 89-1.3162}^{1-1.3162}= 0.4781$ and correspond-Let $y \equiv$
+We can finally calculate $q_{\mathrm{A}\rightarrow \mathrm{B}}$ with equation 8/8: $Q_{\mathrm{A}\rightarrow \mathrm{B}}= \int_{1}^{2}T dS = m T \Delta s = 2 \times (300 + 273.15) \times (7.738 - 3.2552) = +5.139 kJ$.
 
-ingly, $s_{\mathrm{B}}= s_{300^{\circ}C \& 0.2 MPa}+ y(s_{300^{\circ}C \& 0.4 MPa}- s_{300^{\circ}C \& 0.2 MPa}) = 7.8941 +0.4781(7.5677 - 7.8941) = 7.738 kJ K^{-1}kg^{-1}$.
-
-````
-
-::::{admonition} A Bit of History
-:class: note
-
-*Engineering Thermodynamics* by Olivier Cleynen
-
-::::
-
-````{prf:example}
-
-We can fni ally calculate $q_{\mathrm{A}\rightarrow \mathrm{B}}$ with equation 8/8: $Q_{\mathrm{A}\rightarrow \mathrm{B}}= \int ^{2}_{1}T dS = m T \Delta s = 2 \times (300 + 273.15) \times (7.738 - 3.2552) = +5.139 kJ$.
-
-This somewhat laborious calculation may not be spectacular, but
-
-it is important to realize that without the use of entropy, we had *no way* to quantify $Q_{\mathrm{A}\rightarrow \mathrm{B}}$ without conducting an experiment. We had gotten stuck on this issue in example 5.12 page 137.
-
+This somewhat laborious calculation may not be spectacular, but it is important to realize that without the use of entropy, we had *no way* to quantify $Q_{\mathrm{A}\rightarrow \mathrm{B}}$ without conducting an experiment. We had gotten stuck on this issue in example 5.12 page 137.
 ````
 
 ````{prf:example}
@@ -729,19 +603,15 @@ In a turbine, steam undergoes a reversible adiabatic (isentropic) expansion. The
 
 A final look at the steam tables allows us to draw the process qualitatively on a temperature-entropy diagram as follows:
 
-````
-
 :::{figure} ../images/art-p222-1.jpg
-:alt: Illustration from the original text
+:alt: Temperature-entropy diagram sketching the reversible adiabatic (isentropic) expansion process used in example 8.7.
 :::
-
-````{prf:example}
 
 Here $q_{\mathrm{A}\rightarrow \mathrm{B}}= 0$ because the turbine is adiabatic, and we are looking for $w_{\mathrm{A}\rightarrow \mathrm{B}}= \Delta h$. Therefore, we need to find a way to quantify $h_{\mathrm{B}}$.
 
 In A, we read from Steam Table 1, at $4 MPa$: $h_{\mathrm{A}}= 3446 kJ kg^{-1}$ and $s_{\mathrm{A}}= 7.0922 kJ K^{-1}kg^{-1}$.
 
-At B, we know that $s_{\mathrm{B}}= s_{\mathrm{A}}$ because the process is isentropic; this information will allow us to calculate $h_{\mathrm{B}}$. Using Steam Table 3 at $0.05 MPa$, with equation 8/14, we obtain $x_{\mathrm{B}}= \frac{s_{\mathrm{B}}-s_{L}}{s_{LV}} = ^{7.09}_{6}^{2}_{.}^{2}_{5}^{-}_{0}^{1}_{1}^{.}_{8}^{0 912}= 0.923$. Using the dryness fraction, we can simply calculate the enthalpy (equation 5/4): $h_{\mathrm{B}}= h_{L}+ x_{\mathrm{B}}h_{LV}= 340.5 + 0.923 \times 2304.7 = 2467.7 kJ kg^{-1}$.
+At B, we know that $s_{\mathrm{B}}= s_{\mathrm{A}}$ because the process is isentropic; this information will allow us to calculate $h_{\mathrm{B}}$. Using Steam Table 3 at $0.05 MPa$, with equation 8/14, we obtain $x_{\mathrm{B}}= \frac{s_{\mathrm{B}}-s_{L}}{s_{LV}} = \frac{7.0922-1.0912}{6.5018}= 0.923$. Using the dryness fraction, we can simply calculate the enthalpy (equation 5/4): $h_{\mathrm{B}}= h_{L}+ x_{\mathrm{B}}h_{LV}= 340.5 + 0.923 \times 2304.7 = 2467.7 kJ kg^{-1}$.
 
 The specific power of the turbine is therefore $w_{\mathrm{A}\rightarrow \mathrm{B}}= \Delta h = -978.3 kJ kg^{-1}$.
 
@@ -751,20 +621,21 @@ for engineers. The idea that entropy remains constant during a reversible adiaba
 
 ````
 
-**8.4 Predicting the Direction of Processes** Here we come to the central concept that has opened the doors of physics to thermodynamics. Based on the quantifications of entropy changes, we are able to describe the direction of processes, that is, to prove for example that a state B comes *after* a state A.
+(sec-8-4)=
+## 8.4 Predicting the Direction of Processes
+
+Here we come to the central concept that has opened the doors of physics to thermodynamics. Based on the quantifications of entropy changes, we are able to describe the direction of processes, that is, to prove for example that a state B comes *after* a state A.
 
 (sec-8-4-1)=
 ### 8.4.1 Irreversibilities during heat transfers
 
-« $^{\mathrm{If} \mathrm{two} \mathrm{transformations} \mathrm{which},}$ In order to reward ourselves for already making it halfway through the without necessitating any other per-chapter, we make ourselves a cup of tea. Because no one can resist a little
+In order to reward ourselves for already making it halfway through the chapter, we make ourselves a cup of tea. Because no one can resist a little thermodynamics, we press our mug closely against a bottle of cold water. O wonder, o joy! We have before our eyes a source of entropy. Let’s investigate. Our mug A is at temperature $T_{\mathrm{A}}$, higher than $T_{\mathrm{B}}$, the temperature of the water bottle (figure 8.9). The two bodies are brought into contact, and an infinitesimal amount of heat δ$q$ passes from A to B.
 
-manent change, can mutually replace one another, be called equivalent, then thermodynamics, we press our mug closely against a bottle of cold water.
+:::{aside}
+« If two transformations which, without necessitating any other permanent change, can mutually replace one another, be called equivalent, then [...] the passage of the quantity of heat $Q$ from the temperature $t_{1}$ to the temperature $t_{2}$, has the equivalence-value $Q(\frac{1}{T_{2}} - \frac{1}{T_{1}})$. »
 
-[...] the passage of the quantity of heat $_{Q \mathrm{from} \mathrm{the} \mathrm{temperature} t_{1}\mathrm{to} \mathrm{the} \mathrm{tem}-}$ O wonder, o joy! We have before our eyes a source of entropy. Let’s
-
-p$Q$e$($r $\frac{\mathrm{atu}_{1}}{T_{2}}$ r$-$e $\frac{t_{12},}{T_{1}} )$h a$_{[.}\mathrm{s}_{..]}$ t he» $^{\mathrm{e} \mathrm{quivalence-value} \mathrm{investigate}.}$ Our mug A is at temperature $T_{\mathrm{A}}$, higher than $T_{\mathrm{B}}$, the temperature of the
-
-Rudolf Clausius, 1854 [[13](#ref-13), [18](#ref-18), [22](#ref-22)] water bottle (figure 8.9). The two bodies are brought into contact, and an infinitesimal amount of heat δ$q$ passes from A to B.
+Rudolf Clausius, 1854 [[13](#ref-13), [18](#ref-18), [22](#ref-22)]
+:::
 
 If we consider only a small amount of time, the temperature of body A is uniform, and its heat loss occurs reversibly. Thus, the entropy change of A is:
 
@@ -805,7 +676,7 @@ T_{\mathrm{B}}T_{\mathrm{A}}
 :::{figure} ../images/fig-8-9.jpg
 :label: fig-8-9
 :enumerator: 8.9
-:alt: Creation of entropy by heat transfer. The process is internally reversible for each of the two bodies A and B, but irreversible for the syst
+:alt: Creation of entropy by heat transfer. The process is internally reversible for each of the two bodies A and B, but irreversible for the system [A+B].
 
 Creation of entropy by heat transfer. The process is internally reversible for each of the two bodies A and B, but irreversible for the system [A+B].
 :::
@@ -824,22 +695,20 @@ Since $T_{\mathrm{A}}> T_{\mathrm{B}}$, this change is *positive and non-zero*; 
 :::{figure} ../images/fig-8-10.jpg
 :label: fig-8-10
 :enumerator: 8.10
-:alt: Entropy changes for bodies A and B. The two shaded areas are equal (representing the heat quantity δ, but the sum of the two entropies incre
+:alt: Entropy changes for bodies A and B. The two shaded areas are equal (representing the heat quantity δ$q)$, but the sum of the two entropies increases.
 
 Entropy changes for bodies A and B. The two shaded areas are equal (representing the heat quantity δ$q)$, but the sum of the two entropies increases.
 :::
 
 *Diagram* CC-0 *Olivier Cleynen*
 
-This small investigation shows us that every temperature gradient leads to « $^{\mathrm{Wherever} \mathrm{there} \mathrm{exists} \mathrm{a} \mathrm{difference}}$ *in temperature, there can be a produc-*
+This small investigation shows us that every temperature gradient leads to irreversibility, resulting in an increase in total entropy. Any heat transfer between two objects of different temperatures can be viewed as a missed opportunity to do work – likely a source of anxiety for both students and engineers. By placing a Carnot engine between bodies A and B, no irreversibility would occur, and $ds_{[\mathrm{A}\&\mathrm{B}]}$ would be zero. By placing a thermal engine with low efficiency, $ds_{[\mathrm{A}\&\mathrm{B}]}$ would be small; the case above where heat transfer occurs without a machine is the limiting case where no work is produced.
 
-irreversibility, resulting in an increase in total entropy. Any heat transfer *tion of motive power*. Conversely wher-
+:::{aside}
+« Wherever there exists a difference in temperature, there can be a production of motive power. Conversely wherever this power can be consumed, it is possible to generate a difference in temperature, it is possible to cause a disruption of equilibrium in the caloric. »
 
-between two objects of different temperatures can be viewed as a missed $^{\mathrm{ever} \mathrm{this} \mathrm{power} \mathrm{can} \mathrm{be} \mathrm{consumed}, \mathrm{it} \mathrm{is}}$ possible to generate a difference in tem-
-
-opportunity to do work – likely a source of anxiety for both students perature, it is possible to cause a disrup-
-
-and engineers. By placing a Carnot engine between bodies A and B, no $^{\mathrm{tion} \mathrm{of} \mathrm{equilibrium} \mathrm{in} \mathrm{the} \mathrm{caloric}.}$ » irreversibility would occur, and $ds_{[\mathrm{A}\&\mathrm{B}]}$ would be zero. By placing a thermal Sadi Carnot, 1824 [[4](#ref-4)] engine with low efficiency, $ds_{[\mathrm{A}\&\mathrm{B}]}$ would be small; the case above where heat transfer occurs without a machine is the limiting case where no work is produced.
+Sadi Carnot, 1824 [[4](#ref-4)]
+:::
 
 (sec-8-4-2)=
 ### 8.4.2 Irreversibilities during adiabatic
@@ -855,7 +724,7 @@ Thus, a real adiabatic compression causes the fluid to reach a higher temperatur
 :::{figure} ../images/fig-8-11.svg
 :label: fig-8-11
 :enumerator: 8.11
-:alt: Theoretical (isentropic, solid lines) and real (dotted lines) adiabatic expansions and compressions. It is important to note that the increa
+:alt: Theoretical (isentropic, solid lines) and real (dotted lines) adiabatic expansions and compressions. It is important to note that the increase in entropy is not related to a heat transfer “δ$q$”. The path on the $T-s$diagram is not continuous, and the area underneath does not represent a heat flow across the system boundaries.
 
 Theoretical (isentropic, solid lines) and real (dotted lines) adiabatic expansions and compressions. It is important to note that the increase in entropy is not related to a heat transfer “δ$q$”. The path on the $T-s$diagram is not continuous, and the area underneath does not represent a heat flow across the system boundaries.
 :::
@@ -865,36 +734,31 @@ Theoretical (isentropic, solid lines) and real (dotted lines) adiabatic expansio
 (sec-8-4-3)=
 ### 8.4.3 The second law and entropy
 
-« $^{\mathrm{Heat} \mathrm{can} \mathrm{never} \mathrm{pass} \mathrm{from} \mathrm{a} \mathrm{colder}}$ We have stated in chapter 7 (*the second law*) that heat spontaneously moves *to a warmer body without some other* only towards a lower temperature – a postulate we call the *second law*. We
+We have stated in chapter 7 (*the second law*) that heat spontaneously moves only towards a lower temperature – a postulate we call the *second law*. We can now formulate this statement with a mathematical expression.
 
-*change, connected therewith, occurring* $^{\mathrm{at} \mathrm{the} \mathrm{same} \mathrm{time}.}$ » can now formulate this statement with a mathematical expression.
+:::{aside}
+« Heat can never pass from a colder to a warmer body without some other change, connected therewith, occurring at the same time. »
 
-Rudolf Clausius, 1854 [[13](#ref-13), [18](#ref-18), [22](#ref-22)] **During a heat transfer** from a body at temperature $T_{\mathrm{A}}$ to another at tem-
-
-:::{math}
-\mathrm{perature} T_{\mathrm{B}}, \mathrm{the} \mathrm{overall} \mathrm{entropy} \mathrm{change} \Delta s = \frac{-q}{T_{\mathrm{A}}} + \frac{q}{T_{\mathrm{B}}} \mathrm{is} \mathrm{necessarily}
+Rudolf Clausius, 1854 [[13](#ref-13), [18](#ref-18), [22](#ref-22)]
 :::
 
-zero or positive because $T_{\mathrm{A}}$ is necessarily equal to or greater than $T_{\mathrm{B}}$.
+**During a heat transfer** from a body at temperature $T_{\mathrm{A}}$ to another at temperature $T_{\mathrm{B}}$, the overall entropy change $\Delta s = \frac{-q}{T_{\mathrm{A}}} + \frac{q}{T_{\mathrm{B}}}$ is necessarily zero or positive because $T_{\mathrm{A}}$ is necessarily equal to or greater than $T_{\mathrm{B}}$.
 
 **During a work transfer** any irreversibility results in a higher final temperature than it could have been (see §2.4.3). Achieving the same final state with a reversible path thus requires a heat input, in other words, a positive term $\int (\frac{\mathrm{δ}Q}{T})_{\mathrm{rev}.}$. An irreversibility therefore leads to an increase in total entropy.
 
 Thus, we can translate the second law as follows:
 
-:::{figure} ../images/art-p225-1.svg
-:alt: Illustration from the original text
+::::{important}
+When an energetically-isolated system undergoes a process, its entropy $s$ changes in such a way that
+
+:::{math}
+:label: eq-8-16
+:enumerator: 8/16
+\Delta s \geq 0
 :::
-
-We can always decrease the entropy of a system to bring it back to its initial value (by returning the system itself to its initial state, whatever the method
-
-::::{admonition} A Bit of History
-:class: note
-
-*Engineering Thermodynamics* by Olivier Cleynen
-
 ::::
 
-used), but this will necessarily be at the expense of an increase *at least as large* in the entropy of another system.
+We can always decrease the entropy of a system to bring it back to its initial value (by returning the system itself to its initial state, whatever the method used), but this will necessarily be at the expense of an increase *at least as large* in the entropy of another system.
 
 We could also say, in the same way that we described energy as “a quantity that does not change during transformations” (§1.1.1), that entropy is conceptualized as “a quantity that always increases during transformations.” This is the indicator we were looking for in §8.1.1 to determine the direction of processes.
 
@@ -1019,7 +883,8 @@ we wanted to go back from Y to X, we would need to cool the water by removing a 
 
 ````
 
-**8.5 Entropy, Time, and the Universe**
+(sec-8-5)=
+## 8.5 Entropy, Time, and the Universe
 
 (sec-8-5-1)=
 ### 8.5.1 Entropy for the engineer
@@ -1049,7 +914,7 @@ around the quantity $\frac{Q}{T}$, he formalized a concept that his French colle
 
 possible to the word *energy*; for the $^{\mathrm{two} \mathrm{magnitudes} \mathrm{to} \mathrm{be} \mathrm{denoted} \mathrm{by} \mathrm{these}}$ to win the enthusiasm of his contemporaries. But the concept is so powerful, words are so nearly allied in their physand equation 8/16 so simple, that they were universally accepted.
 
-ical meanings, that a certain similarity in designation appears to be desireAfter a century of efofrts, the physics of heat had caught up with engine
+ical meanings, that a certain similarity in designation appears to be desireAfter a century of efforts, the physics of heat had caught up with engine
 
 able. » technology. We were finally able to fully and quantitatively describe the
 

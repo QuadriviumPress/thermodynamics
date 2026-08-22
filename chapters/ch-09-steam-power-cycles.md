@@ -4,10 +4,6 @@ short_title: "Chapter 9"
 label: ch-09-steam-power-cycles
 ---
 
-:::{figure} ../images/art-p245-1.jpg
-:alt: Chapter opening illustration
-:::
-
 # 9. Steam Power Cycles
 
 (ch-9)=
@@ -17,93 +13,60 @@ Steam Power Cycles
 *The Understated Charm of Thermal Power Plant Water Circuits*
 
 :::{figure} ../images/art-p239-1.svg
-:alt: Illustration from the original text
+:alt: Decorative typographic rendering of the chapter's opening epigraph text, set as vector artwork on the chapter title page.
+:::
+
+:::{admonition} Executive summary
+:class: tip
+Steam engines are used in stationary applications. Many modifications are made to ideal cycles to reduce cost and increase machine power.
 :::
 
 ## Introduction
 
-Now that we have acquired solid theoretical concepts, we can take a closer
-
-look at the thermodynamic cycles used in industry. This chapter 9 (*steam*
-
-*power cycles*) aims to answer two questions:
+Now that we have acquired solid theoretical concepts, we can take a closer look at the thermodynamic cycles used in industry. This chapter 9 (*steam power cycles*) aims to answer two questions:
 
 • Why and how are steam engines used today?
 
-• Why are we moving away from ideal cycles and how do we quantify
+• Why are we moving away from ideal cycles and how do we quantify these compromises?
 
-these compromises?
+(sec-9-1)=
+## 9.1 Why Use a Steam Engine?
 
-**9.1 Why Use a Steam Engine?**
+The use of water as a working fluid in a machine undeniably has many disadvantages. In particular, unlike internal combustion engines:
 
-The use of water as a working fluid in a machine undeniably has many « $^{\mathrm{Attempts} \mathrm{have} \mathrm{been} \mathrm{made}, \mathrm{on}}$ various occasions, to make heat act
+• It is necessary to either recycle the water in the machine (and therefore cool it), or find a continuous source of pure water to operate it;
 
-disadvantages. In particular, unlike internal combustion engines: upon atmospheric air in order to give birth to motive power. This gas
+• There is an inevitable loss of some of the heat supplied to the machine, above the boiler.
 
-• It is necessary to either recycle the water in the machine (and therefore presents, in comparison to water vapor,
+Why, then, be interested in the operation of steam engines? The answer is that many sources of heat do not allow heat to be brought directly inside the working fluid. At the end of combustion, coal, wood, household or agricultural waste, for example, leave significant residues that cannot be circulated in a turbine. As for nuclear reactions, they cannot be carried out directly within the air. The exploitation of these sources, which accounts for a significant share of the world's sources of mechanical or electrical energy, therefore requires extracting heat from outside the engine.
 
-cool it), or find a continuous source of pure water to operate it; $^{\mathrm{some} \mathrm{advantages} \mathrm{and} \mathrm{some} \mathrm{disadvan}-}$ tages which we shall now examine.
+Liquids have an excellent volumetric thermal capacity compared to that of air (as the student will find using both chapter 4 and 5, that of liquid water is approximately a thousand times higher): they are compact mediums for extracting heat from an external source. Among them, water is the most abundant and certainly the least difficult to handle. Thus, almost every time the heat input cannot be made within air, water is chosen as the engine's working fluid.
 
-• There is an inevitable loss of some of the heat supplied to the machine, 1°. It ofefrs, relative to water vapor, a notable advantage in that, possess-
+:::{aside}
+Attempts have been made, on various occasions, to make heat act upon atmospheric air in order to give birth to motive power. This gas presents, in comparison to water vapor, some advantages and some disadvantages which we shall now examine. 1°. It offers, relative to water vapor, a notable advantage in that, possessing at equal volume a far lesser capacity for heat, it would cool to a greater degree by a similar expansion in volume. [...] Now, we have seen how important it is to induce, by changes in volume, the greatest possible variations in temperature. 2°. Water vapor can only be formed through the intermediary of a boiler, whereas atmospheric air could be heated directly by combustion executed within it. One would thus avoid a considerable loss, not only in the quantity of heat, but also in its thermometric degree. » Sadi Carnot, 1824 [[4](#ref-4)]
+:::
 
-above the boiler. ing at equal volume a far lesser capacity for heat, it would cool to a greater
+The sources of heat used by steam engines make their use in transportation difficult, so they are most often used in static installations to generate electricity: a configuration that allows economies of scale in energy storage and transport. All these factors justify the development of steam power plants with several *gigawatts* of electrical power $(1 GW = 10^{9}W)$, making them the most powerful thermal engines in the world.
 
-Why, then, be interested in the operation of steam engines? The answer is degree by a similar expansion in vol-
+(sec-9-2)=
+## 9.2 Engine Evaluation Criteria
 
-that many sources of heat do not allow heat to be brought directly inside ume. [...] Now, we have seen how important it is to induce, by changes in
-
-the working fluid. At the end of combustion, coal, wood, household or volume, the greatest possible variations
-
-agricultural waste, for example, leave significant residues that cannot be $^{\mathrm{in} \mathrm{temperature}.}$ 2°. Water vapor can only be formed
-
-circulated in a turbine. As for nuclear reactions, they cannot be carried out through the intermediary of a boiler,
-
-directly within the air. The exploitation of these sources, which accounts for $^{\mathrm{whereas} \mathrm{atmospheric} \mathrm{air} \mathrm{could} \mathrm{be}}$ heated directly by combustion exe-
-
-a significant share of the world’s sources of mechanical or electrical energy, cuted within it. One would thus avoid a considerable loss, not only in the quan-
-
-therefore requires extracting heat from outside the engine. tity of heat, but also in its thermometric
-
-Liquids have an excellent volumetric thermal capacity compared to that of $^{\mathrm{degree}.}$ » air (as the student will find using both chapter 4 and 5, that of liquid water $_{\mathrm{Sadi} \mathrm{Carnot}, 1824 [4]}$ is approximately a thousand times higher): they are compact mediums for extracting heat from an external source. Among them, water is the most abundant and certainly the least difficult to handle. Thus, almost every time the heat input cannot be made within air, water is chosen as the engine’s working fluid.
-
-The sources of heat used by steam engines make their use in transportation difficult, so they are most often used in static installations to generate electricity: a configuration that allows economies of scale in energy storage and transport. All these factors justify the development of steam power plants with several $gigawatts$ of electrical power $(1 GW = 10^{9}W)$, making them the most powerful thermal engines in the world.
-
-**9.2 Engine Evaluation Criteria** Several parameters are taken into account in the evaluation of the performance and value of steam engines.
+Several parameters are taken into account in the evaluation of the performance and value of steam engines.
 
 (sec-9-2-1)=
 ### 9.2.1 Thermal efficiency and overall efficiency
 
-The parameter that we have learned to quantify so far is of course the
-
-:::{math}
-\mathrm{thermal} \mathrm{efficiency} \mathrm{of} \mathrm{the} \mathrm{engine} \eta _{\mathrm{engine}}\equiv ||| \frac{W_{\mathrm{net}}}{Q_{\mathrm{in}}} ||| (6/4) \mathrm{that} \mathrm{we} \mathrm{always} \mathrm{strive}
-:::
-
-:::{math}
-\mathrm{to} \mathrm{maximize} \mathrm{towards} \mathrm{its} \mathrm{theoretical} \mathrm{maximum}, \eta _{\mathrm{Carnot} \mathrm{engine}}= 1- \frac{T_{\min.}}{T_{\max.}} (7/6).
-:::
+The parameter that we have learned to quantify so far is of course the thermal efficiency of the engine $\eta _{\mathrm{engine}}\equiv \frac{W_{\mathrm{net}}}{Q_{\mathrm{in}}}$ (6/4) that we always strive to maximize towards its theoretical maximum, $\eta _{\mathrm{Carnot} \mathrm{engine}}= 1- \frac{T_{\min.}}{T_{\max.}}$ (7/6).
 
 However, it is important not to forget that the conversion of heat into work is just one of the many operations involved in electricity production:
 
-• Fuel preparation (refinement and heating of oil, coal pulverization, separation of oil sands) itself may require energy, which we can evaluate with
-
-:::{math}
-an efficiency \eta _{\mathrm{preparation}} ;
-:::
+• Fuel preparation (refinement and heating of oil, coal pulverization, separation of oil sands) itself may require energy, which we can evaluate with an efficiency $\eta _{\mathrm{preparation}}$;
 
 • In the boiler, the energy transfer from the heat source to the water can be incomplete (with some heat potentially being rejected with the exhaust gases), which we can evaluate with an efficiency $\eta _{\mathrm{boiler}}$;
 
-• The transmission of mechanical energy from the turbine to the generator, possibly using a gearbox, incurs friction losses that we evaluate with an
+• The transmission of mechanical energy from the turbine to the generator, possibly using a gearbox, incurs friction losses that we evaluate with an efficiency $\eta _{\mathrm{transmission}}$;
 
-:::{math}
-efficiency \eta _{\mathrm{transmission}} ;
-:::
-
-• The transformation of shaft power into electrical power also involves losses resulting in the production of heat, which we evaluate with an
-
-:::{math}
-efficiency \eta _{\mathrm{generator}} .
-:::
+• The transformation of shaft power into electrical power also involves losses resulting in the production of heat, which we evaluate with an efficiency $\eta _{\mathrm{generator}}$.
 
 Thus, the *overall efficiency* $\eta _{\mathrm{overall}}$ of electricity production at the output of the power plant, which compares the electrical energy produced to the actual heat spent to generate it (in other words, its energy cost), is the product of all these efficiencies:
 
@@ -129,7 +92,7 @@ Despite this, we can already crudely assess the size and acquisition cost of an 
 
 ::::
 
-In industry, it is more common to measure the inverse parameter, which we call *specific steam consumption*. This consumption indicates the steam flow rate required to supply one $watt$ of useful power. We denote it as ssc:
+In industry, it is more common to measure the inverse parameter, which we call *specific steam consumption*. This consumption indicates the steam flow rate required to supply one *watt* of useful power. We denote it as ssc:
 
 :::{math}
 \mathrm{ssc} \equiv \frac{1}{|w_{\mathrm{net}}|}
@@ -152,20 +115,19 @@ The production of heat in thermodynamic engines is at the heart of the major eco
 
 Thus, apart from a few rarely-available heat sources (geothermal or solar concentration), thermodynamic engines are always powered by sources with major disadvantages. However, they are still the only ones that provide us with abundant energy in mechanical and electrical form, and this abundance is tightly coupled with the economic and societal progress our civilization made in the last two centuries. It is up to responsible engineers and citizens to judiciously assess their flaws and qualities.
 
-**9.3 Components of Steam Power Plants** Before studying the construction of steam thermodynamic cycles, we briefyl review the operation mode of the most common components of power plants.
+(sec-9-3)=
+## 9.3 Components of Steam Power Plants
+
+Before studying the construction of steam thermodynamic cycles, we briefly review the operation mode of the most common components of power plants.
 
 (sec-9-3-1)=
 ### 9.3.1 Calculation of component powers
 
-All steam systems used today operate with a continuous flow rate. Also, in these machines, the changes in the steam’s kinetic and potential energy are small compared to heat and work transfers. We will therefore exclusively use the concepts covered in chapter 3 (*open systems*) and we will be able
+All steam systems used today operate with a continuous flow rate. Also, in these machines, the changes in the steam’s kinetic and potential energy are small compared to heat and work transfers. We will therefore exclusively use the concepts covered in chapter 3 (*open systems*) and we will be able to relate the powers and the thermodynamic state of the steam using the simple equation:
 
-« $^{[...] \mathrm{The} \mathrm{appropriate} \mathrm{load} \mathrm{for} \mathrm{the}}$ production of the *absolute* maximum of useful effect, in expansive machines, is not the maximum load of which the machine is capable. [...] If one desires that the machine set in motion the greatest
-
-(9/2) load it is capable of, it must be made to work without expansion; but this load is not the one that produces the *absolute* maximum of useful effect. »
-
-François-Marie Guyonneau de Pambour, 1839 [[7](#ref-7)]
-
-to relate the powers and the thermodynamic state of the steam using the simple equation:
+:::{aside}
+[...] The appropriate load for the production of the *absolute* maximum of useful effect, in expansive machines, is not the maximum load of which the machine is capable. [...] If one desires that the machine set in motion the greatest load it is capable of, it must be made to work without expansion; but this load is not the one that produces the *absolute* maximum of useful effect. » François-Marie Guyonneau de Pambour, 1839 [[7](#ref-7)]
+:::
 
 :::{math}
 :label: eq-3-15
@@ -177,15 +139,11 @@ for all processes (reversible or not) in a steady-flow open system $(m\dot{} =$ 
 
 From our study of chapter 3, we recall that when the process is reversible, the work $w_{\mathrm{A}\rightarrow \mathrm{B}}$ between two points A and B is expressed as an integral:
 
-B
-
 :::{math}
 :label: eq-3-22
 :enumerator: 3/22
-w_{\mathrm{A}\rightarrow \mathrm{B}}= \int vdp
+w_{\mathrm{A}\rightarrow \mathrm{B}}= \int_{\mathrm{A}}^{\mathrm{B}} vdp
 :::
-
-A
 
 in an open system, and when the process is reversible.
 
@@ -230,7 +188,7 @@ Schematic diagram of a water pump
 :::{figure} ../images/fig-9-2.jpg
 :label: fig-9-2
 :enumerator: 9.2
-:alt: A pump from the manufacturer ksb delivering of water at in a steam power plant. Liquid pumps are usually powered by an electric motor, but t
+:alt: A pump from the manufacturer ksb delivering $2500 t/h$ of water at $350 bar$ in a steam power plant. Liquid pumps are usually powered by an electric motor, but this model is mechanically driven by the turbine and must therefore operate over a wider speed range. Its maximum power is $38 MW$; the power of the driven turbine exceeds $800 MW$.
 
 A pump from the manufacturer ksb delivering $2500 t/h$ of water at $350 bar$ in a steam power plant. Liquid pumps are usually powered by an electric motor, but this model is mechanically driven by the turbine and must therefore operate over a wider speed range. Its maximum power is $38 MW$; the power of the driven turbine exceeds $800 MW$.
 :::
@@ -239,13 +197,11 @@ A pump from the manufacturer ksb delivering $2500 t/h$ of water at $350 bar$ in 
 
 The specific power required to compress a fluid flow from a pressure $p_{\mathrm{A}}$ to a pressure $p_{\mathrm{B}}$, in a reversible process, is expressed from the relation 3/22. Since the specific volume $v_{L}$ of pure saturated liquid water (approximately $v_{L}= 1 \times 10^{-3}m^{3}kg^{-1})$ varies very little with its pressure, we can write:
 
-B
-
 :::{math}
-w_{\mathrm{liquid} \mathrm{pump}}\approx v_{L}\int dp = v_{L}(p_{\mathrm{B}}- p_{\mathrm{A}}) (9/4)
+:label: eq-9-4
+:enumerator: 9/4
+w_{\mathrm{liquid} \mathrm{pump}}\approx v_{L}\int_{\mathrm{A}}^{\mathrm{B}} dp = v_{L}(p_{\mathrm{B}}- p_{\mathrm{A}})
 :::
-
-A
 
 in the case of an approximately reversible pump operating with liquid water.
 
@@ -257,13 +213,15 @@ In a power plant, a pump is fed with a mass flow of $35 kg s^{-1}(77.2 lb/s)$ of
 
 The process can be drawn qualitatively on a temperature-entropy diagram as shown below.
 
+:::{figure} ../images/art-p245-1.jpg
+:alt: Temperature-entropy diagram sketch showing the pumping process as a short, nearly vertical segment from point A to point B at low entropy, far to the left of the saturation dome.
+:::
+
 In Steam Table 3 at $0.05 MPa$ we read the inlet enthalpy $h_{\mathrm{A}}= h_{L0.05 MPa}= 340.5 kJ kg^{-1}$. The specific volume will remain almost constant in the pump, at the value $v_{\mathrm{A}}= v_{L0.05 MPa}= 0.001 03 m^{3}kg^{-1}$.
 
 Using equation 9/4 we calculate$\dot{W}_{\mathrm{pump}}\approx \dot{m} v_{L}(p_{\mathrm{B}}- p_{\mathrm{A}}) = 35 \times 0.001 03(40 \times 10^{5}- 0.5 \times 10^{5}) = +142.4 kW$.
 
-Since the compression is assumed to be isentropic, we could
-
-also start from the fact that $s_{\mathrm{A}}= s_{\mathrm{B}}$ to obtain $h_{\mathrm{B}}$ by interpolation in Steam Table 1 and thus calculate the power of the pump. A calculation of $v_{\mathrm{B}}$ using this method allows us to see that the specific volume varies imperceptibly (less than $0.1 \%)$ during this process.
+Since the compression is assumed to be isentropic, we could also start from the fact that $s_{\mathrm{A}}= s_{\mathrm{B}}$ to obtain $h_{\mathrm{B}}$ by interpolation in Steam Table 1 and thus calculate the power of the pump. A calculation of $v_{\mathrm{B}}$ using this method allows us to see that the specific volume varies imperceptibly (less than $0.1 \%)$ during this process.
 
 Since we have calculated the pump power, we are able to cal-
 
@@ -280,13 +238,7 @@ The wondrous behavior of fluids when they change phase works to our advantage he
 
 Because it operates at high pressure (beyond $60 bar$ in modern power plants) and is the scene of significant heat transfer and temperature gradients, the boiler is an expensive and heavy component (figures 9.3 and 9.4), even though its operating principle is simple.
 
-When the heat in the power plant comes from combustion, the thermal energy of the gases can only be transferred to the water in the circuit when the temperature of the water is lower. Thus, the higher the minimum temperature of the water, and the greater the amount of heat lost above the
-
-:::{math}
-\mathrm{boiler}. \mathrm{The} \mathrm{efficiency} \eta _{\mathrm{boiler}}= \frac{Q_{\mathrm{water}}}{Q_{\mathrm{heat} \mathrm{source}}} \mathrm{of} \mathrm{a} \mathrm{high-performance} \mathrm{gas} \mathrm{boiler} \mathrm{is}
-:::
-
-typically around $80 \%$.
+When the heat in the power plant comes from combustion, the thermal energy of the gases can only be transferred to the water in the circuit when the temperature of the water is lower. Thus, the higher the minimum temperature of the water, and the greater the amount of heat lost above the boiler. The efficiency $\eta _{\mathrm{boiler}}= \frac{Q_{\mathrm{water}}}{Q_{\mathrm{heat} \mathrm{source}}}$ of a high-performance gas boiler is typically around $80 \%$.
 
 Since no work is supplied in the boiler, the power$\dot{Q}_{\mathrm{boiler}}$ supplied to the water by the boiler is expressed as:
 
@@ -308,7 +260,7 @@ The difference in density between the two phases in the boiler makes it difficul
 :::{figure} ../images/fig-9-3.jpg
 :label: fig-9-3
 :enumerator: 9.3
-:alt: Transport of the boiler for a wood power plant capable of withstanding a pressure of .
+:alt: Transport of the boiler for a wood power plant capable of withstanding a pressure of $100 bar$.
 
 Transport of the boiler for a wood power plant capable of withstanding a pressure of $100 bar$.
 :::
@@ -318,7 +270,7 @@ Transport of the boiler for a wood power plant capable of withstanding a pressur
 :::{figure} ../images/fig-9-4.jpg
 :label: fig-9-4
 :enumerator: 9.4
-:alt: Schematic representation of a fire-tube boiler. Water enters in the liquid state on the left and exits at the top right in the form of satur
+:alt: Schematic representation of a fire-tube boiler. Water enters in the liquid state on the left and exits at the top right in the form of saturated steam. In *fire-tube boilers*,thegaspipespassthroughtheheatexchangerfliledwithwater. Inmorerecent *water-tube boilers*, it is the water pipes that pass through the heat exchanger filled withhotgases. Thelattertechniqueisnotdetailedinthisbook,butitsthermodynamic working principle is identical.
 
 Schematic representation of a fire-tube boiler. Water enters in the liquid state on the left and exits at the top right in the form of saturated steam. In *fire-tube boilers*,thegaspipespassthroughtheheatexchangerfliledwithwater. Inmorerecent *water-tube boilers*, it is the water pipes that pass through the heat exchanger filled withhotgases. Thelattertechniqueisnotdetailedinthisbook,butitsthermodynamic working principle is identical.
 :::
@@ -341,10 +293,14 @@ The efficiency of a turbine is measured by comparing its power with that of an i
 where$\dot{W}_{\mathrm{actual} \mathrm{turbine}}$ is the actual power supplied by the turbine, and $W_{\mathrm{isentropic} \mathrm{turbine}}$ is the power of an isentropic turbine operating with the same mass flow rate and between the same pressures.
 
 :::{figure} ../images/art-p247-1.jpg
-:alt: Illustration from the original text
+:label: fig-9-5
+:enumerator: 9.5
+:alt: Turbine of a medium-sized steam power plant. As the water passes through the turbine, it loses energy in the form of work and its specific volume increases, requiring increasingly larger blades.
+
+Turbine of a medium-sized steam power plant. As the water passes through the turbine, it loses energy in the form of work and its specific volume increases, requiring increasingly larger blades.
 :::
 
-Figure9.5: Turbineofamedium-sizedsteampowerplant. Asthewaterpassesthrough the turbine, it loses energy in the form of work and its specific volume increases, requiring increasingly larger blades. *Photo* CC-by-sa man se
+*Photo* CC-by-sa man se
 
 :::{figure} ../images/fig-9-6.jpg
 :label: fig-9-6
@@ -386,7 +342,7 @@ The process can be drawn qualitatively on a temperature-entropy diagram as follo
 ````
 
 :::{figure} ../images/art-p248-1.jpg
-:alt: Illustration from the original text
+:alt: Temperature-entropy diagram sketch showing the isentropic expansion from A to the hypothetical outlet B' on the saturation dome at 0.5 bar, and the actual (irreversible) expansion from A to B, further right of B' at the same pressure.
 :::
 
 ````{prf:example}
@@ -403,9 +359,7 @@ The $15 \%$ of missing power in the mechanical shaft of the turbine
 
 is transferred as heat (through turbulence) to the water during its expansion in the turbine.
 
-The power of the turbine is two hundred times greater than the
-
-power supplied to the pump in example 9.1 on page 245 between these same pressures.
+The power of the turbine is two hundred times greater than the power supplied to the pump in example 9.1 on page 245 between these same pressures.
 
 ````
 
@@ -434,7 +388,7 @@ A condenser in which the heat is dissipated directly into the atmosphere, by for
 
 *Photo* CC-by-sa *Cenk Endustri*
 
-Technologically, the condenser is a simple element: the steam pipeline is simply brought into contact with a low-temperature circuit. Usually, this cooling circuit consists of external water from a river or the sea, which is then itself cooled by evaporation in the large towers seen around power plants. Using a secondary cooling circuit has two benefits. Firstly, the pressure in the condenser can be lowered to a level lower than atmospheric pressure, thereby reducing the minimum temperature of the cycle. Secondly, the water from the thermodynamic cycle, purifeid at considerable efofrt, is not lost to the atmosphere.
+Technologically, the condenser is a simple element: the steam pipeline is simply brought into contact with a low-temperature circuit. Usually, this cooling circuit consists of external water from a river or the sea, which is then itself cooled by evaporation in the large towers seen around power plants. Using a secondary cooling circuit has two benefits. Firstly, the pressure in the condenser can be lowered to a level lower than atmospheric pressure, thereby reducing the minimum temperature of the cycle. Secondly, the water from the thermodynamic cycle, purified at considerable effort, is not lost to the atmosphere.
 
 Since the pressure of the steam inside the condenser is often very low (down to $0.1 bar$ or $0.15 psi)$ so as to reduce the minimum temperature of the power plant cycle, care must be taken to ensure the tightness of the condenser to prevent external air or water from entering the main circuit.
 
@@ -446,10 +400,14 @@ Since the pressure of the steam inside the condenser is often very low (down to 
 ::::
 
 :::{figure} ../images/art-p250-1.jpg
-:alt: Illustration from the original text
+:label: fig-9-9
+:enumerator: 9.9
+:alt: Cooling towers of the Eggborough coal power plant $(1967, 1960 MW)$ in the United Kingdom. In these towers, the heat extracted from the water in the condenser is dissipated into the atmosphere. This cooling is done through a secondary water circuit, which is brought into contact with the atmosphere and partially evaporates.
+
+Cooling towers of the Eggborough coal power plant $(1967, 1960 MW)$ in the United Kingdom. In these towers, the heat extracted from the water in the condenser is dissipated into the atmosphere. This cooling is done through a secondary water circuit, which is brought into contact with the atmosphere and partially evaporates.
 :::
 
-Figure9.9: CoolingtowersoftheEggboroughcoalpowerplant$(1967,1960 MW)$inthe United Kingdom. In these towers, the heat extracted from the water in the condenser is dissipated into the atmosphere. This cooling is done through a secondary water circuit, which is brought into contact with the atmosphere and partially evaporates. *Photo* CC-by-sa *Steve Fareham*
+*Photo* CC-by-sa *Steve Fareham*
 
 The power rejected by the steam in the condenser is expressed as:
 
@@ -457,7 +415,8 @@ The power rejected by the steam in the condenser is expressed as:
 Q_{\mathrm{condenser}}=\dot{m} (h_{2}- h_{1}) (9/8)
 :::
 
-**9.4 Steam Engine Cycles**
+(sec-9-4)=
+## 9.4 Steam Engine Cycles
 
 (sec-9-4-1)=
 ### 9.4.1 The Carnot cycle
@@ -479,7 +438,7 @@ Diagram of a steam power plant operating on a Carnot cycle.
 :::{figure} ../images/fig-9-11.jpg
 :label: fig-9-11
 :enumerator: 9.11
-:alt: Temperature-entropy diagram of a steam power plant operating on a Carnot cycle. The dashed paths represent the real (irreversible) processes
+:alt: Temperature-entropy diagram of a steam power plant operating on a Carnot cycle. The dashed paths represent the real (irreversible) processes of the fluid during compressions and expansions.
 
 Temperature-entropy diagram of a steam power plant operating on a Carnot cycle. The dashed paths represent the real (irreversible) processes of the fluid during compressions and expansions.
 :::
@@ -507,7 +466,7 @@ In 1859, English engineer William Rankine proposed a modification of the cycle b
 :::{figure} ../images/fig-9-12.jpg
 :label: fig-9-12
 :enumerator: 9.12
-:alt: Diagram of a steam power plant operating on a Rankine cycle. The water at the outlet of the condenser is in the form of saturated liquid; it
+:alt: Diagram of a steam power plant operating on a Rankine cycle. The water at the outlet of the condenser is in the form of saturated liquid; it enters the boiler at a lower temperature.
 
 Diagram of a steam power plant operating on a Rankine cycle. The water at the outlet of the condenser is in the form of saturated liquid; it enters the boiler at a lower temperature.
 :::
@@ -532,7 +491,7 @@ Temperature-entropy diagram of a steam power plant operating on a Rankine cycle.
 
 However, in practice, this heat input can make it possible to exploit low-temperature heat sources, such as exhaust gases that were previously discharged above the boiler. Thus, in some cases, the drop in thermodynamic efficiency $(\eta _{\mathrm{engine}})$ can be compensated by an increase in the boiler efficiency $(\eta _{\mathrm{boiler}})$, which can extract more energy from the fuel to transfer it to the steam.
 
-Rankine thus deliberately deviated from the Carnot cycle and, in doing so, reduced the thermodynamic efficiency (although this decrease can often be ofsfet by an increase in boiler efficiency). On the other hand, by eliminating the compressor, his modification greatly reduces the size and complexity of the machine.
+Rankine thus deliberately deviated from the Carnot cycle and, in doing so, reduced the thermodynamic efficiency (although this decrease can often be offset by an increase in boiler efficiency). On the other hand, by eliminating the compressor, his modification greatly reduces the size and complexity of the machine.
 
 (sec-9-4-3)=
 ### 9.4.3 Superheating
@@ -559,7 +518,7 @@ It is this last option that is very often chosen. This modification is called *s
 :::{figure} ../images/fig-9-14.jpg
 :label: fig-9-14
 :enumerator: 9.14
-:alt: Diagram of a steam power plant operating on a superheated Rankine cycle. The water at the outlet of the boiler is heated to a higher tempera
+:alt: Diagram of a steam power plant operating on a superheated Rankine cycle. The water at the outlet of the boiler is heated to a higher temperature (section C $\rightarrow$D) before entering the turbine.
 
 Diagram of a steam power plant operating on a superheated Rankine cycle. The water at the outlet of the boiler is heated to a higher temperature (section C $\rightarrow$D) before entering the turbine.
 :::
@@ -610,7 +569,7 @@ Temperature-entropy diagram of a steam power plant operating on a reheated Ranki
 
 *Diagram* CC-0 *Olivier Cleynen*
 
-With this modification, the expansion in the turbine is interrupted, and the steam is led into a new series of tubes to raise its temperature back to a high level (usually to the metallurgical limits of the turbine). The expansion is then fni ally completed down the condenser pressure.
+With this modification, the expansion in the turbine is interrupted, and the steam is led into a new series of tubes to raise its temperature back to a high level (usually to the metallurgical limits of the turbine). The expansion is then finally completed down the condenser pressure.
 
 Providing that the average heating temperature is increased, the overall efficiency of the power plant is increased too; therefore, the choice of the reheat pressure matters. The specific consumption is reduced in all cases, with the advantages described above.
 
@@ -626,14 +585,12 @@ In the limit case where all the heat used during regeneration is transferred wit
 :::{figure} ../images/fig-9-18.jpg
 :label: fig-9-18
 :enumerator: 9.18
-:alt: Diagram of a steam power plant with regeneration. Heat is extracted from the turbine to heat the liquid water before it enters the boiler. I
+:alt: Diagram of a steam power plant with regeneration. Heat is extracted from the turbine to heat the liquid water before it enters the boiler. Ideally, heat transfer is reversible.
 
-Diagram of a steam power plant with regeneration. Heat is extracted from the turbine to heat the liquid water before it enters the boiler. Ideally, heat
+Diagram of a steam power plant with regeneration. Heat is extracted from the turbine to heat the liquid water before it enters the boiler. Ideally, heat transfer is reversible.
 :::
 
-:::{math}
-transfer is reversible. ^{\mathrm{Diagram} \mathrm{CC-by-sa} \mathrm{Olivier} \mathrm{Cleynen}}
-:::
+*Diagram* CC-by-sa *Olivier Cleynen*
 
 :::{figure} ../images/fig-9-19.jpg
 :label: fig-9-19
@@ -657,10 +614,14 @@ In practice, such a device is difficult to implement, because it requires adding
 In order to implement regeneration, the *turbine bleed* technique is used. Steam is drawn off from the turbine and mixed with the liquid feedwater at the pump outlet (figures 9.20 and 9.21). This results in a heat transfer that is easier to implement.
 
 :::{figure} ../images/art-p258-1.jpg
-:alt: Illustration from the original text
+:label: fig-9-20
+:enumerator: 9.20
+:alt: Diagram of a steam power plant with steam bleed. The steam prematurely extracted from the turbine is used to heat the liquid water during pumping.
+
+Diagram of a steam power plant with steam bleed. The steam prematurely extracted from the turbine is used to heat the liquid water during pumping.
 :::
 
-Figure9.20: Diagramofasteampowerplantwithsteambleed. Thesteamprematurely extracted from the turbine is used to heat the liquid water during pumping. *Diagram* CC-by-sa *Olivier Cleynen*
+*Diagram* CC-by-sa *Olivier Cleynen*
 
 :::{figure} ../images/fig-9-21.jpg
 :label: fig-9-21
@@ -679,224 +640,75 @@ In practice, many bleeds (sometimes called *steam extractions*) are performed in
 :::{figure} ../images/fig-9-22.jpg
 :label: fig-9-22
 :enumerator: 9.22
-:alt: A steam power plant circuit combining superheating, reheat, regeneration, and discharge ducts. It is left to the curious student the pleasur
+:alt: A steam power plant circuit combining superheating, reheat, regeneration, and discharge ducts. It is left to the curious student the pleasure of tracing the processes on a
 
 A steam power plant circuit combining superheating, reheat, regeneration, and discharge ducts. It is left to the curious student the pleasure of tracing the processes on a
 :::
 
 temperature-entropy diagram, and imagining themselves at the controls of the machine supplying their coffee maker with electricity.
 
-::::{admonition} A Bit of History
-:class: note
+(sec-9-5)=
+## 9.5 A Bit of History: From the Steam Turbine to the Gas Turbine
 
-*Engineering Thermodynamics* by Olivier Cleynen
+In the realm of air-based engines, the situation was quite different: until the late 1930s, all engines were piston-cylinder based. Piston technology peaked in the aeronautical sector, where cylinders were arranged in a star pattern behind the propellers to reduce bulkiness and vibrations. In these machines, such as the *Twin Wasp* by Pratt & Whitney, the mechanical arrangement of cylinders, connecting rods, and crankshafts was absolutely phenomenal (figure 9.24), and the intake and exhaust systems going to and back from dozens of combustion chambers were labyrinthine. Two engineers, the German Hans von Ohain and the English Frank Whittle, independently dedicated themselves to the design of a gas turbine engine in order to break free from this complexity.
 
-::::
+:::{figure} ../images/art-p260-1.jpg
+:label: fig-9-24
+:enumerator: 9.24
+:alt: Cross-section of a Pratt & Whitney Twin Wasp engine (1932), showing the internal arrangement with connecting rods and crankshafts connecting the two rows of seven pistons arranged in a star pattern.
 
-::::{admonition} A Bit of History:
-:class: note
-:label: hist-9-11
-
-going to and back from dozens of combustion cham-
-
-bers were labyrinthine. Two engineers, the German
-
-From the Steam Turbine Hans von Ohain and the English Frank Whittle, independently dedicated themselves to the design of
-
-to the Gas Turbine a gas turbine engine in order to break free from this
-
-:::{math}
-\* ^{\mathrm{complexity}.}
+Cross-section of a *Pratt & Whitney Twin Wasp* engine (1932), showing the internal arrangement with connecting rods and crankshafts connecting the two rows of seven pistons arranged in a star pattern. The engine, with a displacement of $30 L$, produced over $1000 hp$ and was produced in over $170 000$ units.
 :::
 
-At the beginning of the 20th century, the *turbine* replaced pistons and cylinders in all steam engines. A turbine has a complex geometry, sensitive to manufacturing imperfections, making its construction more delicate than that of cylindrical pistons. In return, it makes for an engine with simple arrangement, little vibration, and with easier assembly, maintenance, and lubrication, allowing for increased power or reduced volume. The AngloIrish engineer Charles Parsons dramatically demonstrated this in 1897 with the *Turbinia* (figure 9.23), the first ship of its kind, which was so fast that no military vessel could catch up with it. Ten years later, the entire Royal Navy had switched to turbines for ship propulsion. $_{\mathrm{Figure}9.24: \mathrm{Cross-sectionofaPratt} \& \mathrm{Whitney} \mathrm{Twin} \mathrm{Wasp}}$ engine (1932), showing the internal arrangement with connecting rods and crankshafts connecting the two rows of seven pistons arranged in a star pattern. The engine, with a displacement of $30 L$, produced over $1000 hp$ and was produced in over $170 000$ units. *Photo* CC-by-sa *Olivier Cleynen*
+*Photo* CC-by-sa *Olivier Cleynen*
 
-Developing a gas turbine engine is much more challenging than for steam. Certainly, air (or burnt gases) and dry steam have very similar properties: thus a steam turbine works very well with compressed air. The difficulty lies at the other end of the engine. In steam engines, compressing water is done in the liquid state, which is very efficient. Compressing water at $10^{\circ}C$ from $1$ to $10 bar$, for exam-
-
-::::
+At the beginning of the 20th century, the *turbine* replaced pistons and cylinders in all steam engines. A turbine has a complex geometry, sensitive to manufacturing imperfections, making its construction more delicate than that of cylindrical pistons. In return, it makes for an engine with simple arrangement, little vibration, and with easier assembly, maintenance, and lubrication, allowing for increased power or reduced volume. The Anglo-Irish engineer Charles Parsons dramatically demonstrated this in 1897 with the *Turbinia* (figure 9.23), the first ship of its kind, which was so fast that no military vessel could catch up with it. Ten years later, the entire Royal Navy had switched to turbines for ship propulsion.
 
 :::{figure} ../images/fig-9-23.jpg
 :label: fig-9-23
 :enumerator: 9.23
-:alt: The Turbinia, Charles Parsons’ yacht used
+:alt: The Turbinia, Charles Parsons' yacht used as a demonstrator for his research in maritime propulsion. With its three steam turbines and nine propellers, it reached 60 km/h and allowed its owner to ridicule the Royal Navy during Queen Victoria's jubilee parade in 1897.
 
-The *Turbinia*, Charles Parsons’ yacht used
-:::
-
-::::{admonition} ple, only requires $w_{\mathrm{A}\rightarrow \mathrm{B}}\approx v_{L}(p_{\mathrm{B}}-p_{\mathrm{A}}) = 0.001(10-$
-:class: note
-:label: hist-9-12
-
-:::{math}
-ple, only requires w_{\mathrm{A}\rightarrow \mathrm{B}}\approx v_{L}(p_{\mathrm{B}}-p_{\mathrm{A}}) = 0.001(10-
-:::
-
-as a demonstrator for his research in maritime propulsion. With its three steam turbines and nine propellers, $1) \times 10^{5}= 900 J kg^{-1}$ (9/4). In contrast, doing the it reached $60 km/h$ and allowed its owner to ridicule the same with air requires a minimum specific power
-
-:::{math}
-\frac{\gamma -1}{}
-:::
-
-Royal Navy during Queen Victoria’s jubilee parade in
-
-:::{math}
-of w_{\mathrm{A}\rightarrow \mathrm{B}}= c_{p}\Delta T = c_{p}(T_{\mathrm{A}}(p_{\mathrm{B}}/p_{\mathrm{A}}) ^{\gamma}- T_{\mathrm{A}}) =
-:::
-
-1897.
-
-:::{math}
-\frac{0.4}{}
-:::
-
-:::{math}
-1005 (283.15 (10)^{1.4}- 283.15) = 265 kJ kg^{-1} (4/34
+The *Turbinia*, Charles Parsons' yacht used as a demonstrator for his research in maritime propulsion. With its three steam turbines and nine propellers, it reached $60 km/h$ and allowed its owner to ridicule the Royal Navy during Queen Victoria's jubilee parade in 1897.
 :::
 
 *Photo by Alfred John West, 1897 (public domain)*
 
-In the realm of air-based engines, the situation was & 4/37), almost three hundred times more! quite different: until the late 1930s, all engines were We saw in §9.4.2 that using liquid compression is
+Developing a gas turbine engine is much more challenging than for steam. Certainly, air (or burnt gases) and dry steam have very similar properties: thus a steam turbine works very well with compressed air. The difficulty lies at the other end of the engine. In steam engines, compressing water is done in the liquid state, which is very efficient. Compressing water at $10^{\circ}C$ from $1$ to $10 bar$, for example, only requires, using [equation 9/4](#eq-9-4):
 
-piston-cylinder based. Piston technology peaked not without consequences – it must be compensated
+:::{math}
+w_{\mathrm{A}\rightarrow \mathrm{B}}\approx v_{L}(p_{\mathrm{B}}-p_{\mathrm{A}}) = 0.001(10-1) \times 10^{5}= 900 J kg^{-1}
+:::
 
-in the aeronautical sector, where cylinders were arby greater power at the boiler and reduces the ther-
+In contrast, doing the same with air requires a minimum specific power of
 
-ranged in a star pattern behind the propellers to modynamic efficiency – but it greatly facilitates the
+:::{math}
+w_{\mathrm{A}\rightarrow \mathrm{B}}= c_{p}\Delta T = c_{p}(T_{\mathrm{A}}(p_{\mathrm{B}}/p_{\mathrm{A}}) ^{\frac{\gamma -1}{\gamma}}- T_{\mathrm{A}}) = 1005 (283.15 (10)^{\frac{0.4}{1.4}}- 283.15) = 265 kJ kg^{-1}
+:::
 
-reduce bulkiness and vibrations. In these machines, development of the engine. Since almost all of the
+(4/34 & 4/37), almost three hundred times more!
 
-such as the *Twin Wasp* by Pratt & Whitney, the net power of the engine comes from the turbine,
+We saw in §9.4.2 that using liquid compression is not without consequences – it must be compensated by greater power at the boiler and reduces the thermodynamic efficiency – but it greatly facilitates the development of the engine. Since almost all of the net power of the engine comes from the turbine, a highly irreversible or incomplete expansion only affects the power and efficiency of the engine. In a gas turbomachine, on the other hand, the turbine also powers the compressor: it plays a dual role. For as long as it does not supply enough power to match that of the compressor, the engine will not run at all. The isentropic efficiency of the turbine and compressor thus become paramount parameters (we will revisit this in §10.2.2 with the concept of *work ratio*) and it follows that the development of a gas turbomachine is an ambitious undertaking.
 
-mechanical arrangement of cylinders, connecting a highly irreversible or incomplete expansion only
-
-rods, and crankshafts was absolutely phenomenal affects the power and efficiency of the engine. In a
-
-(figure 9.24), and the intake and exhaust systems gas turbomachine, on the other hand, the turbine 262 [Chapter 9](#ch-9)
-
-also powers the compressor: it plays a dual role. For as long as it does not supply enough power to match that of the compressor, the engine will not run at all. The isentropic efficiency of the turbine and compressor thus become paramount parameters (we will revisit this in §10.2.2 with the concept of *work ratio*) and it follows that the development of a gas turbomachine is an ambitious undertaking.
-
-Both Whittle and von Ohain focused their efofrts on an ingenious aeronautical engine called *turbojet*: it is the exhaust gases, in large quantities and with high residual pressure, that would provide the engine’s thrust (§10.5.3). The operating principle is very simple (the air flows in a steady state and there is only one moving part) but the challenges were numerous. Like an aircraft wing, the compressor blades tend to stall at low power and during transient phases, causing abrupt and destructive flow changes. In the combustion chambers, it is necessary to prevent the flame from impinging on the walls (which would cause them to melt) or from extending, especially during ignition or reignition, into the turbine. Weight constraints require the use of lightweight materials which complicate manufacturing. The two engineers carried out their work in the heart of the Second World War, each funded by military budgets, and the first jet aircraft felw in 1940. The subsequent production aircraft were delicate to operate, unresponsive, and their service life barely reached 20 hours. They arrived too late and in insufficient numbers to affect the course of the conflict.
-
-::::
+Both Whittle and von Ohain focused their efforts on an ingenious aeronautical engine called *turbojet*: it is the exhaust gases, in large quantities and with high residual pressure, that would provide the engine's thrust (§10.5.3). The operating principle is very simple (the air flows in a steady state and there is only one moving part) but the challenges were numerous. Like an aircraft wing, the compressor blades tend to stall at low power and during transient phases, causing abrupt and destructive flow changes. In the combustion chambers, it is necessary to prevent the flame from impinging on the walls (which would cause them to melt) or from extending, especially during ignition or reignition, into the turbine. Weight constraints require the use of lightweight materials which complicate manufacturing. The two engineers carried out their work in the heart of the Second World War, each funded by military budgets, and the first jet aircraft flew in 1940. The subsequent production aircraft were delicate to operate, unresponsive, and their service life barely reached 20 hours. They arrived too late and in insufficient numbers to affect the course of the conflict.
 
 :::{figure} ../images/fig-9-25.jpg
 :label: fig-9-25
 :enumerator: 9.25
-:alt: Cross-sectional diagram of the Heinkel He S-1, the first prototype tested by Hans von Ohain in 1937. The compressor consists of an axial sta
+:alt: Cross-sectional diagram of the Heinkel He S-1, the first prototype tested by Hans von Ohain in 1937. The compressor consists of an axial stage and a centrifugal stage; the turbine is centripetal. There is only one moving part and its speed is invariant.
 
 Cross-sectional diagram of the *Heinkel He S-1*, the first prototype tested by Hans von Ohain in 1937. The compressor consists of an axial stage and a centrifugal stage; the turbine is centripetal. There is only one moving part and its speed is invariant.
 :::
 
-::::{admonition} *Diagram USAF (public domain)*
-:class: note
-:label: hist-9-13
+*Diagram USAF (public domain)*
 
-::::
+At the end of the war, there was a surge of enthusiasm: aviation embraced the engine it had been waiting for over three decades. To understand why the jet engine became the Holy Grail of 20th century aeronautics, a bit of flight mechanics is needed. In subsonic flight, a well-designed aircraft has a *drag coefficient* $C_{D}\equiv F_{D}\div (\frac{1}{2} A_{\mathrm{ref}.}\rho C_{\mathrm{flight}}^{2})$ that is almost constant. Thus, when reducing the reference area $A_{\mathrm{ref}.}$ of the wing surface and the ambient density $\rho$ (by gaining altitude), the flight speed $C_{\mathrm{flight}}$ can be increased *while keeping the drag* $F_{D}$ *constant*. The energy cost of moving the aircraft remains constant – however, the required power $\dot{W}_{\mathrm{engine}}= F_{x}C_{\mathrm{flight}}$ increases proportionally to the speed. These characteristics make aircraft relatively energy-efficient machines, but very power-hungry, since they need to maintain the same thrust at very high speeds.
 
-::::{admonition} A Bit of History
-:class: note
+The jet engine had two advantages to address this issue. Firstly, it was compact, lightweight, and vibration-free, which is highly desirable for an application where drag (and thus the thrust to be provided) increases proportionally with the weight of the aircraft. Secondly, the propeller, which is very efficient at low speeds but whose tips reach supersonic speeds early, thus limiting the speed of aircraft, was completely eliminated. Because of these qualities, the low efficiencies due to irreversible compressions and expansions, low pressure ratios, and excessively high gas speeds in the nozzles were acceptable.
 
-*Engineering Thermodynamics* by Olivier Cleynen
+Thus, the graceful Lockheed *Constellation*, the culmination of the era of propeller aviation, was instantly rendered obsolete by the arrival of the much faster De Havilland *Comet* in 1949, a remarkable quad-jet of the same size (figure 9.26). Even though it was initially unable to cover the same distance and it featured higher fuel consumption per kilometer, the *Comet* left no chance for its competitors. Its speed was an obvious quality for passengers, but also for the airlines, significantly increasing their productivity.
 
-::::
-
-At the end of the war, there was a surge of enthu-
-
-siasm: aviation embraced the engine it had been
-
-waiting for over three decades. To understand why
-
-the jet engine became the Holy Grail of 20th century
-
-aeronautics, a bit of filght mechanics is needed. In
-
-subsonic flight, a well-designed aircraft has a *drag*
-
-*coefficient* $C_{D}\equiv F_{D}\div (\frac{1}{2} A_{\mathrm{ref}.}\rho C_{\mathrm{f}}^{2}_{\mathrm{ilght}})$ that is almost
-
-constant. Thus, when reducing the reference area
-
-$A_{\mathrm{ref}.}$ of the wing surface and the ambient density $\rho$
-
-(by gaining altitude), the filght speed $C_{\mathrm{flight}}$ can be
-
-increased *while keeping the drag* $F_{D}$ *constant*. The
-
-energy cost of moving the aircraft remains constant
-
-– however, the required power$\dot{W}_{\mathrm{engine}}= F_{x}C_{\mathrm{flight}}$
-
-increases proportionally to the speed. These char-
-
-acteristics make aircraft relatively energy-efficient
-
-machines, but very power-hungry, since they need
-
-to maintain the same thrust at very high speeds.
-
-The jet engine had two advantages to address this
-
-issue. Firstly, it was compact, lightweight, and
-
-vibration-free, which is highly desirable for an ap-
-
-plication where drag (and thus the thrust to be pro-
-
-vided) increases proportionally with the weight of
-
-the aircraft. Secondly, the propeller, which is very
-
-efficient at low speeds but with whose tips reach su-
-
-personic speeds early, thus limiting the speed of air-
-
-craft, was completely eliminated. Because of these
-
-qualities, the low efficiencies due to irreversible
-
-compressions and expansions, low pressure ratios,
-
-and excessively high gas speeds in the nozzles were
-
-acceptable.
-
-Thus, the graceful Lockheed *Constellation*, the cul-
-
-mination of the era of propeller aviation, was in-
-
-stantly rendered obsolete by the arrival of the much
-
-faster De Havilland *Comet* in 1949, a remarkable
-
-quad-jet of the same size (figure 9.26). Even though
-
-it was initially unable to cover the same distance
-
-and it featured higher fuel consumption per kilome-
-
-ter, the *Comet* left no chance for its competitors. Its
-
-speed was an obvious quality for passengers, but
-
-also for the airlines, significantly increasing their
-
-productivity.
-
-The *Comet*, after a serious design flaw was cor-
-
-rected, was itself surpassed by the Boeing *707* in
-
-1957. Capable of flying further while carrying more
-
-payload, and even faster (at $900 km/h$, the speed
-
-that all airliners have adopted since, the air on the
-
-wing’s upper surface barely reaches the speed of
-
-sound), the *707* marked the entry into the *jet age*,
-
-where airliners were no longer built by dozens but
+The *Comet*, after a serious design flaw was corrected, was itself surpassed by the Boeing *707* in 1957. Capable of flying further while carrying more payload, and even faster (at $900 km/h$, the speed that all airliners have adopted since, the air on the wing's upper surface barely reaches the speed of sound), the *707* marked the entry into the *jet age*, where airliners were no longer built by dozens but
 
 sides. The rudder, precise. “V1.” Another 20 knots to reach before the machine can fly. I can see end of the runway coming up, over there ahead. “Rotate.” At 170 knots, I pull gently, then more firmly. Five degrees of pitch. Ten degrees. It’s no longer rolling, the needle is at 185 knots. Twelve-degree pitch. Come on, my dear, we must climb. “Positive climb.” “Landing gear up.” The truth lies tonight between twelve and thirteen degrees of pitch, where the airspeed indicator needle comes to a standstill. We pass the hill, and three hundred feet below, the *747* fyl ing by must feel like an earthquake.
 
@@ -904,29 +716,29 @@ Jacques Darolles, 1998
 
 *Le plus beau bureau du monde* [[42](#ref-42)]
 
-Nearly sixty years after the first flight of the *707*, airliners still fyl at the same speed, but jet engine technology has continued to advance [[47](#ref-47)]. With their carbon-epoxy or blown titanium fan blades, turbine stators printed in ceramics, their multiple laser-drilled pneumatic turbine cooling circuits, their electronic control, diagnostic and remote monitoring systems, they slowly but surely continue to increase in efficiency. Reliability is also remarkable: a modern engine on average only experiences an in-filght failure every $200 000$ flight hours, and is
+Nearly sixty years after the first flight of the *707*, airliners still fly at the same speed, but jet engine technology has continued to advance [[47](#ref-47)]. With their carbon-epoxy or blown titanium fan blades, turbine stators printed in ceramics, their multiple laser-drilled pneumatic turbine cooling circuits, their electronic control, diagnostic and remote monitoring systems, they slowly but surely continue to increase in efficiency. Reliability is also remarkable: a modern engine on average only experiences an in-flight failure every $200 000$ flight hours, and is separated from the aircraft for maintenance only every $20 000$ hours or $10 000$ flights. Will a new type of engine ever render the jet engine obsolete and propel aviation forward into a new era?
+
+:::{aside}
+[...] sides. The rudder, precise. “V1.” Another 20 knots to reach before the machine can fly. I can see end of the runway coming up, over there ahead. “Rotate.” At 170 knots, I pull gently, then more firmly. Five degrees of pitch. Ten degrees. It's no longer rolling, the needle is at 185 knots. Twelve-degree pitch. Come on, my dear, we must climb. “Positive climb.” “Landing gear up.” The truth lies tonight between twelve and thirteen degrees of pitch, where the airspeed indicator needle comes to a standstill. We pass the hill, and three hundred feet below, the *747* flying by must feel like an earthquake.
+
+Jacques Darolles, 1998, *Le plus beau bureau du monde* [[42](#ref-42)]
+
+“Ready?” “Takeoff, time!” The flight engineer pushes the throttle levers with me. NNggnniiiaavvrrooooooaaaaaaarrrrooouuummmmm... “N1s green.” It's pushing hard, but accelerates ever so gently, given the weight of the behemoth. “Eighty knots” “Thrust set.” I have the tips of my feet on the rudder pedals, a precision similar to a kickboxing move. I'm enjoying every bit of it. 120 knots. I'm in control, guys. 432 passengers and 15 crew members are strapped in the back, ears and senses alert. 140 knots. Two bursts of light beacons pass by on the
+:::
 
 :::{figure} ../images/fig-9-26.png
 :label: fig-9-26
 :enumerator: 9.26
-:alt: From top to bottom
+:alt: From top to bottom, the 1943 Lockheed Constellation, the 1949 De Havilland Comet, and the 1957 Boeing 707.
 
-From top to bottom:
+From top to bottom: The 1943 Lockheed *Constellation*, the culmination of the propeller aircraft era: four Wright *Duplex-Cyclone* supercharged 18-cylinder engines, capable of covering $3700 km (2300 mi)$ at $500 km/h (310 mph)$. The 1949 De Havilland *Comet*, the first jet airliner: four Halford *Ghost* turbojet engines, capable of covering $2400 km (1500 mi)$ at $740 km/h (460 mph)$. The 1957 Boeing *707*, with a configuration and performances anticipating those of all its successors: four Pratt & Whitney *JT3C* turbojet engines, capable of covering $4300 km (2700 mi)$ at $900 km/h (560 mph)$.
 :::
 
-The 1943 Lockheed *Constellation*, the culmination of the propeller aircraft era: four Wright *Duplex-Cyclone* super- separated from the aircraft for maintenance only charged 18-cylinder engines, capable of covering $3700 km$ every $20 000$ hours or $10 000$ filghts. Will a new type
-
-$(2300 mi)$ at $500 km/h (310 mph)$. of engine ever render the jet engine obsolete and
-
-The 1949 De Havilland *Comet*, the first jet airliner: four propel aviation forward into a new era?
-
-Halford *Ghost* turbojet engines, capable of covering $2400 km (1500 mi)$ at $740 km/h (460 mph)$. The 1957 Boeing *707*, with a configuration and performances anticipating those of all its successors: four Pratt & Whitney *JT3C* turbojet engines, capable of covering $4300 km (2700 mi)$ at $900 km/h (560 mph)$. *Constellation Photo* CC-by-sa *by Bill Larkins*
+*Constellation Photo* CC-by-sa *by Bill Larkins*
 
 *Comet Photo and 707 (edited)* CC-by-sa *by Piergiuliano Chesi*
 
 by thousands. Thus, in just twenty-five years, the gas turbine engine doubled the speed of aircraft and divided the price of tickets by four.
-
-“Ready?” “Takeof,f time!” The filght engineer pushes the throttle levers with me. NNggnniiiaavvrrooooooaaaaaaarrrrooouuummmmm... “N1s green.” It’s pushing hard, but accelerates ever so gently, given the weight of the behemoth. “Eighty knots” “Thrust set.” I have the tips of my feet on the rudder pedals, a precision similar to a kickboxing move. I’m enjoying every bit of it. 120 knots. I’m in control, guys. 432 passengers and 15 crew members are strapped in the back, ears and senses alert. 140 knots. Two bursts of light beacons pass by on the
 
 Problems
 
@@ -941,7 +753,7 @@ $c_{v (\mathrm{air})}= 718Jkg^{-1}K^{-1} R_{\mathrm{air}}= 287Jkg^{-1}K^{-1}$
 $c_{p (\mathrm{air})}= 1005Jkg^{-1}K^{-1} \gamma _{\mathrm{air}}= 1.4$
 
 :::{figure} ../images/art-p263-1.svg
-:alt: Illustration from the original text
+:alt: Decorative typographic ornament marking the start of the end-of-chapter Problems section, in the same vector-artwork style as the chapter title page.
 :::
 
 ```{exercise}
@@ -994,16 +806,33 @@ $c_{p (\mathrm{air})}= 1005Jkg^{-1}K^{-1} \gamma _{\mathrm{air}}= 1.4$
 :label: prob-9-3
 :enumerator: 9.3
 
-**Cycle with regeneration In a polar icebreaker ship (figure 9.28), the propellers are driven by a steam system, itself powered by a nuclear reactor. The cycle is based on a superheated Rankine cycle between pressures of $30$ and $0.5 bar$. The steam, heated by a secondary pressurized water system that passes through the reactor, reaches $310^{\circ}C (590 ^{\circ} F)$. Forthesakeofnotoverloadingthisproblem, weconsider that the turbine is isentropic and perfectly insulated. 1. What is the thermal efficiency of the power plant? 2. We define the specific steam consumption as the inverse of the net power of the power plant: it is the mass of steam that has passed through the turbine when the power plant has generated $1 kWh$ of work. What is the specific consumption of the power plant? *Photo* CC-by-sa *by Commons User:Kiselev d* An engineer proposes to modify the cycle and make it regenerative by extracting steam from the turbine to insert it into the compression circuit. S/he suggests separating the compression into two stages, one from $0.5 bar$ to $6 bar$, and the second from $6 bar$ to $30 bar$; and then inserting the extracted steam into the feedwater between the two pumps. The steam extraction rate is such that the water at the outlet of the mixer is exactly at the saturation point. 1. Make a sketch of the proposed setup (that is, the physical circuit followed by the steam). 2. Draw the cycle qualitatively (that is, without showing numerical values) on a temperature-entropy diagram, showing the saturation curve. 3. What percentage of the turbine steam flow rate would need to be extracted at $6 bar$ in order to heat the water to saturation between the two pumps? 4. Does the shaft power increase or decrease, and by how much? 5. Does the efficiency of the power plant increase or decrease, and by how much?**
+**Cycle with regeneration In a polar icebreaker ship (figure 9.28), the propellers are driven by a steam system, itself powered by a nuclear reactor. The cycle is based on a superheated Rankine cycle between pressures of $30$ and $0.5 bar$. The steam, heated by a secondary pressurized water system that passes through the reactor, reaches $310^{\circ}C (590 ^{\circ} F)$. Forthesakeofnotoverloadingthisproblem, weconsider that the turbine is isentropic and perfectly insulated. 1. What is the thermal efficiency of the power plant? 2. We define the specific steam consumption as the inverse of the net power of the power plant: it is the mass of steam that has passed through the turbine when the power plant has generated $1 kWh$ of work. What is the specific consumption of the power plant?**
 
 :::{admonition} Answer
 :class: dropdown
 
-The *50 Let Podeby* actually operates be- tween $29 a$nd $0.75 bar$, but these values that are not tabulated in the steam tables for this book. 1) Using the diagram from figures 9.14 and 9.15 on page 256, $h_{\mathrm{A}}= 340.5 kJ kg^{-1}, h_{\mathrm{B}}= 343.54 kJ kg^{-1}$, $h_{\mathrm{D}}= 3017.4 kJ kg^{-1}, h_{\mathrm{E}}= 2284.5 kJ kg^{-1}$, thus $\eta _{\mathrm{thermal}}= 27.294 \%$; 2) ssc $= 4.93 kg/(kW h)$; 3) See figure 9.20 p. 259; 4) See figure 9.21 p. 259; 5) $h_{\mathrm{bleed}}= 2673.9 kJ kg^{-1}, h_{\mathrm{pre-mix}}= 341.1 kJ kg^{-1}$, $h_{\mathrm{post-mix}}= 670.4 kJ kg^{-1}$: thus the proportion needed to saturate the water after mixing is $z = 14.1 \%$; 6) $w_{\mathrm{net} 2}= -674.87 kJ kg^{-1}(-9.2 \%$: a tragedy!); 7) $q_{\mathrm{boiler}}= 2344.4 kJ kg^{-1}$, thus $\eta _{\mathrm{thermal} 2}= 28.786 \% (+1.49 pt$: is it really desirable in this application?).
-*Engineering Thermodynamics* by Olivier Cleynen
+The *50 Let Podeby* actually operates between $29$ and $0.75 bar$, but these values that are not tabulated in the steam tables for this book. 1) Using the diagram from figures 9.14 and 9.15 on page 256, $h_{\mathrm{A}}= 340.5 kJ kg^{-1}, h_{\mathrm{B}}= 343.54 kJ kg^{-1}$, $h_{\mathrm{D}}= 3017.4 kJ kg^{-1}, h_{\mathrm{E}}= 2284.5 kJ kg^{-1}$, thus $\eta _{\mathrm{thermal}}= 27.294 \%$; 2) ssc $= 4.93 kg/(kW h)$.
 
 :::
 ```
+
+*Photo* CC-by-sa *by Commons User:Kiselev d*
+
+```{exercise}
+:label: prob-9-4
+:enumerator: 9.4
+
+**An engineer proposes to modify the cycle [of problem 9.3] and make it regenerative by extracting steam from the turbine to insert it into the compression circuit. S/he suggests separating the compression into two stages, one from $0.5 bar$ to $6 bar$, and the second from $6 bar$ to $30 bar$; and then inserting the extracted steam into the feedwater between the two pumps. The steam extraction rate is such that the water at the outlet of the mixer is exactly at the saturation point. 1. Make a sketch of the proposed setup (that is, the physical circuit followed by the steam). 2. Draw the cycle qualitatively (that is, without showing numerical values) on a temperature-entropy diagram, showing the saturation curve. 3. What percentage of the turbine steam flow rate would need to be extracted at $6 bar$ in order to heat the water to saturation between the two pumps? 4. Does the shaft power increase or decrease, and by how much? 5. Does the efficiency of the power plant increase or decrease, and by how much?**
+
+:::{admonition} Answer
+:class: dropdown
+
+3) See figure 9.20 p. 259; 4) See figure 9.21 p. 259; 5) $h_{\mathrm{bleed}}= 2673.9 kJ kg^{-1}, h_{\mathrm{pre-mix}}= 341.1 kJ kg^{-1}$, $h_{\mathrm{post-mix}}= 670.4 kJ kg^{-1}$: thus the proportion needed to saturate the water after mixing is $z = 14.1 \%$; 6) $w_{\mathrm{net} 2}= -674.87 kJ kg^{-1}(-9.2 \%$: a tragedy!); 7) $q_{\mathrm{boiler}}= 2344.4 kJ kg^{-1}$, thus $\eta _{\mathrm{thermal} 2}= 28.786 \% (+1.49 pt$: is it really desirable in this application?).
+
+:::
+```
+
+*Engineering Thermodynamics* by Olivier Cleynen
 
    :::{figure} ../images/fig-9-28.jpg
    :label: fig-9-28

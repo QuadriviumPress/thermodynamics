@@ -16,6 +16,11 @@ Liquids and Vapors
 :alt: Illustration from the original text
 :::
 
+:::{admonition} Executive summary
+:class: tip
+Water generally follows the same trends as an ideal gas, but when it condenses or evaporates, its properties change abruptly. They cannot be calculated like those of an ideal gas: they must be tabulated.
+:::
+
 ## Introduction
 
 This chapter 5 has exactly the same objectives as chapter 4 (*the ideal gas*), but
@@ -34,7 +39,8 @@ This chapter is incompatible with chapter 4 (*the ideal gas*) and we must forget
 
 everything that was learned there.
 
-**5.1 Evaporation and Condensation**
+(sec-5-1)=
+## 5.1 Evaporation and Condensation
 
 (sec-5-1-1)=
 ### 5.1.1 What is a liquid?
@@ -45,29 +51,25 @@ In concrete terms, a liquid is obtained from a gas by slowing down and bringing 
 
 Compared to gases, liquids have two important differences:
 
-• They are practically *incompressible*, meaning that their specific volume $v$ varies very little when they are compressed;$^{1}$
+• They are practically *incompressible*, meaning that their specific volume $v$ varies very little when they are compressed;[^1]
 
-• They are subject to the efefcts of surface tension, which delights aesthetes and fluid mechanicists (figure 5.1), but is inconsequential in thermodynamics.
+• They are subject to the effects of surface tension, which delights aesthetes and fluid mechanicists (figure 5.1), but is inconsequential in thermodynamics.
 
 :::{figure} ../images/fig-5-1.jpg
 :label: fig-5-1
 :enumerator: 5.1
-:alt: Surface tension gives liquids fascinating visual properties but has no consequence in thermodynamics. For us, it is the “same water” whether
+:alt: Surface tension gives liquids fascinating visual properties but has no consequence in thermodynamics. For us, it is the “same water” whether in the gaseous or liquid state.
 
 Surface tension gives liquids fascinating visual properties but has no consequence in thermodynamics. For us, it is the “same water” whether in the gaseous or liquid state.
 :::
 
-$^{1}$The term *incompressible*, a true false friend for the student, does *not* mean that
+[^1]: The term *incompressible*, a true false friend for the student, does *not* mean that the pressure is constant or uniform. It merely means that the specific volume $v$, and thus with it the density $\rho$, remains constant.
 
-the pressure is constant or uniform. It merely means that the specific volume $v$, and thus with it the density $\rho$, remains constant.
-
-« $^{\mathrm{The} \mathrm{steam} \mathrm{here} \mathrm{is} \mathrm{merely} \mathrm{a}}$ means of transporting the caloric; it serves the same function as in the heating of baths by steam, except that in the case which we are considering, its movement is made useful. »
-
-Sadi Carnot, 1824
-
-*Refelctions on the Motive Power of Fire and on Machines Fitted to Develop that Power* [[4](#ref-4)]
+:::{aside}
+The steam here is merely a means of transporting the caloric; it serves the same function as in the heating of baths by steam, except that in the case which we are considering, its movement is made useful. Sadi Carnot, 1824 *Reflections on the Motive Power of Fire and on Machines Fitted to Develop that Power* [[4](#ref-4)]
 
 *Photo* CC-by *by Commons User:Fcb981*
+:::
 
 (sec-5-1-2)=
 ### 5.1.2 Phase changes
@@ -97,7 +99,7 @@ This simplistic model is a good initial approach to describe the phenomenon of c
 around 10^{16} molecules.
 :::
 
-Any gas can thus be liquefeid by cooling it and reducing its volume. The temperature and pressure required for liquefaction depend on the size and
+Any gas can thus be liquefied by cooling it and reducing its volume. The temperature and pressure required for liquefaction depend on the size and
 
 ::::{admonition} A Bit of History
 :class: note
@@ -109,7 +111,7 @@ Any gas can thus be liquefeid by cooling it and reducing its volume. The tempera
 :::{figure} ../images/fig-5-2.jpg
 :label: fig-5-2
 :enumerator: 5.2
-:alt: Two magnetized billiard balls colliding without friction at high speed. The mutual attractive force alters the trajectory and behavior of th
+:alt: Two magnetized billiard balls colliding without friction at high speed. The mutual attractive force alters the trajectory and behavior of the two balls, but only for a brief moment and over a short distance.
 
 Two magnetized billiard balls colliding without friction at high speed. The mutual attractive force alters the trajectory and behavior of the two balls, but only for a brief moment and over a short distance.
 :::
@@ -119,7 +121,7 @@ Two magnetized billiard balls colliding without friction at high speed. The mutu
 :::{figure} ../images/fig-5-3.jpg
 :label: fig-5-3
 :enumerator: 5.3
-:alt: Two magnetized billiard balls colliding without friction at low speed. Below a threshold speed, the two balls will continue their trajectory
+:alt: Two magnetized billiard balls colliding without friction at low speed. Below a threshold speed, the two balls will continue their trajectory together.
 
 Two magnetized billiard balls colliding without friction at low speed. Below a threshold speed, the two balls will continue their trajectory together.
 :::
@@ -137,7 +139,7 @@ In vapor form, a fluid behaves like a gas and spontaneously occupies all the vol
 
 In liquid form, the fluid has a significantly higher density. It is often used in this form to transfer heat (heating or cooling) because much smaller
 
-conduits can be used. For example, in order to achieve the same power, a radiator filled with a gas should have a volume roughly a thousand times larger than if the fluid was liquefeid.
+conduits can be used. For example, in order to achieve the same power, a radiator filled with a gas should have a volume roughly a thousand times larger than if the fluid was liquefied.
 
 Historically, water has been used in the very first engines in history for these reasons, and because changes in volume during phase changes allow for easier control of machines with low technology. Nowadays, liquids/vapors are mainly used in two major types of applications:
 
@@ -147,32 +149,19 @@ Historically, water has been used in the very first engines in history for these
 
 In this book, we focus on water, but the phenomena and calculation methods apply equally well to other liquids/vapors.
 
-**5.2 Qualitative Description of Water**
+(sec-5-2)=
+## 5.2 Qualitative Description of Water Properties
 
 ## Properties
 
 (sec-5-2-1)=
 ### 5.2.1 Limits of the ideal gas
 
-« $^{\mathrm{Gases} \mathrm{exhibit} \mathrm{in} \mathrm{their} \mathrm{deport}-}$ As we slow down and bring the molecules of a gas closer together, the ideal ment, particularly as regards the relagas model describes its properties less and less accurately. We observe a
+As we slow down and bring the molecules of a gas closer together, the ideal gas model describes its properties less and less accurately. We observe a threshold below which liquefaction and evaporation occur, in other words, where the two liquid and gaseous phases coexist; this threshold is described in terms of a temperature and a pressure which are named *critical*. The critical temperatures and pressures of some common fluids are indicated in table 5.1. It should be noted that air, a mixture of several gases, will see different substances in its composition condense at different temperatures. When a fluid is maintained at a temperature and pressure significantly higher than its critical values, it behaves like an ideal gas. All fluids that we traditionally consider as liquids (for example, mercury) or gases (for example, CO$_{2})$ can transition from one state to the other.
 
-tions of volume, temperature and pressure, expressed by the laws of Mariotte threshold below which liquefaction and evaporation occur, in other words,
-
-and Gay-Lussac, so much regularity as where the two liquid and gaseous phases coexist; this threshold is described
-
-to lead us to the notion that the mutual attraction of the particles which takes in terms of a temperature and a pressure which are named *critical*. The
-
-place in solid and fluid bodies is in their critical temperatures and pressures of some common fluids are indicated
-
-case annulled; so that while with solids and fluids the heat necessary to effect in table 5.1. It should be noted that air, a mixture of several gases, will see
-
-an expansion has to contend with both different substances in its composition condense at different temperatures.
-
-an inner and an outer resistance, the latter only is efefctive in the case of When a fluid is maintained at a temperature and pressure significantly
-
-gases. » higher than its critical values, it behaves like an ideal gas. All fluids that
-
-Rudolf Clausius, 1850 [[10](#ref-10), [11](#ref-11), [21](#ref-21)] we traditionally consider as liquids (for example, mercury) or gases (for example, CO$_{2})$ can transition from one state to the other.
+:::{aside}
+Gases exhibit in their deportment, particularly as regards the relations of volume, temperature and pressure, expressed by the laws of Mariotte and Gay-Lussac, so much regularity as to lead us to the notion that the mutual attraction of the particles which takes place in solid and fluid bodies is in their case annulled; so that while with solids and fluids the heat necessary to effect an expansion has to contend with both an inner and an outer resistance, the latter only is effective in the case of gases. Rudolf Clausius, 1850 [[10](#ref-10), [11](#ref-11), [21](#ref-21)]
+:::
 
 ::::{admonition} A Bit of History
 :class: note
@@ -223,7 +212,7 @@ Let’s observe the temperature and volume of a mass of a liquid, here water, th
 :::{figure} ../images/fig-5-4.jpg
 :label: fig-5-4
 :enumerator: 5.4
-:alt: Heating of a fixed quantity of water at constant pressure. A: subcooled liquid; B: liquid-vapor mixture; C: saturated vapor; D: superheated
+:alt: Heating of a fixed quantity of water at constant pressure. A: subcooled liquid; B: liquid-vapor mixture; C: saturated vapor; D: superheated vapor.
 
 Heating of a fixed quantity of water at constant pressure. A: subcooled liquid; B: liquid-vapor mixture; C: saturated vapor; D: superheated vapor.
 :::
@@ -254,13 +243,11 @@ $4.059$
 
 $5.88$
 
-« $^{\mathrm{Steam} \mathrm{can} \mathrm{be} \mathrm{considered} \mathrm{at} \mathrm{the}}$ very moment of its formation in the boiler, still in contact with the liquid from which it emanates, or else separated from that same liquid; and in each of these cases, its properties are different. »
-
-François-Marie Guyonneau de Pambour, 1839
-
-*Théorie de la machine à vapeur* [[7](#ref-7)]
+:::{aside}
+Steam can be considered at the very moment of its formation in the boiler, still in contact with the liquid from which it emanates, or else separated from that same liquid; and in each of these cases, its properties are different. François-Marie Guyonneau de Pambour, 1839 *Théorie de la machine à vapeur* [[7](#ref-7)]
 
 *Diagram* CC-0 *Olivier Cleynen*
+:::
 
 :::{figure} ../images/fig-5-5.jpg
 :label: fig-5-5
@@ -274,22 +261,20 @@ Vocabulary: states of the water during a process at constant pressure.
 
 Finally, once the last drop of liquid has been transformed into vapor, the temperature resumes its increase as more heat is added. The fluid is then in a state called *dry* or *superheated vapor*.
 
-« $^{\mathrm{Water} \mathrm{being} \mathrm{unable} \mathrm{to} \mathrm{vaporize}}$ The experiment can be repeated at different pressures (figure 5.6). When under high pressure except by virtue of the imposed pressure increases, two important facts are observed:
+The experiment can be repeated at different pressures (figure 5.6). When the imposed pressure increases, two important facts are observed: • The temperature of the phase change increases; • The change of volume during the phase change is reduced.
 
-a higher temperature, we have reason to believe that, all other circumstances • The temperature of the phase change increases;
+:::{aside}
+*Diagram* CC-0 *Olivier Cleynen*
 
-being equal, the machine must be capable of vaporizing less water under a • The change of volume during the phase change is reduced.
+Water being unable to vaporize under high pressure except by virtue of a higher temperature, we have reason to believe that, all other circumstances being equal, the machine must be capable of vaporizing less water under a more considerable pressure. François-Marie Guyonneau de Pambour, 1835 *Traité théorique et pratique des* *machines locomotives* [[6](#ref-6)]
 
-more considerable pressure. »
-
-François-Marie Guyonneau de Pambour, 1835
-
-*Traité théorique et pratique des machines locomotives* [[6](#ref-6)]
+*Diagram* CC-0 *Olivier Cleynen*
+:::
 
 :::{figure} ../images/fig-5-6.jpg
 :label: fig-5-6
 :enumerator: 5.6
-:alt: Properties of water plotted on a temperature-volume diagram, when conducting the experiment described in figure 5.4 at different pressures.
+:alt: Properties of water plotted on a temperature-volume diagram, when conducting the experiment described in figure 5.4 at different pressures. It can be observed that the higher the pressure, the smaller the boiling range becomes.
 
 Properties of water plotted on a temperature-volume diagram, when conducting the experiment described in figure 5.4 at different pressures. It can be observed that the higher the pressure, the smaller the boiling range becomes.
 :::
@@ -389,12 +374,12 @@ Almost everything that was covered in chapter 4 (*the ideal gas*) must be forgot
 
 The phenomena we describe here are easily observable and reproducible with water in everyday life. However, it should be noted that:
 
-• Water vapor is transparent and almost invisible. What is observed above a boiling pot of water or in the form of clouds is *liquid* water suspended in the air (figure 5.10). These fni e liquid droplets can gather to form drops (as a droplet grows, the surface area offering frictional resistance increases less rapidly than its weight, and its falling velocity increases) or evaporate again and become invisible once more.
+• Water vapor is transparent and almost invisible. What is observed above a boiling pot of water or in the form of clouds is *liquid* water suspended in the air (figure 5.10). These fine liquid droplets can gather to form drops (as a droplet grows, the surface area offering frictional resistance increases less rapidly than its weight, and its falling velocity increases) or evaporate again and become invisible once more.
 
 :::{figure} ../images/fig-5-10.jpg
 :label: fig-5-10
 :enumerator: 5.10
-:alt: The visible water above a container of hot liquid, sometimes called “steam”, is in the liquid state and not gaseous. These droplets are obse
+:alt: The visible water above a container of hot liquid, sometimes called “steam”, is in the liquid state and not gaseous. These droplets are observable to the naked eye.
 
 The visible water above a container of hot liquid, sometimes called “steam”, is in the liquid state and not gaseous. These droplets are observable to the naked eye.
 :::
@@ -403,38 +388,19 @@ The visible water above a container of hot liquid, sometimes called “steam”,
 
 • Air is partially composed of water vapor (and its ability to carry water increases with temperature). When boiling liquid water in open air, it must not be forgotten that it is the air that hosts the water vapor; thus, the evaporation unfolds quite differently from the experiment described in figure 5.4. For example, the temperature of liquid water drops significantly during evaporation at constant pressure in the air. Another particularityis that condensation is catalyzed by the presence of dust particles in the air.
 
-**5.3 Quantifying the Properties of Water** For a liquid/vapor, there is no simple way to quantify the internal energy $u$ and enthalpy $h$ that interest us so much. Indeed, from $p$ and $v$, we cannot calculate the temperature $(pv̸ \propto T)$ and from $T$, we cannot calculate $u$ and $h (u̸ \propto T$ and $h̸ \propto T)$. • The bad news is that we will have to use tables of previously-measured properties, called *steam tables*, which can be tedious at times; • The good news is that these tables spare us from using the dreadful mathematical relations (such as $(T_{1}/T_{2})^{1/\gamma -1}= …)$ that described the properties of fluids in chapter 4 (*the ideal gas*).
+(sec-5-3)=
+## 5.3 Quantifying the Properties of Water
+
+For a liquid/vapor, there is no simple way to quantify the internal energy $u$ and enthalpy $h$ that interest us so much. Indeed, from $p$ and $v$, we cannot calculate the temperature $(pv̸ \propto T)$ and from $T$, we cannot calculate $u$ and $h (u̸ \propto T$ and $h̸ \propto T)$. • The bad news is that we will have to use tables of previously-measured properties, called *steam tables*, which can be tedious at times; • The good news is that these tables spare us from using the dreadful mathematical relations (such as $(T_{1}/T_{2})^{1/\gamma -1}= …)$ that described the properties of fluids in chapter 4 (*the ideal gas*).
 
 (sec-5-3-1)=
 ### 5.3.1 Subcooled liquid and superheated vapor
 
-Let’s start by heating a fixed amount of liquid water while maintaining its pressure constant, as we did in figure 5.4. For each temperature, we measure
+Let’s start by heating a fixed amount of liquid water while maintaining its pressure constant, as we did in figure 5.4. For each temperature, we measure $v, u$, and $h$ (as well as $s$, but that’s a surprise we keep for chapter 8). The experiment is then repeated at a different pressure. The set of measurements is tabulated in Steam Table 1 (see pp. 306-309), of which an excerpt is presented in table 5.2.
 
-« $^{\mathrm{Hence} \mathrm{we} \mathrm{see} \mathrm{that} \mathrm{very} \mathrm{dis}-}$ tinguished mathematicians have prowhich an excerpt is presented in table 5.2.
-
-posed, regarding the motion of the piston in steam engines, analytical formulas which would be very true if, indeed, things occurred in the machine as they suppose; but which, lacking a true starting point in their calculations, collapse by themselves in the face of the facts. Thus it also follows that, in practice, the proportions of these machines have only been determined through multiple trials, and that the art of constructing them still proceeds by trial and by imitation. »
-
-François-Marie Guyonneau de Pambour, 1835
-
-*Theoretical and Practical Treatise on Locomotive Engines* [[6](#ref-6)]
-
-pressure.
-
-examples:
-
-````{prf:example}
-
-round to $0.5 m^{3}$.
-
-vapor state.
-
-````
-
-$v, u$, and $h$ (as well as $s$, but that’s a surprise we keep for chapter 8). The
-
-experiment is then repeated at a different pressure.
-
-The set of measurements is tabulated in Steam Table 1 (see pp. 306-309), of
+:::{aside}
+Hence we see that very distinguished mathematicians have proposed, regarding the motion of the piston in steam engines, analytical formulas which would be very true if, indeed, things occurred in the machine as they suppose; but which, lacking a true starting point in their calculations, collapse by themselves in the face of the facts. Thus it also follows that, in practice, the proportions of these machines have only been determined through multiple trials, and that the art of constructing them still proceeds by trial and by imitation. François-Marie Guyonneau de Pambour, 1835 *Theoretical and Practical Treatise on Locomotive Engines* [[6](#ref-6)]
+:::
 
 :::{table} Excerpt from Steam Table 1 (see in Appendix A1 pp. 306-309). Here the measurements are made at $1.6 MPa$, in other words, $16 bar (232 psi)$. A discontinuity is observed between $200^{\circ}C$ and $300^{\circ}C$: this is the state change that occurred at $T_{\mathrm{sat}.}= 201.37^{\circ}C$, the saturation temperature for this
 :label: tab-5-2
@@ -462,23 +428,20 @@ The set of measurements is tabulated in Steam Table 1 (see pp. 306-309), of
 | $2000$ | $0.65615$ | $6326.8$ $7376.6$ | $10.272$ |
 :::
 
-This steam table allows us to answer many questions. Here are a few
+This steam table allows us to answer many questions. Here are a few examples:
 
-Example 5.1
+````{prf:example}
+:label: ex-5-1
+:enumerator: 5.1
 
 At $16 bar$ and $600^{\circ}C$, what is the volume occupied by $2 kg$ of water?
 
-The pressure is $1.6 MPa$. In Steam Table 1, at this pressure, at $600^{\circ}C$, we can read its specific volume as $v = 0.249 99 m^{3}kg^{-1}$. The total volume will thus be $V = m v = 0.499 98 m^{3}$, which we confdi ently
+The pressure is $1.6 MPa$. In Steam Table 1, at this pressure, at $600^{\circ}C$, we can read its specific volume as $v = 0.249 99 m^{3}kg^{-1}$. The total volume will thus be $V = m v = 0.499 98 m^{3}$, which we confidently round to $0.5 m^{3}$.
 
-Note that the temperature is higher than the saturation tem-
+Note that the temperature is higher than the saturation temperature $(201.37^{\circ}C)$, indicating that the water is in the superheated vapor state.
 
-perature $(201.37^{\circ}C)$, indicating that the water is in the superheated
-
-With an ideal gas, we could simply *calculate* the result $(v = \frac{RT}{p}$);
-
-but this method does not work for liquid/vapor mixtures.
-
-*Engineering Thermodynamics* by Olivier Cleynen
+With an ideal gas, we could simply *calculate* the result $(v = \frac{RT}{p})$; but this method does not work for liquid/vapor mixtures.
+````
 
 ````{prf:example}
 :label: ex-5-2
@@ -735,7 +698,7 @@ We can now use the same Steam Tables 2 and 3 to quantify what happens between th
 :::{figure} ../images/fig-5-13.jpg
 :label: fig-5-13
 :enumerator: 5.13
-:alt: Approximations used in calculating the volume occupied by a liquid-vapor mixture. It should be noted that the abscissa scale is logarithmic
+:alt: Approximations used in calculating the volume occupied by a liquid-vapor mixture. It should be noted that the abscissa scale is logarithmic: $v_{L}$ is generally several hundred times smaller than $v_{V}$, and the approximation is not graphically emphasized.
 
 Approximations used in calculating the volume occupied by a liquid-vapor mixture. It should be noted that the abscissa scale is logarithmic: $v_{L}$ is generally several hundred times smaller than $v_{V}$, and the approximation is not graphically emphasized.
 :::
@@ -773,7 +736,10 @@ $h_{L}\approx 500$ and $h_{V}\approx 2700 kJ kg^{-1}$.
 
 ::::
 
-**5.4 Elementary Reversible Processes** We are now able to quantify the terms $pv, u$, and $h$ of a liquid/vapor in all cases. Here, we intend to proceed just as in the previous chapter (§4.4): we want to calculate the energy transfers involved when compressing or expanding a liquid/vapor under entirely arbitrary constraints of volume, pressure, or temperature.
+(sec-5-4)=
+## 5.4 Elementary Reversible Processes
+
+We are now able to quantify the terms $pv, u$, and $h$ of a liquid/vapor in all cases. Here, we intend to proceed just as in the previous chapter (§4.4): we want to calculate the energy transfers involved when compressing or expanding a liquid/vapor under entirely arbitrary constraints of volume, pressure, or temperature.
 
 (sec-5-4-1)=
 ### 5.4.1 What is this chapter section for?
@@ -793,23 +759,15 @@ It is possible to heat or cool a liquid/vapor while maintaining its pressure con
 
 • with fluid in steady flow (open system), simply transfer heat by letting it flow through a conduit without moving parts. This is what happens in a boiler or condenser, for example.
 
-In a closed system, we have $q_{1\rightarrow 2}+ w_{1\rightarrow 2}= \Delta u$ (2/2). If the process is
-
-reversible, both heat and work can be quantified as follows:
+In a closed system, we have $q_{1\rightarrow 2}+ w_{1\rightarrow 2}= \Delta u$ (2/2). If the process is reversible, both heat and work can be quantified as follows:
 
 :::{math}
-2
+w_{1\rightarrow 2}= -\int_{1}^{2}p\,dv = -p_{\mathrm{cst}.}\int_{1}^{2}dv
 :::
 
 :::{math}
-w_{1\rightarrow 2}= -\int pdv = -p_{\mathrm{cst}.}\int
-:::
-
-:::{math}
-1 1
-:::
-
-:::{math}
+:label: eq-5-7
+:enumerator: 5/7
 w_{1\rightarrow 2}= -p_{\mathrm{cst}.}\Delta v
 :::
 
@@ -820,49 +778,33 @@ q_{1\rightarrow 2}= \Delta u - w_{1\rightarrow 2}= \Delta u + p_{\mathrm{cst}.}\
 :::
 
 :::{math}
+:label: eq-5-8
+:enumerator: 5/8
 q_{1\rightarrow 2}= \Delta h
 :::
 
 in a reversible process at constant pressure, in a closed system.
 
-In an open system, we have $q_{1\rightarrow 2}+ w_{1\rightarrow 2}= \Delta h$ (3/15). If the process is
+:::{aside}
+It is well known that when water is made to vaporize under atmospheric pressure, in vain is additional heat continuously supplied to it by means of the furnace, neither the temperature of the water nor that of the steam ever rises beyond 100° of the centigrade thermometer, or 212° of the Fahrenheit thermometer. François-Marie Guyonneau de Pambour, 1839 *Théorie de la machine à vapeur* [[7](#ref-7)]
+:::
 
-reversible, both heat and work can be quantified as follows:
+In an open system, we have $q_{1\rightarrow 2}+ w_{1\rightarrow 2}= \Delta h$ (3/15). If the process is reversible, both heat and work can be quantified as follows:
 
 :::{math}
-2
+w_{1\rightarrow 2}= \int_{1}^{2}v\,dp
 :::
 
 :::{math}
-w_{1\rightarrow 2}= \int vdp
-:::
-
-:::{math}
-1
-:::
-
-:::{math}
+:label: eq-5-9
+:enumerator: 5/9
 w_{1\rightarrow 2}= 0
 :::
-
-« $^{\mathrm{It} \mathrm{is} \mathrm{well} \mathrm{known} \mathrm{that} \mathrm{when} \mathrm{water}}$ is made to vaporize under atmospheric pressure, in vain is additional heat continuously supplied to it by means of the furnace, neither the temperature of the water nor that of the steam ever rises beyond 100° of the centigrade thermometer, or 212° of the Fahrenheit thermometer. »
-
-François-Marie Guyonneau de Pambour, 1839
-
-*Théorie de la machine à vapeur* [[7](#ref-7)]
-
-$2 dv$
-
-(5/7)
-
-(5/8)
-
-(5/9)
 
 :::{figure} ../images/fig-5-14.jpg
 :label: fig-5-14
 :enumerator: 5.14
-:alt: Constant-pressure (isobaric) process undergone by a liquid/vapor. In a closed system (on the left), the piston exerts a constant force throu
+:alt: Constant-pressure (isobaric) process undergone by a liquid/vapor. In a closed system (on the left), the piston exerts a constant force throughout the process. In an open system (on the right), no work is done.
 
 Constant-pressure (isobaric) process undergone by a liquid/vapor. In a closed system (on the left), the piston exerts a constant force throughout the process. In an open system (on the right), no work is done.
 :::
@@ -946,7 +888,7 @@ It is possible to transfer heat to or from a liquid/vapor while maintaining its 
 :::{figure} ../images/fig-5-16.jpg
 :label: fig-5-16
 :enumerator: 5.16
-:alt: A constant-volume (isochoric) process undergone by a liquid-vapor. In a closed system (left), the volume is fixed and no work is done. In an
+:alt: A constant-volume (isochoric) process undergone by a liquid-vapor. In a closed system (left), the volume is fixed and no work is done. In an open system (right), the fluid must be compressed while being heated and expanded while being cooled, in order to maintain constant specific volume.
 
 A constant-volume (isochoric) process undergone by a liquid-vapor. In a closed system (left), the volume is fixed and no work is done. In an open system (right), the fluid must be compressed while being heated and expanded while being cooled, in order to maintain constant specific volume.
 :::
@@ -1052,7 +994,7 @@ The consequence is that for now, we cannot quantify the work and heat involved w
 :::{figure} ../images/fig-5-18.jpg
 :label: fig-5-18
 :enumerator: 5.18
-:alt: A constant-temperature (isothermal) process undergone by a liquid-vapor. In a closed system (left), the gas is allowed to do work on a pisto
+:alt: A constant-temperature (isothermal) process undergone by a liquid-vapor. In a closed system (left), the gas is allowed to do work on a piston while being heated, and conversely, work is done on it when cooling. In an open system (right), the same manipulations are carried out continuously.
 
 A constant-temperature (isothermal) process undergone by a liquid-vapor. In a closed system (left), the gas is allowed to do work on a piston while being heated, and conversely, work is done on it when cooling. In an open system (right), the same manipulations are carried out continuously.
 :::
@@ -1117,26 +1059,18 @@ of *entropy* to answer this question.
 
 An *adiabatic* process is a process during which there is no heat transfer (figure 5.20). This can be achieved by covering the container or the duct with a thick layer of thermal insulator.
 
-A *reversible adiabatic* process is carried out infinitely slowly. For this to happen, a piston in a cylinder will have to be moved infinitely slowly, and a steady-flow turbine will have to be infinitely long. Adiabatic processes serve as a reference, a theoretical goal, to quantify the performances of real turbines, which we will study in chapter 9.
+A *reversible adiabatic* process is carried out infinitely slowly. For this to happen, a piston in a cylinder will have to be moved infinitely slowly, and a steady-flow turbine will have to be infinitely long. Adiabatic processes serve as a reference, a theoretical goal, to quantify the performances of real turbines, which we will study in chapter 9. Just like for an ideal gas, the temperature necessarily varies in such a process, since the work is non-zero. It is also noted that the curves of reversible adiabatic processes plotted on a pressure-volume diagram always intersect the saturation curve. In other words, dry steam expanded slowly without heat transfer will, sooner or later, be led to condense. This fact will have significant consequences in chapter 9 (*steam power cycles*).
 
-« $^{\mathrm{I} \mathrm{may} \mathrm{here} \mathrm{be} \mathrm{allowed} \mathrm{to} \mathrm{refer}}$ Just like for an ideal gas, the temperature necessarily varies in such a process, to a fact proved by Rankine and my-since the work is non-zero. It is also noted that the curves of reversible
+:::{aside}
+I may here be allowed to refer to a fact proved by Rankine and myself, that when a quantity of vapour, at is maximum density and enclosed by a surface impenetrable to heat, expands and thereby displaces a moveable part of the enclosing surface, e.g. a piston, with its full force of expansion, a part of the vapour must undergo condensation… Rudolf Clausius, 1856 *On the Application of the Mechanical Theory of Heat to the Steam Engine* [[16](#ref-16), [18](#ref-18), [20](#ref-20)]
 
-self, that when a quantity of vapour, $^{\mathrm{at} \mathrm{is} \mathrm{maximum} \mathrm{density} \mathrm{and} \mathrm{enclosed}}$ adiabatic processes plotted on a pressure-volume diagram always intersect by a surface impenetrable to heat, ex-the saturation curve. In other words, dry steam expanded slowly without
-
-pands and thereby displaces a move-able part of the enclosing surface, e.g. heat transfer will, sooner or later, be led to condense. This fact will have
-
-a piston, with its full force of expansion significant consequences in chapter 9 (*steam power cycles*).
-
-sion, a part of the vapour must undergo condensation… »
-
-Rudolf Clausius, 1856
-
-*On the Application of the Mechanical Theory of Heat to the Steam Engine* [[16](#ref-16), [18](#ref-18), [20](#ref-20)]
+*Diagram* CC-by-sa *Olivier Cleynen*
+:::
 
 :::{figure} ../images/fig-5-20.jpg
 :label: fig-5-20
 :enumerator: 5.20
-:alt: A reversible adiabatic (isentropic) process undergone by a liquid-vapor. In a closed system (left) as well as in an open system (right), the
+:alt: A reversible adiabatic (isentropic) process undergone by a liquid-vapor. In a closed system (left) as well as in an open system (right), the enclosure is perfectly insulated, so that there is no heat transfer, even if its temperature varies.
 
 A reversible adiabatic (isentropic) process undergone by a liquid-vapor. In a closed system (left) as well as in an open system (right), the enclosure is perfectly insulated, so that there is no heat transfer, even if its temperature varies.
 :::
@@ -1208,7 +1142,7 @@ We have focused on four specific processes, because each plays an important role
 :::{figure} ../images/fig-5-22.jpg
 :label: fig-5-22
 :enumerator: 5.22
-:alt: A completely arbitrary process undergone by a liquid-vapor represented on a pressure-volume diagram. In addition to a deplorable sense of hu
+:alt: A completely arbitrary process undergone by a liquid-vapor represented on a pressure-volume diagram. In addition to a deplorable sense of humor, such a process requires an extremely complex combination of heat and work transfers, which the student is invited to imagine.
 
 A completely arbitrary process undergone by a liquid-vapor represented on a pressure-volume diagram. In addition to a deplorable sense of humor, such a process requires an extremely complex combination of heat and work transfers, which the student is invited to imagine.
 :::
@@ -1267,7 +1201,7 @@ The first and most important of these modifications was to separate in space the
 :::{figure} ../images/fig-5-23.jpg
 :label: fig-5-23
 :enumerator: 5.23
-:alt: Cross-section diagram of one of the first steam engines (Newcomen engine, . The condensation caused by water injection into the cylinder led
+:alt: Cross-section diagram of one of the first steam engines (Newcomen engine, $\sim 1720)$. The condensation caused by water injection into the cylinder led to a drop in internal pressure.
 
 Cross-section diagram of one of the first steam engines (Newcomen engine, $\sim 1720)$. The condensation caused by water injection into the cylinder led to a drop in internal pressure.
 :::
@@ -1329,7 +1263,7 @@ Their success, unfortunately, would come much less
 
 from the technological innovations they brought
 
-than from the high-proflie lawsuits they led to mon-
+than from the high-profile lawsuits they led to mon-
 
 etize them. Indeed, the two partners excelled in po-
 
@@ -1343,11 +1277,11 @@ received a percentage of the coal savings generated
 
 by the machines they sold across the country. And
 
-it would take nearly ffiteen years before the legal
+it would take nearly fifteen years before the legal
 
 possibility, in the United Kingdom, to use the “ex-
 
-pansive power of steam” became fni ally open to
+pansive power of steam” became finally open to
 
 everyone, a process deviously patented by the two
 
@@ -1371,11 +1305,9 @@ $1 hp_{\mathrm{imperial}}\equiv 33 000 ft lb_{f}\min ^{-1}$
 
 $= 745.6999 W$
 
-Problems
+## Problems
 
-The properties of water are tabulated in Steam
-
-Tables 1, 2, and 3 (see AppendixA1 p.305)
+The properties of water are tabulated in Steam Tables 1, 2, and 3 (see Appendix A1 p. 305)
 
 ```{exercise}
 :label: prob-5-1
@@ -1426,6 +1358,34 @@ then complete evaporation (C): $Q_{\mathrm{A}\rightarrow \mathrm{C}}= m(q_{\math
    :::
 
 ```{exercise}
+:label: prob-5-3
+:enumerator: 5.3
+
+**Simple Recap Exercise Describe very briefly an experiment where a fixed mass of subcooled liquid water is heated at constant temperature. Draw the process qualitatively on a pressure-volume diagram, showing the saturation curve.**
+
+:::{admonition} Answer
+:class: dropdown
+
+See §5.2.3 p. 121 & figure 5.9.
+
+:::
+```
+
+```{exercise}
+:label: prob-5-4
+:enumerator: 5.4
+
+**High-Pressure Steam Generation An industrial chemical process requires a steam flow rate of $2 kg s^{-1}(4.41 lb/s)$ at $6 bar$ and $875^{\circ}C (87 psi$ and $1607 ^{\circ} F)$. The machine responsible for providing this steam is fed by a pressurized liquid water pipeline at $10^{\circ}C$ and $6 bar (50 ^{\circ} F$ and $87 psi)$. 1. What power in the form of work and heat is required to generate this steam flow? 2. Draw the process undergone by the water on a pressure-volume diagram, qualitatively (that is, without showing numerical values), showing the saturation curve.**
+
+:::{admonition} Answer
+:class: dropdown
+
+1) Reading in Steam Table 1 @ $p_{\mathrm{A}}= 0.6 MPa$, $h_{\mathrm{A}}= 42.6 kJ kg^{-1}$. Interpolating between $800$ and $900^{\circ}C$ in this table, we obtain $h_{\mathrm{B}}= 4336.6 kJ kg^{-1}$. Thus with equation 5/10, $\dot{Q}_{\mathrm{A}\rightarrow \mathrm{B}}= \dot{m}\Delta h = +8.59 MW$. $\dot{W}_{\mathrm{A}\rightarrow \mathrm{B}}= 0 W$ (5/9).
+
+:::
+```
+
+```{exercise}
 :label: prob-5-5
 :enumerator: 5.5
 
@@ -1443,7 +1403,7 @@ $T_{\mathrm{sat}.p=2.0797 bar}= 121.37^{\circ}C = 250.47 ^{\circ} F$.
    :::{figure} ../images/fig-5-28.jpg
    :label: fig-5-28
    :enumerator: 5.28
-   :alt: A pressure cooker, in which the increased pressure results in higher boiling temperature and thus faster cooking. It is affectionately known
+   :alt: A pressure cooker, in which the increased pressure results in higher boiling temperature and thus faster cooking. It is affectionately known as a "cocotte minute" in France.
    
    A pressure cooker, in which the increased pressure results in higher boiling temperature and thus faster cooking. It is affectionately known as a *« cocotte minute »* in France.
    :::
@@ -1515,7 +1475,7 @@ For $\Delta p_{\mathrm{boiling}}= 9.9127 \times 10^{4}Pa, \Delta z_{\mathrm{boil
 :label: prob-5-8
 :enumerator: 5.8
 
-**Steam Turbine On a Portable Power Plant A company is developing a small steam power plant that can be carried in a standard-sized shipping container. Once connected to an external boiler, it is capable of converting heat from unrefni ed fuels (such as wood, paper, or coal) into electricity with a relatively high efficiency. Within this power plant, the turbine is adiabatic and receives $5 t/h (11 023 lb/h)$ of steam at $90 bar$ and $510^{\circ}C$ from the boiler. The outlet pressure is barely above atmospheric pressure (we will take $1 bar)$. An engineer predicts, as we will also be able to do after chapter 8 (*entropy*), that the outlet specific internal energy of the steam will then be $2676.6 kJ kg^{-1}$. The turbine is mechanically connected to a power generator with an efficiency of $85 \%$. 1. What is the power output of the generator? At the other end of the container, an electric pump (the only other mechanical element in the plant) collects the condensed water in saturated liquid state $(1 bar)$ and increases its pressure back to $90 bar$ to feed the boiler. It is assumed that during pumping, the specific volume of water varies negligibly, and that the compression is reversible. 2. What is the power required to power the pump?**
+**Steam Turbine On a Portable Power Plant A company is developing a small steam power plant that can be carried in a standard-sized shipping container. Once connected to an external boiler, it is capable of converting heat from unrefined fuels (such as wood, paper, or coal) into electricity with a relatively high efficiency. Within this power plant, the turbine is adiabatic and receives $5 t/h (11 023 lb/h)$ of steam at $90 bar$ and $510^{\circ}C$ from the boiler. The outlet pressure is barely above atmospheric pressure (we will take $1 bar)$. An engineer predicts, as we will also be able to do after chapter 8 (*entropy*), that the outlet specific internal energy of the steam will then be $2676.6 kJ kg^{-1}$. The turbine is mechanically connected to a power generator with an efficiency of $85 \%$. 1. What is the power output of the generator? At the other end of the container, an electric pump (the only other mechanical element in the plant) collects the condensed water in saturated liquid state $(1 bar)$ and increases its pressure back to $90 bar$ to feed the boiler. It is assumed that during pumping, the specific volume of water varies negligibly, and that the compression is reversible. 2. What is the power required to power the pump?**
 
 :::{admonition} Answer
 :class: dropdown
@@ -1552,7 +1512,7 @@ barrel will of course be crushed before that);
 :label: prob-5-10
 :enumerator: 5.10
 
-**Newcomen Engine In their time, around 1720, Newcomen engines (figure 5.23) were at the forefront of technology. Slightly overheated steam $(1 bar, 250^{\circ}C)$ was injected into a large cylinder (height $1 m$, diameter $1.5 m)$. This steam was then cooled (by allowing a small amount of liquid water at atmospheric pressure and temperature to enter), maintaining the internal pressure at $0.1 bar$. The piston would then descend, providing work. The water available to the engine was at $1 bar, 10^{\circ}C$. 1. Plot the process on a pressure-volume or temperature-volume diagram, showing the saturation curve. 2. How much heat must be supplied to flil the cylinder with steam before the descent can be performed? 3. How much work is supplied by the engine during the piston’s descent? *Hint: Consider the work done by the atmosphere on the outer face of the piston.* 4. What is the efficiency of the engine, if friction and all other heat losses are neglected? *Engraving C. L. Moll (1873, public domain)***
+**Newcomen Engine In their time, around 1720, Newcomen engines (figure 5.23) were at the forefront of technology. Slightly overheated steam $(1 bar, 250^{\circ}C)$ was injected into a large cylinder (height $1 m$, diameter $1.5 m)$. This steam was then cooled (by allowing a small amount of liquid water at atmospheric pressure and temperature to enter), maintaining the internal pressure at $0.1 bar$. The piston would then descend, providing work. The water available to the engine was at $1 bar, 10^{\circ}C$. 1. Plot the process on a pressure-volume or temperature-volume diagram, showing the saturation curve. 2. How much heat must be supplied to fill the cylinder with steam before the descent can be performed? 3. How much work is supplied by the engine during the piston’s descent? *Hint: Consider the work done by the atmosphere on the outer face of the piston.* 4. What is the efficiency of the engine, if friction and all other heat losses are neglected? *Engraving C. L. Moll (1873, public domain)***
 
 :::{admonition} Answer
 :class: dropdown

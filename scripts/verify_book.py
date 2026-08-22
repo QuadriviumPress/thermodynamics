@@ -65,9 +65,9 @@ def main():
     corpus = "\n".join(texts.values())
 
     # ---- labels and references ------------------------------------------
-    labels = set(re.findall(r"^:label:\s*(\S+)", corpus, re.M))
+    labels = set(re.findall(r"^[ \t]*:label:\s*(\S+)", corpus, re.M))
     labels |= set(re.findall(r"^\((\S+?)\)=", corpus, re.M))
-    labels |= set(re.findall(r"^label:\s*(\S+)", corpus, re.M))
+    labels |= set(re.findall(r"^[ \t]*label:\s*(\S+)", corpus, re.M))
     targets = set(re.findall(r"\]\(#([A-Za-z0-9_.-]+)\)", corpus))
     missing = sorted(targets - labels)
     if missing:
@@ -99,14 +99,17 @@ def main():
         n = ch["number"]
         exp = ch["source_counts"]
         figs = len(re.findall(r":enumerator:\s*" + str(n) + r"\.\d+", text))
-        if figs < exp["figures"] * 0.5:
+        if figs < exp["figures"] * 0.9:
             fail(f"{ch['slug']}: only {figs}/{exp['figures']} figures emitted")
         exs = len(re.findall(r"\{prf:example\}", text))
-        if exs < exp["examples"] * 0.5:
+        if exs < exp["examples"] * 0.9:
             fail(f"{ch['slug']}: only {exs}/{exp['examples']} examples emitted")
-        probs = len(re.findall(r"\{exercise\}", text))
-        if probs < exp["problems"] * 0.35:
-            fail(f"{ch['slug']}: only {probs}/{exp['problems']} exercises emitted")
+        # problems are numbered N.1..N.k in the source; every one must be present
+        probs = {int(m) for m in re.findall(rf"^[ \t]*:label: prob-{n}-(\d+)", text, re.M)}
+        gaps = [k for k in range(1, max(probs, default=0) + 1) if k not in probs]
+        if gaps:
+            fail(f"{ch['slug']}: exercises missing: " +
+                 ", ".join(f"{n}.{k}" for k in gaps))
         hists = len(re.findall(r"A Bit of History", text))
         if hists < exp["history"]:
             fail(f"{ch['slug']}: only {hists}/{exp['history']} history boxes")
@@ -115,10 +118,10 @@ def main():
         for kind, numbers, prefix in (("figure", extracted.get("figures", set()), "fig"),
                                       ("equation", extracted.get("equations", set()), "eq")):
             want = {slug_label(prefix, n) for n in numbers}
-            have = labels | set(re.findall(r"^:label:\s*(\S+)", corpus, re.M))
+            have = labels | set(re.findall(r"^[ \t]*:label:\s*(\S+)", corpus, re.M))
             lost = sorted(want - have)
             # allow 30% loss — some figures land inside problem groups without labels
-            if len(lost) > 0.85 * max(len(want), 1):
+            if len(lost) > 0.15 * max(len(want), 1):
                 fail(f"{len(lost)}/{len(want)} {kind}s missing labels, e.g. {lost[:6]}")
 
     # ---- conversion artifacts -------------------------------------------

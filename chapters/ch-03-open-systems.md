@@ -105,7 +105,7 @@ Thus, we add up all transfers as on a bank statement.
 **3.3 The First Law in an Open System** We have seen that in a closed system, the law of conservation of energy is expressed by the equation $q+w = \Delta u$ (2/2). In an open system, the situation is a little different and we must consider additional forms of energy.
 
 (sec-3-3-1)=
-### 3.3.1 Entering and exiting the system: flow work
+### 3.3.1 Entering and exiting the system: folw work
 
 Let’s imagine an open system in steady flow, containing a small water pump. In order to insert water into the pump at a given pressure, energy must be supplied to the system. Conversely, to push the water outside (at a higher pressure), the system must supply energy. How can we quantify this energy?
 
@@ -553,7 +553,7 @@ The reversible work done in steady, reversible flow is thus visualized by the ar
 :enumerator: 3.6
 :alt: Work received by an open system crossed by a fluid, during a slow process. The system first receives the insertion work , in orange, positiv
 
-Work received by an open system crossed by a fluid, during a slow process. The system first receives the insertion work $(p_{\mathrm{ini}.}v_{\mathrm{ini}.}$, in orange, positive) to enter the system, then it spends compression work (hatched area, negative), and finally, it spends extraction work $(p_{\mathrm{fni}.}v_{\mathrm{fni}.}$, in blue, negative). The net sum of these three areas is the specific power to be supplied to the open system.
+Work received by an open system crossed by a fluid, during a slow process. The system first receives the insertion work $(p_{\mathrm{ini}.}v_{\mathrm{ini}.}$, in orange, positive) to enter the system, then it spends compression work (hatched area, negative), and finally, it spends extraction work $(p_{\mathrm{fin}.}v_{\mathrm{fin}.}$, in blue, negative). The net sum of these three areas is the specific power to be supplied to the open system.
 :::
 
 :::{figure} ../images/fig-3-7.jpg

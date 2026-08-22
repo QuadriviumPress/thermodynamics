@@ -6,10 +6,6 @@ label: app-a5-conversion-of-units-to-si
 
 # A5. Conversion of Units to SI
 
-Appendix A5 317
-
-## A5 Conversion of Units to SI
-
 The following relationships can be used to convert customary physical units into SI units. The conversion factors here are rounded to seven significant digits.
 
 :::{math}
@@ -174,9 +170,7 @@ p(Pa) = 6.894 757 \times 10^{3}p(psi) (A5/27)
 p(bar) = 6.894 757 \times 10^{-2}p(psi) (A5/28)
 :::
 
-:::{math}
-• the kilogram - force per square centimeter (or kilopond per square centimeter) :
-:::
+• the kilogram-force per square centimeter (or kilopond per square centimeter):
 
 :::{math}
 p(kg_{f}/cm^{2}) = 1.019 716 \times 10^{-5}p(Pa) (A5/29)

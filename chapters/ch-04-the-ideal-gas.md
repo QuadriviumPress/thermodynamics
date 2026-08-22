@@ -38,7 +38,7 @@ This chapter is incompatible with chapter 5 (*liquids and vapors*), where we
 
 will have to forget everything learned here.
 
-**4.1 Definition**
+**4.1 Defni ition**
 
 (sec-4-1-1)=
 ### 4.1.1 The manometer as a thermometer
@@ -279,9 +279,9 @@ These two quantities are properties (or state quantities, see Appendix A4 p. 316
 :::{figure} ../images/fig-4-3.jpg
 :label: fig-4-3
 :enumerator: 4.3
-:alt: Definitions of heat capacities. On the left, the volume is fixed and the specific thermal capacity will be . On the right, the pressure is c
+:alt: Defni itions of heat capacities. On the left, the volume is fixed and the specific thermal capacity will be . On the right, the pressure is
 
-Definitions of heat capacities. On the left, the volume is fixed and the specific thermal capacity will be $c_{v}$. On the right, the pressure is constant and the capacity will be $c_{p}$.
+Defni itions of heat capacities. On the left, the volume is fixed and the specific thermal capacity will be $c_{v}$. On the right, the pressure is constant and the capacity will be $c_{p}$.
 :::
 
 *Diagram* CC-0
@@ -1440,7 +1440,7 @@ to what it was at the origin of the movement, plus
 
 of free heat in the simple mixing of bodies is thus independent of any hypothesis regarding the nature of heat; it has been generally accepted by physicists, and we shall adopt it in the following research.”
 
-At the time when this text was written, the atomic hypothesis remained largely speculative due to the lack of adequate experimental means: the experiment by Jean Perrin that fni ally settled the issue only took place in the early years of the 20th century, and the X-ray diffraction experiments suggested by Max von Laue occurred in 1912.
+At the time when this text was written, the atomic hypothesis remained largely speculative due to the lack of adequate experimental means: the experiment by Jean Perrin that fin ally settled the issue only took place in the early years of the 20th century, and the X-ray diffraction experiments suggested by Max von Laue occurred in 1912.
 
 ::::
 

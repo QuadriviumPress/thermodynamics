@@ -8,11 +8,9 @@ label: app-a2-gauge-pressure-and-real-pressure
 
 314 Appendix A2
 
-## A2 Gauge Pressure and Real Pressure
-
 It is necessary to distinguish the *real* pressure $p_{\mathrm{real}}$ or simply $p$ of a fluid, which we use for our calculations throughout this book, from the *gauge* pressure often indicated by barometers and manometers.
 
-Indeed, it is common for a pressure instrument to be calibrated to atmospheric pressure. For example, when inflating a car tire at a gas station, the dial reads $0 bar$ at ambient pressure – all of the values that it displays will be ofsfet by the value of the atmospheric pressure at that time. The value indicated by such a manometer is called *gauge pressure*, denoted by $p_{\mathrm{g}}$ and defined as follows:
+Indeed, it is common for a pressure instrument to be calibrated to atmospheric pressure. For example, when inflating a car tire at a gas station, the dial reads $0 bar$ at ambient pressure – all of the values that it displays will be offset by the value of the atmospheric pressure at that time. The value indicated by such a manometer is called *gauge pressure*, denoted by $p_{\mathrm{g}}$ and defined as follows:
 
 :::{math}
 p_{\mathrm{g}}\equiv p_{\mathrm{real}}- p_{\mathrm{atm}.} (A2/1)

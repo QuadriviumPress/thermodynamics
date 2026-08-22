@@ -6,6 +6,30 @@ label: bibliography
 
 # Bibliography
 
+This book was originally written in French [[51](#ref-51)] and first published in
+2015, so the bibliography naturally reflects this. The author’s reading
+recommendations are:
+
+**To study engineering thermodynamics:**
+
+• Çengel, Boles & Lacroix 2007 [[48](#ref-48), [49](#ref-49)], provide accessible, comprehensive, and solid coverage of the topics addressed here;
+
+• Eastop & McConkey 1993 [[38](#ref-38)], an essential reference (itself based on the very robust Rogers & Mayhew 1992 [[37](#ref-37)]);
+
+**To explore thermodynamics in physics:**
+
+• Depondt 2001 [[43](#ref-43)], a playful exploration of our favorite discipline (Philippe Depondt wrote the sections §1.6, §3.6, §4.5, and §8.6 of this manual);
+
+• Feynman 1963 [[30](#ref-30), [35](#ref-35)] addresses thermodynamics several times in his reference introductory physics book, in particular with a beautiful exploration of the concept of irreversibility.
+
+**For a short time travel:**
+
+• Gay-Lussac 1807 [[3](#ref-3)] and Joule 1845 [[8](#ref-8)] for a glimpse of the meticulous work that laid the foundations of what is now called the *first law*;
+
+• Carnot 1824 [[4](#ref-4)], the stunningly modern booklet written by the first thermodynamics engineer in history;
+
+• Clausius 1854 [[13](#ref-13)] to witness the birth of the term “entropy” and see its father’s self-confidence.
+
 References are numbered in order of first appearance in the book.
 
 (ref-1)=
@@ -33,10 +57,9 @@ References are numbered in order of first appearance in the book.
 **[8]**  James Prescott Joule. “On the Changes of Temperature Produced by the Rarefaction and Condensation of Air”. In: *The London, Edinburgh, and Dublin Philosophical Magazine and Journal of Science* 26.174 (1845), pp. 369–383.
 
 (ref-9)=
-**[9]**  William Thomson Baron Kelvin. “On an Absolute Thermometric Scale founded on Carnot’s Theory of the Motive Power of Heat and calculated from Regnaut’s observations”. In: *The London, Edinburgh, and Dublin Philosophical Magazine and Journal of Science* (1848). 326
-
+**[9]**  William Thomson Baron Kelvin. “On an Absolute Thermometric Scale founded on Carnot’s Theory of the Motive Power of Heat and calculated from Regnaut’s observations”. In: *The London, Edinburgh, and Dublin Philosophical Magazine and Journal of Science* (1848).
 (ref-10)=
-**[10]**  RudolfJuliusEmanuelClausius.“ÜberdiebewegendeKraftderWärmeunddieGesetze,welche sich daraus für die Wärmelehre selbst ableiten lassen”. German. In: *Annalen der Physik* 79 (1850), pp. 368–397, 500–524.
+**[10]**  Rudolf Julius Emanuel Clausius. “Über die bewegende Kraft der Wärme und die Gesetze, welche sich daraus für die Wärmelehre selbst ableiten lassen”. German. In: *Annalen der Physik* 79 (1850), pp. 368–397, 500–524.
 
 (ref-11)=
 **[11]**  Rudolf Julius Emanuel Clausius. “On the Moving Force of Heat, and the Laws regarding the Nature of Heat itself which are deducible therefrom”. Trans. from the German by John Tyndall. In: *The London, Edinburgh, and Dublin Philosophical Magazine and Journal of Science*. 4th ser. 2 (1851), pp. 1–21, 102–119.
@@ -63,7 +86,7 @@ References are numbered in order of first appearance in the book.
 **[18]**  Rudolf Julius Emanuel Clausius. *The Mechanical Theory of Heat, with its Applications to the Steam-engine and to the Physical Properties of Bodies*. Ed. by T. Archer Hirst. Trans. from the German, with an introd., by John Tyndall. With annots. by Rudolf Julius Emanuel Clausius. J. van Voorst, 1867.
 
 (ref-19)=
-**[19]**  RudolfJuliusEmanuelClausius.“Surdiversesformesdeséquationsfondamentalesdelathéorie mécanique de la chaleur, qui sont commodes dans l’application”. French. In: *Théorie mécanique de la chaleur*. Trans. from the German, with an introd., by F. Folie. With annots. by Rudolf Julius Emanuel Clausius. Eugène Lacroix, 1868, pp. 377–420.
+**[19]**  Rudolf Julius Emanuel Clausius. “Sur diverses formes des équations fondamentales de la théorie mécanique de la chaleur, qui sont commodes dans l’application”. French. In: *Théorie mécanique de la chaleur*. Trans. from the German, with an introd., by F. Folie. With annots. by Rudolf Julius Emanuel Clausius. Eugène Lacroix, 1868, pp. 377–420.
 
 (ref-20)=
 **[20]**  Rudolf Julius Emanuel Clausius. “Sur l’application de la théorie mécanique de la chaleur à la machine à vapeur”. French. In: *Théorie mécanique de la chaleur*. Trans. from the German, with an introd., by F. Folie. With annots. by Rudolf Julius Emanuel Clausius. Eugène Lacroix, 1868, pp. 161–245.
@@ -87,8 +110,7 @@ References are numbered in order of first appearance in the book.
 **[26]**  Aurel Boreslav Stodola. *Die Dampfturbinen. mit einem Anhänge über die Aussichten der Wärmekraftmaschinen und über die Gasturbine*. German. Springer-Verlag GmbH, 1904.
 
 (ref-27)=
-**[27]**  Aurel Boreslav Stodola. *The Steam Turbine. With an appendix on gas turbines and the future of heat engines*. Trans. from the German by Louis Loewenstein. Archibald Constable & co. ltd., 1905. 327
-
+**[27]**  Aurel Boreslav Stodola. *The Steam Turbine. With an appendix on gas turbines and the future of heat engines*. Trans. from the German by Louis Loewenstein. Archibald Constable & co. ltd., 1905.
 (ref-28)=
 **[28]**  Herbert Sammons and Ernest Chatterton. *Napier Nomad Aircraft Diesel Engine*. Tech. rep. SAE International, June 1955, pp. 107–131. doi: [10.4271/550239.](https://doi.org/10.4271/550239.)
 
