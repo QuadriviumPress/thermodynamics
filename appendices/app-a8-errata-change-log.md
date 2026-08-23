@@ -114,3 +114,15 @@ For future PDF re-conversions, the defects found in this audit point to a few re
 - Two-column problem/answer pages occasionally had adjacent exercises' text interleaved during column reconstruction.
 
 These are noted for anyone improving the pipeline; they do not affect the current, hand-corrected text.
+
+### Chapters 1–2: Line-by-Line Audit Against the PDF (2026-08-23)
+
+A full page-by-page comparison of chapters 1 and 2 against the source PDF (using `scripts/qa/pdf_columns.py`, which separates each page's body/margin/caption text by font size) was carried out, covering both correctness and a specific structural defect: pull-quotes from historical figures that belong in the margin column of the PDF, and should therefore be set apart from body prose as `:::{aside}` blocks in the Markdown, exactly as the book already does elsewhere.
+
+**Nested aside block.** In chapter 1, §1.4.2 ("Heat"), a James Joule quote (1845) and a Rudolf Clausius quote (1850) — two separate margin items on PDF page 20 — had been merged during conversion into one nested `:::{aside}` block, with the Clausius quote's aside opening before the Joule quote's aside had closed. This rendered as one quote box containing a smaller box, instead of two sequential boxes. Split into two sibling `:::{aside}` blocks. Every other margin quote in chapters 1 and 2 (Feynman, Thomson, Clausius, Clapeyron, Pambour ×2) was checked against the PDF and found already correctly wrapped, with matching text.
+
+**Missing exercise content.** Chapter 2, exercise 2.5 ("Cycle of a Gasoline Engine"), had its problem statement truncated mid-sentence, right after the description of the C→D expansion step; the D→A cooling step and all 8 numbered questions (present on PDF p.54) were missing entirely from the web edition. Restored from the PDF.
+
+**Orphaned extraction artifacts.** Two single-character lines (`A`, `B` — leftover axis labels from margin figures) had been stranded in chapter 2's body prose, immediately before unrelated equations (§2.4.1, §2.4.2). A stray `.7**` fragment (debris from the `**2.7**` exercise-enumerator label) sat as its own line at the top of exercise 2.7's answer block. All removed.
+
+A new document, `scripts/qa/admonition-audit-notes.md`, records the detection method (cross-referencing `pdf_columns.py`'s margin-column output against each chapter's `:::{aside}` blocks) and the specific defect classes found, so the same audit can be repeated for chapters 3–10.

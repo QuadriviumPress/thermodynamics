@@ -182,8 +182,6 @@ Let’s start by imagining that the fluid within a closed system behaves like a 
 W_{\mathrm{A}\rightarrow \mathrm{B}}= -\int F dl
 :::
 
-A
-
 Today, since we are using a fluid, we want to express work in terms of *pressure* and *volume* rather than force and length.
 
 :::{figure} ../images/fig-2-5.jpg
@@ -392,8 +390,6 @@ When the piston motion is infinitely slow, the fluid behaves like a spring being
 We experimentally observe that when the motion is infinitely slow, a compressed fluid behaves exactly like a spring (figure 2.8). The condition “when the motion is infinitely slow” is of paramount importance, as we will see below.
 
 If this condition is met, we can express the work received or supplied by the system in the same way as with the spring in the previous section:
-
-B
 
 :::{math}
 W_{\mathrm{A}\rightarrow \mathrm{B}}= -\int pdV
@@ -863,7 +859,7 @@ $2) m = \frac{V_{\mathrm{A}}}{v_{\mathrm{A}}} = 3.534 \times 10^{-4}kg 3) \frac{
 :label: prob-2-5
 :enumerator: 2.5
 
-**Cycle of a Gasoline Engine We want to study the operation of a four-cylinder gasoline engine (figure 2.21). Like all reciprocating heat engines, it supplies work by varying the pressure and volume of small amounts of air trapped in its cylinders. Here, we simplify the details of its operation to reduce it to the ideal case, where all processes are reversible. The engine has a displacement of $1.1 L$; it is equipped with four cylinders of diameter $7 cm$ and has a compression ratio (ratio between maximum and minimum volumes in a cylinder) of $7.9$. Air enters the engine under atmospheric conditions $(14.5 psi$ or $1 bar, 0.84 m^{3}kg^{-1})$. We can describe a cycle inside a cylinder with the following four steps: **From A to B** the air is adiabatically compressed from the bottom dead center to the top dead center. During this process, we know that its properties are related by the relation $p v^{k_{1}}= k_{2}$. At B, the pressure has reached $246.1 psi (16.97 bar)$. **From B to C** it is heated at constant volume (as if the piston were stationary) until the pressure reaches $1087.8 psi (75 bar)$. By measuring temperature, it is found that its specific internal energy increases by $1543.3 kJ kg^{-1}$. **From C to D** the air is adiabatically expanded from the top dead center to the bottom dead center. Its properties are related by the relation $p v^{k_{1}}= k_{3}$.**
+**Cycle of a Gasoline Engine We want to study the operation of a four-cylinder gasoline engine (figure 2.21). Like all reciprocating heat engines, it supplies work by varying the pressure and volume of small amounts of air trapped in its cylinders. Here, we simplify the details of its operation to reduce it to the ideal case, where all processes are reversible. The engine has a displacement of $1.1 L$; it is equipped with four cylinders of diameter $7 cm$ and has a compression ratio (ratio between maximum and minimum volumes in a cylinder) of $7.9$. Air enters the engine under atmospheric conditions $(14.5 psi$ or $1 bar, 0.84 m^{3}kg^{-1})$. We can describe a cycle inside a cylinder with the following four steps: **From A to B** the air is adiabatically compressed from the bottom dead center to the top dead center. During this process, we know that its properties are related by the relation $p v^{k_{1}}= k_{2}$. At B, the pressure has reached $246.1 psi (16.97 bar)$. **From B to C** it is heated at constant volume (as if the piston were stationary) until the pressure reaches $1087.8 psi (75 bar)$. By measuring temperature, it is found that its specific internal energy increases by $1543.3 kJ kg^{-1}$. **From C to D** the air is adiabatically expanded from the top dead center to the bottom dead center. Its properties are related by the relation $p v^{k_{1}}= k_{3}$. **From D to A** it is cooled at constant volume (as if the piston were stationary) until it returns to its state at A. (In practice, this cooling phase takes place outside the engine, in the atmosphere. However, it can be modeled this way without introducing errors.) 1. Draw the processes undergone by the air qualitatively on a pressure-volume diagram. 2. What is the mass of air present in a cylinder? 3. What is the specific work done to the air during compression (from A to B)? 4. What is the specific heat received by the air during combustion (from B to C)? 5. What is the specific work done by the air during expansion (from C to D)? 6. What is the specific heat transferred away from the air during the cooling phase? 7. What is the engine efficiency, that is, the ratio of the net work output during the cycle to the heat input during combustion? 8. How many cycles must be performed each second for the engine to produce a power of $80 hp (58.84 kW)$?**
 
 :::{admonition} Answer
 :class: dropdown
@@ -948,7 +944,6 @@ $p_{\mathrm{D}1}= 194.8\,\mathrm{bar} = 2825\,\mathrm{psi}$.
 :::{admonition} Answer
 :class: dropdown
 
-.7**
 3) After obtaining $p_{\mathrm{B}}= 4.61 \times 10^{-2}bar$, we calculate $W_{\mathrm{A}\rightarrow \mathrm{B}}= \frac{p_{\mathrm{B}}V_{\mathrm{B}}-p_{\mathrm{A}}V_{\mathrm{A}}}{k_{1}-1} = -73.14 J$.
 4) $Q_{\mathrm{B}\rightarrow \mathrm{C}}= mc_{v}\Delta T = +607.4 J$
 5) $W_{\mathrm{C}\rightarrow \mathrm{A}}= +400 J$ (easy!)

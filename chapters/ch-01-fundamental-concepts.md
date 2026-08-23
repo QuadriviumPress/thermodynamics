@@ -466,12 +466,12 @@ Both of those scales precede the Kelvin scale, and they were cleverly redefined 
 James Joule, 1845
 
 *On the Changes of Temperature Produced by the Rarefaction and Condensation of Air* [[8](#ref-8)]
+:::
 
 :::{aside}
 « These circumstances ... pressingly demand a comparison between heat and work, to be undertaken with reference to the divergent assumption that the production of work is not only due to an alteration in the *distribution* of heat, but to an actual *consumption* thereof; and inversely, that by the consumption of work heat may be *produced*. »
 
 Rudolf Clausius, 1850 [[10](#ref-10), [11](#ref-11), [21](#ref-21)]
-:::
 :::
 
 When two bodies of different temperatures are brought into contact, their temperatures tend to equalize during a spontaneous transfer of energy. We call this form of energy *heat*.
