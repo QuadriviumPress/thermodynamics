@@ -212,30 +212,124 @@ It should be noted that in practice, the adjectives “specific” or “mass-sp
 (sec-1-2)=
 ## 1.2 Mechanical Energy
 
-The student will have no difficulty quantifying *kinetic energy*: $E_{k}= \frac{1}{2} m C^{2}(1/5)$ where $E_{k}$ is the kinetic energy $(J)$, $m$ is the mass of the body $(kg)$, and $C$ is the velocity $(m s^{-1}$, see Appendix A6 p. 319 for other units). Of course, we also define *specific kinetic energy* correspondingly: $e_{k}\equiv \frac{E_{k}}{} \frac{}{} (1/6) m = ^{\frac{1}{2}} C^{2}$ In thermodynamics, we are mainly interested in the changes in the energy of fluids within machines. The kinetic energy of gases varies negligibly in piston/cylinder engines, but it plays a major role in jet engines, as we will see in chapter 10 (*air-based power cycles*). The expression for *potential energy due to altitude* should also not cause any concern for the student: $E_{p}= m g z$ (1/7) $e_{p}\equiv \frac{E_{p}}{m} = g z (1/8)$ where $g$ is the gravitational acceleration (usually $9.81 m s^{-2})$, and $z$ is the altitude relative to the reference point $(m$, see Appendix A5 p. 317 for other units). We will show that in machines, the change of the potential energy of the air due to altitude is always negligible, and that this is often also true for water. Kinetic energy and potential energy due to altitude are often combined into a single term, called *mechanical energy*: $e_{m}\equiv e_{k}+ e_{p}= \frac{1}{2} C^{2}+ g z (1/9)$
+The student will have no difficulty quantifying *kinetic energy*:
+
+:::{math}
+:label: eq-1-5
+:enumerator: 1/5
+E_{k}= \frac{1}{2} m C^{2}
+:::
+
+where $E_{k}$ is the kinetic energy $(J)$, $m$ is the mass of the body $(kg)$, and $C$ is the velocity $(m s^{-1}$, see Appendix A6 p. 319 for other units).
+
+Of course, we also define *specific kinetic energy* correspondingly:
+
+:::{math}
+:label: eq-1-6
+:enumerator: 1/6
+e_{k}\equiv \frac{E_{k}}{m} = \frac{1}{2} C^{2}
+:::
+
+In thermodynamics, we are mainly interested in the changes in the energy of fluids within machines. The kinetic energy of gases varies negligibly in piston/cylinder engines, but it plays a major role in jet engines, as we will see in chapter 10 (*air-based power cycles*).
+
+The expression for *potential energy due to altitude* should also not cause any concern for the student:
+
+:::{math}
+:label: eq-1-7
+:enumerator: 1/7
+E_{p}= m g z
+:::
+
+:::{math}
+:label: eq-1-8
+:enumerator: 1/8
+e_{p}\equiv \frac{E_{p}}{m} = g z
+:::
+
+where $g$ is the gravitational acceleration (usually $9.81 m s^{-2})$, and $z$ is the altitude relative to the reference point $(m$, see Appendix A5 p. 317 for other units).
+
+We will show that in machines, the change of the potential energy of the air due to altitude is always negligible, and that this is often also true for water. Kinetic energy and potential energy due to altitude are often combined into a single term, called *mechanical energy*:
+
+:::{math}
+:label: eq-1-9
+:enumerator: 1/9
+e_{m}\equiv e_{k}+ e_{p}= \frac{1}{2} C^{2}+ g z
+:::
 
 ````{prf:example}
+:label: ex-1-3
+:enumerator: 1.3
 
-$\Delta E_{m}= E_{m2}- E_{m1}= m(e_{m2}- e_{m1}) = m(gz_{2}- gz_{1}+ \frac{1}{2}C^{2}$
+A student is coasting down a mountain road with a bicycle. At a point with an altitude of $540 m (1772 ft)$, his/her speed is $10 km/h (6.214 mph)$. A few moments later, passing a point at an altitude of $490 m (1608 ft)$, his/her speed is $45 km/h (27.96 mph)$. The mass of the cyclist together with his/her equipment is $70 kg (154.3 lb)$. How much energy has s/he dissipated in the form of friction?
 
-$= 70 [9.81(490 - 540) + ^{1}$
+The student’s mechanical energy changed by
 
-always positive.
+$$
+\begin{aligned}
+\Delta E_{m}= E_{m2}- E_{m1}= m(e_{m2}- e_{m1}) &= m\bigl[g(z_{2}- z_{1}) + \tfrac{1}{2}(C_{2}^{2}- C_{1}^{2})\bigr] \\
+&= 70 \Bigl[9.81(490 - 540) + \tfrac{1}{2}\bigl(\bigl(\tfrac{45\times 10^{3}}{3600}\bigr)^{2} - \bigl(\tfrac{10\times 10^{3}}{3600}\bigr)^{2}\bigr)\Bigr] \\
+&= 70 [-490.5 + 74.3] = -2.91 \times 10^{4}J = -29.1 kJ.
+\end{aligned}
+$$
+
+The student has lost $29.1 kJ$ of mechanical energy. This quantity was transferred to the atmosphere in the form of turbulence and heat, and to the bicycle’s bearings and tires in the form of heat.
+
+Energy changes may well be negative. Kinetic energy is however always positive.
+
+Refer to Appendix A5 p. 317 for converting to and from SI units.
+
+The passage of the bicycle through the air causes observable disturbances on a macroscopic scale that we call *turbulence*. After a short time, this kinetic energy has dissipated down to a microscopic scale, warming up the atmosphere.
 
 ````
 
 (sec-1-3)=
 ## 1.3 Work
 
-quantified using vectors: where $W$ is the work $(J)$, and $l$ particularities: *that does the work*; Example 1.3 A student is coasting down a mountain road with a bicycle. At a point with an altitude of $540 m (1772 ft)$, his/her speed is $10 km/h (6.214 mph)$. A few moments later, passing a point at an altitude of $490 m (1608 ft)$, his/her speed is $45 km/h (27.96 mph)$. The mass of the cyclist together with his/her equipment is $70 kg (154.3 lb)$. How much energy has s/he dissipated in the form of friction? The student’s mechanical energy changed by $_{2}- \frac{1}{2}C_{1}^{2}) = m[g(z_{2}- z_{1}) + \frac{1}{2}(C_{2}^{2}- C_{1}^{2})] 2 2 ^{2}((^{\frac{45\times 10^{3}}{3600}} ) - (^{\frac{10\times 10^{3}}{3600}} ))] = 70 [-490.5 + 74.3] = -2.91 \times 10^{4}J = -29.1 kJ$. The student has lost $29.1 kJ$ of mechanical energy. This quantity was transferred to the atmosphere in the form of turbulence and heat, and to the bicycle’s bearings and tires in the form of heat. Energy changes may well be negative. Kinetic energy is however Refer to Appendix A5 p. 317 for converting to and from SI units. The passage of the bicycle through the air causes observable disturbances on a macroscopic scale that we call *turbulence*. After a short time, this kinetic energy has dissipated down to a microscopic scale, warming up the atmosphere. *Work* is a transfer of energy. An object does work (and thus loses energy) when it exerts a force over a displacement. In mechanics, this work is $W \equiv \vec{F} ⋅\vec{l}$ (1/10) $F$ is the vector representing the force (of magnitude $F$ in $N)$, is the vector representing the displacement (of magnitude $l$ in $m)$. In thermodynamics, we will use this equation 1/10 to quantify the work done by fluids. In order to do this, we will rewrite it by adding three • We will measure the displacement *as the change in length of the object* • We will only consider cases where the vectors$\vec{F}$ and$\vec{l}$ are collinear; • We will take into account the fact that$\vec{F}$ can vary as a function of$\vec{l}$. *Engineering Thermodynamics* by Olivier Cleynen With these three constraints, equation 1/10 becomes: B $W_{\mathrm{A}\rightarrow \mathrm{B}}= \int F ⋅ \mathrm{d}\vec{l}$ A Since $\mathrm{d}\vec{l}$ is measured from the length of the object performing the work, $dl$ will be negative when $W$ is positive (work is then done *to* the object, causing its length to decrease). Finally, since$\vec{F}$ is always collinear with $\mathrm{d}\vec{l}$ in our case, we can write: B $W_{\mathrm{A}\rightarrow \mathrm{B}}= -\int F dl$ (1/11) A where $W_{\mathrm{A}\rightarrow \mathrm{B}}$ is the work done between two points A and B $(J)$, $F$ is the force $(N)$, and $dl$ is the infinitesimal change in the length of the considered object $(m)$. On a diagram representing the force as a function of distance, this work $W_{\mathrm{A}\rightarrow \mathrm{B}}$ is represented by the area under the curve from A to B (figure 1.3). The shape of the curve, in other words, the relationship $F_{(l)}$ between $F$ and $l$ during the process, will determine the quantity $W_{\mathrm{A}\rightarrow \mathrm{B}}$. *Diagram* CC-0 *Olivier Cleynen*
+*Work* is a transfer of energy. An object does work (and thus loses energy) when it exerts a force over a displacement. In mechanics, this work is quantified using vectors:
 
-   :::{figure} ../images/fig-1-3.jpg
-   :label: fig-1-3
-   :enumerator: 1.3
-   :alt: On a force-distance diagram, the work done by an object can be visualized by the area under the curve. In the case shown here, the object’s
-   
-   On a force-distance diagram, the work done by an object can be visualized by the area under the curve. In the case shown here, the object’s length $l$ increases, and the work will be negative (done by the object).
-   :::
+:::{math}
+:label: eq-1-10
+:enumerator: 1/10
+W \equiv \vec{F} \cdot \vec{l}
+:::
+
+where $W$ is the work $(J)$, $\vec{F}$ is the vector representing the force (of magnitude $F$ in $N)$, and $\vec{l}$ is the vector representing the displacement (of magnitude $l$ in $m)$.
+
+In thermodynamics, we will use this equation 1/10 to quantify the work done by fluids. In order to do this, we will rewrite it by adding three particularities:
+
+• We will measure the displacement *as the change in length of the object that does the work*;
+
+• We will only consider cases where the vectors $\vec{F}$ and $\vec{l}$ are collinear;
+
+• We will take into account the fact that $\vec{F}$ can vary as a function of $\vec{l}$.
+
+With these three constraints, equation 1/10 becomes:
+
+:::{math}
+W_{\mathrm{A}\rightarrow \mathrm{B}}= \int_{\mathrm{A}}^{\mathrm{B}} \vec{F} \cdot \mathrm{d}\vec{l}
+:::
+
+Since $\mathrm{d}\vec{l}$ is measured from the length of the object performing the work, $dl$ will be negative when $W$ is positive (work is then done *to* the object, causing its length to decrease). Finally, since $\vec{F}$ is always collinear with $\mathrm{d}\vec{l}$ in our case, we can write:
+
+:::{math}
+:label: eq-1-11
+:enumerator: 1/11
+W_{\mathrm{A}\rightarrow \mathrm{B}}= -\int_{\mathrm{A}}^{\mathrm{B}} F\, dl
+:::
+
+where $W_{\mathrm{A}\rightarrow \mathrm{B}}$ is the work done between two points A and B $(J)$, $F$ is the force $(N)$, and $dl$ is the infinitesimal change in the length of the considered object $(m)$.
+
+On a diagram representing the force as a function of distance, this work $W_{\mathrm{A}\rightarrow \mathrm{B}}$ is represented by the area under the curve from A to B (figure 1.3). The shape of the curve, in other words, the relationship $F_{(l)}$ between $F$ and $l$ during the process, will determine the quantity $W_{\mathrm{A}\rightarrow \mathrm{B}}$.
+
+:::{figure} ../images/fig-1-3.jpg
+:label: fig-1-3
+:enumerator: 1.3
+:alt: On a force-distance diagram, the work done by an object can be visualized by the area under the curve. In the case shown here, the object’s length $l$ increases, and the work will be negative (done by the object).
+
+On a force-distance diagram, the work done by an object can be visualized by the area under the curve. In the case shown here, the object’s length $l$ increases, and the work will be negative (done by the object).
+:::
+
+*Diagram* CC-0 *Olivier Cleynen*
 
 ````{prf:example}
 :label: ex-1-4
