@@ -27,21 +27,13 @@ Air-based engines are more compact and lighter than steam engines. Many modifica
 
 ## Introduction
 
-In this final chapter, we cover the cycles of engines that use air a as a
+In this final chapter, we cover the cycles of engines that use air a as a working fluid. These are sometimes called *gas power cycles*, although because the term *gas engine* is understood differently in different contexts,
 
-working fluid. These are sometimes called *gas power cycles*, although
-
-because the term *gas engine* is understood differently in different contexts,
-
-we choose the term *air-based engine* in this book. This chapter 10 aims to
-
-answer the same two questions as its predecessor with liquids/vapors:
+we choose the term *air-based engine* in this book. This chapter 10 aims to answer the same two questions as its predecessor with liquids/vapors:
 
 • Why and how are air-based engines used today?
 
-• Why are we moving away from ideal cycles and how do we quantify
-
-these compromises?
+• Why are we moving away from ideal cycles and how do we quantify these compromises?
 
 (sec-10-1)=
 ## 10.1 Why Use an Air-Based Engine?
@@ -64,9 +56,7 @@ Ultimately, the relatively lower weight of air engines compared to their steam c
 (sec-10-2-1)=
 ### 10.2.1 Thermal efficiency
 
-It now goes without saying that we always seek to achieve a high *thermal*
-
-its theoretical maximum $\eta _{\mathrm{Carnot} \mathrm{engine}}= 1 - \frac{T_{\min.}}{T_{\max.}}$ (7/6).
+It now goes without saying that we always seek to achieve a high *thermal* its theoretical maximum $\eta _{\mathrm{Carnot} \mathrm{engine}}= 1 - \frac{T_{\min.}}{T_{\max.}}$ (7/6).
 
 As we have already suggested in §9.2, thermal efficiency should not, however, be maximized at the expense of other important parameters, the most notable of which we present below for air-based engines.
 
@@ -133,9 +123,7 @@ In general, obtaining high thermal efficiency requires a high compression ratio 
 
 We use the concepts of *specific thrust* $\frac{P\dot{}}{m}$ and *specific power* $w_{\mathrm{net}}$, in other words, the thrust and power of the engine divided by the mass flow rate of air passing through it, to compare engine cycles succinctly. Increasing these parameters is often desirable in applications where a high power-to-weight ratio is sought.
 
-For example, a heavier aircraft must provide greater lift, which increases drag, and in turn the thrust, and finally and the power required to generate
-
-it – so in that case, an increase in efficiency is not always justified if it results in an increase in weight or size.
+For example, a heavier aircraft must provide greater lift, which increases drag, and in turn the thrust, and finally and the power required to generate it – so in that case, an increase in efficiency is not always justified if it results in an increase in weight or size.
 
 (sec-10-2-4)=
 ### 10.2.4 Other evaluation criteria
@@ -432,13 +420,9 @@ $(5 + 273.15) (40)^{1.4}= 798 K = 524.9^{\circ}C = 976.7 ^{\circ} F$. The ideal 
 
 With equation 10/5, the power of the compressor naturally comes as:$\dot{W}_{\mathrm{compressor}}=\dot{m} \frac{1}{\eta _{\mathrm{C}}} w_{\mathrm{isentropic} \mathrm{compressor}}= 38 \times \frac{1}{0.85} \times 5.225 \times 10^{5}= 2.336 \times 10^{7}W = 23.36 MW$.
 
-Note that unlike for turbines, the actual power is *greater* than
+Note that unlike for turbines, the actual power is *greater* than the theoretical power, and we must divide by the efficiency in the final calculation.
 
-the theoretical power, and we must divide by the efficiency in the final calculation.
-
-Equation 10/6 would allow us to calculate the actual outlet
-
-temperature: $T_{\mathrm{B} \mathrm{real}}= \frac{1}{\eta _{\mathrm{C}}} c_{p}(T_{\mathrm{B}^{'}}- T_{\mathrm{A}}) + T_{\mathrm{A}}= \frac{1}{0.85}(798 - 278.15) + 278.15 = 889.7 K = 616.6^{\circ}C = 1141.8 ^{\circ} F$. Here, the $92^{\circ}C (165 ^{\circ} F)$ difference from the isentropic case are the result of converting work into heat due to friction in the compressor, an unnecessary expense representing$\dot{m} c_{p}(T_{\mathrm{B}}- T_{\mathrm{B}^{'}}) = +3.5 MW$.
+Equation 10/6 would allow us to calculate the actual outlet temperature: $T_{\mathrm{B} \mathrm{real}}= \frac{1}{\eta _{\mathrm{C}}} c_{p}(T_{\mathrm{B}^{'}}- T_{\mathrm{A}}) + T_{\mathrm{A}}= \frac{1}{0.85}(798 - 278.15) + 278.15 = 889.7 K = 616.6^{\circ}C = 1141.8 ^{\circ} F$. Here, the $92^{\circ}C (165 ^{\circ} F)$ difference from the isentropic case are the result of converting work into heat due to friction in the compressor, an unnecessary expense representing$\dot{m} c_{p}(T_{\mathrm{B}}- T_{\mathrm{B}^{'}}) = +3.5 MW$.
 
 ````
 
@@ -538,21 +522,11 @@ Schematic representation of a gas turbine.
 
 The *nozzle* is a simple conduit with no moving part (figures 10.14 and 10.15).
 
-It allows the gas to expand, thereby accelerating towards the rear of the
+It allows the gas to expand, thereby accelerating towards the rear of the engine. It is this increase in gas velocity (difference between inlet and outlet velocities) that is the source of the thrust provided by an engine.
 
-engine. It is this increase in gas velocity (difference between inlet and outlet
+There is no heat or work input in the nozzle: the energy of the gas is conserved. The nozzle is the only element of the gas turbine engine for which the change in kinetic energy may not be neglected.
 
-velocities) that is the source of the thrust provided by an engine.
-
-There is no heat or work input in the nozzle: the energy of the gas is
-
-conserved. The nozzle is the only element of the gas turbine engine for
-
-which the change in kinetic energy may not be neglected.
-
-A quick return to equation 3/15 allows us to quantify the final speed of the
-
-gases as a function of the available pressure difference:
+A quick return to equation 3/15 allows us to quantify the final speed of the gases as a function of the available pressure difference:
 
 :::{math}
 :label: eq-3-15-nozzle
@@ -633,13 +607,9 @@ $C_{\mathrm{B}}= [-2 c_{p(\mathrm{gases})}(T_{\mathrm{B}}- T_{\mathrm{A}}) + C^{
 
 $= [-2 \times 1150 \times (293 - 400) + 10^{2}] = 496.2 m s^{-1}= 1786 km/h = 1110 mph$.
 
-In practice, the gases would never reach this speed. Indeed, a
+In practice, the gases would never reach this speed. Indeed, a large part of the expansion takes place *downstream* of the nozzle, where it is very turbulent and therefore highly irreversible. This nevertheless does not inful ence the thrust generated by the nozzle, whose outlet orifcie pressure is in fact higher than atmospheric pressure. The speed calculation performed here remains a good thermodynamic “indicator” of the phenomena at play. A full description of the fluid dynamics of the nozzle is outside of the scope of this book.
 
-large part of the expansion takes place *downstream* of the nozzle, where it is very turbulent and therefore highly irreversible. This nevertheless does not inful ence the thrust generated by the nozzle, whose outlet orifcie pressure is in fact higher than atmospheric pressure. The speed calculation performed here remains a good thermodynamic “indicator” of the phenomena at play. A full description of the fluid dynamics of the nozzle is outside of the scope of this book.
-
-In most cases, it is reasonable to consider that the kinetic energy
-
-of the gases at the outlet of the turbine (and therefore at the inlet of the nozzle) is negligible. The $10 m s^{-1}$ at A have no significant influence here.
+In most cases, it is reasonable to consider that the kinetic energy of the gases at the outlet of the turbine (and therefore at the inlet of the nozzle) is negligible. The $10 m s^{-1}$ at A have no significant influence here.
 
 ````
 
@@ -687,9 +657,7 @@ The heart of any gas turbine engine is called the *gas generator*. It contains o
 A “gas generator” (schematic drawing and temperature-entropy diagram). This machine has no interest in itself but has many derived applications. One of them is the *turbocharger*, for which a piston engine acts as the combustion
 :::
 
-*Schematic* CC-by-sa *Olivier Cleynen*
-
-chamber, as described in §10.3.5. *Diagram* CC-0 *Olivier Cleynen*
+*Schematic* CC-by-sa *Olivier Cleynen* chamber, as described in §10.3.5. *Diagram* CC-0 *Olivier Cleynen*
 
 In this configuration, the turbine extracts exactly enough power to power the compressor. At its outlet, the air is still compressed and can be used in a multitude of ways, as explored below.
 
@@ -869,9 +837,7 @@ Like reheat, afterburning alters the properties (specific volume in particular) 
 Afterburner on a dual-flow turbojet engine (schematic and temperature-entropy diagram). States E and H are not necessarily merged in practice.
 :::
 
-*Diagram 1* CC-by-sa*, Diagram 2* CC-0 *Olivier Cleynen*
-
-nozzle. The increase in weight is low compared to the increase in available power.
+*Diagram 1* CC-by-sa*, Diagram 2* CC-0 *Olivier Cleynen* nozzle. The increase in weight is low compared to the increase in available power.
 
 The outrageous loss of efficiency caused by the use of afterburners, as well as the deafening levels of noise and pollution they generate, limit their use to the military sector (especially on combat aircraft).
 
@@ -903,17 +869,13 @@ Such turbine cooling comes at a significant cost. First, in a real engine, less 
 Turbine cooling using air taken from the compressor (schematic and temperature-entropy diagram). This air, at moderate temperature, bypasses the combustion chamber and never comes into contact with the fuel. Here the represented engine is a turboshaft, but turbine cooling can be used in any configuration.
 :::
 
-*Schematic* CC-by-sa *Olivier Cleynen Diagram* CC-0 *Olivier Cleynen*
-
-are isentropic, this energy cost is zero). The circulation of this air therefore represents a burden that must be offset by the increase in efficiency it generates. Secondly, the compressor and the turbine must be oversized to accommodate a larger air flow.
+*Schematic* CC-by-sa *Olivier Cleynen Diagram* CC-0 *Olivier Cleynen* are isentropic, this energy cost is zero). The circulation of this air therefore represents a burden that must be offset by the increase in efficiency it generates. Secondly, the compressor and the turbine must be oversized to accommodate a larger air flow.
 
 Turbine cooling is a major research area in aeronautical propulsion. Techniques from a handful of fields (materials, fluid mechanics, mechanical design, combustion chemistry) are combined there in order to improve the thermodynamics of the engines.
 
 alone maintain the aircraft flying while supplying many systems (pressurization, de-icing, heating, electrical and pneumatic generation) for several hours with demonstrated reliability.
 
-*Diagram* CC-by-sa *Olivier Cleynen*
-
-cooling, and two main air flows. It is left to the student to trace the cycle on a temperature-entropy diagram. On twin-engine aircraft qualified for etops flights, each engine must be able to
+*Diagram* CC-by-sa *Olivier Cleynen* cooling, and two main air flows. It is left to the student to trace the cycle on a temperature-entropy diagram. On twin-engine aircraft qualified for etops flights, each engine must be able to
 
 :::{figure} ../images/fig-10-26.jpg
 :label: fig-10-26
@@ -974,11 +936,7 @@ Schematic diagram of the thermodynamic
 :class: note
 :label: hist-10-15
 
-sign approach. According to them, a simple turand of the Diesel engine each drove one propeller. Howbocharged Diesel engine could only benefit from
-
-ever, the two units were mounted in series: the air first passed through the compressors, then through the cyl. turbocharging over a very narrow power range — ders, and finally through the turbine(s). The engine power, outside of this range, the turbine power would be as was customary in 1950, was controlled using a single either in surplus (and therefore lost) or insufficient
-
-mechanical control lever! to power the compressor. A different arrangement,
+sign approach. According to them, a simple turand of the Diesel engine each drove one propeller. Howbocharged Diesel engine could only benefit from ever, the two units were mounted in series: the air first passed through the compressors, then through the cyl. turbocharging over a very narrow power range — ders, and finally through the turbine(s). The engine power, outside of this range, the turbine power would be as was customary in 1950, was controlled using a single either in surplus (and therefore lost) or insufficient mechanical control lever! to power the compressor. A different arrangement,
 
 *Diagram by users* $⋅$ *Commons Tataroko-common, Aaa3-other &*
 
@@ -988,15 +946,7 @@ mechanical control lever! to power the compressor. A different arrangement,
 
 the turbine (with the Diesel engine then only pro-
 
-Napier & Son rapidly corrected course: the second viding supercharging and heat supply) would be
-
-prototype of the engine, the *Nomad II*, was greatly far too inefficient at low power and unnecessarily
-
-simplified. The intercooling, reheat, and centrifugal strain the Diesel engine at high power. The simple
-
-supercharger were all abandoned (figure 10.29). The turboprop, unable to reach the high pressures and
-
-two large mechanical units, one with pistons and
+Napier & Son rapidly corrected course: the second viding supercharging and heat supply) would be prototype of the engine, the *Nomad II*, was greatly far too inefficient at low power and unnecessarily simplified. The intercooling, reheat, and centrifugal strain the Diesel engine at high power. The simple supercharger were all abandoned (figure 10.29). The turboprop, unable to reach the high pressures and two large mechanical units, one with pistons and
 
 Schematic diagram of the thermody-
 
@@ -1014,9 +964,7 @@ Schematic diagram of the thermodynamic circuit of the *Napier Nomad II*. A varia
 :class: note
 :label: hist-10-16
 
-*Nimbus227 (public domain)*
-
-temperatures of a Diesel engine, would be too inef-fi cient. Only in the chosen arrangement, called *Diesel turbo-compound*, could the cylinder engine and the turboprop unit both contribute at all power levels, each always running at its optimal speed.
+*Nimbus227 (public domain)* temperatures of a Diesel engine, would be too inef-fi cient. Only in the chosen arrangement, called *Diesel turbo-compound*, could the cylinder engine and the turboprop unit both contribute at all power levels, each always running at its optimal speed.
 
 The performance of the *Nomad II* was indeed impressive —with its efficiency of $40 \%$, it used a third less fuel than its contemporaries— but its commercial failure was brutal: the project was abandoned in 1955 without a single sale. The engine was terribly heavy (with over $1600 kg$ for $2 MW$, its power-to-weight ratio was three times lower than that of a turboprop), which erased a large part of the fuel savings it could have generated. Also, it was both too complex for regional aircraft and far too slow for jet airliners, and aircraft manufacturers were never interested.
 
@@ -1031,9 +979,7 @@ The curious arrangement conceived by Napier & Son fell into obscurity but, sixty
 
 ::::
 
-tem is poetically named mgu-h, but one could say
-
-that it is the unexpected revenge of the Anglo-Saxon
+tem is poetically named mgu-h, but one could say that it is the unexpected revenge of the Anglo-Saxon
 
 *turbo-compounding*!
 

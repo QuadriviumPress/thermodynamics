@@ -27,36 +27,20 @@ An open system is crossed by a mass flow. Heat and work transfers cause variatio
 
 ## Introduction
 
-In the previous chapter, we quantified energy exchanges within closed
+In the previous chapter, we quantified energy exchanges within closed systems. This chapter 3 (*open systems*) aims to answer a similar question:
 
-systems. This chapter 3 (*open systems*) aims to answer a similar question:
-
-how to quantify energy transfers within a system when it is crossed by a
-
-mass flow?
+how to quantify energy transfers within a system when it is crossed by a mass flow?
 
 (sec-3-1)=
 ## 3.1 Why Use an Open System?
 
-In many machines, the fluid used to transfer heat and work is continuously
+In many machines, the fluid used to transfer heat and work is continuously circulating. It can then be difficult to identify a particular amount of mass,
 
-circulating. It can then be difficult to identify a particular amount of mass,
+making it a closed system, in order to quantify energy transfers to and from it. For example, in a jet engine nozzle, air expands and accelerates continuously: at any given moment, there is no identifiable volume that would have *one* specific speed or *one* particular pressure.
 
-making it a closed system, in order to quantify energy transfers to and
+Using an open system is very useful to account for energy in flows. Rather than separating stages in time (for example before and after compression),
 
-from it. For example, in a jet engine nozzle, air expands and accelerates
-
-continuously: at any given moment, there is no identifiable volume that
-
-would have *one* specific speed or *one* particular pressure.
-
-Using an open system is very useful to account for energy in flows. Rather
-
-than separating stages in time (for example before and after compression),
-
-we quantify work and heat transfers by separating stages in space (for
-
-example upstream and downstream of the compressor).
+we quantify work and heat transfers by separating stages in space (for example upstream and downstream of the compressor).
 
 (sec-3-2)=
 ## 3.2 Accounting Conventions
@@ -80,6 +64,7 @@ In our study of thermodynamics, we will only use open systems:
 
 • having only one inlet and one outlet;
 
+:::{aside}
 « The constructive difficulties that have to be overcome in a large gas motor because of the immense piston pressures and heat expansion of the complicated cylinder heads (cracks galore!) are well known. A safe gas turbine would in this respect be an improvement. »
 
 Aurel Stodola, 1904
@@ -87,6 +72,7 @@ Aurel Stodola, 1904
 *Die Dampfturbinen* [[26](#ref-26), [27](#ref-27)]
 
 *Diagram* CC-0 *Olivier Cleynen*
+:::
 
 • being crossed by a constant mass flow rate$\dot{m}$ (positive by convention).
 
@@ -115,9 +101,7 @@ Let’s imagine an open system in steady flow, containing a small water pump. In
 
 Consider the case of a *fluid element* (namely, a small quantity of fluid in transit, with volume $V_{\mathrm{element}})$ entering our system at pressure $p_{1}$ (figure 3.2).
 
-The work $W_{\mathrm{insertion}}$ received by the system when the element is pushed
-
-through the insertion is:
+The work $W_{\mathrm{insertion}}$ received by the system when the element is pushed through the insertion is:
 
 :::{math}
 :label: eq-3-1
@@ -127,9 +111,7 @@ W_{\mathrm{insertion}}= p_{1}V_{\mathrm{element}}
 
 where $W_{\mathrm{insertion}}$ is the insertion work $(J)$, and $V_{\mathrm{element}}$ is the volume of the fluid element $(m^{3})$.
 
-If such a volume of fluid enters the system every second, then the system
-
-receives power in the form of work, which we call *insertion power*,$\dot{W}_{\mathrm{insertion}}$.
+If such a volume of fluid enters the system every second, then the system receives power in the form of work, which we call *insertion power*,$\dot{W}_{\mathrm{insertion}}$.
 
 :::{figure} ../images/fig-3-2.jpg
 :label: fig-3-2
@@ -172,9 +154,7 @@ $m$ is the mass flow rate crossing the system (always positive, $kg s^{-1})$, $V
 
 and $v_{1}$ is the specific volume of the fluid at the inlet $(m^{3}kg^{-1})$.
 
-Similarly, for the fluid to exit the system at the other end, the system must
-
-continuously supply a power called *extraction power*:
+Similarly, for the fluid to exit the system at the other end, the system must continuously supply a power called *extraction power*:
 
 :::{math}
 W_{\mathrm{extraction}}= -p_{2}\dot{V}_{2}=\dot{m}_{2}p_{2}v_{2}= -\dot{m} p_{2}v_{2} (3/4)
@@ -269,9 +249,7 @@ We apply equation 3/10 to obtain: $W_{1\rightarrow 2}= -\dot{Q}_{1\rightarrow 2}
 
 $= +9.464 \times 10^{5}W = +946.4 kW$.
 
-The only difficulty in applying this equation concerns the proper
-
-conversion of units. Pressure and energy should always be converted from their usual units to si units.
+The only difficulty in applying this equation concerns the proper conversion of units. Pressure and energy should always be converted from their usual units to si units.
 
 The power is positive, as expected since the air *receives* the work.
 
@@ -302,9 +280,7 @@ where $H$ is measured in joules (J).
 
 In practice, the term *enthalpy* is often used even if it refers to specific enthalpy; the symbol and context help determine which variable is being referred to.
 
-By using the concept of enthalpy, equations 3/9 and 3/11 are simplified to
-
-become:
+By using the concept of enthalpy, equations 3/9 and 3/11 are simplified to become:
 
 :::{math}
 Q_{1\rightarrow 2}+\dot{W}_{1\rightarrow 2}=\dot{m}(\Delta h + \Delta e_{\mathrm{mech}.})
@@ -318,6 +294,7 @@ q_{1\rightarrow 2}+ w_{1\rightarrow 2}= \Delta h + \Delta e_{\mathrm{mech}.}
 
 (3/13)
 
+:::{aside}
 « The decrease of the heat contents is equal to the heat value of the gained “useful work” plus the heat carried away to the outside plus the increase of kinetic energy per pound (or kilogram) of steam. »
 
 Aurel Stodola, 1904
@@ -329,6 +306,7 @@ Aurel Stodola, 1904
 (3/14)
 
 (3/15)
+:::
 
 Thus, in an open system, we see that heat and work transfers change the *enthalpy* of the fluid, and not only its internal energy as in a closed system.
 
@@ -380,9 +358,7 @@ C_{2}= [-2 \Delta h + C^{2}_{1}]^{2}
 
 So $C_{2}= [-2 \times (754 \times 10^{3}- 776 \times 10^{3}) + ( \frac{30}{3.6})] = 209.9 m s^{-1}= 755.7 km/h = 470 mph$.
 
-Care must be used with conversions: in the equations, velocities
-
-and energies are always in si units.
+Care must be used with conversions: in the equations, velocities and energies are always in si units.
 
 ````
 
@@ -451,9 +427,7 @@ w_{\mathrm{insertion}}= +p v
 
 (3/17)
 
-(3/18)
-
-continuously remove the fluid.
+(3/18) continuously remove the fluid.
 
 to the compressor:
 
@@ -473,13 +447,9 @@ and $v + dv$ for volume. Thus, we have:
 
 $w_{\mathrm{extraction}}= -(p + dp)(v + dv)$ (3/19)
 
-**The specific power received from the outside** δ$w_{\mathrm{O.S}.}$ is the power that
+**The specific power received from the outside** δ$w_{\mathrm{O.S}.}$ is the power that feeds the compression: this is the quantity we aim to quantify.
 
-feeds the compression: this is the quantity we aim to quantify.
-
-These four powers cancel each other out, since the total work transfer
-
-involved in the flow does not depend on the adopted viewpoint:
+These four powers cancel each other out, since the total work transfer involved in the flow does not depend on the adopted viewpoint:
 
 δ$w_{\mathrm{O.S}.}+ w_{\mathrm{insertion}}+ (-$δ$w_{m_{\mathrm{A}}}) + w_{\mathrm{extraction}}= 0$ (3/20)
 
@@ -493,9 +463,7 @@ $= -p v - pdv + p v + pdv + dp v + dp dv$
 
 $= dp v + dp dv$
 
-And since the product $dp \times dv$ tends to zero when using infinitesimal
-
-quantities, we obtain the surprising expression:
+And since the product $dp \times dv$ tends to zero when using infinitesimal quantities, we obtain the surprising expression:
 
 δ$w_{\mathrm{O.S}.}= vdp$ (3/21)
 
@@ -509,17 +477,11 @@ B
 
 $W_{\mathrm{A}\rightarrow \mathrm{B}}=\dot{m}\int vdp$ (3/23) A
 
-Thus, when we want to quantify reversible work in an open system, it is the
+Thus, when we want to quantify reversible work in an open system, it is the integral $+ \int vdp$ that needs to be calculated, and not $-\int pdv$.
 
-integral $+ \int vdp$ that needs to be calculated, and not $-\int pdv$.
+On a pressure-volume diagram, we can visualize this work by adding the insertion work and extraction work to the compression work, as shown in
 
-On a pressure-volume diagram, we can visualize this work by adding the
-
-insertion work and extraction work to the compression work, as shown in
-
-The reversible work done in steady, reversible flow is thus visualized by the
-
-area enclosed *to the left* of the curve, as shown in figure 3.7.
+The reversible work done in steady, reversible flow is thus visualized by the area enclosed *to the left* of the curve, as shown in figure 3.7.
 
 *Engineering Thermodynamics* by Olivier Cleynen
 
@@ -561,13 +523,9 @@ The process can be drawn qualitatively (that is, without showing numerical value
 
 We use equation 3/23, being cautious with the units. Since $v$ is independent of $p$, integration is straightforward:$\dot{W}_{\mathrm{A}\rightarrow \mathrm{B}}=\dot{m}\int ^{\mathrm{B}}_{\mathrm{A}}vdp =\dot{} m v_{L}\int ^{\mathrm{B}}_{\mathrm{A}}dp =\dot{m} v_{L}[p]^{p_{\mathrm{B}}}_{p_{\mathrm{A}}}= 2 \times 10^{-3}(20 \times 10^{5}- 1 \times 10^{5}) = +3.8 \times 10^{3}W = +3.8 kW$.
 
-This power is indeed positive, since the fluid in the system is
+This power is indeed positive, since the fluid in the system is receiving the work.
 
-receiving the work.
-
-Here the specific volume $v_{L}$ is constant (as always with liquid
-
-water). If it were the pressure that was constant, then the work would be zero even if $v$ were to vary.
+Here the specific volume $v_{L}$ is constant (as always with liquid water). If it were the pressure that was constant, then the work would be zero even if $v$ were to vary.
 
 ````
 
@@ -599,13 +557,9 @@ Here the specific volume is a function of pressure: we have $v = \left(\frac{k}{
 = +7.247 \times 10^{5}\,\mathrm{W} = +724.7\,\mathrm{kW}.
 :::
 
-Here the key is to correctly describe the function $v_{(p)}$ before
+Here the key is to correctly describe the function $v_{(p)}$ before proceeding with the integration.
 
-proceeding with the integration.
-
-The power of the compressor is $190$ times larger than that
-
-of the pump in the previous example. Additionally, the specific volume of the air at the inlet is $800$ times larger: a much larger machine will be required (it must handle a volumetric flow rate $V_{\mathrm{A}}=\dot{m} v_{\mathrm{A}}= 1.6 m^{3}s^{-1}= 1600 L s^{-1}= 423 US gal/s$ at the inlet).
+The power of the compressor is $190$ times larger than that of the pump in the previous example. Additionally, the specific volume of the air at the inlet is $800$ times larger: a much larger machine will be required (it must handle a volumetric flow rate $V_{\mathrm{A}}=\dot{m} v_{\mathrm{A}}= 1.6 m^{3}s^{-1}= 1600 L s^{-1}= 423 US gal/s$ at the inlet).
 
 ````
 
@@ -624,9 +578,7 @@ Using an open system to account for energy transfers does not change the problem
 Reversible (solid line) and irreversible (dashed line) compressions represented on a pressure-volume diagram. In an open system, work transfers can be visualized with the area to the left of the curve, but only when the processes are
 :::
 
-*Diagram* CC-0 *Olivier Cleynen*
-
-reversible.
+*Diagram* CC-0 *Olivier Cleynen* reversible.
 
 On our pressure-volume diagrams, we represent irreversible processes with a dashed line, to clearly differentiate them from reversible processes, as shown in figure 3.8.
 
@@ -676,9 +628,7 @@ Thus, the properties gradually shift on the pressure-volume diagram. Unless the 
 
 With an open system, we will use the same method as with a closed system:
 
-since we cannot quantify heat transfers directly, we will always proceed by
-
-deduction. Mathematically, we simply reuse equation 3/14 to obtain:
+since we cannot quantify heat transfers directly, we will always proceed by deduction. Mathematically, we simply reuse equation 3/14 to obtain:
 
 :::{math}
 Q_{1\rightarrow 2}=\dot{m}(\Delta h + \Delta e_{\mathrm{mech}.}) -\dot{W}_{1\rightarrow 2}
@@ -725,51 +675,19 @@ Black continued his activities by conducting a whole series of calorimetry exper
 
 ::::
 
-demonstrated that the specific heat depends on the
+demonstrated that the specific heat depends on the nature of the body:
 
-nature of the body:
-
-We must, therefore, conclude that different bodies, although they be of the same size, or even of
-
-the same weight, when they are reduced to the
-
-same temperature or degree of heat, whatever that
-
-be, may contain very different quantities of the
-
-matter of heat; which different quantities are necessary to bring them to this level, or equilibrium,
+We must, therefore, conclude that different bodies, although they be of the same size, or even of the same weight, when they are reduced to the same temperature or degree of heat, whatever that be, may contain very different quantities of the matter of heat; which different quantities are necessary to bring them to this level, or equilibrium,
 
 with one another.
 
 Joseph Black, 1807 [[2](#ref-2)]
 
-He did not make any assumptions about the nature
+He did not make any assumptions about the nature of this heat that he characterized. For most of his contemporaries, however, its apparent conservation indicated that it was a material fluid devoid of mass which Lavoisier later named *caloric*. In this view,
 
-of this heat that he characterized. For most of his
+this substance could be transferred from one body to another to raise the temperature of the receiving body and lower that of the giving body: some bodies
 
-contemporaries, however, its apparent conservation
-
-indicated that it was a material fluid devoid of mass
-
-which Lavoisier later named *caloric*. In this view,
-
-this substance could be transferred from one body
-
-to another to raise the temperature of the receiving
-
-body and lower that of the giving body: some bodies
-
-(such as water) contained more of it at a given temperature than others (like oil), resulting in different
-
-specific heats. On the other hand, Black believed
-
-that the fusion of a solid or the vaporization of a
-
-liquid could be a kind of chemical combination of
-
-the caloric fluid with the matter: the caloric would
-
-then disappear as such and become “latent”.
+(such as water) contained more of it at a given temperature than others (like oil), resulting in different specific heats. On the other hand, Black believed that the fusion of a solid or the vaporization of a liquid could be a kind of chemical combination of the caloric fluid with the matter: the caloric would then disappear as such and become “latent”.
 
 :::{figure} ../images/fig-3-9.jpg
 :label: fig-3-9

@@ -19,9 +19,7 @@ The first law states that energy is constant and indestructible: we transform it
 
 ## Introduction
 
-We are presenting here the essential concepts that we will use in the
-
-following chapters, attempting to answer two questions:
+We are presenting here the essential concepts that we will use in the following chapters, attempting to answer two questions:
 
 • What does energy represent?
 
@@ -60,11 +58,13 @@ The *first law of thermodynamics* simply states:
 
 Energy is indestructible.
 
+:::{aside}
 « It is important to realize that in physics today, we have no knowledge of what energy *is*. We do not have a picture that energy comes in little blobs of a definite amount. It is not that way. However, there are formulas for calculating some numerical quantity, and when we add it all together it gives “28”—always the same number. It is an abstract thing in that it does not tell us the mechanism or the *reasons* for the various formulas. »
 
 Richard Feynman, 1963 [[30](#ref-30), [35](#ref-35)]
 
 *The Feynman Lectures on Physics*
+:::
 
 One can also state that “the energy of the universe is constant”, or “energy is always conserved”: it can neither be created nor destroyed. In other words, when an object receives a joule of energy, it can either store it or deliver it back to the surroundings; but in no case can it destroy it.
 
@@ -197,13 +197,9 @@ A power$\dot{Q}_{\mathrm{comb}.1}=\dot{m}_{1}q_{\mathrm{comb}.}= 0.5 \times 300 
 
 ````{prf:example}
 
-Power$\dot{Q}$ and mass flow$\dot{m}$ are written with a dot (flow in
+Power$\dot{Q}$ and mass flow$\dot{m}$ are written with a dot (flow in time) but not the specific power as heat $q$, which is measured in $J kg^{-1}$ just like specific heat.
 
-time) but not the specific power as heat $q$, which is measured in $J kg^{-1}$ just like specific heat.
-
-Thanks to the concepts of specific energy and specific
-
-power, we can compare the same physical process (air heated up by combustion) in this example with the previous one, in two very different machines.
+Thanks to the concepts of specific energy and specific power, we can compare the same physical process (air heated up by combustion) in this example with the previous one, in two very different machines.
 
 ````
 
@@ -381,9 +377,7 @@ The sign of the transferred work is positive: the spring has
 
 *received* energy. This does not suprise us: its length has decreased
 
-Springs with such a characteristic (independent of their length)
-
-are often ribbon springs, like those used in mechanical watches.
+Springs with such a characteristic (independent of their length) are often ribbon springs, like those used in mechanical watches.
 
 Example 1.5
 
@@ -439,9 +433,7 @@ Temperature is measured in kelvins $(K)$, on a scale created for the needs of th
 
 Students will likely be familiar with at least one of two temperature scales:
 
-• the Celsius scale $(^{\circ}C)$. Simply subtracting $273.15$ units from an absolute
-
-temperature (in kelvins) gives a temperature in degrees Celsius:
+• the Celsius scale $(^{\circ}C)$. Simply subtracting $273.15$ units from an absolute temperature (in kelvins) gives a temperature in degrees Celsius:
 
 :::{math}
 T(^{\circ}C) \equiv T(K) - 273.15 (1/12)
@@ -451,9 +443,7 @@ T(^{\circ}C) \equiv T(K) - 273.15 (1/12)
 T(K) = T(^{\circ}C) + 273.15 (1/13)
 :::
 
-• the Fahrenheit scale $(^{\circ} F)$. The translation to kelvins is a little more
-
-complex:
+• the Fahrenheit scale $(^{\circ} F)$. The translation to kelvins is a little more complex:
 
 :::{math}
 T(^{\circ} F) = 1.8 \times [T(K) - 273.15] + 32 (1/14)
@@ -498,27 +488,25 @@ Both of those scales precede the Kelvin scale, and they were cleverly redefined 
 (sec-1-4-2)=
 ### 1.4.2 Heat
 
+:::{aside}
 « These results are inexplicable if heat be a substance. »
 
 James Joule, 1845
 
 *On the Changes of Temperature Produced by the Rarefaction and Condensation of Air* [[8](#ref-8)]
 
+:::{aside}
 « These circumstances ... pressingly demand a comparison between heat and work, to be undertaken with reference to the divergent assumption that the production of work is not only due to an alteration in the *distribution* of heat, but to an actual *consumption* thereof; and inversely, that by the consumption of work heat may be *produced*. »
 
 Rudolf Clausius, 1850 [[10](#ref-10), [11](#ref-11), [21](#ref-21)]
+:::
+:::
 
-When two bodies of different temperatures are brought into contact, their
+When two bodies of different temperatures are brought into contact, their temperatures tend to equalize during a spontaneous transfer of energy. We
 
-temperatures tend to equalize during a spontaneous transfer of energy. We
+Heat, written $Q$, is **a form of energy** (measured in joules). On a macroscopic scale, it is a transfer of energy in chaotic form. It can be caused in several ways, the most relevant for the engineer being:
 
-Heat, written $Q$, is **a form of energy** (measured in joules). On a macroscopic scale, it is a transfer of energy in chaotic form. It can be caused in
-
-several ways, the most relevant for the engineer being:
-
-• loss of internal energy of a body, by coming into contact with a lower
-
-• disappearance of mass in a nuclear reaction;
+• loss of internal energy of a body, by coming into contact with a lower • disappearance of mass in a nuclear reaction;
 
 • transformation of potential energy between atoms, by chemical reaction
 
@@ -526,25 +514,15 @@ several ways, the most relevant for the engineer being:
 
 Just like we denote heat as $Q (J)$, we denote *specific heat* as $q (J kg^{-1})$.
 
-The concept of heat is very difficult to understand. It was long believed to be
+The concept of heat is very difficult to understand. It was long believed to be a fluid (the *caloric*) of very low density, capable of permeating all materials.
 
-a fluid (the *caloric*) of very low density, capable of permeating all materials.
+This theory was abandoned in the mid-19th century, when it was shown that *heat is not conserved*, that is, it has the ability to disappear or appear.
 
-This theory was abandoned in the mid-19th century, when it was shown
+For example, an engine in operation receives heat (through combustion) but releases less than it received. It transforms part of it into work, which we
 
-that *heat is not conserved*, that is, it has the ability to disappear or appear.
+On a microscopic scale, in other words, when we consider the movement of individual particles, the concepts of temperature and heat are even more diffi-
 
-For example, an engine in operation receives heat (through combustion) but
-
-releases less than it received. It transforms part of it into work, which we
-
-On a microscopic scale, in other words, when we consider the movement of
-
-individual particles, the concepts of temperature and heat are even more diffi-
-
-*Engineering Thermodynamics* by Olivier Cleynen
-
-cult to define (Richard Feynman [[30](#ref-30), [35](#ref-35)] explores this beautifully). However, this is beyond the scope of this book.
+*Engineering Thermodynamics* by Olivier Cleynen cult to define (Richard Feynman [[30](#ref-30), [35](#ref-35)] explores this beautifully). However, this is beyond the scope of this book.
 
 (sec-1-4-3)=
 ### 1.4.3 Thermal capacity
@@ -597,17 +575,11 @@ Since the capacity $c_{\mathrm{steel}}$ is independent of $T$, this integral bec
 
 During integration, $\int ^{\mathrm{B}}_{\mathrm{A}}dT$ becomes $\Delta T$ (a temperature difference), while $\int ^{\mathrm{B}}_{\mathrm{A}}$ δ$Q$ becomes simply $Q_{\mathrm{A}\rightarrow \mathrm{B}}$ (a transfer between two states). Heat, a *path quantity*, is transferred, while temperature, a *state quantity*, is increased (see Appendix A4 on this topic).
 
-In this book, when we quantify energy transfers, we convene to
+In this book, when we quantify energy transfers, we convene to make their sign explicit (so we add a “+” in positive transfers).
 
-make their sign explicit (so we add a “+” in positive transfers).
+A conversion of the temperatures to kelvins would not have changed the value of $\Delta T$. The result would then have been the same.
 
-A conversion of the temperatures to kelvins would not have
-
-changed the value of $\Delta T$. The result would then have been the same.
-
-With an electrical resistance of the power of a standard domestic
-
-heater $(2 kW)$, it would take $\Delta t = \frac{Q_{\mathrm{A}\rightarrow \mathrm{B}}}{Q} = \frac{308.8\times 10^{3}}{2\times 10^{3}} = 154 s$ to warm up the steel, just over two minutes. We will see in chapter 4 (*the ideal gas*) that air at constant pressure has a specific thermal capacity three times greater than that of steel.
+With an electrical resistance of the power of a standard domestic heater $(2 kW)$, it would take $\Delta t = \frac{Q_{\mathrm{A}\rightarrow \mathrm{B}}}{Q} = \frac{308.8\times 10^{3}}{2\times 10^{3}} = 154 s$ to warm up the steel, just over two minutes. We will see in chapter 4 (*the ideal gas*) that air at constant pressure has a specific thermal capacity three times greater than that of steel.
 
 ````
 
@@ -635,11 +607,13 @@ Left: when air is compressed in a compressor, air gives heat away through the si
 
 *Liquid oxygen photo public domain Jensen Stidham / USAF*
 
+:::{aside}
 « The principle to be followed in constructing a thermometric scale might at first sight seem to be obvious, as it might appear that a perfect thermometer would indicate equal additions of heat, as corresponding to equal elevations of temperature, estimated by the numbered divisions of its scale. It is however now recognized (from the variations in the specific heats of bodies) as an experimentally demonstrated fact that thermometry under this condition is impossible, and we are left without any principle on which to found an absolute thermometric scale. »
 
 William Thomson (not yet crowned *Baron Kelvin*…) 1848 [[9](#ref-9)]
 
 *Thermometer* — We leave it to the student to explore how thermometers work: how can we *know* in absolute terms that a temperature is high or low?
+:::
 
 We simply note that we humans are ourselves very poor thermometers: since the human body attempts to maintain a constant temperature, our sensations of “hot” or “cold” are intrinsically linked to heat transfer.
 
@@ -674,19 +648,11 @@ It seems that the first thermometer was invented around 1605 by a Dutchman named
 
 ::::
 
-downwards and immersed in a colored liquid. If
+downwards and immersed in a colored liquid. If the sphere was heated, the liquid was pushed downwards by the expansion of the air, and conversely,
 
-the sphere was heated, the liquid was pushed downwards by the expansion of the air, and conversely,
+if it was cooled, the liquid rose in the tube. It was thus an air thermometer (figure 1.5). This thermometer was later used to monitor fever in patients
 
-if it was cooled, the liquid rose in the tube. It was
-
-thus an air thermometer (figure 1.5). This thermometer was later used to monitor fever in patients
-
-(figure 1.6), but it had the drawback of being as
-
-sensitive to changes in atmospheric pressure as to
-
-temperature.
+(figure 1.6), but it had the drawback of being as sensitive to changes in atmospheric pressure as to temperature.
 
 :::{figure} ../images/fig-1-5.jpg
 :label: fig-1-5
@@ -712,11 +678,7 @@ century. The gas bulb was placed in the patient’s mouth. One can well imagine 
 
 *Drawing by Santori & Avicenne (Commentaria in primam Fen primi libr Avicennae, 1625, public domain), selected by Lamouline 2005 [[45](#ref-45)]*
 
-In the middle of the century, liquid thermometers
-
-would prove to be much more reliable and easier to
-
-use. The glass bulb was now placed at the bottom course, the measurements needed to be corrected of the device and filled with colored liquid that rose by simultaneously measuring atmospheric pressure. in a graduated tube; this tube was initially open, This system allowed Amontons to make a major but it was found that by closing it, evaporation of discovery: if the gas pressure increases as the de-the liquid could be prevented (figure 1.7). These imgree of heat increases, conversely, it decreases as provements had been strongly supported by the Italthe degree of heat decreases. At a minimum, this ian grand duke Ferdinando II de’ Medici, and these pressure must become zero, as well as the degree devices were thus called “Florence thermometers.” of heat. This extrapolated minimum corresponds to, in modern units, $-239.5^{\circ}C$... A first measure of absolute zero!
+In the middle of the century, liquid thermometers would prove to be much more reliable and easier to use. The glass bulb was now placed at the bottom course, the measurements needed to be corrected of the device and filled with colored liquid that rose by simultaneously measuring atmospheric pressure. in a graduated tube; this tube was initially open, This system allowed Amontons to make a major but it was found that by closing it, evaporation of discovery: if the gas pressure increases as the de-the liquid could be prevented (figure 1.7). These imgree of heat increases, conversely, it decreases as provements had been strongly supported by the Italthe degree of heat decreases. At a minimum, this ian grand duke Ferdinando II de’ Medici, and these pressure must become zero, as well as the degree devices were thus called “Florence thermometers.” of heat. This extrapolated minimum corresponds to, in modern units, $-239.5^{\circ}C$... A first measure of absolute zero!
 
 However, all these thermometers remained difficult to use, significantly limiting their dissemination. René-Antoine Ferchault de Réaumur, around the middle of the 18th century, developed a water-alcohol mixture thermometer in which the alcohol level is precisely fixed to ensure the reproducibility of the instrument. He calibrated it by choosing two references (melting ice and boiling water) and dividing this interval into 80 degrees. This scale is called the “Réaumur scale.”
 
@@ -732,23 +694,11 @@ In 1741, the Swedish Anders Celsius adopted the Réaumur scale but divided it in
 A Florence thermometer from the mid-17th
 :::
 
-century. This time, it was the liquid, contained in the France, and in 1794, at the time of the adoption of
-
-lower bulb, that contracted and expanded with temperthe metric system by the Convention, the Celsius
-
-ature. Its changes in volume were such that a long spiral-blown glass tube was needed to measure them. scale was chosen as the official temperature scale. *Engraving by the Accademia del cimento (Staggi di naturali esperientze,* The transition from the subjective sensation of hot
+century. This time, it was the liquid, contained in the France, and in 1794, at the time of the adoption of lower bulb, that contracted and expanded with temperthe metric system by the Convention, the Celsius ature. Its changes in volume were such that a long spiral-blown glass tube was needed to measure them. scale was chosen as the official temperature scale. *Engraving by the Accademia del cimento (Staggi di naturali esperientze,* The transition from the subjective sensation of hot
 
 *1667, public domain), selected by Lamouline 2005 [[45](#ref-45)]* and cold to the objective measurement of tempera-
 
-The issue of graduations remained. The number ture with reliable instruments and a universal scale
-
-of graduations varied widely, with artisans merely led to a large number of observations that were not
-
-attempting to reproduce what they had already self-evident until then: the temperature of a cellar
-
-created themselves; at best, thermometers built is not higher in winter than in summer, iron is not
-
-by the same person gave roughly similar results. “colder” than wood, etc., and all in all, this is quite
+The issue of graduations remained. The number ture with reliable instruments and a universal scale of graduations varied widely, with artisans merely led to a large number of observations that were not attempting to reproduce what they had already self-evident until then: the temperature of a cellar created themselves; at best, thermometers built is not higher in winter than in summer, iron is not by the same person gave roughly similar results. “colder” than wood, etc., and all in all, this is quite
 
 Due to the lack of a universally accepted scale, it recent!
 

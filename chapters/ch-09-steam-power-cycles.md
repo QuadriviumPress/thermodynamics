@@ -27,17 +27,13 @@ Steam engines are used in stationary applications. Many modifications are made t
 
 ## Introduction
 
-Now that we have acquired solid theoretical concepts, we can take a closer
-
-look at the thermodynamic cycles used in industry. This chapter 9 (*steam*
+Now that we have acquired solid theoretical concepts, we can take a closer look at the thermodynamic cycles used in industry. This chapter 9 (*steam*
 
 *power cycles*) aims to answer two questions:
 
 • Why and how are steam engines used today?
 
-• Why are we moving away from ideal cycles and how do we quantify
-
-these compromises?
+• Why are we moving away from ideal cycles and how do we quantify these compromises?
 
 (sec-9-1)=
 ## 9.1 Why Use a Steam Engine?
@@ -181,9 +177,7 @@ B
 w_{\mathrm{A}\rightarrow \mathrm{B}}= \int vdp
 :::
 
-A
-
-in an open system, and when the process is reversible.
+A in an open system, and when the process is reversible.
 
 Generally, for equipment operating with steady flow, the heat transfers and work transfers are separated in space. This greatly reduces the complexity of the machines.
 
@@ -241,9 +235,7 @@ B
 w_{\mathrm{liquid} \mathrm{pump}}\approx v_{L}\int dp = v_{L}(p_{\mathrm{B}}- p_{\mathrm{A}}) (9/4)
 :::
 
-A
-
-in the case of an approximately reversible pump operating with liquid water.
+A in the case of an approximately reversible pump operating with liquid water.
 
 ````{prf:example}
 :label: ex-9-1
@@ -257,9 +249,7 @@ In Steam Table 3 at $0.05 MPa$ we read the inlet enthalpy $h_{\mathrm{A}}= h_{L0
 
 Using equation 9/4 we calculate$\dot{W}_{\mathrm{pump}}\approx \dot{m} v_{L}(p_{\mathrm{B}}- p_{\mathrm{A}}) = 35 \times 0.001 03(40 \times 10^{5}- 0.5 \times 10^{5}) = +142.4 kW$.
 
-Since the compression is assumed to be isentropic, we could
-
-also start from the fact that $s_{\mathrm{A}}= s_{\mathrm{B}}$ to obtain $h_{\mathrm{B}}$ by interpolation in Steam Table 1 and thus calculate the power of the pump. A calculation of $v_{\mathrm{B}}$ using this method allows us to see that the specific volume varies imperceptibly (less than $0.1 \%)$ during this process.
+Since the compression is assumed to be isentropic, we could also start from the fact that $s_{\mathrm{A}}= s_{\mathrm{B}}$ to obtain $h_{\mathrm{B}}$ by interpolation in Steam Table 1 and thus calculate the power of the pump. A calculation of $v_{\mathrm{B}}$ using this method allows us to see that the specific volume varies imperceptibly (less than $0.1 \%)$ during this process.
 
 Since we have calculated the pump power, we are able to calculate $h_{\mathrm{B}}=\dot{} \frac{W_{\mathrm{pump}}}{m} + h_{\mathrm{A}}= 482.9 kJ kg^{-1}$, which is the enthalpy of the water at the boiler inlet, a very useful information for later calculating the boiler power.
 
@@ -317,9 +307,7 @@ Transport of the boiler for a wood power plant capable of withstanding a pressur
 Schematic representation of a fire-tube boiler. Water enters in the liquid state on the left and exits at the top right in the form of saturated steam. In *fire-tube boilers*, the gas pipes pass through the heat exchanger filled with water. In more recent *water-tube boilers*, it is the water pipes that pass through the heat exchanger filled with hot gases. The latter technique is not detailed in this book, but its thermodynamic working principle is identical.
 :::
 
-*Diagram* CC-by-sa *by Olivier Cleynen*
-
-denser and therefore at the bottom of the boiler, is more likely to absorb heat at high temperature). We will therefore always consider that the water is in the form of saturated vapor (index $V)$ at the outlet of the boiler.
+*Diagram* CC-by-sa *by Olivier Cleynen* denser and therefore at the bottom of the boiler, is more likely to absorb heat at high temperature). We will therefore always consider that the water is in the form of saturated vapor (index $V)$ at the outlet of the boiler.
 
 (sec-9-3-4)=
 ### 9.3.4 Turbine
@@ -391,13 +379,9 @@ We can now return to the the painful reality: the actual turbine delivers only $
 
 [Equation 9/7](#eq-9-7) allows us to calculate the enthalpy $h_{\mathrm{B}}$ actually obtained at the outlet of the turbine: $h_{\mathrm{B}}=\dot{} \frac{W_{\mathrm{turbine}}}{m} +h_{\mathrm{A}}= 2732.6 kJ kg^{-1}$, which is very useful for later calculating the power of the condenser. A glance at Steam Table 2 shows us that $h_{\mathrm{B}}> h_{V0.05 MPa}$: the steam is dry throughout its expansion.
 
-The $15 \%$ of missing power in the mechanical shaft of the turbine
+The $15 \%$ of missing power in the mechanical shaft of the turbine is transferred as heat (through turbulence) to the water during its expansion in the turbine.
 
-is transferred as heat (through turbulence) to the water during its expansion in the turbine.
-
-The power of the turbine is two hundred times greater than the
-
-power supplied to the pump in example 9.1 on page 245 between these same pressures.
+The power of the turbine is two hundred times greater than the power supplied to the pump in example 9.1 on page 245 between these same pressures.
 
 ````
 
@@ -732,85 +716,29 @@ Cross-sectional diagram of the *Heinkel He S-1*, the first prototype tested by H
 
 *Diagram USAF (public domain)*
 
-At the end of the war, there was a surge of enthusiasm: aviation embraced the engine it had been
+At the end of the war, there was a surge of enthusiasm: aviation embraced the engine it had been waiting for over three decades. To understand why the jet engine became the Holy Grail of 20th century aeronautics, a bit of flight mechanics is needed. In subsonic flight, a well-designed aircraft has a *drag*
 
-waiting for over three decades. To understand why
-
-the jet engine became the Holy Grail of 20th century
-
-aeronautics, a bit of flight mechanics is needed. In
-
-subsonic flight, a well-designed aircraft has a *drag*
-
-*coefficient* $C_{D}\equiv F_{D}\div \left(\frac{1}{2} A_{\mathrm{ref}.}\rho C_{\mathrm{flight}}^{2}\right)$ that is almost
-
-constant. Thus, when reducing the reference area
+*coefficient* $C_{D}\equiv F_{D}\div \left(\frac{1}{2} A_{\mathrm{ref}.}\rho C_{\mathrm{flight}}^{2}\right)$ that is almost constant. Thus, when reducing the reference area
 
 $A_{\mathrm{ref}.}$ of the wing surface and the ambient density $\rho$
 
-(by gaining altitude), the flight speed $C_{\mathrm{flight}}$ can be
-
-increased *while keeping the drag* $F_{D}$ *constant*. The
-
-energy cost of moving the aircraft remains constant
+(by gaining altitude), the flight speed $C_{\mathrm{flight}}$ can be increased *while keeping the drag* $F_{D}$ *constant*. The energy cost of moving the aircraft remains constant
 
 – however, the required power$\dot{W}_{\mathrm{engine}}= F_{x}C_{\mathrm{flight}}$
 
-increases proportionally to the speed. These characteristics make aircraft relatively energy-efficient
+increases proportionally to the speed. These characteristics make aircraft relatively energy-efficient machines, but very power-hungry, since they need to maintain the same thrust at very high speeds.
 
-machines, but very power-hungry, since they need
+The jet engine had two advantages to address this issue. Firstly, it was compact, lightweight, and vibration-free, which is highly desirable for an application where drag (and thus the thrust to be provided) increases proportionally with the weight of the aircraft. Secondly, the propeller, which is very efficient at low speeds but with whose tips reach supersonic speeds early, thus limiting the speed of aircraft, was completely eliminated. Because of these qualities, the low efficiencies due to irreversible compressions and expansions, low pressure ratios,
 
-to maintain the same thrust at very high speeds.
+and excessively high gas speeds in the nozzles were acceptable.
 
-The jet engine had two advantages to address this
-
-issue. Firstly, it was compact, lightweight, and
-
-vibration-free, which is highly desirable for an application where drag (and thus the thrust to be provided) increases proportionally with the weight of
-
-the aircraft. Secondly, the propeller, which is very
-
-efficient at low speeds but with whose tips reach supersonic speeds early, thus limiting the speed of aircraft, was completely eliminated. Because of these
-
-qualities, the low efficiencies due to irreversible
-
-compressions and expansions, low pressure ratios,
-
-and excessively high gas speeds in the nozzles were
-
-acceptable.
-
-Thus, the graceful Lockheed *Constellation*, the culmination of the era of propeller aviation, was instantly rendered obsolete by the arrival of the much
-
-faster De Havilland *Comet* in 1949, a remarkable
-
-quad-jet of the same size (figure 9.26). Even though
-
-it was initially unable to cover the same distance
-
-and it featured higher fuel consumption per kilometer, the *Comet* left no chance for its competitors. Its
-
-speed was an obvious quality for passengers, but
-
-also for the airlines, significantly increasing their
-
-productivity.
+Thus, the graceful Lockheed *Constellation*, the culmination of the era of propeller aviation, was instantly rendered obsolete by the arrival of the much faster De Havilland *Comet* in 1949, a remarkable quad-jet of the same size (figure 9.26). Even though it was initially unable to cover the same distance and it featured higher fuel consumption per kilometer, the *Comet* left no chance for its competitors. Its speed was an obvious quality for passengers, but also for the airlines, significantly increasing their productivity.
 
 The *Comet*, after a serious design flaw was corrected, was itself surpassed by the Boeing *707* in
 
-1957. Capable of flying further while carrying more
+1957. Capable of flying further while carrying more payload, and even faster (at $900 km/h$, the speed that all airliners have adopted since, the air on the wing’s upper surface barely reaches the speed of sound), the *707* marked the entry into the *jet age*,
 
-payload, and even faster (at $900 km/h$, the speed
-
-that all airliners have adopted since, the air on the
-
-wing’s upper surface barely reaches the speed of
-
-sound), the *707* marked the entry into the *jet age*,
-
-where airliners were no longer built by dozens but
-
-sides. The rudder, precise. “V1.” Another 20 knots to reach before the machine can fly. I can see end of the runway coming up, over there ahead. “Rotate.” At 170 knots, I pull gently, then more firmly. Five degrees of pitch. Ten degrees. It’s no longer rolling, the needle is at 185 knots. Twelve-degree pitch. Come on, my dear, we must climb. “Positive climb.” “Landing gear up.” The truth lies tonight between twelve and thirteen degrees of pitch, where the airspeed indicator needle comes to a standstill. We pass the hill, and three hundred feet below, the *747* fyl ing by must feel like an earthquake.
+where airliners were no longer built by dozens but sides. The rudder, precise. “V1.” Another 20 knots to reach before the machine can fly. I can see end of the runway coming up, over there ahead. “Rotate.” At 170 knots, I pull gently, then more firmly. Five degrees of pitch. Ten degrees. It’s no longer rolling, the needle is at 185 knots. Twelve-degree pitch. Come on, my dear, we must climb. “Positive climb.” “Landing gear up.” The truth lies tonight between twelve and thirteen degrees of pitch, where the airspeed indicator needle comes to a standstill. We pass the hill, and three hundred feet below, the *747* fyl ing by must feel like an earthquake.
 
 Jacques Darolles, 1998
 
@@ -834,9 +762,7 @@ The 1949 De Havilland *Comet*, the first jet airliner: four propel aviation forw
 
 Halford *Ghost* turbojet engines, capable of covering $2400 km (1500 mi)$ at $740 km/h (460 mph)$. The 1957 Boeing *707*, with a configuration and performances anticipating those of all its successors: four Pratt & Whitney *JT3C* turbojet engines, capable of covering $4300 km (2700 mi)$ at $900 km/h (560 mph)$. *Constellation Photo* CC-by-sa *by Bill Larkins*
 
-*Comet Photo and 707 (edited)* CC-by-sa *by Piergiuliano Chesi*
-
-by thousands. Thus, in just twenty-five years, the gas turbine engine doubled the speed of aircraft and divided the price of tickets by four.
+*Comet Photo and 707 (edited)* CC-by-sa *by Piergiuliano Chesi* by thousands. Thus, in just twenty-five years, the gas turbine engine doubled the speed of aircraft and divided the price of tickets by four.
 
 “Ready?” “Takeoff time!” The flight engineer pushes the throttle levers with me. NNggnniiiaavvrrooooooaaaaaaarrrrooouuummmmm... “N1s green.” It’s pushing hard, but accelerates ever so gently, given the weight of the behemoth. “Eighty knots” “Thrust set.” I have the tips of my feet on the rudder pedals, a precision similar to a kickboxing move. I’m enjoying every bit of it. 120 knots. I’m in control, guys. 432 passengers and 15 crew members are strapped in the back, ears and senses alert. 140 knots. Two bursts of light beacons pass by on the
 

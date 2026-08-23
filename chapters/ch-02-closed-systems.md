@@ -23,15 +23,9 @@ A closed system contains a fixed amount of mass. Heat and work transfers cause v
 
 ## Introduction
 
-We wish to develop here a method of energy accounting applied to a
+We wish to develop here a method of energy accounting applied to a fixed quantity of mass. This chapter 2 (*closed systems*) aims to answer two questions:
 
-fixed quantity of mass. This chapter 2 (*closed systems*) aims to answer two
-
-questions:
-
-• How to quantify the work that can be received and provided by a body of
-
-fixed mass?
+• How to quantify the work that can be received and provided by a body of fixed mass?
 
 • What is reversibility, and why are we pursuing it?
 
@@ -317,9 +311,7 @@ In the si system of units, volume is measured in $m^{3}$, but the student is lik
 1 imp gal \equiv 4.546 09 \times 10^{-3}m^{3}
 :::
 
-Let’s now express the work of a closed system in terms of volume and
-
-pressure. By inserting equations 2/5 and 2/10 into equation 1/11, we obtain:
+Let’s now express the work of a closed system in terms of volume and pressure. By inserting equations 2/5 and 2/10 into equation 1/11, we obtain:
 
 :::{math}
 B B F
@@ -337,9 +329,7 @@ A A B
 W_{\mathrm{A}\rightarrow \mathrm{B}}= -\int pdV
 :::
 
-A
-
-for a closed system modeled by a spring, where $W_{\mathrm{A}\rightarrow \mathrm{B}}$ is the work received by the system $(J)$, $p$ is the (uniform) internal pressure $(Pa)$,
+A for a closed system modeled by a spring, where $W_{\mathrm{A}\rightarrow \mathrm{B}}$ is the work received by the system $(J)$, $p$ is the (uniform) internal pressure $(Pa)$,
 
 and $dV$ is the change in volume $(m^{3})$.
 
@@ -382,9 +372,7 @@ The process can be drawn qualitatively (that is, without showing numerical value
 
 Starting from equation 2/14: $W_{\mathrm{A}\rightarrow \mathrm{B}}= -\int ^{\mathrm{B}}_{\mathrm{A}}pdV = -p_{\mathrm{cst}.}\int ^{\mathrm{B}}_{\mathrm{A}}dV = p_{\mathrm{cst}.}[V]^{V_{\mathrm{B}}}_{V_{\mathrm{A}}}= -10^{5}(1 \times 10^{-3}- 2 \times 10^{-3}) = +100 J.$
 
-The sign is positive: the box (“the system”) receives work. We
-
-always explicitly specify the sign when quantifying transfers.
+The sign is positive: the box (“the system”) receives work. We always explicitly specify the sign when quantifying transfers.
 
 ````
 
@@ -449,9 +437,7 @@ When the piston motion is infinitely slow, the fluid behaves like a spring being
 
 We experimentally observe that when the motion is infinitely slow, a compressed fluid behaves exactly like a spring (figure 2.8). The condition “when the motion is infinitely slow” is of paramount importance, as we will see below.
 
-If this condition is met, we can express the work received or supplied by the
-
-system in the same way as with the spring in the previous section:
+If this condition is met, we can express the work received or supplied by the system in the same way as with the spring in the previous section:
 
 B
 
@@ -467,9 +453,7 @@ A B
 w_{\mathrm{A}\rightarrow \mathrm{B}}= -\int pdv
 :::
 
-A
-
-for a closed system when volume changes are infinitely slow; where $w_{\mathrm{A}\rightarrow \mathrm{B}}$ is the specific work received by the system $(J kg^{-1})$, $p$ is the (uniform) internal pressure $(Pa)$,
+A for a closed system when volume changes are infinitely slow; where $w_{\mathrm{A}\rightarrow \mathrm{B}}$ is the specific work received by the system $(J kg^{-1})$, $p$ is the (uniform) internal pressure $(Pa)$,
 
 and $dv$ is the change in specific volume $(m^{3}kg^{-1})$.
 
@@ -547,17 +531,13 @@ First, we need to calculate the value of $k$ to determine quantitatively the rel
 
 ````{prf:example}
 
-The physical quantity represented by $k$ is confusing: it is
-
-measured in $Pa m^{3.6}kg^{-1.2}$. This is not important for us, and it is sufficient (after properly converting the input units to si!) to indicate “in si units” or $u.$si.
+The physical quantity represented by $k$ is confusing: it is measured in $Pa m^{3.6}kg^{-1.2}$. This is not important for us, and it is sufficient (after properly converting the input units to si!) to indicate “in si units” or $u.$si.
 
 Now, we can describe $p$ as a function of $v$: $p = 10^{5}\times v^{-1.2}$. We just have to integrate starting from equation 2/15: $w_{\mathrm{A}\rightarrow \mathrm{B}}= -\int ^{\mathrm{B}}_{\mathrm{A}}p\,\mathrm{d}v = -\int _{\mathrm{A}}^{\mathrm{B}}k v^{-1.2}\,\mathrm{d}v = -k\left[\frac{1}{-1.2+1}v^{-1.2+1}\right]_{v_{\mathrm{A}}}^{v_{\mathrm{B}}}= \frac{10^{5}}{0.2}\left[v^{-0.2}\right]_{1}^{0.167}= +2.152 \times 10^{5}\,\mathrm{J\,kg^{-1}}= +215.2\,\mathrm{kJ\,kg^{-1}}$.
 
 The sign of $w_{\mathrm{A}\rightarrow \mathrm{B}}$ is positive: the gas has work done to it.
 
-The result may seem large, but it is important to remember
-
-that it is a mass-specific amount of work (§1.1.5) that needs to be multiplied by the mass of the gas to obtain a quantity in joules. At the initial conditions $(1 kg m^{-3})$, a volume of air of $1 L$ weighs just over one gram.
+The result may seem large, but it is important to remember that it is a mass-specific amount of work (§1.1.5) that needs to be multiplied by the mass of the gas to obtain a quantity in joules. At the initial conditions $(1 kg m^{-3})$, a volume of air of $1 L$ weighs just over one gram.
 
 ````
 
@@ -641,6 +621,7 @@ We could thus say that when compressed and expanded abruptly, a fluid behaves li
 
 If the received work is not equal to the work returned, then where did the excess energy go? This surplus of energy, supplied in the form of work by the piston, is *converted into heat inside the fluid* during the movements.
 
+:::{aside}
 « We have said that at the start of the movement, the pressure equilibrium is established between the boiler and the cylinder, but as the speed of the piston increases, the latter, so to speak, escapes ahead of the steam without giving it time to establish this equilibrium, and the pressure in the cylinder necessarily drops. »
 
 François-Marie Guyonneau de Pambour, 1835
@@ -648,6 +629,7 @@ François-Marie Guyonneau de Pambour, 1835
 *Traité théorique et pratique des machines locomotives* [[6](#ref-6)]
 
 *Diagram* CC-by-sa *Olivier Cleynen*
+:::
 
 :::{figure} ../images/fig-2-12.jpg
 :label: fig-2-12
@@ -762,9 +744,11 @@ In the meantime, we shall agree that three conditions must be met for a process 
 
 These three conditions obviously exclude any real process—and in particular, any practical application in an engine! However, we will use them to establish an ideal theoretical limit for all of the real processes that we will study.
 
+:::{aside}
 « Where does irreversibility come from? It does not come from Newton’s laws. If we claim that the behavior of everything is ultimately to be understood in terms of the laws of physics, and if it also turns out that all the equations have the fantastic property that if we put $t=-t$ we have another solution, then every phenomenon is reversible. How then does it come about in nature on a large scale that things are not reversible? »
 
 Richard Feynman, 1963 [[30](#ref-30), [35](#ref-35)] *The Feynman Lectures on Physics*
+:::
 
 ```{exercise}
 :label: prob-2-5
@@ -786,9 +770,7 @@ four-cylinder engine.
 :::
 ```
 
-## System
-
-for a closed system.
+## System for a closed system.
 
 *gas*) and 5 (*liquids and vapors*).
 
@@ -798,21 +780,13 @@ At the risk of frustrating the student, we must immediately admit that *we*
 
 *cannot directly quantify heat transfers*. We will always proceed by deduction:
 
-by quantifying the change in energy and subtracting the work transfers, we
-
-obtain the amount of heat that has been transferred. Mathematically, in a
-
-closed system, we simply reuse equation 2/1 to obtain:
+by quantifying the change in energy and subtracting the work transfers, we obtain the amount of heat that has been transferred. Mathematically, in a closed system, we simply reuse equation 2/1 to obtain:
 
 $Q_{1\rightarrow 2}= \Delta U - W_{1\rightarrow 2}$ (2/16)
 
 $q_{1\rightarrow 2}= \Delta u - w_{1\rightarrow 2}$ (2/17)
 
-The entire difficulty in quantifying a heat transfer is now to predict and
-
-quantify the change in internal energy, $\Delta U$. For gases, $U$ is simply proportional to temperature; for liquids and vapors, the relationship is more
-
-complex. We will learn to quantify energy in fluids in chapters 4 (*the ideal*
+The entire difficulty in quantifying a heat transfer is now to predict and quantify the change in internal energy, $\Delta U$. For gases, $U$ is simply proportional to temperature; for liquids and vapors, the relationship is more complex. We will learn to quantify energy in fluids in chapters 4 (*the ideal*
 
 *Engineering Thermodynamics* by Olivier Cleynen
 
@@ -844,9 +818,7 @@ under sail.
 
 replenish the machines. *Image by Hunter Wood (public domain, 1819)*
 
-At sea, however, wind was still being used for B
-
-propulsion. In order to connect two continents
+At sea, however, wind was still being used for B propulsion. In order to connect two continents
 
 :::{math}
 w_{\mathrm{A}\rightarrow \mathrm{B}}= -\int pdv
@@ -856,13 +828,7 @@ by engine power (meaning without tacking!), two $_{\mathrm{A}}$ problems had to 
 
 The first problem is that the engines consumed a of the steam, that is, its pressure before it begins to lot of water. Sea water, although abundant, was expand in the cylinders. This is not an easy task: unusable in its natural state because the salt and raising the boiler pressure increases the structural limestone deposits resulting from its boiling clogged stresses it undergoes, hence its cost, and reduces the boilers and posed a serious risk of explosion. In its efficiency as the walls must be thickened and order to use it in boilers, it was therefore necessary strengthened. to desalinate it, a very energy-intensive operation. Next, one can try to increase $\Delta v$, the total change
 
-The problem was solved with the use of *condensers*, in volume during the piston movement. In other
-
-which locomotives had done away with because words, it is necessary to increase the volume swept of space constraints. Now, when steam had done by the cylinders. Once again, this is not an easy its work in the cylinders, it was no longer simply task. discharged into the atmosphere, but instead cooled On one hand, increasing the cylinder diameter (in
-
-in large condensers before being compressed and order to increase the area $A)$ subjects the pistons to
-
-reintroduced into the boiler. The water circulated a greater force $F_{\mathrm{A}}$ for a given pressure $p_{\mathrm{A}}$ (2/5):
+The problem was solved with the use of *condensers*, in volume during the piston movement. In other which locomotives had done away with because words, it is necessary to increase the volume swept of space constraints. Now, when steam had done by the cylinders. Once again, this is not an easy its work in the cylinders, it was no longer simply task. discharged into the atmosphere, but instead cooled On one hand, increasing the cylinder diameter (in in large condensers before being compressed and order to increase the area $A)$ subjects the pistons to reintroduced into the boiler. The water circulated a greater force $F_{\mathrm{A}}$ for a given pressure $p_{\mathrm{A}}$ (2/5):
 
 cyclically throughout the engine – one would only need to compensate for leaks.
 
@@ -874,11 +840,7 @@ p \equiv \frac{F}{}
 A
 :::
 
-The second problem was more serious and more difficult to solve: how to increase efficiency? It By increasing the transmitted force, the structural was not just a financial question: the first steamlimits of the engine mechanics are quickly reached. powered transatlantic ship, the *SS Savannah*, was On the other hand, increasing the piston travel
-
-so inefficient that it completed its crossing under lengthens the pistons and makes the connecting
-
-sail, even though it was carrying *only* the coal for rod and crankshaft mechanisms significantly heavits engine! ier. Additionally, the pressure and volume of the
+The second problem was more serious and more difficult to solve: how to increase efficiency? It By increasing the transmitted force, the structural was not just a financial question: the first steamlimits of the engine mechanics are quickly reached. powered transatlantic ship, the *SS Savannah*, was On the other hand, increasing the piston travel so inefficient that it completed its crossing under lengthens the pistons and makes the connecting sail, even though it was carrying *only* the coal for rod and crankshaft mechanisms significantly heavits engine! ier. Additionally, the pressure and volume of the
 
 In order to increase the efficiency of an engine of steam are linked: they roughly follow a relation-given capacity, we seek to increase the amount of ship of the form $pv^{k_{1}}= k_{2}$ during expansion. In work generated by each kilogram of steam, which other words, pressure decreases when the volume can be approximated by the relation 2/15: is increased: as the cylinder is lengthened, the work gains become increasingly small. 52 [Chapter 2](#ch-2)
 
@@ -935,29 +897,19 @@ Problems
 
 A mass of $400g$ of water is placed in a sealed reservoir. It undergoes a process during which it receives
 
-$50kJkg^{-1}$ of heat, and so its internal energy increases
-
-by $4kJ$.
+$50kJkg^{-1}$ of heat, and so its internal energy increases by $4kJ$.
 
 1. Did it receive or supply work, and how much?
 
-This same mass is then supplied with $800J$ of work in
-
-an adiabatic manner.
+This same mass is then supplied with $800J$ of work in an adiabatic manner.
 
 2. What is the change in its specific internal energy?
 
-2.2 Arbitrary Processes of a Gas in
-
-the Laboratory
+2.2 Arbitrary Processes of a Gas in the Laboratory
 
 A mass of $80g$ of helium is contained in a cylinder of
 
-$0.04m^{3}$. The gas is first cooled reversibly at constant
-
-pressureuntil$0.02m^{3}$ and$2bar$;then heated at constant
-
-volume until $4bar$.
+$0.04m^{3}$. The gas is first cooled reversibly at constant pressureuntil$0.02m^{3}$ and$2bar$;then heated at constant volume until $4bar$.
 
 1. Plot the process on a pressure-volume diagram.
 

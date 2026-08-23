@@ -27,11 +27,7 @@ Heat only moves towards a body at a lower temperature. This poses a fundamental 
 
 ## Introduction
 
-In chapter 6 (*thermodynamic cycles*), we studied the nature of different cycles
-
-for converting heat and work. We now aim to study, explain, and quantify
-
-theirverylimits. Thischapter7(*thesecondlaw*)aims to answer two questions:
+In chapter 6 (*thermodynamic cycles*), we studied the nature of different cycles for converting heat and work. We now aim to study, explain, and quantify theirverylimits. Thischapter7(*thesecondlaw*)aims to answer two questions:
 
 • Why do all heat engines always have an efficiency less than $100\%$?
 
@@ -44,9 +40,7 @@ theirverylimits. Thischapter7(*thesecondlaw*)aims to answer two questions:
 
 The *second law of thermodynamics* is expressed as follows:
 
-Heat spontaneously moves
-
-only towards a lower temperature.
+Heat spontaneously moves only towards a lower temperature.
 
 This statement can be made more specific as follows:
 
@@ -334,9 +328,7 @@ This phase requires work *input* $(W_{1\rightarrow 2}> 0)$.
 
 ::::
 
-**Isothermal heating from 2 to 3** In this stage, we aim
-
-to absorb a quantity $Q_{TH}$ of heat from the high-temperature source.
+**Isothermal heating from 2 to 3** In this stage, we aim to absorb a quantity $Q_{TH}$ of heat from the high-temperature source.
 
 At 2, the fluid has been compressed in the piston at temperature $T_{H}$. The cylinder is brought into contact with the hot source (temperature $T_{H})$ and heat is supplied with an infinitesimal temperature difference: this is an isothermal expansion (§4.4.4 & §5.4.4). The fluid’s temperature remains constant at $T_{H}$.
 
@@ -346,9 +338,7 @@ This phase generates work output $(W_{2\rightarrow 3}< 0)$.
 :alt: Illustration from the original text
 :::
 
-**Reversible adiabatic expansion from 3 to 4** In this
-
-stage, we aim to decrease the temperature of the fluid to that of the cold source $(T_{L})$.
+**Reversible adiabatic expansion from 3 to 4** In this stage, we aim to decrease the temperature of the fluid to that of the cold source $(T_{L})$.
 
 At 3, the fluid is still at temperature $T_{H}$. The cylinder is then thermally isolated and the fluid is expanded in order to have the fluid do work and reduce its temperature without heat transfer: this is a reversible adiabatic expansion. The piston continues its slow retreat, and the fluid’s temperature decreases down to $T_{L}$.
 
@@ -444,9 +434,7 @@ We can now absorb heat at constant temperature $(2 \rightarrow 3)$. We choose to
 
 $-287 \times (600 + 273.15) \times \ln ( \frac{4}{19.6}) = +398.2 kJ kg^{-1}$ (4/27, received by the gas) and the work is $w_{2\rightarrow 3}= -q_{2\rightarrow 3}= -398.2 kJ kg^{-1}$ (4/28, supplied by the gas).
 
-A promise has been kept: we had studied isothermal processes
-
-in sections §4.4.4 and §5.4.4 precisely in order to be able to use them here…
+A promise has been kept: we had studied isothermal processes in sections §4.4.4 and §5.4.4 precisely in order to be able to use them here…
 
 The choice of the pressure $p_{3}$ or its corresponding volume $v_{3}$
 
@@ -460,31 +448,19 @@ We proceed with the expansion of the gas, aiming to recover as much work as poss
 
 $p_{3}(\frac{T_{4}}{T_{3}} )^{\gamma -1}= 0.2 bar = 2.9 psi$.
 
-The work recovered from 3 to 4 is exactly opposite to the one
+The work recovered from 3 to 4 is exactly opposite to the one invested from 1 to 2. In a Carnot cycle, it is during the heat transfers that the work leads to the production of a net work.
 
-invested from 1 to 2. In a Carnot cycle, it is during the heat transfers that the work leads to the production of a net work.
+Finally, to bring the fluid back to its initial state (§6.2.1), we need to cool the gas $(4 \rightarrow 1)$. This cooling is done at constant temperature, so $q_{4\rightarrow 1}= -R T_{4}\ln (\frac{p_{1}}{p_{4}} ) = -170.2 kJ kg^{-1}$ (4/27, supplied by the gas) and the work is $w_{4\rightarrow 1}= -q_{4\rightarrow 1}= +170.2 kJ kg^{-1}$ (4/28, received by the gas).
 
-Finally, to bring the fluid back to its initial state (§6.2.1), we need to cool the gas $(4 \rightarrow 1)$. This cooling is done at constant temperature, so $q_{4\rightarrow 1}= -R T_{4}\ln (\frac{p_{1}}{p_{4}} ) = -170.2 kJ kg^{-1}$ (4/27, supplied by the gas) and
-
-the work is $w_{4\rightarrow 1}= -q_{4\rightarrow 1}= +170.2 kJ kg^{-1}$ (4/28, received by the gas).
-
-It is a complex process for such an inglorious step: the rejection
-
-of unusable heat! Not only do we need to proceed infinitely slowly with significant volume fluctuations, but we also need to *invest* considerable work to return to 1.
+It is a complex process for such an inglorious step: the rejection of unusable heat! Not only do we need to proceed infinitely slowly with significant volume fluctuations, but we also need to *invest* considerable work to return to 1.
 
 What is the cycle’s balance? The compression phases required $w_{\mathrm{compression}}= w_{1\rightarrow 2}+ w_{4\rightarrow 1}= +529.2 kJ kg^{-1}$. In the expansion, we recovered $w_{\mathrm{expansion}}= w_{2\rightarrow 3}+ w_{3\rightarrow 4}= -757.2 kJ kg^{-1}$. The net work is $w_{\mathrm{net}}= w_{\mathrm{compression}}+ w_{\mathrm{expansion}}= -228 kJ kg^{-1}$; $W_{\mathrm{net}}= m w_{\mathrm{net}}= -22.8 kJ$.
 
-We included the gas mass as late as possible. If we had studied a
+We included the gas mass as late as possible. If we had studied a cycle carried out continuously as depicted in figure 7.9, we would only need to replace $m$ with$\dot{m}$ to obtain the sought powers in watts.
 
-cycle carried out continuously as depicted in figure 7.9, we would only need to replace $m$ with$\dot{m}$ to obtain the sought powers in watts.
+Compared to the recovered quantity, a substantial amount of work must be invested, an undesirable characteristic that will be quantified in chapter 10 (*air-based power cycles*) under the name of *work ratio* (10/1).
 
-Compared to the recovered quantity, a substantial amount of
-
-work must be invested, an undesirable characteristic that will be quantified in chapter 10 (*air-based power cycles*) under the name of *work ratio* (10/1).
-
-Although the cycle is already impracticable in reality, this meager
-
-efficiency is the greatest that can physically be attained between temperatures of $600^{\circ}C$ and $100^{\circ}C$.
+Although the cycle is already impracticable in reality, this meager efficiency is the greatest that can physically be attained between temperatures of $600^{\circ}C$ and $100^{\circ}C$.
 
 We could also have carried out these calculations using a liquid/vapor instead of air: this would not have altered the final results.
 
@@ -561,9 +537,7 @@ At the beginning of the 19th century, the two temperature scales that we use tod
 
 • The standards of Celsius and Fahrenheit differ significantly. Celsius chose the freezing point of pure water, Fahrenheit of saltwater, at atmospheric pressure, and each assigned it the relative “zero” graduation.
 
-• However, the scales of Celsius and Fahrenheit are strictly identical. In fact, to *measure* temperatures around their standards, both scientists measured
-
-the contraction and expansion of a liquid in a tube. Between his relative zero point and the boiling point of water at atmospheric pressure, Celsius drew 100 graduations; Fahrenheit, 212 graduations. As always, the history of thermodynamics is full of trivia: Celsius initially used a reversed scale, going from $100$ at freezing to $0$ at boiling! As for Fahrenheit, he likely chose 212 graduations in order to easily realign with his *first* graduation, calibrated on the freezing point of pure water (32) and the temperature of the human body (96), standards that were quite difficult to reproduce. We must not let ourselves be distracted: in a physical sense, these are only graduations and not a scale, which was already determined by using a liquid thermometer.
+• However, the scales of Celsius and Fahrenheit are strictly identical. In fact, to *measure* temperatures around their standards, both scientists measured the contraction and expansion of a liquid in a tube. Between his relative zero point and the boiling point of water at atmospheric pressure, Celsius drew 100 graduations; Fahrenheit, 212 graduations. As always, the history of thermodynamics is full of trivia: Celsius initially used a reversed scale, going from $100$ at freezing to $0$ at boiling! As for Fahrenheit, he likely chose 212 graduations in order to easily realign with his *first* graduation, calibrated on the freezing point of pure water (32) and the temperature of the human body (96), standards that were quite difficult to reproduce. We must not let ourselves be distracted: in a physical sense, these are only graduations and not a scale, which was already determined by using a liquid thermometer.
 
 The main problem with these two scales is that the temperature is well defined only in the range of existence of liquid thermometers. Whatever fluid is used (mercury, alcohol, water), it always ends up freezing or boiling at some point; and the graduations then no longer provide useful information. For example, Celsius could not *define e* or even describe what allows recognizing a temperature of $1200^{\circ}C$.
 
@@ -731,9 +705,7 @@ Make sure to use absolute temperatures here – at this point,
 
 using $degrees Celsius$ or $Fahrenheit$ in the calculation would be unforgivable.
 
-The technological specifics of the engine (displacement, injection
-
-method, etc.) may possibly bring it close to $57.3 \%$, but will never bring it beyond that value.
+The technological specifics of the engine (displacement, injection method, etc.) may possibly bring it close to $57.3 \%$, but will never bring it beyond that value.
 
 We have indeed found the result obtained previously in example 7.1 p. 188, with a much simpler calculation.
 
@@ -836,9 +808,7 @@ The characteristics announced on paper give food for thought: the maximum compre
 \gamma
 :::
 
-must be at least $p_{2}= p_{1}(\frac{T_{\mathrm{combustion}}}{T_{\mathrm{initial}}} )^{\gamma -1}$ (4/37), which
-
-lead Rudolf Diesel to $300 bar (4350 psi)$ – twenty times more than existing engines! The concept of direct injection, which is made necessary by the high temperatures reached during compression to avoid premature combustion, is convincing. However, many details were lacking on how to handle coal dust – the fuel chosen by Rudolf Diesel for its abundance and low cost – so as to allow its direct injection into the cylinders in practice.
+must be at least $p_{2}= p_{1}(\frac{T_{\mathrm{combustion}}}{T_{\mathrm{initial}}} )^{\gamma -1}$ (equation 4/37), which lead Rudolf Diesel to $300 bar (4350 psi)$ – twenty times more than existing engines! The concept of direct injection, which is made necessary by the high temperatures reached during compression to avoid premature combustion, is convincing. However, many details were lacking on how to handle coal dust – the fuel chosen by Rudolf Diesel for its abundance and low cost – so as to allow its direct injection into the cylinders in practice.
 
 ::::
 
@@ -859,65 +829,23 @@ Rudolf Diesel in 1883.
 
 *Photo by unknown author (public domain)*
 
-Despite everything, Rudolf Diesel, after a promising
+Despite everything, Rudolf Diesel, after a promising start in the design of refrigeration systems, managed to convince the *Maschinenfabrik Augsburg-*
 
-start in the design of refrigeration systems, managed to convince the *Maschinenfabrik Augsburg-*
-
-*Nürnberg* company, known today as man, to finance
-
-his research. They would be challenging: the transition from theory to practice took four years. Many
-
-ambitions were scaled back: the maximum pressure decreased to $90$ and then $40 bar (580 psi)$, the
-
-coal dust was abandoned in favor of a crude oil
-
-for easier handling. Since the structural limits of
-
-the engine constrained the cycle, the isothermal
-
-combustion was replaced by isobaric at maximum
-
-pressure. The second prototype, a single-cylinder
-
-engine nearly three meters tall (figure 7.14), was
-
-the first to operate autonomously: eight minutes in
+*Nürnberg* company, known today as man, to finance his research. They would be challenging: the transition from theory to practice took four years. Many ambitions were scaled back: the maximum pressure decreased to $90$ and then $40 bar (580 psi)$, the coal dust was abandoned in favor of a crude oil for easier handling. Since the structural limits of the engine constrained the cycle, the isothermal combustion was replaced by isobaric at maximum pressure. The second prototype, a single-cylinder engine nearly three meters tall (figure 7.14), was the first to operate autonomously: eight minutes in
 
 February 1894. The performance of the third prototype (figure 7.15) was independently measured in
 
 1897: $17 hp$ at $154 rpm$, and an efficiency of $26.2 \%$.
 
-This efficiency was twice that of its contemporaries
-
-with internal combustion, and four times that of the
-
-best steam engines!
+This efficiency was twice that of its contemporaries with internal combustion, and four times that of the best steam engines!
 
 Man quickly started sales of the *rational engine*,
 
 renamed as *Diesel engine*, which gradually met success in Europe. Its operational regularity, reliability,
 
-and especially its low fuel consumption justified its
+and especially its low fuel consumption justified its significant purchase cost: due to the materials and precision manufacturing it required, its price per watt of power was about three times higher than its competitors. The patents filed by Rudolf Diesel brought him a significant income.
 
-significant purchase cost: due to the materials and
-
-precision manufacturing it required, its price per
-
-watt of power was about three times higher than
-
-its competitors. The patents filed by Rudolf Diesel
-
-brought him a significant income.
-
-The numerous documents left behind make Diesel
-
-a compelling figure: cultivated, diligent, and intelligent (he excelled in all his studies), he had a
-
-very keen perception of the economic and social
-
-upheavals caused by the rapid mechanization of
-
-industry and transportation at the end of the 19th century [[33](#ref-33), [34](#ref-34), [41](#ref-41)]. After a harsh and miserable childhood, expelled from France and then England, he nurtured a strong social ideal that lead him to write *Solidarismus* (“*the rational and economic salvation of humanity*”, 1903 [[25](#ref-25)]). For him, the decentralization of mechanical power production, for small businesses or collectives, for example, would constitute a decisive social advancement.
+The numerous documents left behind make Diesel a compelling figure: cultivated, diligent, and intelligent (he excelled in all his studies), he had a very keen perception of the economic and social upheavals caused by the rapid mechanization of industry and transportation at the end of the 19th century [[33](#ref-33), [34](#ref-34), [41](#ref-41)]. After a harsh and miserable childhood, expelled from France and then England, he nurtured a strong social ideal that lead him to write *Solidarismus* (“*the rational and economic salvation of humanity*”, 1903 [[25](#ref-25)]). For him, the decentralization of mechanical power production, for small businesses or collectives, for example, would constitute a decisive social advancement.
 
 Despite the remarkable success achieved in fifteen years, Rudolf Diesel struggled to find fulflilment. He was constantly the target of legal disputes, since his critics and competitors argued – not entirely without merit – that the engines he commercialized were ultimately very different from the machine described in his patent. The nationalist tensions leading up to the outbreak of World War I shook
 
@@ -929,11 +857,7 @@ Despite the remarkable success achieved in fifteen years, Rudolf Diesel struggle
 The second prototype developed at man by
 :::
 
-Rudolf Diesel, and the first to operate independently, in him. A poor fin ancial manager, he made multiple February 1894. It has only one cylinder with a diameter unreasonable expenses and ruinous investments, of $22 cm$, and the direct fuel injection is done by a com-and, to top it all, he was plagued by severe migraines
-
-pressed air circuit. The engine is now exhibited at the and medical problems. In 1913, the man seemed
-
-headquarters of the man company. tormented by his own ethical and philosophical
+Rudolf Diesel, and the first to operate independently, in him. A poor fin ancial manager, he made multiple February 1894. It has only one cylinder with a diameter unreasonable expenses and ruinous investments, of $22 cm$, and the direct fuel injection is done by a com-and, to top it all, he was plagued by severe migraines pressed air circuit. The engine is now exhibited at the and medical problems. In 1913, the man seemed headquarters of the man company. tormented by his own ethical and philosophical
 
 *Photo* CC-by-sa *MAN SE* questions. His engines exclusively produced power in factories and power plants: did they ultimately contribute to the emancipation or the servitude of the working classes? He ended his life in September.
 
@@ -976,15 +900,9 @@ Ultimately, there is probably not a product in today’s industry that we manufa
 
 Refrigerator
 
-What is the theoretical maximum efficiency that a
+What is the theoretical maximum efficiency that a household freezer could reach when operating between temperatures of $-6^{\circ}C$ and $20^{\circ}C (21.2^{\circ} F$ and $68^{\circ} F)$?
 
-household freezer could reach when operating between
-
-temperatures of $-6^{\circ}C$ and $20^{\circ}C (21.2^{\circ} F$ and $68^{\circ} F)$?
-
-For what reason(s) is the cop reached by conventional
-
-freezers (around $3)$ lower than this value?
+For what reason(s) is the cop reached by conventional freezers (around $3)$ lower than this value?
 
 ## Problems
 
@@ -998,29 +916,19 @@ freezers (around $3)$ lower than this value?
 
    it is useful to be able to describe it precisely:
 
-   1. Describe briefly the four phases of a Carnot engine
-
-   cycle, describing the direction of heat transfers.
+   1. Describe briefly the four phases of a Carnot engine cycle, describing the direction of heat transfers.
 
    2. Why are heat transfers isothermal?
 
    3. Is it preferable to use a perfect gas or a liquidvapor mixture to perform this cycle?
 
-   4. What practical problems does the Carnot cycle
-
-   pose?
+   4. What practical problems does the Carnot cycle pose?
 
    7.1 Maximum Efficiency of an
 
    Engine
 
-   What is the maximum efficiency that a steam power
-
-   plant can reach when operating in the atmosphere at
-
-   room temperature $(15^{\circ}C$ or $59^{\circ} F)$, with a maximum
-
-   temperature of $800^{\circ}C (1472^{\circ} F)$?
+   What is the maximum efficiency that a steam power plant can reach when operating in the atmosphere at room temperature $(15^{\circ}C$ or $59^{\circ} F)$, with a maximum temperature of $800^{\circ}C (1472^{\circ} F)$?
 
 ```{exercise}
 :label: prob-7-3

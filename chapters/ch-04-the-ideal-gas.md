@@ -27,11 +27,7 @@ The ideal gas is a mathematical model that allows us to predict the properties (
 
 ## Introduction
 
-In chapters 2 and 3 we learned to quantify energy transfers — but we can
-
-only do so when we know the values of $u$ or $h$, which are quantities that
-
-are impossible to measure directly in practice.
+In chapters 2 and 3 we learned to quantify energy transfers — but we can only do so when we know the values of $u$ or $h$, which are quantities that are impossible to measure directly in practice.
 
 This chapter 4 (*the ideal gas*) aims to answer two questions:
 
@@ -39,9 +35,7 @@ This chapter 4 (*the ideal gas*) aims to answer two questions:
 
 • How can we predict the values of $u$ and $h$ when using air?
 
-This chapter is incompatible with chapter 5 (*liquids and vapors*), where we
-
-will have to forget everything learned here.
+This chapter is incompatible with chapter 5 (*liquids and vapors*), where we will have to forget everything learned here.
 
 (sec-4-1)=
 ## 4.1 Definition
@@ -163,9 +157,11 @@ The behavior of molecules when they are close to each other is actually very com
 
 The macroscopic consequences of these interactions, and the conditions under which they should no longer be neglected, are addressed in chapter 5 (*liquids and vapors*).
 
+:::{aside}
 « Anyone who wants to analyze the properties of matter in a real problem might want to start by writing down the fundamental equations and then try to solve them mathematically. Although there are people who try to use such an approach, these people are the failures in this field; the real successes come to those who start from a *physical* point of view, people who have a rough idea where they are going and then begin by making the right kind of approximations, knowing what is big and what is small in a given complicated situation. »
 
 Richard Feynman, 1963 [[30](#ref-30), [35](#ref-35)] *The Feynman Lectures on Physics*
+:::
 
 For now, we will remember that the ideal gas model works better:
 
@@ -360,9 +356,7 @@ By returning to figure 4.3 it quickly appears that $c_{p}$ must be greater than 
 
 The first research undertakings aimed at exploring the concept of temperature took place at the very beginning of the 19th century. The scientific community was then very interested in gases – it was noticed that there are *two* ways to increase their temperature: by heating them, but also by compressing them.
 
-Frenchman Joseph Louis Gay-Lussac sought to understand why the temperature of a gas drops when it expands (he actually sought, according to the concepts of the time, to identify the source of the *caloric* and the reasons why it flows). He thus endeavored to produce gas expansions that were as simple as possible, and to measure the temperature. Thirty years later, the Englishman James Prescott Joule resumed and deepened these experiments, but this time, by quantifying heat as *work equivalence*. These experiments with gas balloons and thermometers are anything but spectacular – but they would play a pivotal role in thermodynamics, because they allowed for
-
-the first time to distinguish heat, work, energy, and temperature. Joule’s meticulous work lead to the first formal expression of the first law of thermodynamics, and to the end of the caloric theory according to which heat was a very low-density and invisible fluid. Our modern unit for energy is named after him as a tribute to these results.
+Frenchman Joseph Louis Gay-Lussac sought to understand why the temperature of a gas drops when it expands (he actually sought, according to the concepts of the time, to identify the source of the *caloric* and the reasons why it flows). He thus endeavored to produce gas expansions that were as simple as possible, and to measure the temperature. Thirty years later, the Englishman James Prescott Joule resumed and deepened these experiments, but this time, by quantifying heat as *work equivalence*. These experiments with gas balloons and thermometers are anything but spectacular – but they would play a pivotal role in thermodynamics, because they allowed for the first time to distinguish heat, work, energy, and temperature. Joule’s meticulous work lead to the first formal expression of the first law of thermodynamics, and to the end of the caloric theory according to which heat was a very low-density and invisible fluid. Our modern unit for energy is named after him as a tribute to these results.
 
 (sec-4-3-2)=
 ### 4.3.2 Joule’s law
@@ -589,9 +583,7 @@ during a reversible process at constant pressure, in a closed system.
 
 When the process takes place in an open system, we have $q_{1\rightarrow 2}+ w_{1\rightarrow 2}=$
 
-$\Delta h$ (3/15), and, if the process is reversible, heat and work can be easily
-
-quantified:
+$\Delta h$ (3/15), and, if the process is reversible, heat and work can be easily quantified:
 
 :::{math}
 2
@@ -646,13 +638,9 @@ The heating will likely take place at constant pressure (unless the apartment is
 
 We have a volume of $75 m^{3}$, which leads to the total mass of air as $m_{\mathrm{A}}= \frac{p_{\mathrm{A}}V_{\mathrm{A}}}{R T_{\mathrm{A}}} = \frac{1\times 10^{5}\times 75}{287\times (10+273.15)}= 92.29\,\mathrm{kg} = 203.5\,\mathrm{lb}$. The heat required to heat this amount of air at constant pressure can be quantified with equation 4/17: $Q_{\mathrm{A}\rightarrow \mathrm{B}}= m c_{p}\Delta T = 93.29 \times 1005 \times (20 - 10) = +9.28 \times 10^{5}J = +928 kJ$.
 
-This result represents the final *net* heat transfer to the air (after
+This result represents the final *net* heat transfer to the air (after losses to walls and windows, as well as transfers that compensate for them).
 
-losses to walls and windows, as well as transfers that compensate for them).
-
-Conversely, cooling would cause outside air to come in, which
-
-would need to be taken into account in the mass calculation.
+Conversely, cooling would cause outside air to come in, which would need to be taken into account in the mass calculation.
 
 ````
 
@@ -737,9 +725,7 @@ during a reversible process at constant volume, in a closed system.
 
 When the process occurs in an open system, we have $q_{1\rightarrow 2}+ w_{1\rightarrow 2}= \Delta h$
 
-and, if the process is reversible, heat and work can be quantified, although
-
-with a little more difficulty:
+and, if the process is reversible, heat and work can be quantified, although with a little more difficulty:
 
 :::{math}
 w_{1\rightarrow 2}= \int _{1}^{2}vdp = v_{\mathrm{cst}.}\int _{1}^{2}dp = v_{\mathrm{cst}.}\int _{1}^{2} \frac{R}{v_{\mathrm{cst}.}} dT = R\int _{1}^{2}dT
@@ -771,17 +757,11 @@ For air, we measure $c_{p (\mathrm{air})}= 1005 J kg^{-1}K^{-1}, c_{v (\mathrm{a
 
 Initially, the temperature is $T_{\mathrm{A}}= \frac{p_{\mathrm{A}}v_{\mathrm{A}}}{R} = \frac{p_{\mathrm{A}}}{\rho _{A}R} = \frac{17\times 10^{5}}{9.4\times 287} = 630.1 K = 357^{\circ}C = 674.5 ^{\circ} F$. We use a closed system consisting of the mass of air. Since the volume does not change, the work is zero (equation 4/21) and it is the heat transfer which changes the internal energy (equation 4/22): $q_{\mathrm{A}\rightarrow \mathrm{B}}= \Delta u - w_{\mathrm{A}\rightarrow \mathrm{B}}= \Delta u = c_{v}\Delta T$; thus $T_{\mathrm{B}}= T_{\mathrm{A}}+ \frac{q_{\mathrm{A}\rightarrow \mathrm{B}}}{c_{v}} = 630.1 + \frac{1450\times 10^{3}}{718} = 2649.6 K = 2376.5^{\circ}C = 4309.6 ^{\circ} F$. The final pressure is obtained by comparing the final condition and the initial condition (equation 4/20): $\frac{RT_{\mathrm{A}}}{p_{\mathrm{A}}} = v_{\mathrm{A}}= v_{\mathrm{B}}= \frac{RT_{\mathrm{B}}}{p_{\mathrm{B}}}$; thus $p_{\mathrm{B}}= \frac{T_{\mathrm{B}}}{T_{\mathrm{A}}} p_{\mathrm{A}}= \frac{2649.6}{630.1} \times 17 \times 10^{5}= 7.148 \times 10^{6}Pa = 71.5 bar = 1037 psi$.
 
-Care must be taken with temperatures in the fractions, where
+Care must be taken with temperatures in the fractions, where they must be expressed in kelvins.
 
-they must be expressed in kelvins.
+The maximum temperature, exceeding $2300^{\circ}C$, surpasses the melting temperature of most metals. In a gasoline engine, this temperature is only reached sporadically, with each combustion.
 
-The maximum temperature, exceeding $2300^{\circ}C$, surpasses the
-
-melting temperature of most metals. In a gasoline engine, this temperature is only reached sporadically, with each combustion.
-
-The data in this example mimic those of problem 2.5 p. 54. This
-
-time, we can predict the final conditions without having to make any measurements.
+The data in this example mimic those of problem 2.5 p. 54. This time, we can predict the final conditions without having to make any measurements.
 
 ````
 
@@ -883,9 +863,7 @@ p_{1})
 
 during a reversible process at constant temperature, in a closed system.
 
-The heat transfer can be easily quantified. Indeed, the internal energy does
-
-not change:
+The heat transfer can be easily quantified. Indeed, the internal energy does not change:
 
 :::{math}
 q_{1\rightarrow 2}= \Delta u - w_{1\rightarrow 2}= 0 - w_{1\rightarrow 2}
@@ -899,9 +877,7 @@ during a reversible process at constant temperature, in a closed system.
 
 When the process occurs in an open system, we have $q_{1\rightarrow 2}+ w_{1\rightarrow 2}= \Delta h$
 
-and, if the process is reversible, heat and work can be quantified in the same
-
-way:
+and, if the process is reversible, heat and work can be quantified in the same way:
 
 $w_{1\rightarrow 2}= \int ^{2}vdp = \int ^{2}R T_{\mathrm{cst}.}p dp = R T_{\mathrm{cst}.}\int ^{2}$
 
@@ -969,13 +945,9 @@ w_{\mathrm{A}\rightarrow \mathrm{B}}= R T_{\mathrm{cst}.}\ln (\frac{v_{\mathrm{A
 
 Aobntda isnin ac ef in$V$aAl $=$vo l$^{\frac{m R T_{\mathrm{A}}}{p_{\mathrm{A}}}}$um e $V=_{\mathrm{B}}=^{2.5\times}\frac{V_{\mathrm{A}}2\times 10}{0.878207}^{287\times (800 _{5}+}= ^{2 7}4^{3}.^{.1}3^{5}8^{)}4= m 3_{3}. 8=5 1m1^{3}5 8= U 1S0 1g7a lU. S gal$, we Finally, the final pressure is obtained by comparing the final and initial states: $p_{\mathrm{A}}V_{\mathrm{A}}= m R T_{\mathrm{A}}= m R T_{\mathrm{B}}= p_{\mathrm{B}}V_{\mathrm{B}}$ (or with equation 4/27): $p_{\mathrm{B}}= p_{\mathrm{A}} \frac{V_{\mathrm{A}}}{V_{\mathrm{B}}} = 2\times 10^{5}\times 0.878 207 = 1.756\times 10^{5}Pa = 1.756 bar = 25.47 psi$.
 
-The volume increases and the pressure decreases, since the gas
+The volume increases and the pressure decreases, since the gas is doing work while it receives heat.
 
-is doing work while it receives heat.
-
-It is difficult to hide that this type of process is rarely used in
-
-practice, but it will serve us to develop an extraordinary absolute thermometer-engine-refrigerator, in chapter 7 (*the second law*).
+It is difficult to hide that this type of process is rarely used in practice, but it will serve us to develop an extraordinary absolute thermometer-engine-refrigerator, in chapter 7 (*the second law*).
 
 ````
 
@@ -1051,9 +1023,7 @@ w_{1\rightarrow 2}= c_{p}\Delta T
 Reversible adiabatic expansion of an ideal gas, represented on a pressure-volume diagram.
 :::
 
-*Diagram* CC-0 *Olivier Cleynen*
-
-during a reversible adiabatic process, in an open system.
+*Diagram* CC-0 *Olivier Cleynen* during a reversible adiabatic process, in an open system.
 
 Unfortunately, these two equations 4/32 and 4/34 are of no use until we have predicted the temperature $T_{2}$ at the end of the process. However, in a reversible adiabatic process, nothing remains constant: the specific volume, pressure, and temperature all vary. How can we quantify these properties?
 
@@ -1069,9 +1039,7 @@ When the process is reversible, δ$w = -pdv$ and then:
 du + pdv = 0
 :::
 
-By using $du = c_{v}dT$ for an ideal gas and $p = RT/v$, we can rewrite this
-
-equation as:
+By using $du = c_{v}dT$ for an ideal gas and $p = RT/v$, we can rewrite this equation as:
 
 :::{math}
 c_{v}dT + \frac{RT}{v} dv = 0
@@ -1144,11 +1112,7 @@ And since $R = c_{p}- c_{v}$ (equation 4/8) and $\gamma \equiv c_{p}/c_{v}$ (equ
 
 Thus, we have linked temperature and specific volume when the process is reversible adiabatic (devoid of heat transfer and infinitely slow).
 
-Some algebraic manipulations, which are left to the student to revise, allow
-
-us to derive this expression in terms of pressure. We thus obtain the
-
-following three relations:
+Some algebraic manipulations, which are left to the student to revise, allow us to derive this expression in terms of pressure. We thus obtain the following three relations:
 
 :::{math}
 \frac{T_{1}}{} \frac{v_{2}}{} \gamma -1
@@ -1186,15 +1150,11 @@ following three relations:
 (p_{2}) = (v_{1})
 :::
 
-(4/38)
-
-for any reversible adiabatic process.
+(4/38) for any reversible adiabatic process.
 
 This last equation 4/38 is equivalent to the expression:
 
-$pv^{\gamma}=$ constant (4/39)
-
-for any reversible adiabatic process.
+$pv^{\gamma}=$ constant (4/39) for any reversible adiabatic process.
 
 ````{prf:example}
 :label: ex-4-8
@@ -1218,13 +1178,9 @@ The final temperature, $-160^{\circ}C$ (!), reminds us not to confuse
 
 “adiabatic” with “constant temperature”.
 
-In the fractions, the pressures can be left in bars or $psi$, but the
+In the fractions, the pressures can be left in bars or $psi$, but the temperatures cannot remain in $^{\circ}C$ or $^{\circ} F$.
 
-temperatures cannot remain in $^{\circ}C$ or $^{\circ} F$.
-
-The expansion corresponds to the maximum work because it is
-
-reversible. If it were not reversible, then the temperature of the gas would drop less and the work would be lower (we would still have $w = c_{v}\Delta T)$. In the most extreme case, that of Joule and Gay-Lussac’s expansion (§4.3.2), the temperature would remain at $50^{\circ}C$ and no work would be done.
+The expansion corresponds to the maximum work because it is reversible. If it were not reversible, then the temperature of the gas would drop less and the work would be lower (we would still have $w = c_{v}\Delta T)$. In the most extreme case, that of Joule and Gay-Lussac’s expansion (§4.3.2), the temperature would remain at $50^{\circ}C$ and no work would be done.
 
 ````
 
@@ -1256,9 +1212,7 @@ We have focused on four specific processes of ideal gases, since each plays an i
 :class: note
 :label: hist-4-10
 
-the sum of the masses multiplied by the squares of
-
-the velocities due to the action of the accelerating
+the sum of the masses multiplied by the squares of the velocities due to the action of the accelerating
 
 Lavoisier and Laplace’s Inquiries forces. In the hypothesis we are examining, heat is the vis viva resulting from the imperceptible
 
@@ -1270,71 +1224,27 @@ Lavoisier and Laplace’s Inquiries forces. In the hypothesis we are examining, 
 
 If one brings into contact two bodies whose tem-
 
-The debates on the nature of heat continued until peratures are different, the quantities of motion
-
-the end of the 19th century with the gradual ac-they will mutually communicate will initially be
-
-ceptance of atomic theories. An important step unequal; the vis viva of the colder body will inin this reflection is succinctly and eloquently precrease by the same amount by which the vis viva
-
-sented in the *Mémoire sur la chaleur* (Memoir on of the other will decrease, and this increase will
+The debates on the nature of heat continued until peratures are different, the quantities of motion the end of the 19th century with the gradual ac-they will mutually communicate will initially be ceptance of atomic theories. An important step unequal; the vis viva of the colder body will inin this reflection is succinctly and eloquently precrease by the same amount by which the vis viva sented in the *Mémoire sur la chaleur* (Memoir on of the other will decrease, and this increase will
 
 Heat), 1780 [[1](#ref-1)] by the French physicists Lavoisier continue until the quantities of motion communiand Laplace: cated from one to the other are equal; in this state, the temperature of the bodies will have reached
 
 “Physicists are divided on the nature of heat. uniformity.
 
-Many among them regard it as a fluid spread This way of regarding heat easily explains why
+Many among them regard it as a fluid spread This way of regarding heat easily explains why throughout nature, and of which bodies are more the direct impulse of solar rays is negligible, while or less penetrated, according to their temperature they produce a great amount of heat. Their imand their particular disposition to retain it; it can pulse is the product of their mass by their simple combine with them, and, in this state, it ceases to velocity; now, although this velocity is excessive,
 
-throughout nature, and of which bodies are more the direct impulse of solar rays is negligible, while
+act on the thermometer and to transfer from one their mass is so small that this product is almost body to another; it is only in the state of freedom, nil, whereas their vis viva, being the product of which allows it to establish equilibrium within their mass by the square of their velocity, repbodies, that it forms what we call *free heat*. resents heat of an order much superior to that
 
-or less penetrated, according to their temperature they produce a great amount of heat. Their imand their particular disposition to retain it; it can pulse is the product of their mass by their simple
+Other physicists think that heat is merely the of their direct impulse. This impulse on a white result of the imperceptible movements of the body, which abundantly reflects light, is greater molecules of matter. It is known that bodies, even than on a black body, and yet the solar rays comthe densest ones, are filled with a great number of municate less heat to the former because these pores or small voids, whose volume can consider-rays, by being reflected, carry away their vis viva,
 
-combine with them, and, in this state, it ceases to velocity; now, although this velocity is excessive,
+ably surpass that of the matter they contain; these which they communicate to the black body that empty spaces allow their imperceptible parts the absorbs them.
 
-act on the thermometer and to transfer from one their mass is so small that this product is almost
+freedom to oscillate in all directions, and it is We will not decide between the two preceding natural to think that these parts are in continual hypotheses; several phenomena seem to favor the agitation, which, if it increases to a certain point, latter; such is, for example, that of the heat procan disunite and decompose bodies; it is this induced by the friction of two solid bodies; but there ternal motion which, according to the physicists are others that are more simply explained by the we speak of, constitutes heat. former; perhaps both occur simultaneously. In
 
-body to another; it is only in the state of freedom, nil, whereas their vis viva, being the product of
-
-which allows it to establish equilibrium within their mass by the square of their velocity, repbodies, that it forms what we call *free heat*. resents heat of an order much superior to that
-
-Other physicists think that heat is merely the of their direct impulse. This impulse on a white
-
-result of the imperceptible movements of the body, which abundantly reflects light, is greater
-
-molecules of matter. It is known that bodies, even than on a black body, and yet the solar rays comthe densest ones, are filled with a great number of municate less heat to the former because these
-
-pores or small voids, whose volume can consider-rays, by being reflected, carry away their vis viva,
-
-ably surpass that of the matter they contain; these which they communicate to the black body that
-
-empty spaces allow their imperceptible parts the absorbs them.
-
-freedom to oscillate in all directions, and it is We will not decide between the two preceding
-
-natural to think that these parts are in continual hypotheses; several phenomena seem to favor the
-
-agitation, which, if it increases to a certain point, latter; such is, for example, that of the heat procan disunite and decompose bodies; it is this induced by the friction of two solid bodies; but there
-
-ternal motion which, according to the physicists are others that are more simply explained by the
-
-we speak of, constitutes heat. former; perhaps both occur simultaneously. In
-
-To develop this hypothesis, we shall observe that, any case, since one can only form these two hyin all movements where there is no abrupt change, potheses regarding the nature of heat, one must
-
-there exists a general law which geometers have accept the principles common to both; thus, acdesignated under the name of the *principle of the* cording to both, *the quantity of free heat always*
+To develop this hypothesis, we shall observe that, any case, since one can only form these two hyin all movements where there is no abrupt change, potheses regarding the nature of heat, one must there exists a general law which geometers have accept the principles common to both; thus, acdesignated under the name of the *principle of the* cording to both, *the quantity of free heat always*
 
 *conservation of vis viva*; this law consists in that, *remains the same in the simple mixing of bodies*.
 
-in a system of bodies acting upon each other in This is evident if heat is a fluid that tends to reach
-
-any manner, the vis viva, that is to say, the sum equilibrium, and if it is merely the vis viva reof the products of each mass by the square of sulting from the internal motion of matter, the
-
-its velocity, remains constant. If the bodies are principle in question follows from the principle
-
-driven by accelerating forces, the vis viva is equal of the conservation of vis viva. The conservation
-
-to what it was at the origin of the movement, plus
-
-of free heat in the simple mixing of bodies is thus independent of any hypothesis regarding the nature of heat; it has been generally accepted by physicists, and we shall adopt it in the following research.”
+in a system of bodies acting upon each other in This is evident if heat is a fluid that tends to reach any manner, the vis viva, that is to say, the sum equilibrium, and if it is merely the vis viva reof the products of each mass by the square of sulting from the internal motion of matter, the its velocity, remains constant. If the bodies are principle in question follows from the principle driven by accelerating forces, the vis viva is equal of the conservation of vis viva. The conservation to what it was at the origin of the movement, plus of free heat in the simple mixing of bodies is thus independent of any hypothesis regarding the nature of heat; it has been generally accepted by physicists, and we shall adopt it in the following research.”
 
 At the time when this text was written, the atomic hypothesis remained largely speculative due to the lack of adequate experimental means: the experiment by Jean Perrin that finally settled the issue only took place in the early years of the 20th century, and the X-ray diffraction experiments suggested by Max von Laue occurred in 1912.
 
@@ -1355,15 +1265,9 @@ At the time when this text was written, the atomic hypothesis remained largely s
 
    4.3 Energy and Temperature
 
-   There is air in a flexible compartment at a pressure
+   There is air in a flexible compartment at a pressure of $3bar (43.51psi)$. Its internal energy is $836kJkg^{-1}$.
 
-   of $3bar (43.51psi)$. Its internal energy is $836kJkg^{-1}$.
-
-   It is heated at constant pressure until $900^{\circ}C$; then it is
-
-   cooled and expanded while its properties vary according to the relation $pv^{1.1}=$ const. until its temperature
-
-   reaches $25^{\circ}C$.
+   It is heated at constant pressure until $900^{\circ}C$; then it is cooled and expanded while its properties vary according to the relation $pv^{1.1}=$ const. until its temperature reaches $25^{\circ}C$.
 
    *[Trick question]* How much energy has it received or
 

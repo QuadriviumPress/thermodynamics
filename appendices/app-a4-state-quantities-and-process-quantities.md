@@ -26,9 +26,7 @@ Quantities are sometimes referred to as *variables*; state quantities are someti
 
 Infinitesimal changes in state quantities are denoted by the symbol $d$; these are *exact*
 
-*differentials* and can be integrated by only knowing their initial and final values. For
-
-example, for temperature $T$:
+*differentials* and can be integrated by only knowing their initial and final values. For example, for temperature $T$:
 
 B
 
@@ -44,9 +42,7 @@ A
 
 Infinitesimal transfers of path quantities are denoted by the symbol δ; these are *inexact*
 
-*differentials* and their integral can only be quantified by knowing all states encountered
-
-along the path. For example, for work $W$, one cannot write “$W_{\mathrm{B}}-W_{\mathrm{A}}$”, or “$\Delta W$”, but only:
+*differentials* and their integral can only be quantified by knowing all states encountered along the path. For example, for work $W$, one cannot write “$W_{\mathrm{B}}-W_{\mathrm{A}}$”, or “$\Delta W$”, but only:
 
 B
 

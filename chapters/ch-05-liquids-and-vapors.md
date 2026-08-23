@@ -23,21 +23,13 @@ Water generally follows the same trends as an ideal gas, but when it condenses o
 
 ## Introduction
 
-This chapter 5 has exactly the same objectives as chapter 4 (*the ideal gas*), but
+This chapter 5 has exactly the same objectives as chapter 4 (*the ideal gas*), but applied to the study of fluids that liquefy and evaporate. It aims to answer two questions:
 
-applied to the study of fluids that liquefy and evaporate. It aims to answer
-
-two questions:
-
-• How can we describe the behavior of a liquid or vapor they are heated or
-
-compressed?
+• How can we describe the behavior of a liquid or vapor they are heated or compressed?
 
 • How can we predict the values of$u$and$h$when we use water in machines?
 
-This chapter is incompatible with chapter 4 (*the ideal gas*) and we must forget
-
-everything that was learned there.
+This chapter is incompatible with chapter 4 (*the ideal gas*) and we must forget everything that was learned there.
 
 (sec-5-1)=
 ## 5.1 Evaporation and Condensation
@@ -65,6 +57,7 @@ Surface tension gives liquids fascinating visual properties but has no consequen
 
 [^ch5-fn1]: The term *incompressible*, a true false friend for the student, does *not* mean that the pressure is constant or uniform. It merely means that the specific volume $v$, and thus with it the density $\rho$, remains constant.
 
+:::{aside}
 « The steam here is merely a means of transporting the caloric; it serves the same function as in the heating of baths by steam, except that in the case which we are considering, its movement is made useful. »
 
 Sadi Carnot, 1824
@@ -72,6 +65,7 @@ Sadi Carnot, 1824
 *Reflections on the Motive Power of Fire and on Machines Fitted to Develop that Power* [[4](#ref-4)]
 
 *Photo* CC-by *by Commons User:Fcb981*
+:::
 
 (sec-5-1-2)=
 ### 5.1.2 Phase changes
@@ -128,9 +122,7 @@ Two magnetized billiard balls colliding without friction at high speed. The mutu
 Two magnetized billiard balls colliding without friction at low speed. Below a threshold speed, the two balls will continue their trajectory together.
 :::
 
-*Diagram* CC-by-sa *by Commons User:Sharayanan & Olivier Cleynen*
-
-geometry of the molecules that compose it. In the following sections, we will precisely quantify the amounts of energy and the ranges of properties required to vaporize and liquefy one fluid in particular: water.
+*Diagram* CC-by-sa *by Commons User:Sharayanan & Olivier Cleynen* geometry of the molecules that compose it. In the following sections, we will precisely quantify the amounts of energy and the ranges of properties required to vaporize and liquefy one fluid in particular: water.
 
 (sec-5-1-4)=
 ### 5.1.4 Industrial use of water and liquids/vapors
@@ -139,9 +131,7 @@ When using a fluid to convert work and heat, it can be advantageous to exploit p
 
 In vapor form, a fluid behaves like a gas and spontaneously occupies all the volume made available to it. It is often used in this form to move mechanical parts (pistons in cylinders or blades in a turbine).
 
-In liquid form, the fluid has a significantly higher density. It is often used in this form to transfer heat (heating or cooling) because much smaller
-
-conduits can be used. For example, in order to achieve the same power, a radiator filled with a gas should have a volume roughly a thousand times larger than if the fluid was liquefied.
+In liquid form, the fluid has a significantly higher density. It is often used in this form to transfer heat (heating or cooling) because much smaller conduits can be used. For example, in order to achieve the same power, a radiator filled with a gas should have a volume roughly a thousand times larger than if the fluid was liquefied.
 
 Historically, water has been used in the very first engines in history for these reasons, and because changes in volume during phase changes allow for easier control of machines with low technology. Nowadays, liquids/vapors are mainly used in two major types of applications:
 
@@ -209,6 +199,7 @@ Then, suddenly, while the volume continues to increase, the temperature stops ri
 
 [^ch5-fn2]: Strictly speaking, the mixture is called *saturated liquid-vapor mixture*, since it consists of *saturated liquid* and *saturated vapor*. It can also be named *wet vapor*.
 
+:::{aside}
 « Steam can be considered at the very moment of its formation in the boiler, still in contact with the liquid from which it emanates, or else separated from that same liquid; and in each of these cases, its properties are different. »
 
 François-Marie Guyonneau de Pambour, 1839
@@ -216,6 +207,7 @@ François-Marie Guyonneau de Pambour, 1839
 *Théorie de la machine à vapeur* [[7](#ref-7)]
 
 *Diagram* CC-0 *Olivier Cleynen*
+:::
 
 :::{figure} ../images/fig-5-5.jpg
 :label: fig-5-5
@@ -406,9 +398,7 @@ François-Marie Guyonneau de Pambour, 1835
 
 Here the measurements are made at $1.6 MPa$, in other words, $16 bar (232 psi)$.
 
-A discontinuity is observed between $200^{\circ}C$ and $300^{\circ}C$: this is the state
-
-change that occurred at $T_{\mathrm{sat}.}= 201.37^{\circ}C$, the saturation temperature for this
+A discontinuity is observed between $200^{\circ}C$ and $300^{\circ}C$: this is the state change that occurred at $T_{\mathrm{sat}.}= 201.37^{\circ}C$, the saturation temperature for this
 
 This steam table allows us to answer many questions. Here are a few
 
@@ -434,9 +424,7 @@ How much energy does this water lose as it undergoes a process from $600^{\circ}
 
 From Steam Table 1, at $1.6 MPa$ and $600^{\circ}C$, we read $u_{1}= 3293.9 kJ kg^{-1}$. For a pressure of $0.6 MPa$ at $20^{\circ}C$, we read $u_{2}= 83.9 kJ kg^{-1}$. We can then quantify the change in energy as $\Delta U = m(u_{2}- u_{1}) = -6420 kJ$ (hence a loss by the water).
 
-We were able to quantify $\Delta U$, but we cannot determine the
-
-proportions of heat $(Q_{1\rightarrow 2})$ and work $(W_{1\rightarrow 2})$ in this change. The less reversible the process, and the smaller the work $W_{1\rightarrow 2}$ will be compared to $Q_{1\rightarrow 2}$. After chapter 8 (*entropy*), we will be able to use *entropy* to quantify the maximum amount of work that can be obtained between $1$ and $2$.
+We were able to quantify $\Delta U$, but we cannot determine the proportions of heat $(Q_{1\rightarrow 2})$ and work $(W_{1\rightarrow 2})$ in this change. The less reversible the process, and the smaller the work $W_{1\rightarrow 2}$ will be compared to $Q_{1\rightarrow 2}$. After chapter 8 (*entropy*), we will be able to use *entropy* to quantify the maximum amount of work that can be obtained between $1$ and $2$.
 
 ````
 
@@ -458,9 +446,7 @@ What is the specific internal energy of water at 16 bar and $585^{\circ}C$?
 
 We interpolate between two lines of Steam Table 1. We have $u_{500^{\circ}C}= 3120.1 kJ kg^{-1}$ and $u_{600^{\circ}C}= 3293.9 kJ kg^{-1}$. We have progressed by a factor $y = \frac{585-500}{600-500} = 0.85$ between the two lines. We obtain by interpolation $u_{585^{\circ}C}= u_{500^{\circ}C}+ y \times (u_{600^{\circ}C}- u_{580^{\circ}C}) = 3267.83 kJ kg^{-1}$.
 
-After interpolating, always quickly check the order of magnitude
-
-of the results. Here $u_{585^{\circ}C}$ is indeed between $u_{500^{\circ}C}$ and $u_{600^{\circ}C}$, and closer to $u_{600^{\circ}C}$.
+After interpolating, always quickly check the order of magnitude of the results. Here $u_{585^{\circ}C}$ is indeed between $u_{500^{\circ}C}$ and $u_{600^{\circ}C}$, and closer to $u_{600^{\circ}C}$.
 
 ````
 
@@ -474,19 +460,13 @@ pressure instead of temperature.
 
 In order to precisely quantify the properties of water when it changes phase,
 
-we use Steam Tables 2 and 3. The properties of water in the form of saturated
+we use Steam Tables 2 and 3. The properties of water in the form of saturated liquid (subscript $L)$ and saturated vapor (subscript $V)$ are tabulated for each
 
-liquid (subscript $L)$ and saturated vapor (subscript $V)$ are tabulated for each
-
-In Steam Table 2 (see pp. 310-311), the data is sorted by pressure (with each
-
-pressure corresponding to a single saturation temperature). Steam Table 3
+In Steam Table 2 (see pp. 310-311), the data is sorted by pressure (with each pressure corresponding to a single saturation temperature). Steam Table 3
 
 (see pp. 312-313) presents exactly the same data, but sorted by temperature
 
-(with each temperature corresponding to one saturation pressure). Excerpts
-
-from these steam tables are presented in [Tables 5.3](#tab-5-3) and 5.4.
+(with each temperature corresponding to one saturation pressure). Excerpts from these steam tables are presented in [Tables 5.3](#tab-5-3) and 5.4.
 
 :::{table} Excerpt from Steam Table 2 (see in Appendix A1 pp. 310-311). Subscript $L$ corresponds to saturated liquid, and subscript $V$ corresponds to saturated vapor. The difference between these values is sometimes noted with an index $LV$: for example $u_{LV}\equiv \Delta u_{L)V}\equiv u_{V}- u_{L}$.
 :label: tab-5-3
@@ -528,9 +508,7 @@ Water is boiling, so it is at saturation (liquid-vapor mixture). We refer to Ste
 
 ````{prf:example}
 
-As long as the water continues to boil or condense, it will remain
-
-at $133.52^{\circ}C$. In order to achieve boiling at a different temperature, the pressure must be adjusted.
+As long as the water continues to boil or condense, it will remain at $133.52^{\circ}C$. In order to achieve boiling at a different temperature, the pressure must be adjusted.
 
 ````
 
@@ -542,9 +520,7 @@ What is the increase in volume when water is vaporized at $130^{\circ}C$?
 
 Water goes from a volume $v_{L}$ (a liquid just about to boil) to a volume $v_{V}$ (when the last drop has evaporated). We refer to Steam Table 2 (excerpt in table 5.3) where the data is sorted by temperature. At $130^{\circ}C$, the specific volume increases by $v_{LV}\equiv \Delta v_{L)V}\equiv v_{V}- v_{L}= 0.668 - 0.001 07 = 0.666 93 m^{3}kg^{-1}$ (it is multiplied by about $600)$.
 
-Here, evaporation occurs entirely at $130^{\circ}C$ (which is quite easy
-
-to achieve in practice, since it simply involves maintaining constant pressure, see figure 5.7). If the temperature and pressure were not held constant, the final volume would be different.
+Here, evaporation occurs entirely at $130^{\circ}C$ (which is quite easy to achieve in practice, since it simply involves maintaining constant pressure, see figure 5.7). If the temperature and pressure were not held constant, the final volume would be different.
 
 ````
 
@@ -556,9 +532,7 @@ How much heat is needed to fully (and slowly) vaporize $4 L$ of saturated liquid
 
 The water will receive heat, but will also do work (by expanding at constant pressure of $3 bar)$. We will calculate $q_{\mathrm{evap}.}= q_{1\rightarrow 2}= (u_{2}- u_{1}) - w_{1\rightarrow 2}$ (equation 2/2). The water starts as a saturated liquid (state 1 = subscript $L)$ and ends up as a saturated vapor (state 2 = subscript $V)$. Since the process is slow and at constant pressure, the work $w_{1\rightarrow 2}= -\int ^{2}_{1}pdv$ simply becomes $-p_{\mathrm{cst}.}(v_{2}- v_{1})$. Let’s gather all of this information in one equation: $q_{\mathrm{evap}.}= (u_{V}-u_{L}) + p_{\mathrm{cst}.}(v_{V}- v_{L}) = h_{V}- h_{L}= h_{LV}\equiv \Delta h_{L)V}= 2163.5 kJ kg^{-1}$. At 3 bar, our $4 L$ of saturated liquid water corresponds to a mass $m = \frac{V}{v_{L}} = \frac{4\times 10^{-3}}{0.001073} = 3.7279 kg$. So, in the end, $Q_{\mathrm{evap}.}= m q_{\mathrm{evap}.}= 8065.2 kJ$.
 
-If we had used the usual approximation of $1000$ liters per cubic
-
-meter of liquid water $(v_{L}\approx 10^{-3}m^{3}kg^{-1})$, we would have made an error of +7.3%.
+If we had used the usual approximation of $1000$ liters per cubic meter of liquid water $(v_{L}\approx 10^{-3}m^{3}kg^{-1})$, we would have made an error of +7.3%.
 
 ````
 
@@ -567,9 +541,7 @@ It is worth mentioning that the term $h_{LV}\equiv \Delta h_{L)V}\equiv h_{L}- h
 (sec-5-3-3)=
 ### 5.3.3 The liquid-vapor mixture
 
-Finally, we want to quantify the properties of water *between* the saturation points, in other words, when it is only partially liquid. Experiment shows
-
-that in this region, fluids behave linearly, and its properties can be easily quantified.
+Finally, we want to quantify the properties of water *between* the saturation points, in other words, when it is only partially liquid. Experiment shows that in this region, fluids behave linearly, and its properties can be easily quantified.
 
 In order to “position” a liquid-vapor mixture between the two saturation points, we define the *quality* or *dryness fraction* as follows:
 
@@ -591,9 +563,7 @@ The vapor dryness fraction represented by the point position on a $T -v$ diagram
 
 We can now express the properties $u, h$, and $v$ in terms of the dryness fraction:
 
-**The enthalpy** $h$ of a liquid-vapor mixture is equal to the sum of the enthalpy of the liquid and that of the vapor. We have, as illustrated in
-
-figure 5.12:
+**The enthalpy** $h$ of a liquid-vapor mixture is equal to the sum of the enthalpy of the liquid and that of the vapor. We have, as illustrated in figure 5.12:
 
 :::{math}
 h_{x}= (1 - x)h_{L}+ x h_{V}
@@ -751,9 +721,7 @@ It is possible to heat or cool a liquid/vapor while maintaining its pressure con
 
 • with fluid in steady flow (open system), simply transfer heat by letting it flow through a conduit without moving parts. This is what happens in a boiler or condenser, for example.
 
-In a closed system, we have $q_{1\rightarrow 2}+ w_{1\rightarrow 2}= \Delta u$ (2/2). If the process is
-
-reversible, both heat and work can be quantified as follows:
+In a closed system, we have $q_{1\rightarrow 2}+ w_{1\rightarrow 2}= \Delta u$ (2/2). If the process is reversible, both heat and work can be quantified as follows:
 
 :::{math}
 2
@@ -783,9 +751,7 @@ q_{1\rightarrow 2}= \Delta h
 
 in a reversible process at constant pressure, in a closed system.
 
-In an open system, we have $q_{1\rightarrow 2}+ w_{1\rightarrow 2}= \Delta h$ (3/15). If the process is
-
-reversible, both heat and work can be quantified as follows:
+In an open system, we have $q_{1\rightarrow 2}+ w_{1\rightarrow 2}= \Delta h$ (3/15). If the process is reversible, both heat and work can be quantified as follows:
 
 :::{math}
 2
@@ -803,12 +769,13 @@ w_{1\rightarrow 2}= \int vdp
 w_{1\rightarrow 2}= 0
 :::
 
+:::{aside}
 « It is well known that when water is made to vaporize under atmospheric pressure, in vain is additional heat continuously supplied to it by means of the furnace, neither the temperature of the water nor that of the steam ever rises beyond 100° of the centigrade thermometer, or 212° of the Fahrenheit thermometer. »
 
 François-Marie Guyonneau de Pambour, 1839
 
 *Théorie de la machine à vapeur* [[7](#ref-7)]
-
+:::
 $2 dv$
 
 (5/7)
@@ -835,9 +802,7 @@ Constant-pressure (isobaric) process undergone by a liquid/vapor. In a closed sy
 Heating at constant pressure of a liquid/vapor, represented on a pressure-volume diagram.
 :::
 
-*Diagram* CC-0 *Olivier Cleynen*
-
-in a reversible process at constant pressure, in an open system.
+*Diagram* CC-0 *Olivier Cleynen* in a reversible process at constant pressure, in an open system.
 
 :::{math}
 q_{1\rightarrow 2}= \Delta h - w_{1\rightarrow 2}
@@ -866,9 +831,7 @@ How much work and heat are needed to slowly heat $2 kg$ of saturated liquid wate
 
 We start from the saturated liquid state, with $v_{1}= v_{L}$ and $h_{1}= h_{L}$. We need the final specific volume and enthalpy in order to quantify $W_{1\rightarrow 2}$ and $Q_{1\rightarrow 2}$. The final volume will be $v_{2}= \frac{V_{2}}{m} = 0.5 m^{3}kg^{-1}$.
 
-We notice that $v_{2}$ is less than $v_{V}$ at our temperature. At the end
-
-of the heating process, the water will still be partially liquid, and we will need to calculate its dryness fraction.
+We notice that $v_{2}$ is less than $v_{V}$ at our temperature. At the end of the heating process, the water will still be partially liquid, and we will need to calculate its dryness fraction.
 
 Liquid-vapor mixture? We are heading towards Steam Tables 2
 
@@ -880,9 +843,7 @@ The work is obtained using equation 5/9: $W_{1\rightarrow 2}= m w_{1\rightarrow 
 
 Finally, the heat transfer is calculated using equation 5/10: $Q_{1\rightarrow 2}= m q_{1\rightarrow 2}= m \Delta h = 2 \times (2347.2 \times 10^{3}- 561.4 \times 10^{3}) = +3.5715 \times 10^{6}J = +3571.5 kJ$.
 
-The heat transfer involved is ten times more significant than the
-
-work done. In this case, we are heating a lot, and the fluid, at low pressure, does little work.
+The heat transfer involved is ten times more significant than the work done. In this case, we are heating a lot, and the fluid, at low pressure, does little work.
 
 It is probably simpler and less risky to derive these equations 5/9
 
@@ -928,9 +889,7 @@ Heating at constant volume of a liquid-vapor, represented on a pressure-volume d
 
 ::::
 
-In a closed system, we have $q_{1\rightarrow 2}+ w_{1\rightarrow 2}= \Delta u$. The heat and work can each
-
-be quantified as follows:
+In a closed system, we have $q_{1\rightarrow 2}+ w_{1\rightarrow 2}= \Delta u$. The heat and work can each be quantified as follows:
 
 :::{math}
 2
@@ -962,9 +921,7 @@ in a constant volume process, in a closed system.
 
 When the process occurs in an open system, we have $q_{1\rightarrow 2}+ w_{1\rightarrow 2}= \Delta h$.
 
-if the process is reversible, the heat and work can each be quantified as
-
-follows:
+if the process is reversible, the heat and work can each be quantified as follows:
 
 :::{math}
 2 2
@@ -1043,9 +1000,7 @@ We first observe the final state. The final volume will be $v_{2}= \frac{V_{2}}{
 
 The process will also occur at constant pressure (at the saturation pressure, $p_{\mathrm{sat}130^{\circ}C}= 0.270 28 MPa)$. The calculation is exactly the same as for example 5.10 p. 133. We obtain a dryness fraction of $0.749$, the work (done) is $W_{1\rightarrow 2}= -269.7 kJ$, and a heat (received) amounts to $Q_{1\rightarrow 2}= +3256.2 kJ$.
 
-As long as we are in a liquid-vapor mixture (inside the saturation
-
-curve), constant temperature = constant pressure. No problem.
+As long as we are in a liquid-vapor mixture (inside the saturation curve), constant temperature = constant pressure. No problem.
 
 ````
 
@@ -1059,13 +1014,9 @@ We cannot yet answer this question! The final specific volume exceeds $v_{V}$ an
 
 We could quantify the energy $u_{2}$ by interpolating between the *rows and columns* of Steam Table 1 (by looking for a volume $v_{2}$ at $130^{\circ}C)$, which would be imprecise and cumbersome. However, even if we quantified $\Delta u = u_{2}- u_{1}$, we would be unable to determine the share of work and heat within: both the pressure and volume change, and we are missing a relationship between them to carry out the integral $\int pdv$.
 
-With the ideal gas model, we could write that $pv =$ cst. at
+With the ideal gas model, we could write that $pv =$ cst. at constant temperature, and thus calculate the work during expansion. But with a liquid-vapor mixture, this no longer works.
 
-constant temperature, and thus calculate the work during expansion. But with a liquid-vapor mixture, this no longer works.
-
-In chapter 8 (*entropy*), we will be able to use the brilliant concept
-
-of *entropy* to answer this question.
+In chapter 8 (*entropy*), we will be able to use the brilliant concept of *entropy* to answer this question.
 
 ````
 
@@ -1179,35 +1130,21 @@ A completely arbitrary process undergone by a liquid-vapor represented on a pres
 :class: note
 :label: hist-5-10
 
-ate) meant that these engines could only operate
-
-with very low pressures.
+ate) meant that these engines could only operate with very low pressures.
 
 the Horsepower For these engines, water is an excellent choice for a working fluid. When steam at moderate pressure
 
 \* is cooled (for example by mixing it with cold liquid
 
-We traditionally associate the word *engine* with auwater), it condenses and its pressure drops abruptly
-
-tomobile propulsion: machines running on air and (figure 5.23). This is an opportunity to drive a pisgasoline. However, the very first engines were quite ton that, subjected to atmospheric pressure on its
-
-different. Heavy, slow, incredibly large, running on other side, can supply work. Thus, one could almost
-
-coal and water, they were only used to pump water. speak of “implosion engines”, since they make the
+We traditionally associate the word *engine* with auwater), it condenses and its pressure drops abruptly tomobile propulsion: machines running on air and (figure 5.23). This is an opportunity to drive a pisgasoline. However, the very first engines were quite ton that, subjected to atmospheric pressure on its different. Heavy, slow, incredibly large, running on other side, can supply work. Thus, one could almost coal and water, they were only used to pump water. speak of “implosion engines”, since they make the
 
 Let’s go back to the beginning of the 19th century. atmosphere work on a cylinder of depressurized
 
 At that time, Europe was heated by coal, which steam to produce work.
 
-was extracted with great difficulty from constantly With this operating mode, the pressure difference
+was extracted with great difficulty from constantly With this operating mode, the pressure difference flooded mines. The water was removed by working obtained reaches a maximum of 1 bar, and the pace horses through a primitive pumping mechanism. is lamentably slow. But these machines operated
 
-flooded mines. The water was removed by working obtained reaches a maximum of 1 bar, and the pace
-
-horses through a primitive pumping mechanism. is lamentably slow. But these machines operated
-
-The first engines were installed to replace these at reasonable temperatures and pressures, and the
-
-horses – but they were hardly less expensive, and operators lacked neither coal nor water.
+The first engines were installed to replace these at reasonable temperatures and pressures, and the horses – but they were hardly less expensive, and operators lacked neither coal nor water.
 
 required just as much attention! It is a young employee of the University of Manchester who first realized the tremendous development potential of the steam engine. By studying a scale model of an engine owned by the university, he made a series of modifications that doubled its efficiency.
 
@@ -1276,41 +1213,15 @@ The ball governor, a mechanism originating from windmills and integrated into st
 
 ::::
 
-Their success, unfortunately, would come much less
+Their success, unfortunately, would come much less from the technological innovations they brought than from the high-profile lawsuits they led to monetize them. Indeed, the two partners excelled in political connections and were at home in the peculiar world of patents and the royalties that result from them. The two Scotsmen in top hats, for example,
 
-from the technological innovations they brought
-
-than from the high-profile lawsuits they led to monetize them. Indeed, the two partners excelled in political connections and were at home in the peculiar
-
-world of patents and the royalties that result from
-
-them. The two Scotsmen in top hats, for example,
-
-received a percentage of the coal savings generated
-
-by the machines they sold across the country. And
-
-it would take nearly fifteen years before the legal
-
-possibility, in the United Kingdom, to use the “expansive power of steam” became finally open to
-
-everyone, a process deviously patented by the two
-
-partners!
+received a percentage of the coal savings generated by the machines they sold across the country. And it would take nearly fifteen years before the legal possibility, in the United Kingdom, to use the “expansive power of steam” became finally open to everyone, a process deviously patented by the two partners!
 
 Regardless, the *General Conference on Weights and*
 
-*Measures* assigned the unit watt to power in the si
+*Measures* assigned the unit watt to power in the si system in 1960. It then dethroned the *horsepower*
 
-system in 1960. It then dethroned the *horsepower*
-
-$(hp)$... a unit introduced by the very James Watt
-
-nearly a century earlier, while he was comparing
-
-his machines with the draft horses they were to
-
-replace.
+$(hp)$... a unit introduced by the very James Watt nearly a century earlier, while he was comparing his machines with the draft horses they were to replace.
 
 $1 hp_{\mathrm{imperial}}\equiv 33 000 ft lb_{f}\min ^{-1}$
 
@@ -1390,7 +1301,7 @@ $T_{\mathrm{sat}.p=2.0797 bar}= 121.37^{\circ}C = 250.47 ^{\circ} F$.
    :enumerator: 5.28
    :alt: A pressure cooker, in which the increased pressure results in higher boiling temperature and thus faster cooking. It is affectionately known
    
-   A pressure cooker, in which the increased pressure results in higher boiling temperature and thus faster cooking. It is affectionately known as a *« cocotte minute »* in France.
+   A pressure cooker, in which the increased pressure results in higher boiling temperature and thus faster cooking. It is affectionately known as a *cocotte minute* in France.
    :::
 
 ```{exercise}

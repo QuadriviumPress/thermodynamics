@@ -23,11 +23,7 @@ When heating a compressed fluid, it provides more work upon expansion than was s
 
 ## Introduction
 
-Thanks to chapters 4 and 5, we have learned to quantify energy in fluids
-
-based on their properties. We will now use these fluids in machines to
-
-convert heat into work, and work into heat. In this chapter 6 (*thermodynamic*
+Thanks to chapters 4 and 5, we have learned to quantify energy in fluids based on their properties. We will now use these fluids in machines to convert heat into work, and work into heat. In this chapter 6 (*thermodynamic*
 
 *cycles*), we aim to formalize the concept of a cycle, addressing two questions:
 
@@ -52,13 +48,7 @@ New graphical and notation conventions for energy transfers. The white arrows ar
 
 We use large white arrows to represent *the physical direction of transfers*. We do not change our sign convention (transfers are positive when directed toward the system and negative when coming from it), but only the graphical convention for their orientation, in order to make the visualization of transfers in machines more intuitive.
 
-The algebraic sum of the work $W_{\mathrm{in}}$ received by a machine and $W_{\mathrm{out}}$ it
-
-supplies is named the *net work* $W_{\mathrm{net}}$. The net work can be positive (done
-
-onto the the machine from external sources) or negative (done by the
-
-machine to an external receiver), depending on the application.
+The algebraic sum of the work $W_{\mathrm{in}}$ received by a machine and $W_{\mathrm{out}}$ it supplies is named the *net work* $W_{\mathrm{net}}$. The net work can be positive (done onto the the machine from external sources) or negative (done by the machine to an external receiver), depending on the application.
 
 :::{math}
 W_{\mathrm{net}}\equiv W_{\mathrm{in}}+ W_{\mathrm{out}}
@@ -194,9 +184,7 @@ A refrigeration cycle, for use in refrigerators, air conditioners, and heat pump
 A refrigeration cycle carried out by separating the stages in time (rather than in space as shown in figure 6.5)
 :::
 
-*Diagram* CC-0 *Olivier Cleynen*
-
-but it is much simpler to manufacture and use. This modification is depicted in figure 6.7.
+*Diagram* CC-0 *Olivier Cleynen* but it is much simpler to manufacture and use. This modification is depicted in figure 6.7.
 
 The throttle valve, in thermodynamic terms, allows for a completely irreversible expansion, increasing the volume and reducing the pressure without extracting work. If a perfect gas were used, this would have no effect on the temperature (as in the experiments of Joule and Gay-Lussac studied in §4.3.2 p. 90) and therefore no interest; but when liquids/vapors are used, the throttling expansion is a technologically simple way to lower the temperature.
 
@@ -288,9 +276,7 @@ Energy transfers associated with an engine. We aim to obtain a large transfer$\d
 
 *Diagram* CC-0 *Olivier Cleynen*
 
-According to definition 6/3, the efficiency $\eta _{\mathrm{engine}}$ of the thermal engine is
-
-therefore:
+According to definition 6/3, the efficiency $\eta _{\mathrm{engine}}$ of the thermal engine is therefore:
 
 :::{math}
 :label: eq-6-4
@@ -319,15 +305,11 @@ This engine rejects \dot{Q}_{\mathrm{out}}= -\dot{W}_{\mathrm{net}}-\dot{Q}_{\ma
 
 $10^{3}= -45 kW$ as heat. Most of this energy is carried away with the exhaust gases.
 
-Since one must always supply at least as much heat$\dot{Q}_{\mathrm{in}}$ as the
-
-engine outputs in work$\dot{W}_{\mathrm{net}}$, the efficiency of an engine will always necessarily be less than $1$.
+Since one must always supply at least as much heat$\dot{Q}_{\mathrm{in}}$ as the engine outputs in work$\dot{W}_{\mathrm{net}}$, the efficiency of an engine will always necessarily be less than $1$.
 
 ````
 
-The net power$\dot{W}_{\mathrm{net}}$ in the form of work can be expressed in terms of other
-
-energy transfers, as follows:
+The net power$\dot{W}_{\mathrm{net}}$ in the form of work can be expressed in terms of other energy transfers, as follows:
 
 :::{math}
 W_{\mathrm{net}}=\dot{W}_{\mathrm{in}}+\dot{W}_{\mathrm{out}}= -Q\dot{} _{\mathrm{in}}-\dot{Q}_{\mathrm{out}}
@@ -384,21 +366,11 @@ $-220 W$ outside of the cold chamber (usually, within the building
 
 Household refrigerators and air conditioners often have efficiencies greater than 1, but depending on the desired temperatures, the
 
-In order to prepare for the next chapter (§7.5.2 p. 196), and while paying
-
-attention to the pitfalls associated with the use of absolute values, we can
-
-express this efficiency in terms of heat transfers only:
+In order to prepare for the next chapter (§7.5.2 p. 196), and while paying attention to the pitfalls associated with the use of absolute values, we can express this efficiency in terms of heat transfers only:
 
 **Efficiency of a heat pump**
 
-A heat pump operates exactly the same way as an air conditioner. Its
-
-function is to generate a transfer$\dot{Q}_{\mathrm{out}}$ to the “hot” section (usually inside
-
-a building). This transfer, represented in figure 6.13, is made possible by
-
-supplying work to the heat pump,$\dot{W}_{\mathrm{net}}$, an “expense” that is necessarily
+A heat pump operates exactly the same way as an air conditioner. Its function is to generate a transfer$\dot{Q}_{\mathrm{out}}$ to the “hot” section (usually inside a building). This transfer, represented in figure 6.13, is made possible by supplying work to the heat pump,$\dot{W}_{\mathrm{net}}$, an “expense” that is necessarily
 
 *Engineering Thermodynamics* by Olivier Cleynen
 
@@ -424,9 +396,7 @@ The efficiency $\eta _{\mathrm{heat} \mathrm{pump}}$ of the heat pump, also know
 
 A heat pump receives an electrical power of $100 W$; it heats the inside of a room with a power of $350 W$. What is its efficiency?
 
-The heat pump rejects more energy as heat than it receives as
-
-work – that is its whole purpose. If the cop were equal to or less than 1, it would be more economical and much simpler to use an electric heater instead.
+The heat pump rejects more energy as heat than it receives as work – that is its whole purpose. If the cop were equal to or less than 1, it would be more economical and much simpler to use an electric heater instead.
 
 ````
 
@@ -480,39 +450,19 @@ The four steps of a four-stroke engine. The
 :class: note
 :label: hist-6-7
 
-perature (*compression* stroke, 2); useful work production
+perature (*compression* stroke, 2); useful work production expansion were now carried out in the same place, occurs during a descent (*power* stroke, 3); finally, the directly in the cylinder. air is expelled to the outside during a fourth and last
 
-expansion were now carried out in the same place, occurs during a descent (*power* stroke, 3); finally, the
+However, in order to achieve internal combustion, movement (*exhaust* stroke, 4) before starting the cycle again. Most current piston-cylinder engines follow this a new problem had to be solved: since the oxyprocess.
 
-directly in the cylinder. air is expelled to the outside during a fourth and last
+gen in the air is used, the combustion can only be *Diagrams 1 2 3 4* CC-by *by Eric Pierce* carried out once. After each combustion, it is therefore essential to expel the reaction products (CO$_{2}$ taneously with the air intake (figures 6.15 and 6.16). and H$_{2}$O primarily) from the cylinder and to reintro- Certainly, none of the four steps can be optimally duce “fresh” air containing the oxygen O$_{2}$ necessary performed: the compression and expansion phases for breaking the hydrocarbon molecules $\mathrm{C}_{x}$H$_{y}$ that are only carried out over a portion of the stroke, produce heat. Two different solutions were then and the scavenging is necessarily incomplete due adopted. to the mixing of fresh and exhaust gases. On the other hand, the combustions are twice as frequent,
 
-However, in order to achieve internal combustion, movement (*exhaust* stroke, 4) before starting the cycle again. Most current piston-cylinder engines follow this
-
-a new problem had to be solved: since the oxyprocess.
-
-gen in the air is used, the combustion can only be *Diagrams 1 2 3 4* CC-by *by Eric Pierce*
-
-carried out once. After each combustion, it is therefore essential to expel the reaction products (CO$_{2}$ taneously with the air intake (figures 6.15 and 6.16). and H$_{2}$O primarily) from the cylinder and to reintro- Certainly, none of the four steps can be optimally duce “fresh” air containing the oxygen O$_{2}$ necessary performed: the compression and expansion phases for breaking the hydrocarbon molecules $\mathrm{C}_{x}$H$_{y}$ that are only carried out over a portion of the stroke, produce heat. Two different solutions were then and the scavenging is necessarily incomplete due adopted. to the mixing of fresh and exhaust gases. On the other hand, the combustions are twice as frequent,
-
-The most common method dedicates one piston since there is no need for intake and exhaust strokes
-
-movement to each step: the first one for compresduring which no thermodynamic operation takes
-
-sion, the second one for expansion (after or during place. Thus, for the same displacement and speed of
-
-combustion), the third one for exhaust gases ex-rotation, two-stroke engines are much more powerpulsion (exhaust), and the last one for admitting ful than their four-stroke counterparts, even though
-
-fresh air (intake). Engines following this process they are also significantly less efficient.
+The most common method dedicates one piston since there is no need for intake and exhaust strokes movement to each step: the first one for compresduring which no thermodynamic operation takes sion, the second one for expansion (after or during place. Thus, for the same displacement and speed of combustion), the third one for exhaust gases ex-rotation, two-stroke engines are much more powerpulsion (exhaust), and the last one for admitting ful than their four-stroke counterparts, even though fresh air (intake). Engines following this process they are also significantly less efficient.
 
 are called *four-stroke* (figure 6.14), and they have always been the most widely used. Twoand four-stroke engines were developed at the same time, but two-stroke engine development
 
-The second method is bound to offend purists: it really took off after the Second World War. The
+The second method is bound to offend purists: it really took off after the Second World War. The performs these four operations in *two strokes* only. refinement by the German engineer Walter Kaaden
 
-performs these four operations in *two strokes* only. refinement by the German engineer Walter Kaaden
-
-In these engines, part of the gas expansion is used of an ingenious exhaust system, whose geometry
-
-to perform the exhaust, and it is carried out simulalone increases the airflow escaping during expan- 164 [Chapter 6](#ch-6)
+In these engines, part of the gas expansion is used of an ingenious exhaust system, whose geometry to perform the exhaust, and it is carried out simulalone increases the airflow escaping during expan- 164 [Chapter 6](#ch-6)
 
 ::::
 
@@ -551,43 +501,19 @@ Schematic pressure-volume diagram of the cylinder of a two-stroke engine with cr
 
 ::::
 
-sions and reduces it during compressions, made the
+sions and reduces it during compressions, made the engine very competitive in racing motorcycles; this
 
-engine very competitive in racing motorcycles; this
+*tuned expansion chamber* (figure 6.17) was adopted in many production models.
 
-*tuned expansion chamber* (figure 6.17) was adopted
+In parallel, the ideas formulated by the English entrepreneur Joseph Day at the end of the 19th century on the mechanism controlling intake spread widely.
 
-in many production models.
+With his ingenious *crankcase intake*, it is the piston itself that serves as a valve (figure 6.18). The intake air first passes through the crankcase where the crankshaft rotates, then it is slightly compressed by the piston in its downward movement before entering the cylinder. The engine thus operates without any moving valve; lubrication can even be provided simply by injecting oil directly into the intake air.
 
-In parallel, the ideas formulated by the English entrepreneur Joseph Day at the end of the 19th century
+With these two advantages, the engine found its application wherever constraints of weight, volume,
 
-on the mechanism controlling intake spread widely.
+acquisition cost, and maintenance took precedence over efficiency. After powering three million *Tra-*
 
-With his ingenious *crankcase intake*, it is the piston
-
-itself that serves as a valve (figure 6.18). The intake
-
-air first passes through the crankcase where the
-
-crankshaft rotates, then it is slightly compressed by
-
-the piston in its downward movement before entering the cylinder. The engine thus operates without
-
-any moving valve; lubrication can even be provided
-
-simply by injecting oil directly into the intake air.
-
-With these two advantages, the engine found its
-
-application wherever constraints of weight, volume,
-
-acquisition cost, and maintenance took precedence
-
-over efficiency. After powering three million *Tra-*
-
-*bant* cars in East Germany, it was adopted on nearly
-
-all outdoor portable tools (chainsaws, lawnmowers,
+*bant* cars in East Germany, it was adopted on nearly all outdoor portable tools (chainsaws, lawnmowers,
 
 etc.). The engine can easily be miniaturized, leaving room for legs on a scooter motorcycle, allowing snowmobiles to start easily, in short, until the
 
@@ -595,17 +521,9 @@ etc.). The engine can easily be miniaturized, leaving room for legs on a scooter
 
 seemed to be able to halt its progress.
 
-However, at the beginning of the 21st century, it
+However, at the beginning of the 21st century, it becomes necessary to give up on these advantages.
 
-becomes necessary to give up on these advantages.
-
-One can wearily accept the irritating sound emitted
-
-by the two-stroke engine, but its polluting emissions are staggering. Lubrication by oil injection
-
-into the intake air causes the atmospheric discharge
-
-of smoke, odors, and harmful particles. In addition,
+One can wearily accept the irritating sound emitted by the two-stroke engine, but its polluting emissions are staggering. Lubrication by oil injection into the intake air causes the atmospheric discharge of smoke, odors, and harmful particles. In addition,
 
 the always incomplete scavenging of the cylinder
 
@@ -629,35 +547,23 @@ sion chamber mounted on a two-stroke engine. Since the flow is unsteady, it is p
 Crankcase intake system. The intake air, laden with fuel for combustion and oil for lubricating mechanical parts, first enters the crankcase. It is compressed and then inserted into the cylinder with the sole downward movement of the piston. There is no need for any valve or flap.
 :::
 
-*Diagram public domain by Commons User:Tomeq183*
-
-greatly limits the efficiency of combustion and the thermal efficiency. The tightening of regulations controlling emissions gradually forces the replacement of these engines with four-stroke ones or electric systems — whose batteries are often charged with energy from power plants... powered by steam engines. We see that seemingly minor technological decisions can sometimes have consequences on a global scale!
+*Diagram public domain by Commons User:Tomeq183* greatly limits the efficiency of combustion and the thermal efficiency. The tightening of regulations controlling emissions gradually forces the replacement of these engines with four-stroke ones or electric systems — whose batteries are often charged with energy from power plants... powered by steam engines. We see that seemingly minor technological decisions can sometimes have consequences on a global scale!
 
 ## Problems
 
    6.1 Engine Efficiency
 
    The Diesel engine of an excavator has an efficiency of
-
-   $40\%$and delivers a continuous power of$60kW($approximately $80hp)$. It is powered by fuel with a calorific
-
-   value of $35MJkg^{-1}$.
+   $40\%$ and delivers a continuous power of $60\,\mathrm{kW}$ (approximately $80\,\mathrm{hp}$). It is powered by fuel with a calorific
+   value of $35\,\mathrm{MJ\,kg^{-1}}$.
 
    1. What is the hourly fuel consumption of the machine?
 
-   2. What is the power rejected as heat in the exhaust
-
-   pipe?
+   2. What is the power rejected as heat in the exhaust pipe?
 
    6.2 Refrigerator Efficiency
 
-   A refrigerator with a COP of$1.2$mustextract$100kJ$from
-
-   food placed in the cold chamber. How much electrical
-
-   energy must be provided for this? How much heat will
-
-   it have rejected at the end of the cooling process?
+   A refrigerator with a COP of$1.2$mustextract$100kJ$from food placed in the cold chamber. How much electrical energy must be provided for this? How much heat will it have rejected at the end of the cooling process?
 
    6.3 Heat Pump Efficiency
 
@@ -669,21 +575,13 @@ greatly limits the efficiency of combustion and the thermal efficiency. The tigh
 
    6.5 Operation of a Heat Pump
 
-   Describe the path followed by the fluid inside a heat
+   Describe the path followed by the fluid inside a heat pump, indicating the direction of heat flows and the location (inside/outside) of the different components.
 
-   pump, indicating the direction of heat flows and the
-
-   location (inside/outside) of the different components.
-
-   Why do we let the fluid expand in a valve instead of
-
-   using a turbine that could supply work?
+   Why do we let the fluid expand in a valve instead of using a turbine that could supply work?
 
    (One can also practice by focusing on the cycles and
 
-   configurations of an air conditioner, a refrigerator, or
-
-   an engine: which part is heated and where?)
+   configurations of an air conditioner, a refrigerator, or an engine: which part is heated and where?)
 
 ::::{admonition} A Bit of History
 :class: note
@@ -832,22 +730,24 @@ What would be the annual financial savings generated by changing the refrigerato
 :::{admonition} Answer
 :class: dropdown
 
-11**
-$\gamma 2) \mathrm{With} \mathrm{equation} 4/37, \frac{p_{\mathrm{B}}}{p_{\mathrm{A}}} = (\frac{T_{\mathrm{B}}}{T_{\mathrm{A}}})^{\gamma -1}= 1.565;$
-3) Idem, expansion C $\rightarrow$ D is reversible adia-
-$\mathrm{batic}, T_{\mathrm{D}}= T_{\mathrm{C}}\left(\frac{p_{\mathrm{D}}}{p_{\mathrm{C}}}\right)^{\frac{\gamma -1}{\gamma}}= T_{\mathrm{C}}\left(\frac{p_{\mathrm{A}}}{p_{\mathrm{B}}}\right)^{\frac{\gamma -1}{\gamma}}= T_{\mathrm{C}} \frac{T_{\mathrm{A}}}{T_{\mathrm{B}}} = 275.6\,\mathrm{K}$ or $2.4^{\circ}C$ or $36.3 ^{\circ} F$;
-4) With equations 3/15 and 4/14, $w_{\mathrm{in}}= +40.2 kJ kg^{-1}$; $q_{\mathrm{out}}= -20.1 kJ kg^{-1}$; $w_{\mathrm{out}}= +37.76 kJ kg^{-1}$; $q_{\mathrm{in}}= +17.6 kJ kg^{-1}$; Thus with
-equation 6/6, $\eta _{\mathrm{conditioner}}= 7.213$;
+2) With equation 4/37, $\dfrac{p_{\mathrm{B}}}{p_{\mathrm{A}}} = \left(\dfrac{T_{\mathrm{B}}}{T_{\mathrm{A}}}\right)^{\frac{\gamma}{\gamma -1}} = 1.565$;
+
+3) Idem, expansion C → D is reversible adiabatic,
+$T_{\mathrm{D}}= T_{\mathrm{C}}\left(\dfrac{p_{\mathrm{D}}}{p_{\mathrm{C}}}\right)^{\frac{\gamma -1}{\gamma}}= T_{\mathrm{C}}\left(\dfrac{p_{\mathrm{A}}}{p_{\mathrm{B}}}\right)^{\frac{\gamma -1}{\gamma}}= T_{\mathrm{C}}\dfrac{T_{\mathrm{A}}}{T_{\mathrm{B}}} = 275.6\,\mathrm{K}$ or $2.4^{\circ}\mathrm{C}$ or $36.3^{\circ}\mathrm{F}$;
+
+4) With equations 3/15 and 4/14, $w_{\mathrm{in}}= +40.2\,\mathrm{kJ\,kg^{-1}}$; $q_{\mathrm{out}}= -20.1\,\mathrm{kJ\,kg^{-1}}$; $w_{\mathrm{out}}= +37.76\,\mathrm{kJ\,kg^{-1}}$; $q_{\mathrm{in}}= +17.6\,\mathrm{kJ\,kg^{-1}}$. Thus with equation 6/6, $\eta_{\mathrm{conditioner}}= 7.213$;
+
 5) We want to obtain in 2 (return inside)
-$m_{\mathrm{internal} \mathrm{air}}= \frac{V_{2}}{v_{2}} = \frac{V_{2}p_{2}}{RT_{2}} = 0.305kgs^{-1}. \mathrm{We}$
-must therefore remove a power$\dot{Q}_{\mathrm{internal} \mathrm{air}}=\dot{} m_{\mathrm{internal} \mathrm{air}}c_{p}(T_{2}- T_{1}) = -5.51 kW$ (3/14 & 4/14)
-from the internal air. The air conditioning unit
-$\mathrm{will} \mathrm{therefore} \mathrm{require}\dot{W}_{\mathrm{net}}= \frac{-\dot{Q}_{\mathrm{internal} \mathrm{air}}}{\eta _{\mathrm{conditioner}}} = 765W.$
-6) To minimize$\dot{m}_{\mathrm{external} \mathrm{air}}$, we need to maximize
-its outlet temperature $T_{4}$. However, we necessarily have $T_{4}\le T_{\mathrm{B}}$, otherwise the heat transfer would occur in the wrong direction. Thus,
-$m_{\mathrm{external} \mathrm{air} \min.}= \frac{-\dot{Q}_{\mathrm{out} \mathrm{air} \mathrm{conditioner}}}{c_{p}(T_{4\max.}-T_{3})} = - \frac{-\dot{Q}_{\mathrm{in}}-\dot{W}_{\mathrm{net}}}{c_{p}(T_{4\max.}-T_{3})} = 0.208 kg s^{-1}$ (theoretical minimum).
-7) In principle, it is sufficient to reverse the positions of the compressor and the turbine. In practice, the temperature ranges will also need to be
-shifted to allow heat absorption in cold weather.
+$\dot{m}_{\mathrm{internal\,air}}= \dfrac{\dot{V}_{2}}{v_{2}} = \dfrac{\dot{V}_{2}p_{2}}{RT_{2}} = 0.305\,\mathrm{kg\,s^{-1}}$.
+We must therefore remove a power
+$\dot{Q}_{\mathrm{internal\,air}}= \dot{m}_{\mathrm{internal\,air}}c_{p}(T_{2}- T_{1}) = -5.51\,\mathrm{kW}$ (3/14 & 4/14)
+from the internal air. The air conditioning unit will therefore require
+$\dot{W}_{\mathrm{net}}= \dfrac{-\dot{Q}_{\mathrm{internal\,air}}}{\eta_{\mathrm{conditioner}}} = 765\,\mathrm{W}$.
+
+6) To minimize $\dot{m}_{\mathrm{external\,air}}$, we need to maximize its outlet temperature $T_{4}$. However, we necessarily have $T_{4}\le T_{\mathrm{B}}$, otherwise the heat transfer would occur in the wrong direction. Thus,
+$\dot{m}_{\mathrm{external\,air\,min.}}= \dfrac{-\dot{Q}_{\mathrm{out\,air\,conditioner}}}{c_{p}(T_{4\mathrm{max.}}-T_{3})} = \dfrac{-\dot{Q}_{\mathrm{in}}-\dot{W}_{\mathrm{net}}}{c_{p}(T_{4\mathrm{max.}}-T_{3})} = 0.208\,\mathrm{kg\,s^{-1}}$ (theoretical minimum).
+
+7) In principle, it is sufficient to reverse the positions of the compressor and the turbine. In practice, the temperature ranges will also need to be shifted to allow heat absorption in cold weather.
 
 :::
 ```

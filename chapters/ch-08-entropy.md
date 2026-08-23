@@ -29,9 +29,7 @@ Entropy is a property of bodies. We quantify its changes in order to measure the
 
 We present here the most powerful and difficult concept of thermodynamics.
 
-This chapter 8 (*entropy*) aims to approach it in the most pragmatic way
-
-possible, starting from two questions:
+This chapter 8 (*entropy*) aims to approach it in the most pragmatic way possible, starting from two questions:
 
 • What does entropy represent?
 
@@ -160,13 +158,9 @@ $\frac{1}{30+273.15}(-2000) = -6.6 J K^{-1}$.
 
 We have already explored reversible processes at constant temperature (isothermal processes) in sections §4.4.4 p. 98 and §5.4.4 p. 135. Here, the gas loses $2 kJ$ of heat and receives $2 kJ$ of work.
 
-We do not know the value of entropy, but we know that it
+We do not know the value of entropy, but we know that it decreases by 7 joules per kelvin.
 
-decreases by 7 joules per kelvin.
-
-The change in entropy should not be confused with the thermal
-
-capacity, $c \equiv \frac{\mathrm{δ}q}{dT} = \frac{1}{m} \frac{\mathrm{δ}Q}{dT}$ (equation 1/16), where we divide the heat by the *change* in temperature. In this process, the thermal capacity is infinite since $dT = 0 K$.
+The change in entropy should not be confused with the thermal capacity, $c \equiv \frac{\mathrm{δ}q}{dT} = \frac{1}{m} \frac{\mathrm{δ}Q}{dT}$ (equation 1/16), where we divide the heat by the *change* in temperature. In this process, the thermal capacity is infinite since $dT = 0 K$.
 
 Once the cooling is done, the air is allowed to expand suddenly: the expansion is irreversible. During this process, only $1000 J$ is supplied as heat and only $1000 J$ is recovered as work. At the end of the expansion, the gas is in the same state (same temperature, pressure, and internal energy) as at the very beginning of the experiment. What is the entropy change?
 
@@ -174,19 +168,13 @@ This time, the process is not reversible. We should not consider the heat that i
 
 Fortunately, we know that the gas returns from B to its initial state A; and from A to B the process was reversible. By performing the exact reverse process, we would reverse all heat and work transfers. Thus, along this imaginary process from B to A: $\Delta S = S_{\mathrm{A}}- S_{\mathrm{B}}= \int _{\mathrm{B}}^{\mathrm{A}}(\frac{\mathrm{δ}Q}{T})_{\mathrm{rev}.}= -\int _{\mathrm{A}}^{\mathrm{B}}(\frac{\mathrm{δ}Q}{T})_{\mathrm{rev}.}= -(S_{\mathrm{B}}- S_{\mathrm{A}}) = +6.6 J K^{-1}$.
 
-The $\Delta S$ corresponds to the actual entropy change; but it is
-
-calculated along an imaginary path.
+The $\Delta S$ corresponds to the actual entropy change; but it is calculated along an imaginary path.
 
 Here we see that the heat actually transferred is not important. It is the heat “that would have needed to be transferred” that interests us.
 
-Here, to simplify the exercise, the gas returns exactly to its initial
+Here, to simplify the exercise, the gas returns exactly to its initial state A. If it ended up in a different state, we could still calculate the entropy change, as we will learn to do in section §8.3.3.
 
-state A. If it ended up in a different state, we could still calculate the entropy change, as we will learn to do in section §8.3.3.
-
-In this irreversible process from B to A, it is the difference
-
-between $\int _{\mathrm{B}}^{\mathrm{A}}\left(\frac{\delta Q}{T}\right)_{\mathrm{rev}.}= +6.6\,\mathrm{J\,K^{-1}}$ and $\int _{\mathrm{B}}^{\mathrm{A}}\left(\frac{\delta Q}{T}\right)_{\mathrm{actual}}= \frac{+1000}{30+273.15} = +3.3\,\mathrm{J\,K^{-1}}$ that will allow us to measure the irreversibility, in other words, to show that with a transfer of $1 kJ$ we can go from B to A but not from A to B.
+In this irreversible process from B to A, it is the difference between $\int _{\mathrm{B}}^{\mathrm{A}}\left(\frac{\delta Q}{T}\right)_{\mathrm{rev}.}= +6.6\,\mathrm{J\,K^{-1}}$ and $\int _{\mathrm{B}}^{\mathrm{A}}\left(\frac{\delta Q}{T}\right)_{\mathrm{actual}}= \frac{+1000}{30+273.15} = +3.3\,\mathrm{J\,K^{-1}}$ that will allow us to measure the irreversibility, in other words, to show that with a transfer of $1 kJ$ we can go from B to A but not from A to B.
 
 ````
 
@@ -222,9 +210,7 @@ B
 W_{\mathrm{A}\rightarrow \mathrm{B}}= -\int pdV (8/4)
 :::
 
-A
-
-for a closed system when the volume changes are infinitely slow.
+A for a closed system when the volume changes are infinitely slow.
 
 We could thus propose to *define* volume as being “what varies with pressure when work is done, when the process is reversible”, which would amount to the following definition:
 
@@ -278,9 +264,7 @@ A B
 q_{\mathrm{A}\rightarrow \mathrm{B}}= \int (T ds)_{\mathrm{rev}.}
 :::
 
-A
-
-for any process, where the subscript *rev.* indicates the calculation is done along a reversible path.
+A for any process, where the subscript *rev.* indicates the calculation is done along a reversible path.
 
 In this way, we are able to represent the processes on a *temperature-entropy diagram*. As shown in figure 8.3, the area under the curve of a process will represent the heat transferred in cases where the process is reversible; but in cases where the process is irreversible, it does not.
 
@@ -288,9 +272,7 @@ In this way, we are able to represent the processes on a *temperature-entropy di
 :alt: Illustration from the original text
 :::
 
-Figure 8.3: Temperature-entropy diagram. During a reversible process, theareaunder the curve of a $T-s$diagram represents the transmitted heat $Q_{1\rightarrow 2^{'}}$; but not when it is *Diagram* CC-0 *Olivier Cleynen*
-
-irreversible.
+Figure 8.3: Temperature-entropy diagram. During a reversible process, theareaunder the curve of a $T-s$diagram represents the transmitted heat $Q_{1\rightarrow 2^{'}}$; but not when it is *Diagram* CC-0 *Olivier Cleynen* irreversible.
 
 ::::{admonition} A Bit of History
 :class: note
@@ -398,9 +380,7 @@ This equation is interesting because it indicates that the entropy change $\Delt
 
 It is therefore possible to easily calculate the change entropy of an ideal gas if its other properties are known. Unlike the internal energy $u$ which depends only on temperature, changes in entropy $(\Delta s)$ also depend on the gas pressure.
 
-In the case where pressure or specific volume is kept constant, these
-
-equations 8/10 and 8/11 become respectively:
+In the case where pressure or specific volume is kept constant, these equations 8/10 and 8/11 become respectively:
 
 :::{math}
 \Delta s_{v_{\mathrm{const}.}}= c_{v}\ln \frac{T_{2}}{}
@@ -438,6 +418,7 @@ $v_{1}$
 
 $p_{1}$
 
+:::{aside}
 « In the deduced expression the difference $S - S_{0}$ is again perfectly determined when the initial and final conditions are given, and it is only when forming the integral $\int \frac{dQ}{T}$ that the manner in which the passage from one to the other took place must be taken into consideration. »
 
 Rudolf Clausius, 1865 [[17](#ref-17), [18](#ref-18), [19](#ref-19)]
@@ -445,6 +426,7 @@ Rudolf Clausius, 1865 [[17](#ref-17), [18](#ref-18), [19](#ref-19)]
 (8/12)
 
 (8/13)
+:::
 
 :::{math}
 p_{1}> p_{2} and v_{3}> v_{4} .
@@ -486,13 +468,9 @@ $_{10+273,15}= +277.4 J K^{-1}kg^{-1}$.
 
 The change in entropy is $\Delta S = m \Delta s = 2 \times 277.4 = +554.8 J K^{-1}$.
 
-It does not matter whether the process is reversible or not: we
+It does not matter whether the process is reversible or not: we just need to know the initial and final states.
 
-just need to know the initial and final states.
-
-We correctly state that “the entropy of the air increases” and not
-
-that “entropy is given to it” (§8.2.1).
+We correctly state that “the entropy of the air increases” and not that “entropy is given to it” (§8.2.1).
 
 *Engineering Thermodynamics* by Olivier Cleynen
 
@@ -560,9 +538,7 @@ Here we recognize the dreaded equation 4/37 which we have wielded
 
 in the past: $T_{\mathrm{B}}= 600 \times \frac{1}{30} ^{1.4}= 227 K$, approximately $-46^{\circ}C$ or $-51 ^{\circ} F$.
 
-Using the reasoning “adiabatic reversible = isentropic” did not
-
-actually bring us anything we did not already know here, as the ideal gas model is already extremely simple and powerful. This will not be the case with liquids/vapors.
+Using the reasoning “adiabatic reversible = isentropic” did not actually bring us anything we did not already know here, as the ideal gas model is already extremely simple and powerful. This will not be the case with liquids/vapors.
 
 ````
 
@@ -654,9 +630,7 @@ $0.228$; thus with equation 8/14 we can calculate the entropy: $s_{\mathrm{B}}= 
 
 We see that the entropy has decreased: $\Delta s = s_{\mathrm{B}}- s_{\mathrm{A}}= -4.268 kJ K^{-1}kg^{-1}$.
 
-We do not know what process took place. The less reversible it
-
-was, and the more heat had to be removed from the steam in order to bring it from A to B.
+We do not know what process took place. The less reversible it was, and the more heat had to be removed from the steam in order to bring it from A to B.
 
 ````
 
@@ -693,9 +667,7 @@ ingly, $s_{\mathrm{B}}= s_{300^{\circ}C \& 0.2 MPa}+ y(s_{300^{\circ}C \& 0.4 MP
 
 We can fin ally calculate $q_{\mathrm{A}\rightarrow \mathrm{B}}$ with equation 8/8: $Q_{\mathrm{A}\rightarrow \mathrm{B}}= \int ^{2}_{1}T dS = m T \Delta s = 2 \times (300 + 273.15) \times (7.738 - 3.2552) = +5.139 kJ$.
 
-This somewhat laborious calculation may not be spectacular, but
-
-it is important to realize that without the use of entropy, we had *no way* to quantify $Q_{\mathrm{A}\rightarrow \mathrm{B}}$ without conducting an experiment. We had gotten stuck on this issue in example 5.12 page 137.
+This somewhat laborious calculation may not be spectacular, but it is important to realize that without the use of entropy, we had *no way* to quantify $Q_{\mathrm{A}\rightarrow \mathrm{B}}$ without conducting an experiment. We had gotten stuck on this issue in example 5.12 page 137.
 
 ````
 
@@ -723,9 +695,7 @@ At B, we know that $s_{\mathrm{B}}= s_{\mathrm{A}}$ because the process is isent
 
 The specific power of the turbine is therefore $w_{\mathrm{A}\rightarrow \mathrm{B}}= \Delta h = -978.3 kJ kg^{-1}$.
 
-The calculation we have just carried out is extremely useful
-
-for engineers. The idea that entropy remains constant during a reversible adiabatic process allows us – at last! – to predict the state of a liquid-vapor mixture at the outlet of a compressor or turbine. Until now, this could be done with an ideal gas (and the cumbersome relationships like $\frac{T_{1}}{T_{2}} =...)$, but not for a liquid/vapor mixture.
+The calculation we have just carried out is extremely useful for engineers. The idea that entropy remains constant during a reversible adiabatic process allows us – at last! – to predict the state of a liquid-vapor mixture at the outlet of a compressor or turbine. Until now, this could be done with an ideal gas (and the cumbersome relationships like $\frac{T_{1}}{T_{2}} =...)$, but not for a liquid/vapor mixture.
 
 ````
 
@@ -872,9 +842,7 @@ There are three possibilities:
 
 • If the two integrals are equal, then the real process is *reversible*: it can take place in both directions.
 
-• If $\int (\frac{\mathrm{δ}q}{T})_{\mathrm{real} \mathrm{path}}< \int (\frac{\mathrm{δ}q}{T})_{\mathrm{rev}.}$, then the real process is *irreversible*. It
-
-can only take place from A to B.
+• If $\int (\frac{\mathrm{δ}q}{T})_{\mathrm{real} \mathrm{path}}< \int (\frac{\mathrm{δ}q}{T})_{\mathrm{rev}.}$, then the real process is *irreversible*. It can only take place from A to B.
 
 • If $\int (\frac{\mathrm{δ}q}{T})_{\mathrm{real} \mathrm{path}}> \int (\frac{\mathrm{δ}q}{T})_{\mathrm{rev}.}$, then the described “real” process is
 
@@ -930,9 +898,7 @@ diagram as follows:
 
 ````
 
-$_{\mathrm{X}}(\frac{\mathrm{δ}q}{T})_{\mathrm{real} \mathrm{path}}$ is equal to zero because
-
-in reality there was no heat transfer (δ$q = 0)$.
+$_{\mathrm{X}}(\frac{\mathrm{δ}q}{T})_{\mathrm{real} \mathrm{path}}$ is equal to zero because in reality there was no heat transfer (δ$q = 0)$.
 
 $_{\mathrm{X}}(\frac{\mathrm{δ}q}{T})_{\mathrm{real} \mathrm{path}}$ and the process is irreversible.
 
@@ -966,9 +932,7 @@ The process can be drawn qualitatively on a temperature-entropy
 
 ````{prf:example}
 
-Here, we have $\Delta s > \int _{\mathrm{X}}^{\mathrm{Y}}(\frac{\mathrm{δ}q}{T})_{\mathrm{real} \mathrm{path}}$ and the process is irreversible. If
-
-we wanted to go back from Y to X, we would need to cool the water by removing a quantity *necessarily* greater than $1 MJ kg^{-1}$.
+Here, we have $\Delta s > \int _{\mathrm{X}}^{\mathrm{Y}}(\frac{\mathrm{δ}q}{T})_{\mathrm{real} \mathrm{path}}$ and the process is irreversible. If we wanted to go back from Y to X, we would need to cool the water by removing a quantity *necessarily* greater than $1 MJ kg^{-1}$.
 
 ````
 
@@ -991,13 +955,9 @@ Whenever we produce an increase in overall entropy, we have to proceed ultimatel
 
 The examples we have studied in this chapter to determine the direction of processes are very academic, however the approach remains valid for any process: a stone thrown into a pond, a food plate breaking when it falls, etc. If we go back to the three photos in figure 8.1, we could determine their order by finding the initial and final states of the water around the diver,
 
-and comparing $\Delta s$ with the integral $\int (\frac{\mathrm{δ}q}{T})_{\mathrm{real} \mathrm{path}}$ carried out during the
+and comparing $\Delta s$ with the integral $\int (\frac{\mathrm{δ}q}{T})_{\mathrm{real} \mathrm{path}}$ carried out during the entry into the water.
 
-entry into the water.
-
-This desire to find the absolute order in which states succeed one another, in other words, the direction of time, led the German physicist Rudolf Clausius to propose the concept of *entropy* in 1865 in a masterly publication — *Über verschiedene für die Anwendung bequeme Formen der Hauptgleichungen der mechanischen Wärmetheorie* [[17](#ref-17), [18](#ref-18), [19](#ref-19)]. Concluding a decade of work
-
-around the quantity $\frac{Q}{T}$, he formalized a concept that his French colleague Frédéric Reech and Scottish counterpart William Rankine had only touched upon [[36](#ref-36)], and synthesized all the contemporary knowledge of his discipline.
+This desire to find the absolute order in which states succeed one another, in other words, the direction of time, led the German physicist Rudolf Clausius to propose the concept of *entropy* in 1865 in a masterly publication — *Über verschiedene für die Anwendung bequeme Formen der Hauptgleichungen der mechanischen Wärmetheorie* [[17](#ref-17), [18](#ref-18), [19](#ref-19)]. Concluding a decade of work around the quantity $\frac{Q}{T}$, he formalized a concept that his French colleague Frédéric Reech and Scottish counterpart William Rankine had only touched upon [[36](#ref-36)], and synthesized all the contemporary knowledge of his discipline.
 
 :::{aside}
 « I have intentionally formed the word *entropy* so as to be as similar as possible to the word *energy*; for the two magnitudes to be denoted by these words are so nearly allied in their physical meanings, that a certain similarity in designation appears to be desireable. »
@@ -1024,9 +984,11 @@ S \equiv kln \lambda
 
 where $\lambda$ is the number of possible configurations of the system which correspond to its state, and $k$ is a constant.
 
+:::{aside}
 « We measure “disorder” by the number of ways that the insides can be arranged, so that from the outside it looks the same. The logarithm of that number of ways is the entropy. … So with the above technical definition of disorder we can understand the proposition. First, the entropy measures the disorder. Second, the universe always goes from “order” to “disorder,” so entropy always increases. Order is not order in the sense that we like the arrangement, but in the sense that the number of different ways we can hook it up, and still have it look the same from the outside, is relatively restricted. »
 
 Richard Feynman, 1963 [[30](#ref-30), [35](#ref-35)]
+:::
 
 Thus, for Boltzmann, entropy is a measure of the probability that the system is in the state in which it is observed. The more probable the configuration (homogeneity of pressure and temperature), the greater the entropy.
 
@@ -1046,9 +1008,11 @@ This approach not only has the merit of reconnecting our discipline with atomic 
 
 We leave entropy on an open question. To the extent that we think of the universe as a finite set, in other words, as an isolated system containing a fixed amount of energy, can we apply equation 8/16: $\Delta s_{\mathrm{universe}}> 0$ as time passes? Is the universe moving towards a final homogeneous minimum temperature? Clausius was unequivocal: he immediately concluded his 1865 article with the affirmation:
 
+:::{aside}
 « Within a finite period of time past, the earth must have been, and within a finite period of time to come the earth must again be, unfit for the habitation of man as at present constituted, unless operations have been, or are to be performed, which are impossible under the laws to which the known operations going on at present in the material world are subject. »
 
 William Thomson, 1852 [[12](#ref-12)]
+:::
 
 :::{math}
 If for the entire universe we conceive the same magnitude to ^{\mathrm{William} \mathrm{Thomson}, 1852 [12]}
@@ -1068,9 +1032,7 @@ Is the theory of refrigerators and engines capable of predicting the end of the 
 :class: note
 :label: hist-8-10
 
-The history of science also includes some rather
-
-romantic figures!
+The history of science also includes some rather romantic figures!
 
 Rumford, an Adventurer
 
@@ -1100,9 +1062,7 @@ Sir Benjamin Thompson of Rumford, militia fgi hter, secret agent, architect, Min
 
 modynamicist.
 
-broke out, New England where he lived was at the *Engraving by J. P. P. Rauschmayr, 1797 (public domain)*
-
-heart of the conflict; Thompson chose the Loyalist side and became a secret agent for the British. At the time of the Declaration of Independence of the United States of America in 1776, cautiously, he left for England.
+broke out, New England where he lived was at the *Engraving by J. P. P. Rauschmayr, 1797 (public domain)* heart of the conflict; Thompson chose the Loyalist side and became a secret agent for the British. At the time of the Declaration of Independence of the United States of America in 1776, cautiously, he left for England.
 
 He then undertook research on projectiles and joined the *Royal Society* in 1779. He nevertheless returned to America in 1782 still to fight on the British side, but peace was declared the following year. He was ennobled as Baron Rumford by King George iii in reward for his services. He then became an advisor to the Elector of Bavaria, and later the Minister of War. During his 14 years spent in Bavaria, he reformed the army, established assistance for the needy, and created the famous *Englischer Garten* in Munich. He then returned to England, and f-i nally settled in France in 1805 where he had a –disastrous– marriage with Marie Lavoisier, the widow of the chemist who was guillotined during the French Revolution.
 
@@ -1125,9 +1085,7 @@ During his adventurous life, he managed to make at least two important discoveri
 
    $(653psi$and$1112^{\circ} F)$.
 
-   1. What is the maximum amount of work that can be
-
-   extracted from this mass of water without supplyingheat,ifitcanexpandto$4bar(58psi)$?
+   1. What is the maximum amount of work that can be extracted from this mass of water without supplyingheat,ifitcanexpandto$4bar(58psi)$?
 
    2. If the expansion were continued to a lower pressure,
 

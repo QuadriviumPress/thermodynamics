@@ -16,9 +16,7 @@ $A$ Surface area $(m^{2})$
 
 $C$ Velocity $(m s^{-1})$
 
-cop Coefficient of Performance: efficiency $\eta$ of a heat
-
-pump or refrigeration system (unitless)
+cop Coefficient of Performance: efficiency $\eta$ of a heat pump or refrigeration system (unitless)
 
 $c$ Thermal capacity $(J kg^{-1}K^{-1})$
 
@@ -66,9 +64,7 @@ $h_{LV}$ Specific enthalpy of vaporization:
 
 $h_{LV}\equiv \Delta h_{L} \frac{}{)} _{V}\equiv h_{V}- h_{L}(Jkg^{-1})$
 
-$h_{x}$ Specific enthalpy of a liquid-vapor mixture with
-
-dryness fraction $x (J kg^{-1})$
+$h_{x}$ Specific enthalpy of a liquid-vapor mixture with dryness fraction $x (J kg^{-1})$
 
 $k$ Any constant (units in si as needed)
 
@@ -92,9 +88,7 @@ $Q$ Power as heat $(W)$
 
 List of Symbols
 
-First appearance
-
-eq. 2/5 p. 37
+First appearance eq. 2/5 p. 37
 
 eq. 1/5 p. 15
 
@@ -178,9 +172,7 @@ $s_{LV}$ Specific entropy of vaporization:
 
 $s_{LV}\equiv \Delta s_{L)V}\equiv s_{V}- s_{L}(J K^{-1}kg^{-1})$
 
-$s_{x}$ Specific entropy of a liquid-vapor mixture with
-
-dryness fraction $x (J K^{-1}kg^{-1})$
+$s_{x}$ Specific entropy of a liquid-vapor mixture with dryness fraction $x (J K^{-1}kg^{-1})$
 
 ssc Specific Steam Consumption $(kg J^{-1})$
 
@@ -206,9 +198,7 @@ $u_{LV}$ Specific internal energy of vaporization:
 
 $u_{LV}\equiv \Delta u_{L} \frac{}{)} _{V}\equiv u_{V}- u_{L}(Jkg^{-1})$
 
-$u_{x}$ Specific internal energy of a liquid-vapor mixture
-
-with dryness fraction $x (J kg^{-1})$
+$u_{x}$ Specific internal energy of a liquid-vapor mixture with dryness fraction $x (J kg^{-1})$
 
 $V$ Volume $(m^{3})$
 
@@ -220,9 +210,7 @@ $v_{L}$ Specific volume of saturated liquid $(m^{3}kg^{-1})$
 
 $v_{V}$ Specific volume of saturated vapor $(m^{3}kg^{-1})$
 
-$v_{x}$ Specific volume of a liquid-vapor mixture with
-
-dryness fraction $x (m^{3}kg^{-1})$
+$v_{x}$ Specific volume of a liquid-vapor mixture with dryness fraction $x (m^{3}kg^{-1})$
 
 $W$ Work $(J)$
 
@@ -240,9 +228,7 @@ $z$ Altitude $(m)$
 
 $\gamma$ Ratio of heat capacities (unitless)
 
-$\Delta$ Net difference between two values (mathematical
-
-operator)
+$\Delta$ Net difference between two values (mathematical operator)
 
 δ Inexact differential (mathematical operator)
 
