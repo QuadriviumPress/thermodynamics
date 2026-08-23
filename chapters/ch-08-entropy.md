@@ -219,7 +219,7 @@ where the subscript *rev.* indicates the calculation is done along a reversible 
 We can see that entropy is defined in a similar way, that is, as the variable $S$ that, during a reversible heat transfer, allows us to relate heat to temperature with the relation 8/2:
 
 :::{math}
-\Delta S = \int _{\mathrm{A}}(^{\mathrm{B}} \frac{\mathrm{δ}Q}{T})_{\mathrm{rev}.}
+\Delta S = \int _{\mathrm{A}}^{\mathrm{B}} \left(\frac{\mathrm{δ}Q}{T}\right)_{\mathrm{rev}.}
 :::
 
 where the subscript *rev.* indicates the calculation is done along a reversible path.
@@ -236,23 +236,19 @@ Volume changes during adiabatic expansions. The increase in volume is calculable
 
 Then we have
 
-B
-
 :::{math}
 :label: eq-8-7
 :enumerator: 8/7
-Q_{\mathrm{A}\rightarrow \mathrm{B}}= \int (T dS)_{\mathrm{rev}.}
+Q_{\mathrm{A}\rightarrow \mathrm{B}}= \int _{\mathrm{A}}^{\mathrm{B}} (T dS)_{\mathrm{rev}.}
 :::
-
-A B
 
 :::{math}
 :label: eq-8-8
 :enumerator: 8/8
-q_{\mathrm{A}\rightarrow \mathrm{B}}= \int (T ds)_{\mathrm{rev}.}
+q_{\mathrm{A}\rightarrow \mathrm{B}}= \int _{\mathrm{A}}^{\mathrm{B}} (T ds)_{\mathrm{rev}.}
 :::
 
-A for any process, where the subscript *rev.* indicates the calculation is done along a reversible path.
+for any process, where the subscript *rev.* indicates the calculation is done along a reversible path.
 
 In this way, we are able to represent the processes on a *temperature-entropy diagram*. As shown in figure 8.3, the area under the curve of a process will represent the heat transferred in cases where the process is reversible; but in cases where the process is irreversible, it does not.
 
@@ -419,8 +415,6 @@ The change in entropy is $\Delta S = m \Delta s = 2 \times 277.4 = +554.8 J K^{-
 It does not matter whether the process is reversible or not: we just need to know the initial and final states.
 
 We correctly state that “the entropy of the air increases” and not that “entropy is given to it” (§8.2.1).
-
-*Engineering Thermodynamics* by Olivier Cleynen
 
 ````{prf:example}
 :label: ex-8-3
@@ -1142,7 +1136,6 @@ With equation 8/11 we get $\Delta s = +39.77 J K^{-1}kg^{-1}$ but – aha! – $
 :::{admonition} Answer
 :class: dropdown
 
-11**
 $1)\dot{W}_{\mathrm{pump}}=\dot{mc}_{p}\Delta T = +5.493 kW$ (equations 3/15
 & 4/13);
 2) Using equation 4/37 $T_{2\mathrm{is}.}= 351.3 K$, that is,
@@ -1157,7 +1150,7 @@ processes with a net sum of transfers taking these values(for example during a c
    :::{figure} ../images/fig-8-15.jpg
    :label: fig-8-15
    :enumerator: 8.15
-   :alt: Public air compressor in Stockholm for cyclists. A heat exchanger integrated under the bodywork fortunately ensures the temperatures calcula
+   :alt: Public air compressor in Stockholm for cyclists. A heat exchanger integrated under the bodywork fortunately ensures the temperatures calculated in this problem are never attained.
    
    Public air compressor in Stockholm for cyclists. A heat exchanger integrated under the bodywork fortunately ensures the temperatures calculated in this problem are never attained.
    :::
@@ -1191,7 +1184,6 @@ $2) x_{\mathrm{A}}= \frac{s_{\mathrm{B}}-s_{L}}{s_{LV}} = 0.2949; \mathrm{thus} 
 :::{admonition} Answer
 :class: dropdown
 
-13**
 $1)\dot{S}_{\mathrm{high} \mathrm{temp}. \mathrm{wall}}=\dot{m} (\Delta s_{\mathrm{combustion}}+ \Delta s_{\mathrm{water}}) = +91.77 J/(K s) = +91.77 W K^{-1}$;
 $2)\dot{S}_{\mathrm{low} \mathrm{temp}. \mathrm{wall}}= +188.3 W K^{-1}$, and we see that a
 gradient of $10^{\circ}C$ is more penalizing at low temperature than at high temperature;
@@ -1212,11 +1204,9 @@ of course not the only quality required of them… ).
 :::{admonition} Answer
 :class: dropdown
 
-14**
 1) $\Delta s_{\mathrm{compressor}}= +67 J K^{-1}kg^{-1}$; $\Delta s_{\mathrm{turbine}}= +382 J K^{-1}kg^{-1}$;
 2) $\Delta q_{\mathrm{out}}= -110.2 kJ kg^{-1}$, or $+14.6 \%$;
 3) $\eta _{\mathrm{real} \mathrm{plant}}= 39.82 \%$, or $-9 pt$.
-*Engineering Thermodynamics* by Olivier Cleynen
 
 :::
 ```

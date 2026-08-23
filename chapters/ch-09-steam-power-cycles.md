@@ -142,15 +142,13 @@ for all processes (reversible or not) in a steady-flow open system $(\dot{m} =$ 
 
 From our study of chapter 3, we recall that when the process is reversible, the work $w_{\mathrm{A}\rightarrow \mathrm{B}}$ between two points A and B is expressed as an integral:
 
-B
-
 :::{math}
 :label: eq-3-22-r
 :enumerator: 3/22
-w_{\mathrm{A}\rightarrow \mathrm{B}}= \int vdp
+w_{\mathrm{A}\rightarrow \mathrm{B}}= \int _{\mathrm{A}}^{\mathrm{B}} vdp
 :::
 
-A in an open system, and when the process is reversible.
+in an open system, and when the process is reversible.
 
 Generally, for equipment operating with steady flow, the heat transfers and work transfers are separated in space. This greatly reduces the complexity of the machines.
 
@@ -195,13 +193,11 @@ A pump from the manufacturer ksb delivering $2500 t/h$ of water at 350 bar in a 
 
 The specific power required to compress a fluid flow from a pressure $p_{\mathrm{A}}$ to a pressure $p_{\mathrm{B}}$, in a reversible process, is expressed from the relation 3/22. Since the specific volume $v_{L}$ of pure saturated liquid water (approximately $v_{L}= 1 \times 10^{-3}m^{3}kg^{-1})$ varies very little with its pressure, we can write:
 
-B
-
 :::{math}
-w_{\mathrm{liquid} \mathrm{pump}}\approx v_{L}\int dp = v_{L}(p_{\mathrm{B}}- p_{\mathrm{A}}) (9/4)
+w_{\mathrm{liquid} \mathrm{pump}}\approx v_{L}\int _{\mathrm{A}}^{\mathrm{B}} dp = v_{L}(p_{\mathrm{B}}- p_{\mathrm{A}}) (9/4)
 :::
 
-A in the case of an approximately reversible pump operating with liquid water.
+in the case of an approximately reversible pump operating with liquid water.
 
 ````{prf:example}
 :label: ex-9-1
@@ -505,7 +501,7 @@ Temperature-entropy diagram of a steam power plant operating on a reheated Ranki
 
 *Diagram* CC-0 *Olivier Cleynen*
 
-With this modification, the expansion in the turbine is interrupted, and the steam is led into a new series of tubes to raise its temperature back to a high level (usually to the metallurgical limits of the turbine). The expansion is then fin ally completed down the condenser pressure.
+With this modification, the expansion in the turbine is interrupted, and the steam is led into a new series of tubes to raise its temperature back to a high level (usually to the metallurgical limits of the turbine). The expansion is then finally completed down the condenser pressure.
 
 Providing that the average heating temperature is increased, the overall efficiency of the power plant is increased too; therefore, the choice of the reheat pressure matters. The specific consumption is reduced in all cases, with the advantages described above.
 
@@ -687,7 +683,7 @@ $c_{p (\mathrm{air})}= 1005Jkg^{-1}K^{-1} \gamma _{\mathrm{air}}= 1.4$
 :label: prob-9-1
 :enumerator: 9.1
 
-**Superheated Rankine cycle The *Électricité de France* power plant in Porcheville (figure 9.27) received heat from the combustion of oil, and used a steam cycle to power an electric generator. In the power plant, water cycled between the pressures of $0.1$ and $140 bar (0.15$ and $2031 psi)$. The steam reached $545^{\circ}C (1013 ^{\circ} F)$, and the turbines had an isentropic ef-fi ciency of $80 \%$. For the purposes of the problem, we consider that the cycle was based on a superheated Rankine cycle. 1. Sketch the physicalwater circuit in the power plant; draw the cycle followed on a temperature-entropy diagram, qualitatively (that is, without showing numerical values), showing the saturation curve. 2. What is the enthalpy of the water at the outlet of the turbines? 3. What is the enthalpy of the water at the outlet of the pumps? 4. What is the thermal efficiency of the power plant? 5. What is the specific steam consumption of the power plant, namely, the mass of steam that must enter the turbine for the installation to supply $1 kWh$ of work? *Photo* CC-0 *Olivier Cleynen***
+**Superheated Rankine cycle The *Électricité de France* power plant in Porcheville (figure 9.27) received heat from the combustion of oil, and used a steam cycle to power an electric generator. In the power plant, water cycled between the pressures of $0.1$ and $140 bar (0.15$ and $2031 psi)$. The steam reached $545^{\circ}C (1013 ^{\circ} F)$, and the turbines had an isentropic efficiency of $80 \%$. For the purposes of the problem, we consider that the cycle was based on a superheated Rankine cycle. 1. Sketch the physicalwater circuit in the power plant; draw the cycle followed on a temperature-entropy diagram, qualitatively (that is, without showing numerical values), showing the saturation curve. 2. What is the enthalpy of the water at the outlet of the turbines? 3. What is the enthalpy of the water at the outlet of the pumps? 4. What is the thermal efficiency of the power plant? 5. What is the specific steam consumption of the power plant, namely, the mass of steam that must enter the turbine for the installation to supply $1 kWh$ of work? *Photo* CC-0 *Olivier Cleynen***
 
 :::{admonition} Answer
 :class: dropdown
@@ -732,7 +728,6 @@ $c_{p (\mathrm{air})}= 1005Jkg^{-1}K^{-1} \gamma _{\mathrm{air}}= 1.4$
 :class: dropdown
 
 The *50 Let Podeby* actually operates between $29 a$nd 0.75 bar, but these values that are not tabulated in the steam tables for this book. 1) Using the diagram from figures 9.14 and 9.15 on page 256, $h_{\mathrm{A}}= 340.5 kJ kg^{-1}, h_{\mathrm{B}}= 343.54 kJ kg^{-1}$, $h_{\mathrm{D}}= 3017.4 kJ kg^{-1}, h_{\mathrm{E}}= 2284.5 kJ kg^{-1}$, thus $\eta _{\mathrm{thermal}}= 27.294 \%$; 2) ssc $= 4.93 kg/(kW h)$; 3) See figure 9.20 p. 259; 4) See figure 9.21 p. 259; 5) $h_{\mathrm{bleed}}= 2673.9 kJ kg^{-1}, h_{\mathrm{pre-mix}}= 341.1 kJ kg^{-1}$, $h_{\mathrm{post-mix}}= 670.4 kJ kg^{-1}$: thus the proportion needed to saturate the water after mixing is $z = 14.1 \%$; 6) $w_{\mathrm{net} 2}= -674.87 kJ kg^{-1}(-9.2 \%$: a tragedy!); 7) $q_{\mathrm{boiler}}= 2344.4 kJ kg^{-1}$, thus $\eta _{\mathrm{thermal} 2}= 28.786 \% (+1.49 pt$: is it really desirable in this application?).
-*Engineering Thermodynamics* by Olivier Cleynen
 
 :::
 ```

@@ -469,8 +469,6 @@ What is the boiling temperature of water when the pressure is 3 bar?
 
 Water is boiling, so it is at saturation (liquid-vapor mixture). We refer to Steam Table 3 (excerpt in table 5.4) where the data is sorted by pressure. At $0.3 MPa$, the saturation temperature is $133.52^{\circ}C$.
 
-*Engineering Thermodynamics* by Olivier Cleynen
-
 ````{prf:example}
 
 As long as the water continues to boil or condense, it will remain at $133.52^{\circ}C$. In order to achieve boiling at a different temperature, the pressure must be adjusted.
@@ -1246,7 +1244,6 @@ barrel will of course be crushed before that);
 :::{admonition} Answer
 :class: dropdown
 
-10**
 2) Reading Steam Table 1 gives us $h_{\mathrm{A}}= 42.1 kJ kg^{-1}$. Through interpolation we obtain
 $h_{\mathrm{B}}= 2975 kJ kg^{-1}$ and $m = \frac{V_{\mathrm{B}}}{v_{\mathrm{B}}} = 0.7354 kg$. Thus
 we calculate $Q_{\mathrm{A}\rightarrow \mathrm{B}}= m\Delta h = +2154 kJ$ (equation 5/8).
@@ -1273,7 +1270,6 @@ we calculate $Q_{\mathrm{A}\rightarrow \mathrm{B}}= m\Delta h = +2154 kJ$ (equat
 :::{admonition} Answer
 :class: dropdown
 
-11**
 1) $x_{\mathrm{A}}= 96.44 \% \& x_{\mathrm{B}}= 0$; thus$\dot{Q}_{\mathrm{A}\rightarrow \mathrm{B}}= -111.13 MW$, which is the reason why we need
 $m_{\mathrm{secondary}}\ge 1062.4 kg s^{-1}$ or $2342.2 lb/s$. 2) Into the atmosphere, through the secondary water which is released through the large towers...
 
@@ -1320,7 +1316,6 @@ $m_{\mathrm{secondary}}\ge 1062.4 kg s^{-1}$ or $2342.2 lb/s$. 2) Into the atmos
 :class: dropdown
 
 $W_{\mathrm{turbine}}= -71 MW$.
-*Engineering Thermodynamics* by Olivier Cleynen
 
 :::
 ```

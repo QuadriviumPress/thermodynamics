@@ -976,7 +976,6 @@ very honorable given the considerable simplification of the machine!
 :::{admonition} Answer
 :class: dropdown
 
-.8**
 3) $w_{1\rightarrow 4}$ decreases, $w_{4\rightarrow 3}$ and $w_{3\rightarrow 2}$ increase, $w_{2\rightarrow 1}$
 decreases; $q_{3\rightarrow 2}$ increases and $q_{1\rightarrow 4}$ decreases;
 4) Since $w_{\mathrm{net}}$ increases and $q_{\mathrm{in}}= q_{1\rightarrow 4}$ decreases,
@@ -1011,12 +1010,10 @@ ciency of a single reversible machine operating between $T_{1}$ and $T_{3}$. Sta
 :::{admonition} Answer
 :class: dropdown
 
-10**
 1) At the outlet, $T_{1}= 208^{\circ}C$ (eq. 4/37);
 2) $\eta _{\mathrm{engine}}= 63 \%$;
 $3)\dot{Q}_{\mathrm{in}}= 158.8 kW$ so $Q_{\mathrm{combustion} \mathrm{one} \mathrm{cylinder}}= 5.955kJ \mathrm{at} \mathrm{each} \mathrm{combustion.a} \mathrm{cylinder}, m_{\mathrm{fuel} \mathrm{combustion}}= \frac{Q_{\mathrm{combustion} \mathrm{one} \mathrm{cylinder}}\mathrm{We} \mathrm{obtain},}{q_{\mathrm{fuel}}} \mathrm{for}= 0.149 g$;
 $4)\dot{m}_{\mathrm{fuel}}= 14.3 kg/h = 31.5 lb/h$.
-*Engineering Thermodynamics* by Olivier Cleynen
 
 :::
 ```

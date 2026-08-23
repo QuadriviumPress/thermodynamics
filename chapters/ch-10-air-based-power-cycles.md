@@ -144,14 +144,14 @@ Sadi Carnot, 1824 [[4](#ref-4)]
 (sec-10-3)=
 ## 10.3 Reciprocating Engines
 
-Reciprocating engines, often called *piston engines*, take in a fin ite amount of air and perform their thermodynamic cycle on this mass. The cycle is repeated several times over time, and often several times in parallel, in order to provide continuous power. An automobile engine typically performs about ffity cycles per second.
+Reciprocating engines, often called *piston engines*, take in a finite amount of air and perform their thermodynamic cycle on this mass. The cycle is repeated several times over time, and often several times in parallel, in order to provide continuous power. An automobile engine typically performs about fifty cycles per second.
 
 (sec-10-3-1)=
 ### 10.3.1 Advantages of piston engines
 
-From a thermodynamic perspective, the main advantage of these engines is that it is much easier to manipulate a fixed mass of air than a continuous flow. Manufacturing a cylindrical piston to fti tightly in a cylindrical bore is comparatively simple, and this allows the volume and pressure of the fluid to be precisely controlled. For example, it is possible to carry out combustion at a constant temperature (as prescribed by Carnot) by varying the volume during combustion. The same operation in a steady flow machine would require combustion to take place in a turbine (§4.4.4 p. 98), which is much more challenging.
+From a thermodynamic perspective, the main advantage of these engines is that it is much easier to manipulate a fixed mass of air than a continuous flow. Manufacturing a cylindrical piston to fit tightly in a cylindrical bore is comparatively simple, and this allows the volume and pressure of the fluid to be precisely controlled. For example, it is possible to carry out combustion at a constant temperature (as prescribed by Carnot) by varying the volume during combustion. The same operation in a steady flow machine would require combustion to take place in a turbine (§4.4.4 p. 98), which is much more challenging.
 
-Another advantage of piston engines is that the maximum temperature of the cycle is only reached sporadically (periodically, but always briefly ). During combustion, it is thus possible to reach gas temperatures that exceed the metallurgical limits of the engine, which, as we saw in chapter 7 (*the second law*), improves efficiency.
+Another advantage of piston engines is that the maximum temperature of the cycle is only reached sporadically (periodically, but always briefly). During combustion, it is thus possible to reach gas temperatures that exceed the metallurgical limits of the engine, which, as we saw in chapter 7 (*the second law*), improves efficiency.
 
 On the other hand, the weight and complexity of mechanisms of piston engines (connecting rods, crankshaft, valves, and the various circuitry to and from the cylinders) become major disadvantages in applications very high powers and rotational speeds are required.
 
@@ -179,11 +179,7 @@ By defining the *compression ratio* $\varepsilon$ as:
 :::{math}
 :label: eq-10-3
 :enumerator: 10/3
-\varepsilon \equiv v_{\mathrm{A}}
-:::
-
-:::{math}
-v_{\mathrm{B}}
+\varepsilon \equiv \frac{v_{\mathrm{A}}}{v_{\mathrm{B}}}
 :::
 
 it is possible to show that [Equation 10/2](#eq-10-2) can be reformulated to express the efficiency as:
@@ -191,7 +187,7 @@ it is possible to show that [Equation 10/2](#eq-10-2) can be reformulated to exp
 :::{math}
 :label: eq-10-4
 :enumerator: 10/4
-\eta _{\mathrm{Otto}}= 1 - \varepsilon ^{\gamma -1}1
+\eta _{\mathrm{Otto}}= 1 - \frac{1}{\varepsilon ^{\gamma -1}}
 :::
 
 This equation indicates that the efficiency of the Otto engine depends solely on the compression ratio, and not on the amount of heat supplied during combustion. This may at first be surprising: why does $T_{\mathrm{C}}$, the maximum temperature of the cycle, no longer appear here? The answer is that in this cycle, as the amount of burned fuel is increased, the increase in the average temperature during heat addition is exactly offset by the increase in the average temperature during heat rejection.
@@ -402,7 +398,7 @@ The power delivered in the combustion chamber is quantified rather easily by mod
 q_{\mathrm{chamber}}= h_{\mathrm{B}}- h_{\mathrm{A}}= c_{p(\mathrm{gases})}T_{\mathrm{B}}- c_{p(\mathrm{air})}T_{\mathrm{A}} (10/7)
 :::
 
-Fluid flow within the combustion chamber depends in a correlated manner on combustion chemistry and the spatial distribution of velocities and pressure: it is therefore difficult to model. In practice, a slight pressure drop is generated between the inlet and outlet of the chambers. The inful ence on the turbine power of the fuel mass flow rate$\dot{m}_{\mathrm{fuel}}$, always much lower than that of air, can be safely neglected.
+Fluid flow within the combustion chamber depends in a correlated manner on combustion chemistry and the spatial distribution of velocities and pressure: it is therefore difficult to model. In practice, a slight pressure drop is generated between the inlet and outlet of the chambers. The influence on the turbine power of the fuel mass flow rate$\dot{m}_{\mathrm{fuel}}$, always much lower than that of air, can be safely neglected.
 
 (sec-10-4-3)=
 ### 10.4.3 Turbine
@@ -471,8 +467,6 @@ q_{\mathrm{A}\rightarrow \mathrm{B}}+ w_{\mathrm{A}\rightarrow \mathrm{B}}= \Del
 h_{\mathrm{A}}+ \tfrac{1}{2} C_{\mathrm{A}}^{2}= h_{\mathrm{B}}+ \tfrac{1}{2} C_{\mathrm{B}}^{2}
 :::
 
-*Engineering Thermodynamics* by Olivier Cleynen
-
 :::{figure} ../images/fig-10-14.jpg
 :label: fig-10-14
 :enumerator: 10.14
@@ -523,7 +517,7 @@ With equation 10/11, the outlet speed would therefore be:
 C_{\mathrm{B}}= [-2 c_{p(\mathrm{gases})}(T_{\mathrm{B}}- T_{\mathrm{A}}) + C^{2}_{\mathrm{A}}]^{0.5}= [-2 \times 1150 \times (293 - 400) + 10^{2}]^{0.5} = 496.2 m s^{-1}= 1786 km/h = 1110 mph.
 :::
 
-In practice, the gases would never reach this speed. Indeed, a large part of the expansion takes place *downstream* of the nozzle, where it is very turbulent and therefore highly irreversible. This nevertheless does not inful ence the thrust generated by the nozzle, whose outlet orifcie pressure is in fact higher than atmospheric pressure. The speed calculation performed here remains a good thermodynamic “indicator” of the phenomena at play. A full description of the fluid dynamics of the nozzle is outside of the scope of this book.
+In practice, the gases would never reach this speed. Indeed, a large part of the expansion takes place *downstream* of the nozzle, where it is very turbulent and therefore highly irreversible. This nevertheless does not influence the thrust generated by the nozzle, whose outlet orifice pressure is in fact higher than atmospheric pressure. The speed calculation performed here remains a good thermodynamic “indicator” of the phenomena at play. A full description of the fluid dynamics of the nozzle is outside of the scope of this book.
 
 In most cases, it is reasonable to consider that the kinetic energy of the gases at the outlet of the turbine (and therefore at the inlet of the nozzle) is negligible. The $10 m s^{-1}$ at A have no significant influence here.
 
@@ -864,7 +858,6 @@ since compressions and expansions are reversible: in practice, expect around $35
 :::{admonition} Answer
 :class: dropdown
 
-.3**
 2) $T_{\mathrm{B}}= 1205.5 K = 932.4^{\circ}C = 1710.2 ^{\circ} F$ (equation 4/36);
 $3) T_{\mathrm{C}}= \frac{q_{\mathrm{combustion}}}{c_{p(\mathrm{gases})}} + \frac{c_{p(\mathrm{air})}}{c_{p(\mathrm{gases})}} T_{\mathrm{B}}= 2140.5K = 1867.3^{\circ}C = 3393.2 ^{\circ} F$;
 4) $p_{\mathrm{C}}= p_{\mathrm{B}}= 158.4 bar = 2297.4 psi$;
@@ -938,7 +931,6 @@ $+0.174 kg s^{-1})$.
 :::{admonition} Answer
 :class: dropdown
 
-.5**
 1) See figure 10.17 p. 286;
 2) $T_{\mathrm{B}}= 785.2 K$, thus $T_{\mathrm{D}}= 861.1 K$ and $T_{\mathrm{D}^{'}}= 783.6 K$: $p_{\mathrm{D}}= 3.91 kg_{f}/cm^{2}= 3.13 bar$;
 3) Neglecting $C_{\mathrm{D}}$, and with complete and reversible
@@ -969,7 +961,6 @@ remarks apply here as well).
 :::{admonition} Answer
 :class: dropdown
 
-.6**
 $2)\dot{W}_{\mathrm{net}}=\dot{mc}_{p(\mathrm{gases})}(T_{\mathrm{D}}-T_{\mathrm{C}}) + c_{p(\mathrm{air})}(T_{\mathrm{B}}-T_{\mathrm{A}}) = -3.536 MW$ (approximately $3400 hp$, not too bad
 for a machine first run in 1971... even after 15
 years of service hung under a wing, a cf6 still sells
@@ -981,12 +972,6 @@ $6)\dot{W}_{\mathrm{net}2}= -3.325 MW$, that is a remarkable increase of $31 \%$
 8) Power increases by $98.8 kJ kg^{-1}$, while consumption increases by $332.6 kJ kg^{-1}$, resulting in
 a marginal efficiency of $29.7 \%$. The overall efficiency decreases to $\eta _{2}= 31.04 \%$, only $-0.5 pt$...
 an interesting compromise!
-*Engineering Thermodynamics* by Olivier Cleynen
-303
-Appendix
-**A1 Steam Tables 305 A2 Gauge Pressure and Real Pressure 314 A3 Additive Quantities 315 A4 State Quantities and Process Quantities 316 A5 Conversion of Units to SI 317 A6 Notation 319 A7 Mental Health For the Engineering Student 320 A8 Errata & Change Log 321 A9 Contributors 322 A10 Reusing This Book 323 A11 Citing This Book 324**
-304
-*Engineering Thermodynamics* by Olivier Cleynen
 
 :::
 ```
