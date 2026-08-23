@@ -99,7 +99,7 @@ References are numbered in order of first appearance in the book.
 **[30]**  Richard Feynman, Robert Benjamin Leighton, and Matthew Sands. *The Feynman Lectures on Physics*. 3 vols. Addison-Wesley Pub. Co, 1963. isbn: 0201020106. url: <http://feynmanlectures>. caltech.edu/.
 
 (ref-31)=
-**[31]**  AlexandreKoyré.*Études Galiléennes. Du monde clos à l’univers infni i*.French.2nded.Hermann, 1966.
+**[31]**  AlexandreKoyré.*Études Galiléennes. Du monde clos à l’univers infini*.French.2nded.Hermann, 1966.
 
 (ref-32)=
 **[32]**  Isaac Asimov. *L’avenir commence demain*. French. Trans. from the English by Bruno Martin. Presses Pocket, 1978. isbn: 9782266006439.

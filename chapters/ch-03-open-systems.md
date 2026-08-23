@@ -20,6 +20,11 @@ Open Systems
 :alt: Illustration from the original text
 :::
 
+:::{admonition} Executive summary
+:class: tip
+An open system is crossed by a mass flow. Heat and work transfers cause variations in the enthalpy of the fluid. For work to be reversible, the movement must be infinitely slow.
+:::
+
 ## Introduction
 
 In the previous chapter, we quantified energy exchanges within closed
@@ -30,7 +35,8 @@ how to quantify energy transfers within a system when it is crossed by a
 
 mass flow?
 
-**3.1 Why Use an Open System?**
+(sec-3-1)=
+## 3.1 Why Use an Open System?
 
 In many machines, the fluid used to transfer heat and work is continuously
 
@@ -52,7 +58,8 @@ we quantify work and heat transfers by separating stages in space (for
 
 example upstream and downstream of the compressor).
 
-**3.2 Accounting Conventions**
+(sec-3-2)=
+## 3.2 Accounting Conventions
 
 (sec-3-2-1)=
 ### 3.2.1 The open system
@@ -73,7 +80,7 @@ In our study of thermodynamics, we will only use open systems:
 
 • having only one inlet and one outlet;
 
-« $^{\mathrm{The} \mathrm{constructive} \mathrm{difficulties} \mathrm{that}}$ have to be overcome in a large gas motor because of the immense piston pressures and heat expansion of the complicated cylinder heads (cracks galore!) are well known. A safe gas turbine would in this respect be an improvement. »
+« The constructive difficulties that have to be overcome in a large gas motor because of the immense piston pressures and heat expansion of the complicated cylinder heads (cracks galore!) are well known. A safe gas turbine would in this respect be an improvement. »
 
 Aurel Stodola, 1904
 
@@ -96,7 +103,10 @@ Just like for closed systems, we will take the open system’s point of view to 
 
 Thus, we add up all transfers as on a bank statement.
 
-**3.3 The First Law in an Open System** We have seen that in a closed system, the law of conservation of energy is expressed by the equation $q+w = \Delta u$ (2/2). In an open system, the situation is a little different and we must consider additional forms of energy.
+(sec-3-3)=
+## 3.3 The First Law in an Open System
+
+We have seen that in a closed system, the law of conservation of energy is expressed by the equation $q+w = \Delta u$ (2/2). In an open system, the situation is a little different and we must consider additional forms of energy.
 
 (sec-3-3-1)=
 ### 3.3.1 Entering and exiting the system: flow work
@@ -209,7 +219,7 @@ At this point, we have covered all of the energy forms that can be observed cros
 
 form of heat.
 
-where all terms are expressed in $watts$.
+where all terms are expressed in watts.
 
 :::{math}
 Q_{1\rightarrow 2}+\dot{W}_{1\rightarrow 2}+\dot{m} (p_{1}v_{1}+ u_{1}+ \frac{1}{}
@@ -224,7 +234,7 @@ a turbine for which we know the power.
 :::{figure} ../images/fig-3-3.jpg
 :label: fig-3-3
 :enumerator: 3.3
-:alt: An arbitrary open system. The system (whose boundaries are dashed lines, in red) is crossed from left to right by the fluid flowing with a c
+:alt: An arbitrary open system. The system (whose boundaries are dashed lines, in red) is crossed from left to right by the fluid flowing with a constant mass flow rate$\dot{m}$. It receives power$\dot{W}_{1\rightarrow 2}$ in the form of work and power$\dot{Q}_{1\rightarrow 2}$ in the
 
 An arbitrary open system. The system (whose boundaries are dashed lines, in red) is crossed from left to right by the fluid flowing with a constant mass flow rate$\dot{m}$. It receives power$\dot{W}_{1\rightarrow 2}$ in the form of work and power$\dot{Q}_{1\rightarrow 2}$ in the
 :::
@@ -267,7 +277,7 @@ example, we can determine the remaining energy in the air at the outlet of
 :label: ex-3-1
 :enumerator: 3.1
 
-The compressor of a turbofan admits $1.5 kg s^{-1}$ of air at a pressure of $0.8 bar$, internal energy of $192.5 kJ kg^{-1}$, and specific volume of $0.96 m^{3}kg^{-1}$. It compresses the air to $30 bar$, releasing it with an internal energy of $643.1 kJ kg^{-1}$ and a specific volume of $8.57 \times 10^{-2}m^{3}kg^{-1}$. The velocity and altitude of the air remain unchanged.
+The compressor of a turbofan admits $1.5 kg s^{-1}$ of air at a pressure of 0.8 bar, internal energy of $192.5 kJ kg^{-1}$, and specific volume of $0.96 m^{3}kg^{-1}$. It compresses the air to 30 bar, releasing it with an internal energy of $643.1 kJ kg^{-1}$ and a specific volume of $8.57 \times 10^{-2}m^{3}kg^{-1}$. The velocity and altitude of the air remain unchanged.
 
 What is the power of the compressor if its heat transfers are negligible?
 
@@ -304,7 +314,7 @@ Of course, the *enthalpy* $H$ is simply defined as:
 H \equiv m h
 :::
 
-where $H$ is measured in $joules (J)$.
+where $H$ is measured in joules (J).
 
 In practice, the term *enthalpy* is often used even if it refers to specific enthalpy; the symbol and context help determine which variable is being referred to.
 
@@ -392,7 +402,8 @@ and energies are always in si units.
 
 ````
 
-**3.4 Quantifying Work with an Open**
+(sec-3-4)=
+## 3.4 Quantifying Work with an Open System
 
 ## System
 
@@ -431,7 +442,7 @@ Now, let’s observe the course of this *same* phenomenon from the point of view
 :::{figure} ../images/fig-3-5.jpg
 :label: fig-3-5
 :enumerator: 3.5
-:alt: The same flow as in figure 3.4, now observed from the viewpoint of a stationary open system crossed from left to right by a steady flow. We
+:alt: The same flow as in figure 3.4, now observed from the viewpoint of a stationary open system crossed from left to right by a steady flow. We seek to quantify the work δ$w_{\mathrm{O.S}.}$ to be supplied to the system so that each mass quantity $m_{\mathrm{A}}$ receives work δ$w_{m_{\mathrm{A}}}$.
 
 The same flow as in figure 3.4, now observed from the viewpoint of a stationary open system crossed from left to right by a steady flow. We seek to quantify the work δ$w_{\mathrm{O.S}.}$ to be supplied to the system so that each mass quantity $m_{\mathrm{A}}$ receives work δ$w_{m_{\mathrm{A}}}$.
 :::
@@ -504,9 +515,7 @@ quantities, we obtain the surprising expression:
 
 δ$w_{\mathrm{O.S}.}= vdp$ (3/21)
 
-The terms $dp$ and $dv$ in our study are not necessarily positive: this expres-
-
-sion applies equally to expansions and compressions, as long as they are
+The terms $dp$ and $dv$ in our study are not necessarily positive: this expression applies equally to expansions and compressions, as long as they are
 
 By integrating this expression 3/21 to apply it to the general case in steady
 
@@ -533,7 +542,7 @@ area enclosed *to the left* of the curve, as shown in figure 3.7.
 :::{figure} ../images/fig-3-6.jpg
 :label: fig-3-6
 :enumerator: 3.6
-:alt: Work received by an open system crossed by a fluid, during a slow process. The system first receives the insertion work , in orange, positiv
+:alt: Work received by an open system crossed by a fluid, during a slow process. The system first receives the insertion work $(p_{\mathrm{ini}.}v_{\mathrm{ini}.}$, in orange, positive) to enter the system, then it spends compression work (hatched area, negative), and finally, it spends extraction work $(p_{\mathrm{fin}.}v_{\mathrm{fin}.}$, in blue, negative). The net sum of these three areas is the specific power to be supplied to the open system.
 
 Work received by an open system crossed by a fluid, during a slow process. The system first receives the insertion work $(p_{\mathrm{ini}.}v_{\mathrm{ini}.}$, in orange, positive) to enter the system, then it spends compression work (hatched area, negative), and finally, it spends extraction work $(p_{\mathrm{fin}.}v_{\mathrm{fin}.}$, in blue, negative). The net sum of these three areas is the specific power to be supplied to the open system.
 :::
@@ -541,7 +550,7 @@ Work received by an open system crossed by a fluid, during a slow process. The s
 :::{figure} ../images/fig-3-7.jpg
 :label: fig-3-7
 :enumerator: 3.7
-:alt: Work measured in an open system, during a reversible process. The integral of is visualized by the area to the left of the curve. If the flu
+:alt: Work measured in an open system, during a reversible process. The integral of $vdp$ is visualized by the area to the left of the curve. If the fluid returns to its initial state (having completed a *thermodynamic cycle*), the work done is visualized by the area enclosed within the curve. In this case, the quantification is the same for closed and open systems.
 
 Work measured in an open system, during a reversible process. The integral of $vdp$ is visualized by the area to the left of the curve. If the fluid returns to its initial state (having completed a *thermodynamic cycle*), the work done is visualized by the area enclosed within the curve. In this case, the quantification is the same for closed and open systems.
 :::
@@ -554,7 +563,7 @@ Work measured in an open system, during a reversible process. The integral of $v
 :label: ex-3-3
 :enumerator: 3.3
 
-A pump slowly compresses $2 kg s^{-1}(4.41 lb/s)$ of water from $1$ to $20 bar$ (from $14.5$ to $290 psi)$. During compression, the specific volume of water remains constant at $v_{L}= 10^{-3}m^{3}kg^{-1}$. What is the power required in the form of work?
+A pump slowly compresses $2 kg s^{-1}(4.41 lb/s)$ of water from $1$ to 20 bar (from $14.5$ to $290 psi)$. During compression, the specific volume of water remains constant at $v_{L}= 10^{-3}m^{3}kg^{-1}$. What is the power required in the form of work?
 
 The process can be drawn qualitatively (that is, without showing numerical values) on a pressure-volume diagram as follows:
 
@@ -582,7 +591,7 @@ water). If it were the pressure that was constant, then the work would be zero e
 :label: ex-3-4
 :enumerator: 3.4
 
-A compressor slowly compresses an air flow of $2 kg s^{-1}$ from $1 bar$ to $20 bar$. During compression, the specific volume and pressure of the air are related by the expression $p v^{1.35}= k$. At the inlet, the specific volume of the air is $v_{\mathrm{A}}= 0.8 m^{3}kg^{-1}$. What is the power required in the form of work?
+A compressor slowly compresses an air flow of $2 kg s^{-1}$ from 1 bar to 20 bar. During compression, the specific volume and pressure of the air are related by the expression $p v^{1.35}= k$. At the inlet, the specific volume of the air is $v_{\mathrm{A}}= 0.8 m^{3}kg^{-1}$. What is the power required in the form of work?
 
 The process can be drawn qualitatively on a pressure-volume diagram as follows:
 
@@ -626,7 +635,7 @@ Using an open system to account for energy transfers does not change the problem
 :::{figure} ../images/fig-3-8.jpg
 :label: fig-3-8
 :enumerator: 3.8
-:alt: Reversible (solid line) and irreversible (dashed line) compressions represented on a pressure-volume diagram. In an open system, work transf
+:alt: Reversible (solid line) and irreversible (dashed line) compressions represented on a pressure-volume diagram. In an open system, work transfers can be visualized with the area to the left of the curve, but only when the processes are
 
 Reversible (solid line) and irreversible (dashed line) compressions represented on a pressure-volume diagram. In an open system, work transfers can be visualized with the area to the left of the curve, but only when the processes are
 :::
@@ -641,7 +650,7 @@ On our pressure-volume diagrams, we represent irreversible processes with a dash
 :label: ex-3-5
 :enumerator: 3.5
 
-Air is continuously compressed from 1 to $20 bar$ in a compressor. Just after leaving the compressor, the air enters a turbine that expands it from 20 to $1 bar$. After leaving the turbine, the air is again inserted into the compressor.
+Air is continuously compressed from 1 to 20 bar in a compressor. Just after leaving the compressor, the air enters a turbine that expands it from 20 to 1 bar. After leaving the turbine, the air is again inserted into the compressor.
 
 What will be the shape of the processes on a pressure-volume diagram?
 
@@ -676,7 +685,8 @@ Thus, the properties gradually shift on the pressure-volume diagram. Unless the 
 
 ::::
 
-**3.5 Quantifying Heat with an Open**
+(sec-3-5)=
+## 3.5 Quantifying Heat with an Open System
 
 ## System
 
@@ -735,9 +745,7 @@ demonstrated that the specific heat depends on the
 
 nature of the body:
 
-We must, therefore, conclude that different bod-
-
-ies, although they be of the same size, or even of
+We must, therefore, conclude that different bodies, although they be of the same size, or even of
 
 the same weight, when they are reduced to the
 
@@ -745,9 +753,7 @@ same temperature or degree of heat, whatever that
 
 be, may contain very different quantities of the
 
-matter of heat; which different quantities are nec-
-
-essary to bring them to this level, or equilibrium,
+matter of heat; which different quantities are necessary to bring them to this level, or equilibrium,
 
 with one another.
 
@@ -769,9 +775,7 @@ to another to raise the temperature of the receiving
 
 body and lower that of the giving body: some bodies
 
-(such as water) contained more of it at a given tem-
-
-perature than others (like oil), resulting in different
+(such as water) contained more of it at a given temperature than others (like oil), resulting in different
 
 specific heats. On the other hand, Black believed
 
@@ -786,7 +790,7 @@ then disappear as such and become “latent”.
 :::{figure} ../images/fig-3-9.jpg
 :label: fig-3-9
 :enumerator: 3.9
-:alt: Joseph Black conducting an experiment on latent heat during a university lecture in Edinburgh. One can imagine that he had no difficulty eng
+:alt: Joseph Black conducting an experiment on latent heat during a university lecture in Edinburgh. One can imagine that he had no difficulty engaging the students, since it was about thermodynamics...
 
 Joseph Black conducting an experiment on latent heat during a university lecture in Edinburgh. One can imagine that he had no difficulty engaging the students, since it was about thermodynamics...
 :::
@@ -917,7 +921,7 @@ At the outlet, the air is brought back down to atmospheric pressure $(1 bar)$. I
 :label: prob-3-5
 :enumerator: 3.5
 
-**Water Turbine An engineer is working on a small hydroelectric power plant project. The objective is to harness the flow of a river $(3170 US gal/s$ or $12 m^{3}s^{-1})$ with a turbine connected to an electric generator (figure 3.14). power plant *Diagram* CC-0 *Olivier Cleynen* In its liquid state, water is essentially incompressible (meaning its density does not change when its pressure changes). Its internal energy also varies negligibly during adiabatic compressions and expansions. The engineer first considers placing the turbine at the foot of a water reservoir, where the pressure is $4 bar$ and the velocity is nearly zero. The water falls through a height of $2 m (6.56 ft)$ through the turbine, and its ejection velocity is $4 m s^{-1}$ at atmospheric pressure $(1 bar)$. 1. What power could the turbine transmit to the generator? The engineer then studies a different configuration (figure 3.15). The turbine would keep the same characteristics but would be positioned further downstream from the water reservoir (shifted horizontally and vertically by $25 m$, or $82 ft$, each). *Diagram* CC-0 *Olivier Cleynen* 2. What would be the power transmitted in this case?**
+**Water Turbine An engineer is working on a small hydroelectric power plant project. The objective is to harness the flow of a river $(3170 US gal/s$ or $12 m^{3}s^{-1})$ with a turbine connected to an electric generator (figure 3.14). power plant *Diagram* CC-0 *Olivier Cleynen* In its liquid state, water is essentially incompressible (meaning its density does not change when its pressure changes). Its internal energy also varies negligibly during adiabatic compressions and expansions. The engineer first considers placing the turbine at the foot of a water reservoir, where the pressure is 4 bar and the velocity is nearly zero. The water falls through a height of $2 m (6.56 ft)$ through the turbine, and its ejection velocity is $4 m s^{-1}$ at atmospheric pressure $(1 bar)$. 1. What power could the turbine transmit to the generator? The engineer then studies a different configuration (figure 3.15). The turbine would keep the same characteristics but would be positioned further downstream from the water reservoir (shifted horizontally and vertically by $25 m$, or $82 ft$, each). *Diagram* CC-0 *Olivier Cleynen* 2. What would be the power transmitted in this case?**
 
 :::{admonition} Answer
 :class: dropdown
@@ -973,7 +977,7 @@ why it is never used on civilian aircraft)
 :label: prob-3-8
 :enumerator: 3.8
 
-**Theoretical and Actual Turbines In the free turbine of a helicopter’s turboshaft engine, air is expanded to extract work which is transmitted to the two rotors. The characteristics are as follows: • Mass flow rate: $2 kg s^{-1}$ • Heat losses: negligible • Inlet: $4 bar$ and $0.41 m^{3}kg^{-1}$ • Outlet pressure: $1.1 bar$ In the most favorable case, the expansion would take place reversibly, and the air would follow a relationship of the form $pv^{1.4}= k$ (where $k$ is a constant). 1. Which conditions must be met for the expansion to be reversible? 2. What would be the power supplied by the turbine in this case? In practice, it is observed that the power supplied by the turbine is $20 \%$ lower than the value calculated above. An engineer installs probes at the inlet and outlet of the turbine and observes that the pressure there indeed reaches the theoretically expected values. S/he also measures the heat transfer from the air to the turbine and confirms that it is negligible. 3. Draw the processes undergone by the air in the reversible and real cases on a pressure-volume diagram, qualitatively. 4. In which form will the engineer find (and measure) the missing $20 \%$ of power?**
+**Theoretical and Actual Turbines In the free turbine of a helicopter’s turboshaft engine, air is expanded to extract work which is transmitted to the two rotors. The characteristics are as follows: • Mass flow rate: $2 kg s^{-1}$ • Heat losses: negligible • Inlet: 4 bar and $0.41 m^{3}kg^{-1}$ • Outlet pressure: 1.1 bar In the most favorable case, the expansion would take place reversibly, and the air would follow a relationship of the form $pv^{1.4}= k$ (where $k$ is a constant). 1. Which conditions must be met for the expansion to be reversible? 2. What would be the power supplied by the turbine in this case? In practice, it is observed that the power supplied by the turbine is $20 \%$ lower than the value calculated above. An engineer installs probes at the inlet and outlet of the turbine and observes that the pressure there indeed reaches the theoretically expected values. S/he also measures the heat transfer from the air to the turbine and confirms that it is negligible. 3. Draw the processes undergone by the air in the reversible and real cases on a pressure-volume diagram, qualitatively. 4. In which form will the engineer find (and measure) the missing $20 \%$ of power?**
 
 :::{admonition} Answer
 :class: dropdown
@@ -992,7 +996,7 @@ energy), and maybe also higher kinetic energy.
 :label: prob-3-9
 :enumerator: 3.9
 
-**Compressor and Turbine of a Turboprop Engine The compressor within a turboprop engine (figure 3.17) admits a constant flow of air at ambient conditions $(0.8 bar/11.6 psi$ and $1 m^{3}kg^{-1})$. It must bring this air to a final pressure of $11 bar (159.5 psi)$, without any heat transfer. *Diagram* CC-by-sa *Olivier Cleynen* Within the compressor, the air behaves in such a way that its properties follow the relation $p v^{1.4}= k$, where $k$ is a constant. 1. What is the minimum specific power to be supplied to the compressor? 2. Represent the properties of the gas as it passes through the compressor on a pressure-volume diagram, qualitatively. 3. On the above diagram, show the change the gas would undergo if the compressor were not reversible (real compressor, inducing internal friction in the gas) but nevertheless maintained its outlet pressure at $11 bar$.**
+**Compressor and Turbine of a Turboprop Engine The compressor within a turboprop engine (figure 3.17) admits a constant flow of air at ambient conditions $(0.8 bar/11.6 psi$ and $1 m^{3}kg^{-1})$. It must bring this air to a final pressure of $11 bar (159.5 psi)$, without any heat transfer. *Diagram* CC-by-sa *Olivier Cleynen* Within the compressor, the air behaves in such a way that its properties follow the relation $p v^{1.4}= k$, where $k$ is a constant. 1. What is the minimum specific power to be supplied to the compressor? 2. Represent the properties of the gas as it passes through the compressor on a pressure-volume diagram, qualitatively. 3. On the above diagram, show the change the gas would undergo if the compressor were not reversible (real compressor, inducing internal friction in the gas) but nevertheless maintained its outlet pressure at 11 bar.**
 
 :::{admonition} Answer
 :class: dropdown
@@ -1025,7 +1029,7 @@ Within the same engine, the turbine, which is adiabatic, must power not only to 
 
 At its inlet, the following properties are measured:
 
-• Pressure $11 bar$
+• Pressure 11 bar
 
 • Velocity $12 m s^{-1}$
 
@@ -1035,7 +1039,7 @@ At its inlet, the following properties are measured:
 
 At the outlet, the properties of the air have become:
 
-• Pressure $0.8 bar$
+• Pressure 0.8 bar
 
 • Velocity $12 m s^{-1}$
 

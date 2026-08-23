@@ -16,7 +16,7 @@ Engineering programs in universities are designed to bring out academic performa
 
 • Take many breaks, and treat your body well. Engineering disciplines are best studied as a habit, not a marathon race, even when you have run out of time.
 
-• You are welcome here. In case no one has done this yet, I welcome you into this feild, exactly as you are.
+• You are welcome here. In case no one has done this yet, I welcome you into this field, exactly as you are.
 
 • Don’t learn all by yourself. You can be intentional about meeting new people and spending time with them. Unlike the physical relationships we describe with equations, relationships between humans take an infinite variety of forms. Try studying with different people. Talk to them; build a cohort.
 

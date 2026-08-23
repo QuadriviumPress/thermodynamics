@@ -10,7 +10,7 @@ Appendix A3 315
 
 ## A3 Additive Quantities
 
-Quantities in thermodynamics can be classifeid into the following categories:
+Quantities in thermodynamics can be classified into the following categories:
 
 • A quantity is *additive* or *extensive* if its value depends on the size of the system. For example, if an object is split into two parts, its mass and volume (additive quantities) are also split. The additive quantities used in this book are $E, H, m, S, U$, and $V$ (see the list of symbols on page 328).
 

@@ -20,6 +20,11 @@ Entropy
 :alt: Illustration from the original text
 :::
 
+:::{admonition} Executive summary
+:class: tip
+Entropy is a property of bodies. We quantify its changes in order to measure the irreversibility of energy transfers (always undesirable for the engineer). The total entropy always increases during irreversible transfers: of work (with abrupt motion), of heat (with temperature gradient).
+:::
+
 ## Introduction
 
 We present here the most powerful and difficult concept of thermodynamics.
@@ -32,7 +37,8 @@ possible, starting from two questions:
 
 • Why do physicists and engineers quantify its variations?
 
-**8.1 The Concept of Entropy**
+(sec-8-1)=
+## 8.1 The Concept of Entropy
 
 (sec-8-1-1)=
 ### 8.1.1 What is entropy used for?
@@ -46,7 +52,7 @@ However, our intuition and daily experience teach us that many transformations c
 :::{figure} ../images/fig-8-1.png
 :label: fig-8-1
 :enumerator: 8.1
-:alt: We have the intuition and an inner conviction that these three photos were taken in a very particular order. A calculation of the entropy in
+:alt: We have the intuition and an inner conviction that these three photos were taken in a very particular order. A calculation of the *entropy* in these three situations, in which the *energy* is the same, allows us to determine this order by associating a calculable quantity with our intuition.
 
 We have the intuition and an inner conviction that these three photos were taken in a very particular order. A calculation of the *entropy* in these three situations, in which the *energy* is the same, allows us to determine this order by associating a calculable quantity with our intuition.
 :::
@@ -66,7 +72,7 @@ In the vocabulary of thermodynamics, the concept of a “one-way change” is of
 
 Irreversible processes in fluids invariably lead to states where the temperature, pressure, or volume are greater than they would have been with a reversible process.
 
-« $^{\mathrm{For} \mathrm{this} \mathrm{purpose} \mathrm{let} \mathrm{us} \mathrm{conceive}}$ In order to quantify the irreversibility of a process, we will quantify *the* the matter, after the changes of condiamount of heat that one would need to remove from the body to bring it back*
+« For this purpose let us conceive In order to quantify the irreversibility of a process, we will quantify *the* the matter, after the changes of condiamount of heat that one would need to remove from the body to bring it back*
 
 tion which has to be examined in this matter, reduced to its original condition *to its initial state reversibly*. By subtracting to this amount the heat that
 
@@ -78,9 +84,10 @@ as applicable as to the whole. Consethis heat is created, and the less of it can
 
 quently, if we know the quantities of heat which the matter has received durWe will thus “penalize” the heat cost by dividing it by the temperature.
 
-ing the process, and the temperatures $^{\mathrm{which} \mathrm{correspond} \mathrm{thereto}, \mathrm{the} \mathrm{nega}-}$ In this way, we will obtain a quantity in $joules$ per $kelvin$ – the entropy the negative integral $-\\int \\frac{\\mathrm{d}Q}{T}$ will give the un- created during the process – which will be zero during reversible processes compensated transformation involved $^{\mathrm{therein}.}$ » and will always be positive during irreversible processes. It is this creation $_{\mathrm{Rudolf} \mathrm{Clausius}, 1856 [16, 18, 20]}$ that will be the unmistakable sign that the process is possible only in one direction.
+ing the process, and the temperatures $^{\mathrm{which} \mathrm{correspond} \mathrm{thereto}, \mathrm{the} \mathrm{nega}-}$ In this way, we will obtain a quantity in joules per kelvin – the entropy the negative integral $-\\int \\frac{\\mathrm{d}Q}{T}$ will give the uncreated during the process – which will be zero during reversible processes compensated transformation involved therein » and will always be positive during irreversible processes. It is this creation $_{\mathrm{Rudolf} \mathrm{Clausius}, 1856 [16, 18, 20]}$ that will be the unmistakable sign that the process is possible only in one direction.
 
-**8.2 Definition**
+(sec-8-2)=
+## 8.2 Definition
 
 (sec-8-2-1)=
 ### 8.2.1 Entropy is a property
@@ -131,7 +138,7 @@ There is always a reversible way (in fact, there is even an infinity of such way
 
 We must be careful here: if one integrates the quantity $\frac{\delta Q}{T}$ along a process where the temperature or pressure are not homogeneous (for example during a rapid expansion, or in a body that has an internal temperature gradient, see §2.4.3), then a result will be obtained which is lower than the actual entropy change $\Delta S$.
 
-The SI unit of entropy $S$ is the $J K^{-1}(joule$ per $kelvin)$; and correspondingly, the *specific entropy* $s$ is defined as:
+The SI unit of entropy $S$ is the $J\,K^{-1}$ (joule per kelvin); and correspondingly, the *specific entropy* $s$ is defined as:
 
 :::{math}
 s \equiv \frac{S}{} (8/3)
@@ -157,13 +164,11 @@ $\Delta S = S_{B}- S_{A}= \int _{\mathrm{A}}^{\mathrm{B}}\left(\frac{\delta Q}{T
 
 $\frac{1}{30+273.15}(-2000) = -6.6 J K^{-1}$.
 
-We have already explored reversible processes at constant tem-
-
-perature (isothermal processes) in sections §4.4.4 p. 98 and §5.4.4 p. 135. Here, the gas loses $2 kJ$ of heat and receives $2 kJ$ of work.
+We have already explored reversible processes at constant temperature (isothermal processes) in sections §4.4.4 p. 98 and §5.4.4 p. 135. Here, the gas loses $2 kJ$ of heat and receives $2 kJ$ of work.
 
 We do not know the value of entropy, but we know that it
 
-decreases by 7 $joules$ per $kelvin$.
+decreases by 7 joules per kelvin.
 
 The change in entropy should not be confused with the thermal
 
@@ -179,9 +184,7 @@ The $\Delta S$ corresponds to the actual entropy change; but it is
 
 calculated along an imaginary path.
 
-Here we see that the heat actually transferred is not impor-
-
-tant. It is the heat “that would have needed to be transferred” that interests us.
+Here we see that the heat actually transferred is not important. It is the heat “that would have needed to be transferred” that interests us.
 
 Here, to simplify the exercise, the gas returns exactly to its initial
 
@@ -211,7 +214,8 @@ Let’s add three remarks before moving on.
 
 3. Entropy changes can only be calculated along reversible processes, which is a very important limitation (no real process of interest to engineers is reversible). However, there are always multiple reversible ways, all equivalent, to reproduce the final state of an irreversible process.
 
-**8.3 Changes in Entropy**
+(sec-8-3)=
+## 8.3 Changes in Entropy
 
 (sec-8-3-1)=
 ### 8.3.1 Analogy with volume
@@ -255,7 +259,7 @@ where the subscript *rev.* indicates the calculation is done along a reversible 
 :::{figure} ../images/fig-8-2.jpg
 :label: fig-8-2
 :enumerator: 8.2
-:alt: Volume changes during adiabatic expansions. The increase in volume is calculable by integrating along a reversible path , but not along an i
+:alt: Volume changes during adiabatic expansions. The increase in volume is calculable by integrating $\delta W/p$ along a reversible path $(1 \rightarrow 2^{'})$, but not along an irreversible path $(1 \rightarrow 2)$.
 
 Volume changes during adiabatic expansions. The increase in volume is calculable by integrating $\delta W/p$ along a reversible path $(1 \rightarrow 2^{'})$, but not along an irreversible path $(1 \rightarrow 2)$.
 :::
@@ -290,7 +294,7 @@ In this way, we are able to represent the processes on a *temperature-entropy di
 :alt: Illustration from the original text
 :::
 
-Figure8.3: Temperature-entropydiagram. Duringareversibleprocess, theareaunder the curve of a $T-s$diagram represents the transmitted heat $Q_{1\rightarrow 2^{'}}$; but not when it is *Diagram* CC-0 *Olivier Cleynen*
+Figure 8.3: Temperature-entropy diagram. During a reversible process, theareaunder the curve of a $T-s$diagram represents the transmitted heat $Q_{1\rightarrow 2^{'}}$; but not when it is *Diagram* CC-0 *Olivier Cleynen*
 
 irreversible.
 
@@ -328,7 +332,7 @@ When the processes are reversible, this net heat is represented by the area encl
 
 Finally, we are pleased to note that the Carnot cycle, consisting of two isothermal phases $(T =$ constant) separated by two isentropic phases $(s =$ constant), benefits greatly from being represented on a temperature-entropy diagram, as shown in figure 8.6.
 
-Figure8.5: Thermodynamiccycleduringwhichheathasbeenabsorbed, andtherefore transformed into work. When the path is reversed, heat is rejected (and work absorbed) by the fluid. *Diagram* CC-0 *Olivier Cleynen*
+Figure 8.5: Thermodynamiccycleduringwhichheathasbeenabsorbed, andtherefore transformed into work. When the path is reversed, heat is rejected (and work absorbed) by the fluid. *Diagram* CC-0 *Olivier Cleynen*
 
 :::{figure} ../images/fig-8-6.svg
 :label: fig-8-6
@@ -386,7 +390,7 @@ ds = \frac{du}{}
 T + p
 :::
 
-along any reversible process.$^{1}$
+along any reversible process.[^ch8-fn1]
 
 Now, if we use an ideal gas, we have $u = c_{v}T$ (4/11) and $^{p}$
 
@@ -444,9 +448,7 @@ for an ideal gas, for any process at constant volume or respectively at constant
 
 These two equations 8/12 and 8/13 allow us to plot isochoric (at constant volume) and isobaric (at constant pressure) curves for an ideal gas on a $T-s$ diagram, as shown in figure 8.7.
 
-$^{1}$This equation 8/9 is even true for any process, but this generalization is simpler
-
-to address after equations 8/10 and 8/11.
+[^ch8-fn1]: This equation 8/9 is even true for any process, but this generalization is simpler to address after equations 8/10 and 8/11.
 
 $_{1}pdv$ (2/15) along it, and we can write:
 
@@ -462,7 +464,7 @@ $v_{1}$
 
 $p_{1}$
 
-« $^{\mathrm{In} \mathrm{the} \mathrm{deduced} \mathrm{expression}, \mathrm{the}}$ difference $S - S_{0}$ is again perfectly determined when the initial and final conditions are given, and it is only when forming the integral $\int \frac{dQ}{T}$ that the manner in which the passage from one to the other took place must be taken into consideration. »
+« In the deduced expression the difference $S - S_{0}$ is again perfectly determined when the initial and final conditions are given, and it is only when forming the integral $\int \frac{dQ}{T}$ that the manner in which the passage from one to the other took place must be taken into consideration. »
 
 Rudolf Clausius, 1865 [[17](#ref-17), [18](#ref-18), [19](#ref-19)]
 
@@ -500,7 +502,7 @@ Isobaric and isochoric curves on a $T-s$ diagram, for an ideal gas. Here
 
 Example 8.2
 
-What is the change in specific entropy of a mass of $2 kg (4.4 lb)$ of air, when it is heated at constant pressure of $2 bar$, from $50 ^{\circ} F$ to $212 ^{\circ} F (10^{\circ}C$
+What is the change in specific entropy of a mass of $2 kg (4.4 lb)$ of air, when it is heated at constant pressure of 2 bar, from $50 ^{\circ} F$ to $212 ^{\circ} F (10^{\circ}C$
 
 The process can be drawn qualitatively (that is, without showing numerical values) on a temperature-entropy diagram as shown below.
 
@@ -524,7 +526,7 @@ that “entropy is given to it” (§8.2.1).
 :label: ex-8-3
 :enumerator: 8.3
 
-How much does the entropy of a mass of air of $0.5 kg$ change when it is slowly cooled at constant temperature from $1 bar$ and $50^{\circ}C$ to $5 bar$? How much heat needs to be removed for this?
+How much does the entropy of a mass of air of $0.5 kg$ change when it is slowly cooled at constant temperature from 1 bar and $50^{\circ}C$ to 5 bar? How much heat needs to be removed for this?
 
 The process can be drawn qualitatively on a temperature-entropy diagram as follows:
 
@@ -550,7 +552,7 @@ using equations 4/27 and 4/28.
 :label: ex-8-4
 :enumerator: 8.4
 
-How much does the temperature of air change when adiabatically and reversibly expanded from $30 bar$ and $600 K$ down to $1 bar$?
+How much does the temperature of air change when adiabatically and reversibly expanded from 30 bar and $600 K$ down to 1 bar?
 
 The process can be drawn qualitatively on a temperature-entropy diagram as follows:
 
@@ -652,7 +654,7 @@ s_{x}= s_{L}+ x s_{LV}
 :label: ex-8-5
 :enumerator: 8.5
 
-How much does the entropy of water change when it goes from a state at $240^{\circ}C$ and $6 bar$, to $130^{\circ}C$ with an internal energy of $1000 kJ kg^{-1}$?
+How much does the entropy of water change when it goes from a state at $240^{\circ}C$ and 6 bar, to $130^{\circ}C$ with an internal energy of $1000 kJ kg^{-1}$?
 
 A quick look at the steam tables allows us to draw the process qualitatively on a temperature-entropy diagram as shown below. We read $s_{\mathrm{A}}$ by interpolation in Steam Table 1 at $0.6 MPa$ between $200^{\circ}C$ and $300^{\circ}C$: $s_{\mathrm{A}}= 6.9683 + ^{40}$ Upon arrival, the water is in a liquid-vapor mixture (because $u_{\mathrm{B}}< u_{V130^{\circ}C})$, so we read from Steam Table 2 (5/5): $x_{\mathrm{B}}= ^{u_{\mathrm{B}}-u_{L}}$
 
@@ -727,7 +729,7 @@ it is important to realize that without the use of entropy, we had *no way* to q
 :label: ex-8-7
 :enumerator: 8.7
 
-In a turbine, steam undergoes a reversible adiabatic (isentropic) expansion. The steam enters at $40 bar$ and $500^{\circ}C$; it is expanded to $0.5 bar$. What is the specific power output?
+In a turbine, steam undergoes a reversible adiabatic (isentropic) expansion. The steam enters at 40 bar and $500^{\circ}C$; it is expanded to 0.5 bar. What is the specific power output?
 
 A final look at the steam tables allows us to draw the process qualitatively on a temperature-entropy diagram as follows:
 
@@ -753,18 +755,21 @@ for engineers. The idea that entropy remains constant during a reversible adiaba
 
 ````
 
-**8.4 Predicting the Direction of Processes** Here we come to the central concept that has opened the doors of physics to thermodynamics. Based on the quantifications of entropy changes, we are able to describe the direction of processes, that is, to prove for example that a state B comes *after* a state A.
+(sec-8-4)=
+## 8.4 Predicting the Direction of Processes
+
+Here we come to the central concept that has opened the doors of physics to thermodynamics. Based on the quantifications of entropy changes, we are able to describe the direction of processes, that is, to prove for example that a state B comes *after* a state A.
 
 (sec-8-4-1)=
 ### 8.4.1 Irreversibilities during heat transfers
 
-« $^{\mathrm{If} \mathrm{two} \mathrm{transformations} \mathrm{which},}$ In order to reward ourselves for already making it halfway through the without necessitating any other per-chapter, we make ourselves a cup of tea. Because no one can resist a little
+« If two transformations which In order to reward ourselves for already making it halfway through the without necessitating any other per-chapter, we make ourselves a cup of tea. Because no one can resist a little
 
 manent change, can mutually replace one another, be called equivalent, then thermodynamics, we press our mug closely against a bottle of cold water.
 
 [...] the passage of the quantity of heat $_{Q \mathrm{from} \mathrm{the} \mathrm{temperature} t_{1}\mathrm{to} \mathrm{the} \mathrm{tem}-}$ O wonder, o joy! We have before our eyes a source of entropy. Let’s
 
-p$Q$e$($r $\frac{\mathrm{atu}_{1}}{T_{2}}$ r$-$e $\frac{t_{12},}{T_{1}} )$h a$_{[.}\mathrm{s}_{..]}$ t he» $^{\mathrm{e} \mathrm{quivalence-value} \mathrm{investigate}.}$ Our mug A is at temperature $T_{\mathrm{A}}$, higher than $T_{\mathrm{B}}$, the temperature of the
+p$Q$e$($r $\frac{\mathrm{atu}_{1}}{T_{2}}$ r$-$e $\frac{t_{12},}{T_{1}} )$h a$_{[.}\mathrm{s}_{..]}$ t he» e quivalence-value investigate Our mug A is at temperature $T_{\mathrm{A}}$, higher than $T_{\mathrm{B}}$, the temperature of the
 
 Rudolf Clausius, 1854 [[13](#ref-13), [18](#ref-18), [22](#ref-22)] water bottle (figure 8.9). The two bodies are brought into contact, and an infinitesimal amount of heat δ$q$ passes from A to B.
 
@@ -807,7 +812,7 @@ T_{\mathrm{B}}T_{\mathrm{A}}
 :::{figure} ../images/fig-8-9.jpg
 :label: fig-8-9
 :enumerator: 8.9
-:alt: Creation of entropy by heat transfer. The process is internally reversible for each of the two bodies A and B, but irreversible for the syst
+:alt: Creation of entropy by heat transfer. The process is internally reversible for each of the two bodies A and B, but irreversible for the system [A+B].
 
 Creation of entropy by heat transfer. The process is internally reversible for each of the two bodies A and B, but irreversible for the system [A+B].
 :::
@@ -826,22 +831,16 @@ Since $T_{\mathrm{A}}> T_{\mathrm{B}}$, this change is *positive and non-zero*; 
 :::{figure} ../images/fig-8-10.jpg
 :label: fig-8-10
 :enumerator: 8.10
-:alt: Entropy changes for bodies A and B. The two shaded areas are equal (representing the heat quantity δ, but the sum of the two entropies incre
+:alt: Entropy changes for bodies A and B. The two shaded areas are equal (representing the heat quantity δ$q)$, but the sum of the two entropies increases.
 
 Entropy changes for bodies A and B. The two shaded areas are equal (representing the heat quantity δ$q)$, but the sum of the two entropies increases.
 :::
 
 *Diagram* CC-0 *Olivier Cleynen*
 
-This small investigation shows us that every temperature gradient leads to « $^{\mathrm{Wherever} \mathrm{there} \mathrm{exists} \mathrm{a} \mathrm{difference}}$ *in temperature, there can be a produc-*
+This small investigation shows us that every temperature gradient leads to « Wherever there exists a difference *in temperature, there can be a produc-*
 
-irreversibility, resulting in an increase in total entropy. Any heat transfer *tion of motive power*. Conversely wher-
-
-between two objects of different temperatures can be viewed as a missed $^{\mathrm{ever} \mathrm{this} \mathrm{power} \mathrm{can} \mathrm{be} \mathrm{consumed}, \mathrm{it} \mathrm{is}}$ possible to generate a difference in tem-
-
-opportunity to do work – likely a source of anxiety for both students perature, it is possible to cause a disrup-
-
-and engineers. By placing a Carnot engine between bodies A and B, no $^{\mathrm{tion} \mathrm{of} \mathrm{equilibrium} \mathrm{in} \mathrm{the} \mathrm{caloric}.}$ » irreversibility would occur, and $ds_{[\mathrm{A}\&\mathrm{B}]}$ would be zero. By placing a thermal Sadi Carnot, 1824 [[4](#ref-4)] engine with low efficiency, $ds_{[\mathrm{A}\&\mathrm{B}]}$ would be small; the case above where heat transfer occurs without a machine is the limiting case where no work is produced.
+irreversibility, resulting in an increase in total entropy. Any heat transfer *tion of motive power*. Conversely wherbetween two objects of different temperatures can be viewed as a missed ever this power can be consumed it is possible to generate a difference in temopportunity to do work – likely a source of anxiety for both students perature, it is possible to cause a disrupand engineers. By placing a Carnot engine between bodies A and B, no tion of equilibrium in the caloric » irreversibility would occur, and $ds_{[\mathrm{A}\&\mathrm{B}]}$ would be zero. By placing a thermal Sadi Carnot, 1824 [[4](#ref-4)] engine with low efficiency, $ds_{[\mathrm{A}\&\mathrm{B}]}$ would be small; the case above where heat transfer occurs without a machine is the limiting case where no work is produced.
 
 (sec-8-4-2)=
 ### 8.4.2 Irreversibilities during adiabatic
@@ -857,7 +856,7 @@ Thus, a real adiabatic compression causes the fluid to reach a higher temperatur
 :::{figure} ../images/fig-8-11.svg
 :label: fig-8-11
 :enumerator: 8.11
-:alt: Theoretical (isentropic, solid lines) and real (dotted lines) adiabatic expansions and compressions. It is important to note that the increa
+:alt: Theoretical (isentropic, solid lines) and real (dotted lines) adiabatic expansions and compressions. It is important to note that the increase in entropy is not related to a heat transfer “δ$q$”. The path on the $T-s$diagram is not continuous, and the area underneath does not represent a heat flow across the system boundaries.
 
 Theoretical (isentropic, solid lines) and real (dotted lines) adiabatic expansions and compressions. It is important to note that the increase in entropy is not related to a heat transfer “δ$q$”. The path on the $T-s$diagram is not continuous, and the area underneath does not represent a heat flow across the system boundaries.
 :::
@@ -867,9 +866,9 @@ Theoretical (isentropic, solid lines) and real (dotted lines) adiabatic expansio
 (sec-8-4-3)=
 ### 8.4.3 The second law and entropy
 
-« $^{\mathrm{Heat} \mathrm{can} \mathrm{never} \mathrm{pass} \mathrm{from} \mathrm{a} \mathrm{colder}}$ We have stated in chapter 7 (*the second law*) that heat spontaneously moves *to a warmer body without some other* only towards a lower temperature – a postulate we call the *second law*. We
+« Heat can never pass from a colder We have stated in chapter 7 (*the second law*) that heat spontaneously moves *to a warmer body without some other* only towards a lower temperature – a postulate we call the *second law*. We
 
-*change, connected therewith, occurring* $^{\mathrm{at} \mathrm{the} \mathrm{same} \mathrm{time}.}$ » can now formulate this statement with a mathematical expression.
+*change, connected therewith, occurring* at the same time » can now formulate this statement with a mathematical expression.
 
 Rudolf Clausius, 1854 [[13](#ref-13), [18](#ref-18), [22](#ref-22)] **During a heat transfer** from a body at temperature $T_{\mathrm{A}}$ to another at tem-
 
@@ -931,9 +930,9 @@ Thus, we can mathematically determine the direction of time, at least for some s
 
 A mass of air undergoes a process without any heat exchange. There are two states:
 
-• State X at $5 bar$ and $100^{\circ}C (72.5 psi$ and $212 ^{\circ} F)$;
+• State X at 5 bar and $100^{\circ}C (72.5 psi$ and $212 ^{\circ} F)$;
 
-• State Y at $1 bar$ and $5^{\circ}C (14.5 psi$ and $41 ^{\circ} F)$.
+• State Y at 1 bar and $5^{\circ}C (14.5 psi$ and $41 ^{\circ} F)$.
 
 In which direction (X $\rightarrow$ Y or Y $\rightarrow$ X) can the process take place?
 
@@ -1015,7 +1014,8 @@ we wanted to go back from Y to X, we would need to cool the water by removing a 
 
 ````
 
-**8.5 Entropy, Time, and the Universe**
+(sec-8-5)=
+## 8.5 Entropy, Time, and the Universe
 
 (sec-8-5-1)=
 ### 8.5.1 Entropy for the engineer
@@ -1041,11 +1041,11 @@ This desire to find the absolute order in which states succeed one another, in o
 
 around the quantity $\frac{Q}{T}$, he formalized a concept that his French colleague Frédéric Reech and Scottish counterpart William Rankine had only touched upon [[36](#ref-36)], and synthesized all the contemporary knowledge of his discipline.
 
-« $^{\mathrm{I} \mathrm{have} \mathrm{intentionally} \mathrm{formed} \mathrm{the}}$ Clausius created the word *entropy* based on the ancient Greek *tropè* τροπή word *entropy* so as to be as similar as (revolution, change), which, coupled with his authoritarian tone, did nothing
+« I have intentionally formed the Clausius created the word *entropy* based on the ancient Greek *tropè* τροπή word *entropy* so as to be as similar as (revolution, change), which, coupled with his authoritarian tone, did nothing
 
-possible to the word *energy*; for the $^{\mathrm{two} \mathrm{magnitudes} \mathrm{to} \mathrm{be} \mathrm{denoted} \mathrm{by} \mathrm{these}}$ to win the enthusiasm of his contemporaries. But the concept is so powerful, words are so nearly allied in their physand equation 8/16 so simple, that they were universally accepted.
+possible to the word *energy*; for the two magnitudes to be denoted by these to win the enthusiasm of his contemporaries. But the concept is so powerful, words are so nearly allied in their physand equation 8/16 so simple, that they were universally accepted.
 
-ical meanings, that a certain similarity in designation appears to be desireAfter a century of efofrts, the physics of heat had caught up with engine
+ical meanings, that a certain similarity in designation appears to be desireAfter a century of efforts, the physics of heat had caught up with engine
 
 able. » technology. We were finally able to fully and quantitatively describe the
 
@@ -1167,21 +1167,15 @@ During his adventurous life, he managed to make at least two important discoveri
 
    $(653psi$and$1112^{\circ} F)$.
 
-   1. Whatisthemaximumamountofworkthatcanbe
+   1. What is the maximum amount of work that can be
 
-   extractedfromthismassofwaterwithoutsupply-
+   extracted from this mass of water without supplyingheat,ifitcanexpandto$4bar(58psi)$?
 
-   ingheat,ifitcanexpandto$4bar(58psi)$?
-
-   2. Iftheexpansionwerecontinuedtoalowerpressure,
+   2. If the expansion were continued to a lower pressure,
 
    atwhattemperaturewouldthewatercondense?
 
-   3. Draw the process qualitatively (that is, with-
-
-   outshowingnumericalvalues)onatemperature-
-
-   entropydiagram,showingthesaturationcurve.
+   3. Draw the process qualitatively (that is, without showing numerical values)onatemperatureentropydiagram,showing the saturation curve.
 
 ```{exercise}
 :label: prob-8-1
@@ -1192,7 +1186,7 @@ During his adventurous life, he managed to make at least two important discoveri
 :::{admonition} Answer
 :class: dropdown
 
-1) See §8.2.2 page 211; 2) Yes, a simple heat extraction is enough: see example 8.1 page 211; 3) Specific thermal capacity: heat per unit mass δ$q$ needed to generate a temperature change $dT$ (equation 1/16 page 21: $c \equiv \frac{\mathrm{δ}q}{dT}$). Specific entropy: specific heat divided by the temperature at which it issuppliedduringareversibleprocess(equation8/2 page 211); 4) Both temperatures change until they equalize; $\Delta s_{\mathrm{A}}+ \Delta s_{\mathrm{B}}> 0$.
+1) See §8.2.2 page 211; 2) Yes, a simple heat extraction is enough: see example 8.1 page 211; 3) Specific thermal capacity: heat per unit mass δ$q$ needed to generate a temperature change $dT$ (equation 1/16 page 21: $c \equiv \frac{\mathrm{δ}q}{dT}$). Specific entropy: specific heat divided by the temperature at which it issuppliedduring a reversible process(equation8/2 page 211); 4) Both temperatures change until they equalize; $\Delta s_{\mathrm{A}}+ \Delta s_{\mathrm{B}}> 0$.
 
 :::
 ```
@@ -1223,7 +1217,7 @@ During his adventurous life, he managed to make at least two important discoveri
 :label: prob-8-7
 :enumerator: 8.7
 
-**Steam Turbine In the engine room of a large ship (figure 8.14), a steam flow rate of $250 t/h (\sim 550 000 lb/h)$ enters the turbine at $55 bar$ and $660^{\circ}C (798 psi$ and $1220 ^{\circ} F)$. *Photo* CC-by-sa *by Tony Kent***
+**Steam Turbine In the engine room of a large ship (figure 8.14), a steam flow rate of $250 t/h (\sim 550 000 lb/h)$ enters the turbine at 55 bar and $660^{\circ}C (798 psi$ and $1220 ^{\circ} F)$. *Photo* CC-by-sa *by Tony Kent***
 
 :::{admonition} Answer
 :class: dropdown
@@ -1251,7 +1245,7 @@ $W_{\mathrm{turbine}}= -96.26 MW$.
 
 ::::
 
-In the turbine, steam expands following an approximately reversible adiabatic process. When the pressure reaches $1 bar$, steam is extracted at a low flow rate $(1 kg s^{-1})$ to heat another part of the power plant. The remaining steam in the turbine is expanded to a pressure of $0.18 bar (2.6 psi)$.
+In the turbine, steam expands following an approximately reversible adiabatic process. When the pressure reaches 1 bar, steam is extracted at a low flow rate $(1 kg s^{-1})$ to heat another part of the power plant. The remaining steam in the turbine is expanded to a pressure of $0.18 bar (2.6 psi)$.
 
 What is the power delivered by the turbine?
 
@@ -1259,7 +1253,7 @@ What is the power delivered by the turbine?
 :label: prob-8-11
 :enumerator: 8.11
 
-**Air Pump Air enters a small centrifugal pump with a flow rate of $4 kg/\min$ (figure 8.15). The pump is not isentropic, but its heat losses can be neglected. At the inlet, the air is at $1 bar$ and $15^{\circ}C$. At the outlet, the pressure is $2 bar$ and the temperature is measured at $97^{\circ}C$. 1. What is the power required to operate the compressor? 2. What would be the power if the compression were isentropic? *Photo* CC-by-sa *Jakob Voß (cropped)* 3. Whatwouldbetheheatandworktransfersrequired to return the air to its initial conditions (minimizing heat transfers)?**
+**Air Pump Air enters a small centrifugal pump with a flow rate of $4 kg/\min$ (figure 8.15). The pump is not isentropic, but its heat losses can be neglected. At the inlet, the air is at 1 bar and $15^{\circ}C$. At the outlet, the pressure is 2 bar and the temperature is measured at $97^{\circ}C$. 1. What is the power required to operate the compressor? 2. What would be the power if the compression were isentropic? *Photo* CC-by-sa *Jakob Voß (cropped)* 3. What would be the heat and work transfers required to return the air to its initial conditions (minimizing heat transfers)?**
 
 :::{admonition} Answer
 :class: dropdown
@@ -1270,9 +1264,8 @@ $1)\dot{W}_{\mathrm{pump}}=\dot{mc}_{p}\Delta T = +5.493 kW$ (equations 3/15
 2) Using equation 4/37 $T_{2\mathrm{is}.}= 351.3 K$, that is,
 $78.1^{\circ}C$ or $172.7 ^{\circ} F$, thus$\dot{W}_{\mathrm{ideal}}= +4.231 kW$;
 3) One possibility: isentropic expansion to obtain
-$W_{2\rightarrow 1}= -4.231 kW$, then a necessary cooling with-
-out work of$\dot{Q}_{2\rightarrow 1}= -1.262 kW$. All reversible
-processes with a net sum of transfers taking these values(forexampleduringacooledexpansion)will allow to return to 1.
+$W_{2\rightarrow 1}= -4.231 kW$, then a necessary cooling without work of$\dot{Q}_{2\rightarrow 1}= -1.262 kW$. All reversible
+processes with a net sum of transfers taking these values(for example during a cooled expansion)will allow to return to 1.
 
 :::
 ```
@@ -1289,7 +1282,7 @@ processes with a net sum of transfers taking these values(forexampleduringacoole
 :label: prob-8-12
 :enumerator: 8.12
 
-**Theoretical Power Plant During the design of an power plant, a group of enthusiastic engineers is studying the possibility of having water follow a Carnot cycle. The heat released by coal combustion is transferred to a steam boiler. The steam is expanded in a turbine, which powers an electric generator. **From A to B** Water is compressed in an isentropic pump. At A, the liquid-vapor mixture is at a pressure of $0.04 bar (0.58 psi)$. At B, the water is in the saturated liquid state, at a pressure of $40 bar (580 psi)$. **From B to C** Water is heated at constant pressure $(40 bar)$ in the boiler. At C, the water is in the saturated vapor state. **From C to D** Water is expanded in an isentropic turbine. At D, the water is at the initial pressure, that is, $0.04 bar$. **From D to A** Water is cooled in a condenser at constant pressure $(0.04 b$ar). 1. Sketch the elements of the circuit followed by the steam, and draw the process qualitatively on a temperature-entropy diagram, showing the saturation curve. 2. What is the dryness fraction of the water when condensation is interrupted (at A)? What is the specific enthalpy at that point? 3. What is the dryness fraction at the turbine outlet (at D) and the specific enthalpy at this point? 4. What is the power delivered by the turbine? 5. What is the power of the boiler? 6. What is the power of the pump? 7. What is the efficiency of the power plant?**
+**Theoretical Power Plant During the design of an power plant, a group of enthusiastic engineers is studying the possibility of having water follow a Carnot cycle. The heat released by coal combustion is transferred to a steam boiler. The steam is expanded in a turbine, which powers an electric generator. **From A to B** Water is compressed in an isentropic pump. At A, the liquid-vapor mixture is at a pressure of $0.04 bar (0.58 psi)$. At B, the water is in the saturated liquid state, at a pressure of $40 bar (580 psi)$. **From B to C** Water is heated at constant pressure $(40 bar)$ in the boiler. At C, the water is in the saturated vapor state. **From C to D** Water is expanded in an isentropic turbine. At D, the water is at the initial pressure, that is, 0.04 bar. **From D to A** Water is cooled in a condenser at constant pressure $(0.04 b$ar). 1. Sketch the elements of the circuit followed by the steam, and draw the process qualitatively on a temperature-entropy diagram, showing the saturation curve. 2. What is the dryness fraction of the water when condensation is interrupted (at A)? What is the specific enthalpy at that point? 3. What is the dryness fraction at the turbine outlet (at D) and the specific enthalpy at this point? 4. What is the power delivered by the turbine? 5. What is the power of the boiler? 6. What is the power of the pump? 7. What is the efficiency of the power plant?**
 
 :::{admonition} Answer
 :class: dropdown
@@ -1320,8 +1313,7 @@ $\mathrm{mal,wehave}\eta _{\mathrm{plant}}= \eta _{\mathrm{Carnot} \mathrm{engin
 13**
 $1)\dot{S}_{\mathrm{high} \mathrm{temp}. \mathrm{wall}}=\dot{m} (\Delta s_{\mathrm{combustion}}+ \Delta s_{\mathrm{water}}) = +91.77 J/(K s) = +91.77 W K^{-1}$;
 $2)\dot{S}_{\mathrm{low} \mathrm{temp}. \mathrm{wall}}= +188.3 W K^{-1}$, and we see that a
-gradient of $10^{\circ}C$ is more penalizing at low temper-
-ature than at high temperature;
+gradient of $10^{\circ}C$ is more penalizing at low temperature than at high temperature;
 $3)\dot{W}_{\mathrm{lost}}=\dot{Q}_{i}nn(\eta _{\mathrm{high} \mathrm{temp}.}- \eta _{\mathrm{low} \mathrm{temp}.}) = 77.9 kW$
 4) To reduce temperature gradients, materials with
 very high thermal conductivity are needed (this is
@@ -1334,7 +1326,7 @@ of course not the only quality required of them… ).
 :label: prob-8-14
 :enumerator: 8.14
 
-**Irreversible Compressions and Expansions The team of engineers in charge of the engine from the previous problem (Carnot cycle operating between $290^{\circ}C$ and $15^{\circ}C$, problem 8.13) discovers that the compression and expansion phases are not reversible. The compressor does bring the water to a high temperature, but its energy consumption is $10 \%$ higher than expected. The turbine does bring the water to a low temperature,butitsupplies$10 \%$lessworkthanexpected. 1. What is the rate of increase of entropy of the steam in each of these two components? 2. By how much do the heat rejections increase? 3. What is the efficiency loss of the system compared to a reversible system?**
+**Irreversible Compressions and Expansions The team of engineers in charge of the engine from the previous problem (Carnot cycle operating between $290^{\circ}C$ and $15^{\circ}C$, problem 8.13) discovers that the compression and expansion phases are not reversible. The compressor does bring the water to a high temperature, but its energy consumption is $10 \%$ higher than expected. The turbine does bring the water to a low temperature,butitsupplies$10 \%$less work than expected. 1. What is the rate of increase of entropy of the steam in each of these two components? 2. By how much do the heat rejections increase? 3. What is the efficiency loss of the system compared to a reversible system?**
 
 :::{admonition} Answer
 :class: dropdown

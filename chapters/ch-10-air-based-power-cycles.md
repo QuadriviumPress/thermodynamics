@@ -20,6 +20,11 @@ Air-Based Power Cycles
 :alt: Illustration from the original text
 :::
 
+:::{admonition} Executive summary
+:class: tip
+Air-based engines are more compact and lighter than steam engines. Many modifications are made to ideal cycles to reduce bulk and adapt to the temperature limits of engine components.
+:::
+
 ## Introduction
 
 In this final chapter, we cover the cycles of engines that use air a as a
@@ -38,7 +43,8 @@ answer the same two questions as its predecessor with liquids/vapors:
 
 these compromises?
 
-**10.1 Why Use an Air-Based Engine?**
+(sec-10-1)=
+## 10.1 Why Use an Air-Based Engine?
 
 The use of air as a working fluid, rather than water, brings several advantages.
 
@@ -52,7 +58,8 @@ The main drawback of air-based engines is that internal combustion requires a hi
 
 Ultimately, the relatively lower weight of air engines compared to their steam counterparts means that they are systematically used when mass plays an important role, such as in air or road transport.
 
-**10.2 Evaluation of Air-Based Engines**
+(sec-10-2)=
+## 10.2 Evaluation of Air-Based Engines
 
 (sec-10-2-1)=
 ### 10.2.1 Thermal efficiency
@@ -73,7 +80,7 @@ In order to address this concept, let us first study the case of an engine whose
 :::{figure} ../images/fig-10-1.jpg
 :label: fig-10-1
 :enumerator: 10.1
-:alt: The cycle of a hypothetical engine with low work ratio. The delivered poweris,andtheefficiency
+:alt: The cycle of a hypothetical engine with low work ratio. The delivered poweris$\dot{W}_{\mathrm{net}}=\dot{W}_{\mathrm{compression}}+\dot{W}_{\mathrm{expansion}}= +90+(-100) = -10 W$,andtheefficiency
 
 The cycle of a hypothetical engine with low work ratio. The delivered poweris$\dot{W}_{\mathrm{net}}=\dot{W}_{\mathrm{compression}}+\dot{W}_{\mathrm{expansion}}= +90+(-100) = -10 W$,andtheefficiency
 :::
@@ -108,14 +115,14 @@ and $W_{\mathrm{compressions}}$ is the shaft power received during compressions.
 :::{figure} ../images/fig-10-2.jpg
 :label: fig-10-2
 :enumerator: 10.2
-:alt: The cycle of a second (also hypothetical) engine, with a high work ratio. The delivered power, and the efficiency
+:alt: The cycle of a second (also hypothetical) engine, with a high work ratio. The delivered power$\dot{W}_{\mathrm{net}}= +10 + (-20) = -10 W$, and the efficiency $\eta _{\mathrm{engine}}=$
 
 The cycle of a second (also hypothetical) engine, with a high work ratio. The delivered power$\dot{W}_{\mathrm{net}}= +10 + (-20) = -10 W$, and the efficiency $\eta _{\mathrm{engine}}=$
 :::
 
 $-\frac{-10}{20} = 50 \%$ are identical to those of the engine described in figure 10.1. *Diagram* CC-0 *Olivier Cleynen*
 
-A machine with a large work ratio loses less of its efficiency when operating outside its optimal speed range: it is therefore more felxible in use. The work ratio is one of the indicators of a engine’s responsiveness, namely, its ability to change power and speed quickly. A parallel can be drawn with the concept of *net profti margin* in economics: all else being equal, it is more interesting to sell items bought at $2$AC for $3$AC than items bought at $100$AC for $101$AC, notably because the profti of $1$AC is then less sensitive to a change in price or cost imposed by the market.
+A machine with a large work ratio loses less of its efficiency when operating outside its optimal speed range: it is therefore more flexible in use. The work ratio is one of the indicators of a engine’s responsiveness, namely, its ability to change power and speed quickly. A parallel can be drawn with the concept of *net profit margin* in economics: all else being equal, it is more interesting to sell items bought at $2$AC for $3$AC than items bought at $100$AC for $101$AC, notably because the profit of $1$AC is then less sensitive to a change in price or cost imposed by the market.
 
 The Carnot engine is the typical example of a thermodynamic cycle with high efficiency but low work ratio. By plotting the cycle on a pressure-volume diagram (figure 7.10 p. 188), this weakness is evident: the curves during the compression and expansion phases are very close to each other. Rankine, when he modified this cycle (§9.4.2), significantly increased the work ratio.
 
@@ -149,7 +156,7 @@ Taking into account each of these factors can justify deliberately limiting the 
 
 Truth be told, there is very little to add to what our eminent and favorite theorist already explained in 1824:
 
-One must not flatter oneself for ever exploiting, in practice, the entirety of the motive power contained in combustibles. Attempts that one would make to to approach this result would prove more harmful than beneficial, if they led to the neglect of other important considerations. The economy of fuel is but one of the conditions to be fulfliled by frie machines; in many circumstances, it is but secondary, and must often yield precedence to the safety, the solidity, the durability of the machine, to the small amount of space that it must be made to occupy, the low cost of its establishment, etc. Knowing how to appreciate, in each case, at their true value, the considerations of convenience and economy that may present themselves; knowing how to discern the most important from those that are merely accessory, weighing them all properly against one another, so as to attain by the easiest means the best possible result, such must be the principal talent of the man [or woman] called upon to lead, to coordinate between them the labors of his [or her] fellow beings, to make them converge toward a useful end, of whatever nature it may be.
+One must not flatter oneself for ever exploiting, in practice, the entirety of the motive power contained in combustibles. Attempts that one would make to to approach this result would prove more harmful than beneficial, if they led to the neglect of other important considerations. The economy of fuel is but one of the conditions to be fulfilled by fire machines; in many circumstances, it is but secondary, and must often yield precedence to the safety, the solidity, the durability of the machine, to the small amount of space that it must be made to occupy, the low cost of its establishment, etc. Knowing how to appreciate, in each case, at their true value, the considerations of convenience and economy that may present themselves; knowing how to discern the most important from those that are merely accessory, weighing them all properly against one another, so as to attain by the easiest means the best possible result, such must be the principal talent of the man [or woman] called upon to lead, to coordinate between them the labors of his [or her] fellow beings, to make them converge toward a useful end, of whatever nature it may be.
 
 Sadi Carnot, 1824 [[4](#ref-4)]
 
@@ -160,14 +167,17 @@ Sadi Carnot, 1824 [[4](#ref-4)]
 
 ::::
 
-**10.3 Reciprocating Engines** Reciprocating engines, often called *piston engines*, take in a fin ite amount of air and perform their thermodynamic cycle on this mass. The cycle is repeated several times over time, and often several times in parallel, in order to provide continuous power. An automobile engine typically performs about ffity cycles per second.
+(sec-10-3)=
+## 10.3 Reciprocating Engines
+
+Reciprocating engines, often called *piston engines*, take in a fin ite amount of air and perform their thermodynamic cycle on this mass. The cycle is repeated several times over time, and often several times in parallel, in order to provide continuous power. An automobile engine typically performs about ffity cycles per second.
 
 (sec-10-3-1)=
 ### 10.3.1 Advantages of piston engines
 
 From a thermodynamic perspective, the main advantage of these engines is that it is much easier to manipulate a fixed mass of air than a continuous flow. Manufacturing a cylindrical piston to fti tightly in a cylindrical bore is comparatively simple, and this allows the volume and pressure of the fluid to be precisely controlled. For example, it is possible to carry out combustion at a constant temperature (as prescribed by Carnot) by varying the volume during combustion. The same operation in a steady flow machine would require combustion to take place in a turbine (§4.4.4 p. 98), which is much more challenging.
 
-Another advantage of piston engines is that the maximum temperature of the cycle is only reached sporadically (periodically, but always briefyl ). During combustion, it is thus possible to reach gas temperatures that exceed the metallurgical limits of the engine, which, as we saw in chapter 7 (*the second law*), improves efficiency.
+Another advantage of piston engines is that the maximum temperature of the cycle is only reached sporadically (periodically, but always briefly ). During combustion, it is thus possible to reach gas temperatures that exceed the metallurgical limits of the engine, which, as we saw in chapter 7 (*the second law*), improves efficiency.
 
 On the other hand, the weight and complexity of mechanisms of piston engines (connecting rods, crankshaft, valves, and the various circuitry to and from the cylinders) become major disadvantages in applications very high powers and rotational speeds are required.
 
@@ -180,7 +190,7 @@ The German engineer Nicolaus Otto is credited with the development of the engine
 :alt: Illustration from the original text
 :::
 
-Figure10.3: Otto’stheoreticalcyclerepresentedonpressure-volumeandtemperatureentropy diagrams. These diagrams depict the ideal path, without irreversibilities in the compression or expansion. *Diagrams* CC-0 *Olivier Cleynen*
+Figure 10.3: Otto’s theoretical cycle represented on pressure-volume and temperature-entropy diagrams. These diagrams depict the ideal path, without irreversibilities in the compression or expansion. *Diagrams* CC-0 *Olivier Cleynen*
 
 The Otto cycle is designed to allow for a simple implementation of the heat addition phase. The fuel is mixed with air before being inserted into the engine, and a very rapid combustion is triggered with a spark when the volume in the cylinder is minimal: this is known as *spark ignition*. Otto originally intended his engine for stationary applications, but its relative simplicity and responsiveness would ensure its success in transportation (notably through his son Gustav Otto, an aircraft manufacturer whose company would later become bmw).
 
@@ -218,7 +228,7 @@ it is possible to show that [Equation 10/2](#eq-10-2) can be reformulated to exp
 \eta _{\mathrm{Otto}}= 1 - \varepsilon ^{\gamma -1}1
 :::
 
-This equation indicates that the efficiency of the Otto engine depends solely on the compression ratio, and not on the amount of heat supplied during combustion. This may at first be surprising: why does $T_{\mathrm{C}}$, the maximum temperature of the cycle, no longer appear here? The answer is that in this cycle, as the amount of burned fuel is increased, the increase in the average temperature during heat addition is exactly ofsfet by the increase in the average temperature during heat rejection.
+This equation indicates that the efficiency of the Otto engine depends solely on the compression ratio, and not on the amount of heat supplied during combustion. This may at first be surprising: why does $T_{\mathrm{C}}$, the maximum temperature of the cycle, no longer appear here? The answer is that in this cycle, as the amount of burned fuel is increased, the increase in the average temperature during heat addition is exactly offset by the increase in the average temperature during heat rejection.
 
 [Equation 10/4](#eq-10-4) owes its simplicity to the the fact that we neglected the change in air properties during combustion, as well as the irreversibilities during compression and expansion. It should therefore be used with great caution; however, the trend it describes remains valid. Engineers are constantly seeking to increase the compression ratio of their engines to enhance efficiency. An immediate limit to this ratio is the temperature at which the air-fuel mixture spontaneously ignites, causing premature combustion.
 
@@ -248,19 +258,15 @@ temperature-entropy diagrams. These diagrams depict the ideal path, without comp
 
 *Diagrams* CC-0 *Olivier Cleynen*
 
-Since the heat addition $q_{\mathrm{combustion}}= c_{p}(T_{\mathrm{C}}- T_{\mathrm{B}})$ (4/17) is done simultane- « $^{[\mathrm{What} \mathrm{is} \mathrm{needed} \mathrm{is} \mathrm{the}] \mathrm{produc}-}$ tion of a very high temperature (much
+Since the heat addition $q_{\mathrm{combustion}}= c_{p}(T_{\mathrm{C}}- T_{\mathrm{B}})$ (4/17) is done simultaneously with the production of work, there is no simple expression for the efficiency $\eta _{\mathrm{Diesel}}$, which no longer depends solely on the compression ratio. It will need to be calculated by studying the cycle step by step. It will then be observed that all else being equal (same compression ratio and same maximum temperature), the Diesel cycle has a lower efficiency than the Otto cycle.
 
-ously with the production of work, there is no simple expression for the above the ignition temperature of the
+:::{aside}
+« [What is needed is the] production of a very high temperature (much above the ignition temperature of the combustible) not by combustion, but by compression of the air… the combustible, therefore, must not be previously mixed with the air, but the latter must be compressed separately, otherwise, long before the required compression has been attained, ignition will be produced, and the cycle interrupted. »
 
-It will need to be calculated by studying the cycle step by step. It will then bustible, therefore, must not be previously mixed with the air, but the lat-
+Rudolf Diesel, 1893 [[23](#ref-23), [24](#ref-24)]
+:::
 
-be observed that all else being equal (same compression ratio and same ter must be compressed separately, oth-
-
-maximum temperature), the Diesel cycle has a lower efficiency than the erwise, long before the required compression has been attained, ignition
-
-Otto cycle. will be produced, and the cycle inter-
-
-In order to understand the interest of this cycle and the true difference $^{\mathrm{rupted}.}$ » between a Diesel engine and a gasoline engine, some historical context is Rudolf Diesel, 1893 [[23](#ref-23), [24](#ref-24)] needed. In 1892, Rudolf Diesel designed a “rational” engine to implement the Carnot cycle. He was looking for two characteristics:
+In order to understand the interest of this cycle and the true difference between a Diesel engine and a gasoline engine, some historical context is needed. In 1892, Rudolf Diesel designed a “rational” engine to implement the Carnot cycle. He was looking for two characteristics:
 
 • a high compression ratio, to increase the air temperature before combustion;
 
@@ -268,9 +274,7 @@ In order to understand the interest of this cycle and the true difference $^{\ma
 
 To achieve this, Diesel had to wait until the end of compression to inject the fuel, in order to avoid premature ignition. The isothermal heat addition requires a progressive combustion. Thus, the original Diesel engine is inherently equipped with *direct fuel injection*, independent of air intake. The Diesel cycle is interesting because it *enables* a higher compression ratio and combustion quality compared to the Otto cycle.
 
-Diesel’s engine evolved continuously from the impractical concept described in the 1893 *Theory and Construction of a Rational Heat Engine Intended to Replace the Steam Engines and Combustion Engines Known to Date* [[23](#ref-23), [24](#ref-24)] $(400 bar$ and isothermal combustion of coal powder) to the first production models he developed at the manufacturer man $(40 bar$ and isobaric combustion of petroleum). Like Otto, Diesel initially focused on stationary engines (his first prototypes were single-cylinder and over three meters high), but it was ultimately applications in commercial transportation, where its ex-
-
-cellent efficiency and operating economics gave him the advantage over spark-ignition engines, that brought his work fame.
+Diesel’s engine evolved continuously from the impractical concept described in the 1893 *Theory and Construction of a Rational Heat Engine Intended to Replace the Steam Engines and Combustion Engines Known to Date* [[23](#ref-23), [24](#ref-24)] $(400 bar$ and isothermal combustion of coal powder) to the first production models he developed at the manufacturer man $(40 bar$ and isobaric combustion of petroleum). Like Otto, Diesel initially focused on stationary engines (his first prototypes were single-cylinder and over three meters high), but it was ultimately applications in commercial transportation, where its excellent efficiency and operating economics gave him the advantage over spark-ignition engines, that brought his work fame.
 
 (sec-10-3-4)=
 ### 10.3.4 Implementation of the cycles
@@ -316,7 +320,7 @@ speed in the cylinders. The traditional approach to overcome this issue is to in
 :::{figure} ../images/fig-10-6.png
 :label: fig-10-6
 :enumerator: 10.6
-:alt: On the left, a 1950 Curtiss-Wright r-3350 Duplex-Cyclone of with 18 cylinders arranged in two successive rows. Four of these engines powered
+:alt: On the left, a 1950 Curtiss-Wright r-3350 *Duplex-Cyclone* of $3500 hp$ with 18 cylinders arranged in two successive rows. Four of these engines powered the long-range aircraft Lockheed *Super Constellation*. On the right, a 1991 Honda ra121e V12 engine. It powered the McLaren mp4/6 Formula 1 car.
 
 On the left, a 1950 Curtiss-Wright r-3350 *Duplex-Cyclone* of $3500 hp$ with 18 cylinders arranged in two successive rows. Four of these engines powered the long-range aircraft Lockheed *Super Constellation*. On the right, a 1991 Honda ra121e V12 engine. It powered the McLaren mp4/6 Formula 1 car.
 :::
@@ -327,18 +331,19 @@ Unfortunately, the mechanical complexity, size, and manufacturing and maintenanc
 
 A commonly adopted solution for this is *turbocharging*. It involves delegating some of the compression and expansion work to a small device called a *turbocharger* or simply *turbo*, which is compact and lightweight (figure 10.7). The turbo’s compressor is powered by its turbine, which operates with exhaust gases (we will study this system further in §10.5.2). Turbocharging helps increase the specific power (that is to say, it reduces the size and speed of an engine for a given power output).
 
-Since the use of a turbocharger negatively afefcts the responsiveness of an engine, it is possible to allow the intake air to bypass it while the engine speed is changing. Furthermore, temperature changes in the turbo can be compensated for by cooling before insertion into the cylinders (this technique is studied further in §10.6.1). These processes make modern engines complex thermodynamic systems capable of performing a wide range of very different cycles depending on operating conditions.
+Since the use of a turbocharger negatively affects the responsiveness of an engine, it is possible to allow the intake air to bypass it while the engine speed is changing. Furthermore, temperature changes in the turbo can be compensated for by cooling before insertion into the cylinders (this technique is studied further in §10.6.1). These processes make modern engines complex thermodynamic systems capable of performing a wide range of very different cycles depending on operating conditions.
 
-Figure10.7: Acutawayviewofaturbotoshowitsinternalarrangement. Atmospheric airentersfromtherightandiscompressedasitispropelledoutwardbythecentrifugal compressor; it is then fed into the engine. Exhaust gases enter from the center left and exit to the left after spinning the centripetal turbine, which powers the compressor viathecentralrotatingshaft. Sincetheonlymovingpartisverycompact(about$20 cm$ here), very high rotation speeds can be achieved, typically exceeding $200 000 rpm$. *Photo* nasa *(public domain)*
+Figure 10.7: A cutaway view of a turbo to show its internal arrangement. Atmospheric air enters from the right and is compressed as it is propelled outward by the centrifugal compressor; it is then fed into the engine. Exhaust gases enter from the center left and exit to the left after spinning the centripetal turbine, which powers the compressor via the central rotating shaft. Since the only moving part is very compact(about$20 cm$ here), very high rotation speeds can be achieved, typically exceeding $200 000 rpm$. *Photo* nasa *(public domain)*
 
-**10.4 Components of Gas Turbomachinery** Before delving into the cycles of turbine engines, we will briefly review the operation of their main components. Since turbomachines operate with steady fluid flow, we will consistently refer to the concepts of chapter 3 (*open systems*) from now on.
+(sec-10-4)=
+## 10.4 Components of Gas Turbomachinery
+
+Before delving into the cycles of turbine engines, we will briefly review the operation of their main components. Since turbomachines operate with steady fluid flow, we will consistently refer to the concepts of chapter 3 (*open systems*) from now on.
 
 (sec-10-4-1)=
 ### 10.4.1 Compressor
 
-« $^{\mathrm{In} \mathrm{order} \mathrm{to} \mathrm{grant} \mathrm{air} \mathrm{a} \mathrm{great} \mathrm{ex}-}$ The compression and expansion phases in engines are often adiabatic, and pansion in volume, in order to produce always irreversible. It is difficult to achieve high-quality flow in the com-
-
-through this expansion a large change $^{\mathrm{in} \mathrm{temperature}, \mathrm{it} \mathrm{would} \mathrm{be} \mathrm{necessary}}$ pressor, moreso than in the turbine because the pressure gradient promotes to take it first under a sufficiently high boundary layer separation. It is a heavy, bulky component with complex
+« $^{\mathrm{In} \mathrm{order} \mathrm{to} \mathrm{grant} \mathrm{air} \mathrm{a} \mathrm{great} \mathrm{ex}-}$ The compression and expansion phases in engines are often adiabatic, and pansion in volume, in order to produce always irreversible. It is difficult to achieve high-quality flow in the comthrough this expansion a large change in temperature it would be necessary pressor, moreso than in the turbine because the pressure gradient promotes to take it first under a sufficiently high boundary layer separation. It is a heavy, bulky component with complex
 
 pressure [...] This operation would require a special apparatus, an apparatus geometry ([Figures 10.8](#fig-10-8) and 10.9). Most compressors are *axial*, meaning that
 
@@ -405,7 +410,7 @@ and $T_{\mathrm{actual}}$ is the actual outlet temperature $(K)$.
 :label: ex-10-1
 :enumerator: 10.1
 
-For air, we have $c_{p (\mathrm{air})}= 1005 J kg^{-1}K^{-1}, c_{v (\mathrm{air})}= 718 J kg^{-1}K^{-1}, R_{\mathrm{air}}= 287 J kg^{-1}K^{-1}$, and $\gamma _{\mathrm{air}}= 1.4$. The compressor of a turbofan jet engine has an isentropic efficiency of $85 \%$; it takes in air at a rate of $38 kg s^{-1}$ at $1 bar$ and $5^{\circ}C$. The outlet pressure is $40 bar$. What is the required power?
+For air, we have $c_{p (\mathrm{air})}= 1005 J kg^{-1}K^{-1}, c_{v (\mathrm{air})}= 718 J kg^{-1}K^{-1}, R_{\mathrm{air}}= 287 J kg^{-1}K^{-1}$, and $\gamma _{\mathrm{air}}= 1.4$. The compressor of a turbofan jet engine has an isentropic efficiency of $85 \%$; it takes in air at a rate of $38 kg s^{-1}$ at 1 bar and $5^{\circ}C$. The outlet pressure is 40 bar. What is the required power?
 
 The process can be qualitatively represented on a $T - s$ diagram as shown below.
 
@@ -518,7 +523,7 @@ Louis Joseph Gay-Lussac, 1807 [[3](#ref-3)]
 :::{figure} ../images/fig-10-12.jpg
 :label: fig-10-12
 :enumerator: 10.12
-:alt: Turbine of a gas generator. The photographed turbine, a Siemens sgt5, can accept an air and water flow rate of . It delivers
+:alt: Turbine of a gas generator. The photographed turbine, a Siemens sgt5, can accept an air and water flow rate of $690 kg s^{-1}(1521 lb/s)$. It delivers
 
 Turbine of a gas generator. The photographed turbine, a Siemens sgt5, can accept an air and water flow rate of $690 kg s^{-1}(1521 lb/s)$. It delivers
 :::
@@ -591,7 +596,7 @@ Ideally, the nozzle expands the gases to ambient pressure and converts all the c
 :label: ex-10-2
 :enumerator: 10.2
 
-For burnt gases, we have $c_{p (\mathrm{gases})}= 1150 J kg^{-1}K^{-1}, c_{v (\mathrm{gases})}= 823 J kg^{-1}K^{-1}, R_{\mathrm{gases}}= 327 J kg^{-1}K^{-1}$, and $\gamma _{\mathrm{gases}}= 1.333$. A nozzle is fed with a steady flow of combustion gases at $2 bar, 10 m s^{-1}$, and $400^{\circ}C (29 psi, 33 ft/s, 752 ^{\circ} F)$. At what speed can it accelerate these gases when they are rejected at $1 bar$, if we neglect irreversibilities?
+For burnt gases, we have $c_{p (\mathrm{gases})}= 1150 J kg^{-1}K^{-1}, c_{v (\mathrm{gases})}= 823 J kg^{-1}K^{-1}, R_{\mathrm{gases}}= 327 J kg^{-1}K^{-1}$, and $\gamma _{\mathrm{gases}}= 1.333$. A nozzle is fed with a steady flow of combustion gases at $2 bar, 10 m s^{-1}$, and $400^{\circ}C (29 psi, 33 ft/s, 752 ^{\circ} F)$. At what speed can it accelerate these gases when they are rejected at 1 bar, if we neglect irreversibilities?
 
 The process which would allow the highest ejection speed is an
 
@@ -635,9 +640,10 @@ of the gases at the outlet of the turbine (and therefore at the inlet of the noz
 
 ````
 
-Finally, we note that the *air intake* of aeronautical engines often serves as a difufser: the mirror opposite of a nozzle in function. It thus slows down the air and increases its pressure. On supersonic aircraft, a well-designed inlet can generate a compression ratio of 2, with a corresponding temperature increase.
+Finally, we note that the *air intake* of aeronautical engines often serves as a diffuser: the mirror opposite of a nozzle in function. It thus slows down the air and increases its pressure. On supersonic aircraft, a well-designed inlet can generate a compression ratio of 2, with a corresponding temperature increase.
 
-**10.5 Gas Turbine Confgiurations**
+(sec-10-5)=
+## 10.5 Gas Turbine Configurations
 
 (sec-10-5-1)=
 ### 10.5.1 Advantages of gas turbines
@@ -655,13 +661,13 @@ Within the realm of *turbomachinery* (machines which transfer power between a fl
 
 • In air propulsion, the working fluid can be used as a medium of propulsion itself. It is sufficient to let the air exit the turbine with a residual pressure and let it expand in a nozzle. This generates a thrust by reaction (equal to the mass flow rate multiplied by its speed): this is the working principle of the jet engine.
 
-Thus, gas turbines are used in applications where high power is required « $^{\mathrm{As} \mathrm{the} \mathrm{steam} \mathrm{turbine}, \mathrm{without}}$ bringing an actual betterment of steam
+Thus, gas turbines are used in applications where high power is required « As the steam turbine without bringing an actual betterment of steam
 
 with significant weight or space constraints. economy, has entered into the industry because of its constructive simplicity,
 
 The major drawback of gas turbines is that their efficiency and responsiveso will it be with a gas turbine, which
 
-ness drop very quickly at low power levels. At partial load, the compression $^{\mathrm{is} \mathrm{constructively} \mathrm{simpler} \mathrm{than} \mathrm{the} \mathrm{gas}}$ motor, provided it will only exceed the
+ness drop very quickly at low power levels. At partial load, the compression is constructively simpler than the gas motor, provided it will only exceed the
 
 ratio and isentropic efficiency of turbines and compressors collapse, because
 
@@ -680,7 +686,7 @@ The heart of any gas turbine engine is called the *gas generator*. It contains o
 :::{figure} ../images/fig-10-16.svg
 :label: fig-10-16
 :enumerator: 10.16
-:alt: A “gas generator” (schematic drawing and temperature-entropy diagram). This machine has no interest in itself but has many derived applicati
+:alt: A “gas generator” (schematic drawing and temperature-entropy diagram). This machine has no interest in itself but has many derived applications. One of them is the *turbocharger*, for which a piston engine acts as the combustion
 
 A “gas generator” (schematic drawing and temperature-entropy diagram). This machine has no interest in itself but has many derived applications. One of them is the *turbocharger*, for which a piston engine acts as the combustion
 :::
@@ -699,7 +705,7 @@ The *turbojet* engine (figure 10.17) is the first application that has been made
 :::{figure} ../images/fig-10-17.svg
 :label: fig-10-17
 :enumerator: 10.17
-:alt: Turbojet (schematic and temperature-entropy diagram). At the outlet of the turbine, the air is still pressurized; it is expanded in a nozzle
+:alt: Turbojet (schematic and temperature-entropy diagram). At the outlet of the turbine, the air is still pressurized; it is expanded in a nozzle in order to be accelerated.
 
 Turbojet (schematic and temperature-entropy diagram). At the outlet of the turbine, the air is still pressurized; it is expanded in a nozzle in order to be accelerated.
 :::
@@ -727,7 +733,7 @@ For a given engine mass flow, powering a propeller or the fan of a turbofan engi
 :::{figure} ../images/fig-10-18.svg
 :label: fig-10-18
 :enumerator: 10.18
-:alt: Schematics and temperature-entropy diagram of a turboprop (top) and a turboshaft engine (bottom). The power extracted by the turbine exceeds
+:alt: Schematics and temperature-entropy diagram of a turboprop (top) and a turboshaft engine (bottom). The power extracted by the turbine exceeds that absorbed by the compressor and is used to power the propeller or a generator.
 
 Schematics and temperature-entropy diagram of a turboprop (top) and a turboshaft engine (bottom). The power extracted by the turbine exceeds that absorbed by the compressor and is used to power the propeller or a generator.
 :::
@@ -748,7 +754,7 @@ There are two separate air flows within a turbofan:
 :::{figure} ../images/fig-10-19.jpg
 :label: fig-10-19
 :enumerator: 10.19
-:alt: Schematic diagram of a turbofan. The engine’s thermodynamic core (A E) mechanically powers the fan, which allows the bypass flow (A G) to pr
+:alt: Schematic diagram of a turbofan. The engine’s thermodynamic core (A $\rightarrow$ E) mechanically powers the fan, which allows the bypass flow (A $\rightarrow$ G) to provide the majority of the thrust.
 
 Schematic diagram of a turbofan. The engine’s thermodynamic core (A $\rightarrow$ E) mechanically powers the fan, which allows the bypass flow (A $\rightarrow$ G) to provide the majority of the thrust.
 :::
@@ -782,7 +788,7 @@ The high-pressure turbine drives the high-pressure compressor (high-speed spool)
 :::{figure} ../images/fig-10-20.svg
 :label: fig-10-20
 :enumerator: 10.20
-:alt: Turboshaft engine with a free turbine (schematic and temperature-entropy diagram). The power supplied by the engine comes exclusively from t
+:alt: Turboshaft engine with a free turbine (schematic and temperature-entropy diagram). The power supplied by the engine comes exclusively from the free turbine.
 
 Turboshaft engine with a free turbine (schematic and temperature-entropy diagram). The power supplied by the engine comes exclusively from the free turbine.
 :::
@@ -801,7 +807,8 @@ Twin-spool turboshaft engine (schematic and temperature-entropy diagram). The tw
 
 Just like for the free turbine, this arrangement allows each spool to operate at its own speed. Indeed, as the air pressure increases in the compressor, its density and temperature also increase. This configuration allows the blades to be operated at higher speeds, thus reducing their size.
 
-**10.6 Modifciation of Gas Turbine Cycles**
+(sec-10-6)=
+## 10.6 Modification of Gas Turbine Cycles
 
 (sec-10-6-1)=
 ### 10.6.1 Intercooling and reheat
@@ -817,9 +824,9 @@ In order reduce the power absorbed by the compressor, *intercooling* is sometime
 :::{figure} ../images/fig-10-22.jpg
 :label: fig-10-22
 :enumerator: 10.22
-:alt: A turboshaft generator with intercooler and reheat system (schematic and temperature-entropy diagram). Theintercoolercoolstheairinthemidstof
+:alt: A turboshaft generator with intercooler and reheat system (schematic and temperature-entropy diagram). The intercooler cools the air in the midst of
 
-A turboshaft generator with intercooler and reheat system (schematic and temperature-entropy diagram). Theintercoolercoolstheairinthemidstofcompression;whilethesecondcombustion chamber reheats the gases it in the midst of the expansion. The two modifications are independent of each other and each can be installed alone.
+A turboshaft generator with intercooler and reheat system (schematic and temperature-entropy diagram). The intercooler cools the air in the midst of compression;while the second combustion chamber reheats the gases it in the midst of the expansion. The two modifications are independent of each other and each can be installed alone.
 :::
 
 *Schematic* CC-by-sa *Olivier Cleynen Diagram* CC-0 *Olivier Cleynen*
@@ -839,12 +846,12 @@ In the same vein, we can increase the specific power supplied by the turbine by 
 
 It will not have escaped the student that the efficiency is inevitably reduced by the use of intercooling. Indeed, the combustion chamber must supply more heat, at a lower average temperature. This reduction in efficiency will be balanced against the reduction in the size of the compressor (usually the largest component of an engine) and the increase in specific power. Intercooling and reheat are typical of machines where the power-to-size ratio must be maximized.
 
-In order to partially ofsfet the loss of efficiency in stationary engines, it is sometimes possible to recover heat from the exhaust gases and use it to heat the air at the compressor outlet, thus relieving the combustion chamber. The heat exchanger is sometimes called *economizer* (figure 10.23); it is left to the student to trace the cycle followed on a temperature-entropy diagram and to find the conditions required for its operation.
+In order to partially offset the loss of efficiency in stationary engines, it is sometimes possible to recover heat from the exhaust gases and use it to heat the air at the compressor outlet, thus relieving the combustion chamber. The heat exchanger is sometimes called *economizer* (figure 10.23); it is left to the student to trace the cycle followed on a temperature-entropy diagram and to find the conditions required for its operation.
 
 :::{figure} ../images/fig-10-23.jpg
 :label: fig-10-23
 :enumerator: 10.23
-:alt: Turboshaft generator with an intercooler and an economizer heat exchanger. The exhaust gases are redirected inside the engine to supply heat
+:alt: Turboshaft generator with an intercooler and an economizer heat exchanger. The exhaust gases are redirected inside the engine to supply heat to the gases at the entrance of the combustion chamber. It is left to the student to determine the limits of the process.
 
 Turboshaft generator with an intercooler and an economizer heat exchanger. The exhaust gases are redirected inside the engine to supply heat to the gases at the entrance of the combustion chamber. It is left to the student to determine the limits of the process.
 :::
@@ -861,7 +868,7 @@ Like reheat, afterburning alters the properties (specific volume in particular) 
 :::{figure} ../images/fig-10-24.svg
 :label: fig-10-24
 :enumerator: 10.24
-:alt: Afterburner on a dual-flow turbojet engine (schematic and temperature-entropy diagram). States E and H are not necessarily merged in practic
+:alt: Afterburner on a dual-flow turbojet engine (schematic and temperature-entropy diagram). States E and H are not necessarily merged in practice.
 
 Afterburner on a dual-flow turbojet engine (schematic and temperature-entropy diagram). States E and H are not necessarily merged in practice.
 :::
@@ -895,16 +902,16 @@ Such turbine cooling comes at a significant cost. First, in a real engine, less 
 :::{figure} ../images/fig-10-25.svg
 :label: fig-10-25
 :enumerator: 10.25
-:alt: Turbine cooling using air taken from the compressor (schematic and temperature-entropy diagram). This air, at moderate temperature, bypasses
+:alt: Turbine cooling using air taken from the compressor (schematic and temperature-entropy diagram). This air, at moderate temperature, bypasses the combustion chamber and never comes into contact with the fuel. Here the represented engine is a turboshaft, but turbine cooling can be used in any configuration.
 
-Turbine cooling using air taken from the compressor (schematic and temperature-entropy diagram). This air, at moderate temperature, bypasses the combustionchamberandnevercomesintocontactwiththefuel. Heretherepresented engine is a turboshaft, but turbine cooling can be used in any configuration.
+Turbine cooling using air taken from the compressor (schematic and temperature-entropy diagram). This air, at moderate temperature, bypasses the combustion chamber and never comes into contact with the fuel. Here the represented engine is a turboshaft, but turbine cooling can be used in any configuration.
 :::
 
 *Schematic* CC-by-sa *Olivier Cleynen Diagram* CC-0 *Olivier Cleynen*
 
-are isentropic, this energy cost is zero). The circulation of this air therefore represents a burden that must be ofsfet by the increase in efficiency it generates. Secondly, the compressor and the turbine must be oversized to accommodate a larger air flow.
+are isentropic, this energy cost is zero). The circulation of this air therefore represents a burden that must be offset by the increase in efficiency it generates. Secondly, the compressor and the turbine must be oversized to accommodate a larger air flow.
 
-Turbine cooling is a major research area in aeronautical propulsion. Techniques from a handful of feilds (materials, fluid mechanics, mechanical design, combustion chemistry) are combined there in order to improve the thermodynamics of the engines.
+Turbine cooling is a major research area in aeronautical propulsion. Techniques from a handful of fields (materials, fluid mechanics, mechanical design, combustion chemistry) are combined there in order to improve the thermodynamics of the engines.
 
 alone maintain the aircraft flying while supplying many systems (pressurization, de-icing, heating, electrical and pneumatic generation) for several hours with demonstrated reliability.
 
@@ -915,7 +922,7 @@ cooling, and two main air flows. It is left to the student to trace the cycle on
 :::{figure} ../images/fig-10-26.jpg
 :label: fig-10-26
 :enumerator: 10.26
-:alt: Thermodynamic circuit of a modern turbofan engine. The machine combines multiple spools, mechanical and pneumatic power extractions, compres
+:alt: Thermodynamic circuit of a modern turbofan engine. The machine combines multiple spools, mechanical and pneumatic power extractions, compressor bleeds for turbine
 
 Thermodynamic circuit of a modern turbofan engine. The machine combines multiple spools, mechanical and pneumatic power extractions, compressor bleeds for turbine
 :::
@@ -971,11 +978,9 @@ Schematic diagram of the thermodynamic
 :class: note
 :label: hist-10-15
 
-sign approach. According to them, a simple tur-
+sign approach. According to them, a simple turand of the Diesel engine each drove one propeller. Howbocharged Diesel engine could only benefit from
 
-and of the Diesel engine each drove one propeller. Howbocharged Diesel engine could only benefti from
-
-ever, the two units were mounted in series: the air first passed through the compressors, then through the cylin- turbocharging over a very narrow power range — ders, and finally through the turbine(s). The engine power, outside of this range, the turbine power would be as was customary in 1950, was controlled using a single either in surplus (and therefore lost) or insufficient
+ever, the two units were mounted in series: the air first passed through the compressors, then through the cyl. turbocharging over a very narrow power range — ders, and finally through the turbine(s). The engine power, outside of this range, the turbine power would be as was customary in 1950, was controlled using a single either in surplus (and therefore lost) or insufficient
 
 mechanical control lever! to power the compressor. A different arrangement,
 
@@ -1039,7 +1044,7 @@ that it is the unexpected revenge of the Anglo-Saxon
 :::{figure} ../images/fig-10-30.jpg
 :label: fig-10-30
 :enumerator: 10.30
-:alt: Thermodynamic circuit of the air in a 2014 Formula 1 engine. The shaft of the compressor (left) is not connected to the six-cylinder engine
+:alt: Thermodynamic circuit of the air in a 2014 Formula 1 engine. The shaft of the compressor (left) is not connected to the six-cylinder engine (center block) or the car’s wheels. However, an electric motor/generator (named mgu-h) allows for extraction or addition of electrical energy. During high power phases, the power of the turbine (right) is in surplus and can be used to charge onboard batteries or drive the wheels with an electric motor. During low power phases, the turbine power is in deficit and the turbo can be driven by the generator to maintain the compression ratio and increase responsiveness.
 
 Thermodynamic circuit of the air in a 2014 Formula 1 engine. The shaft of the compressor (left) is not connected to the six-cylinder engine (center block) or the car’s wheels. However, an electric motor/generator (named mgu-h) allows for extraction or addition of electrical energy. During high power phases, the power of the turbine (right) is in surplus and can be used to charge onboard batteries or drive the wheels with an electric motor. During low power phases, the turbine power is in deficit and the turbo can be driven by the generator to maintain the compression ratio and increase responsiveness.
 :::
@@ -1052,7 +1057,7 @@ Thermodynamic circuit of the air in a 2014 Formula 1 engine. The shaft of the co
 :label: prob-10-1
 :enumerator: 10.1
 
-**Knowledge Recap Questions 1. Whydopistonenginesallowforhighercombustion temperatures than gas turbines? 2. What advantage does the Diesel cycle have over the Otto cycle? 3. Draw the cycle undergone by the air in a single-turbine turbojet on a pressure-volume diagram and on a temperature-entropy diagram, qualitatively (that is, without showing numerical values). 4. Why are two concentric spools (two shafts each connecting a compressor and a turbine) used in some gas turbines? 5. Draw the cycle undergone by the air in an intercooled turboshaft engine with an economizer heat exchanger (figure 10.23) on a temperature-entropy diagram, qualitatively.**
+**Knowledge Recap Questions 1. Why do piston engines allow for higher combustion temperatures than gas turbines? 2. What advantage does the Diesel cycle have over the Otto cycle? 3. Draw the cycle undergone by the air in a single-turbine turbojet on a pressure-volume diagram and on a temperature-entropy diagram, qualitatively (that is, without showing numerical values). 4. Why are two concentric spools (two shafts each connecting a compressor and a turbine) used in some gas turbines? 5. Draw the cycle undergone by the air in an intercooled turboshaft engine with an economizer heat exchanger (figure 10.23) on a temperature-entropy diagram, qualitatively.**
 
 ```
 
@@ -1069,8 +1074,8 @@ Thermodynamic circuit of the air in a 2014 Formula 1 engine. The shaft of the co
 $(24)/3T6^{\mathrm{B}}) \mathrm{a}=\mathrm{nd} TT_{\mathrm{CA}}(=$^{\frac{v_{\mathrm{A}}}{v_{\mathrm{B}}}}$ \frac{q)_{\mathrm{co}}^{\gamma _{\mathrm{maibru}}-_{\mathrm{st}}1_{\mathrm{ion}}}}{c_{v (\mathrm{gaz})}} =+ \frac{c6_{v (}4_{\mathrm{air}}0_{)}}{c_{v (\mathrm{gaz})}}.T6_{\mathrm{B}}K==116366.37.K5^{\circ}=C 893.3^{\circ}C = 1640 ^{\circ} F$;
 3) $T_{\mathrm{D}}= 610.16 K = 337^{\circ}C = 638.6 ^{\circ} F$ (4/36) so
 $q_{\mathrm{D}\rightarrow \mathrm{A}}= c_{v (\mathrm{gaz})}(T_{\mathrm{D}}- T_{\mathrm{A}}) = -260.1 kJ kg^{-1}$;
-$4)\eta _{\mathrm{engine}}= \frac{q_{\mathrm{net}}}{q_{\mathrm{in}}} = 47.99\%(\mathrm{purelytheoreticalvalue},$
-since compressions and expansions are reversible: in practice, expect around $35 \%)$; 5) See §10.3.4 p. 276; 6)Powerdecreasessincetheairdensityoftheatmo- sphere decreases with altitude. In order to increase $m_{\mathrm{air}}$, one can, for example, install a turbocharging system (see §10.3.5) as shown in figure 10.31.
+$4)\eta _{\mathrm{engine}}= \frac{q_{\mathrm{net}}}{q_{\mathrm{in}}} = 47.99\%(\mathrm{purely theoretical value},$
+since compressions and expansions are reversible: in practice, expect around $35 \%)$; 5) See §10.3.4 p. 276; 6)Power decreases since the air density of the atmosphere decreases with altitude. In order to increase $m_{\mathrm{air}}$, one can, for example, install a turbocharging system (see §10.3.5) as shown in figure 10.31.
 
 :::
 ```
@@ -1080,14 +1085,14 @@ since compressions and expansions are reversible: in practice, expect around $35
    :enumerator: 10.31
    :alt: The six-cylinder gasoline fuel injection Continental io-550, in production since 1983. It equips among others the Cirrus sr22 aircraft. This
    
-   The $300 hp$ six-cylinder gasoline fuel injection Continental io-550, in production since 1983. It equips among others the Cirrus sr22 aircraft. Thisphotoshowstheturbochargedversionoftheengine, with the intercooler visible in the top left corner.
+   The $300 hp$ six-cylinder gasoline fuel injection Continental io-550, in production since 1983. It equips among others the Cirrus sr22 aircraft. This photo shows the turbocharged version of the engine, with the intercooler visible in the top left corner.
    :::
 
 ```{exercise}
 :label: prob-10-3
 :enumerator: 10.3
 
-**Diesel Engine A piston-cylinder engine used to propel a ship (figure 10.32) is turbocharged by a turbo that increases the pressure and temperature of the intake air using energy extracted from the exhaust gases (the turbocharger is a component that does not require any external input of energy in the form of work or heat, see §10.3.5 p. 276). The engine has the following operating characteristics: • the air admitted to the cylinders is at $115^{\circ}C$ and $3 bar (239 ^{\circ} F$ and $45.3 psi$; • the specific heat supplied each cycle is $1250 kJ kg^{-1}$; • the compression ratio $\varepsilon \equiv \frac{V_{\max}}{V_{\min}}$ is $17$. Weconsidertheoptimaloperatingcase,thatis,following the Diesel cycle, according to the following characteristics: • isentropic compression and expansion; • combustion at constant pressure; • heat rejection at constant volume. 1. Draw the thermodynamic cycle undergone by the air on a pressure-volume or temperature-entropy diagram, qualitatively, indicating all heat and work transfers. 2. What is the air temperature at the end of the compression? *Photos 1 and 2* CC-by-sa *by Hervé Cozanet***
+**Diesel Engine A piston-cylinder engine used to propel a ship (figure 10.32) is turbocharged by a turbo that increases the pressure and temperature of the intake air using energy extracted from the exhaust gases (the turbocharger is a component that does not require any external input of energy in the form of work or heat, see §10.3.5 p. 276). The engine has the following operating characteristics: • the air admitted to the cylinders is at $115^{\circ}C$ and $3 bar (239 ^{\circ} F$ and $45.3 psi$; • the specific heat supplied each cycle is $1250 kJ kg^{-1}$; • the compression ratio $\varepsilon \equiv \frac{V_{\max}}{V_{\min}}$ is $17$. We consider the optimal operating case,thatis,following the Diesel cycle, according to the following characteristics: • isentropic compression and expansion; • combustion at constant pressure; • heat rejection at constant volume. 1. Draw the thermodynamic cycle undergone by the air on a pressure-volume or temperature-entropy diagram, qualitatively, indicating all heat and work transfers. 2. What is the air temperature at the end of the compression? *Photos 1 and 2* CC-by-sa *by Hervé Cozanet***
 
 :::{admonition} Answer
 :class: dropdown
@@ -1127,13 +1132,13 @@ these engines are very slow); 7) See sections §10.3.3 p. 274 and §10.3.4 p. 27
 
 6. What is the engine cycle efficiency?
 
-7. Itiseasytoshowthatatthesamecompressionratio, a Diesel cycle is less efficient than a so-called “gasoline”cycle(Ottocycle). Whyisitusednevertheless?
+7. It is easy to show that at the same compression ratio, a Diesel cycle is less efficient than a so-called “gasoline”cycle(Otto cycle). Why is it used nevertheless?
 
 ```{exercise}
 :label: prob-10-4
 :enumerator: 10.4
 
-**Turboprop Engine A regional airliner is powered by two turboprop engines (figure 10.34). In each of them, a single turbine drives an axial compressor, as well as the propeller through a gearbox (figure 10.33). During cruise, the air flow within the engine is $12.3 lb/s (5.6 kg s^{-1})$, and the circuit is as follows: • Air at ambient pressure and temperature $(7.98 psi$ and $23 ^{\circ} F$, or $0.55 bar$ and $-5^{\circ}C)$ is admitted into the compressor; • The compressor raises the air pressure to $110.2 psi (7.6 bar)$ with an isentropic efficiency of $80 \%$; • The air is then heated in the combustion chamber to $2400 ^{\circ} F (1315^{\circ}C)$; • The combustion gases are then expanded in the turbine and ejected into the atmosphere; the turbine has an isentropic efficiency of $80 \%$. The turbine drives the compressor (through a shaft with negligible losses) and the propeller (through a transmission box with an efficiency of $83 \%)$. We want to quantify the shaft power actually received by the propeller during flight. 1. Draw the cycle undergone by the air on a temperature-entropy diagram, qualitatively. 2. What is the compressor outlet temperature? 3. What is the turbine outlet temperature? 4. What is the power supplied to the propeller? *Diagram* CC-by-sa *by Olivier Cleynen* In order to de-ice the wings, a small gas bleed is carried out in the compressor. The extraction flow rate is $0.22 lb/s (0.1 kg s^{-1})$, and the air temperature is $392 ^{\circ} F (200^{\circ}C)$. 5. Propose and quantify a modification to the engine operation so that it may supply the propeller with the same power. *Engine photo derived from a photo* CC-by *by Flickr User:cliff1066; Aircraft photo* CC-by-sa *by Flickr User:Björn***
+**Turboprop Engine A regional airliner is powered by two turboprop engines (figure 10.34). In each of them, a single turbine drives an axial compressor, as well as the propeller through a gearbox (figure 10.33). During cruise, the air flow within the engine is $12.3 lb/s (5.6 kg s^{-1})$, and the circuit is as follows: • Air at ambient pressure and temperature $(7.98 psi$ and $23 ^{\circ} F$, or 0.55 bar and $-5^{\circ}C)$ is admitted into the compressor; • The compressor raises the air pressure to $110.2 psi (7.6 bar)$ with an isentropic efficiency of $80 \%$; • The air is then heated in the combustion chamber to $2400 ^{\circ} F (1315^{\circ}C)$; • The combustion gases are then expanded in the turbine and ejected into the atmosphere; the turbine has an isentropic efficiency of $80 \%$. The turbine drives the compressor (through a shaft with negligible losses) and the propeller (through a transmission box with an efficiency of $83 \%)$. We want to quantify the shaft power actually received by the propeller during flight. 1. Draw the cycle undergone by the air on a temperature-entropy diagram, qualitatively. 2. What is the compressor outlet temperature? 3. What is the turbine outlet temperature? 4. What is the power supplied to the propeller? *Diagram* CC-by-sa *by Olivier Cleynen* In order to de-ice the wings, a small gas bleed is carried out in the compressor. The extraction flow rate is $0.22 lb/s (0.1 kg s^{-1})$, and the air temperature is $392 ^{\circ} F (200^{\circ}C)$. 5. Propose and quantify a modification to the engine operation so that it may supply the propeller with the same power. *Engine photo derived from a photo* CC-by *by Flickr User:cliff1066; Aircraft photo* CC-by-sa *by Flickr User:Björn***
 
 :::{admonition} Answer
 :class: dropdown
@@ -1142,9 +1147,7 @@ these engines are very slow); 7) See sections §10.3.3 p. 274 and §10.3.4 p. 27
 2) $T_{\mathrm{B}}= 642.8 K = 369.6^{\circ}C = 697.4 ^{\circ} F$ (4/37 & 10/6);
 3) $T_{\mathrm{D}}= 976.9 K = 703.8^{\circ}C = 1298.8 ^{\circ} F$ (4/37 &
 10/9);
-$4)\dot{W}_{\mathrm{propellers}}= -m\dot{\eta} _{\mathrm{transmission}}(w_{\mathrm{turbine}}+ w_{\mathrm{compressor}}) = +1.517 MW$ (with a thermal ef-
-ficiency before transmission of $27.6 \%$, a value slightly lower than reality); 5) One possibility: increase$\dot{m}_{\mathrm{engine} \mathrm{air}}$ without mod-
-ifying the temperatures. Then,$\dot{m}_{\mathrm{inlet} \mathrm{engine} 2}= 12.729 lb/s = 5.774 kg s^{-1}(+0.383 lb/s$ or
+$4)\dot{W}_{\mathrm{propellers}}= -m\dot{\eta} _{\mathrm{transmission}}(w_{\mathrm{turbine}}+ w_{\mathrm{compressor}}) = +1.517 MW$ (with a thermal efficiency before transmission of $27.6 \%$, a value slightly lower than reality); 5) One possibility: increase$\dot{m}_{\mathrm{engine} \mathrm{air}}$ without modifying the temperatures. Then,$\dot{m}_{\mathrm{inlet} \mathrm{engine} 2}= 12.729 lb/s = 5.774 kg s^{-1}(+0.383 lb/s$ or
 $+0.174 kg s^{-1})$.
 
 :::
@@ -1161,9 +1164,9 @@ $+0.174 kg s^{-1})$.
    :::{figure} ../images/fig-10-34.png
    :label: fig-10-34
    :enumerator: 10.34
-   :alt: A Pratt & Whitney Canada pwc123 turbopropenginepoweringaBombardierDash 8. Thepwc123 is configured with three concentric rotating assemblies
+   :alt: A Pratt & Whitney Canada pwc123 turboprop engine powering a Bombardier Dash 8. Thepwc123 is configured with three concentric rotating assemblies
    
-   A Pratt & Whitney Canada pwc123 turbopropenginepoweringaBombardier*Dash 8*. Thepwc123 is configured with three concentric rotating assemblies, with the engine shaft powered by a free turbine, but its operation principle remains similar to that described in figure 10.33.
+   A Pratt & Whitney Canada pwc123 turboprop engine powering a Bombardier*Dash 8*. Thepwc123 is configured with three concentric rotating assemblies, with the engine shaft powered by a free turbine, but its operation principle remains similar to that described in figure 10.33.
    :::
 
 ```{exercise}
@@ -1182,9 +1185,7 @@ $+0.174 kg s^{-1})$.
 expansion, $C_{\mathrm{E}}= 714.3 m s^{-1}$ (the same remarks as
 in example 10.2 p. 283 apply here);
 4)Thetemperatureatthestartofcombustiondrops
-to $T_{3}= 774.2 K$, the temperature at the turbine out-
-let is $T_{6}= 870.7 K$, and thus the pressure at the noz-
-zle inlet rises to $p_{6}= 4.776 kg_{f}/cm^{2}= 4.684 bar$;
+to $T_{3}= 774.2 K$, the temperature at the turbine outlet is $T_{6}= 870.7 K$, and thus the pressure at the nozzle inlet rises to $p_{6}= 4.776 kg_{f}/cm^{2}= 4.684 bar$;
 5) Cover your ears: $C_{7}= 811.3 m s^{-1}$ (the same
 remarks apply here as well).
 
@@ -1203,7 +1204,7 @@ remarks apply here as well).
 :label: prob-10-6
 :enumerator: 10.6
 
-**Intercooled Turboshaft You are tasked by a small company to develop an engine that will be used to generate electricity in a factory. It is decided to base the engine on a turbofan jet engine from a retired commercial aircraft: it is a venerable General Electric cf6 (figures 10.36 and 10.37). The turbofan engine has two concentric spools: • The low-pressure spool connects the fan, a compressor section called the *booster*, and the low-pressure turbine; • The high-pressure spool connects the rest of the compressor to the high-pressure turbine. The turbofan engine has the following properties: Maximum pressure ratio: $29.3$ Booster pressure ratio: $1.2$ Fan pressure ratio: $1.2$ Maximum temperature: $1300^{\circ}C$ Isentropic efficiency of compressors: $85 \%$ *Diagram public domain U.S. FAA Diagram* CC-by-sa *Olivier Cleynen* Isentropic efficiency of turbines: $85 \%$ Exhaust gas discharge pressure: $1.1 bar$ In order to convert the turbofan into a turboshaft engine, you have the nacelle and the fan removed, and mechanically connect the low-pressure spool to the generator (figure 10.38). The turboshaft engine is started at atmospheric conditions of $1 bar$ and $18^{\circ}C$. At full throttle, it uses an air flow rate of $80 kg s^{-1}$. 1. Draw the thermodynamic cycle undergone by the air on a pressure-volume diagram, qualitatively. 2. What is the net power delivered by the machine? 3. What is its work ratio? 4. What is its efficiency? The client company receives your engine but wishes to increase its power. Since the engine is already operating at full capacity, you are unable to increase either the air mass flow rate or the combustion temperature. Inordertoincreasethepower,youinstallanintercooling system (figure 10.38). The air compression is interrupted at a pressure of $7 bar$; the air is led into a large heat exchanger where it is cooled at constant pressure. Once its temperature has dropped back to $40^{\circ}C$, compression resumes in the compressor, which has not been modified.**
+**Intercooled Turboshaft You are tasked by a small company to develop an engine that will be used to generate electricity in a factory. It is decided to base the engine on a turbofan jet engine from a retired commercial aircraft: it is a venerable General Electric cf6 (figures 10.36 and 10.37). The turbofan engine has two concentric spools: • The low-pressure spool connects the fan, a compressor section called the *booster*, and the low-pressure turbine; • The high-pressure spool connects the rest of the compressor to the high-pressure turbine. The turbofan engine has the following properties: Maximum pressure ratio: $29.3$ Booster pressure ratio: $1.2$ Fan pressure ratio: $1.2$ Maximum temperature: $1300^{\circ}C$ Isentropic efficiency of compressors: $85 \%$ *Diagram public domain U.S. FAA Diagram* CC-by-sa *Olivier Cleynen* Isentropic efficiency of turbines: $85 \%$ Exhaust gas discharge pressure: 1.1 bar In order to convert the turbofan into a turboshaft engine, you have the nacelle and the fan removed, and mechanically connect the low-pressure spool to the generator (figure 10.38). The turboshaft engine is started at atmospheric conditions of 1 bar and $18^{\circ}C$. At full throttle, it uses an air flow rate of $80 kg s^{-1}$. 1. Draw the thermodynamic cycle undergone by the air on a pressure-volume diagram, qualitatively. 2. What is the net power delivered by the machine? 3. What is its work ratio? 4. What is its efficiency? The client company receives your engine but wishes to increase its power. Since the engine is already operating at full capacity, you are unable to increase either the air mass flow rate or the combustion temperature. In order to increase the power,you install an intercooling system (figure 10.38). The air compression is interrupted at a pressure of 7 bar; the air is led into a large heat exchanger where it is cooled at constant pressure. Once its temperature has dropped back to $40^{\circ}C$, compression resumes in the compressor, which has not been modified.**
 
 :::{admonition} Answer
 :class: dropdown
@@ -1215,13 +1216,10 @@ years of service hung under a wing, a cf6 still sells
 for several million euros);
 3) $M_{w1}= 38.2 \%$;
 4) $\eta _{1}= 31.49 \%$;
-$6)\dot{W}_{\mathrm{net}2}= -3.325 MW$, that is a remarkable in-
-crease of $31 \%$;
+$6)\dot{W}_{\mathrm{net}2}= -3.325 MW$, that is a remarkable increase of $31 \%$;
 7) $M_{w1}= 50 \%$, an increase of $+11.8 pt$;
-8) Power increases by $98.8 kJ kg^{-1}$, while con-
-sumption increases by $332.6 kJ kg^{-1}$, resulting in
-a marginal efficiency of $29.7 \%$. The overall effi-
-ciency decreases to $\eta _{2}= 31.04 \%$, only $-0.5 pt$...
+8) Power increases by $98.8 kJ kg^{-1}$, while consumption increases by $332.6 kJ kg^{-1}$, resulting in
+a marginal efficiency of $29.7 \%$. The overall efficiency decreases to $\eta _{2}= 31.04 \%$, only $-0.5 pt$...
 an interesting compromise!
 *Engineering Thermodynamics* by Olivier Cleynen
 303

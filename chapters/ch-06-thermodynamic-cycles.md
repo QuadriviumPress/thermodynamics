@@ -16,6 +16,11 @@ Thermodynamic Cycles
 :alt: Illustration from the original text
 :::
 
+:::{admonition} Executive summary
+:class: tip
+When heating a compressed fluid, it provides more work upon expansion than was spent during compression. By expanding a fluid, its temperature drops and thus we can absorb heat from a relatively “cooler” body. With these two processes, we transform heat into work and vice versa.
+:::
+
 ## Introduction
 
 Thanks to chapters 4 and 5, we have learned to quantify energy in fluids
@@ -30,14 +35,15 @@ convert heat into work, and work into heat. In this chapter 6 (*thermodynamic*
 
 • How is their efficiency quantified?
 
-**6.1 Graphical Conventions**
+(sec-6-1)=
+## 6.1 Graphical Conventions
 
 We start by agreeing on some graphical and notation conventions, which are summarized in figure 6.1.
 
 :::{figure} ../images/fig-6-1.jpg
 :label: fig-6-1
 :enumerator: 6.1
-:alt: New graphical and notation conventions for energy transfers. The white arrows are oriented according to the physical direction of the transf
+:alt: New graphical and notation conventions for energy transfers. The white arrows are oriented according to the physical direction of the transfers; The algebraic sum of all the work received and carried out is represented by a single transfer named *net work*.
 
 New graphical and notation conventions for energy transfers. The white arrows are oriented according to the physical direction of the transfers; The algebraic sum of all the work received and carried out is represented by a single transfer named *net work*.
 :::
@@ -84,7 +90,8 @@ q_{\mathrm{net}}\equiv q_{\mathrm{in}}+ q_{\mathrm{out}}
 
 Therefore, for example, a car’s engine sees a positive net heat transfer (reception) and a negative net work (supplied to the gearbox).
 
-**6.2 Transforming Heat and Work**
+(sec-6-2)=
+## 6.2 Transforming Heat and Work
 
 (sec-6-2-1)=
 ### 6.2.1 Building thermodynamic cycles
@@ -118,7 +125,7 @@ in time, as illustrated in figure 6.2. Depending on technological and practical 
 :::{figure} ../images/fig-6-2.jpg
 :label: fig-6-2
 :enumerator: 6.2
-:alt: Engine thermodynamic cycle. The fluid absorbs heat supplied at high temperature . The compression power is lower than the expansion power: t
+:alt: Engine thermodynamic cycle. The fluid absorbs heat supplied at high temperature $T_{H}$. The compression power is lower than the expansion power: the net power in the form of work$\dot{W}_{\mathrm{net}}=\dot{W}_{\mathrm{in}}+\dot{W}_{\mathrm{out}}$ is negative.
 
 Engine thermodynamic cycle. The fluid absorbs heat supplied at high temperature $T_{H}$. The compression power is lower than the expansion power: the net power in the form of work$\dot{W}_{\mathrm{net}}=\dot{W}_{\mathrm{in}}+\dot{W}_{\mathrm{out}}$ is negative.
 :::
@@ -128,7 +135,7 @@ Engine thermodynamic cycle. The fluid absorbs heat supplied at high temperature 
 :::{figure} ../images/fig-6-3.jpg
 :label: fig-6-3
 :enumerator: 6.3
-:alt: Engine thermodynamic cycle carried out by separating the stages in time (rather than in space as shown in figure 6.2). The fluid is heated b
+:alt: Engine thermodynamic cycle carried out by separating the stages in time (rather than in space as shown in figure 6.2). The fluid is heated by a high-temperature heat source $T_{H}$. The net work $W_{\mathrm{net}}= W_{\mathrm{in}}+ W_{\mathrm{out}}$ is negative.
 
 Engine thermodynamic cycle carried out by separating the stages in time (rather than in space as shown in figure 6.2). The fluid is heated by a high-temperature heat source $T_{H}$. The net work $W_{\mathrm{net}}= W_{\mathrm{in}}+ W_{\mathrm{out}}$ is negative.
 :::
@@ -140,7 +147,7 @@ It is possible to mechanically link the sections that receive and supply energy 
 :::{figure} ../images/fig-6-4.jpg
 :label: fig-6-4
 :enumerator: 6.4
-:alt: An engine thermodynamic cycle in which the compressor and the turbine are mechanically coupled. Since the turbine supplies a power greater t
+:alt: An engine thermodynamic cycle in which the compressor and the turbine are mechanically coupled. Since the turbine supplies a power$\dot{W}_{\mathrm{out}}$ greater than that absorbed by the compressor $(\dot{W}_{\mathrm{in}})$, it is able to not only drive the compressor but also to provide an excess$\dot{W}_{\mathrm{net}}$ sent outside of the engine.
 
 An engine thermodynamic cycle in which the compressor and the turbine are mechanically coupled. Since the turbine supplies a power$\dot{W}_{\mathrm{out}}$ greater than that absorbed by the compressor $(\dot{W}_{\mathrm{in}})$, it is able to not only drive the compressor but also to provide an excess$\dot{W}_{\mathrm{net}}$ sent outside of the engine.
 :::
@@ -172,7 +179,7 @@ In practice in refrigeration systems, a trick is often used to lower the tempera
 :::{figure} ../images/fig-6-5.jpg
 :label: fig-6-5
 :enumerator: 6.5
-:alt: A refrigeration cycle, for use in refrigerators, air conditioners, and heat pumps. A power in the form of heat is absorbed at low temperatur
+:alt: A refrigeration cycle, for use in refrigerators, air conditioners, and heat pumps. A power$\dot{Q}_{\mathrm{in}}$ in the form of heat is absorbed at low temperature (the fluid is then heated) while a power$\dot{Q}_{\mathrm{out}}$ is rejected at high temperature (the fluid is then cooled).
 
 A refrigeration cycle, for use in refrigerators, air conditioners, and heat pumps. A power$\dot{Q}_{\mathrm{in}}$ in the form of heat is absorbed at low temperature (the fluid is then heated) while a power$\dot{Q}_{\mathrm{out}}$ is rejected at high temperature (the fluid is then cooled).
 :::
@@ -196,7 +203,7 @@ The throttle valve, in thermodynamic terms, allows for a completely irreversible
 :::{figure} ../images/fig-6-7.jpg
 :label: fig-6-7
 :enumerator: 6.7
-:alt: A modified refrigeration cycle using a throttling valve. When using liquids/vapors, it is possible to avoid extracting work during expansion
+:alt: A modified refrigeration cycle using a throttling valve. When using liquids/vapors, it is possible to avoid extracting work during expansion. The use of a simple valve is sufficient to lower the temperature of the fluid.
 
 A modified refrigeration cycle using a throttling valve. When using liquids/vapors, it is possible to avoid extracting work during expansion. The use of a simple valve is sufficient to lower the temperature of the fluid.
 :::
@@ -212,7 +219,7 @@ Refrigeration cycles have two main types of applications:
 :::{figure} ../images/fig-6-8.jpg
 :label: fig-6-8
 :enumerator: 6.8
-:alt: Arrangement of a heat pump. The machine is configured to reject heat inside (where the temperature is higher) which it extracts from outside
+:alt: Arrangement of a heat pump. The machine is configured to reject heat inside (where the temperature is higher) which it extracts from outside (where the temperature is lower).
 
 Arrangement of a heat pump. The machine is configured to reject heat inside (where the temperature is higher) which it extracts from outside (where the temperature is lower).
 :::
@@ -229,7 +236,7 @@ Arrangement of a heat pump. The machine is configured to reject heat inside (whe
 :::{figure} ../images/fig-6-9.jpg
 :label: fig-6-9
 :enumerator: 6.9
-:alt: Arrangement of a refrigerator or air conditioner. The machine is configured to reject heat outside (where the temperature is higher) which i
+:alt: Arrangement of a refrigerator or air conditioner. The machine is configured to reject heat outside (where the temperature is higher) which it extracts from the inside (where the temperature is lower). This is exactly the same machine as in figure 6.8.
 
 Arrangement of a refrigerator or air conditioner. The machine is configured to reject heat outside (where the temperature is higher) which it extracts from the inside (where the temperature is lower). This is exactly the same machine as in figure 6.8.
 :::
@@ -243,19 +250,20 @@ The similarity between an air conditioner and a heat pump allows these two funct
 :::{figure} ../images/fig-6-10.jpg
 :label: fig-6-10
 :enumerator: 6.10
-:alt: Layout of a bidirectional (commonly called “reversible”) air conditioner. By rotating both valves 90 degrees counterclockwise, the function
+:alt: Layout of a bidirectional (commonly called “reversible”) air conditioner. By rotating both valves 90 degrees counterclockwise, the function changes from a heat pump to an air conditioner.
 
 Layout of a bidirectional (commonly called “reversible”) air conditioner. By rotating both valves 90 degrees counterclockwise, the function changes from a heat pump to an air conditioner.
 :::
 
 *Diagram* CC-0 *Olivier Cleynen*
 
-**6.3 Cycle Efficiency**
+(sec-6-3)=
+## 6.3 Cycle Efficiency
 
 (sec-6-3-1)=
 ### 6.3.1 A basic formula
 
-The *efficiency*$^{1}\eta$ of a thermodynamic machine compares the useful transfer or transformation it performs with the energy cost it incurs. We will adopt the following principle definition:
+The *efficiency*[^ch6-fn1] $\eta$ of a thermodynamic machine compares the useful transfer or transformation it performs with the energy cost it incurs. We will adopt the following principle definition:
 
 :::{math}
 :label: eq-6-3
@@ -273,7 +281,7 @@ The function of a thermal engine, like those found on board road vehicles or in 
 :::{figure} ../images/fig-6-11.jpg
 :label: fig-6-11
 :enumerator: 6.11
-:alt: Energy transfers associated with an engine. We aim to obtain a large transfer (result) from the transfer (cost). The rejection is undesirabl
+:alt: Energy transfers associated with an engine. We aim to obtain a large transfer$\dot{W}_{\mathrm{net}}$ (result) from the transfer$\dot{Q}_{\mathrm{in}}$ (cost). The rejection$\dot{Q}_{\mathrm{out}}$ is undesirable.
 
 Energy transfers associated with an engine. We aim to obtain a large transfer$\dot{W}_{\mathrm{net}}$ (result) from the transfer$\dot{Q}_{\mathrm{in}}$ (cost). The rejection$\dot{Q}_{\mathrm{out}}$ is undesirable.
 :::
@@ -290,9 +298,7 @@ therefore:
 \eta _{\mathrm{engine}}\equiv \left|\frac{\dot{W}_{\mathrm{net}}}{\dot{Q}_{\mathrm{in}}}\right|
 :::
 
-$^{1}$Some authors make a distinction between the efficiency $\eta$ defined in 6/3 and a
-
-*relative efficiency* or *effectiveness* $\Phi \equiv \frac{\eta _{\mathrm{real}}}{\eta _{\mathrm{theoretical}}}$ comparing the efficiency achieved in practice with the maximum achievable efficiency by the machine in theory. It is then necessary to carefully define the assumptions associated with the calculation of the maximum efficiency.
+[^ch6-fn1]: Some authors make a distinction between the efficiency $\eta$ defined in 6/3 and a *relative efficiency* or *effectiveness* $\Phi \equiv \frac{\eta _{\mathrm{real}}}{\eta _{\mathrm{theoretical}}}$ comparing the efficiency achieved in practice with the maximum achievable efficiency by the machine in theory. It is then necessary to carefully define the assumptions associated with the calculation of the maximum efficiency.
 
 ::::{admonition} A Bit of History
 :class: note
@@ -359,7 +365,7 @@ positive.
 :::{figure} ../images/fig-6-12.jpg
 :label: fig-6-12
 :enumerator: 6.12
-:alt: Energy transfers associated with a refrigerator or an air conditioner. We aim to obtain a large transfer (result) from the transfer (cost).
+:alt: Energy transfers associated with a refrigerator or an air conditioner. We aim to obtain a large transfer$\dot{Q}_{\mathrm{in}}$ (result) from the transfer$\dot{W}_{\mathrm{net}}$ (cost).
 
 Energy transfers associated with a refrigerator or an air conditioner. We aim to obtain a large transfer$\dot{Q}_{\mathrm{in}}$ (result) from the transfer$\dot{W}_{\mathrm{net}}$ (cost).
 :::
@@ -376,9 +382,7 @@ This refrigerator rejects$\dot{Q}_{\mathrm{out}}= -\dot{W}_{\mathrm{net}}-\dot{Q
 
 $-220 W$ outside of the cold chamber (usually, within the building
 
-Household refrigerators and air conditioners often have efficien-
-
-cies greater than 1, but depending on the desired temperatures, the
+Household refrigerators and air conditioners often have efficiencies greater than 1, but depending on the desired temperatures, the
 
 In order to prepare for the next chapter (§7.5.2 p. 196), and while paying
 
@@ -401,7 +405,7 @@ supplying work to the heat pump,$\dot{W}_{\mathrm{net}}$, an “expense” that 
 :::{figure} ../images/fig-6-13.jpg
 :label: fig-6-13
 :enumerator: 6.13
-:alt: Energy transfers associated with a heat pump. We aim to obtain a large transfer (result) from the transfer (cost).
+:alt: Energy transfers associated with a heat pump. We aim to obtain a large transfer$\dot{Q}_{\mathrm{out}}$ (result) from the transfer$\dot{W}_{\mathrm{net}}$ (cost).
 
 Energy transfers associated with a heat pump. We aim to obtain a large transfer$\dot{Q}_{\mathrm{out}}$ (result) from the transfer$\dot{W}_{\mathrm{net}}$ (cost).
 :::
@@ -435,13 +439,13 @@ Just as we did for the previous sections, we can express this efficiency in term
 (sec-6-3-5)=
 ### 6.3.5 On the low performance of machines
 
-« $^{\mathrm{The} \mathrm{question} \mathrm{has} \mathrm{often} \mathrm{been} \mathrm{agi}-}$ In all the cases we have studied above, for each cycle, we have included tated as to whether the motory power an undesirable transfer. In the engine cycle, some of the energy is wasted
+:::{aside}
+« The question has often been agitated as to whether the motory power of heat is limited, or whether it is boundless; whether the possible improvements of fire engines have an assignable limit, a limit which the nature of things prevents from being surpassed by any means whatsoever, or whether on the contrary these improvements are capable of indefinite extension… »
 
-of heat is limited, or whether it is $^{\mathrm{boundless}; \mathrm{whether} \mathrm{the} \mathrm{possible} \mathrm{im}-}$ in the form of heat rejection $(\dot{Q}_{\mathrm{out}})$. In refrigeration cycles, work must be provements of fire engines have an $_{\mathrm{assignable} \mathrm{limit}, \mathrm{a} \mathrm{limit} \mathrm{which} \mathrm{the} \mathrm{na}-}$ supplied $(\dot{W}_{\mathrm{in}})$ to carry out a heat transfer that *a priori* could have seemed ture of things prevents from being sur- “free” $(\dot{Q}_{\mathrm{out}}$ then being equal to$\dot{Q}_{\mathrm{in}})$. passed by any means whatsoever, or $^{\mathrm{whether} \mathrm{on} \mathrm{the} \mathrm{contrary} \mathrm{these} \mathrm{improve}-}$ Engineering students will certainly be indignant about the role played by ments are capable of indefinite extenthese losses in this chapter – and about the modest efficiencies achieved by
+Sadi Carnot, 1824 [[4](#ref-4)]
+:::
 
-sion… » the machines described in the examples. Why are the efficiencies calculated
-
-Sadi Carnot, 1824 [[4](#ref-4)] in the examples and in the following problems so low, and more importantly, how can we design cycles with greater efficiency? We take these worries to our heart, and will address them in chapter 7 (*the second law*).
+In all the cases we have studied above, for each cycle, we have included an undesirable transfer. In the engine cycle, some of the energy is wasted in the form of heat rejection $(\dot{Q}_{\mathrm{out}})$. In refrigeration cycles, work must be supplied $(\dot{W}_{\mathrm{in}})$ to carry out a heat transfer that *a priori* could have seemed “free” $(\dot{Q}_{\mathrm{out}}$ then being equal to$\dot{Q}_{\mathrm{in}})$. Engineering students will certainly be indignant about the role played by these losses in this chapter – and about the modest efficiencies achieved by the machines described in the examples. Why are the efficiencies calculated in the examples and in the following problems so low, and more importantly, how can we design cycles with greater efficiency? We take these worries to our heart, and will address them in chapter 7 (*the second law*).
 
 ::::{admonition} A Bit of History
 :class: note
@@ -496,13 +500,11 @@ movement to each step: the first one for compresduring which no thermodynamic op
 
 sion, the second one for expansion (after or during place. Thus, for the same displacement and speed of
 
-combustion), the third one for exhaust gases ex-rotation, two-stroke engines are much more power-
-
-pulsion (exhaust), and the last one for admitting ful than their four-stroke counterparts, even though
+combustion), the third one for exhaust gases ex-rotation, two-stroke engines are much more powerpulsion (exhaust), and the last one for admitting ful than their four-stroke counterparts, even though
 
 fresh air (intake). Engines following this process they are also significantly less efficient.
 
-are called *four-stroke* (figure 6.14), and they have always been the most widely used. Two- and four-stroke engines were developed at the same time, but two-stroke engine development
+are called *four-stroke* (figure 6.14), and they have always been the most widely used. Twoand four-stroke engines were developed at the same time, but two-stroke engine development
 
 The second method is bound to offend purists: it really took off after the Second World War. The
 
@@ -517,7 +519,7 @@ to perform the exhaust, and it is carried out simulalone increases the airflow e
 :::{figure} ../images/fig-6-15.jpg
 :label: fig-6-15
 :enumerator: 6.15
-:alt: Cycle of a two-stroke engine. The four necessary steps for operation are carried out in a single revolution of the crankshaft, that is, two
+:alt: Cycle of a two-stroke engine. The four necessary steps for operation are carried out in a single revolution of the crankshaft, that is, two piston movements. Intake (A) occurs during the passage at bottom dead center, compression (B) starts late, and expansion (C) is interrupted to allow scavenging (D) when the piston approaches bottom dead center again.
 
 Cycle of a two-stroke engine. The four necessary steps for operation are carried out in a single revolution of the crankshaft, that is, two piston movements. Intake (A) occurs during the passage at bottom dead center, compression (B) starts late, and expansion (C) is interrupted to allow scavenging (D) when the piston approaches bottom dead center again.
 :::
@@ -531,7 +533,7 @@ Cycle of a two-stroke engine. The four necessary steps for operation are carried
 :::{figure} ../images/fig-6-16.jpg
 :label: fig-6-16
 :enumerator: 6.16
-:alt: Schematic pressure-volume diagram of the cylinder of a two-stroke engine with crankcase intake. It is left to the student to determine which
+:alt: Schematic pressure-volume diagram of the cylinder of a two-stroke engine with crankcase intake. It is left to the student to determine which of the two ports (high or low) corresponds to intake and exhaust in the cylinder.
 
 Schematic pressure-volume diagram of the cylinder of a two-stroke engine with crankcase intake. It is left to the student to determine which of the two ports (high or low) corresponds to intake and exhaust in the cylinder.
 :::
@@ -557,9 +559,7 @@ engine very competitive in racing motorcycles; this
 
 in many production models.
 
-In parallel, the ideas formulated by the English en-
-
-trepreneur Joseph Day at the end of the 19th century
+In parallel, the ideas formulated by the English entrepreneur Joseph Day at the end of the 19th century
 
 on the mechanism controlling intake spread widely.
 
@@ -571,9 +571,7 @@ air first passes through the crankcase where the
 
 crankshaft rotates, then it is slightly compressed by
 
-the piston in its downward movement before enter-
-
-ing the cylinder. The engine thus operates without
+the piston in its downward movement before entering the cylinder. The engine thus operates without
 
 any moving valve; lubrication can even be provided
 
@@ -591,11 +589,7 @@ over efficiency. After powering three million *Tra-*
 
 all outdoor portable tools (chainsaws, lawnmowers,
 
-etc.). The engine can easily be miniaturized, leav-
-
-ing room for legs on a scooter motorcycle, allow-
-
-ing snowmobiles to start easily, in short, until the
+etc.). The engine can easily be miniaturized, leaving room for legs on a scooter motorcycle, allowing snowmobiles to start easily, in short, until the
 
 90s, nothing —not even homeowner associations!—
 
@@ -607,9 +601,7 @@ becomes necessary to give up on these advantages.
 
 One can wearily accept the irritating sound emitted
 
-by the two-stroke engine, but its polluting emis-
-
-sions are staggering. Lubrication by oil injection
+by the two-stroke engine, but its polluting emissions are staggering. Lubrication by oil injection
 
 into the intake air causes the atmospheric discharge
 
@@ -620,7 +612,7 @@ the always incomplete scavenging of the cylinder
 :::{figure} ../images/fig-6-17.jpg
 :label: fig-6-17
 :enumerator: 6.17
-:alt: Tuned (sometimes called “harmonic”) expansion chamber mounted on a two-stroke engine. Since the flow is unsteady, it is possible to manipula
+:alt: Tuned (sometimes called “harmonic”) expansion chamber mounted on a two-stroke engine. Since the flow is unsteady, it is possible to manipulate the pressure exerted by fixed amounts of exhaust gases on the exhaust port when they pass through the chamber. Passing through the expansive part reduces the pressure (thus facilitating scavenging during the piston descent), while passage through the contraction, on the contrary, increases this pressure (thus reducing gas losses during the piston ascent).
 
 Tuned (sometimes called “harmonic”) expansion chamber mounted on a two-stroke engine. Since the flow is unsteady, it is possible to manipulate the pressure exerted by fixed amounts of exhaust gases on the exhaust port when they pass through the chamber. Passing through the expansive part reduces the pressure (thus facilitating scavenging during the piston descent), while passage through the contraction, on the contrary, increases this pressure (thus reducing gas losses during the piston ascent).
 :::
@@ -632,7 +624,7 @@ sion chamber mounted on a two-stroke engine. Since the flow is unsteady, it is p
 :::{figure} ../images/fig-6-18.jpg
 :label: fig-6-18
 :enumerator: 6.18
-:alt: Crankcase intake system. The intake air, laden with fuel for combustion and oil for lubricating mechanical parts, first enters the crankcase
+:alt: Crankcase intake system. The intake air, laden with fuel for combustion and oil for lubricating mechanical parts, first enters the crankcase. It is compressed and then inserted into the cylinder with the sole downward movement of the piston. There is no need for any valve or flap.
 
 Crankcase intake system. The intake air, laden with fuel for combustion and oil for lubricating mechanical parts, first enters the crankcase. It is compressed and then inserted into the cylinder with the sole downward movement of the piston. There is no need for any valve or flap.
 :::
@@ -647,15 +639,11 @@ greatly limits the efficiency of combustion and the thermal efficiency. The tigh
 
    The Diesel engine of an excavator has an efficiency of
 
-   $40\%$anddeliversacontinuouspowerof$60kW($approx-
-
-   imately $80hp)$. It is powered by fuel with a calorific
+   $40\%$and delivers a continuous power of$60kW($approximately $80hp)$. It is powered by fuel with a calorific
 
    value of $35MJkg^{-1}$.
 
-   1. What is the hourly fuel consumption of the ma-
-
-   chine?
+   1. What is the hourly fuel consumption of the machine?
 
    2. What is the power rejected as heat in the exhaust
 
@@ -663,7 +651,7 @@ greatly limits the efficiency of combustion and the thermal efficiency. The tigh
 
    6.2 Refrigerator Efficiency
 
-   Arefrigeratorwithacopof$1.2$mustextract$100kJ$from
+   A refrigerator with a COP of$1.2$mustextract$100kJ$from
 
    food placed in the cold chamber. How much electrical
 
@@ -677,9 +665,7 @@ greatly limits the efficiency of combustion and the thermal efficiency. The tigh
 
    $4000W$ to an apartment. What is the electrical power
 
-   required? What is the power absorbed from the atmo-
-
-   sphere?
+   required? What is the power absorbed from the atmosphere?
 
    6.5 Operation of a Heat Pump
 
@@ -715,7 +701,7 @@ greatly limits the efficiency of combustion and the thermal efficiency. The tigh
 :::{admonition} Answer
 :class: dropdown
 
-1) If we assume that the density of the liquid is equal to that of liquid water $(\rho _{\mathrm{liquid}}= 10^{3}kg m^{-3})$, the heat $Q_{\mathrm{in}}$ absorbed by the refrigerator is $Q_{\mathrm{in}}= -Q_{\mathrm{glass}}- Q_{\mathrm{liquid}}- Q_{\mathrm{walls}}= -n_{\mathrm{bottles}}(m_{\mathrm{glass}}c_{\mathrm{glass}}+ m_{\mathrm{liquid}}c_{\mathrm{liquid}})(\Delta T)_{\mathrm{packs}}-\dot{Q}_{\mathrm{walls}}\Delta t = -60(0.172 \times 0.75\times 10^{3}+0.25\times 4.2\times 10^{3})\times (5-19)-10\times 4\times 3600 = +2)1 1W34_{\mathrm{n}}._{\mathrm{e}}4_{\mathrm{t}}kJ.=$ T hu$+\mathrm{s}1, 1W94^{\mathrm{n}}.^{\mathrm{e}}1^{\mathrm{t}}k=J \frac{Q_{\mathrm{in}}}{\eta _{\mathrm{refrigeration}}}= + 1=19 +4.111 k9W4.1 s k J.= +0.332 kW h$. Thus the cost adds up to $0.05$AC (!). 3) The room will be heated up by the heat rejec- tion $Q_{\mathrm{out}}= -Q_{\mathrm{in}}- W_{\mathrm{net}}= -2.329 MJ$. 4) Opening the door only increases the heat $Q_{\mathrm{in}}$ that needs to be extracted from the cold chamber, which will consequently increase $Q_{\mathrm{out}}$ and the warming of the room (with a net power$\dot{Q}_{\mathrm{net}}=\dot{} Q_{\mathrm{in}}+\dot{Q}_{\mathrm{out}}= -\dot{W}_{\mathrm{net}})$.
+1) If we assume that the density of the liquid is equal to that of liquid water $(\rho _{\mathrm{liquid}}= 10^{3}kg m^{-3})$, the heat $Q_{\mathrm{in}}$ absorbed by the refrigerator is $Q_{\mathrm{in}}= -Q_{\mathrm{glass}}- Q_{\mathrm{liquid}}- Q_{\mathrm{walls}}= -n_{\mathrm{bottles}}(m_{\mathrm{glass}}c_{\mathrm{glass}}+ m_{\mathrm{liquid}}c_{\mathrm{liquid}})(\Delta T)_{\mathrm{packs}}-\dot{Q}_{\mathrm{walls}}\Delta t = -60(0.172 \times 0.75\times 10^{3}+0.25\times 4.2\times 10^{3})\times (5-19)-10\times 4\times 3600 = +2)1 1W34_{\mathrm{n}}._{\mathrm{e}}4_{\mathrm{t}}kJ.=$ T hu$+\mathrm{s}1, 1W94^{\mathrm{n}}.^{\mathrm{e}}1^{\mathrm{t}}k=J \frac{Q_{\mathrm{in}}}{\eta _{\mathrm{refrigeration}}}= + 1=19 +4.111 k9W4.1 s k J.= +0.332 kW h$. Thus the cost adds up to $0.05$AC (!). 3) The room will be heated up by the heat rejection $Q_{\mathrm{out}}= -Q_{\mathrm{in}}- W_{\mathrm{net}}= -2.329 MJ$. 4) Opening the door only increases the heat $Q_{\mathrm{in}}$ that needs to be extracted from the cold chamber, which will consequently increase $Q_{\mathrm{out}}$ and the warming of the room (with a net power$\dot{Q}_{\mathrm{net}}=\dot{} Q_{\mathrm{in}}+\dot{Q}_{\mathrm{out}}= -\dot{W}_{\mathrm{net}})$.
 
 :::
 ```
@@ -732,12 +718,12 @@ greatly limits the efficiency of combustion and the thermal efficiency. The tigh
 :label: prob-6-7
 :enumerator: 6.7
 
-**Cooling of a Wind Tunnel The cryogenic wind tunnel etw (for *European Transonic Windtunnel*, figure 6.20) allows the circulation of nitrogen in a closed circuit to observe flows around models. It allows reaching Mach $0.8$ at $4 bar$ and $-200^{\circ}C (58 psi$ and $-328 ^{\circ} F)$, using a $50 MW$ fan. The walls of the wind tunnel are highly insulated, so that its thermal transfers with the outside are negligible compared to other energy transfers. The nitrogen cooling system has a cop of $0.8$. When the wind tunnel is operating at full capacity, what power as work is received by the cooling system? What power is rejected as heat into the atmosphere? *Photo 1* CC-by-sa *by Commons User:Dantor Photo 2 by Fred Jones (NASA, public domain)***
+**Cooling of a Wind Tunnel The cryogenic wind tunnel etw (for *European Transonic Windtunnel*, figure 6.20) allows the circulation of nitrogen in a closed circuit to observe flows around models. It allows reaching Mach $0.8$ at 4 bar and $-200^{\circ}C (58 psi$ and $-328 ^{\circ} F)$, using a $50 MW$ fan. The walls of the wind tunnel are highly insulated, so that its thermal transfers with the outside are negligible compared to other energy transfers. The nitrogen cooling system has a cop of $0.8$. When the wind tunnel is operating at full capacity, what power as work is received by the cooling system? What power is rejected as heat into the atmosphere? *Photo 1* CC-by-sa *by Commons User:Dantor Photo 2 by Fred Jones (NASA, public domain)***
 
 :::{admonition} Answer
 :class: dropdown
 
-The $50 MW$ expended by the fan are entirely dis- sipated as friction in the wind tunnel, and thus converted into heat that must be removed if we want to maintain a constant temperature. There- fore,$\dot{W}_{\mathrm{net}}= \frac{Q_{\mathrm{in}}}{\eta _{\mathrm{refrigeration}}} = +62.5 MW$ (quite a refrig-
+The $50 MW$ expended by the fan are entirely dissipated as friction in the wind tunnel, and thus converted into heat that must be removed if we want to maintain a constant temperature. Therefore,$\dot{W}_{\mathrm{net}}= \frac{Q_{\mathrm{in}}}{\eta _{\mathrm{refrigeration}}} = +62.5 MW$ (quite a refrig-
 *Engineering Thermodynamics* by Olivier Cleynen
 erator...). It follows that$\dot{Q}_{\mathrm{out}}= -\dot{Q}_{\mathrm{in}}-\dot{W}_{\mathrm{net}}= -112.5 MW$.
 
@@ -756,7 +742,7 @@ erator...). It follows that$\dot{Q}_{\mathrm{out}}= -\dot{Q}_{\mathrm{in}}-\dot{
 :label: prob-6-8
 :enumerator: 6.8
 
-**Electricity Generation With a Gas Turbine A gas turbine (in English the term *gas turbine* can be used to describe the engine as a whole) is set up to operate an electric generator (figure 6.21); it operates with a flow rate of $0.5 kg s^{-1}$ of atmospheric air. uration named *turboshaft*, powering an electric generator. The gas is typically expanded (in the turbine, between C and D) to atmospheric pressure. *Diagram* CC-by-sa *Olivier Cleynen* • The air enters the machine at $20^{\circ}C (68 ^{\circ} F)$ and $1 bar$; it is compressed (A $\rightarrow$ B) to $30 bar$ in the compressor. • The air then receives heat through combustion, at constant pressure (B $\rightarrow$ C), until its temperature reaches $1000^{\circ}C$. • Finally, the air is expanded in a turbine (C $\rightarrow$ D) until it reaches atmospheric pressure and is discharged outside. The compressor is mechanically powered by the turbine, and the shaft connecting them also drives the electric current generator. In order to quantify the maximum efficiency that could be achieved by the machine, we consider that the compressor and the turbine are reversible adiabatic (meaning that compression and expansion occur very slowly and without heat transfer). 1. Draw the process undergone by the air during one cycle on a pressure-volume diagram, qualitatively (that is, without showing numerical values). 2. At what temperature does the air exit the compressor? 3. What is the power of the compressor? 4. At what temperature is the air rejected into the atmosphere? What power is rejected as heat into the atmosphere? 5. What is the efficiency of the machine? 6. How do the four energy transfers of this theoretical machine compare to those of a real machine, where the compressor and the turbine cannot be reversible?**
+**Electricity Generation With a Gas Turbine A gas turbine (in English the term *gas turbine* can be used to describe the engine as a whole) is set up to operate an electric generator (figure 6.21); it operates with a flow rate of $0.5 kg s^{-1}$ of atmospheric air. uration named *turboshaft*, powering an electric generator. The gas is typically expanded (in the turbine, between C and D) to atmospheric pressure. *Diagram* CC-by-sa *Olivier Cleynen* • The air enters the machine at $20^{\circ}C (68 ^{\circ} F)$ and 1 bar; it is compressed (A $\rightarrow$ B) to 30 bar in the compressor. • The air then receives heat through combustion, at constant pressure (B $\rightarrow$ C), until its temperature reaches $1000^{\circ}C$. • Finally, the air is expanded in a turbine (C $\rightarrow$ D) until it reaches atmospheric pressure and is discharged outside. The compressor is mechanically powered by the turbine, and the shaft connecting them also drives the electric current generator. In order to quantify the maximum efficiency that could be achieved by the machine, we consider that the compressor and the turbine are reversible adiabatic (meaning that compression and expansion occur very slowly and without heat transfer). 1. Draw the process undergone by the air during one cycle on a pressure-volume diagram, qualitatively (that is, without showing numerical values). 2. At what temperature does the air exit the compressor? 3. What is the power of the compressor? 4. At what temperature is the air rejected into the atmosphere? What power is rejected as heat into the atmosphere? 5. What is the efficiency of the machine? 6. How do the four energy transfers of this theoretical machine compare to those of a real machine, where the compressor and the turbine cannot be reversible?**
 
 :::{admonition} Answer
 :class: dropdown
@@ -770,13 +756,12 @@ to return to its initial state (§6.2.1);
 honorable, only attainable with perfect turbine
 and compressor);
 6) With a real compressor$\dot{W}_{\mathrm{A}\rightarrow \mathrm{B}_{2}}>\dot{W}_{\mathrm{A}\rightarrow \mathrm{B}}$ and
-$T_{\mathrm{B}_{2}}> T_{\mathrm{B}}$. It follows that if $T_{\mathrm{C}}$ is kept con-
-stant,$\dot{Q}_{\mathrm{B}\rightarrow \mathrm{C}_{2}}<\dot{Q}_{\mathrm{B}\rightarrow \mathrm{C}}$. Nevertheless, we still have
+$T_{\mathrm{B}_{2}}> T_{\mathrm{B}}$. It follows that if $T_{\mathrm{C}}$ is kept constant,$\dot{Q}_{\mathrm{B}\rightarrow \mathrm{C}_{2}}<\dot{Q}_{\mathrm{B}\rightarrow \mathrm{C}}$. Nevertheless, we still have
 $W_{\mathrm{C}\rightarrow \mathrm{D}_{2}}<\dot{W}_{\mathrm{C}\rightarrow \mathrm{D}}$ and $T_{\mathrm{D}_{2}}> T_{\mathrm{D}}$ in the turbine. The
 power$\dot{W}_{\mathrm{net}}$ decreases, the rejection$\dot{Q}_{\mathrm{out}}$ increases.
 We will see in chapter 7 (*the second law*) that the
 efficiency also decreases.
-*Note: We had already studied this engine in prob- lems 1.9 p. 29 and especially 3.2 p. 75. Our ability to analyze and quantify performance improves each time...*
+*Note: We had already studied this engine in problems 1.9 p. 29 and especially 3.2 p. 75. Our ability to analyze and quantify performance improves each time...*
 
 :::
 ```
@@ -793,7 +778,7 @@ efficiency also decreases.
 :label: prob-6-9
 :enumerator: 6.9
 
-**Cycle of a Steam Engine In a steam power plant, water circulates continuously through four components: • A quasi-adiabatic pump where water enters as saturated liquid and its pressure is raised from $0.5 bar$ to $40 bar$; • A boiler where its temperature is raised to $650^{\circ}C$ at constant pressure; • A quasi-adiabatic turbine that allows the water to return to $0.5 bar$ while expending energy as work; • A condenser that cools the water at constant pressure $(0.5 bar)$ until its return to the pump. We accept the following assumptions: • At the turbine outlet, the steam is at a temperature of $110^{\circ}C$ (after chapter 8, we will be able to predict this outlet temperature); • The compression in the pump is reversible, and the density of water does not vary as it passes through it. 1. Draw the process undergone by the water on a pressure-volume diagram, qualitatively (that is, without showing numerical values) and showing the saturation curve. 2. What is the efficiency of the engine? 3. What would happen if, in order to eliminate heat rejection, we removed the condenser by connecting the pump inlet directly to the turbine outlet?**
+**Cycle of a Steam Engine In a steam power plant, water circulates continuously through four components: • A quasi-adiabatic pump where water enters as saturated liquid and its pressure is raised from 0.5 bar to 40 bar; • A boiler where its temperature is raised to $650^{\circ}C$ at constant pressure; • A quasi-adiabatic turbine that allows the water to return to 0.5 bar while expending energy as work; • A condenser that cools the water at constant pressure $(0.5 bar)$ until its return to the pump. We accept the following assumptions: • At the turbine outlet, the steam is at a temperature of $110^{\circ}C$ (after chapter 8, we will be able to predict this outlet temperature); • The compression in the pump is reversible, and the density of water does not vary as it passes through it. 1. Draw the process undergone by the water on a pressure-volume diagram, qualitatively (that is, without showing numerical values) and showing the saturation curve. 2. What is the efficiency of the engine? 3. What would happen if, in order to eliminate heat rejection, we removed the condenser by connecting the pump inlet directly to the turbine outlet?**
 
 :::{admonition} Answer
 :class: dropdown
@@ -859,11 +844,9 @@ must therefore remove a power$\dot{Q}_{\mathrm{internal} \mathrm{air}}=\dot{} m_
 from the internal air. The air conditioning unit
 $\mathrm{will} \mathrm{therefore} \mathrm{require}\dot{W}_{\mathrm{net}}= \frac{-\dot{Q}_{\mathrm{internal} \mathrm{air}}}{\eta _{\mathrm{conditioner}}} = 765W.$
 6) To minimize$\dot{m}_{\mathrm{external} \mathrm{air}}$, we need to maximize
-its outlet temperature $T_{4}$. However, we neces- sarily have $T_{4}\le T_{\mathrm{B}}$, otherwise the heat trans- fer would occur in the wrong direction. Thus,
+its outlet temperature $T_{4}$. However, we necessarily have $T_{4}\le T_{\mathrm{B}}$, otherwise the heat transfer would occur in the wrong direction. Thus,
 $m_{\mathrm{external} \mathrm{air} \min.}= \frac{-\dot{Q}_{\mathrm{out} \mathrm{air} \mathrm{conditioner}}}{c_{p}(T_{4\max.}-T_{3})} = - \frac{-\dot{Q}_{\mathrm{in}}-\dot{W}_{\mathrm{net}}}{c_{p}(T_{4\max.}-T_{3})} = 0.208 kg s^{-1}$ (theoretical minimum).
-7) In principle, it is sufficient to reverse the posi-
-tions of the compressor and the turbine. In prac-
-tice, the temperature ranges will also need to be
+7) In principle, it is sufficient to reverse the positions of the compressor and the turbine. In practice, the temperature ranges will also need to be
 shifted to allow heat absorption in cold weather.
 
 :::
@@ -901,7 +884,7 @@ Then $T_{4\mathrm{Bmin}.}= T_{3\mathrm{Bmin}.}\left(\frac{p_{4\mathrm{B}}}{p_{3\
 of course); 9) It decreases: $w_{\mathrm{turbine} \mathrm{B}2}= c_{p}(T_{4\mathrm{Bmin}.}-T_{3\mathrm{Bmin}.}) = -108.6 kJ kg^{-1}$.
 12) $T_{5\mathrm{C}}= T_{6\mathrm{C}}(\frac{p_{5\mathrm{B}}}{p_{6\mathrm{B}}} )^{\frac{\gamma -1}{\gamma}} = 654.6 K = 381.5^{\circ}C = 718.7 ^{\circ} F$.
 13) We first calculate $T_{4\mathrm{C}}= T_{3\mathrm{C}}(\frac{p_{4\mathrm{C}}}{p_{3\mathrm{C}}} )^{\frac{\gamma -1}{\gamma}} = 728.4 K$. In the pack, the work transfers are $w_{\mathrm{pack}}= w_{\mathrm{pack} \mathrm{compressor}}+ w_{\mathrm{pack} \mathrm{turbine}}= c_{p}(T_{4\mathrm{C}}- T_{3\mathrm{C}}) + c_{p}(T_{6\mathrm{C}}- T_{5\mathrm{C}}) = -138.9 kJ kg^{-1}$; Thus, the air supplies net work in the pack, which in this case has a net surplus of shaft power. 14) In order to calculate these cop, the cycles must be completed by returning the air from the cabin condition back to the inlet condition (§6.2.1). In question 3 we have $\eta _{\mathrm{heat} \mathrm{pump}}= \left|\frac{q_{\mathrm{out}}}{w_{\mathrm{in}}}\right| = -\frac{c_{p}(T_{4\mathrm{A}}-T_{1\mathrm{A}})}{c_{p}(T_{2\mathrm{A}}-T_{1\mathrm{A}})} = 0.424$ (a rare application where a cop less than $100 \%$ is acceptable).
-15) In question 12 we have $\eta_{\mathrm{conditioner}}= \left|\frac{q_{\mathrm{in}}}{w_{\mathrm{in}}}\right|= \frac{c_{p}(T_{1\mathrm{C}}-T_{6\mathrm{C}})}{c_{p}(T_{2\mathrm{C}}-T_{1\mathrm{C}}+T_{4\mathrm{C}}-T_{3\mathrm{C}}+T_{6\mathrm{C}}-T_{5\mathrm{C}})} = 0.842$. In practice, however, the net work done by the air in the pack is not recovered: it is dissipated through friction into the ram air. We thus have $w_{\mathrm{net}}= c_{p}(T_{2\mathrm{C}}- T_{1\mathrm{C}})$ and the cop is decreased. A few final comments: 1) In reality, adiabatic pro- cesses are not reversible, which further reduces the efficiencies calculated here. 2) The low val- ues of these efficiencies result from compromises made to reduce the size, complexity, and espe- cially the weight of the onboard systems. In this application, the available power as work is high, pneumatic energy is widely available, and any excess in volume or weight has disproportionate consequences. 3) In more recent aircraft (referred to as *more electric*), such as the B787 and the A350, the packs are now powered by electricity rather than using the same air intended for the cabin.
+15) In question 12 we have $\eta_{\mathrm{conditioner}}= \left|\frac{q_{\mathrm{in}}}{w_{\mathrm{in}}}\right|= \frac{c_{p}(T_{1\mathrm{C}}-T_{6\mathrm{C}})}{c_{p}(T_{2\mathrm{C}}-T_{1\mathrm{C}}+T_{4\mathrm{C}}-T_{3\mathrm{C}}+T_{6\mathrm{C}}-T_{5\mathrm{C}})} = 0.842$. In practice, however, the net work done by the air in the pack is not recovered: it is dissipated through friction into the ram air. We thus have $w_{\mathrm{net}}= c_{p}(T_{2\mathrm{C}}- T_{1\mathrm{C}})$ and the cop is decreased. A few final comments: 1) In reality, adiabatic processes are not reversible, which further reduces the efficiencies calculated here. 2) The low values of these efficiencies result from compromises made to reduce the size, complexity, and especially the weight of the onboard systems. In this application, the available power as work is high, pneumatic energy is widely available, and any excess in volume or weight has disproportionate consequences. 3) In more recent aircraft (referred to as *more electric*), such as the B787 and the A350, the packs are now powered by electricity rather than using the same air intended for the cabin.
 *Engineering Thermodynamics* by Olivier Cleynen
 
 :::

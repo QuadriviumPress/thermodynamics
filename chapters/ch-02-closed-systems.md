@@ -16,6 +16,11 @@ Closed Systems
 :alt: Illustration from the original text
 :::
 
+:::{admonition} Executive summary
+:class: tip
+A closed system contains a fixed amount of mass. Heat and work transfers cause variations in the internal energy of the fluid. For work to be reversible, the movement must be infinitely slow.
+:::
+
 ## Introduction
 
 We wish to develop here a method of energy accounting applied to a
@@ -30,7 +35,8 @@ fixed mass?
 
 • What is reversibility, and why are we pursuing it?
 
-**2.1 Why Use a Closed System?**
+(sec-2-1)=
+## 2.1 Why Use a Closed System?
 
 From now on, we want to describe and quantify energy transfers in fluids. We can adopt two different points of view to observe the fluid:
 
@@ -45,7 +51,7 @@ The use of a closed system is appropriate for analyzing machines with reciprocat
 :::{figure} ../images/fig-2-1.jpg
 :label: fig-2-1
 :enumerator: 2.1
-:alt: A cutaway in a truck engine reveals three pistons in their cylinders. A closed system is a useful tool for studying the air trapped in a cyl
+:alt: A cutaway in a truck engine reveals three pistons in their cylinders. A closed system is a useful tool for studying the air trapped in a cylinder. The photographed engine is a diesel V8 from man.
 
 A cutaway in a truck engine reveals three pistons in their cylinders. A closed system is a useful tool for studying the air trapped in a cylinder. The photographed engine is a diesel V8 from man.
 :::
@@ -59,14 +65,15 @@ Concretely, in this chapter, we want to quantify the work that can be done by a 
 :::{figure} ../images/fig-2-2.jpg
 :label: fig-2-2
 :enumerator: 2.2
-:alt: Operating principle of an engine. When heat is supplied to a fluid in a closed reservoir, it increases the forces it exerts on the walls of
+:alt: Operating principle of an engine. When heat is supplied to a fluid in a closed reservoir, it increases the forces it exerts on the walls of the reservoir. By allowing the reservoir to deform, we let the fluid perform work.
 
 Operating principle of an engine. When heat is supplied to a fluid in a closed reservoir, it increases the forces it exerts on the walls of the reservoir. By allowing the reservoir to deform, we let the fluid perform work.
 :::
 
 *Diagram* CC-0 *Olivier Cleynen*
 
-**2.2 Accounting Conventions**
+(sec-2-2)=
+## 2.2 Accounting Conventions
 
 (sec-2-2-1)=
 ### 2.2.1 The closed system
@@ -76,7 +83,7 @@ We refer to a *closed system* as an arbitrary study subject with boundaries impe
 :::{figure} ../images/fig-2-3.jpg
 :label: fig-2-3
 :enumerator: 2.3
-:alt: A typical closed system: a fixed mass quantity in a closed reservoir. A movable wall allows to compress it; we will also allow it to receive
+:alt: A typical closed system: a fixed mass quantity in a closed reservoir. A movable wall allows to compress it; we will also allow it to receive and lose heat.
 
 A typical closed system: a fixed mass quantity in a closed reservoir. A movable wall allows to compress it; we will also allow it to receive and lose heat.
 :::
@@ -102,16 +109,20 @@ In order to quantify transfers, we will use the following sign convention, illus
 :::{figure} ../images/fig-2-4.jpg
 :label: fig-2-4
 :enumerator: 2.4
-:alt: Sign conventions for a closed system. Incoming flows are positive, outgoing flows are negative; they are all represented with inward-pointin
+:alt: Sign conventions for a closed system. Incoming flows are positive, outgoing flows are negative; they are all represented with inward-pointing arrows. The mass quantity is constant.
 
 Sign conventions for a closed system. Incoming flows are positive, outgoing flows are negative; they are all represented with inward-pointing arrows. The mass quantity is constant.
 :::
 
 Thus, in the equations, we can systematically add the terms without needing to know the direction of the changes. Transfers are accounted for like in a bank account: expenses are negative and revenues are positive.
 
-**2.3 The First Law in a Closed System** The first law states that energy is indestructible (§1.1.2). If we supply $100 J$ of work to a closed system and it rejects $80 J$ in the form of heat, then “its” energy has increased by $20 J$. We call this increase the *change of internal energy*, $\Delta U$. In the form of an equation, the first law in a closed system is expressed by the equation: $Q_{1\rightarrow 2}+ W_{1\rightarrow 2}= \Delta U$ for a stationary closed system; where $\Delta U = U_{2}- U_{1}$ is the change of internal energy $(J)$, $W_{1\rightarrow 2}$ is the work received by the system $(J)$, and $Q_{1\rightarrow 2}$ is the heat received by the system $(J)$. Unfortunately, internal energy $U$ is sometimes very difficult to measure. We shall see in chapters 4 and 5 that bodies store this internal energy in different ways, and that it is intimately related to temperature. By definition, internal energy $U$ is always positive, but its variation $\Delta U$ can also be negative. Equation 2/1 can be expressed with specific quantities: $m (q_{1\rightarrow 2}+ w_{1\rightarrow 2}) = m \Delta u q_{1\rightarrow 2}+ w_{1\rightarrow 2}= \Delta u$ for a stationary closed system; where $\Delta u = u_{2}- u_{1}$ is the change of specific internal energy $(J kg^{-1})$, $w_{1\rightarrow 2}$ is the specific work received by the system $(J kg^{-1})$, and $q_{1\rightarrow 2}$ is the specific heat received by the system $(J kg^{-1})$. *Diagram* CC-0 *Olivier Cleynen* « $^{\mathrm{Let} \mathrm{therefore} \mathrm{be} Q \mathrm{the} \mathrm{whole}}$ quantity of heat which one must impart to a body while it transitions on (2/1) $^{\mathrm{a} \mathrm{certain} \mathrm{path} \mathrm{from} \mathrm{one} \mathrm{state} \mathrm{into} \mathrm{an}-}$ other (whereby a withdrawn quantity of heat is counted as a negatively imparted heat quantity), so we divide this into three parts, of which the first comprehends the increase of the heat actually present in the body, the second the heat consumed for internal work and the third the heat consumed for external work. Of the first part, the same holds true as has already been said of the second, that it is independent of the manner in which the change has occurred, and therefore we can represent both parts together by a function $U$, of which, even if we do not yet know it more closely, we know at least this much beforehand, that it is fully determined by the initial and final state of (2/2) the body. » Rudolf Clausius, 1854 *Über eine veränderte Form des zweiten Hauptsatzes der mechanischen Wärmetheorie [[13](#ref-13)]* We can rewrite this equation 2/2 to express it in its *differential form*: δ$q +$ δ$w = du$ for a stationary closed system; where $du$ is the infinitesimal change of specific internal energy $(J kg^{-1})$, δ$w$ is the (specific) infinitesimal work transfer $(J kg^{-1})$, and δ$q$ is the (specific) infinitesimal heat transfer $(J kg^{-1})$. In this equation 2/3, the mathematical operators $d$ and δ have slightly different meanings: $du$, an *exact differential*, represents an infinitesimal *change* that will integrate to $\Delta u = u_{2}-u_{1}$; on the other hand, an δ$w$, *inexact differential*, represents an infinitesimal *transfer* that will integrate to $w_{1\rightarrow 2}$. This distinction is further elaborated in Appendix A4 p. 316. When a fluid is brought back to its initial state (same pressure, same volume, same temperature), then it contains exactly the same amount of internal energy as before. The total energy it has received (in the form of heat or work) has therefore necessarily been returned to the surroundings in one form or another. We express this statement as follows: $Q_{\mathrm{cycle}}+ W_{\mathrm{cycle}}= 0$ for a complete thermodynamic cycle, where $W_{\mathrm{cycle}}$ is the work received by the system $(J)$, and $Q_{\mathrm{cycle}}$ is the heat received by the system $(J)$. This equation 2/4 is the reason why the first law is often stated—without adding much to our simple statement in chapter 1 — in the following way: “When a system has completed a full thermodynamic cycle, the algebraic sum of the heat it has supplied and the work it has done is zero.”
+(sec-2-3)=
+## 2.3 The First Law in a Closed System
 
-**2.4 Quantifying Work with a Closed**
+The first law states that energy is indestructible (§1.1.2). If we supply $100 J$ of work to a closed system and it rejects $80 J$ in the form of heat, then “its” energy has increased by $20 J$. We call this increase the *change of internal energy*, $\Delta U$. In the form of an equation, the first law in a closed system is expressed by the equation: $Q_{1\rightarrow 2}+ W_{1\rightarrow 2}= \Delta U$ for a stationary closed system; where $\Delta U = U_{2}- U_{1}$ is the change of internal energy $(J)$, $W_{1\rightarrow 2}$ is the work received by the system $(J)$, and $Q_{1\rightarrow 2}$ is the heat received by the system $(J)$. Unfortunately, internal energy $U$ is sometimes very difficult to measure. We shall see in chapters 4 and 5 that bodies store this internal energy in different ways, and that it is intimately related to temperature. By definition, internal energy $U$ is always positive, but its variation $\Delta U$ can also be negative. Equation 2/1 can be expressed with specific quantities: $m (q_{1\rightarrow 2}+ w_{1\rightarrow 2}) = m \Delta u q_{1\rightarrow 2}+ w_{1\rightarrow 2}= \Delta u$ for a stationary closed system; where $\Delta u = u_{2}- u_{1}$ is the change of specific internal energy $(J kg^{-1})$, $w_{1\rightarrow 2}$ is the specific work received by the system $(J kg^{-1})$, and $q_{1\rightarrow 2}$ is the specific heat received by the system $(J kg^{-1})$. *Diagram* CC-0 *Olivier Cleynen* « $^{\mathrm{Let} \mathrm{therefore} \mathrm{be} Q \mathrm{the} \mathrm{whole}}$ quantity of heat which one must impart to a body while it transitions on (2/1) $^{\mathrm{a} \mathrm{certain} \mathrm{path} \mathrm{from} \mathrm{one} \mathrm{state} \mathrm{into} \mathrm{an}-}$ other (whereby a withdrawn quantity of heat is counted as a negatively imparted heat quantity), so we divide this into three parts, of which the first comprehends the increase of the heat actually present in the body, the second the heat consumed for internal work and the third the heat consumed for external work. Of the first part, the same holds true as has already been said of the second, that it is independent of the manner in which the change has occurred, and therefore we can represent both parts together by a function $U$, of which, even if we do not yet know it more closely, we know at least this much beforehand, that it is fully determined by the initial and final state of (2/2) the body. » Rudolf Clausius, 1854 *Über eine veränderte Form des zweiten Hauptsatzes der mechanischen Wärmetheorie [[13](#ref-13)]* We can rewrite this equation 2/2 to express it in its *differential form*: δ$q +$ δ$w = du$ for a stationary closed system; where $du$ is the infinitesimal change of specific internal energy $(J kg^{-1})$, δ$w$ is the (specific) infinitesimal work transfer $(J kg^{-1})$, and δ$q$ is the (specific) infinitesimal heat transfer $(J kg^{-1})$. In this equation 2/3, the mathematical operators $d$ and δ have slightly different meanings: $du$, an *exact differential*, represents an infinitesimal *change* that will integrate to $\Delta u = u_{2}-u_{1}$; on the other hand, an δ$w$, *inexact differential*, represents an infinitesimal *transfer* that will integrate to $w_{1\rightarrow 2}$. This distinction is further elaborated in Appendix A4 p. 316. When a fluid is brought back to its initial state (same pressure, same volume, same temperature), then it contains exactly the same amount of internal energy as before. The total energy it has received (in the form of heat or work) has therefore necessarily been returned to the surroundings in one form or another. We express this statement as follows: $Q_{\mathrm{cycle}}+ W_{\mathrm{cycle}}= 0$ for a complete thermodynamic cycle, where $W_{\mathrm{cycle}}$ is the work received by the system $(J)$, and $Q_{\mathrm{cycle}}$ is the heat received by the system $(J)$. This equation 2/4 is the reason why the first law is often stated—without adding much to our simple statement in chapter 1 — in the following way: “When a system has completed a full thermodynamic cycle, the algebraic sum of the heat it has supplied and the work it has done is zero.”
+
+(sec-2-4)=
+## 2.4 Quantifying Work with a Closed System
 
 ## System
 
@@ -289,7 +300,7 @@ A powerful tool for understanding and analyzing work transfers is the *pressure-
 :::{figure} ../images/fig-2-6.jpg
 :label: fig-2-6
 :enumerator: 2.6
-:alt: Pressure-volume diagram of a closed system modeled by a spring. In the case shown here, the volume is increasing (the piston moves away). Th
+:alt: Pressure-volume diagram of a closed system modeled by a spring. In the case shown here, the volume is increasing (the piston moves away). The quantity $dV$ remains positive, and the work is negative: the system loses energy by doing work on the piston. This figure represents the same phenomenon as in fig. 1.3 p. 17, using different physical quantities.
 
 Pressure-volume diagram of a closed system modeled by a spring. In the case shown here, the volume is increasing (the piston moves away). The quantity $dV$ remains positive, and the work is negative: the system loses energy by doing work on the piston. This figure represents the same phenomenon as in fig. 1.3 p. 17, using different physical quantities.
 :::
@@ -361,7 +372,7 @@ When a fluid is compressed, the molecules it is made of are brought closer to ea
 :::{figure} ../images/fig-2-7.jpg
 :label: fig-2-7
 :enumerator: 2.7
-:alt: A simplistic representation of a fluid being infinitely slowly compressed without heating it. The fluid sees its temperature and pressure in
+:alt: A simplistic representation of a fluid being infinitely slowly compressed without heating it. The fluid sees its temperature and pressure increase.
 
 A simplistic representation of a fluid being infinitely slowly compressed without heating it. The fluid sees its temperature and pressure increase.
 :::
@@ -422,34 +433,22 @@ How exactly do fluids behave when they are compressed – in other words, by wha
 :::{figure} ../images/fig-2-9.jpg
 :label: fig-2-9
 :enumerator: 2.9
-:alt: Properties of a gas when compressed, represented on a pressure-volume diagram. The relationship is similar to what would be obtained with a
+:alt: Properties of a gas when compressed, represented on a pressure-volume diagram. The relationship is similar to what would be obtained with a spring with progressive coils.
 
 Properties of a gas when compressed, represented on a pressure-volume diagram. The relationship is similar to what would be obtained with a spring with progressive coils.
 :::
 
 *Diagram* CC-0 *Olivier Cleynen*
 
-When heat is provided to the fluid while it is being compressed, its behavior « $^{\mathrm{If} \mathrm{it} \mathrm{were} \mathrm{true} \mathrm{that} \mathrm{the} \mathrm{steam} \mathrm{ex}-}$ pended itself through the cylinder at
+When heat is provided to the fluid while it is being compressed, its behavior becomes “stiffer”, and the pressure increases more rapidly (figure 2.10). Conversely, when heat is taken away from it during compression, the pressure increases less rapidly. These heat transfers therefore vary the amount of work required to compress the fluid between two given volumes. The case where no heat is added is called *adiabatic*: $Q = 0$. Care is needed here: adiabatic does not mean “at constant temperature”. When a fluid is compressed without heat input, its temperature increases. In a diesel engine, for example, the air in the cylinders can reach $900^{\circ}C$ before combustion – which is desirable, as we will see in chapter 7 (*the second law*).
 
-becomes “stiffer”, and the pressure increases more rapidly (figure 2.10). a pressure equal to that of the boiler, or which stood in a fixed ratio to it
+:::{aside}
+« If it were true that the steam expended itself through the cylinder at a pressure equal to that of the boiler, or which stood in a fixed ratio to it as indicated by some coefficient, since it always takes the same locomotive the same number of wheel revolutions, or the same number of piston strokes to cover the same distance, it would follow that as long as these machines work at the same pressure, they should, in all cases, consume the same quantity of water for the same distance. »
 
-Conversely, when heat is taken away from it during compression, the as indicated by some coefficient, since
-
-pressure increases less rapidly. These heat transfers therefore vary the it always takes the same locomotive the same number of wheel revolutions,
-
-amount of work required to compress the fluid between two given volumes. or the same number of piston strokes
-
-The case where no heat is added is called *adiabatic*: $Q = 0$. Care is needed $^{\mathrm{to} \mathrm{cover} \mathrm{the} \mathrm{same} \mathrm{distance}, \mathrm{it} \mathrm{would}}$ follow that as long as these machines
-
-here: adiabatic does not mean “at constant temperature”. When a fluid is work at the same pressure, they should, in all cases, consume the same quantity
-
-compressed without heat input, its temperature increases. In a diesel engine, for example, the air in the cylinders can reach $900^{\circ}C$ before combustion – $^{\mathrm{of} \mathrm{water} \mathrm{for} \mathrm{the} \mathrm{same} \mathrm{distance}.}$ »
-
-François-Marie Guyonneau de
-
-which is desirable, as we will see in chapter 7 (*the second law*). Pambour, 1839
+François-Marie Guyonneau de Pambour, 1839
 
 *Théorie de la machine à vapeur* [[7](#ref-7)]
+:::
 
 In the three processes of figure 2.10, the relation of the form $pv^{k}=$ cst. remains an appropriate model. The more heat is supplied during compression, the more rapidly the pressure increases – the exponent $k$ is then larger.
 
@@ -458,7 +457,7 @@ Conversely, if heat is taken away during compression, the pressure increases les
 :::{figure} ../images/fig-2-10.jpg
 :label: fig-2-10
 :enumerator: 2.10
-:alt: Behavior of a fluid when infinitely slowly compressed. The more heat is supplied during compression, the more rapidly the pressure increases
+:alt: Behavior of a fluid when infinitely slowly compressed. The more heat is supplied during compression, the more rapidly the pressure increases. The adiabatic curve represents the case where no heat transfer occurs $(Q = 0)$.
 
 Behavior of a fluid when infinitely slowly compressed. The more heat is supplied during compression, the more rapidly the pressure increases. The adiabatic curve represents the case where no heat transfer occurs $(Q = 0)$.
 :::
@@ -504,7 +503,7 @@ The sign of $w_{\mathrm{A}\rightarrow \mathrm{B}}$ is positive: the gas has work
 
 The result may seem large, but it is important to remember
 
-that it is a mass-specific amount of work (§1.1.5) that needs to be multiplied by the mass of the gas to obtain a quantity in $joules$. At the initial conditions $(1 kg m^{-3})$, a volume of air of $1 L$ weighs just over one gram.
+that it is a mass-specific amount of work (§1.1.5) that needs to be multiplied by the mass of the gas to obtain a quantity in joules. At the initial conditions $(1 kg m^{-3})$, a volume of air of $1 L$ weighs just over one gram.
 
 ````
 
@@ -512,7 +511,7 @@ that it is a mass-specific amount of work (§1.1.5) that needs to be multiplied 
 :label: ex-2-4
 :enumerator: 2.4
 
-A mass of $0.3 gram$ of pressurized gas in a cylinder is slowly expanded as a piston moves. It is known that its pressure and volume are related by a relation of the form $pv^{k_{1}}= k_{2}$ (where $k_{1}$ and $k_{2}$ are two constants). At the beginning of the expansion, the pressure is at $12 bar (174 psi)$ and the volume is $0.25 L (0.22 gal imp)$. Once expanded, the gas reaches ambient pressure of $1 bar (14.5 psi)$ with a volume of $1.76 L (0.387 gal imp)$. What is the work done by the gas during the expansion?
+A mass of 0.3 gram of pressurized gas in a cylinder is slowly expanded as a piston moves. It is known that its pressure and volume are related by a relation of the form $pv^{k_{1}}= k_{2}$ (where $k_{1}$ and $k_{2}$ are two constants). At the beginning of the expansion, the pressure is at $12 bar (174 psi)$ and the volume is $0.25 L (0.22 gal imp)$. Once expanded, the gas reaches ambient pressure of $1 bar (14.5 psi)$ with a volume of $1.76 L (0.387 gal imp)$. What is the work done by the gas during the expansion?
 
 The process can be drawn qualitatively on a pressure-volume diagram as follows:
 
@@ -555,7 +554,7 @@ This calculation can be done more quickly without calculating the values of $v_{
 
 Example 2.5
 
-A gas confined in a sealed container is slowly heated. Its volume remains at $12 L$, and its pressure changes from $1 bar$ to $40 bar$. What is
+A gas confined in a sealed container is slowly heated. Its volume remains at $12 L$, and its pressure changes from 1 bar to 40 bar. What is
 
 The process can be drawn qualitatively on a pressure-volume diagram
 
@@ -571,7 +570,7 @@ Things get more complicated when we compress and expand our fluid rapidly (figur
 :::{figure} ../images/fig-2-11.jpg
 :label: fig-2-11
 :enumerator: 2.11
-:alt: Irreversible compression and expansion. When a fluid is rapidly compressed (left), the pressure on the piston wall is increased. During a ra
+:alt: Irreversible compression and expansion. When a fluid is rapidly compressed (left), the pressure on the piston wall is increased. During a rapid expansion (right), this pressure is decreased.
 
 Irreversible compression and expansion. When a fluid is rapidly compressed (left), the pressure on the piston wall is increased. During a rapid expansion (right), this pressure is decreased.
 :::
@@ -588,7 +587,7 @@ We could thus say that when compressed and expanded abruptly, a fluid behaves li
 
 If the received work is not equal to the work returned, then where did the excess energy go? This surplus of energy, supplied in the form of work by the piston, is *converted into heat inside the fluid* during the movements.
 
-« $^{\mathrm{We} \mathrm{have} \mathrm{said} \mathrm{that} \mathrm{at} \mathrm{the} \mathrm{start}}$ of the movement, the pressure equilibrium is established between the boiler and the cylinder, but as the speed of the piston increases, the latter, so to speak, escapes ahead of the steam without giving it time to establish this equilibrium, and the pressure in the cylinder necessarily drops. »
+« We have said that at the start of the movement, the pressure equilibrium is established between the boiler and the cylinder, but as the speed of the piston increases, the latter, so to speak, escapes ahead of the steam without giving it time to establish this equilibrium, and the pressure in the cylinder necessarily drops. »
 
 François-Marie Guyonneau de Pambour, 1835
 
@@ -599,7 +598,7 @@ François-Marie Guyonneau de Pambour, 1835
 :::{figure} ../images/fig-2-12.jpg
 :label: fig-2-12
 :enumerator: 2.12
-:alt: A solid object being moved in a water tank, with slow motion (above) and with fast motion (below). During fast motion, the pressure forces a
+:alt: A solid object being moved in a water tank, with slow motion (above) and with fast motion (below). During fast motion, the pressure forces aiding the movement are weaker, and the forces opposing the movement are greater. In the limit of infinitely slow motion, these forces are equal.
 
 A solid object being moved in a water tank, with slow motion (above) and with fast motion (below). During fast motion, the pressure forces aiding the movement are weaker, and the forces opposing the movement are greater. In the limit of infinitely slow motion, these forces are equal.
 :::
@@ -630,7 +629,7 @@ During expansion, the opposite phenomenon occurs (figure 2.15): a zone of lower 
 :::{figure} ../images/fig-2-14.jpg
 :label: fig-2-14
 :enumerator: 2.14
-:alt: Irreversible adiabatic compression on a pressure-volume diagram. We draw the curve with dashes: it is not a continuous series of states beca
+:alt: Irreversible adiabatic compression on a pressure-volume diagram. We draw the curve with dashes: it is not a continuous series of states because the fluid pressure is not homogeneous during the process. The path the fluid would have followed if the compression had been infinitely slow is represented with a solid line. During compression, the “surplus” of work supplied by the piston is converted into heat, even though the gas is perfectly isolated.
 
 Irreversible adiabatic compression on a pressure-volume diagram. We draw the curve with dashes: it is not a continuous series of states because the fluid pressure is not homogeneous during the process. The path the fluid would have followed if the compression had been infinitely slow is represented with a solid line. During compression, the “surplus” of work supplied by the piston is converted into heat, even though the gas is perfectly isolated.
 :::
@@ -640,7 +639,7 @@ Irreversible adiabatic compression on a pressure-volume diagram. We draw the cur
 :::{figure} ../images/fig-2-15.jpg
 :label: fig-2-15
 :enumerator: 2.15
-:alt: Irreversible adiabatic expansion on a pressure-volume diagram. The work received by the piston is less than it would have been with a slow m
+:alt: Irreversible adiabatic expansion on a pressure-volume diagram. The work received by the piston is less than it would have been with a slow motion. The path followed by the fluid is represented with dashes, because the pressure is not homogeneous during the movement.
 
 Irreversible adiabatic expansion on a pressure-volume diagram. The work received by the piston is less than it would have been with a slow motion. The path followed by the fluid is represented with dashes, because the pressure is not homogeneous during the movement.
 :::
@@ -695,7 +694,7 @@ Thus, the pressure gradually rises on the pressure-volume diagram: the excess wo
 
 Let’s take a few moments to reflect on what we have just described. Every time we compress a fluid “too quickly,” something happens that prevents us from recovering our work.
 
-From an engineering perspective, a slow process is a limit case: one where dissipations are minimized. For example, the work required to compress a gas to $10 bar$ is minimal when the compression is reversible. Similarly, a turbine in which the expansion is reversible will extract the maximum work from a compressed fluid. On the contrary, in a car shock absorber, processes are made highly irreversible so that it does less work on the return path than was done on it on the outbound journey.
+From an engineering perspective, a slow process is a limit case: one where dissipations are minimized. For example, the work required to compress a gas to 10 bar is minimal when the compression is reversible. Similarly, a turbine in which the expansion is reversible will extract the maximum work from a compressed fluid. On the contrary, in a car shock absorber, processes are made highly irreversible so that it does less work on the return path than was done on it on the outbound journey.
 
 From a physics standpoint, the phenomenon of irreversibility is fascinating. Indeed, we start from collisions of molecules, a completely reversible phenomenon, to create an irreversible process: one that only goes in one direction! In order to bring the gas back to the state it was in before being abruptly compressed, we are forced to transfer heat away from it. It is surprising that without going against Newton’s laws, we have created a situation where *we cannot go back by “doing the opposite”*. Are there other irreversible processes? Can we quantify irreversibility? We will attempt to answer these questions in chapters 7 (*the second law*) and 8 (*entropy*).
 
@@ -709,7 +708,7 @@ In the meantime, we shall agree that three conditions must be met for a process 
 
 These three conditions obviously exclude any real process—and in particular, any practical application in an engine! However, we will use them to establish an ideal theoretical limit for all of the real processes that we will study.
 
-« $^{\mathrm{Where} \mathrm{does} \mathrm{irreversibility} \mathrm{come}}$ from? It does not come from Newton’s laws. If we claim that the behavior of everything is ultimately to be understood in terms of the laws of physics, and if it also turns out that all the equations have the fantastic property that if we put $t=-t$ we have another solution, then every phenomenon is reversible. How then does it come about in nature on a large scale that things are not reversible? »
+« Where does irreversibility come from? It does not come from Newton’s laws. If we claim that the behavior of everything is ultimately to be understood in terms of the laws of physics, and if it also turns out that all the equations have the fantastic property that if we put $t=-t$ we have another solution, then every phenomenon is reversible. How then does it come about in nature on a large scale that things are not reversible? »
 
 Richard Feynman, 1963 [[30](#ref-30), [35](#ref-35)] *The Feynman Lectures on Physics*
 
@@ -727,7 +726,7 @@ $w_{\mathrm{A}\rightarrow \mathrm{B}}= -k_{2}[\frac{1}{-k_{1}+1} v^{-k_{1}+1}]^{
 4) $q_{\mathrm{B}\rightarrow \mathrm{C}}= \Delta u-w_{\mathrm{B}\rightarrow \mathrm{C}}= \Delta u-0 = +1543.3 kJ kg^{-1} 5) w_{\mathrm{C}\rightarrow \mathrm{D}}= -k_{3}[\frac{1}{-k_{1}+1} v^{-k_{1}+1}]^{v_{\mathrm{D}}}_{v_{\mathrm{C}}}= - \frac{k_{3}}{k_{2}} w_{\mathrm{A}\rightarrow \mathrm{B}}= - \frac{p_{\mathrm{C}}}{p_{\mathrm{B}}} w_{\mathrm{A}\rightarrow \mathrm{B}}= -1152.2kJkg^{-1}$
 6) $q_{\mathrm{D}\rightarrow \mathrm{A}}= -w_{\mathrm{A}\rightarrow \mathrm{B}}- q_{\mathrm{B}\rightarrow \mathrm{C}}- w_{\mathrm{C}\rightarrow \mathrm{D}}= -651.8kJkg^{-}7) \eta _{\mathrm{engine}}= |||8) f = \frac{1w_{\mathrm{A}\rightarrow \mathrm{B}}+w_{\mathrm{C}\rightarrow \mathrm{D}}q_{\mathrm{B}\rightarrow \mathrm{C}}W_{\mathrm{engine}}||| = 5}{m_{\mathrm{A}}(w_{\mathrm{A}\rightarrow \mathrm{B}}+w_{\mathrm{C}\rightarrow \mathrm{D}})} 7.8\% (\mathrm{very} \mathrm{honorable})= 176.1Hz (176$
 combustions per second), so approximately
-$5300 rotations per minute$ with a four-stroke,
+5300 rotations per minute with a four-stroke,
 four-cylinder engine.
 
 :::
@@ -757,9 +756,7 @@ $q_{1\rightarrow 2}= \Delta u - w_{1\rightarrow 2}$ (2/17)
 
 The entire difficulty in quantifying a heat transfer is now to predict and
 
-quantify the change in internal energy, $\Delta U$. For gases, $U$ is simply pro-
-
-portional to temperature; for liquids and vapors, the relationship is more
+quantify the change in internal energy, $\Delta U$. For gases, $U$ is simply proportional to temperature; for liquids and vapors, the relationship is more
 
 complex. We will learn to quantify energy in fluids in chapters 4 (*the ideal*
 
@@ -823,13 +820,11 @@ p \equiv \frac{F}{}
 A
 :::
 
-The second problem was more serious and more difficult to solve: how to increase efficiency? It By increasing the transmitted force, the structural was not just a financial question: the first steam- limits of the engine mechanics are quickly reached. powered transatlantic ship, the *SS Savannah*, was On the other hand, increasing the piston travel
+The second problem was more serious and more difficult to solve: how to increase efficiency? It By increasing the transmitted force, the structural was not just a financial question: the first steamlimits of the engine mechanics are quickly reached. powered transatlantic ship, the *SS Savannah*, was On the other hand, increasing the piston travel
 
 so inefficient that it completed its crossing under lengthens the pistons and makes the connecting
 
-sail, even though it was carrying *only* the coal for rod and crankshaft mechanisms significantly heav-
-
-its engine! ier. Additionally, the pressure and volume of the
+sail, even though it was carrying *only* the coal for rod and crankshaft mechanisms significantly heavits engine! ier. Additionally, the pressure and volume of the
 
 In order to increase the efficiency of an engine of steam are linked: they roughly follow a relation-given capacity, we seek to increase the amount of ship of the form $pv^{k_{1}}= k_{2}$ during expansion. In work generated by each kilogram of steam, which other words, pressure decreases when the volume can be approximated by the relation 2/15: is increased: as the cylinder is lengthened, the work gains become increasingly small. 52 [Chapter 2](#ch-2)
 
@@ -882,13 +877,9 @@ Problems
 
 2.1 Simple Processes
 
-(An exercise simply designed to practice the sign con-
+(An exercise simply designed to practice the sign conventions and vocabulary of the chapter.)
 
-ventions and vocabulary of the chapter.)
-
-A mass of $400g$ of water is placed in a sealed reser-
-
-voir. It undergoes a process during which it receives
+A mass of $400g$ of water is placed in a sealed reservoir. It undergoes a process during which it receives
 
 $50kJkg^{-1}$ of heat, and so its internal energy increases
 
@@ -910,7 +901,7 @@ A mass of $80g$ of helium is contained in a cylinder of
 
 $0.04m^{3}$. The gas is first cooled reversibly at constant
 
-pressureuntil$0.02m^{3}$ and$2bar$;thenheatedatconstant
+pressureuntil$0.02m^{3}$ and$2bar$;then heated at constant
 
 volume until $4bar$.
 
@@ -982,7 +973,7 @@ $w_{\mathrm{A}\rightarrow \mathrm{B}}= -k_{2}[\frac{1}{-k_{1}+1} v^{-k_{1}+1}]^{
 4) $q_{\mathrm{B}\rightarrow \mathrm{C}}= \Delta u-w_{\mathrm{B}\rightarrow \mathrm{C}}= \Delta u-0 = +1543.3 kJ kg^{-1} 5) w_{\mathrm{C}\rightarrow \mathrm{D}}= -k_{3}[\frac{1}{-k_{1}+1} v^{-k_{1}+1}]^{v_{\mathrm{D}}}_{v_{\mathrm{C}}}= - \frac{k_{3}}{k_{2}} w_{\mathrm{A}\rightarrow \mathrm{B}}= - \frac{p_{\mathrm{C}}}{p_{\mathrm{B}}} w_{\mathrm{A}\rightarrow \mathrm{B}}= -1152.2kJkg^{-1}$
 6) $q_{\mathrm{D}\rightarrow \mathrm{A}}= -w_{\mathrm{A}\rightarrow \mathrm{B}}- q_{\mathrm{B}\rightarrow \mathrm{C}}- w_{\mathrm{C}\rightarrow \mathrm{D}}= -651.8kJkg^{-}7) \eta _{\mathrm{engine}}= |||8) f = \frac{1w_{\mathrm{A}\rightarrow \mathrm{B}}+w_{\mathrm{C}\rightarrow \mathrm{D}}q_{\mathrm{B}\rightarrow \mathrm{C}}W_{\mathrm{engine}}||| = 5}{m_{\mathrm{A}}(w_{\mathrm{A}\rightarrow \mathrm{B}}+w_{\mathrm{C}\rightarrow \mathrm{D}})} 7.8\% (\mathrm{very} \mathrm{honorable})= 176.1Hz (176$
 combustions per second), so approximately
-$5300 rotations per minute$ with a four-stroke,
+5300 rotations per minute with a four-stroke,
 four-cylinder engine.
 
 :::
@@ -1029,7 +1020,7 @@ an automobile engine.
 :label: prob-2-6
 :enumerator: 2.6
 
-**Work in a Diesel Engine We are studying the operation of a four-cylinder reciprocating engine by modeling its operation in the most favorable case, in other words, with very slow (perfectly reversible) processes. Inside the engine block schematized in figure 2.22, four pistons linked to the engine shaft by a crankshaft (not shown) are in motion. The process is different in each cylinder: **Cylinder A:** compression (the air remains trapped in the cylinder). The air compression starts at $0.8 bar$ and its properties are related by the equation $pV^{1.3}= k_{1}$. **Cylinder B:** intake. Air is taken in at constant pressure of $0.8 bar$. **Cylinder C:** exhaust. Air is expelled at constant pressure of $1.1 bar$. **Cylinder D:** expansion. The high-pressure, high-temperature air is trapped in the cylinder; its properties are also related by the equation $pV^{1.3}= k_{2}$. *Diagram* CC-by-sa *Olivier Cleynen* Of course, the role of each cylinder changes twice per revolution. Here, we are studying the work transfers over one half revolution. Even though cylinders B and C are not closed systems, for the purposes of this problem, we can model their processes as if they were, without introducing errors. The atmospheric conditions are $1 bar$ and $1.225 kg m^{-3}$. The engine displacement is $1.5 L$ and the compression ratio (that is, the ratio of the minimum to maximum volumes within each cylinder) is $22$. 1. Draw the process in each of the cylinders on the same pressure-volume diagram, qualitatively. 2. What is the energy required to move cylinders B and C? 3. What is the energy received by the gas in cylinder A? We want the engine to deliver a power of $30 kW$ at a speed of $2000 revolutions/\min$. Its mechanical losses are around $15 \%$. 4. What is the work that must be done by cylinder D during expansion? 5. What should be the pressure generated by combustion in cylinder D, so that the expansion may release enough energy to operate the engine?**
+**Work in a Diesel Engine We are studying the operation of a four-cylinder reciprocating engine by modeling its operation in the most favorable case, in other words, with very slow (perfectly reversible) processes. Inside the engine block schematized in figure 2.22, four pistons linked to the engine shaft by a crankshaft (not shown) are in motion. The process is different in each cylinder: **Cylinder A:** compression (the air remains trapped in the cylinder). The air compression starts at 0.8 bar and its properties are related by the equation $pV^{1.3}= k_{1}$. **Cylinder B:** intake. Air is taken in at constant pressure of 0.8 bar. **Cylinder C:** exhaust. Air is expelled at constant pressure of 1.1 bar. **Cylinder D:** expansion. The high-pressure, high-temperature air is trapped in the cylinder; its properties are also related by the equation $pV^{1.3}= k_{2}$. *Diagram* CC-by-sa *Olivier Cleynen* Of course, the role of each cylinder changes twice per revolution. Here, we are studying the work transfers over one half revolution. Even though cylinders B and C are not closed systems, for the purposes of this problem, we can model their processes as if they were, without introducing errors. The atmospheric conditions are 1 bar and $1.225 kg m^{-3}$. The engine displacement is $1.5 L$ and the compression ratio (that is, the ratio of the minimum to maximum volumes within each cylinder) is $22$. 1. Draw the process in each of the cylinders on the same pressure-volume diagram, qualitatively. 2. What is the energy required to move cylinders B and C? 3. What is the energy received by the gas in cylinder A? We want the engine to deliver a power of $30 kW$ at a speed of $2000 revolutions/\min$. Its mechanical losses are around $15 \%$. 4. What is the work that must be done by cylinder D during expansion? 5. What should be the pressure generated by combustion in cylinder D, so that the expansion may release enough energy to operate the engine?**
 
 :::{admonition} Answer
 :class: dropdown
@@ -1058,14 +1049,13 @@ $p_{\mathrm{D}1}= 194.8\,\mathrm{bar} = 2825\,\mathrm{psi}$.
 :label: prob-2-7
 :enumerator: 2.7
 
-**Taking Heat From Where it is Cold A student is conducting an experiment with a bit of air in a cylinder, controlling its volume with a piston. The goal is to extract heat from the outside, where the temperature is low, in order to reject it inside the room. The mass of air trapped in the cylinder is $6 \times 10^{-3}kg$. Initially, the air in the cylinder occupies a volume of $0.5 L (0.132 US gal)$. The pressure and temperature are room conditions $(1 bar$; $18^{\circ}C$ or $64.4 ^{\circ} F)$. **From A to B** The student isolates the cylinder well with a thermal insulator, and slowly expands the gas by increasing its volume to $4.5 L (1.189 US gal)$. We know that during this type of expansion, pressure and volume are related by the equation $pv^{1.4}= k_{2}$ where $k_{2}$ is a constant (we will see where this relationship comes from and learn how to calculate the temperature $T_{\mathrm{B}}$ in chapter 4). The gas temperature drops dramatically during the expansion: at B, the thermometer finally reads $T_{\mathrm{B}}= 121 K$. **From B to C** The student ensures the cylinder volume remains constant by mechanically locking the piston, removes the thermal insulator, and places the cylinder outside the building (outside temperature: $-5^{\circ}C$ or $23 ^{\circ} F)$. The gas temperature and pressure slowly rise. **From C to A** When the pressure reaches $1 bar$ precisely, the cylinder air temperature is indicated as $T_{\mathrm{C}}= 262 K$. The student wishes to return to the initial conditions (by reducing the volume to the initial volume) while keeping the pressure constant at $1 bar$. 1. Sketch the process on a pressure-volume diagram. 2. Show that during a reversible process undergone by a closed system whose properties are related by a relation of the form $pv^{k_{1}}= k_{2}$ (where $k_{1}\neq 1$ and $k_{2}$ are constants), the specific work done is: $w_{\mathrm{A}\rightarrow \mathrm{B}}= \frac{p_{\mathrm{B}}v_{\mathrm{B}}- p_{\mathrm{A}}v_{\mathrm{A}}}{k_{1}- 1}$ 3. What is the work done by the gas during the expansion? 4. The thermal capacity of air when its volume is fixed is $718 J kg^{-1}K^{-1}$. How much heat was transferred to or from the outside air? 5. How much work will be needed to perform the C $\rightarrow$ A return at constant pressure? 6. Over the entire cycle, will the student have done or received work? 7. [difficult question] The return path at constant pressure requires heat transfer. In which direction and to what extent? Why can’t (unfortunately) this transfer be entirely done inside the building?**
+**Taking Heat From Where it is Cold A student is conducting an experiment with a bit of air in a cylinder, controlling its volume with a piston. The goal is to extract heat from the outside, where the temperature is low, in order to reject it inside the room. The mass of air trapped in the cylinder is $6 \times 10^{-3}kg$. Initially, the air in the cylinder occupies a volume of $0.5 L (0.132 US gal)$. The pressure and temperature are room conditions $(1 bar$; $18^{\circ}C$ or $64.4 ^{\circ} F)$. **From A to B** The student isolates the cylinder well with a thermal insulator, and slowly expands the gas by increasing its volume to $4.5 L (1.189 US gal)$. We know that during this type of expansion, pressure and volume are related by the equation $pv^{1.4}= k_{2}$ where $k_{2}$ is a constant (we will see where this relationship comes from and learn how to calculate the temperature $T_{\mathrm{B}}$ in chapter 4). The gas temperature drops dramatically during the expansion: at B, the thermometer finally reads $T_{\mathrm{B}}= 121 K$. **From B to C** The student ensures the cylinder volume remains constant by mechanically locking the piston, removes the thermal insulator, and places the cylinder outside the building (outside temperature: $-5^{\circ}C$ or $23 ^{\circ} F)$. The gas temperature and pressure slowly rise. **From C to A** When the pressure reaches 1 bar precisely, the cylinder air temperature is indicated as $T_{\mathrm{C}}= 262 K$. The student wishes to return to the initial conditions (by reducing the volume to the initial volume) while keeping the pressure constant at 1 bar. 1. Sketch the process on a pressure-volume diagram. 2. Show that during a reversible process undergone by a closed system whose properties are related by a relation of the form $pv^{k_{1}}= k_{2}$ (where $k_{1}\neq 1$ and $k_{2}$ are constants), the specific work done is: $w_{\mathrm{A}\rightarrow \mathrm{B}}= \frac{p_{\mathrm{B}}v_{\mathrm{B}}- p_{\mathrm{A}}v_{\mathrm{A}}}{k_{1}- 1}$ 3. What is the work done by the gas during the expansion? 4. The thermal capacity of air when its volume is fixed is $718 J kg^{-1}K^{-1}$. How much heat was transferred to or from the outside air? 5. How much work will be needed to perform the C $\rightarrow$ A return at constant pressure? 6. Over the entire cycle, will the student have done or received work? 7. [difficult question] The return path at constant pressure requires heat transfer. In which direction and to what extent? Why can’t (unfortunately) this transfer be entirely done inside the building?**
 
 :::{admonition} Answer
 :class: dropdown
 
 .7**
-3) After obtaining $p_{\mathrm{B}}= 4.61 \times 10^{-2}bar$, we calcu-
-late $W_{\mathrm{A}\rightarrow \mathrm{B}}= \frac{p_{\mathrm{B}}V_{\mathrm{B}}-p_{\mathrm{A}}V_{\mathrm{A}}}{k_{1}-1} = -73.14 J$.
+3) After obtaining $p_{\mathrm{B}}= 4.61 \times 10^{-2}bar$, we calculate $W_{\mathrm{A}\rightarrow \mathrm{B}}= \frac{p_{\mathrm{B}}V_{\mathrm{B}}-p_{\mathrm{A}}V_{\mathrm{A}}}{k_{1}-1} = -73.14 J$.
 4) $Q_{\mathrm{B}\rightarrow \mathrm{C}}= mc_{v}\Delta T = +607.4 J$
 5) $W_{\mathrm{C}\rightarrow \mathrm{A}}= +400 J$ (easy!)
 6) $W_{\mathrm{cycle}}= +326.86 J$, so work done by the student.

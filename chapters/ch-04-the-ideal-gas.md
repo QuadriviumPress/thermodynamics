@@ -20,6 +20,11 @@ The Ideal Gas
 :alt: Illustration from the original text
 :::
 
+:::{admonition} Executive summary
+:class: tip
+The ideal gas is a mathematical model that allows us to predict the properties (internal energy, enthalpy) of a gas simply based on its temperature. By approximation, air is an ideal gas.
+:::
+
 ## Introduction
 
 In chapters 2 and 3 we learned to quantify energy transfers — but we can
@@ -38,7 +43,8 @@ This chapter is incompatible with chapter 5 (*liquids and vapors*), where we
 
 will have to forget everything learned here.
 
-**4.1 Definition**
+(sec-4-1)=
+## 4.1 Definition
 
 (sec-4-1-1)=
 ### 4.1.1 The manometer as a thermometer
@@ -59,38 +65,36 @@ We can thus say that the ideal gas does not describe the reality of things, that
 We will call *ideal gas* a fluid in the gaseous state whose product of pressure and volume, $pv$, remains proportional to its temperature. The proportionality constant is called the *gas constant*, denoted as $R$; it depends on the nature of the gas.
 
 :::{math}
+:label: eq-4-1
+:enumerator: 4/1
 pv = RT
 :::
 
-by definition for an ideal gas, where $p$ is the pressure $(Pa)$,
-
-:::{math}
-v is the specific volume (m^{3}kg^{-1}) ,
-:::
-
-$T$ is the temperature $(K)$,
-
-and $R$ is the gas constant of the considered gas $(J K^{-1}kg^{-1})$.
+by definition for an ideal gas, where $p$ is the pressure $(Pa)$, $v$ is the specific volume $(m^{3}kg^{-1})$, $T$ is the temperature $(K)$, and $R$ is the gas constant of the considered gas $(J K^{-1}kg^{-1})$.
 
 Equation 4/1 is called the *equation of state of ideal gases*. It can also be expressed in terms of mass:
 
 :::{math}
+:label: eq-4-2
+:enumerator: 4/2
 pV = mRT
 :::
 
 where $V$ is the volume $(m^{3})$, and $m$ is the mass of the gas considered $(kg)$.
 
-« $^{\mathrm{The} \mathrm{change} \mathrm{in} \mathrm{temperature} \mathrm{occa}-}$ sioned in gases by a change in volume may be regarded as one of the most important facts of physics, owing to the numerous consequences it entails, and at the same time as one of the most difficult to elucidate and to measure by decisive experiments. It appears in several circumstances to present singular anomalies. »
+:::{aside}
+« The change in temperature occasioned in gases by a change in volume may be regarded as one of the most important facts of physics, owing to the numerous consequences it entails, and at the same time as one of the most difficult to elucidate and to measure by decisive experiments. It appears in several circumstances to present singular anomalies. »
 
 Sadi Carnot, 1824 [[4](#ref-4)]
+:::
 
-« $^{\mathrm{M}. \mathrm{S}. \mathrm{Carnot}, \mathrm{avoiding} \mathrm{the} \mathrm{use} \mathrm{of}}$ mathematical analysis, arrives through a series of subtle and hard to grasp reasonings at results which are without difficulty deduced from a more general law, which I shall endeavor to establish. »
+:::{aside}
+« M. S. Carnot, avoiding the use of mathematical analysis, arrives through a series of subtle and hard to grasp reasonings at results which are without difficulty deduced from a more general law, which I shall endeavor to establish. »
 
-(4/1) $^{\text{\'{E}mile} \mathrm{Clapeyron}, 1834 [5]}$
+Émile Clapeyron, 1834 [[5](#ref-5)]
+:::
 
-(4/2)
-
-It is also possible to express Equation 4/2 in terms of the amount of substance in $moles.^{1}$ Because it is inseparable from the concept of absolute temperature, it took 150 years for this equation to take its final form: the one given by Émile Clapeyron in 1834 [[5](#ref-5)].
+It is also possible to express Equation 4/2 in terms of the amount of substance in moles.[^ch4-fn1] Because it is inseparable from the concept of absolute temperature, it took 150 years for this equation to take its final form: the one given by Émile Clapeyron in 1834 [[5](#ref-5)].
 
 ````{prf:example}
 :label: ex-4-1
@@ -100,13 +104,9 @@ A mass of $2 kg$ of gas with a constant $R = 100 J K^{-1}kg^{-1}$ is contained i
 
 We start from Equation 4/2 to express the temperature: $T = \frac{p V}{m R} = \frac{3\times 10^{5}\times 0.2}{2\times 100} = 300 K = 26.85^{\circ}C = 80.33 ^{\circ} F$.
 
-Admirable Émile! The simplicity of this calculation will be
+Admirable Émile! The simplicity of this calculation will be missed in the next chapter.
 
-missed in the next chapter.
-
-The only thorn in this equation concerns the units, which must
-
-be properly converted to si: $200 L = 0.2 m^{3}$ and $3 bar = 3 \times 10^{5}Pa$. The temperature is always in $kelvins$.
+The only thorn in this equation concerns the units, which must be properly converted to SI: $200 L = 0.2 m^{3}$ and $3 bar = 3 \times 10^{5}Pa$. The temperature is always in kelvins.
 
 ````
 
@@ -116,29 +116,15 @@ be properly converted to si: $200 L = 0.2 m^{3}$ and $3 bar = 3 \times 10^{5}Pa$
 
 Atmospheric air can be modeled as an ideal gas with $R_{\mathrm{air}}= 287 J kg^{-1}K^{-1}$. Under ambient conditions $(1 bar, 20^{\circ}C$, that is, $14.5 psi$ and $68 ^{\circ} F)$, what are the specific volume and the density of the atmosphere?
 
-We start from Equation 4/1 to express the specific volume: $v = \frac{R T}{p} =$
+We start from Equation 4/1 to express the specific volume: $v = \frac{R T}{p} = \frac{287\times (20+273.15)}{1\times 10^{5}} = 0.841 m^{3}kg^{-1}$. The density then follows simply: $\rho = \frac{1}{v} = 1.189 kg m^{-3}$.
 
-$^{2}\frac{1}{v}^{87}=^{\times (12}1^{\times 0}.^{+1}1^{02}8^{57}9^{3.}k^{15}g^{)}m=_{- 3}0..841 m^{3}kg^{-1}$. The density then follows simply: $\rho =$
+Once again, forgetting to convert the temperature units to kelvins would be fatal (try using $0^{\circ}C$ or $0 ^{\circ} F$).
 
-Once again, forgetting to convert the temperature units to
-
-$kelvins$ would be fatal (try using $0^{\circ}C$ or $0 ^{\circ} F)$.
-
-:::{math}
-In one cubic meter (220 gal imp) , we have only 1.2 kg (2.6 lb) of
-:::
-
-air. This is very little, especially when compared to liquid water $(1000 kg$ for the same volume). Air machines typically operate with large volumetric flow rates.
+In one cubic meter $(220 gal imp)$, we have only $1.2 kg (2.6 lb)$ of air. This is very little, especially when compared to liquid water $(1000 kg$ for the same volume). Air machines typically operate with large volumetric flow rates.
 
 ````
 
-$^{1}$Sometimes in other books, the constant in $J K^{-1}kg^{-1}$ is denoted as $r$. The
-
-:::{math}
-quantity then denoted R = 8.3143 J K^{-1}mol^{-1} is universal, and gases adopt different
-:::
-
-values of $r$ depending on their molar mass $M \equiv \frac{m}{n}$. In this book, we do not quantify amounts of substance.
+[^ch4-fn1]: Sometimes in other books, the constant in $J K^{-1}kg^{-1}$ is denoted as $r$. The quantity then denoted $R = 8.3143 J K^{-1}mol^{-1}$ is universal, and gases adopt different values of $r$ depending on their molar mass $M \equiv \frac{m}{n}$. In this book, we do not quantify amounts of substance.
 
 ::::{admonition} A Bit of History
 :class: note
@@ -157,7 +143,7 @@ According to this model, molecules behave like spheres bouncing off each other (
 :::{figure} ../images/fig-4-1.jpg
 :label: fig-4-1
 :enumerator: 4.1
-:alt: An ideal gas can be visualized as a set of balls in random motion. They collide without friction and without mutual attraction. The speed of
+:alt: An ideal gas can be visualized as a set of balls in random motion. They collide without friction and without mutual attraction. The speed of each ball changes with each collision.
 
 An ideal gas can be visualized as a set of balls in random motion. They collide without friction and without mutual attraction. The speed of each ball changes with each collision.
 :::
@@ -177,7 +163,7 @@ The behavior of molecules when they are close to each other is actually very com
 
 The macroscopic consequences of these interactions, and the conditions under which they should no longer be neglected, are addressed in chapter 5 (*liquids and vapors*).
 
-« $^{\mathrm{Anyone} \mathrm{who} \mathrm{wants} \mathrm{to} \mathrm{analyze}}$ the properties of matter in a real problem might want to start by writing down the fundamental equations and then try to solve them mathematically. Although there are people who try to use such an approach, these people are the failures in this field; the real successes come to those who start from a *physical* point of view, people who have a rough idea where they are going and then begin by making the right kind of approximations, knowing what is big and what is small in a given complicated situation. »
+« Anyone who wants to analyze the properties of matter in a real problem might want to start by writing down the fundamental equations and then try to solve them mathematically. Although there are people who try to use such an approach, these people are the failures in this field; the real successes come to those who start from a *physical* point of view, people who have a rough idea where they are going and then begin by making the right kind of approximations, knowing what is big and what is small in a given complicated situation. »
 
 Richard Feynman, 1963 [[30](#ref-30), [35](#ref-35)] *The Feynman Lectures on Physics*
 
@@ -216,7 +202,8 @@ Despite the difficulties inherent in quantifying the terms $a$ and $b$, these mo
 
 Building mathematical models to describe the state of real gases is an important research area in fluid mechanics. The curious student can refer to equations of state such as the Beattie-Bridgeman, Benedict-Webb-Rubin, or the Strobridge models, in order get an overview of their increasing complexity. As for us, we will stick to equation 4/1.
 
-**4.2 Properties of Ideal Gases**
+(sec-4-2)=
+## 4.2 Properties of Ideal Gases
 
 (sec-4-2-1)=
 ### 4.2.1 Two important thermal capacities
@@ -245,7 +232,7 @@ Since the temperature of a gas also varies when work is done on it or by it, the
 :::{figure} ../images/fig-4-2.jpg
 :label: fig-4-2
 :enumerator: 4.2
-:alt: Two identical quantities of gas receive the same amount of heat . The temperature increase will be lower on the right due to the work done o
+:alt: Two identical quantities of gas receive the same amount of heat $Q$. The temperature increase will be lower on the right due to the work done on the piston.
 
 Two identical quantities of gas receive the same amount of heat $Q$. The temperature increase will be lower on the right due to the work done on the piston.
 :::
@@ -263,7 +250,7 @@ These two quantities are properties (or state quantities, see Appendix A4 p. 316
 :::{figure} ../images/fig-4-3.jpg
 :label: fig-4-3
 :enumerator: 4.3
-:alt: Definitions of heat capacities. On the left, the volume is fixed and the specific thermal capacity will be . On the right, the pressure is c
+:alt: Definitions of heat capacities. On the left, the volume is fixed and the specific thermal capacity will be $c_{v}$. On the right, the pressure is constant and the capacity will be $c_{p}$.
 
 Definitions of heat capacities. On the left, the volume is fixed and the specific thermal capacity will be $c_{v}$. On the right, the pressure is constant and the capacity will be $c_{p}$.
 :::
@@ -273,7 +260,7 @@ Definitions of heat capacities. On the left, the volume is fixed and the specifi
 :::{figure} ../images/fig-4-4.jpg
 :label: fig-4-4
 :enumerator: 4.4
-:alt: Specific thermal capacity of air as a function of temperature. There is a noticeable change in values in the temperature range used in engin
+:alt: Specific thermal capacity of air as a function of temperature. There is a noticeable change in values in the temperature range used in engineering, which we will neglect in the scope of this book.
 
 Specific thermal capacity of air as a function of temperature. There is a noticeable change in values in the temperature range used in engineering, which we will neglect in the scope of this book.
 :::
@@ -365,7 +352,8 @@ c_{v}
 
 By returning to figure 4.3 it quickly appears that $c_{p}$ must be greater than $c_{v}$; thus $\gamma$ is always greater than $1$. We take $\gamma _{\mathrm{air}}= 1.4$.
 
-**4.3 Energy and Temperature**
+(sec-4-3)=
+## 4.3 Energy and Temperature
 
 (sec-4-3-1)=
 ### 4.3.1 Historical context
@@ -379,24 +367,18 @@ the first time to distinguish heat, work, energy, and temperature. Joule’s met
 (sec-4-3-2)=
 ### 4.3.2 Joule’s law
 
-« $^{\mathrm{I} \mathrm{have} \mathrm{taken} \mathrm{two} \mathrm{two-tubulure}}$ In their most remarkable experiment, Joule and Gay-Lussac were seeking balloons, each with a capacity of twelve to vary the pressure and volume of a gas *without transferring heat or work*
-
-liters. To one of the tubulures of $^{\mathrm{each} \mathrm{balloon} \mathrm{was} \mathrm{adapted} \mathrm{a} \mathrm{faucet},}$ *to it*. For this, they let a compressed gas in a container expand into a second, and to the other a very-sensitive alcoempty container (figure 4.5). The work done was zero, since no surface
-
-hol thermometer, whose centigrade degrees could easily be divided into hunhad been moved – the process was entirely irreversible. The temperature
-
-dredths[...] The vacuum having being was measured and... nothing happened! Joule and Gay-Lussac measured
-
-made in both balloons, and having assured myself that they retained it ex-neither heat transfer nor temperature variation.
-
-actly, I filled one of them with the gas upon which I wished to operate. About twelve hours later, I established communication between them by means of a lead pipe, and upon opening the faucets, the gas then precipitated itself into the empty balloon until the pressure equilibrium was re-established on both sides. During this time, the thermometer experienced variations which I carefully noted. »
+:::{aside}
+« I have taken two two-tubulure balloons, each with a capacity of twelve liters. To one of the tubulures of each balloon was adapted a faucet, and to the other a very-sensitive alcohol thermometer, whose centigrade degrees could easily be divided into hundredths[...] The vacuum having being made in both balloons, and having assured myself that they retained it exactly, I filled one of them with the gas upon which I wished to operate. About twelve hours later, I established communication between them by means of a lead pipe, and upon opening the faucets, the gas then precipitated itself into the empty balloon until the pressure equilibrium was re-established on both sides. During this time, the thermometer experienced variations which I carefully noted. »
 
 Louis Joseph Gay-Lussac, 1807 [[3](#ref-3)]
+:::
+
+In their most remarkable experiment, Joule and Gay-Lussac were seeking to vary the pressure and volume of a gas *without transferring heat or work to it*. For this, they let a compressed gas in a container expand into a second, empty container (figure 4.5). The work done was zero, since no surface had been moved – the process was entirely irreversible. The temperature was measured and... nothing happened! Joule and Gay-Lussac measured neither heat transfer nor temperature variation.
 
 :::{figure} ../images/fig-4-5.jpg
 :label: fig-4-5
 :enumerator: 4.5
-:alt: The expansion of Joule and Gay-Lussac. A gas is initially trapped in a reservoir on the left; it is allowed to expand by opening the valve (
+:alt: The expansion of Joule and Gay-Lussac. A gas is initially trapped in a reservoir on the left; it is allowed to expand by opening the valve (in the center) which separates it from a completely empty reservoir on the right. Joule and Gay-Lussac are interested in the temperature changes measured in each reservoir. The closer the gas properties resemble the behavior of ideal gases model (§4.1.4), the smaller the temperature changes they measure, becoming undetectable for some simple gases at high temperatures.
 
 The expansion of Joule and Gay-Lussac. A gas is initially trapped in a reservoir on the left; it is allowed to expand by opening the valve (in the center) which separates it from a completely empty reservoir on the right. Joule and Gay-Lussac are interested in the temperature changes measured in each reservoir. The closer the gas properties resemble the behavior of ideal gases model (§4.1.4), the smaller the temperature changes they measure, becoming undetectable for some simple gases at high temperatures.
 :::
@@ -406,6 +388,8 @@ The expansion of Joule and Gay-Lussac. A gas is initially trapped in a reservoir
 Joule carried out a multitude of different experiments during which he observed that regardless of the supplied work, the relationship between internal energy (which varies only with work and heat) and temperature remained essentially the same – and he suggested that for an ideal gas, it always remains identical.
 
 This postulate is known as *Joule’s law* and is posited as true for any ideal gas. It can be summarized as follows:
+
+The temperature of an ideal gas only varies with its internal energy.
 
 Mathematically, we can write it as:
 
@@ -456,7 +440,7 @@ changes to know the temperature, and vice versa.
 
 Here the temperatures in $degrees Celsius$ are only added and a
 
-conversion to $kelvins$ would not have changed the result. In case of doubt, it is better not to take this shortcut.
+conversion to kelvins would not have changed the result. In case of doubt, it is better not to take this shortcut.
 
 ````
 
@@ -471,7 +455,7 @@ Indeed, we have $h \equiv u + pv$ (3/12); with a quick insertion of equations 4/
 h = u + pv = c_{v}T + RT = (c_{v}+ R) T
 :::
 
-« $^{\mathrm{The} \mathrm{difference} \mathrm{between} \mathrm{the}}$ means of tile experiments and interpolations being exactly such as was found to be due to the increased effect of the temperature of the room in the latter case, we arrive at the conclusion, that *no change of temperature occurs when air is allowed to expand in such a manner as not to develope mechanical*
+« The difference between the means of tile experiments and interpolations being exactly such as was found to be due to the increased effect of the temperature of the room in the latter case, we arrive at the conclusion, that *no change of temperature occurs when air is allowed to expand in such a manner as not to develope mechanical*
 
 (4/11) *power*. »
 
@@ -576,7 +560,7 @@ $v =$ constant (4/15)
 :::{figure} ../images/fig-4-6.jpg
 :label: fig-4-6
 :enumerator: 4.6
-:alt: A constant-pressure (isobaric) process undergone by an ideal gas. In a closed system (left), the piston exerts a constant force throughout t
+:alt: A constant-pressure (isobaric) process undergone by an ideal gas. In a closed system (left), the piston exerts a constant force throughout the process. In an open system (right), no work is done.
 
 A constant-pressure (isobaric) process undergone by an ideal gas. In a closed system (left), the piston exerts a constant force throughout the process. In an open system (right), no work is done.
 :::
@@ -690,7 +674,7 @@ during a reversible process at constant pressure, in an open system.
 
 For air, we have $c_{p (\mathrm{air})}= 1005 J kg^{-1}K^{-1}, c_{v (\mathrm{air})}= 718 J kg^{-1}K^{-1}, R_{\mathrm{air}}= 287 J kg^{-1}K^{-1}$. How much energy is needed to heat the air in a $30 m^{2} (322.9 ft^{2})$ apartment from $10^{\circ}C$ to $20^{\circ}C (50 ^{\circ} F$ to $68 ^{\circ} F)$?
 
-The heating will likely take place at constant pressure (unless the apartment is hermetically sealed, the pressure will be atmospheric everywhere and the air will “leak” under the doors). We assume a pressure of $1 bar$ and a ceiling height of $2.5 m$. We use a closed system encompassing all the heated air.
+The heating will likely take place at constant pressure (unless the apartment is hermetically sealed, the pressure will be atmospheric everywhere and the air will “leak” under the doors). We assume a pressure of 1 bar and a ceiling height of $2.5 m$. We use a closed system encompassing all the heated air.
 
 We have a volume of $75 m^{3}$, which leads to the total mass of air as $m_{\mathrm{A}}= \frac{p_{\mathrm{A}}V_{\mathrm{A}}}{R T_{\mathrm{A}}} = \frac{1\times 10^{5}\times 75}{287\times (10+273.15)}= 92.29\,\mathrm{kg} = 203.5\,\mathrm{lb}$. The heat required to heat this amount of air at constant pressure can be quantified with equation 4/17: $Q_{\mathrm{A}\rightarrow \mathrm{B}}= m c_{p}\Delta T = 93.29 \times 1005 \times (20 - 10) = +9.28 \times 10^{5}J = +928 kJ$.
 
@@ -750,7 +734,7 @@ volume diagram.
 :::{figure} ../images/fig-4-8.jpg
 :label: fig-4-8
 :enumerator: 4.8
-:alt: A constant-volume (isochoric) process undergone by an ideal gas. In a closed system (left), the volume is fixed and no work is done. In an o
+:alt: A constant-volume (isochoric) process undergone by an ideal gas. In a closed system (left), the volume is fixed and no work is done. In an open system (right), the gas must be compressed while heating and expanded while cooling, to
 
 A constant-volume (isochoric) process undergone by an ideal gas. In a closed system (left), the volume is fixed and no work is done. In an open system (right), the gas must be compressed while heating and expanded while cooling, to
 :::
@@ -821,7 +805,7 @@ Initially, the temperature is $T_{\mathrm{A}}= \frac{p_{\mathrm{A}}v_{\mathrm{A}
 
 Care must be taken with temperatures in the fractions, where
 
-they must be expressed in $kelvins$.
+they must be expressed in kelvins.
 
 The maximum temperature, exceeding $2300^{\circ}C$, surpasses the
 
@@ -836,21 +820,21 @@ time, we can predict the final conditions without having to make any measurement
 (sec-4-4-4)=
 ### 4.4.4 Processes at constant temperature
 
-« $^{\mathrm{It} \mathrm{is} \mathrm{easy} \mathrm{to} \mathrm{imagine} \mathrm{a} \mathrm{small} \mathrm{quan}-}$ It is possible to heat or cool a gas while maintaining its temperature constant tity of gaseous or liquid combustible, (figure 4.10). A process at constant temperature is called *isothermal*.
+:::{aside}
+« It is easy to imagine a small quantity of gaseous or liquid combustible, or dust coal, gradually introduced into a volume of compressed and highly heated air, and burning by spontaneous or separate ignition. The piston is forced out at the same time in such a way that no increase of temperature takes place, because the heat developed by each particle of combustible is instantly absorbed by the cooling due to expansion. Therefore the whole of the heat developed will be transformed into work. »
 
-or dust coal, gradually introduced into a volume of compressed and highly For an ideal gas, a process at constant temperature always occurs at constant
+Rudolf Diesel, 1893
 
-heated air, and burning by spontaneous $^{\mathrm{or} \mathrm{separate} \mathrm{ignition}. \mathrm{The} \mathrm{piston} \mathrm{is}}$ energy. For each $joule$ of heat supplied to the gas, one $joule$ of work must be forced out at the same time in such a extracted from it; conversely, every heat withdrawal must be compensated
+*Theorie und Konstruktion eines rationellen Wärmemotors zum Ersatz der Dampfmaschinen und der heute bekannten Verbrennungsmotoren* [[23](#ref-23), [24](#ref-24)]
+:::
 
-way that no increase of temperature takes place, because the heat developed by an equal amount of work input. by each particle of combustible is in- $^{\mathrm{stantly} \mathrm{absorbed} \mathrm{by} \mathrm{the} \mathrm{cooling} \mathrm{due}}$ In practice, this complexity makes it so that isothermal heat transfers are to expansion. Therefore the whole of rarely used in industry. However, they have crucial theoretical importance,
+It is possible to heat or cool a gas while maintaining its temperature constant (figure 4.10). A process at constant temperature is called *isothermal*.
 
-the heat developed will be transformed $^{\mathrm{into} \mathrm{work}.}$ » which we will explore in chapter 7 (*the second law*).
+For an ideal gas, a process at constant temperature always occurs at constant energy. For each joule of heat supplied to the gas, one joule of work must be extracted from it; conversely, every heat withdrawal must be compensated by an equal amount of work input.
 
-Rudolf Diesel, 1893 When the temperature of an ideal gas remains constant, its properties vary
+In practice, this complexity makes it so that isothermal heat transfers are rarely used in industry. However, they have crucial theoretical importance, which we will explore in chapter 7 (*the second law*).
 
-*Theorie und Konstruktion eines* according to the relation
-
-*rationellen Wärmemotors zum Ersatz der Dampfmaschinen und der heute*
+When the temperature of an ideal gas remains constant, its properties vary according to the relation
 
 :::{math}
 :label: eq-4-25
@@ -858,14 +842,12 @@ Rudolf Diesel, 1893 When the temperature of an ideal gas remains constant, its p
 p v = constant
 :::
 
-*bekannten Verbrennungsmotoren* [[23](#ref-23), [24](#ref-24)] In a closed system, we have $q_{1\rightarrow 2}+w_{1\rightarrow 2}= \Delta u$, and if the process is reversible,
-
-heat and work can be related to the properties of the gas, although not
+In a closed system, we have $q_{1\rightarrow 2}+w_{1\rightarrow 2}= \Delta u$, and if the process is reversible, heat and work can be related to the properties of the gas, although not
 
 :::{figure} ../images/fig-4-10.jpg
 :label: fig-4-10
 :enumerator: 4.10
-:alt: A constant-temperature (isothermal) process undergone by an ideal gas. In a closed system (left), the gas is allowed to do work on a piston
+:alt: A constant-temperature (isothermal) process undergone by an ideal gas. In a closed system (left), the gas is allowed to do work on a piston while being heated, and conversely, work is done on the gas when it is cooled. In an open system (right), the same manipulations are carried out continuously.
 
 A constant-temperature (isothermal) process undergone by an ideal gas. In a closed system (left), the gas is allowed to do work on a piston while being heated, and conversely, work is done on the gas when it is cooled. In an open system (right), the same manipulations are carried out continuously.
 :::
@@ -1023,7 +1005,7 @@ w_{\mathrm{A}\rightarrow \mathrm{B}}= R T_{\mathrm{cst}.}\ln (\frac{v_{\mathrm{A
 = \exp [\frac{-100 \times 10^{3}}{2.5 \times 287 \times (800 + 273.15)}] = 0.878207
 :::
 
-Aobntda isnin ac ef in$V$a$^{\mathrm{A}}$l $=$vo l$^{\frac{m R T_{\mathrm{A}}}{p_{\mathrm{A}}}}$um e $V=_{\mathrm{B}}=^{2.5\times}\frac{V_{\mathrm{A}}2\times 10}{0.878207}^{287\times (800 _{5}+}= ^{2 7}4^{3}.^{.1}3^{5}8^{)}4= m 3_{3}. 8=5 1m1^{3}5 8= U 1S0 1g7a lU. S gal$, we Finally, the final pressure is obtained by comparing the final and initial states: $p_{\mathrm{A}}V_{\mathrm{A}}= m R T_{\mathrm{A}}= m R T_{\mathrm{B}}= p_{\mathrm{B}}V_{\mathrm{B}}$ (or with equation 4/27): $p_{\mathrm{B}}= p_{\mathrm{A}} \frac{V_{\mathrm{A}}}{V_{\mathrm{B}}} = 2\times 10^{5}\times 0.878 207 = 1.756\times 10^{5}Pa = 1.756 bar = 25.47 psi$.
+Aobntda isnin ac ef in$V$aAl $=$vo l$^{\frac{m R T_{\mathrm{A}}}{p_{\mathrm{A}}}}$um e $V=_{\mathrm{B}}=^{2.5\times}\frac{V_{\mathrm{A}}2\times 10}{0.878207}^{287\times (800 _{5}+}= ^{2 7}4^{3}.^{.1}3^{5}8^{)}4= m 3_{3}. 8=5 1m1^{3}5 8= U 1S0 1g7a lU. S gal$, we Finally, the final pressure is obtained by comparing the final and initial states: $p_{\mathrm{A}}V_{\mathrm{A}}= m R T_{\mathrm{A}}= m R T_{\mathrm{B}}= p_{\mathrm{B}}V_{\mathrm{B}}$ (or with equation 4/27): $p_{\mathrm{B}}= p_{\mathrm{A}} \frac{V_{\mathrm{A}}}{V_{\mathrm{B}}} = 2\times 10^{5}\times 0.878 207 = 1.756\times 10^{5}Pa = 1.756 bar = 25.47 psi$.
 
 The volume increases and the pressure decreases, since the gas
 
@@ -1050,7 +1032,7 @@ An *adiabatic* process is one where there is no heat transfer (figure 4.12). Thi
 :::{figure} ../images/fig-4-12.jpg
 :label: fig-4-12
 :enumerator: 4.12
-:alt: A reversible adiabatic (isentropic) process undergone by an ideal gas. In a closed system (left) as well as in an open system (right), the a
+:alt: A reversible adiabatic (isentropic) process undergone by an ideal gas. In a closed system (left) as well as in an open system (right), the apparatus is perfectly insulated, so that there is no heat transfer, even if the gas temperature varies.
 
 A reversible adiabatic (isentropic) process undergone by an ideal gas. In a closed system (left) as well as in an open system (right), the apparatus is perfectly insulated, so that there is no heat transfer, even if the gas temperature varies.
 :::
@@ -1256,9 +1238,9 @@ for any reversible adiabatic process.
 :label: ex-4-8
 :enumerator: 4.8
 
-For air, we have $c_{p (\mathrm{air})}= 1005 J kg^{-1}K^{-1}, c_{v (\mathrm{air})}= 718 J kg^{-1}K^{-1}, R_{\mathrm{air}}= 287 J kg^{-1}K^{-1}$, and $\gamma _{\mathrm{air}}= 1.4$. A compressed air tank of $200 L (52.83 US gal)$ contains air at $40 bar$ and $50^{\circ}C (580.2 psi$ and $122 ^{\circ} F)$. The ambient atmosphere is at $1 bar (14.5 psi)$. What is the maximum amount of work that can be extracted from the compressed air without supplying heat?
+For air, we have $c_{p (\mathrm{air})}= 1005 J kg^{-1}K^{-1}, c_{v (\mathrm{air})}= 718 J kg^{-1}K^{-1}, R_{\mathrm{air}}= 287 J kg^{-1}K^{-1}$, and $\gamma _{\mathrm{air}}= 1.4$. A compressed air tank of $200 L (52.83 US gal)$ contains air at 40 bar and $50^{\circ}C (580.2 psi$ and $122 ^{\circ} F)$. The ambient atmosphere is at $1 bar (14.5 psi)$. What is the maximum amount of work that can be extracted from the compressed air without supplying heat?
 
-The maximum work will be obtained if the expansion is reversible. Since we are not allowed to supply heat, our best option here is to perform a reversible adiabatic expansion from $40 bar$ to $1 bar$. We want to calculate the final temperature, since it will give us the change in energy, thus the work done by the gas. Among the three daunting relations 4/36 to 4/38, it is the second one that interests us:
+The maximum work will be obtained if the expansion is reversible. Since we are not allowed to supply heat, our best option here is to perform a reversible adiabatic expansion from 40 bar to 1 bar. We want to calculate the final temperature, since it will give us the change in energy, thus the work done by the gas. Among the three daunting relations 4/36 to 4/38, it is the second one that interests us:
 
 With $\left(\frac{T_{\mathrm{A}}}{T_{\mathrm{B}}}\right) = \left(\frac{p_{\mathrm{A}}}{p_{\mathrm{B}}}\right)^{\frac{\gamma-1}{\gamma}}$. Thus: $T_{\mathrm{B}}= T_{\mathrm{A}}(\frac{p_{\mathrm{A}}}{p_{\mathrm{B}}} ) ^{\gamma}= (50 + 273.15) ( \frac{40}{1} )^{-\frac{1.4-1}{1.4}} = 112.6 K = -160.5^{\circ}C = -257 ^{\circ} F$. The work done by the closed system composed of the gas is therefore $w_{\mathrm{A}\rightarrow \mathrm{B}}= \Delta u - q_{\mathrm{A}\rightarrow \mathrm{B}}= c_{v}\Delta T - 0 = 718 \times (-160.5 - 50) = -1.5115 \times 10^{5}J kg^{-1}= -151.1 kJ kg^{-1}$. By calculating the mass $m_{\mathrm{A}}= \frac{p_{\mathrm{A}}V_{\mathrm{A}}}{R T_{\mathrm{A}}} = \frac{40\times 10^{5}\times 0.2}{287\times (50+273.15)}= 8.626\,\mathrm{kg}$, we obtain $W_{\mathrm{A}\rightarrow \mathrm{B}}= m_{\mathrm{A}}w_{\mathrm{A}\rightarrow \mathrm{B}}= 8.626 \times -151.1 \times 10^{3}= -1.3038 \times 10^{6}J = -1.304 MJ$.
 
@@ -1274,7 +1256,7 @@ The final temperature, $-160^{\circ}C$ (!), reminds us not to confuse
 
 “adiabatic” with “constant temperature”.
 
-In the fractions, the pressures can be left in $bars$ or $psi$, but the
+In the fractions, the pressures can be left in bars or $psi$, but the
 
 temperatures cannot remain in $^{\circ}C$ or $^{\circ} F$.
 
@@ -1292,7 +1274,7 @@ It is important to keep in mind that in practice, the properties of a gas can be
 :::{figure} ../images/fig-4-14.jpg
 :label: fig-4-14
 :enumerator: 4.14
-:alt: An entirely arbitrary process undergone by an ideal gas represented on a pressure-volume diagram. Such a process requires a complex combinat
+:alt: An entirely arbitrary process undergone by an ideal gas represented on a pressure-volume diagram. Such a process requires a complex combination of heat and work transfers, which the student is invited to conceptualize.
 
 An entirely arbitrary process undergone by an ideal gas represented on a pressure-volume diagram. Such a process requires a complex combination of heat and work transfers, which the student is invited to conceptualize.
 :::
@@ -1330,15 +1312,11 @@ The debates on the nature of heat continued until peratures are different, the q
 
 the end of the 19th century with the gradual ac-they will mutually communicate will initially be
 
-ceptance of atomic theories. An important step unequal; the vis viva of the colder body will in-
-
-in this reflection is succinctly and eloquently precrease by the same amount by which the vis viva
+ceptance of atomic theories. An important step unequal; the vis viva of the colder body will inin this reflection is succinctly and eloquently precrease by the same amount by which the vis viva
 
 sented in the *Mémoire sur la chaleur* (Memoir on of the other will decrease, and this increase will
 
-Heat), 1780 [[1](#ref-1)] by the French physicists Lavoisier continue until the quantities of motion communi-
-
-and Laplace: cated from one to the other are equal; in this state, the temperature of the bodies will have reached
+Heat), 1780 [[1](#ref-1)] by the French physicists Lavoisier continue until the quantities of motion communiand Laplace: cated from one to the other are equal; in this state, the temperature of the bodies will have reached
 
 “Physicists are divided on the nature of heat. uniformity.
 
@@ -1346,9 +1324,7 @@ Many among them regard it as a fluid spread This way of regarding heat easily ex
 
 throughout nature, and of which bodies are more the direct impulse of solar rays is negligible, while
 
-or less penetrated, according to their temperature they produce a great amount of heat. Their im-
-
-and their particular disposition to retain it; it can pulse is the product of their mass by their simple
+or less penetrated, according to their temperature they produce a great amount of heat. Their imand their particular disposition to retain it; it can pulse is the product of their mass by their simple
 
 combine with them, and, in this state, it ceases to velocity; now, although this velocity is excessive,
 
@@ -1356,17 +1332,13 @@ act on the thermometer and to transfer from one their mass is so small that this
 
 body to another; it is only in the state of freedom, nil, whereas their vis viva, being the product of
 
-which allows it to establish equilibrium within their mass by the square of their velocity, rep-
-
-bodies, that it forms what we call *free heat*. resents heat of an order much superior to that
+which allows it to establish equilibrium within their mass by the square of their velocity, repbodies, that it forms what we call *free heat*. resents heat of an order much superior to that
 
 Other physicists think that heat is merely the of their direct impulse. This impulse on a white
 
 result of the imperceptible movements of the body, which abundantly reflects light, is greater
 
-molecules of matter. It is known that bodies, even than on a black body, and yet the solar rays com-
-
-the densest ones, are filled with a great number of municate less heat to the former because these
+molecules of matter. It is known that bodies, even than on a black body, and yet the solar rays comthe densest ones, are filled with a great number of municate less heat to the former because these
 
 pores or small voids, whose volume can consider-rays, by being reflected, carry away their vis viva,
 
@@ -1378,29 +1350,21 @@ freedom to oscillate in all directions, and it is We will not decide between the
 
 natural to think that these parts are in continual hypotheses; several phenomena seem to favor the
 
-agitation, which, if it increases to a certain point, latter; such is, for example, that of the heat pro-
-
-can disunite and decompose bodies; it is this induced by the friction of two solid bodies; but there
+agitation, which, if it increases to a certain point, latter; such is, for example, that of the heat procan disunite and decompose bodies; it is this induced by the friction of two solid bodies; but there
 
 ternal motion which, according to the physicists are others that are more simply explained by the
 
 we speak of, constitutes heat. former; perhaps both occur simultaneously. In
 
-To develop this hypothesis, we shall observe that, any case, since one can only form these two hy-
+To develop this hypothesis, we shall observe that, any case, since one can only form these two hyin all movements where there is no abrupt change, potheses regarding the nature of heat, one must
 
-in all movements where there is no abrupt change, potheses regarding the nature of heat, one must
-
-there exists a general law which geometers have accept the principles common to both; thus, ac-
-
-designated under the name of the *principle of the* cording to both, *the quantity of free heat always*
+there exists a general law which geometers have accept the principles common to both; thus, acdesignated under the name of the *principle of the* cording to both, *the quantity of free heat always*
 
 *conservation of vis viva*; this law consists in that, *remains the same in the simple mixing of bodies*.
 
 in a system of bodies acting upon each other in This is evident if heat is a fluid that tends to reach
 
-any manner, the vis viva, that is to say, the sum equilibrium, and if it is merely the vis viva re-
-
-of the products of each mass by the square of sulting from the internal motion of matter, the
+any manner, the vis viva, that is to say, the sum equilibrium, and if it is merely the vis viva reof the products of each mass by the square of sulting from the internal motion of matter, the
 
 its velocity, remains constant. If the bodies are principle in question follows from the principle
 
@@ -1435,9 +1399,7 @@ At the time when this text was written, the atomic hypothesis remained largely s
 
    It is heated at constant pressure until $900^{\circ}C$; then it is
 
-   cooled and expanded while its properties vary accord-
-
-   ing to the relation $pv^{1.1}=$ const. until its temperature
+   cooled and expanded while its properties vary according to the relation $pv^{1.1}=$ const. until its temperature
 
    reaches $25^{\circ}C$.
 
@@ -1459,7 +1421,7 @@ At the time when this text was written, the atomic hypothesis remained largely s
 :label: prob-4-2
 :enumerator: 4.2
 
-**Heating of an Air Tank A compressed air tank made out of sealed concrete has a fixed volume of $1.2 m^{3}$. Air is stored in it at a pressure of $2 bar$. The tank is placed in the sun and solar heating raises the temperature from $5^{\circ}C$ to $60^{\circ}C (41 ^{\circ} F$ to $140 ^{\circ} F)$. 1. What are the mass, specific volume, density, and pressure inside the tank, before and after heating? When the temperature reaches $60^{\circ}C$, a valve opens and lets air escape to bring the pressure in the tank back down to the initial pressure of $2 bar (29 psi$. During the release, the temperature of the air inside the tank remains constant. 2. How much air mass should be allowed to escape? When the pressure has reached $2 bar$, the valve closes and the tank, once again sealed, cools slowly at constant volume. The final temperature returns to $5^{\circ}C$. 3. What is the final pressure in the tank?**
+**Heating of an Air Tank A compressed air tank made out of sealed concrete has a fixed volume of $1.2 m^{3}$. Air is stored in it at a pressure of 2 bar. The tank is placed in the sun and solar heating raises the temperature from $5^{\circ}C$ to $60^{\circ}C (41 ^{\circ} F$ to $140 ^{\circ} F)$. 1. What are the mass, specific volume, density, and pressure inside the tank, before and after heating? When the temperature reaches $60^{\circ}C$, a valve opens and lets air escape to bring the pressure in the tank back down to the initial pressure of $2 bar (29 psi$. During the release, the temperature of the air inside the tank remains constant. 2. How much air mass should be allowed to escape? When the pressure has reached 2 bar, the valve closes and the tank, once again sealed, cools slowly at constant volume. The final temperature returns to $5^{\circ}C$. 3. What is the final pressure in the tank?**
 
 :::{admonition} Answer
 :class: dropdown
@@ -1564,7 +1526,7 @@ reversible adiabatic, isochoric $(v$ constant).
 :label: prob-4-11
 :enumerator: 4.11
 
-**Compressor of a Turbofan Inside one of the engines of a commercial aircraft, the compressor (figure 4.17) is almost adiabatic. During cruise at $33 000 ft$, the atmosphere is at $-50^{\circ}C (-58 ^{\circ} F)$ and $0.25 bar (3.626 psi)$. The fan is driven by the turbine through a mechanical shaft. It receives $55 kg s^{-1}$ of air at atmospheric conditions, and compresses this flow up until $8 bar (116 psi)$. 1. Starting from the following relation, $p_{1}v_{2}^{\gamma}$ (4/38) $(p_{2}) = (v_{1})$ *Photo* CC-by-sa *Olivier Cleynen* valid for a reversible adiabatic process undergone by a perfect gas, show (without using equation 4/36) that: $\frac{\gamma -1}{\gamma} \frac{T_{1}}{} \frac{p_{1}}{} (T_{2}) = (p_{2})$ (4/37) 2. What is the minimum theoretical power to be supplied to the compressor? 3. Under what conditions would this power be obtained? In reality, the compressor requires significantly more power to operate. We model the actual process inside the compressor with two distinct phases: • A heating at constant pressure, conducted by friction, with power representing $15 \%$ of the theoretical power calculated earlier; • Then, an ideal compression up to $8 bar$. 4. Compare the theoretical compression from question 2 and this new process on a pressure-volume diagram. Graphically represent the work done on one of the processes. 5. What is the power supplied to the compressor in this new scenario? under license by Sulzer in Switzerland *Photo* CC-by-sa *Sulzer AG***
+**Compressor of a Turbofan Inside one of the engines of a commercial aircraft, the compressor (figure 4.17) is almost adiabatic. During cruise at $33 000 ft$, the atmosphere is at $-50^{\circ}C (-58 ^{\circ} F)$ and $0.25 bar (3.626 psi)$. The fan is driven by the turbine through a mechanical shaft. It receives $55 kg s^{-1}$ of air at atmospheric conditions, and compresses this flow up until $8 bar (116 psi)$. 1. Starting from the following relation, $p_{1}v_{2}^{\gamma}$ (4/38) $(p_{2}) = (v_{1})$ *Photo* CC-by-sa *Olivier Cleynen* valid for a reversible adiabatic process undergone by a perfect gas, show (without using equation 4/36) that: $\frac{\gamma -1}{\gamma} \frac{T_{1}}{} \frac{p_{1}}{} (T_{2}) = (p_{2})$ (4/37) 2. What is the minimum theoretical power to be supplied to the compressor? 3. Under what conditions would this power be obtained? In reality, the compressor requires significantly more power to operate. We model the actual process inside the compressor with two distinct phases: • A heating at constant pressure, conducted by friction, with power representing $15 \%$ of the theoretical power calculated earlier; • Then, an ideal compression up to 8 bar. 4. Compare the theoretical compression from question 2 and this new process on a pressure-volume diagram. Graphically represent the work done on one of the processes. 5. What is the power supplied to the compressor in this new scenario? under license by Sulzer in Switzerland *Photo* CC-by-sa *Sulzer AG***
 
 :::{admonition} Answer
 :class: dropdown
@@ -1621,12 +1583,12 @@ $T6)^{\mathrm{C}}S= <^{\frac{Q_{\mathrm{B}\rightarrow \mathrm{C}}}{F_{\mathrm{ma
 :label: prob-4-13
 :enumerator: 4.13
 
-**Turbojet Engine An early 1960s military aircraft is equipped with a turbojet engine (figure 4.19). We wish to calculate the theoretical maximum speed at which it could accelerate the air at the nozzle outlet. The engine is tested on a stationary test bench. When air passes through the turbojet engine, it goes through four components that we will model as if they were ideal: **The compressor** (figure 4.20) compresses the air adiabatically and reversibly. At the inlet, the air is at $0.9 bar$ and $5^{\circ}C$; at the outlet, the pressure is increased to $19 bar$. **The combustion chamber** allows for the heating of air while maintaining its pressure constant. At the outlet of the combustion chamber, the temperature has been increased to $1100^{\circ}C$. **The turbine** extracts energy from the air to power the compressor. In the turbine, the air expands adiabatically and reversibly. **The nozzle** is a component in which no power is added or extracted from the air. As it flows across the nozzle, the air expands adiabatically *Diagram* CC-by-sa *Olivier Cleynen***
+**Turbojet Engine An early 1960s military aircraft is equipped with a turbojet engine (figure 4.19). We wish to calculate the theoretical maximum speed at which it could accelerate the air at the nozzle outlet. The engine is tested on a stationary test bench. When air passes through the turbojet engine, it goes through four components that we will model as if they were ideal: **The compressor** (figure 4.20) compresses the air adiabatically and reversibly. At the inlet, the air is at 0.9 bar and $5^{\circ}C$; at the outlet, the pressure is increased to 19 bar. **The combustion chamber** allows for the heating of air while maintaining its pressure constant. At the outlet of the combustion chamber, the temperature has been increased to $1100^{\circ}C$. **The turbine** extracts energy from the air to power the compressor. In the turbine, the air expands adiabatically and reversibly. **The nozzle** is a component in which no power is added or extracted from the air. As it flows across the nozzle, the air expands adiabatically *Diagram* CC-by-sa *Olivier Cleynen***
 
 :::{admonition} Answer
 :class: dropdown
 
-2) With equation 4/37, $T_{\mathrm{B}}= 664.83 K$ 3) With equation 3/15, $w_{\mathrm{compressor}}= w_{\mathrm{A}\rightarrow \mathrm{B}}= +388.61 kJ kg^{-1}$ 4) $T_{\mathrm{C}}= 1373.15 K$; thus $q_{\mathrm{combustion}}= q_{\mathrm{B}\rightarrow \mathrm{C}}= +711.86 kJ kg^{-1}$ 5) Since $w_{\mathrm{turbine}}= -w_{\mathrm{compressor}}$, we have $T_{D}= 986.47 K$ 6) With equation 4/37, $p_{\mathrm{D}}= 5.97 bar$ 7) Idem, with equation 4/37, $T_{\mathrm{E}}= 574.49 K$ 8) With equation 3/15, $C_{\mathrm{E}}= (-2\Delta h)^{\frac{1}{2}} = 909.98 m s^{-1}$ Of course, these values do not account for the irre- versibilities in an actual turbojet. These effects are approached in problem 4.11 p. 108 and formalized in chapter 10 (*air-based power cycles*).
+2) With equation 4/37, $T_{\mathrm{B}}= 664.83 K$ 3) With equation 3/15, $w_{\mathrm{compressor}}= w_{\mathrm{A}\rightarrow \mathrm{B}}= +388.61 kJ kg^{-1}$ 4) $T_{\mathrm{C}}= 1373.15 K$; thus $q_{\mathrm{combustion}}= q_{\mathrm{B}\rightarrow \mathrm{C}}= +711.86 kJ kg^{-1}$ 5) Since $w_{\mathrm{turbine}}= -w_{\mathrm{compressor}}$, we have $T_{D}= 986.47 K$ 6) With equation 4/37, $p_{\mathrm{D}}= 5.97 bar$ 7) Idem, with equation 4/37, $T_{\mathrm{E}}= 574.49 K$ 8) With equation 3/15, $C_{\mathrm{E}}= (-2\Delta h)^{\frac{1}{2}} = 909.98 m s^{-1}$ Of course, these values do not account for the irreversibilities in an actual turbojet. These effects are approached in problem 4.11 p. 108 and formalized in chapter 10 (*air-based power cycles*).
 *Engineering Thermodynamics* by Olivier Cleynen
 
 :::

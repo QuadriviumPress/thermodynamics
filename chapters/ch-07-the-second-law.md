@@ -20,21 +20,27 @@ The Second Law
 :alt: Illustration from the original text
 :::
 
+:::{admonition} Executive summary
+:class: tip
+Heat only moves towards a body at a lower temperature. This poses a fundamental limit on the efficiency of work-heat transformations. This limit depends on the maximum and minimum temperatures at which a machine operates, and is usually very low. Carnot described an engine of maximum efficiency.
+:::
+
 ## Introduction
 
 In chapter 6 (*thermodynamic cycles*), we studied the nature of different cycles
 
 for converting heat and work. We now aim to study, explain, and quantify
 
-theirverylimits. Thischapter7(*thesecondlaw*)aimstoanswertwoquestions:
+theirverylimits. Thischapter7(*thesecondlaw*)aims to answer two questions:
 
 • Why do all heat engines always have an efficiency less than $100\%$?
 
 • How can the efficiency of a heat machine be maximized?
 
-**7.1 The Second Law**
+(sec-7-1)=
+## 7.1 The Second Law
 
-**7.1.1 Statement**
+### 7.1.1 Statement
 
 The *second law of thermodynamics* is expressed as follows:
 
@@ -70,14 +76,15 @@ In our study and from our engineering point of view, we will accept the above po
 
 The *zeroth law* of thermodynamics states that if two bodies are in thermal equilibrium with a third, then all three are in equilibrium with each other. The *third law* states that the entropy (a property that we will study in the next chapter) of a crystal at zero temperature is zero. Neither of these laws is of any importance to the engineer.
 
-**7.2 The Second Law and Thermal**
+(sec-7-2)=
+## 7.2 The Second Law and Thermal Machines
 
 ## Machines
 
 (sec-7-2-1)=
 ### 7.2.1 All engines reject heat
 
-Let’s imagine that we want to generate work by taking heat from a “hot” object, that is, at a high temperature: for example, $100^{\circ}C (212 ^{\circ} F)$, as shown in figure 7.1. We connect a cylinder fliled with a fluid to this object, and let the fluid push on a piston as it receives heat.
+Let’s imagine that we want to generate work by taking heat from a “hot” object, that is, at a high temperature: for example, $100^{\circ}C (212 ^{\circ} F)$, as shown in figure 7.1. We connect a cylinder filled with a fluid to this object, and let the fluid push on a piston as it receives heat.
 
 :::{figure} ../images/fig-7-1.jpg
 :label: fig-7-1
@@ -98,30 +105,23 @@ Once it has done some work (at B in figure 7.1), the fluid has increased in volu
 
 ::::
 
-Unfortunately, *the only way* to extract heat from the gas is to put it in contact « $^{\mathrm{According} \mathrm{to} \mathrm{this} \mathrm{principle}, \mathrm{it} \mathrm{is}}$ not sufficient, in order to give rise to
+Unfortunately, *the only way* to extract heat from the gas is to put it in contact with a “cooler” body, as shown in figure 7.2. In particular, it is impossible to return the accumulated heat in the gas to the “hot” body – for that to happen, the gas temperature would need to be higher than this body. This accumulated energy is therefore irretrievably lost.
 
-with a “cooler” body, as shown in figure 7.2. In particular, it is impossible motive power, to produce heat: one
+:::{aside}
+« According to this principle, it is not sufficient, in order to give rise to motive power, to produce heat: one must also procure cold; without it, heat would be useless. And indeed, if one were to find only bodies around them as hot as our furnaces, how would one succeed in condensing the steam? Where would one place it once it had come into existence? One must not believe that it could be simply discharged into the atmosphere, as is done in certain machines: the atmosphere would not receive it. It receives it, in the present state of things, only because it serves the function of a vast condenser, because it is at a colder temperature: otherwise it would soon be filled with it, or rather, it would already be saturated with it. »
 
-to return the accumulated heat in the gas to the “hot” body – for that to must also procure cold; without it, heat would be useless.
-
-happen, the gas temperature would need to be higher than this body. This And indeed, if one were to find only
-
-accumulated energy is therefore irretrievably lost. $^{\mathrm{bodies} \mathrm{around} \mathrm{them} \mathrm{as} \mathrm{hot} \mathrm{as} \mathrm{our} \mathrm{fur}-}$ naces, how would one succeed in condensing the steam? Where would one place it once it had come into existence? One must not believe that it could be simply discharged into the atmosphere, as is done in certain machines: the atmosphere would not receive it. It receives it, in the present state of things, only because it serves the function of a vast condenser, because it is at a colder temperature: otherwise it would soon be fliled with it, or rather, it would already be saturated
-
-with it. »
-
+Sadi Carnot, 1824 [[4](#ref-4)]
+:::
 
 :::{figure} ../images/fig-7-2.jpg
 :label: fig-7-2
 :enumerator: 7.2
-:alt: The inevitable cooling of the engine. The only way to return the fluid
+:alt: The inevitable cooling of the engine. The only way to return the fluid to its initial state (A) in the experiment in figure 7.1 is by extracting heat from it, which can only be done with a “heat sink” at a lower temperature. The heat and work transfers here are smaller than on the outward journey, but both are non-zero.
 
-The inevitable cooling of the engine. The only way to return the fluid
+The inevitable cooling of the engine. The only way to return the fluid to its initial state (A) in the experiment in figure 7.1 is by extracting heat from it, which can only be done with a “heat sink” at a lower temperature. The heat and work transfers here are smaller than on the outward journey, but both are non-zero.
 :::
 
-Sadi Carnot, 1824 [[4](#ref-4)]
-
-to its initial state (A) in the experiment in figure 7.1 is by extracting heat from it, which can only be done with a “heat sink” at a lower temperature. The heat and work transfers here are smaller than on the outward journey, but both are non-zero. *Diagram* CC-0 *Olivier Cleynen*
+*Diagram* CC-0 *Olivier Cleynen*
 
 Thus, for an engine to operate continuously, it must, in addition to a high-temperature source from which to capture heat, have a “sink” at low temperature to reject the heat that it can no longer make use of.
 
@@ -221,24 +221,23 @@ W_{\mathrm{net}}> 0
 
 for any refrigerator, air conditioner, or heat pump.
 
-**7.3 The Carnot Cycle**
+(sec-7-3)=
+## 7.3 The Carnot Cycle
 
 (sec-7-3-1)=
 ### 7.3.1 Some context
 
-« $^{\mathrm{To} \mathrm{consider} \mathrm{in} \mathrm{all} \mathrm{its} \mathrm{generality}}$ At the beginning of the 19th century, a young Parisian *Polytechnique* en-the principle of the production of mogineer named Sadi Carnot became interested in the operation of thermal
+:::{aside}
+« To consider in all its generality the principle of the production of motion by heat, one must conceive of it independently of any mechanism, of any particular agent; one must establish reasoning applicable not only to steam engines, but to any imaginable heat engine, regardless of the substance employed and regardless of the manner in which it is acted upon. »
 
-tion by heat, one must conceive of it independently of any mechanism, of engines, which were booming at the time. Carnot sought to predict *the*
+Sadi Carnot, 1824 [[4](#ref-4)]
+:::
 
-any particular agent; one must estabmaximum amount of work* that can be generated from a given amount
+At the beginning of the 19th century, a young Parisian *Polytechnique* engineer named Sadi Carnot became interested in the operation of thermal engines, which were booming at the time. Carnot sought to predict *the maximum amount of work* that can be generated from a given amount of coal.
 
-lish reasoning applicable not only to steam engines, but to any imaginable of coal.
+Carnot’s approach is interesting in that he completely abstracted the technological aspect to investigate the underlying principles of engine operation. This is even more challenging because at that time, engines operated by vaporizing and condensing steam, and the concepts of a cycle or of energy conservation were not yet established. This abstraction and the clarity of his writing established his only work, *Reflections on the Motive Power of Fire and on Machines Fitted to Develop that Power*, 1824 [[4](#ref-4)], in the history of physics.
 
-heat engine, regardless of the substance $^{\mathrm{employed} \mathrm{and} \mathrm{regardless} \mathrm{of} \mathrm{the} \mathrm{manner}}$ Carnot’s approach is interesting in that he completely abstracted the techin which it is acted upon. » nological aspect to investigate the underlying principles of engine operation.
-
-Sadi Carnot, 1824 [[4](#ref-4)] This is even more challenging because at that time, engines operated by vaporizing and condensing steam, and the concepts of a cycle or of energy conservation were not yet established. This abstraction and the clarity of his writing established his only work, *Reflections on the Motive Power of Fire and on Machines Fitted to Develop that Power*, 1824 [[4](#ref-4)], in the history of physics.
-
-Carnot died shortly after his publication and before his work could be recognized; his conception of heat was fundamentally incorrect;$^{1}$ yet the theoretical engine he described, an essential passage for engineering students, serves as a reference in the design offices of all engine manufacturers today.
+Carnot died shortly after his publication and before his work could be recognized; his conception of heat was fundamentally incorrect;[^ch7-fn1] yet the theoretical engine he described, an essential passage for engineering students, serves as a reference in the design offices of all engine manufacturers today.
 
 (sec-7-3-2)=
 ### 7.3.2 Concept of reversible machine
@@ -247,9 +246,7 @@ Carnot sought the theoretical engine whose efficiency would be the maximum possi
 
 In thermodynamic terms, the machine he conceptualized is not only *bidirectional*, meaning that the direction of fluid flow can be changed to change its function (like many domestic heat pump / ac systems on the market today), but it is also *reversible*: by reversing its operation, all heat flows become exactly opposite. In this way, if Carnot’s refrigerator is powered by Carnot’s engine, then the flows will be exactly compensated, as depicted in figure 7.6.
 
-$^{1}$Carnot figured out the second law correctly, but not the first law: he still used
-
-Antoine Lavoisier’s *caloric theory*, which was to be dismantled by James Prescott Joule twenty years later.
+[^ch7-fn1]: Carnot figured out the second law correctly, but not the first law: he still used Antoine Lavoisier’s *caloric theory*, which was to be dismantled by James Prescott Joule twenty years later.
 
 ::::{admonition} A Bit of History
 :class: note
@@ -261,32 +258,25 @@ Antoine Lavoisier’s *caloric theory*, which was to be dismantled by James Pres
 :::{figure} ../images/fig-7-6.jpg
 :label: fig-7-6
 :enumerator: 7.6
-:alt: Two Carnot machines, an engine (left) and a refrigerator (right). The first powers the second, and since they are reversible (in the thermod
+:alt: Two Carnot machines, an engine (left) and a refrigerator (right). The first powers the second, and since they are reversible (in the thermodynamic sense of the word), the heat flows are balanced.
 
 Two Carnot machines, an engine (left) and a refrigerator (right). The first powers the second, and since they are reversible (in the thermodynamic sense of the word), the heat flows are balanced.
 :::
 
 *Diagram* CC-0 *Olivier Cleynen*
 
-Why would such a machine be the most efficient one that can be designed? « $^{\mathrm{This} \mathrm{maximum} [\mathrm{of} \mathrm{work}] \mathrm{has} \mathrm{the}}$ property, that, by its *consumption*, a
+Why would such a machine be the most efficient one that can be designed? It can be proven by contradiction that an engine with *higher* efficiency than a reversible engine cannot exist (figure 7.7). The work supplied by this hypothetical machine could be used to power a reversible refrigerator. These two machines together would then receive no net work, but would still create a heat flow from the cold reservoir to the hot reservoir. According to Carnot, and based on the second law whose validity we have accepted, this is impossible: such a machine cannot exist.
 
-It can be proven by contradiction that an engine with *higher* efficiency quantity of heat may be carried from
+:::{aside}
+« This maximum [of work] has the property, that, by its *consumption*, a quantity of heat may be carried from the cold body B to the warm one A equal to that which passed from A to B during its *production*. »
 
-than a reversible engine cannot exist (figure 7.7). The work supplied by the cold body B to the warm one A equal to that which passed from A to B
-
-this hypothetical machine could be used to power a reversible refrigerator.
-
-during its *production*. »
-
-
-These two machines together would then receive no net work, but would Rudolf Clausius, 1850 [[10](#ref-10), [11](#ref-11), [21](#ref-21)]
-
-still create a heat flow from the cold reservoir to the hot reservoir. According to Carnot, and based on the second law whose validity we have accepted, this is impossible: such a machine cannot exist.
+Rudolf Clausius, 1850 [[10](#ref-10), [11](#ref-11), [21](#ref-21)]
+:::
 
 :::{figure} ../images/fig-7-7.jpg
 :label: fig-7-7
 :enumerator: 7.7
-:alt: Proof by contradiction that the best possible engine is reversible. A hypothetical engine (on the left) with higher efficiency than a revers
+:alt: Proof by contradiction that the best possible engine is reversible. A hypothetical engine (on the left) with higher efficiency than a reversible refrigerator (on the right) could simply power the latter. Thus, we would obtain a spontaneous net heat flow (here of $100 W)$ from the cold source to the hot source, without a net input of work: according to the second law, this is impossible.
 
 Proof by contradiction that the best possible engine is reversible. A hypothetical engine (on the left) with higher efficiency than a reversible refrigerator (on the right) could simply power the latter. Thus, we would obtain a spontaneous net heat flow (here of $100 W)$ from the cold source to the hot source, without a net input of work: according to the second law, this is impossible.
 :::
@@ -302,17 +292,19 @@ This method of reasoning by combining hypothetical and theoretical machines, eve
 (sec-7-3-3)=
 ### 7.3.3 Development of the Carnot cycle
 
-« $^{\mathrm{But} \mathrm{in} \mathrm{order} \mathrm{to} \mathrm{draw} \mathrm{truly} \mathrm{ad}-}$ We have now seen that the maximum efficiency of a machine is reached vantageous results from high-pressure when its operation is reversible. From this observation, Carnot reasoned as
+:::{aside}
+« But in order to draw truly advantageous results from high-pressure machines, it is necessary that the fall of the caloric in them be utilized as effectively as possible. It is not enough for the steam to originate at a high temperature: it must also be that by the expansion of its volume it reach a sufficiently low temperature. The mark of a good steam engine must therefore be not only to employ steam under a high pressure, but *to employ it under successive pressures that are highly-variable, greatly-different from one another, and progressively decreasing*. »
 
-machines, it is necessary that the fall of the caloric in them be utilized as effecfollows:
+Sadi Carnot, 1824 [[4](#ref-4)]
+:::
 
-tively as possible. It is not enough for the steam to originate at a high tem- $^{\mathrm{perature}: \mathrm{it} \mathrm{must} \mathrm{also} \mathrm{be} \mathrm{that} \mathrm{by} \mathrm{the}}$ 1. All thermal machines operate by the expansion and contraction of a expansion of its volume it reach a suffisubstance alternately subjected to two temperatures;
+We have now seen that the maximum efficiency of a machine is reached when its operation is reversible. From this observation, Carnot reasoned as follows:
 
-ciently low temperature. The mark of a good steam engine must therefore be not only to employ steam under a high 2. For them to be reversible, namely, to ensure they can be carried out in pressure, but *to employ it under succesthe reverse direction, all heat transfers must be done with infinitesimal
+1. All thermal machines operate by the expansion and contraction of a substance alternately subjected to two temperatures;
 
-*sive pressures that are highly-variable,* $^{\mathrm{greatly-different} \mathrm{from} \mathrm{one} \mathrm{another}, \mathrm{and}}$ temperature differences: these processes will then be *isothermal*; *progressively decreasing*. » 3. For them to be reversible, the phases where the substance changes
+2. For them to be reversible, namely, to ensure they can be carried out in the reverse direction, all heat transfers must be done with infinitesimal temperature differences: these processes will then be *isothermal*;
 
-Sadi Carnot, 1824 [[4](#ref-4)] temperature (in order to move from one heat reservoir to another) must occur without heat transfer: these processes will then be *adiabatic*.
+3. For them to be reversible, the phases where the substance changes temperature (in order to move from one heat reservoir to another) must occur without heat transfer: these processes will then be *adiabatic*.
 
 4. In order to allow each process to be run backwards, they must all be *reversible* (infinitely slow).
 
@@ -381,7 +373,7 @@ This quantity of work $W_{\mathrm{net}}$ represents the maximum that can be obta
 :::{figure} ../images/fig-7-8.jpg
 :label: fig-7-8
 :enumerator: 7.8
-:alt: The four stages of the Carnot engine, executed with a fixed mass quantity by separating them in time. The cycle is such that when the stages
+:alt: The four stages of the Carnot engine, executed with a fixed mass quantity by separating them in time. The cycle is such that when the stages are performed in reverse
 
 The four stages of the Carnot engine, executed with a fixed mass quantity by separating them in time. The cycle is such that when the stages are performed in reverse
 :::
@@ -400,7 +392,7 @@ order $(1 \rightarrow 4 \rightarrow 3 \rightarrow 2 \rightarrow 1)$, the transfe
 :::{figure} ../images/fig-7-9.jpg
 :label: fig-7-9
 :enumerator: 7.9
-:alt: The four stages of the Carnot engine, executed with a constant mass flow by separating them in space. Here too, the cycle is such that when
+:alt: The four stages of the Carnot engine, executed with a constant mass flow by separating them in space. Here too, the cycle is such that when the flow direction is reversed
 
 The four stages of the Carnot engine, executed with a constant mass flow by separating them in space. Here too, the cycle is such that when the flow direction is reversed
 :::
@@ -412,16 +404,16 @@ The Carnot engine cycle can be plotted on a pressure-volume diagram (for example
 :::{figure} ../images/fig-7-10.jpg
 :label: fig-7-10
 :enumerator: 7.10
-:alt: Pressure-volume diagram of the Carnot engine performed with a perfect gas. The processes and are done at and , respectively.
+:alt: Pressure-volume diagram of the Carnot engine performed with a perfect gas. The processes $2 \rightarrow 3$ and $4 \rightarrow 1$ are done at $T_{H}$ and $T_{L}$, respectively.
 
 Pressure-volume diagram of the Carnot engine performed with a perfect gas. The processes $2 \rightarrow 3$ and $4 \rightarrow 1$ are done at $T_{H}$ and $T_{L}$, respectively.
 :::
 
 *Diagram* CC-0 *Olivier Cleynen*
 
-« $^{\mathrm{To} \mathrm{fully} \mathrm{utilize} \mathrm{the} \mathrm{motive} \mathrm{power}}$ The perceptive student will have observed that in order for all these phases that can be made available, the expanto be reversible, the piston movement must be infinitely slow, and thus the
+« To fully utilize the motive power The perceptive student will have observed that in order for all these phases that can be made available, the expanto be reversible, the piston movement must be infinitely slow, and thus the
 
-sion would have to be carried out un- $^{\mathrm{til} \mathrm{the} \mathrm{temperature} \mathrm{of} \mathrm{the} \mathrm{steam} \mathrm{was}}$ fluid completes the cycle in an infinite amount of time. The Carnot engine reduced to that of the condenser; but therefore reaches maximum efficiency with infinitely low power.
+sion would have to be carried out until the temperature of the steam was fluid completes the cycle in an infinite amount of time. The Carnot engine reduced to that of the condenser; but therefore reaches maximum efficiency with infinitely low power.
 
 practical considerations, derived from the manner in which the motive power
 
@@ -435,7 +427,7 @@ this limit from being reached. »
 
 ````{prf:example}
 
-$^{\text{\'{E}mile} \mathrm{Clapeyron}, 1834 [5]}$ Perform a Carnot cycle between temperatures of $600^{\circ}C (1112 ^{\circ} F)$ and $100^{\circ}C (212 ^{\circ} F)$. Use $100 g (0.22 lb)$ of air trapped in a cylinder at a pressure of $1 bar$. What amount of work must be invested? What is the work that will be recovered? What is the efficiency?
+$^{\text{\'{E}mile} \mathrm{Clapeyron}, 1834 [5]}$ Perform a Carnot cycle between temperatures of $600^{\circ}C (1112 ^{\circ} F)$ and $100^{\circ}C (212 ^{\circ} F)$. Use $100 g (0.22 lb)$ of air trapped in a cylinder at a pressure of 1 bar. What amount of work must be invested? What is the work that will be recovered? What is the efficiency?
 
 We start by raising the temperature to $600^{\circ}C$ with a reversible adiabatic process $(1 \rightarrow 2)$. The energetic cost for this will be $w_{1\rightarrow 2}= c_{v}\Delta T = 718\times (600-100) = +359 kJ kg^{-1}$ (4/32) and $q_{1\rightarrow 2}= 0$. Equation 4/37 provides
 
@@ -496,7 +488,7 @@ What is the cycle’s balance? The compression phases required $w_{\mathrm{compr
 
 We included the gas mass as late as possible. If we had studied a
 
-cycle carried out continuously as depicted in figure 7.9, we would only need to replace $m$ with$\dot{m}$ to obtain the sought powers in $watts$.
+cycle carried out continuously as depicted in figure 7.9, we would only need to replace $m$ with$\dot{m}$ to obtain the sought powers in watts.
 
 Compared to the recovered quantity, a substantial amount of
 
@@ -506,16 +498,14 @@ Although the cycle is already impracticable in reality, this meager
 
 efficiency is the greatest that can physically be attained between temperatures of $600^{\circ}C$ and $100^{\circ}C$.
 
-We could also have carried out these calculations using a liq-
-
-uid/vapor instead of air: this would not have altered the final results.
+We could also have carried out these calculations using a liquid/vapor instead of air: this would not have altered the final results.
 
 ````
 
 (sec-7-3-5)=
 ### 7.3.5 Four stages or four strokes?
 
-Piston engines are often classifeid according to their mode of operation. *Two-stroke engines* perform one expansion per crankshaft revolution (every two piston movements); whereas *four-stroke engines* (figure 6.14) perform one expansion every two revolutions. The distinction lies in the mode of exhaust gas removal and its replacement with fresh air (see §6.4 p. 163).
+Piston engines are often classified according to their mode of operation. *Two-stroke engines* perform one expansion per crankshaft revolution (every two piston movements); whereas *four-stroke engines* (figure 6.14) perform one expansion every two revolutions. The distinction lies in the mode of exhaust gas removal and its replacement with fresh air (see §6.4 p. 163).
 
 The transposition of the Carnot engine to reality, where eventually the fluid will need to be drained or transferred to a separate cylinder for cooling, can be done with either two or four strokes at the engineer’s discretion. Thus, the Carnot cycle, although it is indeed made up of four *stages*, cannot be specifically associated with either of these two modes of operation.
 
@@ -543,7 +533,8 @@ Pressure-volume diagram for a reversed Carnot cycle, namely, in refrigeration mo
 
 ::::
 
-**7.4 Thermodynamic Temperature Scale**
+(sec-7-4)=
+## 7.4 Thermodynamic Temperature Scale
 
 (sec-7-4-1)=
 ### 7.4.1 In a nutshell, for the impatient student
@@ -588,13 +579,7 @@ the contraction and expansion of a liquid in a tube. Between his relative zero p
 
 The main problem with these two scales is that the temperature is well defined only in the range of existence of liquid thermometers. Whatever fluid is used (mercury, alcohol, water), it always ends up freezing or boiling at some point; and the graduations then no longer provide useful information. For example, Celsius could not *define e* or even describe what allows recognizing a temperature of $1200^{\circ}C$.
 
-In addition to this, neither scale is intuitive in the negative range. If one were to admit, for example, that $40^{\circ}C$ could be “twice as much temperature” as $20^{\circ}C$, then what temperature would be twice as much as $-10^{\circ}C$? This
-
-:::{math}
-\mathrm{amountstoaskingthequestion}: \mathrm{canwewrite} \frac{40^{\circ}C}{20^{\circ}C} \mathrm{andisitequalto} \frac{80^{\circ}C}{40^{\circ}C} ? \mathrm{As}
-:::
-
-an inquisitive Scott would soon explain, the modern answer to this question is no.
+In addition to this, neither scale is intuitive in the negative range. If one were to admit, for example, that $40^{\circ}C$ could be “twice as much temperature” as $20^{\circ}C$, then what temperature would be twice as much as $-10^{\circ}C$? This amounts to asking the question: can we write $\frac{40^{\circ}C}{20^{\circ}C}$ and is it equal to $\frac{80^{\circ}C}{40^{\circ}C}$? As an inquisitive Scott would soon explain, the modern answer to this question is no.
 
 (sec-7-4-4)=
 ### 7.4.4 William Thomson’s thermometer
@@ -603,25 +588,21 @@ Scottish physicist and engineer William Thomson understood these limitations ver
 
 Thomson took a keen interest in the Carnot cycle and reasoned as follows: the only characteristic that gives maximum efficiency to the Carnot engine is the fact that it is reversible. In other words, all machines based on this cycle and operating between two given temperatures will have the same efficiency — regardless of their fuel, displacement, configuration, or power. One could therefore use the efficiency of a Carnot engine as a measure of temperature.
 
-« $^{... \mathrm{the} \mathrm{absolute} \mathrm{values} \mathrm{of} \mathrm{two}}$ Thomson’s proposition is as follows: consider a body at a temperature $T_{1}$ temperatures are to one another in the (for example, a thousand units, as shown in figure 7.12). A Carnot engine
+:::{aside}
+« …the absolute values of two temperatures are to one another in the proportion of the heat taken to the heat rejected in a perfect thermo-dynamic engine working with a source and refrigerator at the higher and lower of the temperatures respectively. »
 
-proportion of the heat taken to the heat rejected in a perfect thermodynamic is attached to it, which will supply work and reject heat at a lower temper-
-
-$^{\mathrm{engine} \mathrm{working} \mathrm{with} \mathrm{a} \mathrm{source} \mathrm{and} \mathrm{re}-}_{\mathrm{frigerator} \mathrm{at} \mathrm{the} \mathrm{higher} \mathrm{and} \mathrm{lower} \mathrm{of}}$ ature $T_{2}$. This temperature $T_{2}$ is half of $T_{1}$ if the engine rejects half of the $^{\mathrm{the} \mathrm{temperatures} \mathrm{respectively}.} _{\mathrm{heat} \mathrm{it} \mathrm{receives}; \mathrm{it} \mathrm{is} \mathrm{one-fourth} \mathrm{when} \mathrm{it} \mathrm{rejects} \mathrm{one} \mathrm{fourth}, \mathrm{and} \mathrm{so} \mathrm{on}. \mathrm{In}}$
-
-:::{math}
-William Thomson, 1854 [15] mathematical terms, Thomson proposed: ^{1}
+William Thomson, 1854 [[15](#ref-15)]
 :::
+
+Thomson’s proposition is as follows: consider a body at a temperature $T_{1}$ (for example, a thousand units, as shown in figure 7.12). A Carnot engine is attached to it, which will supply work and reject heat at a lower temperature $T_{2}$. This temperature $T_{2}$ is half of $T_{1}$ if the engine rejects half of the heat it receives; it is one-fourth when it rejects one fourth, and so on. In mathematical terms, Thomson proposed:[^ch7-fn2]
 
 :::{math}
 :label: eq-7-4
 :enumerator: 7/4
-\left|\frac{\dot{Q}_{TH}}{\dot{Q}_{TL}}\right| \equiv T_{H}T_{L}
+\left|\frac{\dot{Q}_{TH}}{\dot{Q}_{TL}}\right| \equiv \frac{T_{H}}{T_{L}}
 :::
 
-$^{1}$In fact, the records are again not that simple. Thomson initially proposed
-
-(in 1848 [[9](#ref-9)]) a scale in which$\dot{} \frac{Q_{TH}}{Q_{TL}}$ is proportional to the *difference* of temperatures; making it a logarithmic scale from our current perspective. He revised this with the help of James Prescott Joule to arrive at proposition 7/4 six years later [[14](#ref-14)].
+[^ch7-fn2]: In fact, the records are again not that simple. Thomson initially proposed (in 1848 [[9](#ref-9)]) a scale in which $\frac{\dot{Q}_{TH}}{\dot{Q}_{TL}}$ is proportional to the *difference* of temperatures; making it a logarithmic scale from our current perspective. He revised this with the help of James Prescott Joule to arrive at proposition 7/4 six years later [[14](#ref-14)].
 
 ::::{admonition} A Bit of History
 :class: note
@@ -635,7 +616,7 @@ in a Carnot engine (actually, for any machine performing a reversible transforma
 :::{figure} ../images/fig-7-12.jpg
 :label: fig-7-12
 :enumerator: 7.12
-:alt: Experiment illustrating the absolute temperature scale proposed by William Thomson. A Carnot engine operating between and rejects
+:alt: Experiment illustrating the absolute temperature scale proposed by William Thomson. A Carnot engine operating between $1000 K$ and $500 K$ rejects
 
 Experiment illustrating the absolute temperature scale proposed by William Thomson. A Carnot engine operating between $1000 K$ and $500 K$ rejects
 :::
@@ -657,9 +638,9 @@ Thomson therefore had a *scale* — a method of defining a temperature as “twi
 
 The zero of this scale corresponds well to the zero temperature point, since with the experiment in figure 7.12 one then has an “abyss” of zero temperature that allows gases to be infinitely expanded down to zero temperature (thus converting all the internal energy of a fluid into work).
 
-« $^{\mathrm{The} \mathrm{particular} \mathrm{convention} \mathrm{is}, \mathrm{that}}$ There remained the choice of a standard. Thomson returned to Celsius’s the difference of temperatures between thermometer and took the same reference point (the freezing point of
+« The particular convention is that There remained the choice of a standard. Thomson returned to Celsius’s the difference of temperatures between thermometer and took the same reference point (the freezing point of
 
-the freezing- and boiling-points of wa- $^{\mathrm{ter} \mathrm{under} \mathrm{standard} \mathrm{atmospheric} \mathrm{pres}-}$ pure water at atmospheric pressure). Observing that the contraction and sure shall be called 100 degrees. » expansion of fluids remain proportional to the change in their absolute tem-
+the freezing and boiling-points of wa- $^{\mathrm{ter} \mathrm{under} \mathrm{standard} \mathrm{atmospheric} \mathrm{pres}-}$ pure water at atmospheric pressure). Observing that the contraction and sure shall be called 100 degrees. » expansion of fluids remain proportional to the change in their absolute tem-
 
 William Thomson, 1854 [[15](#ref-15)] perature, he assigned a value to this reference point that allows maintaining the same thermometric scale as Celsius. For this, the temperatures $100^{\circ}C$ and $0^{\circ}C$, which are known to allow a maximum efficiency of $26.8 \%$, must correspond to temperatures in $K$ spaced by 100 units. The calculation is simple – the student is encouraged to reproduce it – and Thomson obtained the relation:
 
@@ -692,13 +673,14 @@ $T_{B}= -\frac{Q_{\mathrm{out}}}{\dot{Q}_{\mathrm{in}}} T_{H}= -\frac{-155}{200}
 
 ````{prf:example}
 
-Here we see that Kelvin used the Carnot engine as a thermome-
-
-ter. In order to construct the scale, he carried out this experiment between the two standards of $100^{\circ}C$ and $0^{\circ}C$, and ensured they were separated by one hundred intervals in absolute units.
+Here we see that Kelvin used the Carnot engine as a thermometer. In order to construct the scale, he carried out this experiment between the two standards of $100^{\circ}C$ and $0^{\circ}C$, and ensured they were separated by one hundred intervals in absolute units.
 
 ````
 
-**7.5 Maximum Efficiency of Machines** The final definition of temperature in 7/4 allows us to return to thermal machines and provide a simple answer to the questions raised by Carnot.
+(sec-7-5)=
+## 7.5 Maximum Efficiency of Machines
+
+The final definition of temperature in 7/4 allows us to return to thermal machines and provide a simple answer to the questions raised by Carnot.
 
 (sec-7-5-1)=
 ### 7.5.1 Efficiency of the Carnot engine
@@ -731,9 +713,9 @@ Therefore, even before addressing the inevitable technological difficulties asso
 
 • Secondly, this equation is a strong argument for increasing the combustion temperature in engines.
 
-In practice, the low temperature $T_{L}$ is limited by the ambient air temperature. The only remaining parameter to increase the efficiency of an ideal engine is the temperature $T_{H}$. This relationship explains the surprising efofrts made by engine designers to use high temperatures
+In practice, the low temperature $T_{L}$ is limited by the ambient air temperature. The only remaining parameter to increase the efficiency of an ideal engine is the temperature $T_{H}$. This relationship explains the surprising efforts made by engine designers to use high temperatures
 
-« $^{\mathrm{Thus}, \mathrm{we} \mathrm{are} \mathrm{led} \mathrm{to} \mathrm{establish} \mathrm{the}}$ following general proposition: *The motive power of heat is independent of the agents employed to produce it; its quantity is determined solely by the temperatures of the bodies between which, as the final result, the transport of caloric takes place.* »
+« Thus we are led to establish the following general proposition: *The motive power of heat is independent of the agents employed to produce it; its quantity is determined solely by the temperatures of the bodies between which, as the final result, the transport of caloric takes place.* »
 
 (6/5) Sadi Carnot, 1824 [[4](#ref-4)]
 
@@ -763,9 +745,7 @@ The technological specifics of the engine (displacement, injection
 
 method, etc.) may possibly bring it close to $57.3 \%$, but will never bring it beyond that value.
 
-We have indeed found the result obtained previously in exam-
-
-ple 7.1 p. 188, with a much simpler calculation.
+We have indeed found the result obtained previously in example 7.1 p. 188, with a much simpler calculation.
 
 ````
 
@@ -891,19 +871,13 @@ Rudolf Diesel in 1883.
 
 Despite everything, Rudolf Diesel, after a promising
 
-start in the design of refrigeration systems, man-
-
-aged to convince the *Maschinenfabrik Augsburg-*
+start in the design of refrigeration systems, managed to convince the *Maschinenfabrik Augsburg-*
 
 *Nürnberg* company, known today as man, to finance
 
-his research. They would be challenging: the transi-
+his research. They would be challenging: the transition from theory to practice took four years. Many
 
-tion from theory to practice took four years. Many
-
-ambitions were scaled back: the maximum pres-
-
-sure decreased to $90$ and then $40 bar (580 psi)$, the
+ambitions were scaled back: the maximum pressure decreased to $90$ and then $40 bar (580 psi)$, the
 
 coal dust was abandoned in favor of a crude oil
 
@@ -919,9 +893,7 @@ engine nearly three meters tall (figure 7.14), was
 
 the first to operate autonomously: eight minutes in
 
-February 1894. The performance of the third proto-
-
-type (figure 7.15) was independently measured in
+February 1894. The performance of the third prototype (figure 7.15) was independently measured in
 
 1897: $17 hp$ at $154 rpm$, and an efficiency of $26.2 \%$.
 
@@ -933,9 +905,7 @@ best steam engines!
 
 Man quickly started sales of the *rational engine*,
 
-renamed as *Diesel engine*, which gradually met suc-
-
-cess in Europe. Its operational regularity, reliability,
+renamed as *Diesel engine*, which gradually met success in Europe. Its operational regularity, reliability,
 
 and especially its low fuel consumption justified its
 
@@ -943,7 +913,7 @@ significant purchase cost: due to the materials and
 
 precision manufacturing it required, its price per
 
-$watt$ of power was about three times higher than
+watt of power was about three times higher than
 
 its competitors. The patents filed by Rudolf Diesel
 
@@ -951,9 +921,7 @@ brought him a significant income.
 
 The numerous documents left behind make Diesel
 
-a compelling figure: cultivated, diligent, and in-
-
-telligent (he excelled in all his studies), he had a
+a compelling figure: cultivated, diligent, and intelligent (he excelled in all his studies), he had a
 
 very keen perception of the economic and social
 
@@ -961,7 +929,7 @@ upheavals caused by the rapid mechanization of
 
 industry and transportation at the end of the 19th century [[33](#ref-33), [34](#ref-34), [41](#ref-41)]. After a harsh and miserable childhood, expelled from France and then England, he nurtured a strong social ideal that lead him to write *Solidarismus* (“*the rational and economic salvation of humanity*”, 1903 [[25](#ref-25)]). For him, the decentralization of mechanical power production, for small businesses or collectives, for example, would constitute a decisive social advancement.
 
-Despite the remarkable success achieved in ffiteen years, Rudolf Diesel struggled to find fulflilment. He was constantly the target of legal disputes, since his critics and competitors argued – not entirely without merit – that the engines he commercialized were ultimately very different from the machine described in his patent. The nationalist tensions leading up to the outbreak of World War I shook
+Despite the remarkable success achieved in fifteen years, Rudolf Diesel struggled to find fulflilment. He was constantly the target of legal disputes, since his critics and competitors argued – not entirely without merit – that the engines he commercialized were ultimately very different from the machine described in his patent. The nationalist tensions leading up to the outbreak of World War I shook
 
 :::{figure} ../images/fig-7-14.jpg
 :label: fig-7-14
@@ -984,7 +952,7 @@ The tragic disappearance of its creator would not suffice to slow down the progr
 :::{figure} ../images/fig-7-15.jpg
 :label: fig-7-15
 :enumerator: 7.15
-:alt: Diesel’s third prototype, and his first operational engine. The cylinder diameter was and the stroke reached . It would be tested at the tec
+:alt: Diesel’s third prototype, and his first operational engine. The cylinder diameter was $25 cm$ and the stroke reached $40 cm$. It would be tested at the technical
 
 Diesel’s third prototype, and his first operational engine. The cylinder diameter was $25 cm$ and the stroke reached $40 cm$. It would be tested at the technical
 :::
@@ -997,15 +965,13 @@ Diesel’s third prototype, and his first operational engine. The cylinder diame
 A nine-cylinder *Sulzer RTA76* Diesel engine
 :::
 
-university of Munich where it achieved $26.2 \%$ efficiency producing $25 MW$ of power at $95 rpm$. This unit is in-
-
-in 1897. It is exhibited at the *Deutsches Museum*. stalled here in a factory but the model is commonly used
+university of Munich where it achieved $26.2 \%$ efficiency producing $25 MW$ of power at $95 rpm$. This unit is inin 1897. It is exhibited at the *Deutsches Museum*. stalled here in a factory but the model is commonly used
 
 *Photo* CC-by-sa *Olivier Cleynen* to propel merchant ships. *Photo* CC-by-sa *by de:Wikipedia User:Sleipnir* 200 [Chapter 7](#ch-7)
 
-Today, it is used wherever constraints of economy and durability take precedence over lightness and responsiveness. In merchant ships, Diesel engines several stories high operate on highly turbocharged two-stroke cycles. In these engines exceeding $2000 tons$ and $18 000 hp$ (figure 7.16), the cylinders move slowly on strokes of over two meters, allowing for nearly isothermal combustion at $80 rpm$ and an efficiency exceeding $50 \%$.
+Today, it is used wherever constraints of economy and durability take precedence over lightness and responsiveness. In merchant ships, Diesel engines several stories high operate on highly turbocharged two-stroke cycles. In these engines exceeding 2000 tons and $18 000 hp$ (figure 7.16), the cylinders move slowly on strokes of over two meters, allowing for nearly isothermal combustion at $80 rpm$ and an efficiency exceeding $50 \%$.
 
-At the other end of the spectrum, Diesels powering the smallest utility vehicles benefit from numerous systems to increase their responsiveness and extend their power and torque ranges. In these tiny machines of $80 hp$ rotating beyond $2000 rpm$, electronic control systems perform up to four fuel injections at $2000 bar$ directly into the cylinder for each combustion, optimizing combustion based on the demanded power [[46](#ref-46)].
+At the other end of the spectrum, Diesels powering the smallest utility vehicles benefit from numerous systems to increase their responsiveness and extend their power and torque ranges. In these tiny machines of $80 hp$ rotating beyond $2000 rpm$, electronic control systems perform up to four fuel injections at 2000 bar directly into the cylinder for each combustion, optimizing combustion based on the demanded power [[46](#ref-46)].
 
 Ultimately, there is probably not a product in today’s industry that we manufacture whose materials or components have not been extracted, assembled, and transported without the contribution of power from a Diesel engine. A great achievement for a curious student!
 
@@ -1042,15 +1008,13 @@ freezers (around $3)$ lower than this value?
 
    it is useful to be able to describe it precisely:
 
-   1. Describebriefyl thefourphasesofaCarnotengine
+   1. Describe briefly the four phases of a Carnot engine
 
    cycle, describing the direction of heat transfers.
 
    2. Why are heat transfers isothermal?
 
-   3. Is it preferable to use a perfect gas or a liquid-
-
-   vapor mixture to perform this cycle?
+   3. Is it preferable to use a perfect gas or a liquidvapor mixture to perform this cycle?
 
    4. What practical problems does the Carnot cycle
 
@@ -1091,7 +1055,7 @@ freezers (around $3)$ lower than this value?
 :::{admonition} Answer
 :class: dropdown
 
-We see that when performed under the satura- tion curve, the Carnot cycle is already easier to perform in practice, since heat transfers occur at constant pressure (and thus do not require a moving part); 2) $T_{B}= (1 - \eta)T_{H}= 55.74^{\circ}C$; thus by interpo- lation between $55$ and $60^{\circ}C$ we get $p_{\mathrm{sat}. 55.74^{\circ}C}= 0.1285 bar$. The condenser is thus depressurized; 3) $q_{\mathrm{in}}= h_{\mathrm{LV} 275^{\circ}C}= +1574.3 kJ kg^{-1}$: we obtain $W_{\mathrm{net}}= -m\dot{\eta} q_{\mathrm{in}}= -566.7 kW$; 4) The power ratio and the complexity of the ma- chine will increase, but the efficiency will remain unchanged!
+We see that when performed under the saturation curve, the Carnot cycle is already easier to perform in practice, since heat transfers occur at constant pressure (and thus do not require a moving part); 2) $T_{B}= (1 - \eta)T_{H}= 55.74^{\circ}C$; thus by interpolation between $55$ and $60^{\circ}C$ we get $p_{\mathrm{sat}. 55.74^{\circ}C}= 0.1285 bar$. The condenser is thus depressurized; 3) $q_{\mathrm{in}}= h_{\mathrm{LV} 275^{\circ}C}= +1574.3 kJ kg^{-1}$: we obtain $W_{\mathrm{net}}= -m\dot{\eta} q_{\mathrm{in}}= -566.7 kW$; 4) The power ratio and the complexity of the machine will increase, but the efficiency will remain unchanged!
 *Engineering Thermodynamics* by Olivier Cleynen
 
 :::
@@ -1116,7 +1080,7 @@ We see that when performed under the satura- tion curve, the Carnot cycle is alr
 :label: prob-7-7
 :enumerator: 7.7
 
-**Ideal Turbine Engine A group of engineers in an engineering company is working on an air engine concept, operating in a steady-flow state using turbines and compressors. The engineers are using the Carnot cycle as a starting point. They plan to be able to supply heat at a temperature of $600^{\circ}C$ and reject heat at a temperature of $20^{\circ}C$. The pressure is $1 bar$ at the inlet of the adiabatic compressor and $30 bar$ at the inlet of the adiabatic turbine. These characteristics give the engine a specific net power of $70 kJ kg^{-1}$. 1. Represent schematically the general arrangement of this hypothetical engine, showing the path followed by the air, and all heat and work transfers. 2. Starting from the definition of the efficiency of an engine, show that the efficiency of a reversible engine can be quantified by the equation $\eta _{\mathrm{Carnot} \mathrm{engine}}= 1 - T_{L}$ (7/6) $T_{H}$ 3. What power will need to be supplied to the engine in the form of heat? 4. What will be the power rejected in the form of heat? Of course, the Carnot cycle is impractical in an industrial application and the group of engineers immediately adopts a modification. In order to be able to supply heat by internal combustion, it is necessary to later vent the air from the engine. Thus, in the modified engine, the expansion in the adiabatic turbine is interrupted when the pressure reaches $1 bar$, and the “used” air is then rejected into the atmosphere. The rest of the engine is not affected. 5. Draw the new engine cycle on a pressure-volume diagram, qualitatively, comparing it to that of the Carnot cycle. 6. What is the temperature of the air when it is rejected from the engine? 7. What is the reduction in power of the adiabatic turbine compared to the ideal engine? 8. What amount of power is saved by removing the compressor that was rejecting heat? 9. What is now the efficiency of the engine?**
+**Ideal Turbine Engine A group of engineers in an engineering company is working on an air engine concept, operating in a steady-flow state using turbines and compressors. The engineers are using the Carnot cycle as a starting point. They plan to be able to supply heat at a temperature of $600^{\circ}C$ and reject heat at a temperature of $20^{\circ}C$. The pressure is 1 bar at the inlet of the adiabatic compressor and 30 bar at the inlet of the adiabatic turbine. These characteristics give the engine a specific net power of $70 kJ kg^{-1}$. 1. Represent schematically the general arrangement of this hypothetical engine, showing the path followed by the air, and all heat and work transfers. 2. Starting from the definition of the efficiency of an engine, show that the efficiency of a reversible engine can be quantified by the equation $\eta _{\mathrm{Carnot} \mathrm{engine}}= 1 - T_{L}$ (7/6) $T_{H}$ 3. What power will need to be supplied to the engine in the form of heat? 4. What will be the power rejected in the form of heat? Of course, the Carnot cycle is impractical in an industrial application and the group of engineers immediately adopts a modification. In order to be able to supply heat by internal combustion, it is necessary to later vent the air from the engine. Thus, in the modified engine, the expansion in the adiabatic turbine is interrupted when the pressure reaches 1 bar, and the “used” air is then rejected into the atmosphere. The rest of the engine is not affected. 5. Draw the new engine cycle on a pressure-volume diagram, qualitatively, comparing it to that of the Carnot cycle. 6. What is the temperature of the air when it is rejected from the engine? 7. What is the reduction in power of the adiabatic turbine compared to the ideal engine? 8. What amount of power is saved by removing the compressor that was rejecting heat? 9. What is now the efficiency of the engine?**
 
 :::{admonition} Answer
 :class: dropdown
@@ -1127,13 +1091,11 @@ We see that when performed under the satura- tion curve, the Carnot cycle is alr
 at the requested equation 7/6;
 3) $q_{\mathrm{in}}= -\frac{w_{\mathrm{net}}}{\eta _{\mathrm{engine}}} = +105.4 kJ kg^{-1}$;
 4) $q_{\mathrm{out}}= -w_{\mathrm{net}}- q_{\mathrm{in}}= -35.4 kJ kg^{-1}$;
-6) The isothermal compressor is removed, the adi-
-abatic turbine is truncated. $T_{E}= T_{C}(\frac{p_{E}}{p_{C}} )^{\frac{\gamma -1}{\gamma}} = 330.4 K = 57.3^{\circ}C$ (eq. 4/37);
+6) The isothermal compressor is removed, the adiabatic turbine is truncated. $T_{E}= T_{C}(\frac{p_{E}}{p_{C}} )^{\frac{\gamma -1}{\gamma}} = 330.4 K = 57.3^{\circ}C$ (eq. 4/37);
 7) $w_{\mathrm{lost}}= w_{\mathrm{isentropic} \mathrm{turbine} 1}- w_{\mathrm{isentropic} \mathrm{turbine} 2}= -37.54 kJ kg^{-1}$;
 8) $w_{\mathrm{saved}}= w_{\mathrm{isentropic} \mathrm{compressor}}= +35.4 kJ kg^{-1}$;
-9) $\eta _{\mathrm{engine} 2}= 64.4 \%$, which is a $-2 point$ change,
-very honorable given the considerable simplifica-
-tion of the machine!
+9) $\eta _{\mathrm{engine} 2}= 64.4 \%$, which is a -2 point change,
+very honorable given the considerable simplification of the machine!
 
 :::
 ```
@@ -1165,9 +1127,8 @@ the cop $= \frac{q_{\mathrm{in}}}{w_{\mathrm{net}}}$ necessarily decreases.
 :::{admonition} Answer
 :class: dropdown
 
-Let’s bet that the student did better than the be- ginner engineer in the problem: with two re- versible systems in series pumping a quantity
-$q_{\mathrm{in}}$ of heat at temperature $T_{1}= -50^{\circ}C$, with ex-
-change temperature $T_{2}= 10^{\circ}C$ and final high temperature $T_{3}= 40^{\circ}C$, the necessary work
+Let’s bet that the student did better than the beginner engineer in the problem: with two reversible systems in series pumping a quantity
+$q_{\mathrm{in}}$ of heat at temperature $T_{1}= -50^{\circ}C$, with exchange temperature $T_{2}= 10^{\circ}C$ and final high temperature $T_{3}= 40^{\circ}C$, the necessary work
 is $w_{\mathrm{total}}= w_{\mathrm{net}1}+ w_{\mathrm{net}2}= \eta _{1}q_{\mathrm{in}}+ \eta _{2}(q_{\mathrm{in}}+ w_{\mathrm{net}1})= \left(\frac{T_{2}}{T_{1}} - 1\right)q_{\mathrm{in}}+ \left(\frac{T_{3}}{T_{2}} - 1\right)\left(q_{\mathrm{in}}+ \left(\frac{T_{2}}{T_{1}} - 1\right)q_{\mathrm{in}}\right)= \left(\frac{T_{3}}{T_{1}} - 1\right)q_{\mathrm{in}}$, which is the work (and thus the ineffi
 ciency of a single reversible machine operating between $T_{1}$ and $T_{3}$. Stacking two machines in series therefore brings no theoretical advantage.
 

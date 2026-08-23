@@ -12,6 +12,11 @@ label: ch-01-fundamental-concepts
 :alt: Illustration from the original text
 :::
 
+:::{admonition} Executive summary
+:class: tip
+The first law states that energy is constant and indestructible: we transform it from one form to another. Work is a transfer involving a force and a displacement. Heat is a chaotic transfer associated with a potential, temperature.
+:::
+
 ## Introduction
 
 We are presenting here the essential concepts that we will use in the
@@ -22,7 +27,8 @@ following chapters, attempting to answer two questions:
 
 • Which forms of energy are manipulated in a machine?
 
-**1.1 Concept of Energy**
+(sec-1-1)=
+## 1.1 Concept of Energy
 
 (sec-1-1-1)=
 ### 1.1.1 Energy
@@ -36,7 +42,7 @@ We have learned to quantify the amount of energy present in any arbitrary volume
 :::{figure} ../images/fig-1-1.jpg
 :label: fig-1-1
 :enumerator: 1.1
-:alt: The chemical energy stored in the fuel that has been burned is exactly equal to the energy rejected by the exhaust pipe, plus the energy dis
+:alt: The chemical energy stored in the fuel that has been burned is exactly equal to the energy rejected by the exhaust pipe, plus the energy dissipated by friction, plus the kinetic energy of the moving car. All this energy is transformed into heat, *but never destroyed*, once the car is stopped (whichever the means!).
 
 The chemical energy stored in the fuel that has been burned is exactly equal to the energy rejected by the exhaust pipe, plus the energy dissipated by friction, plus the kinetic energy of the moving car. All this energy is transformed into heat, *but never destroyed*, once the car is stopped (whichever the means!).
 :::
@@ -45,7 +51,7 @@ The chemical energy stored in the fuel that has been burned is exactly equal to 
 
 Thus, energy is primarily a concept that we use to describe the transformations we observe in the world: we could say that it is “what does not change when things change.” For the engineer, it represents above all the ability of one body to set another in motion, in a unified way (for example, with a displacement) or in a disordered way (for example, with chaotic excitation).
 
-We measure energy in $joules (J)$.
+We measure energy in joules (J).
 
 (sec-1-1-2)=
 ### 1.1.2 The first law
@@ -73,7 +79,7 @@ The different forms of energy that we usually identify have been revealed one by
 
 *Kinetic energy* is possessed by a body due to its velocity (see §1.2 below). It is the easiest form of energy to identify. It has long been called *vis viva* (“living force”).
 
-*Potential energy* is stored due to the interaction between two objects linked by a conservative force.$^{1}$ On a macroscopic scale, its most palpable form is the potential energy of altitude, resulting from the work done on a mass against its weight (it is this work that makes climbing stairs more tiring than going down, for example). By compressing a spring, potential energy of compression is stored, which can be recovered by letting it expand again.
+*Potential energy* is stored due to the interaction between two objects linked by a conservative force.[^ch1-fn1] On a macroscopic scale, its most palpable form is the potential energy of altitude, resulting from the work done on a mass against its weight (it is this work that makes climbing stairs more tiring than going down, for example). By compressing a spring, potential energy of compression is stored, which can be recovered by letting it expand again.
 
 *Chemical energy* is a combination of potential energy and kinetic energy *between atoms*. Human metabolism, as well as the combustion of hydrocarbons with atmospheric oxygen used in almost all our vehicles, are both based on chemical energy transfers.
 
@@ -81,9 +87,7 @@ In the 20th century, it was discovered that mass, at the sub-atomic level, was a
 
 In thermodynamics, we will focus on three forms of energy, identifiable at the macroscopic scale:
 
-$^{1}\mathrm{A}$ force is called *conservative* when it remains the same in one direction as in
-
-the other. For example, gravity is conservative (it is the same whether going up or down) but friction is not (it always opposes the motion).
+[^ch1-fn1]: A force is called *conservative* when it remains the same in one direction as in the other. For example, gravity is conservative (it is the same whether going up or down) but friction is not (it always opposes the motion).
 
 ::::{admonition} A Bit of History
 :class: note
@@ -103,7 +107,7 @@ In general, the thermodynamic engineer wishes to capture heat from bodies that s
 (sec-1-1-4)=
 ### 1.1.4 Power
 
-*Power* represents a flow of energy in time. Its SI unit is the $joule per second$, which we name the $watt (W)$:
+*Power* represents a flow of energy in time. Its SI unit is the joule per second, which we name the watt (W):
 
 :::{math}
 1 W \equiv 1 J s^{-1} (1/1)
@@ -164,15 +168,7 @@ The heat required will be $Q_{\mathrm{comb}.1}= m_{1}q_{\mathrm{comb}.}= 0.5 \ti
 
 ````
 
-**Specific power** (sometimes also called mass-specific power), has the same
-
-:::{math}
-units as specific energy: we divide watts (joules per second) by a mass
-:::
-
-:::{math}
-flow rate (kilos per second) .
-:::
+**Specific power** (sometimes also called mass-specific power), has the same units as specific energy: we divide watts (joules per second) by a mass flow rate (kilos per second).
 
 :::{math}
 :label: eq-1-4
@@ -180,9 +176,7 @@ flow rate (kilos per second) .
 e \equiv \frac{\dot{E}}{\dot{m}}
 :::
 
-where $e$ is the specific power $(J kg^{-1})$, $E$ is the power $(W)$,
-
-and $m$ is the mass flow rate through the system $(kg s^{-1})$.
+where $e$ is the specific power $(J kg^{-1})$, $\dot{E}$ is the power $(W)$, and $\dot{m}$ is the mass flow rate through the system $(kg s^{-1})$.
 
 ````{prf:example}
 :label: ex-1-2
@@ -215,7 +209,10 @@ power, we can compare the same physical process (air heated up by combustion) in
 
 It should be noted that in practice, the adjectives “specific” or “mass-specific” are often simply omitted, and that the lowercase notation is not systematically used in scientific literature.
 
-**1.2 Mechanical Energy** The student will have no difficulty quantifying *kinetic energy*: $E_{k}= \frac{1}{2} m C^{2}(1/5)$ where $E_{k}$ is the kinetic energy $(J)$, $m$ is the mass of the body $(kg)$, and $C$ is the velocity $(m s^{-1}$, see Appendix A6 p. 319 for other units). Of course, we also define *specific kinetic energy* correspondingly: $e_{k}\equiv \frac{E_{k}}{} \frac{}{} (1/6) m = ^{\frac{1}{2}} C^{2}$ In thermodynamics, we are mainly interested in the changes in the energy of fluids within machines. The kinetic energy of gases varies negligibly in piston/cylinder engines, but it plays a major role in jet engines, as we will see in chapter 10 (*air-based power cycles*). The expression for *potential energy due to altitude* should also not cause any concern for the student: $E_{p}= m g z$ (1/7) $e_{p}\equiv \frac{E_{p}}{m} = g z (1/8)$ where $g$ is the gravitational acceleration (usually $9.81 m s^{-2})$, and $z$ is the altitude relative to the reference point $(m$, see Appendix A5 p. 317 for other units). We will show that in machines, the change of the potential energy of the air due to altitude is always negligible, and that this is often also true for water. Kinetic energy and potential energy due to altitude are often combined into a single term, called *mechanical energy*: $e_{m}\equiv e_{k}+ e_{p}= \frac{1}{2} C^{2}+ g z (1/9)$
+(sec-1-2)=
+## 1.2 Mechanical Energy
+
+The student will have no difficulty quantifying *kinetic energy*: $E_{k}= \frac{1}{2} m C^{2}(1/5)$ where $E_{k}$ is the kinetic energy $(J)$, $m$ is the mass of the body $(kg)$, and $C$ is the velocity $(m s^{-1}$, see Appendix A6 p. 319 for other units). Of course, we also define *specific kinetic energy* correspondingly: $e_{k}\equiv \frac{E_{k}}{} \frac{}{} (1/6) m = ^{\frac{1}{2}} C^{2}$ In thermodynamics, we are mainly interested in the changes in the energy of fluids within machines. The kinetic energy of gases varies negligibly in piston/cylinder engines, but it plays a major role in jet engines, as we will see in chapter 10 (*air-based power cycles*). The expression for *potential energy due to altitude* should also not cause any concern for the student: $E_{p}= m g z$ (1/7) $e_{p}\equiv \frac{E_{p}}{m} = g z (1/8)$ where $g$ is the gravitational acceleration (usually $9.81 m s^{-2})$, and $z$ is the altitude relative to the reference point $(m$, see Appendix A5 p. 317 for other units). We will show that in machines, the change of the potential energy of the air due to altitude is always negligible, and that this is often also true for water. Kinetic energy and potential energy due to altitude are often combined into a single term, called *mechanical energy*: $e_{m}\equiv e_{k}+ e_{p}= \frac{1}{2} C^{2}+ g z (1/9)$
 
 ````{prf:example}
 
@@ -227,7 +224,10 @@ always positive.
 
 ````
 
-**1.3 Work** quantified using vectors: where $W$ is the work $(J)$, and $l$ particularities: *that does the work*; Example 1.3 A student is coasting down a mountain road with a bicycle. At a point with an altitude of $540 m (1772 ft)$, his/her speed is $10 km/h (6.214 mph)$. A few moments later, passing a point at an altitude of $490 m (1608 ft)$, his/her speed is $45 km/h (27.96 mph)$. The mass of the cyclist together with his/her equipment is $70 kg (154.3 lb)$. How much energy has s/he dissipated in the form of friction? The student’s mechanical energy changed by $_{2}- \frac{1}{2}C_{1}^{2}) = m[g(z_{2}- z_{1}) + \frac{1}{2}(C_{2}^{2}- C_{1}^{2})] 2 2 ^{2}((^{\frac{45\times 10^{3}}{3600}} ) - (^{\frac{10\times 10^{3}}{3600}} ))] = 70 [-490.5 + 74.3] = -2.91 \times 10^{4}J = -29.1 kJ$. The student has lost $29.1 kJ$ of mechanical energy. This quantity was transferred to the atmosphere in the form of turbulence and heat, and to the bicycle’s bearings and tires in the form of heat. Energy changes may well be negative. Kinetic energy is however Refer to Appendix A5 p. 317 for converting to and from SI units. The passage of the bicycle through the air causes observable disturbances on a macroscopic scale that we call *turbulence*. After a short time, this kinetic energy has dissipated down to a microscopic scale, warming up the atmosphere. *Work* is a transfer of energy. An object does work (and thus loses energy) when it exerts a force over a displacement. In mechanics, this work is $W \equiv \vec{F} ⋅\vec{l}$ (1/10) $F$ is the vector representing the force (of magnitude $F$ in $N)$, is the vector representing the displacement (of magnitude $l$ in $m)$. In thermodynamics, we will use this equation 1/10 to quantify the work done by fluids. In order to do this, we will rewrite it by adding three • We will measure the displacement *as the change in length of the object* • We will only consider cases where the vectors$\vec{F}$ and$\vec{l}$ are collinear; • We will take into account the fact that$\vec{F}$ can vary as a function of$\vec{l}$. *Engineering Thermodynamics* by Olivier Cleynen With these three constraints, equation 1/10 becomes: B $W_{\mathrm{A}\rightarrow \mathrm{B}}= \int F ⋅ \mathrm{d}\vec{l}$ A Since $\mathrm{d}\vec{l}$ is measured from the length of the object performing the work, $dl$ will be negative when $W$ is positive (work is then done *to* the object, causing its length to decrease). Finally, since$\vec{F}$ is always collinear with $\mathrm{d}\vec{l}$ in our case, we can write: B $W_{\mathrm{A}\rightarrow \mathrm{B}}= -\int F dl$ (1/11) A where $W_{\mathrm{A}\rightarrow \mathrm{B}}$ is the work done between two points A and B $(J)$, $F$ is the force $(N)$, and $dl$ is the infinitesimal change in the length of the considered object $(m)$. On a diagram representing the force as a function of distance, this work $W_{\mathrm{A}\rightarrow \mathrm{B}}$ is represented by the area under the curve from A to B (figure 1.3). The shape of the curve, in other words, the relationship $F_{(l)}$ between $F$ and $l$ during the process, will determine the quantity $W_{\mathrm{A}\rightarrow \mathrm{B}}$. *Diagram* CC-0 *Olivier Cleynen*
+(sec-1-3)=
+## 1.3 Work
+
+quantified using vectors: where $W$ is the work $(J)$, and $l$ particularities: *that does the work*; Example 1.3 A student is coasting down a mountain road with a bicycle. At a point with an altitude of $540 m (1772 ft)$, his/her speed is $10 km/h (6.214 mph)$. A few moments later, passing a point at an altitude of $490 m (1608 ft)$, his/her speed is $45 km/h (27.96 mph)$. The mass of the cyclist together with his/her equipment is $70 kg (154.3 lb)$. How much energy has s/he dissipated in the form of friction? The student’s mechanical energy changed by $_{2}- \frac{1}{2}C_{1}^{2}) = m[g(z_{2}- z_{1}) + \frac{1}{2}(C_{2}^{2}- C_{1}^{2})] 2 2 ^{2}((^{\frac{45\times 10^{3}}{3600}} ) - (^{\frac{10\times 10^{3}}{3600}} ))] = 70 [-490.5 + 74.3] = -2.91 \times 10^{4}J = -29.1 kJ$. The student has lost $29.1 kJ$ of mechanical energy. This quantity was transferred to the atmosphere in the form of turbulence and heat, and to the bicycle’s bearings and tires in the form of heat. Energy changes may well be negative. Kinetic energy is however Refer to Appendix A5 p. 317 for converting to and from SI units. The passage of the bicycle through the air causes observable disturbances on a macroscopic scale that we call *turbulence*. After a short time, this kinetic energy has dissipated down to a microscopic scale, warming up the atmosphere. *Work* is a transfer of energy. An object does work (and thus loses energy) when it exerts a force over a displacement. In mechanics, this work is $W \equiv \vec{F} ⋅\vec{l}$ (1/10) $F$ is the vector representing the force (of magnitude $F$ in $N)$, is the vector representing the displacement (of magnitude $l$ in $m)$. In thermodynamics, we will use this equation 1/10 to quantify the work done by fluids. In order to do this, we will rewrite it by adding three • We will measure the displacement *as the change in length of the object* • We will only consider cases where the vectors$\vec{F}$ and$\vec{l}$ are collinear; • We will take into account the fact that$\vec{F}$ can vary as a function of$\vec{l}$. *Engineering Thermodynamics* by Olivier Cleynen With these three constraints, equation 1/10 becomes: B $W_{\mathrm{A}\rightarrow \mathrm{B}}= \int F ⋅ \mathrm{d}\vec{l}$ A Since $\mathrm{d}\vec{l}$ is measured from the length of the object performing the work, $dl$ will be negative when $W$ is positive (work is then done *to* the object, causing its length to decrease). Finally, since$\vec{F}$ is always collinear with $\mathrm{d}\vec{l}$ in our case, we can write: B $W_{\mathrm{A}\rightarrow \mathrm{B}}= -\int F dl$ (1/11) A where $W_{\mathrm{A}\rightarrow \mathrm{B}}$ is the work done between two points A and B $(J)$, $F$ is the force $(N)$, and $dl$ is the infinitesimal change in the length of the considered object $(m)$. On a diagram representing the force as a function of distance, this work $W_{\mathrm{A}\rightarrow \mathrm{B}}$ is represented by the area under the curve from A to B (figure 1.3). The shape of the curve, in other words, the relationship $F_{(l)}$ between $F$ and $l$ during the process, will determine the quantity $W_{\mathrm{A}\rightarrow \mathrm{B}}$. *Diagram* CC-0 *Olivier Cleynen*
 
    :::{figure} ../images/fig-1-3.jpg
    :label: fig-1-3
@@ -241,7 +241,7 @@ always positive.
 :label: ex-1-4
 :enumerator: 1.4
 
-A spring is compressed from a length of $30 cm (11.81 in)$ down to a length of $5 cm (1.968 in)$. The spring is such that it exerts a force (in $newtons)$ independent of its length and equal to:
+A spring is compressed from a length of $30 cm (11.81 in)$ down to a length of $5 cm (1.968 in)$. The spring is such that it exerts a force (in newtons) independent of its length and equal to:
 
 :::{math}
 F_{(l)}= 6 \times 10^{3}N
@@ -327,7 +327,8 @@ very soft at first, but increasing rapidly in hardness. They are often used in a
 
 ````
 
-**1.4 Heat**
+(sec-1-4)=
+## 1.4 Heat
 
 (sec-1-4-1)=
 ### 1.4.1 Temperature
@@ -356,7 +357,7 @@ T(^{\circ}C) \equiv T(K) - 273.15 (1/12)
 T(K) = T(^{\circ}C) + 273.15 (1/13)
 :::
 
-• the Fahrenheit scale $(^{\circ} F)$. The translation to $kelvins$ is a little more
+• the Fahrenheit scale $(^{\circ} F)$. The translation to kelvins is a little more
 
 complex:
 
@@ -368,7 +369,7 @@ T(^{\circ} F) = 1.8 \times [T(K) - 273.15] + 32 (1/14)
 T(K) = \frac{T(^{\circ} F) - 32}{1.8} + 273.15 (1/15)
 :::
 
-Both of those scales precede the Kelvin scale, and they were cleverly redefined and synchronized with it in 1848 (wee will have the opportunity to study this clever manipulation in chapter 7, see §7.4 p. 191). Purists will note that the absolute unit is named $kelvin$ and not “degree Kelvin”. Some indicative temperatures are listed in table 1.1.
+Both of those scales precede the Kelvin scale, and they were cleverly redefined and synchronized with it in 1848 (wee will have the opportunity to study this clever manipulation in chapter 7, see §7.4 p. 191). Purists will note that the absolute unit is named kelvin and not “degree Kelvin”. Some indicative temperatures are listed in table 1.1.
 
 :::{table} Examples of temperatures. Values with an asterisk are converted approximately.
 :label: tab-1-1
@@ -417,9 +418,7 @@ When two bodies of different temperatures are brought into contact, their
 
 temperatures tend to equalize during a spontaneous transfer of energy. We
 
-Heat, written $Q$, is **a form of energy** (measured in $joules)$. On a macro-
-
-scopic scale, it is a transfer of energy in chaotic form. It can be caused in
+Heat, written $Q$, is **a form of energy** (measured in joules). On a macroscopic scale, it is a transfer of energy in chaotic form. It can be caused in
 
 several ways, the most relevant for the engineer being:
 
@@ -456,9 +455,9 @@ cult to define (Richard Feynman [[30](#ref-30), [35](#ref-35)] explores this bea
 (sec-1-4-3)=
 ### 1.4.3 Thermal capacity
 
-When the same amount of heat is supplied to two different bodies, their temperature can increase in different ways – for example, it takes less heat to raise the temperature of a $kilogram$ of steel than a $kilogram$ of aluminum. This tendency of a body’s temperature to increase is called its *thermal capacity* (or *heat capacity*).
+When the same amount of heat is supplied to two different bodies, their temperature can increase in different ways – for example, it takes less heat to raise the temperature of a kilogram of steel than a kilogram of aluminum. This tendency of a body’s temperature to increase is called its *thermal capacity* (or *heat capacity*).
 
-The specific thermal capacity of a body is defined as the amount of heat required to raise the temperature of one $kilogram$ of the substance by one $kelvin$:
+The specific thermal capacity of a body is defined as the amount of heat required to raise the temperature of one kilogram of the substance by one kelvin:
 
 :::{math}
 c \equiv \frac{\mathrm{δ}q}{dT} = \frac{1}{m} \frac{\mathrm{δ}Q}{dT} (1/16)
@@ -502,15 +501,13 @@ A
 
 Since the capacity $c_{\mathrm{steel}}$ is independent of $T$, this integral becomes simply: $Q_{\mathrm{A}\rightarrow \mathrm{B}}= m_{\mathrm{steel}}c_{\mathrm{steel}}\int ^{\mathrm{B}}_{\mathrm{A}}dT = m_{\mathrm{steel}}c_{\mathrm{steel}}(T_{\mathrm{B}}-T_{\mathrm{A}}) = 50 \times 475 \times (18 - 5) = +3.0875 \times 10^{5}J = +308.8 kJ$.
 
-During integration, $\int ^{\mathrm{B}}_{\mathrm{A}}dT$ becomes $\Delta T$ (a temperature differ-
-
-ence), while $\int ^{\mathrm{B}}_{\mathrm{A}}$ δ$Q$ becomes simply $Q_{\mathrm{A}\rightarrow \mathrm{B}}$ (a transfer between two states). Heat, a *path quantity*, is transferred, while temperature, a *state quantity*, is increased (see Appendix A4 on this topic).
+During integration, $\int ^{\mathrm{B}}_{\mathrm{A}}dT$ becomes $\Delta T$ (a temperature difference), while $\int ^{\mathrm{B}}_{\mathrm{A}}$ δ$Q$ becomes simply $Q_{\mathrm{A}\rightarrow \mathrm{B}}$ (a transfer between two states). Heat, a *path quantity*, is transferred, while temperature, a *state quantity*, is increased (see Appendix A4 on this topic).
 
 In this book, when we quantify energy transfers, we convene to
 
 make their sign explicit (so we add a “+” in positive transfers).
 
-A conversion of the temperatures to $kelvins$ would not have
+A conversion of the temperatures to kelvins would not have
 
 changed the value of $\Delta T$. The result would then have been the same.
 
@@ -520,7 +517,10 @@ heater $(2 kW)$, it would take $\Delta t = \frac{Q_{\mathrm{A}\rightarrow \mathr
 
 ````
 
-**1.5 Hot and Cold** We conclude this chapter by revisiting some common language terms, as they are understood in thermodynamics. *Hot* — For us, “hot” is not a property of objects: instead of “this object is hot”, we say that its temperature is high. Instead of “this object is heating up/cooling down” we say that its temperature is increasing or decreasing. In everyday language, phrases like “it is hot” or “heat wave” also refer to temperature. *To heat* — For us, “to heat up” means to supply heat. We can “heat up” an object while its temperature drops. We can also raise the temperature of an object without supplying heat (figure 1.4). *Cold* — For us, the sensation of “cold” denotes a low temperature. We do not consider “cold” to be something that can be manufactured or measured. Instead, we would say that we are transfering heat away from an object (for example, a refrigerator extracts heat from a warm food item). *Fire* — Fire is the term given to the emission of light (electromagnetic radiation) from a gas at high temperatures. In thermodynamics, “fire” does not have any special properties. For us, it is the same heat whether it is generated by the combustion of wood or kerosene, by friction in a brake, or by a nuclear reaction. Ultimately, the only thing that matters is the temperature at which it is transmitted!
+(sec-1-5)=
+## 1.5 Hot and Cold
+
+We conclude this chapter by revisiting some common language terms, as they are understood in thermodynamics. *Hot* — For us, “hot” is not a property of objects: instead of “this object is hot”, we say that its temperature is high. Instead of “this object is heating up/cooling down” we say that its temperature is increasing or decreasing. In everyday language, phrases like “it is hot” or “heat wave” also refer to temperature. *To heat* — For us, “to heat up” means to supply heat. We can “heat up” an object while its temperature drops. We can also raise the temperature of an object without supplying heat (figure 1.4). *Cold* — For us, the sensation of “cold” denotes a low temperature. We do not consider “cold” to be something that can be manufactured or measured. Instead, we would say that we are transfering heat away from an object (for example, a refrigerator extracts heat from a warm food item). *Fire* — Fire is the term given to the emission of light (electromagnetic radiation) from a gas at high temperatures. In thermodynamics, “fire” does not have any special properties. For us, it is the same heat whether it is generated by the combustion of wood or kerosene, by friction in a brake, or by a nuclear reaction. Ultimately, the only thing that matters is the temperature at which it is transmitted!
 
 ::::{admonition} A Bit of History
 :class: note
@@ -532,7 +532,7 @@ heater $(2 kW)$, it would take $\Delta t = \frac{Q_{\mathrm{A}\rightarrow \mathr
 :::{figure} ../images/fig-1-4.svg
 :label: fig-1-4
 :enumerator: 1.4
-:alt: Left: when air is compressed in a compressor, air gives heat away through the sides and the fins of the cylinders; and yet, its temperature
+:alt: Left: when air is compressed in a compressor, air gives heat away through the sides and the fins of the cylinders; and yet, its temperature increases. Right: by contrast, when liquid oxygen is expanded in a vane, liquid oxygen receives heat from the atmosphere (as evidenced by the condensation and frost from atmospheric air on the piping); in spite of this, its temperature drops.
 
 Left: when air is compressed in a compressor, air gives heat away through the sides and the fins of the cylinders; and yet, its temperature increases. Right: by contrast, when liquid oxygen is expanded in a vane, liquid oxygen receives heat from the atmosphere (as evidenced by the condensation and frost from atmospheric air on the piping); in spite of this, its temperature drops.
 :::
@@ -582,15 +582,11 @@ It seems that the first thermometer was invented around 1605 by a Dutchman named
 
 downwards and immersed in a colored liquid. If
 
-the sphere was heated, the liquid was pushed down-
-
-wards by the expansion of the air, and conversely,
+the sphere was heated, the liquid was pushed downwards by the expansion of the air, and conversely,
 
 if it was cooled, the liquid rose in the tube. It was
 
-thus an air thermometer (figure 1.5). This ther-
-
-mometer was later used to monitor fever in patients
+thus an air thermometer (figure 1.5). This thermometer was later used to monitor fever in patients
 
 (figure 1.6), but it had the drawback of being as
 
@@ -601,7 +597,7 @@ temperature.
 :::{figure} ../images/fig-1-5.jpg
 :label: fig-1-5
 :enumerator: 1.5
-:alt: An air thermometer from the early 17th century. The ball was filled with air whose volume varies with its temperature, pushing the water fro
+:alt: An air thermometer from the early 17th century. The ball was filled with air whose volume varies with its temperature, pushing the water from the reservoir below whose surface is at atmospheric pressure. The liquid could be colored, and its changes height were measured using a scale. Since atmospheric pressure varies with meteorological conditions, it affected the measurements: it was, in a way, a baro-thermometer.
 
 An air thermometer from the early 17th century. The ball was filled with air whose volume varies with its temperature, pushing the water from the reservoir below whose surface is at atmospheric pressure. The liquid could be colored, and its changes height were measured using a scale. Since atmospheric pressure varies with meteorological conditions, it affected the measurements: it was, in a way, a baro-thermometer.
 :::
@@ -613,7 +609,7 @@ tury. The ball was filled with air whose volume varies with its temperature, pus
 :::{figure} ../images/fig-1-6.jpg
 :label: fig-1-6
 :enumerator: 1.6
-:alt: A medical thermometer from the early 17th century. The gas bulb was placed in the patient’s mouth. One can well imagine that the thermometer
+:alt: A medical thermometer from the early 17th century. The gas bulb was placed in the patient’s mouth. One can well imagine that the thermometer’s sensitivity to atmospheric pressure was not the biggest obstacle to its adoption...
 
 A medical thermometer from the early 17th century. The gas bulb was placed in the patient’s mouth. One can well imagine that the thermometer’s sensitivity to atmospheric pressure was not the biggest obstacle to its adoption...
 :::
@@ -626,7 +622,7 @@ In the middle of the century, liquid thermometers
 
 would prove to be much more reliable and easier to
 
-use. The glass bulb was now placed at the bottom course, the measurements needed to be corrected of the device and filled with colored liquid that rose by simultaneously measuring atmospheric pressure. in a graduated tube; this tube was initially open, This system allowed Amontons to make a major but it was found that by closing it, evaporation of discovery: if the gas pressure increases as the de-the liquid could be prevented (figure 1.7). These im- gree of heat increases, conversely, it decreases as provements had been strongly supported by the Ital- the degree of heat decreases. At a minimum, this ian grand duke Ferdinando II de’ Medici, and these pressure must become zero, as well as the degree devices were thus called “Florence thermometers.” of heat. This extrapolated minimum corresponds to, in modern units, $-239.5^{\circ}C$... A first measure of absolute zero!
+use. The glass bulb was now placed at the bottom course, the measurements needed to be corrected of the device and filled with colored liquid that rose by simultaneously measuring atmospheric pressure. in a graduated tube; this tube was initially open, This system allowed Amontons to make a major but it was found that by closing it, evaporation of discovery: if the gas pressure increases as the de-the liquid could be prevented (figure 1.7). These imgree of heat increases, conversely, it decreases as provements had been strongly supported by the Italthe degree of heat decreases. At a minimum, this ian grand duke Ferdinando II de’ Medici, and these pressure must become zero, as well as the degree devices were thus called “Florence thermometers.” of heat. This extrapolated minimum corresponds to, in modern units, $-239.5^{\circ}C$... A first measure of absolute zero!
 
 However, all these thermometers remained difficult to use, significantly limiting their dissemination. René-Antoine Ferchault de Réaumur, around the middle of the 18th century, developed a water-alcohol mixture thermometer in which the alcohol level is precisely fixed to ensure the reproducibility of the instrument. He calibrated it by choosing two references (melting ice and boiling water) and dividing this interval into 80 degrees. This scale is called the “Réaumur scale.”
 
@@ -717,9 +713,9 @@ The water flow rate circulating in the plant is $15 kg s^{-1}$.
 
 1. What is the specific power rejected in the form of heat in the condenser?
 
-2. What is the power (in $watts)$ rejected by the condenser?
+2. What is the power (in watts) rejected by the condenser?
 
-3. What is the power (in $watts)$ generated by the turbine in the form of work?
+3. What is the power (in watts) generated by the turbine in the form of work?
 
 4. What is the efficiency $\eta _{\mathrm{plant}}$ of the power plant, that is, the ratio between its net power and the power it receives as heat?
 
@@ -776,7 +772,7 @@ The water flow rate circulating in the plant is $15 kg s^{-1}$.
 :::{admonition} Answer
 :class: dropdown
 
-1) $A_{2}\le \frac{F_{2}}{p_{2}} = \frac{F_{2}}{p_{1}} = 5.89 \times 10^{-2}m^{2}= 589 cm^{2} (91.3 sq in) 2)\dot{W} = 0 W$ of course, since there is no move- ment… 3) By calculating the swept oil volume $V, d_{1}= \frac{V_{1}}{A_{1}} = \frac{V_{2}}{A_{1}} = 29.43 m$, an impracticable length, which can be avoided by adding a pumping mech- anism. $4)\dot{W}_{\mathrm{mean}}\le \frac{W_{\mathrm{A}\rightarrow \mathrm{B}}}{\Delta t} = 98.1 W$.
+1) $A_{2}\le \frac{F_{2}}{p_{2}} = \frac{F_{2}}{p_{1}} = 5.89 \times 10^{-2}m^{2}= 589 cm^{2} (91.3 sq in) 2)\dot{W} = 0 W$ of course, since there is no movement… 3) By calculating the swept oil volume $V, d_{1}= \frac{V_{1}}{A_{1}} = \frac{V_{2}}{A_{1}} = 29.43 m$, an impracticable length, which can be avoided by adding a pumping mechanism. $4)\dot{W}_{\mathrm{mean}}\le \frac{W_{\mathrm{A}\rightarrow \mathrm{B}}}{\Delta t} = 98.1 W$.
 *Engineering Thermodynamics* by Olivier Cleynen
 
 :::
@@ -826,7 +822,7 @@ ter enters at the top left, rotates the turbine blades, is heated by internal fr
 
 2. What is the specific power provided as heat by internal friction?
 
-3. What is the power (in $watts)$ released in the form of work by the turbine?
+3. What is the power (in watts) released in the form of work by the turbine?
 
 ```{exercise}
 :label: prob-1-8
