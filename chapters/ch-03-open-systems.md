@@ -653,7 +653,6 @@ Joseph Black conducting an experiment on latent heat during a university lecture
 :::{admonition} Answer
 :class: dropdown
 
-.2**
 $1)\dot{W}_{\mathrm{A}\rightarrow \mathrm{B}}= +4.219 MW 2)\dot{W}_{\mathrm{C}\rightarrow \mathrm{D}}= -6.349 MW 3)\dot{E}_{\mathrm{generator}}= \eta _{\mathrm{generator}}\eta _{\mathrm{transmission}}(\dot{W}_{\mathrm{A}\rightarrow \mathrm{B}}+\dot{W}_{\mathrm{C}\rightarrow \mathrm{D}}) = -1.774 MW 5)\dot{Q}_{\mathrm{cooling}}= -\dot{W}_{\mathrm{A}\rightarrow \mathrm{B}}-\dot{Q}_{\mathrm{combustion}}-\dot{W}_{\mathrm{C}\rightarrow \mathrm{D}}= -2.897 MW$ (so more than half of the combustion heat… )
 
 :::
@@ -693,7 +692,7 @@ $1)\dot{m}_{\mathrm{waste}}\ge 92.1 t/h \approx 203 000 lb/h$
 :label: prob-3-4
 :enumerator: 3.4
 
-**Turbine Engine Nozzle In the nozzle of a small turbojet engine, the air pressure drops while its speed increases. The nozzle (figure 3.13) is a component without any moving parts: no work is done there. Heat losses are negligible, and the air flow rate is $26 kg s^{-1}(57.22 lb/s)$. At the inlet, the following characteristics are measured: • Specific enthalpy: $1092 kJ kg^{-1}$ • Velocity: $10 m s^{-1}(32.8 ft/s)$ • Temperature: $1250.33 ^{\circ} F (950 K)$ • Specific volume: $1.36 m^{3}kg^{-1}$ • Pressure: $2.325 kg_{f}/cm^{2}(2.28 bar)$**
+**Turbine Engine Nozzle In the nozzle of a small turbojet engine, the air pressure drops while its speed increases. The nozzle (figure 3.13) is a component without any moving parts: no work is done there. Heat losses are negligible, and the air flow rate is $26 kg s^{-1}(57.22 lb/s)$. At the inlet, the following characteristics are measured: • Specific enthalpy: $1092 kJ kg^{-1}$ • Velocity: $10 m s^{-1}(32.8 ft/s)$ • Temperature: $1250.33 ^{\circ} F (950 K)$ • Specific volume: $1.36 m^{3}kg^{-1}$ • Pressure: $2.325 kg_{f}/cm^{2}(2.28 bar)$ • Internal energy: $781.85 kJ kg^{-1}$ At the outlet, the air is brought back down to atmospheric pressure $(1 bar)$. It is predicted (we will see how in chapter 4) that the air characteristics will reach: • Temperature: $944.7 ^{\circ} F (780.2 K)$ • Specific volume: $2.55 m^{3}kg^{-1}$ • Internal energy: $642.1 kJ kg^{-1}$ 1. What is the ejection speed of the gases? 2. What are the volumetric flow rates of air at the inlet and outlet of the nozzle? *Diagram* CC-0 *Olivier Cleynen; Photo* CC-by-sa *Ad Meskens (edited)***
 
 :::{admonition} Answer
 :class: dropdown
@@ -712,22 +711,6 @@ $2)\dot{V}_{1}=\dot{m} v_{1}= 35.4 m^{3}s^{-1}\&\dot{V}_{2}= 66.3 m^{3}s^{-1}$.
    
    Schematic diagram of a nozzle and installation (with variable geometry) on the *Pratt & Whitney* F100 engine of a Lockheed Martin F-16.
    :::
-
-*Diagram* CC-0 *Olivier Cleynen; Photo* CC-by-sa *Ad Meskens (edited)*
-
-• Internal energy: $781.85 kJ kg^{-1}$
-
-At the outlet, the air is brought back down to atmospheric pressure $(1 bar)$. It is predicted (we will see how in chapter 4) that the air characteristics will reach:
-
-• Temperature: $944.7 ^{\circ} F (780.2 K)$
-
-• Specific volume: $2.55 m^{3}kg^{-1}$
-
-• Internal energy: $642.1 kJ kg^{-1}$
-
-1. What is the ejection speed of the gases?
-
-2. What are the volumetric flow rates of air at the inlet and outlet of the nozzle?
 
 ```{exercise}
 :label: prob-3-5
@@ -809,7 +792,6 @@ why it is never used on civilian aircraft)
 :::{admonition} Answer
 :class: dropdown
 
-.8**
 1) see §2.4.4 p. 49
 2) $\dot{W}_{\mathrm{A}\rightarrow \mathrm{B}}=\dot{m}\,k^{\frac{1}{1.4}}\left[\frac{1}{-\frac{1}{1.4}+1} p^{-\frac{1}{1.4}+1}\right]_{p_{\mathrm{A}}}^{p_{\mathrm{B}}}= -354.1\,\mathrm{kW}$
 4) In the form of $\Delta h$ – the outlet air will have
@@ -823,16 +805,15 @@ energy), and maybe also higher kinetic energy.
 :label: prob-3-9
 :enumerator: 3.9
 
-**Compressor and Turbine of a Turboprop Engine The compressor within a turboprop engine (figure 3.17) admits a constant flow of air at ambient conditions $(0.8 bar/11.6 psi$ and $1 m^{3}kg^{-1})$. It must bring this air to a final pressure of $11 bar (159.5 psi)$, without any heat transfer. *Diagram* CC-by-sa *Olivier Cleynen* Within the compressor, the air behaves in such a way that its properties follow the relation $p v^{1.4}= k$, where $k$ is a constant. 1. What is the minimum specific power to be supplied to the compressor? 2. Represent the properties of the gas as it passes through the compressor on a pressure-volume diagram, qualitatively. 3. On the above diagram, show the change the gas would undergo if the compressor were not reversible (real compressor, inducing internal friction in the gas) but nevertheless maintained its outlet pressure at 11 bar.**
+**Compressor and Turbine of a Turboprop Engine The compressor within a turboprop engine (figure 3.17) admits a constant flow of air at ambient conditions $(0.8 bar/11.6 psi$ and $1 m^{3}kg^{-1})$. It must bring this air to a final pressure of $11 bar (159.5 psi)$, without any heat transfer. *Diagram* CC-by-sa *Olivier Cleynen* Within the compressor, the air behaves in such a way that its properties follow the relation $p v^{1.4}= k$, where $k$ is a constant. 1. What is the minimum specific power to be supplied to the compressor? 2. Represent the properties of the gas as it passes through the compressor on a pressure-volume diagram, qualitatively. 3. On the above diagram, show the change the gas would undergo if the compressor were not reversible (real compressor, inducing internal friction in the gas) but nevertheless maintained its outlet pressure at 11 bar. Within the same engine, the turbine, which is adiabatic, must power not only to the compressor but also the propeller at the front of the engine. It is equipped with numerous probes to measure the properties of the air. At its inlet, the following properties are measured: • Pressure 11 bar • Velocity $12 m s^{-1}$ • Specific volume $0.36 m^{3}kg^{-1}$ • Internal energy $985.8 kJ kg^{-1}$ At the outlet, the properties of the air have become: • Pressure 0.8 bar • Velocity $12 m s^{-1}$ • Specific enthalpy $652.5 kJ kg^{-1}$ 4. What is the specific power of the turbine? 5. What condition must be met within the engine to provide the propeller with a power of $600 kW$?**
 
 :::{admonition} Answer
 :class: dropdown
 
 1) $w_{\mathrm{A}\rightarrow \mathrm{B}}\ge \int ^{\mathrm{B}}_{\mathrm{A}}vdp = +312 kJ kg^{-1}$
 2) & 3) see fig. 3.8 p. 71;
-4) $w_{\mathrm{C}\rightarrow \mathrm{D}}= -729.3\,\mathrm{kJ\,kg^{-1}}
-5) $\dot{m}_{\mathrm{air}}= \frac{\dot{W}_{\mathrm{propeller}}}{w_{\mathrm{propeller}}} = \frac{\dot{W}_{\mathrm{propeller}}}{w_{\mathrm{A}\rightarrow \mathrm{B}}+w_{\mathrm{C}\rightarrow \mathrm{D}}}= 1.438\,\mathrm{kg\,s^{-1}}$$.
-*Engineering Thermodynamics* by Olivier Cleynen
+4) $w_{\mathrm{C}\rightarrow \mathrm{D}}= -729.3\,\mathrm{kJ\,kg^{-1}}$
+5) $\dot{m}_{\mathrm{air}}= \frac{\dot{W}_{\mathrm{propeller}}}{w_{\mathrm{propeller}}} = \frac{\dot{W}_{\mathrm{propeller}}}{w_{\mathrm{A}\rightarrow \mathrm{B}}+w_{\mathrm{C}\rightarrow \mathrm{D}}}= 1.438\,\mathrm{kg\,s^{-1}}$.
 
 :::
 ```
@@ -844,27 +825,3 @@ energy), and maybe also higher kinetic energy.
    
    Schematic diagram of a turboprop engine. These engines are studied in more detail in §10.5.4 p. 286.
    :::
-
-Within the same engine, the turbine, which is adiabatic, must power not only to the compressor but also the propeller at the front of the engine. It is equipped with numerous probes to measure the properties of the air.
-
-At its inlet, the following properties are measured:
-
-• Pressure 11 bar
-
-• Velocity $12 m s^{-1}$
-
-• Specific volume $0.36 m^{3}kg^{-1}$
-
-• Internal energy $985.8 kJ kg^{-1}$
-
-At the outlet, the properties of the air have become:
-
-• Pressure 0.8 bar
-
-• Velocity $12 m s^{-1}$
-
-• Specific enthalpy $652.5 kJ kg^{-1}$
-
-4. What is the specific power of the turbine?
-
-5. What condition must be met within the engine to provide the propeller with a power of $600 kW$?

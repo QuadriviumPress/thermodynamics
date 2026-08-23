@@ -98,3 +98,58 @@ Not admonition issues, but found via the same page-by-page PDF walk (see
 - `chapters/ch-02-closed-systems.md` exercise 2.7 answer — a stray `.7**`
   fragment (leftover from the `**2.7**` enumerator during column
   reconstruction) sat as its own line before the first answer item. Removed.
+
+## Instances found and fixed (chapters 3–4, 2026-08-23)
+
+All margin quotes already correctly wrapped, no changes needed. Checked
+against `scripts/qa/pdf_columns.py` output for PDF pp.59–80 (chapter 3) and
+pp.81–112 (chapter 4):
+
+- Chapter 3: Aurel Stodola ×2 (§3.2.1 p.61, §3.3.3 p.65).
+- Chapter 4: Sadi Carnot ×3, Émile Clapeyron, Richard Feynman, Louis Joseph
+  Gay-Lussac, James Prescott Joule, Rudolf Diesel (§4.1.2 p.83 — two adjacent
+  quotes, correctly two sibling `:::{aside}` blocks, not nested — §4.1.4
+  p.85, §4.3.2 p.90, §4.3.3 p.91, §4.4.4 p.98, §4.4.5 p.99).
+
+No nested-aside bug (the chapters 1–2 defect class) was found in either
+chapter: every `:::{aside}` open/close pair in chapters 3–4 is already
+correctly sequential and non-nested.
+
+### Related correctness fixes made in the same pass
+
+Not admonition issues, but found via the same page-by-page PDF walk (see
+`appendices/app-a8-errata-change-log.md` for the dated changelog entry):
+
+- `chapters/ch-03-open-systems.md`, exercise 3.4 (*Turbine Engine Nozzle*) —
+  the second half of the problem statement (outlet conditions and both
+  numbered questions), which follows a mid-problem figure in the PDF, had
+  been left as orphaned body prose after the exercise's answer and closing
+  fence instead of being part of the problem statement. Merged back in,
+  ahead of the answer.
+- `chapters/ch-03-open-systems.md`, exercise 3.9 (*Compressor and Turbine of
+  a Turboprop Engine*) — same defect: the turbine sub-problem (properties
+  and questions 4–5, whose numeric answers were already present in the
+  answer key) sat as orphaned prose after the exercise's figure, disconnected
+  from any `{exercise}` block. Merged back into the problem statement.
+- `chapters/ch-04-the-ideal-gas.md`, exercise 4.9 (*Elementary Processes:
+  Vocabulary*) — the second half of the question ("Among the processes
+  above, which ones are: ...") had been left as a floating, unlabeled
+  paragraph between the exercise's answer and the next exercise. Moved back
+  into the problem statement, ahead of the answer.
+- `chapters/ch-03-open-systems.md` exercises 3.2 and 3.8, and
+  `chapters/ch-04-the-ideal-gas.md` exercises 4.10, 4.11, and 4.12 — stray
+  `.2**`, `.8**`, `10**`, `11**`, `12**` fragments (leftover from
+  `**N.M**` exercise-enumerator labels split during column reconstruction)
+  sitting as their own line at the top of the answer block. Removed.
+- `chapters/ch-03-open-systems.md`, exercise 3.9 answer — a stray
+  `*Engineering Thermodynamics* by Olivier Cleynen` footer-boilerplate line
+  and a doubled closing `$$` at the end of the answer. Removed / corrected
+  to a single `$`.
+- `chapters/ch-04-the-ideal-gas.md`, exercise 4.12 answer, item 3 — the `B`
+  subscript on $v^{-1.5}$ had been stranded as an orphaned single-letter
+  line, leaving the formula as a bare `kv^{-1.5}`. Restored to
+  $kv_{\mathrm{B}}^{-1.5}$.
+- `chapters/ch-04-the-ideal-gas.md`, exercise 4.13 — equation 4/36 as
+  restated in the exercise had `v_1/v_2` swapped relative to the PDF and to
+  the same equation given correctly earlier in the chapter's Problems
+  preamble. Corrected to `v_2/v_1`.

@@ -1233,6 +1233,12 @@ Optimal case: reversible adiabatic compression. Using equation 4/37, we calculat
 
 **Elementary Processes: Vocabulary A fixed mass of perfect gas, with the sole purpose of exasperating a student in thermodynamics, slowly undergoes the following processes:**
 
+Among the processes above, which ones are:
+
+1. at constant temperature (isothermal)?
+
+2. at constant volume (isochoric)?
+
 :::{admonition} Answer
 :class: dropdown
 
@@ -1240,12 +1246,6 @@ Isothermal $2 \rightarrow 3$, isochoric $1 \rightarrow 2$.
 
 :::
 ```
-
-Among the processes above, which ones are:
-
-1. at constant temperature (isothermal)?
-
-2. at constant volume (isochoric)?
 
 ```{exercise}
 :label: prob-4-10
@@ -1256,7 +1256,6 @@ Among the processes above, which ones are:
 :::{admonition} Answer
 :class: dropdown
 
-10**
 *Clockwise, starting horizontally, on both diagrams:*
 isobaric $(p$ constant), isothermal $(T$ constant),
 reversible adiabatic, isochoric $(v$ constant).
@@ -1297,7 +1296,6 @@ valid for a reversible adiabatic process undergone by a perfect gas, show (witho
 :::{admonition} Answer
 :class: dropdown
 
-11**
 1) Replace $v_{2}$ with $\frac{RT_{2}}{p_{2}}$, do the same with $v_{1}$. Work
 out the algebra and the result will come naturally;
 2) With eq. 4/37, we obtain $T_{\mathrm{B}}= 600.7 K$, thus
@@ -1334,11 +1332,9 @@ $W_{\mathrm{real} \mathrm{compressor}}=\dot{W}_{\mathrm{friction} \mathrm{losses
 :::{admonition} Answer
 :class: dropdown
 
-12**
 1) see §1.3 p. 16 & §2.4.1 p. 36;
 2) $W_{\mathrm{A}\rightarrow \mathrm{B}}= -m\int ^{\mathrm{B}}_{\mathrm{A}}pdv = +1.298 kJ$
-3) Wth $p_{\mathrm{B}}= kv^{-1.5}= 31.6 bar$, we have $T_{\mathrm{B}}=$ B
-$926.3 K$. Then, $Q_{\mathrm{A}\rightarrow \mathrm{B}}= \Delta U -W_{\mathrm{A}\rightarrow \mathrm{B}}= +0.3254 kJ$.
+3) $p_{\mathrm{B}}= kv_{\mathrm{B}}^{-1.5}= 31.6 bar$, we have $T_{\mathrm{B}}= 926.3 K$. Then, $Q_{\mathrm{A}\rightarrow \mathrm{B}}= \Delta U -W_{\mathrm{A}\rightarrow \mathrm{B}}= +0.3254 kJ$.
 5) With constant pressure, with equation 4/17,
 $T_{\mathrm{C}}= \frac{Q_{\mathrm{B}\rightarrow \mathrm{C}}}{m c_{p}} + T_{\mathrm{B}}= 1483.7 K (1211^{\circ}C)$.
 6) $A_{\max}= \frac{F_{\max}}{p_{\mathrm{B}}} = 3.164 \times 10^{-3}m^{2}$ (diameter $D_{\max}= 6.35 cm)$.
@@ -1369,7 +1365,7 @@ The goal of the problem is to calculate the speed at which the turbojet engine i
 :::{math}
 :label: eq-4-36-prob
 :enumerator: 4/36
-\left(\frac{T_{1}}{T_{2}}\right) = \left(\frac{v_{1}}{v_{2}}\right)^{\gamma -1}
+\left(\frac{T_{1}}{T_{2}}\right) = \left(\frac{v_{2}}{v_{1}}\right)^{\gamma -1}
 :::
 
 valid for a reversible adiabatic process undergone by a perfect gas, show (without using equation 4/38) that:
