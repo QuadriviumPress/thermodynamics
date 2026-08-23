@@ -474,11 +474,15 @@ Rudolf Clausius, 1850 [[10](#ref-10), [11](#ref-11), [21](#ref-21)]
 :::
 :::
 
-When two bodies of different temperatures are brought into contact, their temperatures tend to equalize during a spontaneous transfer of energy. We
+When two bodies of different temperatures are brought into contact, their temperatures tend to equalize during a spontaneous transfer of energy. We call this form of energy *heat*.
 
 Heat, written $Q$, is **a form of energy** (measured in joules). On a macroscopic scale, it is a transfer of energy in chaotic form. It can be caused in several ways, the most relevant for the engineer being:
 
-• loss of internal energy of a body, by coming into contact with a lower • disappearance of mass in a nuclear reaction;
+• loss of internal energy of a body, by coming into contact with a lower temperature body;
+
+• friction;
+
+• disappearance of mass in a nuclear reaction;
 
 • transformation of potential energy between atoms, by chemical reaction
 
@@ -490,11 +494,9 @@ The concept of heat is very difficult to understand. It was long believed to be 
 
 This theory was abandoned in the mid-19th century, when it was shown that *heat is not conserved*, that is, it has the ability to disappear or appear.
 
-For example, an engine in operation receives heat (through combustion) but releases less than it received. It transforms part of it into work, which we
+For example, an engine in operation receives heat (through combustion) but releases less than it received. It transforms part of it into work, which we can then use to propel a vehicle.
 
-On a microscopic scale, in other words, when we consider the movement of individual particles, the concepts of temperature and heat are even more diffi-
-
-*Engineering Thermodynamics* by Olivier Cleynen cult to define (Richard Feynman [[30](#ref-30), [35](#ref-35)] explores this beautifully). However, this is beyond the scope of this book.
+On a microscopic scale, in other words, when we consider the movement of individual particles, the concepts of temperature and heat are even more difficult to define (Richard Feynman [[30](#ref-30), [35](#ref-35)] explores this beautifully). However, this is beyond the scope of this book.
 
 (sec-1-4-3)=
 ### 1.4.3 Thermal capacity
@@ -535,13 +537,9 @@ c_{\mathrm{steel}}= \frac{1}{m_{\mathrm{steel}}} \frac{\mathrm{δ}Q}{dT}
 δ Q = c_{\mathrm{steel}}m_{\mathrm{steel}}dT
 :::
 
-B
-
 :::{math}
-Q_{\mathrm{A}\rightarrow \mathrm{B}}= \int m_{\mathrm{steel}}c_{\mathrm{steel}}dT
+Q_{\mathrm{A}\rightarrow \mathrm{B}}= \int_{\mathrm{A}}^{\mathrm{B}} m_{\mathrm{steel}}c_{\mathrm{steel}}dT
 :::
-
-A
 
 Since the capacity $c_{\mathrm{steel}}$ is independent of $T$, this integral becomes simply: $Q_{\mathrm{A}\rightarrow \mathrm{B}}= m_{\mathrm{steel}}c_{\mathrm{steel}}\int ^{\mathrm{B}}_{\mathrm{A}}dT = m_{\mathrm{steel}}c_{\mathrm{steel}}(T_{\mathrm{B}}-T_{\mathrm{A}}) = 50 \times 475 \times (18 - 5) = +3.0875 \times 10^{5}J = +308.8 kJ$.
 
@@ -656,6 +654,13 @@ In the early 18th century, the Frenchman Guillaume Amontons built an air thermom
 
 **Free-Wheeling Bicycle A cyclist starts a free wheel descent. With their equipment and bike, their mass is $75 kg (165.3 lb)$. As they pass a point at an altitude of $1200 m (3937 ft)$, their speed is $50 km/h (31.1 mph)$. Exactly $7 \min$ later, as they pass a point at an altitude of $950 m$, their speed is $62 km/h$. 1. How much energy has the cyclist dissipated in the form of friction between these two points? Further down the descent, still freewheeling, the cyclist sees their speed stabilize at $45 km/h$ on a slope of $4 \%$. 2. What is the power with which the cyclist dissipates energy in the form of friction?**
 
+:::{admonition} Answer
+:class: dropdown
+
+1) $\Delta E_{m}= E_{m2}- E_{m1}= -180 kJ$ (the $7 \min$ of time, of course, does not have any importance)
+2) $\dot{Q}_{\mathrm{friction}}= m g |\dot{z}| = 368 W$.
+
+:::
 ```
 
 ```{exercise}
@@ -705,7 +710,7 @@ The water flow rate circulating in the plant is $15 kg s^{-1}$.
 :label: prob-1-3
 :enumerator: 1.3
 
-**Compression of Springs In the laboratory of a company manufacturing automotive suspension systems, an engineer compares the characteristics of three springs of different geometry. To do this, s/he measures the force $F$ (in $N)$ exerted by each spring as a function of its length $l$ (in $m)$, and models these behaviors as follows: • $F_{\mathrm{A} (l)}= 8 \times 10^{3}- 2 \times 10^{3}l$ • $F_{\mathrm{B} (l)}= 8 \times 10^{3}- 3 \times 10^{3}l^{1.6}$ • $F_{\mathrm{C} (l)}= 0.1 \times 10^{3}l^{-3}$ What is the amount of work required to compress each of these springs from a length of $40 cm (15.74 in)$ down to a length of $12 cm (4.724 in)$? exponentially when compressed. We will see in chapter 2 (*closed systems*) that when fluids are compressed and expanded slowly, they behave similarly to spring C, which has a conical geometry like those shown here. *Photo* CC-by-sa *Jean-Jacques Milan***
+**Compression of Springs In the laboratory of a company manufacturing automotive suspension systems, an engineer compares the characteristics of three springs of different geometry. To do this, s/he measures the force $F$ (in $N)$ exerted by each spring as a function of its length $l$ (in $m)$, and models these behaviors as follows: • $F_{\mathrm{A} (l)}= 8 \times 10^{3}- 2 \times 10^{3}l$ • $F_{\mathrm{B} (l)}= 8 \times 10^{3}- 3 \times 10^{3}l^{1.6}$ • $F_{\mathrm{C} (l)}= 0.1 \times 10^{3}l^{-3}$ What is the amount of work required to compress each of these springs from a length of $40 cm (15.74 in)$ down to a length of $12 cm (4.724 in)$?**
 
 :::{admonition} Answer
 :class: dropdown

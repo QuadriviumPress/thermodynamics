@@ -200,7 +200,9 @@ Building mathematical models to describe the state of real gases is an important
 We have already discussed the concept of thermal capacity in the first chapter (1/16). It is defined as the amount of heat required to increase the temperature of one kilogram of the substance by one Kelvin (or one degree Celsius, since these temperature differences are equal). Thus, we have:
 
 :::{math}
-c = \frac{\mathrm{δ}q}{dT} (4/4)
+:label: eq-4-4
+:enumerator: 4/4
+c = \frac{\mathrm{δ}q}{dT}
 :::
 
 where $c$ is the specific thermal capacity $(J K^{-1}kg^{-1})$, δ$q$ the (specific) infinitesimal heat transfer $(J kg^{-1})$, and $dT$ the produced infinitesimal change in temperature $(K)$.
@@ -257,10 +259,10 @@ Let us observe the amounts of energy involved in the experiment described in fig
 What is the difference between the thermal capacities of each? In both cases, we have $q_{1\rightarrow 2}+ w_{1\rightarrow 2}= \Delta u$ (2/2). For body A on the left, since no work is done and the process is at constant volume, we can write:
 
 :::{math}
+:label: eq-4-5
+:enumerator: 4/5
 q_{\mathrm{A}}= c_{v}\Delta T
 :::
-
-(4/5)
 
 :::{math}
 \Delta u = q_{\mathrm{A}}
@@ -269,10 +271,10 @@ q_{\mathrm{A}}= c_{v}\Delta T
 For body B on the right, with constant pressure $p_{\mathrm{cst}.}$, we can write:
 
 :::{math}
+:label: eq-4-6
+:enumerator: 4/6
 q_{\mathrm{B}}= c_{p}\Delta T
 :::
-
-(4/6)
 
 :::{math}
 \Delta u = q_{\mathrm{B}}+ (-p_{\mathrm{cst}.}\Delta v)
@@ -281,7 +283,9 @@ q_{\mathrm{B}}= c_{p}\Delta T
 By combining the two systems 4/5 and 4/6, we obtain
 
 :::{math}
-c_{v}\Delta T = c_{p}\Delta T - p_{\mathrm{cst}.}\Delta v (4/7)
+:label: eq-4-7
+:enumerator: 4/7
+c_{v}\Delta T = c_{p}\Delta T - p_{\mathrm{cst}.}\Delta v
 :::
 
 This simply states that the difference between the two amounts of heat supplied to the gas is found in the work done by the gas on the right. (To be truly rigorous, in order to assert that $\Delta u_{A}$ and $\Delta u_{B}$ are equal, we would need to wait for equation 4/11 which comes in the next section.)
@@ -609,7 +613,9 @@ w_{1\rightarrow 2}&= -\int_{1}^{2} pdv = 0
 :::
 
 :::{math}
-w_{1\rightarrow 2}= 0 (4/21)
+:label: eq-4-21
+:enumerator: 4/21
+w_{1\rightarrow 2}= 0
 :::
 
 during a reversible process at constant volume, in a closed system.
@@ -641,7 +647,9 @@ q_{1\rightarrow 2}= \Delta u - w_{1\rightarrow 2}= \Delta u
 :::
 
 :::{math}
-q_{1\rightarrow 2}= c_{v}\Delta T (4/22)
+:label: eq-4-22
+:enumerator: 4/22
+q_{1\rightarrow 2}= c_{v}\Delta T
 :::
 
 during a reversible process at constant volume, in a closed system.
@@ -653,7 +661,9 @@ w_{1\rightarrow 2}= \int _{1}^{2}vdp = v_{\mathrm{cst}.}\int _{1}^{2}dp = v_{\ma
 :::
 
 :::{math}
-w_{1\rightarrow 2}= R \Delta T (4/23)
+:label: eq-4-23
+:enumerator: 4/23
+w_{1\rightarrow 2}= R \Delta T
 :::
 
 during a reversible process at constant volume, in an open system.
@@ -665,7 +675,9 @@ q_{1\rightarrow 2}= \Delta h - w_{1\rightarrow 2}= c_{p}\Delta T - R \Delta T
 :::
 
 :::{math}
-q_{1\rightarrow 2}= c_{v}\Delta T (4/24)
+:label: eq-4-24
+:enumerator: 4/24
+q_{1\rightarrow 2}= c_{v}\Delta T
 :::
 
 during a reversible process at constant volume, in an open system.
@@ -1062,21 +1074,29 @@ $c_{p (\mathrm{air})}= 1005 J kg^{-1}K^{-1} \qquad \gamma _{\mathrm{air}}= 1.4$
 We assume that for a reversible adiabatic process (without heat transfer and infinitely slow), the properties of air are linked according to the following three relationships:
 
 :::{math}
-\left(\frac{T_{1}}{T_{2}}\right) = \left(\frac{v_{2}}{v_{1}}\right)^{\gamma -1} \qquad (4/36)
+:label: eq-4-36-ref
+:enumerator: 4/36
+\left(\frac{T_{1}}{T_{2}}\right) = \left(\frac{v_{2}}{v_{1}}\right)^{\gamma -1}
 :::
 
 :::{math}
-\left(\frac{T_{1}}{T_{2}}\right) = \left(\frac{p_{1}}{p_{2}}\right)^{\frac{\gamma -1}{\gamma}} \qquad (4/37)
+:label: eq-4-37-ref
+:enumerator: 4/37
+\left(\frac{T_{1}}{T_{2}}\right) = \left(\frac{p_{1}}{p_{2}}\right)^{\frac{\gamma -1}{\gamma}}
 :::
 
 :::{math}
-\left(\frac{p_{1}}{p_{2}}\right) = \left(\frac{v_{2}}{v_{1}}\right)^{\gamma} \qquad (4/38)
+:label: eq-4-38-ref
+:enumerator: 4/38
+\left(\frac{p_{1}}{p_{2}}\right) = \left(\frac{v_{2}}{v_{1}}\right)^{\gamma}
 :::
 
 We also assume that during a reversible isothermal process (at constant temperature and infinitely slow) of an ideal gas, the work done in an open or closed system is:
 
 :::{math}
-w_{1\rightarrow 2}= RT_{\mathrm{cst}.}\ln \left(\frac{p_{2}}{p_{1}}\right) = RT_{\mathrm{cst}.}\ln \left(\frac{v_{1}}{v_{2}}\right) \qquad (4/29)
+:label: eq-4-29-ref
+:enumerator: 4/29
+w_{1\rightarrow 2}= RT_{\mathrm{cst}.}\ln \left(\frac{p_{2}}{p_{1}}\right) = RT_{\mathrm{cst}.}\ln \left(\frac{v_{1}}{v_{2}}\right)
 :::
 
 ```{exercise}
@@ -1320,7 +1340,8 @@ $W_{\mathrm{real} \mathrm{compressor}}=\dot{W}_{\mathrm{friction} \mathrm{losses
 3) Wth $p_{\mathrm{B}}= kv^{-1.5}= 31.6 bar$, we have $T_{\mathrm{B}}=$ B
 $926.3 K$. Then, $Q_{\mathrm{A}\rightarrow \mathrm{B}}= \Delta U -W_{\mathrm{A}\rightarrow \mathrm{B}}= +0.3254 kJ$.
 5) With constant pressure, with equation 4/17,
-$T6)^{\mathrm{C}}S= <^{\frac{Q_{\mathrm{B}\rightarrow \mathrm{C}}}{F_{\mathrm{ma}}m c_{p}}} _{p_{\mathrm{C}}^{\mathrm{x}}}+_{.}=T _{\mathrm{B}}3 =.1 6144 8\times 3 1.70 K_{-3}(m12_{2}1 (1\mathrm{d}^{\circ}$i$C$am).eter $D_{\max}= 6.35 cm)$.
+$T_{\mathrm{C}}= \frac{Q_{\mathrm{B}\rightarrow \mathrm{C}}}{m c_{p}} + T_{\mathrm{B}}= 1483.7 K (1211^{\circ}C)$.
+6) $A_{\max}= \frac{F_{\max}}{p_{\mathrm{B}}} = 3.164 \times 10^{-3}m^{2}$ (diameter $D_{\max}= 6.35 cm)$.
 
 :::
 ```
@@ -1347,12 +1368,15 @@ The goal of the problem is to calculate the speed at which the turbojet engine i
 
 :::{math}
 :label: eq-4-36-prob
+:enumerator: 4/36
 \left(\frac{T_{1}}{T_{2}}\right) = \left(\frac{v_{1}}{v_{2}}\right)^{\gamma -1}
 :::
 
 valid for a reversible adiabatic process undergone by a perfect gas, show (without using equation 4/38) that:
 
 :::{math}
+:label: eq-4-37-prob
+:enumerator: 4/37
 \left(\frac{T_{1}}{T_{2}}\right) = \left(\frac{p_{1}}{p_{2}}\right)^{\frac{\gamma -1}{\gamma}}
 :::
 

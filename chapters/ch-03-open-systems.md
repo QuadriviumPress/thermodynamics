@@ -120,35 +120,31 @@ A fluid element of volume $V_{\mathrm{element}}$ entering at pressure $p$ into t
 We sometimes express it in specific form (§1.1.5):
 
 :::{math}
-W_{\mathrm{insertion}}= p_{1}\dot{V}_{1}=\dot{m}_{1}p_{1}v_{1}=\dot{m} p_{1}v_{1} (3/2)
+:label: eq-3-2
+:enumerator: 3/2
+W_{\mathrm{insertion}}= p_{1}\dot{V}_{1}=\dot{m}_{1}p_{1}v_{1}=\dot{m} p_{1}v_{1}
 :::
 
 :::{math}
-w_{\mathrm{insertion}}= p_{1}v_{1} (3/3)
+:label: eq-3-3
+:enumerator: 3/3
+w_{\mathrm{insertion}}= p_{1}v_{1}
 :::
 
-where$\dot{W}_{\mathrm{insertion}}$ is the insertion power $(W)$,
-
-:::{math}
-w_{\mathrm{insertion}} is the specific insertion power (J kg^{-1}) ,
-:::
-
-:::{math}
-m_{1} is the net mass flow rate at 1 (kg s^{-1}) ,
-:::
-
-$m$ is the mass flow rate crossing the system (always positive, $kg s^{-1})$, $V_{1}$ is the volumetric flow rate of fluid $(m^{3}s^{-1})$,
-
-and $v_{1}$ is the specific volume of the fluid at the inlet $(m^{3}kg^{-1})$.
+where $\dot{W}_{\mathrm{insertion}}$ is the insertion power $(W)$, $w_{\mathrm{insertion}}$ is the specific insertion power $(J kg^{-1})$, $\dot{m}_{1}$ is the net mass flow rate at 1 $(kg s^{-1})$, $\dot{m}$ is the mass flow rate crossing the system (always positive, $kg s^{-1})$, $V_{1}$ is the volumetric flow rate of fluid $(m^{3}s^{-1})$, and $v_{1}$ is the specific volume of the fluid at the inlet $(m^{3}kg^{-1})$.
 
 Similarly, for the fluid to exit the system at the other end, the system must continuously supply a power called *extraction power*:
 
 :::{math}
-W_{\mathrm{extraction}}= -p_{2}\dot{V}_{2}=\dot{m}_{2}p_{2}v_{2}= -\dot{m} p_{2}v_{2} (3/4)
+:label: eq-3-4
+:enumerator: 3/4
+W_{\mathrm{extraction}}= -p_{2}\dot{V}_{2}=\dot{m}_{2}p_{2}v_{2}= -\dot{m} p_{2}v_{2}
 :::
 
 :::{math}
-w_{\mathrm{extraction}}= -p_{2}v_{2} (3/5)
+:label: eq-3-5
+:enumerator: 3/5
+w_{\mathrm{extraction}}= -p_{2}v_{2}
 :::
 
 where the outgoing mass flow rate$\dot{m}_{2}$ (negative) is expressed in terms of the mass flow rate$\dot{m}$ crossing the system (always positive, $kg s^{-1})$.
@@ -370,6 +366,8 @@ The open system has four work transfer forms:
 **The specific insertion power** $w_{\mathrm{insertion}}$ (3/3) is due to the permanent arrival of the fluid at the system’s inlet. From the viewpoint of the open system, we have:
 
 :::{math}
+:label: eq-3-17
+:enumerator: 3/17
 w_{\mathrm{insertion}}= +p v
 :::
 
