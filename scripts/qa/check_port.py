@@ -174,6 +174,17 @@ def c_dangling(text):
             continue
         if before.rstrip().endswith(":::") and re.match(r"(where|with|and|in which)\b", head):
             continue
+        # Equation glosses and glossary/table cross-refs are house style, not fragments.
+        if re.match(r"(for a|for an|for any|for the|tab\.|fig\.|eq\.|p\.|see |cf\.)", head):
+            continue
+        # list-of-symbols abbreviation rows start lowercase by design
+        if re.match(r"[a-z]{2,4}\s+[A-Z]", head) and len(head) < 120:
+            continue
+        # figure/photo credits and short cross-refs
+        if re.match(r"(drawing|engraving|photo|image|diagram|selected by)\b", head, re.I):
+            continue
+        if re.match(r"tab\.\s*\d", head):
+            continue
         first = re.match(r"([a-z][a-z'\u2019-]{2,})\b", head)
         if first and first.group(1) not in ("de", "von", "van", "der", "et", "al"):
             yield ln, head[:70]

@@ -334,85 +334,79 @@ On a force-distance diagram, the work done by an object can be visualized by the
 A spring is compressed from a length of $30 cm (11.81 in)$ down to a length of $5 cm (1.968 in)$. The spring is such that it exerts a force (in newtons) independent of its length and equal to:
 
 :::{math}
-F_{(l)}= 6 \times 10^{3}N
+F_{(l)}= 6 \times 10^{3}\,\mathrm{N}
 :::
 
-compression?
+What is the energy supplied to the spring in the form of work during compression?
 
-boundaries in si units: $W_{\mathrm{A}\rightarrow \mathrm{B}}= -\int ^{\mathrm{B}} 10^{3}\int ^{\mathrm{B}}_{\mathrm{A}}dl = -6\times 10^{3}[l]^{l_{\mathrm{B}}}$
+The work done is obtained using equation 1/11, making sure to set the boundaries in SI units:
 
-as it was compressed.
+:::{math}
+\begin{aligned}
+W_{\mathrm{A}\rightarrow \mathrm{B}}= -\int_{\mathrm{A}}^{\mathrm{B}} F_{(l)}\, dl
+&= -\int_{0.30}^{0.05} 6 \times 10^{3}\, dl
+= -6\times 10^{3}[l]_{0.30}^{0.05}
+= -6\times 10^{3}(0.05-0.30)
+= +1.5\times 10^{3}\,J = +1.5\,kJ.
+\end{aligned}
+:::
 
-````
-
-````{prf:example}
-
-length $l$ (in $m)$ by the relation:
-
-compression?
-
-$-[9 \times 10^{3}l - ^{1} 2.07) = +1.6375 \times 10^{3}J = +1.638 kJ.$
-
-have regular coils.
-
-````
-
-````{prf:example}
-
-$m)$ by the relation:
-
-compression?
-
-$10^{3}-12 \times 10^{3}l^{0.3}) dl = -10^{3}[14 l - 2.2703) = +1.7582 \times 10^{3}J = +1.758 kJ.$
-
-````
-
-What is the energy supplied to the spring in the form of work during
-
-The work done is obtained using equation 1/11, making sure to set the $_{\mathrm{A}}F_{(l)}dl = -\int ^{\mathrm{B}}_{\mathrm{A}}6 \times 10^{3}dl = -6 \times$
-
-$_{l_{\mathrm{A}}}= -6\times 10^{3}(0.05-0.3) = +1.5\times 10^{3}J = +1.5 kJ.$
-
-The sign of the transferred work is positive: the spring has
-
-*received* energy. This does not suprise us: its length has decreased
+The sign of the transferred work is positive: the spring has *received* energy. This does not surprise us: its length has decreased as it was compressed.
 
 Springs with such a characteristic (independent of their length) are often ribbon springs, like those used in mechanical watches.
-
-Example 1.5
-
-Another spring is also compressed from a length of $30 cm$ down to a length of $5 cm$. It is such that it exerts a force (in $N)$ related to its
-
-$F_{(l)}= 9 \times 10^{3}- 14 \times 10^{3}l$
-
-What is the energy supplied to the spring in the form of work during
-
-The work done is still obtained using equation 1/11, and the integral is only slightly more complex: $W_{\mathrm{A}\rightarrow \mathrm{B}}= -\int ^{\mathrm{B}}_{\mathrm{A}}(9 \times 10^{3}- 14 \times 10^{3}l) dl = l_{\mathrm{B}}0.05$
-
-$_{2}14 \times 10^{3}l^{2}]_{l_{\mathrm{A}}}= -10^{3}[9l - 7l^{2}]_{0.3}= -10^{3}(0.4325 -$
-
-Springs with such a characteristic (force proportional to length)
-
-Example 1.6
-
-One final spring is compressed from a length of $30 cm$ down to a length of $5 cm$. It is such that it exerts a force (in $N)$ related to its length $l$ (in
-
-$F_{(l)}= 14 \times 10^{3}- 12 \times 10^{3}l^{0.3}$
-
-What is the energy supplied to the spring in the form of work during
-
-The work done is still obtained using equation 1/11, $W_{\mathrm{A}\rightarrow \mathrm{B}}= -\int ^{\mathrm{B}}_{\mathrm{A}}(14\times 0.05$
-
-$\frac{1}{0.3+1} 12 l^{0.3+1}]_{0.3}= -10^{3}(0.5121 -$
-
-*Engineering Thermodynamics* by Olivier Cleynen
+````
 
 ````{prf:example}
+:label: ex-1-5
+:enumerator: 1.5
 
-Springs with such a characteristic are called progressive springs:
+Another spring is also compressed from a length of $30 cm$ down to a length of $5 cm$. It is such that it exerts a force (in $N$) related to its length $l$ (in $m$) by the relation:
 
-very soft at first, but increasing rapidly in hardness. They are often used in automobile suspensions. We will see in chapter 2 (*closed systems*) that gases have a similar characteristic.
+:::{math}
+F_{(l)}= 9 \times 10^{3}- 14 \times 10^{3}l
+:::
 
+What is the energy supplied to the spring in the form of work during compression?
+
+The work done is still obtained using equation 1/11, and the integral is only slightly more complex:
+
+:::{math}
+\begin{aligned}
+W_{\mathrm{A}\rightarrow \mathrm{B}}= -\int_{0.30}^{0.05} (9 \times 10^{3}- 14 \times 10^{3}l)\, dl
+&= -\bigl[9 \times 10^{3}l - 7 \times 10^{3}l^{2}\bigr]_{0.30}^{0.05} \\
+&= -10^{3}\bigl[9l - 7l^{2}\bigr]_{0.30}^{0.05}
+= -10^{3}(0.4325 - 2.07)
+= +1.6375 \times 10^{3}\,J = +1.638\,kJ.
+\end{aligned}
+:::
+
+Springs with such a characteristic (force proportional to length) have regular coils.
+````
+
+````{prf:example}
+:label: ex-1-6
+:enumerator: 1.6
+
+One final spring is compressed from a length of $30 cm$ down to a length of $5 cm$. It is such that it exerts a force (in $N$) related to its length $l$ (in $m$) by the relation:
+
+:::{math}
+F_{(l)}= 14 \times 10^{3}- 12 \times 10^{3}l^{0.3}
+:::
+
+What is the energy supplied to the spring in the form of work during compression?
+
+The work done is still obtained using equation 1/11:
+
+:::{math}
+\begin{aligned}
+W_{\mathrm{A}\rightarrow \mathrm{B}}= -\int_{0.30}^{0.05} (14\times 10^{3}-12 \times 10^{3}l^{0.3})\, dl
+&= -10^{3}\Bigl[14 l - \frac{12}{1.3} l^{1.3}\Bigr]_{0.30}^{0.05} \\
+&= -10^{3}(0.5121 - 2.2703)
+= +1.7582 \times 10^{3}\,J = +1.758\,kJ.
+\end{aligned}
+:::
+
+Springs with such a characteristic are called progressive springs: very soft at first, but increasing rapidly in hardness. They are often used in automobile suspensions. We will see in chapter 2 (*closed systems*) that gases have a similar characteristic.
 ````
 
 (sec-1-4)=
@@ -619,13 +613,11 @@ We simply note that we humans are ourselves very poor thermometers: since the hu
 
 Even though this vocabulary probably puts us among the unsociable scientists relegated to the end of the table, it equips us better to face what’s next, because in the next chapter, we will be dealing with *closed systems*.
 
-::::{admonition} A Bit of History:
+::::{admonition} A Bit of History
 :class: note
 :label: hist-1-4
 
-Measuring the Degree of Heat
-
-\*
+**Measuring the Degree of Heat**
 
 *By Philippe Depondt*
 
@@ -637,32 +629,15 @@ Until the 17th century, descriptions of the world would unfortunately remain lar
 
 In the case of thermodynamics, the English philosopher Francis Bacon, laying the foundations of inductive reasoning at the beginning of the 17th century, used heat as an example to illustrate his point. In order to study its nature, he proposed in the *Novum Organum* to compile all observations of phenomena in which heat appears, of phenomena where it does not appear, and finally of those where it appears “by degrees.” This method remained qualitative, but at approximately the same time, there was an explosion of attempts to make truly quantitative measurements of this “degree of heat.”
 
-It seems that the first thermometer was invented around 1605 by a Dutchman named Cornelis Drebbel [[39](#ref-39)]: based on ideas dating back to Hero of Alexandria (1st century CE), it consisted of a hollow glass sphere extended by a tube pointing
-
-::::
-
-::::{admonition} A Bit of History
-:class: note
-
-*Engineering Thermodynamics* by Olivier Cleynen
-
-::::
-
-downwards and immersed in a colored liquid. If the sphere was heated, the liquid was pushed downwards by the expansion of the air, and conversely,
-
-if it was cooled, the liquid rose in the tube. It was thus an air thermometer (figure 1.5). This thermometer was later used to monitor fever in patients
-
-(figure 1.6), but it had the drawback of being as sensitive to changes in atmospheric pressure as to temperature.
+It seems that the first thermometer was invented around 1605 by a Dutchman named Cornelis Drebbel [[39](#ref-39)]: based on ideas dating back to Hero of Alexandria (1st century CE), it consisted of a hollow glass sphere extended by a tube pointing downwards and immersed in a colored liquid. If the sphere was heated, the liquid was pushed downwards by the expansion of the air, and conversely, if it was cooled, the liquid rose in the tube. It was thus an air thermometer (figure 1.5). This thermometer was later used to monitor fever in patients (figure 1.6), but it had the drawback of being as sensitive to changes in atmospheric pressure as to temperature.
 
 :::{figure} ../images/fig-1-5.jpg
 :label: fig-1-5
 :enumerator: 1.5
-:alt: An air thermometer from the early 17th century. The ball was filled with air whose volume varies with its temperature, pushing the water from the reservoir below whose surface is at atmospheric pressure. The liquid could be colored, and its changes height were measured using a scale. Since atmospheric pressure varies with meteorological conditions, it affected the measurements: it was, in a way, a baro-thermometer.
+:alt: An air thermometer from the early 17th century. The ball was filled with air whose volume varies with its temperature, pushing the water from the reservoir below whose surface is at atmospheric pressure. The liquid could be colored, and its changes in height were measured using a scale. Since atmospheric pressure varies with meteorological conditions, it affected the measurements: it was, in a way, a baro-thermometer.
 
-An air thermometer from the early 17th century. The ball was filled with air whose volume varies with its temperature, pushing the water from the reservoir below whose surface is at atmospheric pressure. The liquid could be colored, and its changes height were measured using a scale. Since atmospheric pressure varies with meteorological conditions, it affected the measurements: it was, in a way, a baro-thermometer.
+An air thermometer from the early 17th century. The ball was filled with air whose volume varies with its temperature, pushing the water from the reservoir below whose surface is at atmospheric pressure. The liquid could be colored, and its changes in height were measured using a scale. Since atmospheric pressure varies with meteorological conditions, it affected the measurements: it was, in a way, a baro-thermometer.
 :::
-
-tury. The ball was filled with air whose volume varies with its temperature, pushing the water from the reservoir below whose surface is at atmospheric pressure. The liquid could be colored, and its changes height were measured using a scale. Since atmospheric pressure varies with meteorological conditions, it affected the measurements: it was, in a way, a baro-thermometer.
 
 *Engraving by Robert Fludd (1626, public domain), selected by Lamouline 2005 [[45](#ref-45)]*
 
@@ -674,37 +649,34 @@ tury. The ball was filled with air whose volume varies with its temperature, pus
 A medical thermometer from the early 17th century. The gas bulb was placed in the patient’s mouth. One can well imagine that the thermometer’s sensitivity to atmospheric pressure was not the biggest obstacle to its adoption...
 :::
 
-century. The gas bulb was placed in the patient’s mouth. One can well imagine that the thermometer’s sensitivity to atmospheric pressure was not the biggest obstacle to its adoption...
-
 *Drawing by Santori & Avicenne (Commentaria in primam Fen primi libr Avicennae, 1625, public domain), selected by Lamouline 2005 [[45](#ref-45)]*
 
-In the middle of the century, liquid thermometers would prove to be much more reliable and easier to use. The glass bulb was now placed at the bottom course, the measurements needed to be corrected of the device and filled with colored liquid that rose by simultaneously measuring atmospheric pressure. in a graduated tube; this tube was initially open, This system allowed Amontons to make a major but it was found that by closing it, evaporation of discovery: if the gas pressure increases as the de-the liquid could be prevented (figure 1.7). These imgree of heat increases, conversely, it decreases as provements had been strongly supported by the Italthe degree of heat decreases. At a minimum, this ian grand duke Ferdinando II de’ Medici, and these pressure must become zero, as well as the degree devices were thus called “Florence thermometers.” of heat. This extrapolated minimum corresponds to, in modern units, $-239.5^{\circ}C$... A first measure of absolute zero!
+In the middle of the century, liquid thermometers would prove to be much more reliable and easier to use. The glass bulb was now placed at the bottom of the device and filled with colored liquid that rose in a graduated tube; this tube was initially open, but it was found that by closing it, evaporation of the liquid could be prevented (figure 1.7). These improvements had been strongly supported by the Italian grand duke Ferdinando II de’ Medici, and these devices were thus called “Florence thermometers.”
+
+:::{figure} ../images/fig-1-7.jpg
+:label: fig-1-7
+:enumerator: 1.7
+:alt: A Florence thermometer from the mid-17th century. This time, it was the liquid, contained in the lower bulb, that contracted and expanded with temperature. Its changes in volume were such that a long spiral-blown glass tube was needed to measure them.
+
+A Florence thermometer from the mid-17th century. This time, it was the liquid, contained in the lower bulb, that contracted and expanded with temperature. Its changes in volume were such that a long spiral-blown glass tube was needed to measure them.
+:::
+
+*Engraving by the Accademia del Cimento (Saggi di naturali esperienze, 1667, public domain), selected by Lamouline 2005 [[45](#ref-45)]*
 
 However, all these thermometers remained difficult to use, significantly limiting their dissemination. René-Antoine Ferchault de Réaumur, around the middle of the 18th century, developed a water-alcohol mixture thermometer in which the alcohol level is precisely fixed to ensure the reproducibility of the instrument. He calibrated it by choosing two references (melting ice and boiling water) and dividing this interval into 80 degrees. This scale is called the “Réaumur scale.”
 
 In 1724, in Danzig, the German Daniel Gabriel Fahrenheit described a thermometer that used the expansion of mercury and introduced a scale in which melting ice is at 32 degrees and the temperature of blood at 96 degrees; a mixture of ice, water, and sal ammoniac gave him the zero of his scale (see also section §7.4.3 p. 191).
 
-In 1741, the Swedish Anders Celsius adopted the Réaumur scale but divided it into 100 intervals instead of 80. This convention was widely spread in
+In 1741, the Swedish Anders Celsius adopted the Réaumur scale but divided it into 100 intervals instead of 80. This convention was widely spread in France, and in 1794, at the time of the adoption of the metric system by the Convention, the Celsius scale was chosen as the official temperature scale.
 
-:::{figure} ../images/fig-1-7.jpg
-:label: fig-1-7
-:enumerator: 1.7
-:alt: A Florence thermometer from the mid-17th
+The transition from the subjective sensation of hot and cold to the objective measurement of temperature with reliable instruments and a universal scale led to a large number of observations that were not self-evident until then: the temperature of a cellar is not higher in winter than in summer, iron is not “colder” than wood, etc., and all in all, this is quite recent!
 
-A Florence thermometer from the mid-17th
-:::
+The issue of graduations remained. The number of graduations varied widely, with artisans merely attempting to reproduce what they had already created themselves; at best, thermometers built by the same person gave roughly similar results. Due to the lack of a universally accepted scale, it was impossible to make measurements in different locations with different instruments for comparison.
 
-century. This time, it was the liquid, contained in the France, and in 1794, at the time of the adoption of lower bulb, that contracted and expanded with temperthe metric system by the Convention, the Celsius ature. Its changes in volume were such that a long spiral-blown glass tube was needed to measure them. scale was chosen as the official temperature scale. *Engraving by the Accademia del cimento (Staggi di naturali esperientze,* The transition from the subjective sensation of hot
+In the early 18th century, the Frenchman Guillaume Amontons built an air thermometer based on the measurement of a pressure difference rather than volume. Having observed that if boiling water continued to be heated, its degree of heat did not increase, he used this as a fixed point of reference. Of course, the measurements needed to be corrected by simultaneously measuring atmospheric pressure. This system allowed Amontons to make a major discovery: if the gas pressure increases as the degree of heat increases, conversely, it decreases as the degree of heat decreases. At a minimum, this pressure must become zero, as well as the degree of heat. This extrapolated minimum corresponds to, in modern units, $-239.5^{\circ}\mathrm{C}$… A first measure of absolute zero!
 
-*1667, public domain), selected by Lamouline 2005 [[45](#ref-45)]* and cold to the objective measurement of tempera-
+::::
 
-The issue of graduations remained. The number ture with reliable instruments and a universal scale of graduations varied widely, with artisans merely led to a large number of observations that were not attempting to reproduce what they had already self-evident until then: the temperature of a cellar created themselves; at best, thermometers built is not higher in winter than in summer, iron is not by the same person gave roughly similar results. “colder” than wood, etc., and all in all, this is quite
-
-Due to the lack of a universally accepted scale, it recent!
-
-was impossible to make measurements in different locations with different instruments for comparison.
-
-In the early 18th century, the Frenchman Guillaume Amontons built an air thermometer based on the measurement of a pressure difference rather than volume. Having observed that if boiling water continued to be heated, its degree of heat did not increase, he used this as a fixed point of reference. Of
 
 ## Problems
 
@@ -860,7 +832,6 @@ The water flow rate circulating in the plant is $15 kg s^{-1}$.
    Schematic diagram of a water turbine. Water enters at the top left, rotates the turbine blades, is heated by internal friction, and exits at the bottom right of the machine.
    :::
 
-ter enters at the top left, rotates the turbine blades, is heated by internal friction, and exits at the bottom right of the machine. *Diagram* CC-by-sa *Olivier Cleynen*
 
 1. What is the specific mechanical power received or supplied by the water as it passes through the power plant?
 
