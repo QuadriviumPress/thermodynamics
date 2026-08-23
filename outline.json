@@ -31,7 +31,7 @@
         "figures": 14,
         "examples": 7,
         "display_eq": 17,
-        "history": 2,
+        "history": 1,
         "problems": 14
       }
     },
@@ -45,7 +45,7 @@
         "figures": 22,
         "examples": 6,
         "display_eq": 20,
-        "history": 2,
+        "history": 1,
         "problems": 12
       }
     },
@@ -59,7 +59,7 @@
         "figures": 17,
         "examples": 5,
         "display_eq": 29,
-        "history": 2,
+        "history": 1,
         "problems": 14
       }
     },
@@ -73,7 +73,7 @@
         "figures": 20,
         "examples": 8,
         "display_eq": 58,
-        "history": 2,
+        "history": 1,
         "problems": 17
       }
     },
@@ -87,7 +87,7 @@
         "figures": 34,
         "examples": 12,
         "display_eq": 28,
-        "history": 2,
+        "history": 1,
         "problems": 19
       }
     },
@@ -101,7 +101,7 @@
         "figures": 28,
         "examples": 3,
         "display_eq": 13,
-        "history": 2,
+        "history": 1,
         "problems": 15
       }
     },
@@ -115,7 +115,7 @@
         "figures": 17,
         "examples": 5,
         "display_eq": 29,
-        "history": 2,
+        "history": 1,
         "problems": 15
       }
     },
@@ -129,7 +129,7 @@
         "figures": 13,
         "examples": 9,
         "display_eq": 33,
-        "history": 2,
+        "history": 1,
         "problems": 19
       }
     },
@@ -143,7 +143,7 @@
         "figures": 24,
         "examples": 2,
         "display_eq": 15,
-        "history": 2,
+        "history": 1,
         "problems": 7
       }
     },
@@ -157,7 +157,7 @@
         "figures": 36,
         "examples": 2,
         "display_eq": 26,
-        "history": 2,
+        "history": 1,
         "problems": 6
       }
     }

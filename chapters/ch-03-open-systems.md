@@ -117,13 +117,6 @@ A fluid element of volume $V_{\mathrm{element}}$ entering at pressure $p$ into t
 
 *Diagram* CC-0 *Olivier Cleynen*
 
-::::{admonition} A Bit of History
-:class: note
-
-*Engineering Thermodynamics* by Olivier Cleynen
-
-::::
-
 We sometimes express it in specific form (§1.1.5):
 
 :::{math}
@@ -259,6 +252,8 @@ In many cases, the terms $u$ and $pv$ vary in the same manner together with the 
 We call the sum of the terms $u$ and $pv$ the *specific enthalpy*, and assign it the symbol $h$:
 
 :::{math}
+:label: eq-3-12
+:enumerator: 3/12
 h \equiv u + p v
 :::
 
@@ -267,26 +262,14 @@ where the terms are expressed in $J kg^{-1}$.
 Of course, the *enthalpy* $H$ is simply defined as:
 
 :::{math}
+:label: eq-3-13
+:enumerator: 3/13
 H \equiv m h
 :::
 
 where $H$ is measured in joules (J).
 
 In practice, the term *enthalpy* is often used even if it refers to specific enthalpy; the symbol and context help determine which variable is being referred to.
-
-By using the concept of enthalpy, equations 3/9 and 3/11 are simplified to become:
-
-:::{math}
-Q_{1\rightarrow 2}+\dot{W}_{1\rightarrow 2}=\dot{m}(\Delta h + \Delta e_{\mathrm{mech}.})
-:::
-
-:::{math}
-q_{1\rightarrow 2}+ w_{1\rightarrow 2}= \Delta h + \Delta e_{\mathrm{mech}.}
-:::
-
-(3/12)
-
-(3/13)
 
 :::{aside}
 « The decrease of the heat contents is equal to the heat value of the gained “useful work” plus the heat carried away to the outside plus the increase of kinetic energy per pound (or kilogram) of steam. »
@@ -296,10 +279,20 @@ Aurel Stodola, 1904
 (where the “heat contents” are not yet named *enthalpy*)
 
 *Die Dampfturbinen* [[26](#ref-26), [27](#ref-27)]
+:::
 
-(3/14)
+By using the concept of enthalpy, equations 3/9 and 3/11 are simplified to become:
 
-(3/15)
+:::{math}
+:label: eq-3-14
+:enumerator: 3/14
+Q_{1\rightarrow 2}+\dot{W}_{1\rightarrow 2}=\dot{m}(\Delta h + \Delta e_{\mathrm{mech}.})
+:::
+
+:::{math}
+:label: eq-3-15
+:enumerator: 3/15
+q_{1\rightarrow 2}+ w_{1\rightarrow 2}= \Delta h + \Delta e_{\mathrm{mech}.}
 :::
 
 Thus, in an open system, we see that heat and work transfers change the *enthalpy* of the fluid, and not only its internal energy as in a closed system.
@@ -323,34 +316,14 @@ q_{1\rightarrow 2}+ w_{1\rightarrow 2}= \Delta h + \Delta e_{\mathrm{mech}.}
 :::
 
 :::{math}
-1
+\frac{1}{2} (C_{2}^{2}- C_{1}^{2}) = -\Delta h
 :::
 
 :::{math}
-_{2}- C^{2}_{1}) = -\Delta h
+C_{2}= [-2 \Delta h + C_{1}^{2}]^{\frac{1}{2}}
 :::
 
-:::{math}
-2 (C^{2}
-:::
-
-:::{math}
-\frac{1}{}
-:::
-
-:::{math}
-C_{2}= [-2 \Delta h + C^{2}_{1}]^{2}
-:::
-
-:::{math}
-\frac{1}{}
-:::
-
-:::{math}
-2 \frac{}{2}
-:::
-
-So $C_{2}= [-2 \times (754 \times 10^{3}- 776 \times 10^{3}) + ( \frac{30}{3.6})] = 209.9 m s^{-1}= 755.7 km/h = 470 mph$.
+So $C_{2}= \left[-2 \times (754 \times 10^{3}- 776 \times 10^{3}) + \left(\frac{30}{3.6}\right)^{2}\right]^{\frac{1}{2}} = 209.9 m s^{-1}= 755.7 km/h = 470 mph$.
 
 Care must be used with conversions: in the equations, velocities and energies are always in si units.
 
@@ -373,13 +346,6 @@ To this end, let us first observe the process undergone by a fixed mass quantity
 :::
 
 during a reversible process, and where the notation δ is used to denote the infinitesimal transfer of work (work being a path quantity, see Appendix A4 p. 316).
-
-::::{admonition} A Bit of History
-:class: note
-
-*Engineering Thermodynamics* by Olivier Cleynen
-
-::::
 
 :::{figure} ../images/fig-3-4.jpg
 :label: fig-3-4
@@ -531,13 +497,6 @@ The process can be drawn qualitatively on a pressure-volume diagram as follows:
 
 ````
 
-::::{admonition} A Bit of History
-:class: note
-
-*Engineering Thermodynamics* by Olivier Cleynen
-
-::::
-
 ````{prf:example}
 
 Here the specific volume is a function of pressure: we have $v = \left(\frac{k}{p}\right)^{\frac{1}{1.35}}= k^{\frac{1}{1.35}} p^{-\frac{1}{1.35}}$. We start from equation 3/23:
@@ -648,7 +607,6 @@ Black continued his activities by conducting a whole series of calorimetry exper
 > We must, therefore, conclude that different bodies, although they be of the same size, or even of the same weight, when they are reduced to the same temperature or degree of heat, whatever that be, may contain very different quantities of the matter of heat; which different quantities are necessary to bring them to this level, or equilibrium, with one another.
 > 
 > — Joseph Black, 1807 [[2](#ref-2)]
-
 
 He did not make any assumptions about the nature of this heat that he characterized. For most of his contemporaries, however, its apparent conservation indicated that it was a material fluid devoid of mass which Lavoisier later named *caloric*. In this view, this substance could be transferred from one body to another to raise the temperature of the receiving body and lower that of the giving body: some bodies (such as water) contained more of it at a given temperature than others (like oil), resulting in different specific heats. On the other hand, Black believed that the fusion of a solid or the vaporization of a liquid could be a kind of chemical combination of the caloric fluid with the matter: the caloric would then disappear as such and become “latent”.
 
@@ -830,6 +788,21 @@ why it is never used on civilian aircraft)
    :::
 
 ```{exercise}
+:label: prob-3-7
+:enumerator: 3.7
+
+**Steam Turbine** A small steam turbine produces $500 kW$ of power, with a mass flow rate of $1.35 kg s^{-1} (\sim 3 lb/s)$. The average speed of the steam is $60 m s^{-1}$ at the inlet, $360 m s^{-1}$ at the outlet; it gains $3 m$ in altitude during the process. The heat loss is $3 kW$. 1. What are the changes in kinetic energy, potential energy, and enthalpy of the steam as it passes through the turbine? 2. Since the heat loss is $3 kW$, why not thermally isolate the turbine to be able to recover this power in the form of work?
+
+:::{admonition} Answer
+:class: dropdown
+
+1) $\Delta e_{c}= +63 kJ kg^{-1}$, $\Delta e_{p}= +0.0294 kJ kg^{-1}$ (!), $\Delta h = -435.6 kJ kg^{-1}$.
+2) In equation 3/15, setting $q_{1\rightarrow 2}= 0$ does not guarantee that $w_{1\rightarrow 2}$ will increase. It is probable that the outlet conditions are modified: the $3 kW$ will at least partly be found in the $\Delta$ values calculated above.
+
+:::
+```
+
+```{exercise}
 :label: prob-3-8
 :enumerator: 3.8
 
@@ -873,13 +846,6 @@ energy), and maybe also higher kinetic energy.
    
    Schematic diagram of a turboprop engine. These engines are studied in more detail in §10.5.4 p. 286.
    :::
-
-::::{admonition} A Bit of History
-:class: note
-
-*Engineering Thermodynamics* by Olivier Cleynen
-
-::::
 
 Within the same engine, the turbine, which is adiabatic, must power not only to the compressor but also the propeller at the front of the engine. It is equipped with numerous probes to measure the properties of the air.
 

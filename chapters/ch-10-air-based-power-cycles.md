@@ -95,13 +95,6 @@ where $M_{w}$ is the work ratio (dimensionless); $W_{\mathrm{expansions}}$ is th
 
 and $W_{\mathrm{compressions}}$ is the shaft power received during compressions.
 
-::::{admonition} A Bit of History
-:class: note
-
-*Engineering Thermodynamics* by Olivier Cleynen
-
-::::
-
 :::{figure} ../images/fig-10-2.jpg
 :label: fig-10-2
 :enumerator: 10.2
@@ -148,13 +141,6 @@ One must not flatter oneself for ever exploiting, in practice, the entirety of t
 
 Sadi Carnot, 1824 [[4](#ref-4)]
 
-::::{admonition} A Bit of History
-:class: note
-
-*Engineering Thermodynamics* by Olivier Cleynen
-
-::::
-
 (sec-10-3)=
 ## 10.3 Reciprocating Engines
 
@@ -177,7 +163,6 @@ The German engineer Nicolaus Otto is credited with the development of the engine
 :::{figure} ../images/art-p272-1.svg
 :alt: Illustration from the original text
 :::
-
 
 The Otto cycle is designed to allow for a simple implementation of the heat addition phase. The fuel is mixed with air before being inserted into the engine, and a very rapid combustion is triggered with a spark when the volume in the cylinder is minimal: this is known as *spark ignition*. Otto originally intended his engine for stationary applications, but its relative simplicity and responsiveness would ensure its success in transportation (notably through his son Gustav Otto, an aircraft manufacturer whose company would later become bmw).
 
@@ -217,13 +202,6 @@ This equation indicates that the efficiency of the Otto engine depends solely on
 ### 10.3.3 The Diesel cycle
 
 The *Diesel engine*, the child of his patient and hard-working inventor, German engineer Rudolf Diesel (§7.6), powers today the overwhelming majority of commercial road and marine transportation.
-
-::::{admonition} A Bit of History
-:class: note
-
-*Engineering Thermodynamics* by Olivier Cleynen
-
-::::
 
 From a strictly thermodynamic point of view, the theoretical Diesel cycle differs from the Otto cycle only in its combustion mode: heat addition occurs at constant pressure and not at constant volume, as shown in figure 10.4.
 
@@ -331,13 +309,6 @@ The stator casing which houses the rotor (not shown) in the an axial compressor 
 
 *Photo* CC-by-sa *Olivier Cleynen*
 
-::::{admonition} A Bit of History
-:class: note
-
-*Engineering Thermodynamics* by Olivier Cleynen
-
-::::
-
 :::{figure} ../images/fig-10-9.jpg
 :label: fig-10-9
 :enumerator: 10.9
@@ -351,7 +322,9 @@ Schematic representation of an air compressor.
 Just as we did for the turbine (9/6), we quantify the efficiency of a compressor by comparing its power with that of an ideal compressor (one that would be isentropic). We call this parameter the *isentropic efficiency* $\eta _{\mathrm{C}}$ of the compressor:
 
 :::{math}
-\eta _{\mathrm{C}}\equiv \frac{\dot{W}_{\mathrm{isentropic} \mathrm{compressor}}}{\dot{W}_{\mathrm{actual} \mathrm{compressor}}} (10/5)
+:label: eq-10-5
+:enumerator: 10/5
+\eta _{\mathrm{C}}\equiv \frac{\dot{W}_{\mathrm{isentropic} \mathrm{compressor}}}{\dot{W}_{\mathrm{actual} \mathrm{compressor}}}
 :::
 
 where$\dot{W}_{\mathrm{actual} \mathrm{compressor}}$ is the actual shaft power received by the compressor, and $W_{\mathrm{isentropic} \mathrm{compressor}}$ is the power of an isentropic compressor that would operate with the same mass flow rate and between the same pressures.
@@ -359,11 +332,9 @@ where$\dot{W}_{\mathrm{actual} \mathrm{compressor}}$ is the actual shaft power r
 Like that of a turbine, the isentropic efficiency of a compressor is always less than 1. If this efficiency is known, we can compare the actual properties of the air at the inlet and outlet of the compressor with those that would be measured in the ideal case:
 
 :::{math}
-w_{\mathrm{compressor}}= c_{p}(T_{\mathrm{actual}}- T_{\mathrm{A}}) = \frac{1}{} c_{p}(T_{\mathrm{ideal}}- T_{\mathrm{A}}) (10/6)
-:::
-
-:::{math}
-\eta _{\mathrm{C}}
+:label: eq-10-6
+:enumerator: 10/6
+w_{\mathrm{compressor}}= c_{p}(T_{\mathrm{actual}}- T_{\mathrm{A}}) = \frac{1}{\eta _{\mathrm{C}}} c_{p}(T_{\mathrm{ideal}}- T_{\mathrm{A}})
 :::
 
 where $w_{\mathrm{compressor}}$ is the specific power of the compressor $(J kg^{-1})$, $T_{\mathrm{ideal}}$ is the ideal outlet temperature (isentropic compressor) $(K)$,
@@ -412,13 +383,6 @@ Section of an annular combustion chamber in which the flow was from left to righ
 :::
 
 *Photo* CC-by-sa *Olivier Cleynen*
-
-::::{admonition} A Bit of History
-:class: note
-
-*Engineering Thermodynamics* by Olivier Cleynen
-
-::::
 
 :::{figure} ../images/fig-10-11.svg
 :label: fig-10-11
@@ -575,8 +539,6 @@ Finally, we note that the *air intake* of aeronautical engines often serves as a
 
 Within the realm of *turbomachinery* (machines which transfer power between a fluid and a rotating shaft), we call *gas turbine* the complete internal-combustion, turbine-powered machine, and not merely the component of the same name. The word “gas” here refers to the working fluid, not to the fuel, which may be any kind of combustible liquid or gas. Gas turbines have two major advantages over piston engines:
 
-
-
 • The power-to-weight ratio of turbomachines is approximately three times higher, since the number of moving parts is reduced, and their movement is very simple, allowing them to be lighter;
 
 • In air propulsion, the working fluid can be used as a medium of propulsion itself. It is sufficient to let the air exit the turbine with a residual pressure and let it expand in a nozzle. This generates a thrust by reaction (equal to the mass flow rate multiplied by its speed): this is the working principle of the jet engine.
@@ -634,13 +596,6 @@ This surplus work in the the engine shaft can then be used to power a propeller 
 
 For a given engine mass flow, powering a propeller or the fan of a turbofan engine instead of merely expanding the gases in a nozzle increases thrust
 
-::::{admonition} A Bit of History
-:class: note
-
-*Engineering Thermodynamics* by Olivier Cleynen
-
-::::
-
 :::{figure} ../images/fig-10-18.svg
 :label: fig-10-18
 :enumerator: 10.18
@@ -688,13 +643,6 @@ Since the speed of the turbine/compressor shaft is not constrained by the load i
 In a configuration with *multiple spools*, the compressor and turbine are each divided into several parts, thus forming two co-axial systems incorporated one into the other (figure 10.21).
 
 The high-pressure turbine drives the high-pressure compressor (high-speed spool), and the low-pressure turbine drives the low-pressure compressor (low-speed spool).
-
-::::{admonition} A Bit of History
-:class: note
-
-*Engineering Thermodynamics* by Olivier Cleynen
-
-::::
 
 :::{figure} ../images/fig-10-20.svg
 :label: fig-10-20
@@ -787,13 +735,6 @@ Because an increase in combustion temperature increases efficiency and specific 
 One of the used strategies is to cool the turbine with bleed air from the compressor (figure 10.25). The bleed air is passed through the turbine blades themselves, allowing for an increase in combustion temperature without risking damage to the blades. The most efficient and advanced cooling systems wrap the turbine blades with this cooler air. This allows, in modern engines, the tet temperature exceeds the melting temperature of the blades by more than $100^{\circ}C$, or $180 ^{\circ} F$!
 
 Such turbine cooling comes at a significant cost. First, in a real engine, less work is recovered from the expansion of this bleed air than was required for its compression (in the limiting case where compression and expansion
-
-::::{admonition} A Bit of History
-:class: note
-
-*Engineering Thermodynamics* by Olivier Cleynen
-
-::::
 
 :::{figure} ../images/fig-10-25.svg
 :label: fig-10-25
@@ -943,13 +884,6 @@ these engines are very slow); 7) See sections §10.3.3 p. 274 and §10.3.4 p. 27
    The two Diesel engines of a $290.000 t$ oil tanker: a six-cylinder $1100 kW$ generator (top) and a seven-cylinder $25 MW$ propulsion engine (bottom).
    :::
 
-::::{admonition} A Bit of History
-:class: note
-
-*Engineering Thermodynamics* by Olivier Cleynen
-
-::::
-
 3. What is the gas temperature at the end of the combustion?
 
 4. What is the maximum pressure reached in the engine?
@@ -1072,13 +1006,6 @@ Appendix
    
    Schematic diagram of the arrangement of the *General Electric* cf6.
    :::
-
-::::{admonition} A Bit of History
-:class: note
-
-*Engineering Thermodynamics* by Olivier Cleynen
-
-::::
 
 5. Draw the new thermodynamic cycle on the pressure-volume diagram above, qualitatively.
 

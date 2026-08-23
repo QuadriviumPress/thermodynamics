@@ -64,37 +64,17 @@ Several parameters are taken into account in the evaluation of the performance a
 (sec-9-2-1)=
 ### 9.2.1 Thermal efficiency and overall efficiency
 
-The parameter that we have learned to quantify so far is of course the
-
-:::{math}
-\mathrm{thermal} \mathrm{efficiency} \mathrm{of} \mathrm{the} \mathrm{engine} \eta _{\mathrm{engine}}\equiv ||| \frac{W_{\mathrm{net}}}{Q_{\mathrm{in}}} ||| (6/4) \mathrm{that} \mathrm{we} \mathrm{always} \mathrm{strive}
-:::
-
-:::{math}
-\mathrm{to} \mathrm{maximize} \mathrm{towards} \mathrm{its} \mathrm{theoretical} \mathrm{maximum}, \eta _{\mathrm{Carnot} \mathrm{engine}}= 1- \frac{T_{\min.}}{T_{\max.}} (7/6).
-:::
+The parameter that we have learned to quantify so far is of course the *thermal efficiency of the engine* $\eta _{\mathrm{engine}}\equiv \left|\frac{\dot{W}_{\mathrm{net}}}{\dot{Q}_{\mathrm{in}}}\right|$ (6/4) that we always strive to maximize towards its theoretical maximum, $\eta _{\mathrm{Carnot\ engine}}= 1- \frac{T_{\min.}}{T_{\max.}}$ (7/6).
 
 However, it is important not to forget that the conversion of heat into work is just one of the many operations involved in electricity production:
 
-• Fuel preparation (refinement and heating of oil, coal pulverization, separation of oil sands) itself may require energy, which we can evaluate with
-
-:::{math}
-an efficiency \eta _{\mathrm{preparation}} ;
-:::
+• Fuel preparation (refinement and heating of oil, coal pulverization, separation of oil sands) itself may require energy, which we can evaluate with an efficiency $\eta _{\mathrm{preparation}}$;
 
 • In the boiler, the energy transfer from the heat source to the water can be incomplete (with some heat potentially being rejected with the exhaust gases), which we can evaluate with an efficiency $\eta _{\mathrm{boiler}}$;
 
-• The transmission of mechanical energy from the turbine to the generator, possibly using a gearbox, incurs friction losses that we evaluate with an
+• The transmission of mechanical energy from the turbine to the generator, possibly using a gearbox, incurs friction losses that we evaluate with an efficiency $\eta _{\mathrm{transmission}}$;
 
-:::{math}
-efficiency \eta _{\mathrm{transmission}} ;
-:::
-
-• The transformation of shaft power into electrical power also involves losses resulting in the production of heat, which we evaluate with an
-
-:::{math}
-efficiency \eta _{\mathrm{generator}} .
-:::
+• The transformation of shaft power into electrical power also involves losses resulting in the production of heat, which we evaluate with an efficiency $\eta _{\mathrm{generator}}$.
 
 Thus, the *overall efficiency* $\eta _{\mathrm{overall}}$ of electricity production at the output of the power plant, which compares the electrical energy produced to the actual heat spent to generate it (in other words, its energy cost), is the product of all these efficiencies:
 
@@ -112,13 +92,6 @@ Engineers are expected to work on increasing the overall efficiency rather than 
 The efficiency of an engine is not the only parameter we consider in the economic evaluation of its use: the costs associated with its maintenance or supervision of its operation, and of course the acquisition costs, are also crucial. These expenses can only be calculated if we delve into technological details that go beyond the scope of this book.
 
 Despite this, we can already crudely assess the size and acquisition cost of an engine by calculating its *specific net power* $w_{\mathrm{net}}$. In order to be compact, it is indeed desirable for an engine to generate a large net power for a given mass flow rate: it may even be desirable to compromise thermal efficiency for this purpose.
-
-::::{admonition} A Bit of History
-:class: note
-
-*Engineering Thermodynamics* by Olivier Cleynen
-
-::::
 
 In industry, it is more common to measure the inverse parameter, which we call *specific steam consumption*. This consumption indicates the steam flow rate required to supply one watt of useful power. We denote it as ssc:
 
@@ -210,13 +183,6 @@ Schematic diagram of a water pump
 
 *Diagram* CC-0 *Olivier Cleynen*
 
-::::{admonition} A Bit of History
-:class: note
-
-*Engineering Thermodynamics* by Olivier Cleynen
-
-::::
-
 :::{figure} ../images/fig-9-2.jpg
 :label: fig-9-2
 :enumerator: 9.2
@@ -275,13 +241,6 @@ Q_{\mathrm{boiler}}=\dot{m} (h_{2}- h_{1})
 :::
 
 The difference in density between the two phases in the boiler makes it difficult to superheat the steam in the presence of liquid (the liquid, being
-
-::::{admonition} A Bit of History
-:class: note
-
-*Engineering Thermodynamics* by Olivier Cleynen
-
-::::
 
 :::{figure} ../images/fig-9-3.jpg
 :label: fig-9-3
@@ -344,13 +303,6 @@ We use equation 9/7 to predict the state of the steam at the outlet of any turbi
 
 An important parameter that must be monitored is the dryness fraction of the water, especially in the final stages. Indeed, as we have already seen in section §5.4.5 p. 138, the isentropic curves always end up crossing the saturation curve: in an isentropic expansion, the steam always ends up condensing. The liquid droplets, much denser than the steam surrounding them, then violently impact the blades, causing erosion. The thermodynamic engineer will therefore ensure to maintain a high dryness fraction, typically not dropping below $95 \%$.
 
-::::{admonition} A Bit of History
-:class: note
-
-*Engineering Thermodynamics* by Olivier Cleynen
-
-::::
-
 ````{prf:example}
 :label: ex-9-2
 :enumerator: 9.2
@@ -408,13 +360,6 @@ Technologically, the condenser is a simple element: the steam pipeline is simply
 
 Since the pressure of the steam inside the condenser is often very low (down to 0.1 bar or $0.15 psi)$ so as to reduce the minimum temperature of the power plant cycle, care must be taken to ensure the tightness of the condenser to prevent external air or water from entering the main circuit.
 
-::::{admonition} A Bit of History
-:class: note
-
-*Engineering Thermodynamics* by Olivier Cleynen
-
-::::
-
 :::{figure} ../images/art-p250-1.jpg
 :alt: Illustration from the original text
 :::
@@ -464,13 +409,6 @@ In practice, using the Carnot cycle as described above poses several difficultie
 
 • Compressing a two-phase mixture is challenging (§9.3.2 p. 244);
 
-::::{admonition} A Bit of History
-:class: note
-
-*Engineering Thermodynamics* by Olivier Cleynen
-
-::::
-
 • In the condenser, it is difficult to stop condensation at a specific point (point A in figures 9.10 and 9.11 above), where the dryness fraction is close but not equal to zero).
 
 In 1859, English engineer William Rankine proposed a modification of the cycle by continuing the condensation until saturation and by compressing the water only in the liquid state. A machine based on this cycle is described in figures 9.12 and 9.13.
@@ -516,13 +454,6 @@ In order to reduce the specific steam consumption (ssc, see §9.2.2 p. 242) of a
 
 • Increase the enthalpy (and thus the temperature of the steam) *after* its exit from the boiler.
 
-::::{admonition} A Bit of History
-:class: note
-
-*Engineering Thermodynamics* by Olivier Cleynen
-
-::::
-
 This allows for fully utilizing the turbine’s capacities, whose metallurgical limits (generally around $1000 K)$ often already exceed those of the boilers.
 
 It is this last option that is very often chosen. This modification is called *superheating*: the steam is superheated at the outlet of the boiler, at constant pressure, through a series of tubes heated to a higher temperature (figures 9.14 and 9.15). Superheating could theoretically be done in the boiler itself; however, since the density of dry steam is relatively low, it is easier to bring it in contact with the hottest gases outside (and below) the boiler.
@@ -563,13 +494,6 @@ Diagram of a steam power plant operating on a reheated Rankine cycle.
 :::
 
 *Diagram* CC-by-sa *Olivier Cleynen*
-
-::::{admonition} A Bit of History
-:class: note
-
-*Engineering Thermodynamics* by Olivier Cleynen
-
-::::
 
 :::{figure} ../images/fig-9-17.jpg
 :label: fig-9-17
@@ -617,13 +541,6 @@ Temperature-entropy diagram of a steam power plant with regeneration.
 *Diagram* CC-0 *Olivier Cleynen*
 
 In practice, such a device is difficult to implement, because it requires adding a non-uniform-temperature cooling system to the turbine, an element whose design and manufacturing are already very costly. Moreover, cooling the steam reduces its dryness fraction, increasing the amount of liquid water eroding the turbine components.
-
-::::{admonition} A Bit of History
-:class: note
-
-*Engineering Thermodynamics* by Olivier Cleynen
-
-::::
 
 In order to implement regeneration, the *turbine bleed* technique is used. Steam is drawn off from the turbine and mixed with the liquid feedwater at the pump outlet (figures 9.20 and 9.21). This results in a heat transfer that is easier to implement.
 
@@ -752,13 +669,9 @@ The 1957 Boeing *707*, with a configuration and performances anticipating those 
 
 *Comet Photo and 707 (edited)* CC-by-sa *by Piergiuliano Chesi*
 
-::::
+## Problems
 
-Problems
-
-The properties of water are tabulated in Steam
-
-Tables1,2,and3(seeAppendixA1p.305)
+The properties of water are tabulated in Steam Tables 1, 2, and 3 (see Appendix A1 p. 305)
 
 Air is considered an ideal gas.
 
@@ -791,13 +704,6 @@ $c_{p (\mathrm{air})}= 1005Jkg^{-1}K^{-1} \gamma _{\mathrm{air}}= 1.4$
    
    The Porcheville power plant, running on coal until 1987, then on oil until 2017, when it closed down. It mainly served peak demands.
    :::
-
-::::{admonition} A Bit of History
-:class: note
-
-*Engineering Thermodynamics* by Olivier Cleynen
-
-::::
 
 6. What hourly steam flow rate is required in the circuit in order to achieve a net power of $60 MW$?
 

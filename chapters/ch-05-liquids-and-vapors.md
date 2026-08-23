@@ -97,13 +97,6 @@ around 10^{16} molecules.
 
 Any gas can thus be liquefied by cooling it and reducing its volume. The temperature and pressure required for liquefaction depend on the size and
 
-::::{admonition} A Bit of History
-:class: note
-
-*Engineering Thermodynamics* by Olivier Cleynen
-
-::::
-
 :::{figure} ../images/fig-5-2.jpg
 :label: fig-5-2
 :enumerator: 5.2
@@ -156,13 +149,6 @@ Rudolf Clausius, 1850 [[10](#ref-10), [11](#ref-11), [21](#ref-21)]
 :::
 
 As we slow down and bring the molecules of a gas closer together, the ideal gas model describes its properties less and less accurately. We observe a threshold below which liquefaction and evaporation occur, in other words, where the two liquid and gaseous phases coexist; this threshold is described in terms of a temperature and a pressure which are named *critical*. The critical temperatures and pressures of some common fluids are indicated in table 5.1. It should be noted that air, a mixture of several gases, will see different substances in its composition condense at different temperatures. When a fluid is maintained at a temperature and pressure significantly higher than its critical values, it behaves like an ideal gas. All fluids that we traditionally consider as liquids (for example, mercury) or gases (for example, CO$_{2})$ can transition from one state to the other.
-
-::::{admonition} A Bit of History
-:class: note
-
-*Engineering Thermodynamics* by Olivier Cleynen
-
-::::
 
 :::{table} Critical temperatures and pressures of some substances. In practice, in the industry, engineers will mainly use the properties of two substances: water (in steam engines) and the refrigerant R-134a (in heat pumps and refrigerators). In this chapter, we will only use water, but the principles remain the same for all substances.
 :label: tab-5-1
@@ -247,13 +233,6 @@ Properties of water plotted on a temperature-volume diagram, when conducting the
 
 Above a certain pressure called *critical pressure* $p_{\mathrm{cr}.}$, the phase change occurs indistinctly and there is no longer a range of constant temperature. The liquid turns into vapor without boiling!
 
-::::{admonition} A Bit of History
-:class: note
-
-*Engineering Thermodynamics* by Olivier Cleynen
-
-::::
-
 At the end, we can connect all the phase change points, at all different pressures: we obtain a curve called *saturation curve*. All this information can be gathered on a temperature-volume $(T-v)$ diagram represented in figure 5.7, which well describes the properties of liquid-vapor mixtures. The student is encouraged to practice reproducing it.
 
 :::{figure} ../images/fig-5-7.jpg
@@ -325,13 +304,6 @@ h \not\propto T
 :::
 
 Almost everything that was covered in chapter 4 (*the ideal gas*) must be forgotten when dealing with a liquid/vapor. Fortunately, the first three chapters have not lost any of their utility.
-
-::::{admonition} A Bit of History
-:class: note
-
-*Engineering Thermodynamics* by Olivier Cleynen
-
-::::
 
 (sec-5-2-5)=
 ### 5.2.5 Water in everyday life
@@ -665,21 +637,23 @@ It is possible to heat or cool a liquid/vapor while maintaining its pressure con
 
 • with fluid in steady flow (open system), simply transfer heat by letting it flow through a conduit without moving parts. This is what happens in a boiler or condenser, for example.
 
+:::{aside}
+« It is well known that when water is made to vaporize under atmospheric pressure, in vain is additional heat continuously supplied to it by means of the furnace, neither the temperature of the water nor that of the steam ever rises beyond 100° of the centigrade thermometer, or 212° of the Fahrenheit thermometer. »
+
+François-Marie Guyonneau de Pambour, 1839
+
+*Théorie de la machine à vapeur* [[7](#ref-7)]
+:::
+
 In a closed system, we have $q_{1\rightarrow 2}+ w_{1\rightarrow 2}= \Delta u$ (2/2). If the process is reversible, both heat and work can be quantified as follows:
 
 :::{math}
-2
+w_{1\rightarrow 2}= -\int_{1}^{2} pdv = -p_{\mathrm{cst}.}\int_{1}^{2} dv
 :::
 
 :::{math}
-w_{1\rightarrow 2}= -\int pdv = -p_{\mathrm{cst}.}\int
-:::
-
-:::{math}
-1 1
-:::
-
-:::{math}
+:label: eq-5-7
+:enumerator: 5/7
 w_{1\rightarrow 2}= -p_{\mathrm{cst}.}\Delta v
 :::
 
@@ -690,6 +664,8 @@ q_{1\rightarrow 2}= \Delta u - w_{1\rightarrow 2}= \Delta u + p_{\mathrm{cst}.}\
 :::
 
 :::{math}
+:label: eq-5-8
+:enumerator: 5/8
 q_{1\rightarrow 2}= \Delta h
 :::
 
@@ -698,35 +674,14 @@ in a reversible process at constant pressure, in a closed system.
 In an open system, we have $q_{1\rightarrow 2}+ w_{1\rightarrow 2}= \Delta h$ (3/15). If the process is reversible, both heat and work can be quantified as follows:
 
 :::{math}
-2
+w_{1\rightarrow 2}= \int_{1}^{2} vdp
 :::
 
 :::{math}
-w_{1\rightarrow 2}= \int vdp
-:::
-
-:::{math}
-1
-:::
-
-:::{math}
+:label: eq-5-9
+:enumerator: 5/9
 w_{1\rightarrow 2}= 0
 :::
-
-:::{aside}
-« It is well known that when water is made to vaporize under atmospheric pressure, in vain is additional heat continuously supplied to it by means of the furnace, neither the temperature of the water nor that of the steam ever rises beyond 100° of the centigrade thermometer, or 212° of the Fahrenheit thermometer. »
-
-François-Marie Guyonneau de Pambour, 1839
-
-*Théorie de la machine à vapeur* [[7](#ref-7)]
-:::
-$2 dv$
-
-(5/7)
-
-(5/8)
-
-(5/9)
 
 :::{figure} ../images/fig-5-14.jpg
 :label: fig-5-14
@@ -761,13 +716,6 @@ q_{1\rightarrow 2}= \Delta h
 :::
 
 in a reversible process at constant pressure, in an open system.
-
-::::{admonition} A Bit of History
-:class: note
-
-*Engineering Thermodynamics* by Olivier Cleynen
-
-::::
 
 ````{prf:example}
 :label: ex-5-10
@@ -824,29 +772,16 @@ Heating at constant volume of a liquid-vapor, represented on a pressure-volume d
 
 *Diagram* CC-0 *Olivier Cleynen*
 
-::::{admonition} A Bit of History
-:class: note
-
-*Engineering Thermodynamics* by Olivier Cleynen
-
-::::
-
 In a closed system, we have $q_{1\rightarrow 2}+ w_{1\rightarrow 2}= \Delta u$. The heat and work can each be quantified as follows:
 
 :::{math}
-2
+w_{1\rightarrow 2}= -\int_{1}^{2} pdv
 :::
 
 :::{math}
-w_{1\rightarrow 2}= -\int pdv
-:::
-
-:::{math}
-1
-:::
-
-:::{math}
-w_{1\rightarrow 2}= 0 (5/11)
+:label: eq-5-11
+:enumerator: 5/11
+w_{1\rightarrow 2}= 0
 :::
 
 in a constant volume process, in a closed system.
@@ -856,7 +791,9 @@ q_{1\rightarrow 2}= \Delta u - w_{1\rightarrow 2}
 :::
 
 :::{math}
-q_{1\rightarrow 2}= \Delta u (5/12)
+:label: eq-5-12
+:enumerator: 5/12
+q_{1\rightarrow 2}= \Delta u
 :::
 
 in a constant volume process, in a closed system.
@@ -866,19 +803,13 @@ When the process occurs in an open system, we have $q_{1\rightarrow 2}+ w_{1\rig
 if the process is reversible, the heat and work can each be quantified as follows:
 
 :::{math}
-2 2
+w_{1\rightarrow 2}= \int_{1}^{2} vdp = v_{\mathrm{cst}.}\int_{1}^{2} dp
 :::
 
 :::{math}
-w_{1\rightarrow 2}= \int vdp = v_{\mathrm{cst}.}\int dp
-:::
-
-:::{math}
-1 1
-:::
-
-:::{math}
-w_{1\rightarrow 2}= v_{\mathrm{cst}.}\Delta p (5/13)
+:label: eq-5-13
+:enumerator: 5/13
+w_{1\rightarrow 2}= v_{\mathrm{cst}.}\Delta p
 :::
 
 in a reversible constant volume process, in an open system.
@@ -888,7 +819,9 @@ q_{1\rightarrow 2}= \Delta h - w_{1\rightarrow 2}= \Delta h - v_{\mathrm{cst}.}\
 :::
 
 :::{math}
-q_{1\rightarrow 2}= \Delta u (5/14)
+:label: eq-5-14
+:enumerator: 5/14
+q_{1\rightarrow 2}= \Delta u
 :::
 
 in a reversible constant volume process, in an open system.
@@ -1002,13 +935,6 @@ w_{1\rightarrow 2}= \Delta u
 :::
 
 for any adiabatic process in a closed system;
-
-::::{admonition} A Bit of History
-:class: note
-
-*Engineering Thermodynamics* by Olivier Cleynen
-
-::::
 
 :::{figure} ../images/fig-5-21.jpg
 :label: fig-5-21
@@ -1155,8 +1081,8 @@ $T_{\mathrm{sat}.}= 56.8^{\circ}C = 134.2 ^{\circ} F$ (yuck!)
 :::{admonition} Answer
 :class: dropdown
 
-1) To heat up the water until the boiling point (B)
-then complete evaporation (C): $Q_{\mathrm{A}\rightarrow \mathrm{C}}= m(q_{\mathrm{A}\rightarrow \mathrm{B}}+ q_{\mathrm{B}\rightarrow \mathrm{C}}) = \frac{V_{\mathrm{A}}}{v_{\mathrm{A}}} (h_{L0.1MPa}-h_{\mathrm{A}}+h_{LV0.1MPa}) = +6582kJ. 3) \Delta t = \frac{Q_{\mathrm{A}\rightarrow \mathrm{C}}}{Q_{\mathrm{average}}} = 1h 21\min \mathrm{with} \mathrm{a} \mathrm{cost} \mathrm{of} 0.29\mathrm{AC}.$
+1) To heat up the water until the boiling point (B) then complete evaporation (C): $Q_{\mathrm{A}\rightarrow \mathrm{C}}= m(q_{\mathrm{A}\rightarrow \mathrm{B}}+ q_{\mathrm{B}\rightarrow \mathrm{C}}) = \frac{V_{\mathrm{A}}}{v_{\mathrm{A}}} (h_{L 0.1 MPa}-h_{\mathrm{A}}+h_{LV 0.1 MPa}) = +6582 kJ$.
+3) $\Delta t = \frac{Q_{\mathrm{A}\rightarrow \mathrm{C}}}{\dot{Q}_{\mathrm{average}}} = 1 h 21 \min$ with a cost of $0.29$AC.
 
 :::
 ```
@@ -1168,6 +1094,34 @@ then complete evaporation (C): $Q_{\mathrm{A}\rightarrow \mathrm{C}}= m(q_{\math
    
    An ordinary physics experiment
    :::
+
+```{exercise}
+:label: prob-5-3
+:enumerator: 5.3
+
+**Simple Recap Exercise** Describe very briefly an experiment where a fixed mass of subcooled liquid water is heated at constant temperature. Draw the process qualitatively on a pressure-volume diagram, showing the saturation curve.
+
+:::{admonition} Answer
+:class: dropdown
+
+see §5.2.3 p. 121 & figure 5.9.
+
+:::
+```
+
+```{exercise}
+:label: prob-5-4
+:enumerator: 5.4
+
+**High-Pressure Steam Generation** An industrial chemical process requires a steam flow rate of $2 kg s^{-1}(4.41 lb/s)$ at $6 bar$ and $875^{\circ}C (87 psi$ and $1607 ^{\circ} F)$. The machine responsible for providing this steam is fed by a pressurized liquid water pipeline at $10^{\circ}C$ and $6 bar (50 ^{\circ} F$ and $87 psi)$. 1. What power in the form of work and heat is required to generate this steam flow? 2. Draw the process undergone by the water on a pressure-volume diagram, qualitatively (that is, without showing numerical values), showing the saturation curve.
+
+:::{admonition} Answer
+:class: dropdown
+
+1) Reading in Steam Table 1 @ $p_{\mathrm{A}}= 0.6 MPa$, $h_{\mathrm{A}}= 42.6 kJ kg^{-1}$. Interpolating between 800 and $900^{\circ}C$ in this table, we obtain $h_{\mathrm{B}}= 4336.6 kJ kg^{-1}$. Thus with equation 5/10, $\dot{Q}_{\mathrm{A}\rightarrow \mathrm{B}}= \dot{m}\Delta h = +8.59 MW$. $\dot{W}_{\mathrm{A}\rightarrow \mathrm{B}}= 0 W$ (5/9).
+
+:::
+```
 
 ```{exercise}
 :label: prob-5-5
@@ -1219,13 +1173,6 @@ lead to follow here...)
    
    A very basic concept of a steam engine
    :::
-
-::::{admonition} A Bit of History
-:class: note
-
-*Engineering Thermodynamics* by Olivier Cleynen
-
-::::
 
 ```{exercise}
 :label: prob-5-7
@@ -1362,13 +1309,6 @@ $m_{\mathrm{secondary}}\ge 1062.4 kg s^{-1}$ or $2342.2 lb/s$. 2) Into the atmos
    
    Piston of a steam catapult from the aircraft carrier *Charles de Gaulle*.
    :::
-
-::::{admonition} A Bit of History
-:class: note
-
-*Engineering Thermodynamics* by Olivier Cleynen
-
-::::
 
 ```{exercise}
 :label: prob-5-13

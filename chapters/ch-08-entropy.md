@@ -90,13 +90,6 @@ By contrast, we could say that heat, work, or electric current are not propertie
 
 Therefore, we will always think of entropy as the entropy “of something” (perhaps as we would say the color, the temperature “of something”). For example, we will say “this body has entropy” or “the entropy of this body is increasing/decreasing”, and not “we are taking/giving entropy to this body”. Rigorously, we say that entropy is an additive state quantity (see the appendices A3 and A4).
 
-::::{admonition} A Bit of History
-:class: note
-
-*Engineering Thermodynamics* by Olivier Cleynen
-
-::::
-
 (sec-8-2-2)=
 ### 8.2.2 Definition
 
@@ -105,11 +98,9 @@ Entropy, noted $S$, is a physical property.
 • When a system undergoes a reversible process, its entropy varies such that:
 
 :::{math}
-dS \equiv (\frac{\mathrm{δ}Q}{} (8/1)
-:::
-
-:::{math}
-T)_{\mathrm{rev}.}
+:label: eq-8-1
+:enumerator: 8/1
+dS \equiv \left(\frac{\mathrm{δ}Q}{T}\right)_{\mathrm{rev}.}
 :::
 
 where the subscript *rev.* indicates the calculation is done along a reversible path; $dS$ is the infinitesimal change in entropy $(J K^{-1})$; δ$Q$ is the infinitesimal amount of (reversibly) supplied heat $(J)$;
@@ -119,7 +110,9 @@ and $T$ is the temperature at which the heat transfer occurs $(K)$.
 When it transitions from a state A to a state B reversibly, the entropy of a system therefore varies by an amount $\Delta S$:
 
 :::{math}
-\Delta S = \int _{\mathrm{A}}(^{\mathrm{B}} \frac{\mathrm{δ}Q}{T})_{\mathrm{rev}.}(8/2)
+:label: eq-8-2
+:enumerator: 8/2
+\Delta S = \int _{\mathrm{A}}^{\mathrm{B}} \left(\frac{\mathrm{δ}Q}{T}\right)_{\mathrm{rev}.}
 :::
 
 where the subscript *rev.* indicates the calculation is done along a reversible path.
@@ -133,11 +126,9 @@ We must be careful here: if one integrates the quantity $\frac{\delta Q}{T}$ alo
 The SI unit of entropy $S$ is the $J\,K^{-1}$ (joule per kelvin); and correspondingly, the *specific entropy* $s$ is defined as:
 
 :::{math}
-s \equiv \frac{S}{} (8/3)
-:::
-
-:::{math}
-m
+:label: eq-8-3
+:enumerator: 8/3
+s \equiv \frac{S}{m}
 :::
 
 where $m$ is the considered mass $(kg)$, and $s$ is its specific entropy $(J K^{-1}kg^{-1})$.
@@ -178,13 +169,6 @@ In this irreversible process from B to A, it is the difference between $\int _{\
 
 ````
 
-::::{admonition} A Bit of History
-:class: note
-
-*Engineering Thermodynamics* by Olivier Cleynen
-
-::::
-
 (sec-8-2-3)=
 ### 8.2.3 Remarks
 
@@ -204,18 +188,20 @@ Let’s add three remarks before moving on.
 
 We have seen in chapter 2 (*closed systems*) that when the process is reversible, the work done by a fluid as its volume changes is expressed by equation 2/14:
 
-B
-
 :::{math}
-W_{\mathrm{A}\rightarrow \mathrm{B}}= -\int pdV (8/4)
+:label: eq-8-4
+:enumerator: 8/4
+W_{\mathrm{A}\rightarrow \mathrm{B}}= -\int _{\mathrm{A}}^{\mathrm{B}} pdV
 :::
 
-A for a closed system when the volume changes are infinitely slow.
+for a closed system when the volume changes are infinitely slow.
 
 We could thus propose to *define* volume as being “what varies with pressure when work is done, when the process is reversible”, which would amount to the following definition:
 
 :::{math}
-dV = -(\frac{\mathrm{δ}W}{p})_{\mathrm{rev}.}(8/5)
+:label: eq-8-5
+:enumerator: 8/5
+dV = -\left(\frac{\mathrm{δ}W}{p}\right)_{\mathrm{rev}.}
 :::
 
 where the subscript *rev.* indicates the calculation is done along a reversible path.
@@ -223,7 +209,9 @@ where the subscript *rev.* indicates the calculation is done along a reversible 
 or even the following, more approachable expression, which can be visualized on a pressure-volume diagram (figure 8.2):
 
 :::{math}
-\Delta V = -\int _{\mathrm{A}}(^{\mathrm{B}} \frac{\mathrm{δ}W}{p})_{\mathrm{rev}.}(8/6)
+:label: eq-8-6
+:enumerator: 8/6
+\Delta V = -\int _{\mathrm{A}}^{\mathrm{B}} \left(\frac{\mathrm{δ}W}{p}\right)_{\mathrm{rev}.}
 :::
 
 where the subscript *rev.* indicates the calculation is done along a reversible path.
@@ -274,13 +262,6 @@ In this way, we are able to represent the processes on a *temperature-entropy di
 
 Figure 8.3: Temperature-entropy diagram. During a reversible process, theareaunder the curve of a $T-s$diagram represents the transmitted heat $Q_{1\rightarrow 2^{'}}$; but not when it is *Diagram* CC-0 *Olivier Cleynen* irreversible.
 
-::::{admonition} A Bit of History
-:class: note
-
-*Engineering Thermodynamics* by Olivier Cleynen
-
-::::
-
 (sec-8-3-2)=
 ### 8.3.2 Temperature-entropy diagrams
 
@@ -329,13 +310,6 @@ For any process undergone by a fixed quantity of fluid, we have (2/2):
 q_{1\rightarrow 2}+ w_{1\rightarrow 2}= \Delta u
 :::
 
-::::{admonition} A Bit of History
-:class: note
-
-*Engineering Thermodynamics* by Olivier Cleynen
-
-::::
-
 If we imagine a reversible path between 1 and 2, we can quantify $q_{1\rightarrow 2}= \int_{1}^{2} T\, ds$ (equation 8/8) and $w_{1\rightarrow 2}= -\int_{1}^{2} p\, dv$ (equation 2/15) along it, and we can write:
 
 :::{math}
@@ -374,6 +348,12 @@ ds = c_{v}\frac{dT}{T} + R\frac{dv}{v}
 
 for an ideal gas, for any process from 1 to 2, reversible or not.
 
+:::{aside}
+« In the deduced expression, the difference $S - S_{0}$ is again perfectly determined when the initial and final conditions are given, and it is only when forming the integral $\int \frac{dQ}{T}$ that the manner in which the passage from one to the other took place must be taken into consideration. »
+
+Rudolf Clausius, 1865 [[17](#ref-17), [18](#ref-18), [19](#ref-19)]
+:::
+
 This equation is interesting because it indicates that the entropy change $\Delta s$ during a process from $1$ to $2$ depends only on the initial and final states. Even though we started this demonstration along a reversible process, we obtain an expression 8/10 in which the path used does not appear.
 
 It is therefore possible to easily calculate the change entropy of an ideal gas if its other properties are known. Unlike the internal energy $u$ which depends only on temperature, changes in entropy $(\Delta s)$ also depend on the gas pressure.
@@ -381,19 +361,15 @@ It is therefore possible to easily calculate the change entropy of an ideal gas 
 In the case where pressure or specific volume is kept constant, these equations 8/10 and 8/11 become respectively:
 
 :::{math}
-\Delta s_{v_{\mathrm{const}.}}= c_{v}\ln \frac{T_{2}}{}
+:label: eq-8-12
+:enumerator: 8/12
+\Delta s_{v_{\mathrm{const}.}}= c_{v}\ln \frac{T_{2}}{T_{1}}
 :::
 
 :::{math}
-T_{1}
-:::
-
-:::{math}
-\Delta s_{p_{\mathrm{const}.}}= c_{p}\ln \frac{T_{2}}{}
-:::
-
-:::{math}
-T_{1}
+:label: eq-8-13
+:enumerator: 8/13
+\Delta s_{p_{\mathrm{const}.}}= c_{p}\ln \frac{T_{2}}{T_{1}}
 :::
 
 for an ideal gas, for any process at constant volume or respectively at constant pressure.
@@ -402,35 +378,9 @@ These two equations 8/12 and 8/13 allow us to plot isochoric (at constant volume
 
 [^ch8-fn1]: This equation 8/9 is even true for any process, but this generalization is simpler to address after equations 8/10 and 8/11.
 
-$_{1}pdv$ (2/15) along it, and we can write:
-
-$T dv$ (8/9)
-
-$_{T}= \frac{R}{v}$ (4/1), thus:
-
-(8/10)
-
-$v_{1}$
-
-(8/11)
-
-$p_{1}$
-
-:::{aside}
-« In the deduced expression the difference $S - S_{0}$ is again perfectly determined when the initial and final conditions are given, and it is only when forming the integral $\int \frac{dQ}{T}$ that the manner in which the passage from one to the other took place must be taken into consideration. »
-
-Rudolf Clausius, 1865 [[17](#ref-17), [18](#ref-18), [19](#ref-19)]
-
-(8/12)
-
-(8/13)
-:::
-
-:::{math}
-p_{1}> p_{2} and v_{3}> v_{4} .
-:::
-
 ````{prf:example}
+:label: ex-8-2
+:enumerator: 8.2
 
 What is the change in specific entropy of a mass of $2\,\mathrm{kg}$ of air, when it is heated at constant pressure of $2\,\mathrm{bar}$, from $10^{\circ}\mathrm{C}$ to $100^{\circ}\mathrm{C}$?
 
@@ -449,7 +399,7 @@ The change in entropy is $\Delta S= m\Delta s= 2\times 277.4= +554.8\,\mathrm{J\
 :enumerator: 8.7
 :alt: Isobaric and isochoric curves on a 𝑇-𝑠diagram, for an ideal gas. Here 𝑝1 > 𝑝2 and 𝑣3 > 𝑣4.
 
-Isobaric and isochoric curves on a $T-s$ diagram, for an ideal gas. Here
+Isobaric and isochoric curves on a $T-s$ diagram, for an ideal gas. Here $p_{1}> p_{2}$ and $v_{3}> v_{4}$.
 :::
 
 *Diagram* CC-0 *Olivier Cleynen*
@@ -555,13 +505,6 @@ Temperature-entropy diagram of a liquid/vapor mixture. This figure closely resem
 
 *Diagram* CC-0 *Olivier Cleynen*
 
-::::{admonition} A Bit of History
-:class: note
-
-*Engineering Thermodynamics* by Olivier Cleynen
-
-::::
-
 When water is either in a saturated liquid or dry steam state, values of entropy can simply be read in the last column in Steam Table 1 (see Appendix A1 pp. 306-309, and section §5.3 p. 123), an extract of which is repeated in table 8.1.
 
 :::{table} An extract from Steam Table 1 (see pp. 306-309). Values for entropy can be read in the last column, and its values are interpolated like the other properties.
@@ -650,13 +593,6 @@ Since the process is reversible, we can calculate $Q_{\mathrm{A}\rightarrow \mat
 
 ````
 
-::::{admonition} A Bit of History
-:class: note
-
-*Engineering Thermodynamics* by Olivier Cleynen
-
-::::
-
 ````{prf:example}
 
 We can fin ally calculate $q_{\mathrm{A}\rightarrow \mathrm{B}}$ with equation 8/8: $Q_{\mathrm{A}\rightarrow \mathrm{B}}= \int ^{2}_{1}T dS = m T \Delta s = 2 \times (300 + 273.15) \times (7.738 - 3.2552) = +5.139 kJ$.
@@ -738,13 +674,6 @@ Creation of entropy by heat transfer. The process is internally reversible for e
 :::
 
 *Diagram* CC-0 *Olivier Cleynen*
-
-::::{admonition} A Bit of History
-:class: note
-
-*Engineering Thermodynamics* by Olivier Cleynen
-
-::::
 
 Since $T_{\mathrm{A}}> T_{\mathrm{B}}$, this change is *positive and non-zero*; entropy *has been created* during the irreversible heat transfer. The irreversibility occurs neither in cup A nor in bottle B, but at the thin material boundary separating them. The process can be represented rather convincingly on a $T-s$ diagram (figure 8.10).
 
@@ -864,34 +793,8 @@ diagram as follows:
 :::
 
 ````{prf:example}
-
-Thus, $\Delta s = \int ^{\mathrm{Y} \mathrm{δ}q}$
-
-:::{math}
-X (
-:::
-
-$130^{\circ}C$. Thus $\int ^{\mathrm{Y} \mathrm{δ}q}$
-
-:::{math}
-X (
-:::
-
-$+2.26 kJ K^{-1}kg^{-1}$.
-
-diagram as follows:
-
-````
-
-$_{\mathrm{X}}(\frac{\mathrm{δ}q}{T})_{\mathrm{real} \mathrm{path}}$ is equal to zero because in reality there was no heat transfer (δ$q = 0)$.
-
-$_{\mathrm{X}}(\frac{\mathrm{δ}q}{T})_{\mathrm{real} \mathrm{path}}$ and the process is irreversible.
-
-If we wanted to reverse the process, from Y to X, we would have to
-
-The process can be drawn qualitatively on a temperature-entropy
-
-Example 8.9
+:label: ex-8-9
+:enumerator: 8.9
 
 Water undergoes a process during which $1 MJ kg^{-1}$ of heat is added to it at while its temperature is fixed at $130^{\circ}C (266 ^{\circ} F)$. There are two states, one at the beginning and the other at the end:
 
@@ -907,15 +810,11 @@ We read the values of entropy in Steam Table 2: $s_{\mathrm{X}}= s_{L\,130^{\cir
 
 Separately, we can calculate the integral $\int _{\mathrm{X}}^{\mathrm{Y}}\left(\frac{\delta q}{T}\right)_{\mathrm{real}\,\mathrm{path}}$ because we know that heat was supplied when the temperature was fixed at $130^{\circ}\mathrm{C}$. Thus $\int _{\mathrm{X}}^{\mathrm{Y}}\left(\frac{\delta q}{T}\right)_{\mathrm{real}\,\mathrm{path}}= \frac{1}{T}\int _{\mathrm{X}}^{\mathrm{Y}}(\delta q)_{\mathrm{real}\,\mathrm{path}}= \frac{q_{\mathrm{X}\rightarrow \mathrm{Y}}}{T}= \frac{1\times 10^{6}}{170+273.15}= +2.26\,\mathrm{kJ\,K^{-1}\,kg^{-1}}$.
 
-The process can be drawn qualitatively on a temperature-entropy
-
-*Engineering Thermodynamics* by Olivier Cleynen
+The process can be drawn qualitatively on a temperature-entropy diagram as follows:
 
 :::{figure} ../images/art-p228-1.jpg
 :alt: Illustration from the original text
 :::
-
-````{prf:example}
 
 Here, we have $\Delta s > \int _{\mathrm{X}}^{\mathrm{Y}}(\frac{\mathrm{δ}q}{T})_{\mathrm{real} \mathrm{path}}$ and the process is irreversible. If we wanted to go back from Y to X, we would need to cool the water by removing a quantity *necessarily* greater than $1 MJ kg^{-1}$.
 
@@ -979,13 +878,6 @@ At the macroscopic scale, we had described the second law as an impossibility (�
 
 This approach not only has the merit of reconnecting our discipline with atomic theory – and hence we will talk about *microscopic thermodynamics* and *statistical thermodynamics* – but it also opened the door to information theory. Indeed, the resolution and precision with which we evaluate the state of a system affect the number of possible configurations that can be attributed to it. Here, the concept of *information* became linked to other physical properties: an impressive result for a discipline that was only intended to explore what “hot” meant!
 
-::::{admonition} A Bit of History
-:class: note
-
-*Engineering Thermodynamics* by Olivier Cleynen
-
-::::
-
 (sec-8-5-4)=
 ### 8.5.4 Entropy and the universe
 
@@ -1043,15 +935,51 @@ During his adventurous life, he managed to make at least two important discoveri
 
 ## Problems
 
-   8.3 Expansion of a Liquid/Vapor
+The properties of water are tabulated in Steam Tables 1, 2, and 3 (see Appendix A1 p. 305)
 
-   We have $10 kg (22 lb)$ of water at $45 bar$ and $600^{\circ}C$ $(653 psi$ and $1112^{\circ} F)$.
+Air is considered an ideal gas.
 
-   1. What is the maximum amount of work that can be extracted from this mass of water without supplying heat, if it can expand to $4 bar (58 psi)$?
+$c_{v (\mathrm{air})}= 718 J kg^{-1}K^{-1} \qquad R_{\mathrm{air}}= 287 J kg^{-1}K^{-1}$
 
-   2. If the expansion were continued to a lower pressure, at what temperature would the water condense?
+$c_{p (\mathrm{air})}= 1005 J kg^{-1}K^{-1} \qquad \gamma _{\mathrm{air}}= 1.4$
 
-   3. Draw the process qualitatively (that is, without showing numerical values) on a temperature-entropy diagram, showing the saturation curve.
+We assume that for a reversible adiabatic process (without heat transfer and infinitely slow), the properties of air are linked according to the following three relationships:
+
+:::{math}
+\left(\frac{T_{1}}{T_{2}}\right) = \left(\frac{v_{2}}{v_{1}}\right)^{\gamma -1} \qquad (4/36)
+:::
+
+:::{math}
+\left(\frac{T_{1}}{T_{2}}\right) = \left(\frac{p_{1}}{p_{2}}\right)^{\frac{\gamma -1}{\gamma}} \qquad (4/37)
+:::
+
+:::{math}
+\left(\frac{p_{1}}{p_{2}}\right) = \left(\frac{v_{2}}{v_{1}}\right)^{\gamma} \qquad (4/38)
+:::
+
+We also assume that the change in entropy of an ideal gas, for any evolution, is quantified by the following relations:
+
+:::{math}
+\Delta s = s_{2}- s_{1}= c_{v}\ln \frac{T_{2}}{T_{1}} + R\ln \frac{v_{2}}{v_{1}} \qquad (8/10)
+:::
+
+:::{math}
+\Delta s = s_{2}- s_{1}= c_{p}\ln \frac{T_{2}}{T_{1}} - R\ln \frac{p_{2}}{p_{1}} \qquad (8/11)
+:::
+
+Finally, we assume that the efficiencies of thermal machines based on a Carnot cycle are expressed as a function of the absolute temperatures as follows:
+
+:::{math}
+\eta _{\mathrm{Carnot\ engine}}= 1 - \frac{T_{L}}{T_{H}} \qquad (7/6)
+:::
+
+:::{math}
+\eta _{\mathrm{Carnot\ refrigerator}}= \frac{1}{\dfrac{T_{H}}{T_{L}} - 1} \qquad (7/7)
+:::
+
+:::{math}
+\eta _{\mathrm{Carnot\ heat\ pump}}= \frac{1}{1 - \dfrac{T_{L}}{T_{H}}} \qquad (7/8)
+:::
 
 ```{exercise}
 :label: prob-8-1
@@ -1090,40 +1018,120 @@ During his adventurous life, he managed to make at least two important discoveri
    :::
 
 ```{exercise}
-:label: prob-8-7
-:enumerator: 8.7
+:label: prob-8-3
+:enumerator: 8.3
 
-**Steam Turbine In the engine room of a large ship (figure 8.14), a steam flow rate of $250 t/h (\sim 550 000 lb/h)$ enters the turbine at 55 bar and $660^{\circ}C (798 psi$ and $1220 ^{\circ} F)$. *Photo* CC-by-sa *by Tony Kent***
+**Expansion of a Liquid/Vapor** We have $10 kg (22 lb)$ of water at $45 bar$ and $600^{\circ}C$ $(653 psi$ and $1112^{\circ} F)$. 1. What is the maximum amount of work that can be extracted from this mass of water without supplying heat, if it can expand to $4 bar (58 psi)$? 2. If the expansion were continued to a lower pressure, at what temperature would the water condense? 3. Draw the process qualitatively (that is, without showing numerical values) on a temperature-entropy diagram, showing the saturation curve.
 
 :::{admonition} Answer
 :class: dropdown
 
-The process is as described in example 8.7
-page 223: $h_{1}= 3803.5 kJ kg^{-1}$ (dry steam); $h_{2}= 2677.7 kJ kg^{-1}$ (dry steam); $h_{3}= 2413.6 kJ kg^{-1}$
-(mixture with 91.9% dryness fraction); thus
-$W_{\mathrm{turbine}}= -96.26 MW$.
+1) $u_{1}= 3276.4 kJ kg^{-1}$ and $u_{2}= 2703.3 kJ kg^{-1}$: $W_{\max.}= -5.731 MJ$;
+2) $T_{3}= 103.51^{\circ}C = 218.32 ^{\circ} F$.
 
 :::
 ```
 
-   :::{figure} ../images/fig-8-14.jpg
-   :label: fig-8-14
-   :enumerator: 8.14
-   :alt: Inspection window of one of the low-pressure turbines (power approximately of the aircraft carrier USS Hornet launched in 1943.
-   
-   Inspection window of one of the low-pressure turbines (power approximately $25 MW)$ of the aircraft carrier *USS Hornet* launched in 1943.
-   :::
+```{exercise}
+:label: prob-8-4
+:enumerator: 8.4
 
-::::{admonition} A Bit of History
-:class: note
+**Heating at Constant Temperature** A quantity of heat of $3000 kJ kg^{-1}$ is slowly supplied to a mass of water saturated at $200^{\circ}C$. The temperature is kept constant throughout the process. What is the amount of work delivered by the water during the process? Draw the process qualitatively on a temperature-entropy diagram, showing the saturation curve.
 
-*Engineering Thermodynamics* by Olivier Cleynen
+:::{admonition} Answer
+:class: dropdown
 
-::::
+$s_{2}= 8.671 kJ K^{-1}kg^{-1}$; thus $u_{2}= 2660.89 kJ kg^{-1}$; finally $w_{1\rightarrow 2}= -1.19 MJ kg^{-1}$.
 
-In the turbine, steam expands following an approximately reversible adiabatic process. When the pressure reaches 1 bar, steam is extracted at a low flow rate $(1 kg s^{-1})$ to heat another part of the power plant. The remaining steam in the turbine is expanded to a pressure of $0.18 bar (2.6 psi)$.
+:::
+```
 
-What is the power delivered by the turbine?
+```{exercise}
+:label: prob-8-5
+:enumerator: 8.5
+
+**Temperature-Entropy Diagrams** Draw qualitatively, on a temperature-entropy diagram (including the saturation curve when relevant), the processes that we studied in previous chapters: 1. Simple processes: problems 4.6 and 4.7 on page 108, 5.3 and 5.4 on page 143; 2. Thermodynamic cycles: problems 7.5 and 7.7 on page 202.
+```
+
+```{exercise}
+:label: prob-8-6
+:enumerator: 8.6
+
+**Carnot Cycle** Draw the cycle undergone by the fluid inside a heat pump operating according to the Carnot cycle on a temperature-entropy diagram, qualitatively, showing also the two heat transfers. How would the cycle be modified if the compression and expansion remained adiabatic but were not reversible? How would the two heat transfers be affected?
+
+:::{admonition} Answer
+:class: dropdown
+
+In this case $W_{\mathrm{B}\rightarrow \mathrm{C\ irr}.}> W_{\mathrm{B}\rightarrow \mathrm{C}'}$ and, as negative values, $W_{\mathrm{D}\rightarrow \mathrm{A\ irr}.}> W_{\mathrm{D}\rightarrow \mathrm{A}'}$. Thus the rejected heat $Q_{\mathrm{C}\rightarrow \mathrm{D}}$ increases (which may initially seem like an interesting result) and the heat intake $Q_{\mathrm{A}\rightarrow \mathrm{B}}$ decreases (and we see that the increase in $Q_{\mathrm{C}\rightarrow \mathrm{D}}$ is actually only due to the inefficiencies of the compressor and the turbine and only serves to reduce the efficiency).
+
+:::
+```
+
+```{exercise}
+:label: prob-8-7
+:enumerator: 8.7
+
+**Steam Turbine** In the engine room of a large ship (figure 8.14), a steam flow rate of $250 t/h (\sim 550 000 lb/h)$ enters the turbine at 55 bar and $660^{\circ}C (798 psi$ and $1220 ^{\circ} F)$. *Photo* CC-by-sa *by Tony Kent*
+
+:::{figure} ../images/fig-8-14.jpg
+:label: fig-8-14
+:enumerator: 8.14
+:alt: Inspection window of one of the low-pressure turbines (power approximately 25 MW) of the aircraft carrier USS Hornet launched in 1943.
+
+Inspection window of one of the low-pressure turbines (power approximately $25 MW)$ of the aircraft carrier *USS Hornet* launched in 1943.
+:::
+
+In the turbine, steam expands following an approximately reversible adiabatic process. When the pressure reaches 1 bar, steam is extracted at a low flow rate $(1 kg s^{-1})$ to heat another part of the power plant. The remaining steam in the turbine is expanded to a pressure of $0.18 bar (2.6 psi)$. What is the power delivered by the turbine?
+
+:::{admonition} Answer
+:class: dropdown
+
+The process is as described in example 8.7 page 223: $h_{1}= 3803.5 kJ kg^{-1}$ (dry steam); $h_{2}= 2677.7 kJ kg^{-1}$ (dry steam); $h_{3}= 2413.6 kJ kg^{-1}$ (mixture with 91.9% dryness fraction); thus $\dot{W}_{\mathrm{turbine}}= -96.26 MW$.
+
+:::
+```
+
+```{exercise}
+:label: prob-8-8
+:enumerator: 8.8
+
+**Direction of Processes (1)** A mass of air undergoes a process without any heat transfer. There are two states: • State X: at 1 bar and $300^{\circ}C$; • State Y: at 5 bar and $500^{\circ}C$. In which direction (X $\rightarrow$ Y or Y $\rightarrow$ X) can the process take place? Draw the process on a pressure-volume diagram and on a temperature-entropy diagram, qualitatively.
+
+:::{admonition} Answer
+:class: dropdown
+
+With equation 8/11 we find $s_{\mathrm{Y}}- s_{\mathrm{X}}= -161.08 J K^{-1}kg^{-1}< \int _{\mathrm{X}}^{\mathrm{Y}}\left(\frac{\delta q}{T}\right)_{\mathrm{real\ path}}= 0 kJ K^{-1}kg^{-1}$ (since the process is adiabatic). Therefore, the direction is Y $\rightarrow$ X.
+
+:::
+```
+
+```{exercise}
+:label: prob-8-9
+:enumerator: 8.9
+
+**Direction of Processes (2)** Water undergoes a process during which $2 MJ kg^{-1}$ of heat is extracted from it, while its temperature is fixed at $250^{\circ}C$. There are two states, one at the beginning and the other at the end: • State X: in the saturated vapor state at $200^{\circ}C$; • State Y: in the saturated liquid state at $240^{\circ}C$. Which of the two states must have occurred before the other?
+
+:::{admonition} Answer
+:class: dropdown
+
+Assuming X $\rightarrow$ Y, then $\Delta s = -3.728 kJ K^{-1}kg^{-1}$ but $\int _{\mathrm{X}}^{\mathrm{Y}}\left(\frac{\delta q}{T}\right)_{\mathrm{real\ path}}= -3.823 kJ K^{-1}kg^{-1}$, so we are reassured: the direction is indeed X $\rightarrow$ Y.
+
+:::
+```
+
+```{exercise}
+:label: prob-8-10
+:enumerator: 8.10
+
+**Expansion of Compressed Air** The air in a thermally insulated cylinder is expanded from $6.8 bar$ and $430^{\circ}C$ to $1 bar$. At the end of the expansion, the temperature is measured at $150^{\circ}C$. Is the expansion reversible? Draw the process qualitatively on a temperature-entropy diagram.
+
+:::{admonition} Answer
+:class: dropdown
+
+With equation 8/11 we get $\Delta s = +39.77 J K^{-1}kg^{-1}$ but – aha! – $\int _{1}^{2}\left(\frac{\delta q}{T}\right)_{\mathrm{real\ path}}= 0 kJ K^{-1}kg^{-1}$, thus the process is irreversible. We could also have used the very classic equation 4/37 p. 103 to find that $T_{2 \mathrm{isentropic}}< 150^{\circ}C$.
+
+:::
+```
 
 ```{exercise}
 :label: prob-8-11
@@ -1168,11 +1176,8 @@ $2) x_{\mathrm{A}}= \frac{s_{\mathrm{B}}-s_{L}}{s_{LV}} = 0.2949; \mathrm{thus} 
 3) Same process: $x_{\mathrm{D}}= 0.7014$ thus $h_{\mathrm{D}}= 1827.5 kJ kg^{-1}$;
 4) $w_{\mathrm{turbine}}= h_{\mathrm{D}}- h_{\mathrm{C}}= -973.3 kJ kg^{-1}$;
 5) $q_{\mathrm{boiler}}= h_{\mathrm{C}}- h_{\mathrm{B}}= +1713 kJ kg^{-1}$;
-6) $w_{\mathrm{pump}}= h_{\mathrm{B}}- h_{\mathrm{A}}== +248.8 kJ kg^{-1}$;
-$7)\eta _{\mathrm{plant}}= ||| \frac{w_{\mathrm{net}}}{q_{\mathrm{inn}}} ||| = \frac{-w_{\mathrm{turbine}}-w_{\mathrm{pump}}}{q_{\mathrm{boiler}}} = 42.29\%. \mathrm{Sinceall}$
-phases are reversible and heat transfers are isother-
-$\mathrm{mal,wehave}\eta _{\mathrm{plant}}= \eta _{\mathrm{Carnot} \mathrm{engine}}= 1 - \frac{T_{\mathrm{consenser} \mathrm{water}}}{T_{\mathrm{boiler} \mathrm{water}}}$
-(7/6).
+6) $w_{\mathrm{pump}}= h_{\mathrm{B}}- h_{\mathrm{A}}= +248.8 kJ kg^{-1}$;
+7) $\eta _{\mathrm{plant}}= \left|\frac{w_{\mathrm{net}}}{q_{\mathrm{in}}}\right| = \frac{-w_{\mathrm{turbine}}-w_{\mathrm{pump}}}{q_{\mathrm{boiler}}} = 42.29\%$. Since all phases are reversible and heat transfers are isothermal, we have $\eta _{\mathrm{plant}}= \eta _{\mathrm{Carnot\ engine}}= 1 - \frac{T_{\mathrm{condenser\ water}}}{T_{\mathrm{boiler\ water}}}$ (7/6).
 
 :::
 ```
