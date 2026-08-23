@@ -42,27 +42,21 @@ these compromises?
 (sec-9-1)=
 ## 9.1 Why Use a Steam Engine?
 
-The use of water as a working fluid in a machine undeniably has many « Attempts have been made on various occasions, to make heat act
+:::{aside}
+« Attempts have been made, on various occasions, to make heat act upon atmospheric air in order to give birth to motive power. This gas presents, in comparison to water vapor, some advantages and some disadvantages which we shall now examine. 1°. It offers, relative to water vapor, a notable advantage in that, possessing at equal volume a far lesser capacity for heat, it would cool to a greater degree by a similar expansion in volume. […] Now, we have seen how important it is to induce, by changes in volume, the greatest possible variations in temperature. 2°. Water vapor can only be formed through the intermediary of a boiler, whereas atmospheric air could be heated directly by combustion executed within it. One would thus avoid a considerable loss, not only in the quantity of heat, but also in its thermometric degree. »
 
-disadvantages. In particular, unlike internal combustion engines: upon atmospheric air in order to give birth to motive power. This gas
+Sadi Carnot, 1824 [[4](#ref-4)]
+:::
 
-• It is necessary to either recycle the water in the machine (and therefore presents, in comparison to water vapor,
+The use of water as a working fluid in a machine undeniably has many disadvantages. In particular, unlike internal combustion engines:
 
-cool it), or find a continuous source of pure water to operate it; $^{\mathrm{some} \mathrm{advantages} \mathrm{and} \mathrm{some} \mathrm{disadvan}-}$ tages which we shall now examine.
+• It is necessary to either recycle the water in the machine (and therefore cool it), or find a continuous source of pure water to operate it;
 
-• There is an inevitable loss of some of the heat supplied to the machine, 1°. It ofefrs, relative to water vapor, a notable advantage in that, possessabove the boiler. ing at equal volume a far lesser capacity for heat, it would cool to a greater
+• There is an inevitable loss of some of the heat supplied to the machine, above the boiler.
 
-Why, then, be interested in the operation of steam engines? The answer is degree by a similar expansion in volthat many sources of heat do not allow heat to be brought directly inside ume. [...] Now, we have seen how important it is to induce, by changes in
+Why, then, be interested in the operation of steam engines? The answer is that many sources of heat do not allow heat to be brought directly inside the working fluid. At the end of combustion, coal, wood, household or agricultural waste, for example, leave significant residues that cannot be circulated in a turbine. As for nuclear reactions, they cannot be carried out directly within the air. The exploitation of these sources, which accounts for a significant share of the world’s sources of mechanical or electrical energy, therefore requires extracting heat from outside the engine.
 
-the working fluid. At the end of combustion, coal, wood, household or volume, the greatest possible variations
-
-agricultural waste, for example, leave significant residues that cannot be in temperature 2°. Water vapor can only be formed
-
-circulated in a turbine. As for nuclear reactions, they cannot be carried out through the intermediary of a boiler,
-
-directly within the air. The exploitation of these sources, which accounts for whereas atmospheric air could be heated directly by combustion exea significant share of the world’s sources of mechanical or electrical energy, cuted within it. One would thus avoid a considerable loss, not only in the quantherefore requires extracting heat from outside the engine. tity of heat, but also in its thermometric
-
-Liquids have an excellent volumetric thermal capacity compared to that of degree » air (as the student will find using both chapter 4 and 5, that of liquid water $_{\mathrm{Sadi} \mathrm{Carnot}, 1824 [4]}$ is approximately a thousand times higher): they are compact mediums for extracting heat from an external source. Among them, water is the most abundant and certainly the least difficult to handle. Thus, almost every time the heat input cannot be made within air, water is chosen as the engine’s working fluid.
+Liquids have an excellent volumetric thermal capacity compared to that of air (as the student will find using both chapter 4 and 5, that of liquid water is approximately a thousand times higher): they are compact mediums for extracting heat from an external source. Among them, water is the most abundant and certainly the least difficult to handle. Thus, almost every time the heat input cannot be made within air, water is chosen as the engine’s working fluid.
 
 The sources of heat used by steam engines make their use in transportation difficult, so they are most often used in static installations to generate electricity: a configuration that allows economies of scale in energy storage and transport. All these factors justify the development of steam power plants with several gigawatts of electrical power $(1 GW = 10^{9}W)$, making them the most powerful thermal engines in the world.
 
@@ -161,15 +155,13 @@ Before studying the construction of steam thermodynamic cycles, we briefly revie
 (sec-9-3-1)=
 ### 9.3.1 Calculation of component powers
 
-All steam systems used today operate with a continuous flow rate. Also, in these machines, the changes in the steam’s kinetic and potential energy are small compared to heat and work transfers. We will therefore exclusively use the concepts covered in chapter 3 (*open systems*) and we will be able
+All steam systems used today operate with a continuous flow rate. Also, in these machines, the changes in the steam’s kinetic and potential energy are small compared to heat and work transfers. We will therefore exclusively use the concepts covered in chapter 3 (*open systems*) and we will be able to relate the powers and the thermodynamic state of the steam using the simple equation:
 
-« $^{[...] \mathrm{The} \mathrm{appropriate} \mathrm{load} \mathrm{for} \mathrm{the}}$ production of the *absolute* maximum of useful effect, in expansive machines, is not the maximum load of which the machine is capable. [...] If one desires that the machine set in motion the greatest
-
-(9/2) load it is capable of, it must be made to work without expansion; but this load is not the one that produces the *absolute* maximum of useful effect. »
+:::{aside}
+« […] The appropriate load for the production of the *absolute* maximum of useful effect, in expansive machines, is not the maximum load of which the machine is capable. […] If one desires that the machine set in motion the greatest load it is capable of, it must be made to work without expansion; but this load is not the one that produces the *absolute* maximum of useful effect. »
 
 François-Marie Guyonneau de Pambour, 1839 [[7](#ref-7)]
-
-to relate the powers and the thermodynamic state of the steam using the simple equation:
+:::
 
 :::{math}
 :label: eq-3-15
@@ -177,7 +169,7 @@ to relate the powers and the thermodynamic state of the steam using the simple e
 q_{1\rightarrow 2}+ w_{1\rightarrow 2}= \Delta h
 :::
 
-for all processes (reversible or not) in a steady-flow open system $(m\dot{} =$ const.), when changes in mechanical energy are neglected.
+for all processes (reversible or not) in a steady-flow open system $(\dot{m} =$ const.), when changes in mechanical energy are neglected.
 
 From our study of chapter 3, we recall that when the process is reversible, the work $w_{\mathrm{A}\rightarrow \mathrm{B}}$ between two points A and B is expressed as an integral:
 
@@ -417,7 +409,7 @@ The condenser (figures 9.7, 9.8 and 9.9), the least glorious component of the po
 :::{figure} ../images/fig-9-7.jpg
 :label: fig-9-7
 :enumerator: 9.7
-:alt: Schematic representation of a condenser. Water from the thermodynamic cycle enters at the top, in a state close to saturated vapor. It exits
+:alt: Schematic representation of a condenser. Water from the thermodynamic cycle enters at the top, in a state close to saturated vapor. It exits at the bottom in the liquid state. The heat extraction is usually ensured by a secondary water circuit (illustrated in dark blue) which is in contact with the atmosphere.
 
 Schematic representation of a condenser. Water from the thermodynamic cycle enters at the top, in a state close to saturated vapor. It exits at the bottom in the liquid state. The heat extraction is usually ensured by a secondary water circuit (illustrated in dark blue) which is in contact with the atmosphere.
 :::
@@ -627,7 +619,7 @@ In the limit case where all the heat used during regeneration is transferred wit
 :::{figure} ../images/fig-9-18.jpg
 :label: fig-9-18
 :enumerator: 9.18
-:alt: Diagram of a steam power plant with regeneration. Heat is extracted from the turbine to heat the liquid water before it enters the boiler. Ideally, heat
+:alt: Diagram of a steam power plant with regeneration. Heat is extracted from the turbine to heat the liquid water before it enters the boiler. Ideally, heat transfer is reversible.
 
 Diagram of a steam power plant with regeneration. Heat is extracted from the turbine to heat the liquid water before it enters the boiler. Ideally, heat
 :::
@@ -680,7 +672,7 @@ In practice, many bleeds (sometimes called *steam extractions*) are performed in
 :::{figure} ../images/fig-9-22.jpg
 :label: fig-9-22
 :enumerator: 9.22
-:alt: A steam power plant circuit combining superheating, reheat, regeneration, and discharge ducts. It is left to the curious student the pleasure of tracing the processes on a
+:alt: A steam power plant circuit combining superheating, reheat, regeneration, and discharge ducts. It is left to the curious student the pleasure of tracing the processes on a temperature-entropy diagram, and imagining themselves at the controls of the machine supplying their coffee maker with electricity.
 
 A steam power plant circuit combining superheating, reheat, regeneration, and discharge ducts. It is left to the curious student the pleasure of tracing the processes on a
 :::
@@ -779,7 +771,7 @@ Both Whittle and von Ohain focused their efforts on an ingenious aeronautical en
 :::{figure} ../images/fig-9-25.jpg
 :label: fig-9-25
 :enumerator: 9.25
-:alt: Cross-sectional diagram of the Heinkel He S-1, the first prototype tested by Hans von Ohain in 1937. The compressor consists of an axial sta
+:alt: Cross-sectional diagram of the Heinkel He S-1, the first prototype tested by Hans von Ohain in 1937. The compressor consists of an axial stage and a centrifugal stage; the turbine is centripetal. There is only one moving part and its speed is invariant.
 
 Cross-sectional diagram of the *Heinkel He S-1*, the first prototype tested by Hans von Ohain in 1937. The compressor consists of an axial stage and a centrifugal stage; the turbine is centripetal. There is only one moving part and its speed is invariant.
 :::

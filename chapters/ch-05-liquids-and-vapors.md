@@ -697,7 +697,7 @@ $h_{L}\approx 500$ and $h_{V}\approx 2700 kJ kg^{-1}$.
 :::{figure} ../images/fig-5-13.jpg
 :label: fig-5-13
 :enumerator: 5.13
-:alt: Approximations used in calculating the volume occupied by a liquid-vapor mixture. It should be noted that the abscissa scale is logarithmic: $v_{L}$ is generally several hundred times smaller than $v_{V}$, and the approximation is not
+:alt: Approximations used in calculating the volume occupied by a liquidvapor mixture. It should be noted that the abscissa scale is logarithmic: 𝑣𝐿is generally several hundred times smaller than 𝑣𝑉, and the approximation is not graphically emphasized.
 
 Approximations used in calculating the volume occupied by a liquid-vapor mixture. It should be noted that the abscissa scale is logarithmic: $v_{L}$ is generally several hundred times smaller than $v_{V}$, and the approximation is not
 :::

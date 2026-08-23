@@ -119,12 +119,62 @@ Thus, in the equations, we can systematically add the terms without needing to k
 (sec-2-3)=
 ## 2.3 The First Law in a Closed System
 
-The first law states that energy is indestructible (§1.1.2). If we supply $100 J$ of work to a closed system and it rejects $80 J$ in the form of heat, then “its” energy has increased by $20 J$. We call this increase the *change of internal energy*, $\Delta U$. In the form of an equation, the first law in a closed system is expressed by the equation: $Q_{1\rightarrow 2}+ W_{1\rightarrow 2}= \Delta U$ for a stationary closed system; where $\Delta U = U_{2}- U_{1}$ is the change of internal energy $(J)$, $W_{1\rightarrow 2}$ is the work received by the system $(J)$, and $Q_{1\rightarrow 2}$ is the heat received by the system $(J)$. Unfortunately, internal energy $U$ is sometimes very difficult to measure. We shall see in chapters 4 and 5 that bodies store this internal energy in different ways, and that it is intimately related to temperature. By definition, internal energy $U$ is always positive, but its variation $\Delta U$ can also be negative. Equation 2/1 can be expressed with specific quantities: $m (q_{1\rightarrow 2}+ w_{1\rightarrow 2}) = m \Delta u q_{1\rightarrow 2}+ w_{1\rightarrow 2}= \Delta u$ for a stationary closed system; where $\Delta u = u_{2}- u_{1}$ is the change of specific internal energy $(J kg^{-1})$, $w_{1\rightarrow 2}$ is the specific work received by the system $(J kg^{-1})$, and $q_{1\rightarrow 2}$ is the specific heat received by the system $(J kg^{-1})$. *Diagram* CC-0 *Olivier Cleynen* « $^{\mathrm{Let} \mathrm{therefore} \mathrm{be} Q \mathrm{the} \mathrm{whole}}$ quantity of heat which one must impart to a body while it transitions on (2/1) $^{\mathrm{a} \mathrm{certain} \mathrm{path} \mathrm{from} \mathrm{one} \mathrm{state} \mathrm{into} \mathrm{an}-}$ other (whereby a withdrawn quantity of heat is counted as a negatively imparted heat quantity), so we divide this into three parts, of which the first comprehends the increase of the heat actually present in the body, the second the heat consumed for internal work and the third the heat consumed for external work. Of the first part, the same holds true as has already been said of the second, that it is independent of the manner in which the change has occurred, and therefore we can represent both parts together by a function $U$, of which, even if we do not yet know it more closely, we know at least this much beforehand, that it is fully determined by the initial and final state of (2/2) the body. » Rudolf Clausius, 1854 *Über eine veränderte Form des zweiten Hauptsatzes der mechanischen Wärmetheorie [[13](#ref-13)]* We can rewrite this equation 2/2 to express it in its *differential form*: δ$q +$ δ$w = du$ for a stationary closed system; where $du$ is the infinitesimal change of specific internal energy $(J kg^{-1})$, δ$w$ is the (specific) infinitesimal work transfer $(J kg^{-1})$, and δ$q$ is the (specific) infinitesimal heat transfer $(J kg^{-1})$. In this equation 2/3, the mathematical operators $d$ and δ have slightly different meanings: $du$, an *exact differential*, represents an infinitesimal *change* that will integrate to $\Delta u = u_{2}-u_{1}$; on the other hand, an δ$w$, *inexact differential*, represents an infinitesimal *transfer* that will integrate to $w_{1\rightarrow 2}$. This distinction is further elaborated in Appendix A4 p. 316. When a fluid is brought back to its initial state (same pressure, same volume, same temperature), then it contains exactly the same amount of internal energy as before. The total energy it has received (in the form of heat or work) has therefore necessarily been returned to the surroundings in one form or another. We express this statement as follows: $Q_{\mathrm{cycle}}+ W_{\mathrm{cycle}}= 0$ for a complete thermodynamic cycle, where $W_{\mathrm{cycle}}$ is the work received by the system $(J)$, and $Q_{\mathrm{cycle}}$ is the heat received by the system $(J)$. This equation 2/4 is the reason why the first law is often stated—without adding much to our simple statement in chapter 1 — in the following way: “When a system has completed a full thermodynamic cycle, the algebraic sum of the heat it has supplied and the work it has done is zero.”
+The first law states that energy is indestructible (§1.1.2). If we supply $100 J$ of work to a closed system and it rejects $80 J$ in the form of heat, then “its” energy has increased by $20 J$. We call this increase the *change of internal energy*, $\Delta U$. In the form of an equation, the first law in a closed system is expressed by the equation:
+
+:::{math}
+:label: eq-2-1
+:enumerator: 2/1
+Q_{1\rightarrow 2}+ W_{1\rightarrow 2}= \Delta U
+:::
+
+for a stationary closed system; where $\Delta U = U_{2}- U_{1}$ is the change of internal energy $(J)$, $W_{1\rightarrow 2}$ is the work received by the system $(J)$, and $Q_{1\rightarrow 2}$ is the heat received by the system $(J)$.
+
+Unfortunately, internal energy $U$ is sometimes very difficult to measure. We shall see in chapters 4 and 5 that bodies store this internal energy in different ways, and that it is intimately related to temperature. By definition, internal energy $U$ is always positive, but its variation $\Delta U$ can also be negative.
+
+Equation 2/1 can be expressed with specific quantities:
+
+:::{math}
+:label: eq-2-2
+:enumerator: 2/2
+q_{1\rightarrow 2}+ w_{1\rightarrow 2}= \Delta u
+:::
+
+for a stationary closed system; where $\Delta u = u_{2}- u_{1}$ is the change of specific internal energy $(J kg^{-1})$, $w_{1\rightarrow 2}$ is the specific work received by the system $(J kg^{-1})$, and $q_{1\rightarrow 2}$ is the specific heat received by the system $(J kg^{-1})$.
+
+:::{aside}
+« Let therefore be $Q$ the whole quantity of heat which one must impart to a body while it transitions on a certain path from one state into another (whereby a withdrawn quantity of heat is counted as a negatively imparted heat quantity), so we divide this into three parts, of which the first comprehends the increase of the heat actually present in the body, the second the heat consumed for internal work and the third the heat consumed for external work. Of the first part, the same holds true as has already been said of the second, that it is independent of the manner in which the change has occurred, and therefore we can represent both parts together by a function $U$, of which, even if we do not yet know it more closely, we know at least this much beforehand, that it is fully determined by the initial and final state of the body. »
+
+Rudolf Clausius, 1854
+
+*Über eine veränderte Form des zweiten Hauptsatzes der mechanischen Wärmetheorie* [[13](#ref-13)]
+:::
+
+We can rewrite this equation 2/2 to express it in its *differential form*:
+
+:::{math}
+:label: eq-2-3
+:enumerator: 2/3
+\delta q + \delta w = du
+:::
+
+for a stationary closed system; where $du$ is the infinitesimal change of specific internal energy $(J kg^{-1})$, $\delta w$ is the (specific) infinitesimal work transfer $(J kg^{-1})$, and $\delta q$ is the (specific) infinitesimal heat transfer $(J kg^{-1})$.
+
+In this equation 2/3, the mathematical operators $d$ and $\delta$ have slightly different meanings: $du$, an *exact differential*, represents an infinitesimal *change* that will integrate to $\Delta u = u_{2}-u_{1}$; on the other hand, an $\delta w$, *inexact differential*, represents an infinitesimal *transfer* that will integrate to $w_{1\rightarrow 2}$. This distinction is further elaborated in Appendix A4 p. 316.
+
+When a fluid is brought back to its initial state (same pressure, same volume, same temperature), then it contains exactly the same amount of internal energy as before. The total energy it has received (in the form of heat or work) has therefore necessarily been returned to the surroundings in one form or another. We express this statement as follows:
+
+:::{math}
+:label: eq-2-4
+:enumerator: 2/4
+Q_{\mathrm{cycle}}+ W_{\mathrm{cycle}}= 0
+:::
+
+for a complete thermodynamic cycle, where $W_{\mathrm{cycle}}$ is the work received by the system $(J)$, and $Q_{\mathrm{cycle}}$ is the heat received by the system $(J)$.
+
+This equation 2/4 is the reason why the first law is often stated—without adding much to our simple statement in chapter 1 — in the following way: “When a system has completed a full thermodynamic cycle, the algebraic sum of the heat it has supplied and the work it has done is zero.”
 
 (sec-2-4)=
 ## 2.4 Quantifying Work with a Closed System
-
-## System
 
 Calculating work with fluids is delicate. We will proceed in three steps of increasing complexity:
 
@@ -137,7 +187,7 @@ Calculating work with fluids is delicate. We will proceed in three steps of incr
 (sec-2-4-1)=
 ### 2.4.1 Work as a function of volume, with a spring
 
-Let’s start by imagining that the fluid within a closed system behaves like a metal spring (figure 2.5). This is an interesting modeling approach to begin our study. We had seen in §1.3 that the work supplied or received by a spring is expressed as: B
+Let’s start by imagining that the fluid within a closed system behaves like a metal spring (figure 2.5). This is an interesting modeling approach to begin our study. We had seen in §1.3 that the work supplied or received by a spring is expressed as:
 
 :::{math}
 :label: eq-1-11
@@ -379,11 +429,13 @@ A simplistic representation of a fluid being infinitely slowly compressed withou
 
 *Diagram* CC-0 *Olivier Cleynen*
 
-expansion, will have developed a quantity of mechanical action whose value will be the integral of the product of the pressure by the differential of the volume, and which will be represented geometrically by the surface enclosed between the axis of the abscissas, the two coordinates cb, de, and the portion of the hyperbola ce. »
+:::{aside}
+« That being stated, let us take some arbitrary gas at the temperature $T$ …; let us represent its volume $v_{o}$ by the abscissa ab, and its pressure by the ordinate cb…. The gas, during its expansion, will have developed a quantity of mechanical action whose value will be the integral of the product of the pressure by the differential of the volume, and which will be represented geometrically by the surface enclosed between the axis of the abscissas, the two coordinates cb, de, and the portion of the hyperbola ce. »
 
-Benoît Paul Émile Clapeyron, 1834 (the first $p - v$ diagram...)
+Benoît Paul Émile Clapeyron, 1834 (the first $p - v$ diagram…)
 
 *Mémoire sur la puissance motrice de la chaleur* [[5](#ref-5)]
+:::
 
 :::{figure} ../images/fig-2-8.jpg
 :label: fig-2-8
@@ -394,6 +446,8 @@ When the piston motion is infinitely slow, the fluid behaves like a spring being
 :::
 
 *Diagram* CC-by-sa *Olivier Cleynen*
+
+We experimentally observe that when the motion is infinitely slow, a compressed fluid behaves exactly like a spring (figure 2.8). The condition “when the motion is infinitely slow” is of paramount importance, as we will see below.
 
 If this condition is met, we can express the work received or supplied by the
 

@@ -234,7 +234,7 @@ a turbine for which we know the power.
 :::{figure} ../images/fig-3-3.jpg
 :label: fig-3-3
 :enumerator: 3.3
-:alt: An arbitrary open system. The system (whose boundaries are dashed lines, in red) is crossed from left to right by the fluid flowing with a constant mass flow rate$\dot{m}$. It receives power$\dot{W}_{1\rightarrow 2}$ in the form of work and power$\dot{Q}_{1\rightarrow 2}$ in the
+:alt: An arbitrary open system. The system (whose boundaries are dashed lines, in red) is crossed from left to right by the fluid flowing with a constant mass flow ratė 𝑚. It receives poweṙ 𝑊1→2 in the form of work and poweṙ 𝑄1→2 in the form of heat.
 
 An arbitrary open system. The system (whose boundaries are dashed lines, in red) is crossed from left to right by the fluid flowing with a constant mass flow rate$\dot{m}$. It receives power$\dot{W}_{1\rightarrow 2}$ in the form of work and power$\dot{Q}_{1\rightarrow 2}$ in the
 :::
@@ -334,11 +334,11 @@ q_{1\rightarrow 2}+ w_{1\rightarrow 2}= \Delta h + \Delta e_{\mathrm{mech}.}
 
 (3/13)
 
-« $^{\mathrm{The} \mathrm{decrease} \mathrm{of} \mathrm{the} \mathrm{heat} \mathrm{con}-}$ tents is equal to the heat value of the gained “useful work” plus the heat carried away to the outside plus the increase of kinetic energy per pound (or kilogram) of steam. »
+« The decrease of the heat contents is equal to the heat value of the gained “useful work” plus the heat carried away to the outside plus the increase of kinetic energy per pound (or kilogram) of steam. »
 
 Aurel Stodola, 1904
 
-(where the “heat contents” $\lambda$are not yet named *enthalpy*)
+(where the “heat contents” are not yet named *enthalpy*)
 
 *Die Dampfturbinen* [[26](#ref-26), [27](#ref-27)]
 
@@ -432,7 +432,7 @@ during a reversible process, and where the notation δ is used to denote the inf
 :::{figure} ../images/fig-3-4.jpg
 :label: fig-3-4
 :enumerator: 3.4
-:alt: A fixed mass quantity flows from left to right through a compressor. It is compressed: its properties change from and to and . If we conside
+:alt: A fixed mass quantity 𝑚𝐴flows from left to right through a compressor. It is compressed: its properties change from 𝑝and 𝑣to 𝑝+ d𝑝and 𝑣+ d𝑣. If we consider the point of view of a closed system in transit, the work transfer is δ𝑤𝑚A = −𝑝d𝑣.
 
 A fixed mass quantity $m_{A}$ flows from left to right through a compressor. It is compressed: its properties change from $p$ and $v$ to $p + dp$ and $v + dv$. If we consider the point of view of a closed system in transit, the work transfer is δ$w_{m_{\mathrm{A}}}= -pdv$.
 :::
@@ -635,7 +635,7 @@ Using an open system to account for energy transfers does not change the problem
 :::{figure} ../images/fig-3-8.jpg
 :label: fig-3-8
 :enumerator: 3.8
-:alt: Reversible (solid line) and irreversible (dashed line) compressions represented on a pressure-volume diagram. In an open system, work transfers can be visualized with the area to the left of the curve, but only when the processes are
+:alt: Reversible (solid line) and irreversible (dashed line) compressions represented on a pressure-volume diagram. In an open system, work transfers can be visualized with the area to the left of the curve, but only when the processes are reversible.
 
 Reversible (solid line) and irreversible (dashed line) compressions represented on a pressure-volume diagram. In an open system, work transfers can be visualized with the area to the left of the curve, but only when the processes are
 :::

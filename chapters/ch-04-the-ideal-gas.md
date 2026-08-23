@@ -432,15 +432,11 @@ On the other hand, it should be noted that this equation 4/11, which results fro
 
 The specific thermal capacity at constant volume for air is measured at $c_{v (\mathrm{air})}= 718 J kg^{-1}K^{-1}$. We take a mass of $0.5 kg$ of air at $20^{\circ}C$ and transfer $+15 kJ$ as heat and $-10 kJ$ as work. What is its final temperature?
 
-We know that the energy has varied with the transfers: $\Delta U = W_{\mathrm{A}\rightarrow \mathrm{B}}+ Q_{\mathrm{A}\rightarrow \mathrm{B}}= m c_{v}\Delta T$. Thus, the temperature has varied proportionally: $T_{\mathrm{B}}= T_{\mathrm{A}}+ \frac{\Delta U}{m c_{v}} = T_{\mathrm{A}}+ \frac{W_{\mathrm{A}\rightarrow \mathrm{B}}+ Q_{\mathrm{A}\rightarrow \mathrm{B}}}{m c_{v}}= 20 + \frac{-10\times 10^{3}+(+15\times 10^{3})}{0.5\times 718}$
+We know that the energy has varied with the transfers: $\Delta U = W_{\mathrm{A}\rightarrow \mathrm{B}}+ Q_{\mathrm{A}\rightarrow \mathrm{B}}= m c_{v}\Delta T$. Thus, the temperature has varied proportionally: $T_{\mathrm{B}}= T_{\mathrm{A}}+ \frac{\Delta U}{m c_{v}} = T_{\mathrm{A}}+ \frac{W_{\mathrm{A}\rightarrow \mathrm{B}}+ Q_{\mathrm{A}\rightarrow \mathrm{B}}}{m c_{v}}= 20 + \frac{-10\times 10^{3}+(+15\times 10^{3})}{0.5\times 718}= 33.92^{\circ}C$.
 
-Good old James! We just only need to quantify the energy
+Good old James! We just only need to quantify the energy changes to know the temperature, and vice versa.
 
-changes to know the temperature, and vice versa.
-
-Here the temperatures in $degrees Celsius$ are only added and a
-
-conversion to kelvins would not have changed the result. In case of doubt, it is better not to take this shortcut.
+Here the temperatures in degrees Celsius are only added and a conversion to kelvins would not have changed the result. In case of doubt, it is better not to take this shortcut.
 
 ````
 
@@ -452,84 +448,56 @@ Because we have just linked the internal energy $u$ to the temperature, and beca
 Indeed, we have $h \equiv u + pv$ (3/12); with a quick insertion of equations 4/1 and 4/11 we can write, for any ideal gas:
 
 :::{math}
+:label: eq-4-13
+:enumerator: 4/13
 h = u + pv = c_{v}T + RT = (c_{v}+ R) T
 :::
 
-« The difference between the means of tile experiments and interpolations being exactly such as was found to be due to the increased effect of the temperature of the room in the latter case, we arrive at the conclusion, that *no change of temperature occurs when air is allowed to expand in such a manner as not to develope mechanical*
-
-(4/11) *power*. »
+:::{aside}
+« The difference between the means of the experiments and interpolations being exactly such as was found to be due to the increased effect of the temperature of the room in the latter case, we arrive at the conclusion, that *no change of temperature occurs when air is allowed to expand in such a manner as not to develope mechanical power*. »
 
 James Prescott Joule, 1845 [[8](#ref-8)]
+:::
 
-(4/12)
+Using the equation 4/8 that we developed earlier, we can simplify this expression to obtain:
 
-$_{0.5\times 718}= 33.92^{\circ}C$.
+:::{math}
+:label: eq-4-14
+:enumerator: 4/14
+h = c_{p}T
+:::
 
-(4/13)
-
-expression to obtain:
-
-For any ideal gas,
-
-where $h$ is the specific enthalpy $(J kg^{-1})$; $T$ is the temperature $(K)$;
-
-and
+For any ideal gas, regardless of the process (reversible or not), where $h$ is the specific enthalpy $(J kg^{-1})$; $T$ is the temperature $(K)$; and $c_{p}$ is the specific thermal capacity at constant pressure $(J kg^{-1}K^{-1})$.
 
 ````{prf:example}
+:label: ex-4-4
+:enumerator: 4.4
 
-at $c_{p (\mathrm{air})}= 1005 J kg^{-1}K^{-1}$.
+The specific thermal capacity at constant pressure for air is measured at $c_{p (\mathrm{air})}= 1005 J kg^{-1}K^{-1}$. A flow rate of $2 kg s^{-1}$ of air passes through a compressor, where its temperature increases by $150^{\circ}C$. What is the power supplied by the compressor to the air?
 
-compressor to the air?
+We know that the change in energy is directly proportional to the change in temperature. Using equations 3/14 and 4/14, we obtain: $\dot{W}_{\mathrm{A}\rightarrow \mathrm{B}}+\dot{Q}_{\mathrm{A}\rightarrow \mathrm{B}}=\dot{m} \Delta h =\dot{m} c_{p}\Delta T = 2 \times 1005 \times (+150) = +301.5 kW$.
 
-energy…
+With an ideal gas, a simple thermometer is enough to quantify energy…
+
+…but not to differentiate work and heat. Here we cannot separate $\dot{W}_{\mathrm{A}\rightarrow \mathrm{B}}$ from $\dot{Q}_{\mathrm{A}\rightarrow \mathrm{B}}$. We also cannot predict the state of the gas at the outlet, that is its pressure $p$ and specific volume $v$ (only their product). For this, a precise description of what happens between the inlet and the outlet would be needed.
 
 ````
 
-### 4.3.4
+(sec-4-3-4)=
+### 4.3.4 Interlude: what to remember so far
 
-temperature $T$:
+The ideal gas is a model for quantifying the temperature of a gas. According to this model, the three main forms of energy we have used so far — internal energy $u$, enthalpy $h$, and the term $pv$ — are directly proportional to the temperature $T$:
 
-quantify these three forms of energy.
-
-```{exercise}
-:label: prob-4-4
-:enumerator: 4.4
-
-Using the equation 4/8 that we developed earlier, we can simplify this $h = c_{p}T$ (4/14) regardless of the process (reversible or not), $c_{p}$ is the specific thermal capacity at constant pressure $(J kg^{-1}K^{-1})$. Example 4.4 The specific thermal capacity at constant pressure for air is measured A flow rate of $2 kg s^{-1}$ of air passes through a compressor, where its temperature increases by $150^{\circ}C$. What is the power supplied by the We know that the change energy is directly proportional to the change in temperature. Using equations 3/14 and 4/14, we obtain:$\dot{W}_{\mathrm{A}\rightarrow \mathrm{B}}+\dot{} Q_{\mathrm{A}\rightarrow \mathrm{B}}=\dot{m} \Delta h =\dot{m} c_{p}\Delta T = 2 \times 1005 \times (+150) = +301.5 kW$. With an ideal gas, a simple thermometer is enough to quantify...but not to differentiate work and heat. Here we cannot separate$\dot{W}_{\mathrm{A}\rightarrow \mathrm{B}}$ from$\dot{Q}_{\mathrm{A}\rightarrow \mathrm{B}}$. We also cannot predict the state of the gas at the outlet, that is its pressure $p$ and specific volume $v$ (only their product). For this, a precise description of what happens between the inlet and the outlet would be needed.
-
-:::{admonition} Answer
-:class: dropdown
-
-$w_{1\rightarrow 2}= \Delta h = c_{p}\Delta T = +85.4 kJ kg^{-1}$ (3/15 & 4/13)
-
+:::{math}
+u = c_{v}T \qquad h = c_{p}T \qquad pv = RT
 :::
-```
 
-**Interlude: what to remember so far**
+If we measure the absolute temperature of a gas, then we can immediately quantify these three forms of energy.
 
-The ideal gas is a model for quantifying the temperature of a gas. According
+(sec-4-4)=
+## 4.4 Elementary Reversible Processes
 
-to this model, the three main forms of energy we have used so far — internal
-
-energy $u$, enthalpy $h$, and the term $pv$ — are directly proportional to the
-
-$u = c_{v}T (J kg^{-1})$
-
-$h = c_{p}T (J kg^{-1})$
-
-$pv = RT (J kg^{-1})$
-
-If we measure the absolute temperature of a gas, then we can immediately
-
-**Elementary Reversible Processes**
-
-Here we intend to calculate the properties of an ideal gas, as well as
-
-the energy transfers involved, when it is compressed or expanded under
-
-completely arbitrary constraints of volume, pressure, or temperature.
-
-*Engineering Thermodynamics* by Olivier Cleynen
+Here we intend to calculate the properties of an ideal gas, as well as the energy transfers involved, when it is compressed or expanded under completely arbitrary constraints of volume, pressure, or temperature.
 
 (sec-4-4-1)=
 ### 4.4.1 What is this chapter section for?
@@ -734,7 +702,7 @@ volume diagram.
 :::{figure} ../images/fig-4-8.jpg
 :label: fig-4-8
 :enumerator: 4.8
-:alt: A constant-volume (isochoric) process undergone by an ideal gas. In a closed system (left), the volume is fixed and no work is done. In an open system (right), the gas must be compressed while heating and expanded while cooling, to
+:alt: A constant-volume (isochoric) process undergone by a liquid-vapor. In a closed system (left), the volume is fixed and no work is done. In an open system (right), the fluid must be compressed while being heated and expanded while being cooled, in order to maintain constant specific volume.
 
 A constant-volume (isochoric) process undergone by an ideal gas. In a closed system (left), the volume is fixed and no work is done. In an open system (right), the gas must be compressed while heating and expanded while cooling, to
 :::
@@ -957,17 +925,11 @@ $1$
 
 (4/26)
 
-« $^{\mathrm{When} \mathrm{a} \mathrm{gas} \mathrm{varies} \mathrm{in} \mathrm{volume} \mathrm{with}-}$ *out changing temperature, the quantities of heat absorbed or released by this gas are in arithmetic progression, if the increases or reductions in volume happen to be in geometric progression.* When one compresses a liter of air maintained at the temperature of 10°,
-
-(4/27) and it is reduced to 1/2 liter, a certain quantity of heat is released. This quantity will always be the same if one again reduces the volume from 1/2 liter to 1/4 liter, from 1/4 liter to 1/8, and so on. »
+:::{aside}
+« *When a gas varies in volume without changing temperature, the quantities of heat absorbed or released by this gas are in arithmetic progression, if the increases or reductions in volume happen to be in geometric progression.* When one compresses a liter of air maintained at the temperature of 10°, and it is reduced to 1/2 liter, a certain quantity of heat is released. This quantity will always be the same if one again reduces the volume from 1/2 liter to 1/4 liter, from 1/4 liter to 1/8, and so on. »
 
 Sadi Carnot, 1824 [[4](#ref-4)]
-
-(4/28)
-
-$1 p dp = R T_{\mathrm{cst}.}[\ln p]^{p_{2}} p_{1}$
-
-(4/29)
+:::
 
 This relation, identical to equation 4/27, should not surprise the insightful student, since the $pv =$ constant relationship ensures that for two given points in figure 4.11, the area under the curve is always equal to the area to the left of the curve.
 

@@ -89,7 +89,7 @@ Let’s imagine that we want to generate work by taking heat from a “hot” ob
 :::{figure} ../images/fig-7-1.jpg
 :label: fig-7-1
 :enumerator: 7.1
-:alt: Production of work with heat from a body at . The heat transfer allows work to be done, but also causes an increase in the fluid’s temperatu
+:alt: Production of work with heat from a body at 100 ◦C. The heat transfer allows work to be done, but also causes an increase in the fluid’s temperature.
 
 Production of work with heat from a body at $100^{\circ}C$. The heat transfer allows work to be done, but also causes an increase in the fluid’s temperature.
 :::
@@ -373,7 +373,7 @@ This quantity of work $W_{\mathrm{net}}$ represents the maximum that can be obta
 :::{figure} ../images/fig-7-8.jpg
 :label: fig-7-8
 :enumerator: 7.8
-:alt: The four stages of the Carnot engine, executed with a fixed mass quantity by separating them in time. The cycle is such that when the stages are performed in reverse
+:alt: The four stages of the Carnot engine, executed with a constant mass flow by separating them in space. Here too, the cycle is such that when the flow direction is reversed (becoming 1 →4 →3 →2 →1), the transfers are exactly opposite.
 
 The four stages of the Carnot engine, executed with a fixed mass quantity by separating them in time. The cycle is such that when the stages are performed in reverse
 :::
@@ -392,7 +392,7 @@ order $(1 \rightarrow 4 \rightarrow 3 \rightarrow 2 \rightarrow 1)$, the transfe
 :::{figure} ../images/fig-7-9.jpg
 :label: fig-7-9
 :enumerator: 7.9
-:alt: The four stages of the Carnot engine, executed with a constant mass flow by separating them in space. Here too, the cycle is such that when the flow direction is reversed
+:alt: The four stages of the Carnot engine, executed with a constant mass flow by separating them in space. Here too, the cycle is such that when the flow direction is reversed (becoming 1 →4 →3 →2 →1), the transfers are exactly opposite.
 
 The four stages of the Carnot engine, executed with a constant mass flow by separating them in space. Here too, the cycle is such that when the flow direction is reversed
 :::
@@ -411,35 +411,23 @@ Pressure-volume diagram of the Carnot engine performed with a perfect gas. The p
 
 *Diagram* CC-0 *Olivier Cleynen*
 
-« To fully utilize the motive power The perceptive student will have observed that in order for all these phases that can be made available, the expanto be reversible, the piston movement must be infinitely slow, and thus the
+:::{aside}
+« To fully utilize the motive power that can be made available, the expansion would have to be carried out until the temperature of the steam was reduced to that of the condenser; but practical considerations, derived from the manner in which the motive power of heat is employed in the arts, prevent this limit from being reached. »
 
-sion would have to be carried out until the temperature of the steam was fluid completes the cycle in an infinite amount of time. The Carnot engine reduced to that of the condenser; but therefore reaches maximum efficiency with infinitely low power.
-
-practical considerations, derived from the manner in which the motive power
-
-````{prf:example}
-
-of heat is employed in the arts, prevent Example 7.1
-
-````
-
-this limit from being reached. »
-
-````{prf:example}
-
-$^{\text{\'{E}mile} \mathrm{Clapeyron}, 1834 [5]}$ Perform a Carnot cycle between temperatures of $600^{\circ}C (1112 ^{\circ} F)$ and $100^{\circ}C (212 ^{\circ} F)$. Use $100 g (0.22 lb)$ of air trapped in a cylinder at a pressure of 1 bar. What amount of work must be invested? What is the work that will be recovered? What is the efficiency?
-
-We start by raising the temperature to $600^{\circ}C$ with a reversible adiabatic process $(1 \rightarrow 2)$. The energetic cost for this will be $w_{1\rightarrow 2}= c_{v}\Delta T = 718\times (600-100) = +359 kJ kg^{-1}$ (4/32) and $q_{1\rightarrow 2}= 0$. Equation 4/37 provides
-
-:::{math}
-\gamma 1.4
+Émile Clapeyron, 1834 [[5](#ref-5)]
 :::
 
-the final pressure: $p_{2}= p_{1}\left(\frac{T_{2}}{T_{1}}\right)^{\frac{\gamma}{\gamma -1}}= 1\times \left(\frac{600+273.15}{100+273.15}\right)^{\frac{1.4}{1.4-1}}= 19.6\,\mathrm{bar} = 284\,\mathrm{psi}$.
+The perceptive student will have observed that in order for all these phases to be reversible, the piston movement must be infinitely slow, and thus the fluid completes the cycle in an infinite amount of time. The Carnot engine therefore reaches maximum efficiency with infinitely low power.
 
-This phase’s sole purpose is to raise the temperature so that we
+````{prf:example}
+:label: ex-7-1
+:enumerator: 7.1
 
-can later absorb heat reversibly, which would be impossible if the gas temperature were below $600^{\circ}C$.
+Perform a Carnot cycle between temperatures of $600^{\circ}C (1112 ^{\circ} F)$ and $100^{\circ}C (212 ^{\circ} F)$. Use $100 g (0.22 lb)$ of air trapped in a cylinder at a pressure of 1 bar. What amount of work must be invested? What is the work that will be recovered? What is the efficiency?
+
+We start by raising the temperature to $600^{\circ}C$ with a reversible adiabatic process $(1 \rightarrow 2)$. The energetic cost for this will be $w_{1\rightarrow 2}= c_{v}\Delta T = 718\times (600-100) = +359 kJ kg^{-1}$ (4/32) and $q_{1\rightarrow 2}= 0$. Equation 4/37 provides the final pressure: $p_{2}= p_{1}\left(\frac{T_{2}}{T_{1}}\right)^{\frac{\gamma}{\gamma -1}}= 1\times \left(\frac{600+273.15}{100+273.15}\right)^{\frac{1.4}{1.4-1}}= 19.6\,\mathrm{bar} = 284\,\mathrm{psi}$.
+
+This phase’s sole purpose is to raise the temperature so that we can later absorb heat reversibly, which would be impossible if the gas temperature were below $600^{\circ}C$.
 
 ````
 
@@ -616,7 +604,7 @@ in a Carnot engine (actually, for any machine performing a reversible transforma
 :::{figure} ../images/fig-7-12.jpg
 :label: fig-7-12
 :enumerator: 7.12
-:alt: Experiment illustrating the absolute temperature scale proposed by William Thomson. A Carnot engine operating between $1000 K$ and $500 K$ rejects
+:alt: Experiment illustrating the absolute temperature scale proposed by William Thomson. A Carnot engine operating between 1000 K and 500 K rejects 500 = 50 % of the heat it receives. If the low temperature is four times lower, this rejection is four times lower ( 1000 250 ) than the heat received.
 
 Experiment illustrating the absolute temperature scale proposed by William Thomson. A Carnot engine operating between $1000 K$ and $500 K$ rejects
 :::
@@ -638,11 +626,13 @@ Thomson therefore had a *scale* — a method of defining a temperature as “twi
 
 The zero of this scale corresponds well to the zero temperature point, since with the experiment in figure 7.12 one then has an “abyss” of zero temperature that allows gases to be infinitely expanded down to zero temperature (thus converting all the internal energy of a fluid into work).
 
-« The particular convention is that There remained the choice of a standard. Thomson returned to Celsius’s the difference of temperatures between thermometer and took the same reference point (the freezing point of
+There remained the choice of a standard. Thomson returned to Celsius’s thermometer and took the same reference point (the freezing point of pure water at atmospheric pressure). Observing that the contraction and expansion of fluids remain proportional to the change in their absolute temperature, he assigned a value to this reference point that allows maintaining the same thermometric scale as Celsius. For this, the temperatures $100^{\circ}C$ and $0^{\circ}C$, which are known to allow a maximum efficiency of $26.8 \%$, must correspond to temperatures in $K$ spaced by 100 units. The calculation is simple – the student is encouraged to reproduce it – and Thomson obtained the relation:
 
-the freezing and boiling-points of wa- $^{\mathrm{ter} \mathrm{under} \mathrm{standard} \mathrm{atmospheric} \mathrm{pres}-}$ pure water at atmospheric pressure). Observing that the contraction and sure shall be called 100 degrees. » expansion of fluids remain proportional to the change in their absolute tem-
+:::{aside}
+« The particular convention is, that the difference of temperatures between the freezing- and boiling-points of water under standard atmospheric pressure shall be called 100 degrees. »
 
-William Thomson, 1854 [[15](#ref-15)] perature, he assigned a value to this reference point that allows maintaining the same thermometric scale as Celsius. For this, the temperatures $100^{\circ}C$ and $0^{\circ}C$, which are known to allow a maximum efficiency of $26.8 \%$, must correspond to temperatures in $K$ spaced by 100 units. The calculation is simple – the student is encouraged to reproduce it – and Thomson obtained the relation:
+William Thomson, 1854 [[15](#ref-15)]
+:::
 
 :::{math}
 :label: eq-7-5
@@ -713,19 +703,19 @@ Therefore, even before addressing the inevitable technological difficulties asso
 
 • Secondly, this equation is a strong argument for increasing the combustion temperature in engines.
 
-In practice, the low temperature $T_{L}$ is limited by the ambient air temperature. The only remaining parameter to increase the efficiency of an ideal engine is the temperature $T_{H}$. This relationship explains the surprising efforts made by engine designers to use high temperatures
+In practice, the low temperature $T_{L}$ is limited by the ambient air temperature. The only remaining parameter to increase the efficiency of an ideal engine is the temperature $T_{H}$. This relationship explains the surprising efforts made by engine designers to use high temperatures (and correspondingly, high pressures), even though real engines are far from reversible.
 
+:::{aside}
 « Thus we are led to establish the following general proposition: *The motive power of heat is independent of the agents employed to produce it; its quantity is determined solely by the temperatures of the bodies between which, as the final result, the transport of caloric takes place.* »
 
-(6/5) Sadi Carnot, 1824 [[4](#ref-4)]
+Sadi Carnot, 1824 [[4](#ref-4)]
+:::
 
-« $^{...\mathrm{our} \mathrm{aim} \mathrm{must} \mathrm{always} \mathrm{be} \mathrm{to}}$ *raise the temperatures and pressures to the highest working limit*. »
+:::{aside}
+« …our aim must always be *to raise the temperatures and pressures to the highest working limit*. »
 
 Rudolf Diesel, 1893 [[23](#ref-23), [24](#ref-24)]
-
-(7/6)
-
-(and correspondingly, high pressures), even though real engines are far from reversible.
+:::
 
 In summary, we can answer Carnot’s question as follows: heat loss from the engine (wasted energy) is fundamentally inevitable. The losses are minimized, but not avoided, when the temperature at which the coal is burned is high, and the ambient temperature is low.
 
@@ -952,7 +942,7 @@ The tragic disappearance of its creator would not suffice to slow down the progr
 :::{figure} ../images/fig-7-15.jpg
 :label: fig-7-15
 :enumerator: 7.15
-:alt: Diesel’s third prototype, and his first operational engine. The cylinder diameter was $25 cm$ and the stroke reached $40 cm$. It would be tested at the technical
+:alt: Diesel’s third prototype, and his first operational engine. The cylinder diameter was 25 cm and the stroke reached 40 cm. It would be tested at the technical Figure 7.16: A nine-cylinder Sulzer RTA76 Diesel engine university of Munich where it achieved 26.2 % efficiency producing 25 MW of power at 95 rpm. This unit is inin 1897. It is exhibited at the Deutsches Museum. stalled here in a factory but the model is commonly used to propel merchant ships.
 
 Diesel’s third prototype, and his first operational engine. The cylinder diameter was $25 cm$ and the stroke reached $40 cm$. It would be tested at the technical
 :::

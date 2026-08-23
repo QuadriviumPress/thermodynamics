@@ -72,19 +72,13 @@ In the vocabulary of thermodynamics, the concept of a “one-way change” is of
 
 Irreversible processes in fluids invariably lead to states where the temperature, pressure, or volume are greater than they would have been with a reversible process.
 
-« For this purpose let us conceive In order to quantify the irreversibility of a process, we will quantify *the* the matter, after the changes of condiamount of heat that one would need to remove from the body to bring it back*
+:::{aside}
+« For this purpose let us conceive the matter, after the changes of condition which has to be examined in this matter, reduced to its original condition by any reversible operation. We shall thereby obtain a small cyclical process, to which the equation (II) will be just as applicable as to the whole. Consequently, if we know the quantities of heat which the matter has received during the process, and the temperatures which correspond thereto, the negative integral $-\int \frac{\mathrm{d}Q}{T}$ will give the uncompensated transformation involved therein. »
 
-tion which has to be examined in this matter, reduced to its original condition *to its initial state reversibly*. By subtracting to this amount the heat that
+Rudolf Clausius, 1856 [[16](#ref-16), [18](#ref-18), [20](#ref-20)]
+:::
 
-by any reversible operation. We shall was actually transferred, we obtain the heat that was somehow needlessly
-
-thereby obtain a small cyclical process, to which the equation (II) will be just created during the process. Moreover, the lower the temperature at which
-
-as applicable as to the whole. Consethis heat is created, and the less of it can be transformed into work (§7.5.1).
-
-quently, if we know the quantities of heat which the matter has received durWe will thus “penalize” the heat cost by dividing it by the temperature.
-
-ing the process, and the temperatures $^{\mathrm{which} \mathrm{correspond} \mathrm{thereto}, \mathrm{the} \mathrm{nega}-}$ In this way, we will obtain a quantity in joules per kelvin – the entropy the negative integral $-\\int \\frac{\\mathrm{d}Q}{T}$ will give the uncreated during the process – which will be zero during reversible processes compensated transformation involved therein » and will always be positive during irreversible processes. It is this creation $_{\mathrm{Rudolf} \mathrm{Clausius}, 1856 [16, 18, 20]}$ that will be the unmistakable sign that the process is possible only in one direction.
+In order to quantify the irreversibility of a process, we will quantify *the amount of heat that one would need to remove from the body to bring it back to its initial state reversibly*. By subtracting to this amount the heat that was actually transferred, we obtain the heat that was somehow needlessly created during the process. Moreover, the lower the temperature at which this heat is created, and the less of it can be transformed into work (§7.5.1). We will thus “penalize” the heat cost by dividing it by the temperature. In this way, we will obtain a quantity in joules per kelvin – the entropy created during the process – which will be zero during reversible processes and will always be positive during irreversible processes. It is this creation that will be the unmistakable sign that the process is possible only in one direction.
 
 (sec-8-2)=
 ## 8.2 Definition
@@ -337,7 +331,7 @@ Figure 8.5: Thermodynamiccycleduringwhichheathasbeenabsorbed, andtherefore trans
 :::{figure} ../images/fig-8-6.svg
 :label: fig-8-6
 :enumerator: 8.6
-:alt: Carnot engine cycle, on a diagram for an ideal gas (left), on a diagram for a liquid-vapor system (right), and on a diagram (bottom). Regard
+:alt: Carnot engine cycle, on a 𝑝-𝑣diagram for an ideal gas (left), on a 𝑝-𝑣 diagram for a liquid-vapor system (right), and on a 𝑇-𝑠diagram (bottom). Regardless of the fluid used, the temperature-entropy diagram remains the same.
 
 Carnot engine cycle, on a $p-v$ diagram for an ideal gas (left), on a $p-v$ diagram for a liquid-vapor system (right), and on a $T-s$diagram (bottom). Regardless of the fluid used, the temperature-entropy diagram remains the same.
 :::
@@ -493,7 +487,7 @@ The change in entropy is $\Delta S= m\Delta s= 2\times 277.4= +554.8\,\mathrm{J\
 :::{figure} ../images/fig-8-7.jpg
 :label: fig-8-7
 :enumerator: 8.7
-:alt: Isobaric and isochoric curves on a diagram, for an ideal gas. Here
+:alt: Isobaric and isochoric curves on a 𝑇-𝑠diagram, for an ideal gas. Here 𝑝1 > 𝑝2 and 𝑣3 > 𝑣4.
 
 Isobaric and isochoric curves on a $T-s$ diagram, for an ideal gas. Here
 :::
@@ -763,50 +757,32 @@ Here we come to the central concept that has opened the doors of physics to ther
 (sec-8-4-1)=
 ### 8.4.1 Irreversibilities during heat transfers
 
-« If two transformations which In order to reward ourselves for already making it halfway through the without necessitating any other per-chapter, we make ourselves a cup of tea. Because no one can resist a little
+:::{aside}
+« If two transformations which, without necessitating any other permanent change, can mutually replace one another, be called equivalent, then […] the passage of the quantity of heat $Q$ from the temperature $t_{1}$ to the temperature $t_{2}$, has the equivalence-value $Q(\frac{1}{T_{2}}-\frac{1}{T_{1}})$. »
 
-manent change, can mutually replace one another, be called equivalent, then thermodynamics, we press our mug closely against a bottle of cold water.
+Rudolf Clausius, 1854 [[13](#ref-13), [18](#ref-18), [22](#ref-22)]
+:::
 
-[...] the passage of the quantity of heat $_{Q \mathrm{from} \mathrm{the} \mathrm{temperature} t_{1}\mathrm{to} \mathrm{the} \mathrm{tem}-}$ O wonder, o joy! We have before our eyes a source of entropy. Let’s
-
-p$Q$e$($r $\frac{\mathrm{atu}_{1}}{T_{2}}$ r$-$e $\frac{t_{12},}{T_{1}} )$h a$_{[.}\mathrm{s}_{..]}$ t he» e quivalence-value investigate Our mug A is at temperature $T_{\mathrm{A}}$, higher than $T_{\mathrm{B}}$, the temperature of the
-
-Rudolf Clausius, 1854 [[13](#ref-13), [18](#ref-18), [22](#ref-22)] water bottle (figure 8.9). The two bodies are brought into contact, and an infinitesimal amount of heat δ$q$ passes from A to B.
+In order to reward ourselves for already making it halfway through the chapter, we make ourselves a cup of tea. Because no one can resist a little thermodynamics, we press our mug closely against a bottle of cold water. O wonder, o joy! We have before our eyes a source of entropy. Let’s investigate. Our mug A is at temperature $T_{\mathrm{A}}$, higher than $T_{\mathrm{B}}$, the temperature of the water bottle (figure 8.9). The two bodies are brought into contact, and an infinitesimal amount of heat $\delta q$ passes from A to B.
 
 If we consider only a small amount of time, the temperature of body A is uniform, and its heat loss occurs reversibly. Thus, the entropy change of A is:
 
 :::{math}
-ds_{\mathrm{A}}= - \frac{\mathrm{δ}q}{}
-:::
-
-:::{math}
-T_{\mathrm{A}}
+ds_{\mathrm{A}}= -\frac{\delta q}{T_{\mathrm{A}}}
 :::
 
 The temperature of body B is also uniform: the process there is also internally reversible, and the change of its entropy is:
 
 :::{math}
-ds_{\mathrm{B}}= + \frac{\mathrm{δ}q}{}
-:::
-
-:::{math}
-T_{\mathrm{B}}
+ds_{\mathrm{B}}= +\frac{\delta q}{T_{\mathrm{B}}}
 :::
 
 However, the temperature of the entire system [A+B] is not uniform at all: the process *there* is not internally reversible. Even if the system receives no heat from the external surroundings, it does not have “a” temperature, and we cannot apply integral 8/2, $\int ^{2}_{1}(T ds)_{\mathrm{rev}.}$ to calculate its entropy change. The entropy change of system [A+B] is the sum of those of its components, namely:
 
 :::{math}
-- \frac{\mathrm{δ}q}{}
-:::
-
-:::{math}
 :label: eq-8-15
 :enumerator: 8/15
-ds_{[\mathrm{A}\&\mathrm{B}]}= ds_{\mathrm{A}}+ ds_{\mathrm{B}}= δ q
-:::
-
-:::{math}
-T_{\mathrm{B}}T_{\mathrm{A}}
+ds_{[\mathrm{A}\&\mathrm{B}]}= ds_{\mathrm{A}}+ ds_{\mathrm{B}}= \frac{\delta q}{T_{\mathrm{B}}} - \frac{\delta q}{T_{\mathrm{A}}}
 :::
 
 :::{figure} ../images/fig-8-9.jpg
@@ -838,9 +814,13 @@ Entropy changes for bodies A and B. The two shaded areas are equal (representing
 
 *Diagram* CC-0 *Olivier Cleynen*
 
-This small investigation shows us that every temperature gradient leads to « Wherever there exists a difference *in temperature, there can be a produc-*
+This small investigation shows us that every temperature gradient leads to irreversibility, resulting in an increase in total entropy. Any heat transfer between two objects of different temperatures can be viewed as a missed opportunity to do work – likely a source of anxiety for both students and engineers. By placing a Carnot engine between bodies A and B, no irreversibility would occur, and $ds_{[\mathrm{A}\&\mathrm{B}]}$ would be zero. By placing a thermal engine with low efficiency, $ds_{[\mathrm{A}\&\mathrm{B}]}$ would be small; the case above where heat transfer occurs without a machine is the limiting case where no work is produced.
 
-irreversibility, resulting in an increase in total entropy. Any heat transfer *tion of motive power*. Conversely wherbetween two objects of different temperatures can be viewed as a missed ever this power can be consumed it is possible to generate a difference in temopportunity to do work – likely a source of anxiety for both students perature, it is possible to cause a disrupand engineers. By placing a Carnot engine between bodies A and B, no tion of equilibrium in the caloric » irreversibility would occur, and $ds_{[\mathrm{A}\&\mathrm{B}]}$ would be zero. By placing a thermal Sadi Carnot, 1824 [[4](#ref-4)] engine with low efficiency, $ds_{[\mathrm{A}\&\mathrm{B}]}$ would be small; the case above where heat transfer occurs without a machine is the limiting case where no work is produced.
+:::{aside}
+« Wherever there exists a difference in temperature, there can be a production of motive power. Conversely wherever this power can be consumed, it is possible to generate a difference in temperature, it is possible to cause a disruption of equilibrium in the caloric. »
+
+Sadi Carnot, 1824 [[4](#ref-4)]
+:::
 
 (sec-8-4-2)=
 ### 8.4.2 Irreversibilities during adiabatic
@@ -866,17 +846,15 @@ Theoretical (isentropic, solid lines) and real (dotted lines) adiabatic expansio
 (sec-8-4-3)=
 ### 8.4.3 The second law and entropy
 
-« Heat can never pass from a colder We have stated in chapter 7 (*the second law*) that heat spontaneously moves *to a warmer body without some other* only towards a lower temperature – a postulate we call the *second law*. We
+:::{aside}
+« Heat can never pass from a colder to a warmer body without some other change, connected therewith, occurring at the same time. »
 
-*change, connected therewith, occurring* at the same time » can now formulate this statement with a mathematical expression.
-
-Rudolf Clausius, 1854 [[13](#ref-13), [18](#ref-18), [22](#ref-22)] **During a heat transfer** from a body at temperature $T_{\mathrm{A}}$ to another at tem-
-
-:::{math}
-\mathrm{perature} T_{\mathrm{B}}, \mathrm{the} \mathrm{overall} \mathrm{entropy} \mathrm{change} \Delta s = \frac{-q}{T_{\mathrm{A}}} + \frac{q}{T_{\mathrm{B}}} \mathrm{is} \mathrm{necessarily}
+Rudolf Clausius, 1854 [[13](#ref-13), [18](#ref-18), [22](#ref-22)]
 :::
 
-zero or positive because $T_{\mathrm{A}}$ is necessarily equal to or greater than $T_{\mathrm{B}}$.
+We have stated in chapter 7 (*the second law*) that heat spontaneously moves only towards a lower temperature – a postulate we call the *second law*. We can now formulate this statement with a mathematical expression.
+
+**During a heat transfer** from a body at temperature $T_{\mathrm{A}}$ to another at temperature $T_{\mathrm{B}}$, the overall entropy change $\Delta s = \frac{-q}{T_{\mathrm{A}}} + \frac{q}{T_{\mathrm{B}}}$ is necessarily zero or positive because $T_{\mathrm{A}}$ is necessarily equal to or greater than $T_{\mathrm{B}}$.
 
 **During a work transfer** any irreversibility results in a higher final temperature than it could have been (see §2.4.3). Achieving the same final state with a reversible path thus requires a heat input, in other words, a positive term $\int (\frac{\mathrm{δ}Q}{T})_{\mathrm{rev}.}$. An irreversibility therefore leads to an increase in total entropy.
 
@@ -1041,15 +1019,15 @@ This desire to find the absolute order in which states succeed one another, in o
 
 around the quantity $\frac{Q}{T}$, he formalized a concept that his French colleague Frédéric Reech and Scottish counterpart William Rankine had only touched upon [[36](#ref-36)], and synthesized all the contemporary knowledge of his discipline.
 
-« I have intentionally formed the Clausius created the word *entropy* based on the ancient Greek *tropè* τροπή word *entropy* so as to be as similar as (revolution, change), which, coupled with his authoritarian tone, did nothing
+:::{aside}
+« I have intentionally formed the word *entropy* so as to be as similar as possible to the word *energy*; for the two magnitudes to be denoted by these words are so nearly allied in their physical meanings, that a certain similarity in designation appears to be desireable. »
 
-possible to the word *energy*; for the two magnitudes to be denoted by these to win the enthusiasm of his contemporaries. But the concept is so powerful, words are so nearly allied in their physand equation 8/16 so simple, that they were universally accepted.
+Rudolf Clausius, 1865 [[17](#ref-17), [18](#ref-18), [19](#ref-19)]
+:::
 
-ical meanings, that a certain similarity in designation appears to be desireAfter a century of efforts, the physics of heat had caught up with engine
+Clausius created the word *entropy* based on the ancient Greek *tropè* τροπή (revolution, change), which, coupled with his authoritarian tone, did nothing to win the enthusiasm of his contemporaries. But the concept is so powerful, and equation 8/16 so simple, that they were universally accepted.
 
-able. » technology. We were finally able to fully and quantitatively describe the
-
-Rudolf Clausius, 1865 [[17](#ref-17), [18](#ref-18), [19](#ref-19)] behavior of bodies without having to delve into that of their constituents, such as molecules, atoms, or subatomic particles: entropy was the last missing piece of what we now call *macroscopic thermodynamics*.
+After a century of efforts, the physics of heat had caught up with engine technology. We were finally able to fully and quantitatively describe the behavior of bodies without having to delve into that of their constituents, such as molecules, atoms, or subatomic particles: entropy was the last missing piece of what we now call *macroscopic thermodynamics*.
 
 (sec-8-5-3)=
 ### 8.5.3 Entropy at the microscopic scale
@@ -1131,7 +1109,7 @@ He was actually named Benjamin Thompson (1753-1814) and was an American from Wob
 :::{figure} ../images/fig-8-12.jpg
 :label: fig-8-12
 :enumerator: 8.12
-:alt: Sir Benjamin Thompson of Rumford, militia fgi hter, secret agent, architect, Minister of War, bold
+:alt: Sir Benjamin Thompson of Rumford, militia fighter, secret agent, architect, Minister of War, bold experimenter, cosmopolitan seducer, and of course, thermodynamicist.
 
 Sir Benjamin Thompson of Rumford, militia fgi hter, secret agent, architect, Minister of War, bold
 :::

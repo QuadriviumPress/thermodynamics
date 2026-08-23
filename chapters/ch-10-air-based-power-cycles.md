@@ -80,9 +80,9 @@ In order to address this concept, let us first study the case of an engine whose
 :::{figure} ../images/fig-10-1.jpg
 :label: fig-10-1
 :enumerator: 10.1
-:alt: The cycle of a hypothetical engine with low work ratio. The delivered poweris$\dot{W}_{\mathrm{net}}=\dot{W}_{\mathrm{compression}}+\dot{W}_{\mathrm{expansion}}= +90+(-100) = -10 W$,andtheefficiency
+:alt: The cycle of a hypothetical engine with low work ratio. The delivered poweriṡ𝑊net =̇ 𝑊compression+̇𝑊expansion = +90+(−100) = −10 W, and the efficiency 20 = 50 %.
 
-The cycle of a hypothetical engine with low work ratio. The delivered poweris$\dot{W}_{\mathrm{net}}=\dot{W}_{\mathrm{compression}}+\dot{W}_{\mathrm{expansion}}= +90+(-100) = -10 W$,andtheefficiency
+The cycle of a hypothetical engine with low work ratio. The delivered power is $\dot{W}_{\mathrm{net}}=\dot{W}_{\mathrm{compression}}+\dot{W}_{\mathrm{expansion}}= +90+(-100) = -10 W$, and the efficiency
 :::
 
 :::{math}
@@ -333,7 +333,7 @@ A commonly adopted solution for this is *turbocharging*. It involves delegating 
 
 Since the use of a turbocharger negatively affects the responsiveness of an engine, it is possible to allow the intake air to bypass it while the engine speed is changing. Furthermore, temperature changes in the turbo can be compensated for by cooling before insertion into the cylinders (this technique is studied further in §10.6.1). These processes make modern engines complex thermodynamic systems capable of performing a wide range of very different cycles depending on operating conditions.
 
-Figure 10.7: A cutaway view of a turbo to show its internal arrangement. Atmospheric air enters from the right and is compressed as it is propelled outward by the centrifugal compressor; it is then fed into the engine. Exhaust gases enter from the center left and exit to the left after spinning the centripetal turbine, which powers the compressor via the central rotating shaft. Since the only moving part is very compact(about$20 cm$ here), very high rotation speeds can be achieved, typically exceeding $200 000 rpm$. *Photo* nasa *(public domain)*
+Figure 10.7: A cutaway view of a turbo to show its internal arrangement. Atmospheric air enters from the right and is compressed as it is propelled outward by the centrifugal compressor; it is then fed into the engine. Exhaust gases enter from the center left and exit to the left after spinning the centripetal turbine, which powers the compressor via the central rotating shaft. Since the only moving part is very compact (about $20 cm$ here), very high rotation speeds can be achieved, typically exceeding $200 000 rpm$. *Photo* nasa *(public domain)*
 
 (sec-10-4)=
 ## 10.4 Components of Gas Turbomachinery
@@ -343,19 +343,13 @@ Before delving into the cycles of turbine engines, we will briefly review the op
 (sec-10-4-1)=
 ### 10.4.1 Compressor
 
-« $^{\mathrm{In} \mathrm{order} \mathrm{to} \mathrm{grant} \mathrm{air} \mathrm{a} \mathrm{great} \mathrm{ex}-}$ The compression and expansion phases in engines are often adiabatic, and pansion in volume, in order to produce always irreversible. It is difficult to achieve high-quality flow in the comthrough this expansion a large change in temperature it would be necessary pressor, moreso than in the turbine because the pressure gradient promotes to take it first under a sufficiently high boundary layer separation. It is a heavy, bulky component with complex
-
-pressure [...] This operation would require a special apparatus, an apparatus geometry ([Figures 10.8](#fig-10-8) and 10.9). Most compressors are *axial*, meaning that
-
-which does not exist in steam engines. the air passes through them parallel to the axis of rotation, but sometimes
-
-In these, water is in the liquid state when it is made to enter the boiler; it recentrifugal* compressors are used, which sling the air radially; regardless of
-
-quires, for its introduction, only a small the method used, the thermodynamic process undergone by the air remains
-
-force pump of small dimensions. » the same.
+:::{aside}
+« In order to grant air a great expansion in volume, in order to produce through this expansion a large change in temperature, it would be necessary to take it first under a sufficiently high pressure […] This operation would require a special apparatus, an apparatus which does not exist in steam engines. In these, water is in the liquid state when it is made to enter the boiler; it requires, for its introduction, only a small force pump of small dimensions. »
 
 Sadi Carnot, 1824 [[4](#ref-4)]
+:::
+
+The compression and expansion phases in engines are often adiabatic, and always irreversible. It is difficult to achieve high-quality flow in the compressor, moreso than in the turbine because the pressure gradient promotes boundary layer separation. It is a heavy, bulky component with complex geometry ([Figures 10.8](#fig-10-8) and 10.9). Most compressors are *axial*, meaning that the air passes through them parallel to the axis of rotation, but sometimes *centrifugal* compressors are used, which sling the air radially; regardless of the method used, the thermodynamic process undergone by the air remains the same.
 
 :::{figure} ../images/fig-10-8.jpg
 :label: fig-10-8
@@ -458,7 +452,7 @@ The heat input of turbomachines takes place in one or more combustion chambers (
 :::{figure} ../images/fig-10-10.jpg
 :label: fig-10-10
 :enumerator: 10.10
-:alt: Section of an annular combustion chamber in which the flow was from left to right. The photo shows a section of a Rolls-Royce Turboméca Adou
+:alt: Section of an annular combustion chamber in which the flow was from left to right. The photo shows a section of a Rolls-Royce Turboméca Adour, a small turbofan engine designed in 1968.
 
 Section of an annular combustion chamber in which the flow was from left to right. The photo shows a section of a Rolls-Royce Turboméca *Adour*, a small turbofan engine designed in 1968.
 :::
@@ -516,16 +510,18 @@ approximately $500 MW$ of shaft power.
 (sec-10-4-4)=
 ### 10.4.4 Nozzle
 
-« $^{\mathrm{When} \mathrm{indeed} \mathrm{two} \mathrm{equally} \mathrm{com}-}$ pressed fluids escape through two small equal orifices, their velocities are in inverse proportion to the square root of their densities. »
+:::{aside}
+« When indeed two equally compressed fluids escape through two small equal orifices, their velocities are in inverse proportion to the square root of their densities. »
 
 Louis Joseph Gay-Lussac, 1807 [[3](#ref-3)]
+:::
 
 :::{figure} ../images/fig-10-12.jpg
 :label: fig-10-12
 :enumerator: 10.12
-:alt: Turbine of a gas generator. The photographed turbine, a Siemens sgt5, can accept an air and water flow rate of $690 kg s^{-1}(1521 lb/s)$. It delivers
+:alt: Turbine of a gas generator. The photographed turbine, a Siemens sgt5, can accept an air and water flow rate of 690 kg s−1 (1521 lb/s). It delivers approximately 500 MW of shaft power.
 
-Turbine of a gas generator. The photographed turbine, a Siemens sgt5, can accept an air and water flow rate of $690 kg s^{-1}(1521 lb/s)$. It delivers
+Turbine of a gas generator. The photographed turbine, a Siemens sgt5, can accept an air and water flow rate of $690 kg s^{-1}(1521 lb/s)$. It delivers approximately $500 MW$ of shaft power.
 :::
 
 *Photo* CC-by-sa *Siemens Pressebild*
@@ -567,7 +563,7 @@ $h_{\mathrm{A}}+ 1 _{\mathrm{A}}= h_{\mathrm{B}}+ 1 _{\mathrm{B}}$ (10/10) $2C^{
 :::{figure} ../images/fig-10-14.jpg
 :label: fig-10-14
 :enumerator: 10.14
-:alt: The nozzles of two General Electric f404 engines equipping a fighter aircraft. The geometry of the nozzle (not covered in this book) is prog
+:alt: The nozzles of two General Electric f404 engines equipping a fighter aircraft. The geometry of the nozzle (not covered in this book) is programmed to adapt to the engine mass flow and whether or not afterburning is used.
 
 The nozzles of two *General Electric* f404 engines equipping a fighter aircraft. The geometry of the nozzle (not covered in this book) is programmed to adapt to the engine mass flow and whether or not afterburning is used.
 :::
@@ -661,22 +657,15 @@ Within the realm of *turbomachinery* (machines which transfer power between a fl
 
 • In air propulsion, the working fluid can be used as a medium of propulsion itself. It is sufficient to let the air exit the turbine with a residual pressure and let it expand in a nozzle. This generates a thrust by reaction (equal to the mass flow rate multiplied by its speed): this is the working principle of the jet engine.
 
-Thus, gas turbines are used in applications where high power is required « As the steam turbine without bringing an actual betterment of steam
+Thus, gas turbines are used in applications where high power is required with significant weight or space constraints.
 
-with significant weight or space constraints. economy, has entered into the industry because of its constructive simplicity,
+:::{aside}
+« As the steam turbine, without bringing an actual betterment of steam economy, has entered into the industry because of its constructive simplicity, so will it be with a gas turbine, which is constructively simpler than the gas motor, provided it will only exceed the steam motors in efficiency. »
 
-The major drawback of gas turbines is that their efficiency and responsiveso will it be with a gas turbine, which
+Aurel Stodola, 1904, [[26](#ref-26), [27](#ref-27)]
+:::
 
-ness drop very quickly at low power levels. At partial load, the compression is constructively simpler than the gas motor, provided it will only exceed the
-
-ratio and isentropic efficiency of turbines and compressors collapse, because
-
-steam motors in efficiency. »
-
-
-it is hard to control fluid flow when the velocity of the rotor blades relative Aurel Stodola, 1904, [[26](#ref-26), [27](#ref-27)]
-
-to stator blades is suboptimal. Gas turbines are therefore only useful in applications where high powers are required continuously. A gas turbine would be for example very poorly suited for road transport, because changes in power there are frequent and must be instantaneously acted on.
+The major drawback of gas turbines is that their efficiency and responsiveness drop very quickly at low power levels. At partial load, the compression ratio and isentropic efficiency of turbines and compressors collapse, because it is hard to control fluid flow when the velocity of the rotor blades relative to stator blades is suboptimal. Gas turbines are therefore only useful in applications where high powers are required continuously. A gas turbine would be for example very poorly suited for road transport, because changes in power there are frequent and must be instantaneously acted on.
 
 (sec-10-5-2)=
 ### 10.5.2 The gas generator
@@ -686,7 +675,7 @@ The heart of any gas turbine engine is called the *gas generator*. It contains o
 :::{figure} ../images/fig-10-16.svg
 :label: fig-10-16
 :enumerator: 10.16
-:alt: A “gas generator” (schematic drawing and temperature-entropy diagram). This machine has no interest in itself but has many derived applications. One of them is the *turbocharger*, for which a piston engine acts as the combustion
+:alt: A “gas generator” (schematic drawing and temperature-entropy diagram). This machine has no interest in itself but has many derived applications. One of them is the turbocharger, for which a piston engine acts as the combustion chamber, as described in §10.3.5.
 
 A “gas generator” (schematic drawing and temperature-entropy diagram). This machine has no interest in itself but has many derived applications. One of them is the *turbocharger*, for which a piston engine acts as the combustion
 :::
@@ -824,7 +813,7 @@ In order reduce the power absorbed by the compressor, *intercooling* is sometime
 :::{figure} ../images/fig-10-22.jpg
 :label: fig-10-22
 :enumerator: 10.22
-:alt: A turboshaft generator with intercooler and reheat system (schematic and temperature-entropy diagram). The intercooler cools the air in the midst of
+:alt: A turboshaft generator with intercooler and reheat system (schematic and temperature-entropy diagram). Theintercoolercoolstheairinthemidstofcompression;whilethesecondcombustion chamber reheats the gases it in the midst of the expansion. The two modifications are independent of each other and each can be installed alone.
 
 A turboshaft generator with intercooler and reheat system (schematic and temperature-entropy diagram). The intercooler cools the air in the midst of compression;while the second combustion chamber reheats the gases it in the midst of the expansion. The two modifications are independent of each other and each can be installed alone.
 :::
@@ -922,9 +911,9 @@ cooling, and two main air flows. It is left to the student to trace the cycle on
 :::{figure} ../images/fig-10-26.jpg
 :label: fig-10-26
 :enumerator: 10.26
-:alt: Thermodynamic circuit of a modern turbofan engine. The machine combines multiple spools, mechanical and pneumatic power extractions, compressor bleeds for turbine
+:alt: Thermodynamic circuit of a modern turbofan engine. The machine combines multiple spools, mechanical and pneumatic power extractions, compressor bleeds for turbine cooling, and two main air flows. It is left to the student to trace the cycle on a temperature-entropy diagram.
 
-Thermodynamic circuit of a modern turbofan engine. The machine combines multiple spools, mechanical and pneumatic power extractions, compressor bleeds for turbine
+Thermodynamic circuit of a modern turbofan engine. The machine combines multiple spools, mechanical and pneumatic power extractions, compressor bleeds for turbine cooling, and two main air flows. It is left to the student to trace the cycle on a temperature-entropy diagram.
 :::
 
 ::::{admonition} A Bit of History
@@ -1009,9 +998,9 @@ Schematic diagram of the thermody-
 :::{figure} ../images/fig-10-29.jpg
 :label: fig-10-29
 :enumerator: 10.29
-:alt: namic circuit of the Napier Nomad II. A variable-ratio mechanical-hydraulic reducer connected the two units, which now drove the same propel
+:alt: Schematic diagram of the thermodynamic circuit of the Napier Nomad II. A variable-ratio mechanical-hydraulic reducer connected the two units, which now drove the same propeller.
 
-namic circuit of the *Napier Nomad II*. A variable-ratio mechanical-hydraulic reducer connected the two units, which now drove the same propeller.
+Schematic diagram of the thermodynamic circuit of the *Napier Nomad II*. A variable-ratio mechanical-hydraulic reducer connected the two units, which now drove the same propeller.
 :::
 
 ::::{admonition} *Diagram by users* $⋅$ *Commons Tataroko-common, Aaa3-other &*

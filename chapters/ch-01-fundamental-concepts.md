@@ -126,7 +126,7 @@ In everyday language, the term “power” is used to quantify *the maximum usef
 :::{figure} ../images/fig-1-2.svg
 :label: fig-1-2
 :enumerator: 1.2
-:alt: A trailer, with zero power but capable of delivering a lot of energy. The combustion of of kerosene releases about as heat; A Trent 900 turb
+:alt: A trailer, with zero power $(\dot{Q} = 0 W)$ but capable of delivering a lot of energy. The combustion of $20 t$ of kerosene releases about $Q = 800 GJ$ as heat; A *Trent 900* turbofan engine, with very high power (able to supply$\dot{W} = 14 MW$ to a commercial aircraft) but devoid of energy $(0 J)$.
 
 A trailer, with zero power $(\dot{Q} = 0 W)$ but capable of delivering a lot of energy. The combustion of $20 t$ of kerosene releases about $Q = 800 GJ$ as heat; A *Trent 900* turbofan engine, with very high power (able to supply$\dot{W} = 14 MW$ to a commercial aircraft) but devoid of energy $(0 J)$.
 :::
