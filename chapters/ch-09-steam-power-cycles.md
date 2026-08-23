@@ -681,90 +681,44 @@ temperature-entropy diagram, and imagining themselves at the controls of the mac
 
 ::::{admonition} A Bit of History
 :class: note
-
-*Engineering Thermodynamics* by Olivier Cleynen
-
-::::
-
-::::{admonition} A Bit of History:
-:class: note
 :label: hist-9-11
 
-going to and back from dozens of combustion chambers were labyrinthine. Two engineers, the German
+**From the Steam Turbine to the Gas Turbine**
 
-From the Steam Turbine Hans von Ohain and the English Frank Whittle, independently dedicated themselves to the design of
+At the beginning of the 20th century, the *turbine* replaced pistons and cylinders in all steam engines. A turbine has a complex geometry, sensitive to manufacturing imperfections, making its construction more delicate than that of cylindrical pistons. In return, it makes for an engine with simple arrangement, little vibration, and with easier assembly, maintenance, and lubrication, allowing for increased power or reduced volume. The Anglo-Irish engineer Charles Parsons dramatically demonstrated this in 1897 with the *Turbinia* (figure 9.23), the first ship of its kind, which was so fast that no military vessel could catch up with it. Ten years later, the entire Royal Navy had switched to turbines for ship propulsion.
 
-to the Gas Turbine a gas turbine engine in order to break free from this
+Developing a gas turbine engine is much more challenging than for steam. Certainly, air (or burnt gases) and dry steam have very similar properties: thus a steam turbine works very well with compressed air. The difficulty lies at the other end of the engine. In steam engines, compressing water is done in the liquid state, which is very efficient. Compressing water at $10^{\circ}C$ from $1$ to 10 bar, for example, only requires
 
 :::{math}
-^{\mathrm{complexity}.}
+:label: eq-9-4-example
+w_{\mathrm{A}\rightarrow \mathrm{B}}\approx v_{L}(p_{\mathrm{B}}-p_{\mathrm{A}}) = 0.001(10-1)\times 10^{5}= 900\,J\,kg^{-1}
 :::
 
-At the beginning of the 20th century, the *turbine* replaced pistons and cylinders in all steam engines. A turbine has a complex geometry, sensitive to manufacturing imperfections, making its construction more delicate than that of cylindrical pistons. In return, it makes for an engine with simple arrangement, little vibration, and with easier assembly, maintenance, and lubrication, allowing for increased power or reduced volume. The AngloIrish engineer Charles Parsons dramatically demonstrated this in 1897 with the *Turbinia* (figure 9.23), the first ship of its kind, which was so fast that no military vessel could catch up with it. Ten years later, the entire Royal Navy had switched to turbines for ship propulsion. $_{\mathrm{Figure}9.24: \mathrm{Cross-sectionofaPratt} \& \mathrm{Whitney} \mathrm{Twin} \mathrm{Wasp}}$ engine (1932), showing the internal arrangement with connecting rods and crankshafts connecting the two rows of seven pistons arranged in a star pattern. The engine, with a displacement of $30 L$, produced over $1000 hp$ and was produced in over $170 000$ units. *Photo* CC-by-sa *Olivier Cleynen*
+(equation 9/4). In contrast, doing the same with air requires a minimum specific power of
 
-Developing a gas turbine engine is much more challenging than for steam. Certainly, air (or burnt gases) and dry steam have very similar properties: thus a steam turbine works very well with compressed air. The difficulty lies at the other end of the engine. In steam engines, compressing water is done in the liquid state, which is very efficient. Compressing water at $10^{\circ}C$ from $1$ to 10 bar, for exam-
+:::{math}
+w_{\mathrm{A}\rightarrow \mathrm{B}}= c_{p}\Delta T = c_{p}\bigl(T_{\mathrm{A}}(p_{\mathrm{B}}/p_{\mathrm{A}})^{\frac{\gamma-1}{\gamma}}- T_{\mathrm{A}}\bigr) = 1005 \bigl(283.15 \times 10^{\frac{0.4}{1.4}}- 283.15\bigr) = 265\,kJ\,kg^{-1}
+:::
 
-::::
+(equations 4/34 and 4/37), almost three hundred times more!
 
 :::{figure} ../images/fig-9-23.jpg
 :label: fig-9-23
 :enumerator: 9.23
-:alt: The Turbinia, Charles Parsons’ yacht used
+:alt: The Turbinia, Charles Parsons’ yacht used as a demonstrator for his research in maritime propulsion. With its three steam turbines and nine propellers, it reached 60 km/h and allowed its owner to ridicule the Royal Navy during Queen Victoria’s jubilee parade in 1897.
 
-The *Turbinia*, Charles Parsons’ yacht used
-:::
-
-::::{admonition} ple, only requires $w_{\mathrm{A}\rightarrow \mathrm{B}}\approx v_{L}(p_{\mathrm{B}}-p_{\mathrm{A}}) = 0.001(10-$
-:class: note
-:label: hist-9-12
-
-:::{math}
-ple, only requires w_{\mathrm{A}\rightarrow \mathrm{B}}\approx v_{L}(p_{\mathrm{B}}-p_{\mathrm{A}}) = 0.001(10-
-:::
-
-as a demonstrator for his research in maritime propulsion. With its three steam turbines and nine propellers, $1) \times 10^{5}= 900 J kg^{-1}$ (9/4). In contrast, doing the it reached $60 km/h$ and allowed its owner to ridicule the same with air requires a minimum specific power
-
-:::{math}
-\frac{\gamma -1}{}
-:::
-
-Royal Navy during Queen Victoria’s jubilee parade in
-
-:::{math}
-of w_{\mathrm{A}\rightarrow \mathrm{B}}= c_{p}\Delta T = c_{p}(T_{\mathrm{A}}(p_{\mathrm{B}}/p_{\mathrm{A}}) ^{\gamma}- T_{\mathrm{A}}) =
-:::
-
-1897.
-
-:::{math}
-\frac{0.4}{}
-:::
-
-:::{math}
-1005 (283.15 (10)^{1.4}- 283.15) = 265 kJ kg^{-1} (4/34
+The *Turbinia*, Charles Parsons’ yacht used as a demonstrator for his research in maritime propulsion. With its three steam turbines and nine propellers, it reached $60 km/h$ and allowed its owner to ridicule the Royal Navy during Queen Victoria’s jubilee parade in 1897.
 :::
 
 *Photo by Alfred John West, 1897 (public domain)*
 
-In the realm of air-based engines, the situation was & 4/37), almost three hundred times more! quite different: until the late 1930s, all engines were We saw in §9.4.2 that using liquid compression is
+In the realm of air-based engines, the situation was quite different: until the late 1930s, all engines were piston-cylinder based. Piston technology peaked in the aeronautical sector, where cylinders were arranged in a star pattern behind the propellers to reduce bulkiness and vibrations. In these machines, such as the *Twin Wasp* by Pratt & Whitney, the mechanical arrangement of cylinders, connecting rods, and crankshafts was absolutely phenomenal (figure 9.24), and the intake and exhaust systems going to and back from dozens of combustion chambers were labyrinthine.
 
-piston-cylinder based. Piston technology peaked not without consequences – it must be compensated
+:::{aside}
+We saw in §9.4.2 that using liquid compression is not without consequences – it must be compensated by greater power at the boiler and reduces the thermodynamic efficiency – but it greatly facilitates the development of the engine. Since almost all of the net power of the engine comes from the turbine, a highly irreversible or incomplete expansion only affects the power and efficiency of the engine. In a gas turbomachine, on the other hand, the turbine also powers the compressor: it plays a dual role. For as long as it does not supply enough power to match that of the compressor, the engine will not run at all. The isentropic efficiency of the turbine and compressor thus become paramount parameters (we will revisit this in §10.2.2 with the concept of *work ratio*) and it follows that the development of a gas turbomachine is an ambitious undertaking.
+:::
 
-in the aeronautical sector, where cylinders were arby greater power at the boiler and reduces the therranged in a star pattern behind the propellers to modynamic efficiency – but it greatly facilitates the
-
-reduce bulkiness and vibrations. In these machines, development of the engine. Since almost all of the
-
-such as the *Twin Wasp* by Pratt & Whitney, the net power of the engine comes from the turbine,
-
-mechanical arrangement of cylinders, connecting a highly irreversible or incomplete expansion only
-
-rods, and crankshafts was absolutely phenomenal affects the power and efficiency of the engine. In a
-
-(figure 9.24), and the intake and exhaust systems gas turbomachine, on the other hand, the turbine 262 [Chapter 9](#ch-9)
-
-also powers the compressor: it plays a dual role. For as long as it does not supply enough power to match that of the compressor, the engine will not run at all. The isentropic efficiency of the turbine and compressor thus become paramount parameters (we will revisit this in §10.2.2 with the concept of *work ratio*) and it follows that the development of a gas turbomachine is an ambitious undertaking.
-
-Both Whittle and von Ohain focused their efforts on an ingenious aeronautical engine called *turbojet*: it is the exhaust gases, in large quantities and with high residual pressure, that would provide the engine’s thrust (§10.5.3). The operating principle is very simple (the air flows in a steady state and there is only one moving part) but the challenges were numerous. Like an aircraft wing, the compressor blades tend to stall at low power and during transient phases, causing abrupt and destructive flow changes. In the combustion chambers, it is necessary to prevent the flame from impinging on the walls (which would cause them to melt) or from extending, especially during ignition or reignition, into the turbine. Weight constraints require the use of lightweight materials which complicate manufacturing. The two engineers carried out their work in the heart of the Second World War, each funded by military budgets, and the first jet aircraft felw in 1940. The subsequent production aircraft were delicate to operate, unresponsive, and their service life barely reached 20 hours. They arrived too late and in insufficient numbers to affect the course of the conflict.
+Both Whittle and von Ohain focused their efforts on an ingenious aeronautical engine called *turbojet*: it is the exhaust gases, in large quantities and with high residual pressure, that would provide the engine’s thrust (§10.5.3). The operating principle is very simple (the air flows in a steady state and there is only one moving part) but the challenges were numerous. Like an aircraft wing, the compressor blades tend to stall at low power and during transient phases, causing abrupt and destructive flow changes. In the combustion chambers, it is necessary to prevent the flame from impinging on the walls (which would cause them to melt) or from extending, especially during ignition or reignition, into the turbine. Weight constraints require the use of lightweight materials which complicate manufacturing. The two engineers carried out their work in the heart of the Second World War, each funded by military budgets, and the first jet aircraft flew in 1940. The subsequent production aircraft were delicate to operate, unresponsive, and their service life barely reached 20 hours. They arrived too late and in insufficient numbers to affect the course of the conflict.
 
 ::::
 
@@ -776,18 +730,7 @@ Both Whittle and von Ohain focused their efforts on an ingenious aeronautical en
 Cross-sectional diagram of the *Heinkel He S-1*, the first prototype tested by Hans von Ohain in 1937. The compressor consists of an axial stage and a centrifugal stage; the turbine is centripetal. There is only one moving part and its speed is invariant.
 :::
 
-::::{admonition} *Diagram USAF (public domain)*
-:class: note
-:label: hist-9-13
-
-::::
-
-::::{admonition} A Bit of History
-:class: note
-
-*Engineering Thermodynamics* by Olivier Cleynen
-
-::::
+*Diagram USAF (public domain)*
 
 At the end of the war, there was a surge of enthusiasm: aviation embraced the engine it had been
 

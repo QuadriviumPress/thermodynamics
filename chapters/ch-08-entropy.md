@@ -166,7 +166,7 @@ decreases by 7 joules per kelvin.
 
 The change in entropy should not be confused with the thermal
 
-capacity, $c \equiv \frac{\mathrm{δ}q}{dT} = \frac{1}{m} \frac{\mathrm{δ}Q}{dT}$ (1/16), where we divide the heat by the *change* in temperature. In this process, the thermal capacity is infinite since $dT = 0 K$.
+capacity, $c \equiv \frac{\mathrm{δ}q}{dT} = \frac{1}{m} \frac{\mathrm{δ}Q}{dT}$ (equation 1/16), where we divide the heat by the *change* in temperature. In this process, the thermal capacity is infinite since $dT = 0 K$.
 
 Once the cooling is done, the air is allowed to expand suddenly: the expansion is irreversible. During this process, only $1000 J$ is supplied as heat and only $1000 J$ is recovered as work. At the end of the expansion, the gas is in the same state (same temperature, pressure, and internal energy) as at the very beginning of the experiment. What is the entropy change?
 
@@ -356,60 +356,40 @@ q_{1\rightarrow 2}+ w_{1\rightarrow 2}= \Delta u
 
 ::::
 
-If we imagine a reversible path between 1 and 2, we can quantify $q_{1\rightarrow 2}=$
-
-$-\int ^{2}_{1}T ds$ (8/8) and $w_{1\rightarrow 2}= -\int ^{2}$
+If we imagine a reversible path between 1 and 2, we can quantify $q_{1\rightarrow 2}= \int_{1}^{2} T\, ds$ (equation 8/8) and $w_{1\rightarrow 2}= -\int_{1}^{2} p\, dv$ (equation 2/15) along it, and we can write:
 
 :::{math}
-2 2
+\int_{1}^{2} T\, ds - \int_{1}^{2} p\, dv = \Delta u
 :::
 
 :::{math}
-\int T ds - \int pdv = \Delta u
+:label: eq-8-9
+:enumerator: 8/9
+T\, ds - p\, dv = du
 :::
 
 :::{math}
-1 1
-:::
-
-:::{math}
-T ds - pdv = du
-:::
-
-:::{math}
-ds = \frac{du}{}
-:::
-
-:::{math}
-T + p
+ds = \frac{du}{T} + \frac{p}{T}\, dv
 :::
 
 along any reversible process.[^ch8-fn1]
 
-Now, if we use an ideal gas, we have $u = c_{v}T$ (4/11) and $^{p}$
+Now, if we use an ideal gas, we have $u = c_{v}T$ (equation 4/11) and $p = \frac{RT}{v}$ (equation 4/1), thus:
 
 :::{math}
-ds == \frac{c_{v}dT}{c_{v} \frac{TdT}{T}} + R+ Rv \frac{dvd}{} v
+ds = c_{v}\frac{dT}{T} + R\frac{dv}{v}
 :::
 
 :::{math}
-v
+:label: eq-8-10
+:enumerator: 8/10
+\Delta s = s_{2}- s_{1}= c_{v}\ln \frac{T_{2}}{T_{1}} + R\ln \frac{v_{2}}{v_{1}}
 :::
 
 :::{math}
-\Delta s = s_{2}- s_{1}= c_{v}\ln \frac{T_{2}}{} + Rln \frac{v_{2}}{}
-:::
-
-:::{math}
-T_{1}
-:::
-
-:::{math}
-\Delta s = s_{2}- s_{1}= c_{p}\ln \frac{T_{2}}{} - Rln \frac{p_{2}}{}
-:::
-
-:::{math}
-T_{1}
+:label: eq-8-11
+:enumerator: 8/11
+\Delta s = s_{2}- s_{1}= c_{p}\ln \frac{T_{2}}{T_{1}} - R\ln \frac{p_{2}}{p_{1}}
 :::
 
 for an ideal gas, for any process from 1 to 2, reversible or not.
@@ -650,7 +630,7 @@ s_{x}= s_{L}+ x s_{LV}
 
 How much does the entropy of water change when it goes from a state at $240^{\circ}C$ and 6 bar, to $130^{\circ}C$ with an internal energy of $1000 kJ kg^{-1}$?
 
-A quick look at the steam tables allows us to draw the process qualitatively on a temperature-entropy diagram as shown below. We read $s_{\mathrm{A}}$ by interpolation in Steam Table 1 at $0.6 MPa$ between $200^{\circ}C$ and $300^{\circ}C$: $s_{\mathrm{A}}= 6.9683 + ^{40}$ Upon arrival, the water is in a liquid-vapor mixture (because $u_{\mathrm{B}}< u_{V130^{\circ}C})$, so we read from Steam Table 2 (5/5): $x_{\mathrm{B}}= ^{u_{\mathrm{B}}-u_{L}}$
+A quick look at the steam tables allows us to draw the process qualitatively on a temperature-entropy diagram as shown below. We read $s_{\mathrm{A}}$ by interpolation in Steam Table 1 at $0.6 MPa$ between $200^{\circ}C$ and $300^{\circ}C$: $s_{\mathrm{A}}= 6.9683 + ^{40}$ Upon arrival, the water is in a liquid-vapor mixture (because $u_{\mathrm{B}}< u_{V130^{\circ}C})$, so we read from Steam Table 2 (equation 5/5): $x_{\mathrm{B}}= ^{u_{\mathrm{B}}-u_{L}}$
 
 ````
 

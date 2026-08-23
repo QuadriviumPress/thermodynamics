@@ -446,7 +446,7 @@ proportions of heat $(Q_{1\rightarrow 2})$ and work $(W_{1\rightarrow 2})$ in th
 
 A medium-sized turbine operates with a steam flow rate of $3 kg s^{-1} (6.61 lb/s)$ and a heat loss of $200 kW$. At the inlet, the steam is at $600^{\circ}C$ and 16 bar; at the outlet, the steam is at 1 bar and $300^{\circ}C$. What is the power delivered in the form of work?
 
-At the inlet $(1.6 MPa$ and $600^{\circ}C)$, we read $h_{1}= 3693.9 kJ kg^{-1}$. At the outlet $(0.1 MPa$ and $300^{\circ}C)$, we read $h_{2}= 3074.5 kJ kg^{-1}$. Now, in an open system operating in steady state, neglecting changes in mechanical energy, we have $q_{1\rightarrow 2}+ w_{1\rightarrow 2}= \Delta h$ (3/15). Therefore, $W_{1\rightarrow 2}=\dot{m} \Delta h-\dot{Q}_{1\rightarrow 2}= 3\times (3074.5\times 10^{3}-3693.9\times 10^{3})-(-200\times 10^{3}) = -1.6582 \times 10^{6}W = -1658.2 kW$.
+At the inlet $(1.6 MPa$ and $600^{\circ}C)$, we read $h_{1}= 3693.9 kJ kg^{-1}$. At the outlet $(0.1 MPa$ and $300^{\circ}C)$, we read $h_{2}= 3074.5 kJ kg^{-1}$. Now, in an open system operating in steady state, neglecting changes in mechanical energy, we have $q_{1\rightarrow 2}+ w_{1\rightarrow 2}= \Delta h$ (equation 3/15). Therefore, $W_{1\rightarrow 2}=\dot{m} \Delta h-\dot{Q}_{1\rightarrow 2}= 3\times (3074.5\times 10^{3}-3693.9\times 10^{3})-(-200\times 10^{3}) = -1.6582 \times 10^{6}W = -1658.2 kW$.
 
 ````
 
@@ -554,7 +554,7 @@ to achieve in practice, since it simply involves maintaining constant pressure, 
 
 How much heat is needed to fully (and slowly) vaporize $4 L$ of saturated liquid water at 3 bar?
 
-The water will receive heat, but will also do work (by expanding at constant pressure of $3 bar)$. We will calculate $q_{\mathrm{evap}.}= q_{1\rightarrow 2}= (u_{2}- u_{1}) - w_{1\rightarrow 2}$ (2/2). The water starts as a saturated liquid (state 1 = subscript $L)$ and ends up as a saturated vapor (state 2 = subscript $V)$. Since the process is slow and at constant pressure, the work $w_{1\rightarrow 2}= -\int ^{2}_{1}pdv$ simply becomes $-p_{\mathrm{cst}.}(v_{2}- v_{1})$. Let’s gather all of this information in one equation: $q_{\mathrm{evap}.}= (u_{V}-u_{L}) + p_{\mathrm{cst}.}(v_{V}- v_{L}) = h_{V}- h_{L}= h_{LV}\equiv \Delta h_{L)V}= 2163.5 kJ kg^{-1}$. At 3 bar, our $4 L$ of saturated liquid water corresponds to a mass $m = \frac{V}{v_{L}} = \frac{4\times 10^{-3}}{0.001073} = 3.7279 kg$. So, in the end, $Q_{\mathrm{evap}.}= m q_{\mathrm{evap}.}= 8065.2 kJ$.
+The water will receive heat, but will also do work (by expanding at constant pressure of $3 bar)$. We will calculate $q_{\mathrm{evap}.}= q_{1\rightarrow 2}= (u_{2}- u_{1}) - w_{1\rightarrow 2}$ (equation 2/2). The water starts as a saturated liquid (state 1 = subscript $L)$ and ends up as a saturated vapor (state 2 = subscript $V)$. Since the process is slow and at constant pressure, the work $w_{1\rightarrow 2}= -\int ^{2}_{1}pdv$ simply becomes $-p_{\mathrm{cst}.}(v_{2}- v_{1})$. Let’s gather all of this information in one equation: $q_{\mathrm{evap}.}= (u_{V}-u_{L}) + p_{\mathrm{cst}.}(v_{V}- v_{L}) = h_{V}- h_{L}= h_{LV}\equiv \Delta h_{L)V}= 2163.5 kJ kg^{-1}$. At 3 bar, our $4 L$ of saturated liquid water corresponds to a mass $m = \frac{V}{v_{L}} = \frac{4\times 10^{-3}}{0.001073} = 3.7279 kg$. So, in the end, $Q_{\mathrm{evap}.}= m q_{\mathrm{evap}.}= 8065.2 kJ$.
 
 If we had used the usual approximation of $1000$ liters per cubic
 
@@ -874,7 +874,7 @@ Liquid-vapor mixture? We are heading towards Steam Tables 2
 
 and 3. We know the pressure $(0.3 MPa)$, therefore we need Steam Table 3.
 
-The final dryness fraction is $x_{2}\approx \frac{v_{x}}{v_{V}} = \frac{0.5}{0.60576} = 0.825$ (5/6). Therefore, $h_{2}= h_{L}+ x_{2}h_{LV}= 561.4 + 0.825 \times 2163.5 = 2347.2 kJ kg^{-1}$ (5/4).
+The final dryness fraction is $x_{2}\approx \frac{v_{x}}{v_{V}} = \frac{0.5}{0.60576} = 0.825$ (equation 5/6). Therefore, $h_{2}= h_{L}+ x_{2}h_{LV}= 561.4 + 0.825 \times 2163.5 = 2347.2 kJ kg^{-1}$ (5/4).
 
 The work is obtained using equation 5/9: $W_{1\rightarrow 2}= m w_{1\rightarrow 2}= -mp_{\mathrm{cst}.}\Delta v = -2\times 0.3\times 10^{6}\times (0.5-0.001 073) = -2.994\times 10^{5}J = -299.4 kJ$.
 
@@ -1402,10 +1402,9 @@ $T_{\mathrm{sat}.p=2.0797 bar}= 121.37^{\circ}C = 250.47 ^{\circ} F$.
 :::{admonition} Answer
 :class: dropdown
 
-.6**
-$2) W_{\mathrm{A}\rightarrow \mathrm{B}}\approx 0 (5/11); \mathrm{with} m = \frac{V_{\mathrm{B}}}{v_{\mathrm{B}}} \mathrm{and} v_{\mathrm{D}}= \frac{V_{\mathrm{D}}}{m},$
+2) $W_{\mathrm{A}\rightarrow \mathrm{B}}\approx 0$ (equation 5/11); with $m = \frac{V_{\mathrm{B}}}{v_{\mathrm{B}}}$ and $v_{\mathrm{D}}= \frac{V_{\mathrm{D}}}{m}$,
 we calculate $W_{\mathrm{B}\rightarrow \mathrm{D}}= -mp_{\mathrm{cst}.}(v_{\mathrm{D}}-v_{\mathrm{B}}) = -59.6 kJ$
-(5/7). 3) With $v_{\mathrm{D}}$ we calculate the dryness fraction $x_{\mathrm{D}}\approx \frac{v_{\mathrm{D}}}{v_{V0.2MPa}} = 0.1697$. Thus, $Q_{\mathrm{B}\rightarrow \mathrm{D}}= m(h_{\mathrm{D}}- h_{\mathrm{B}}) = m(h_{L}+ x_{\mathrm{D}}h_{LV}-h_{\mathrm{B}}) = +1585.2 kJ$ (5/8), so twentyfive times more...
+(equation 5/7). 3) With $v_{\mathrm{D}}$ we calculate the dryness fraction $x_{\mathrm{D}}\approx \frac{v_{\mathrm{D}}}{v_{V0.2MPa}} = 0.1697$. Thus, $Q_{\mathrm{B}\rightarrow \mathrm{D}}= m(h_{\mathrm{D}}- h_{\mathrm{B}}) = m(h_{L}+ x_{\mathrm{D}}h_{LV}-h_{\mathrm{B}}) = +1585.2 kJ$ (equation 5/8), so twenty-five times more...
 4) The relationships are identical and yield
 $W_{\mathrm{B}\rightarrow \mathrm{E}}= -899.6 kJ$ and $Q_{\mathrm{B}\rightarrow \mathrm{E}}= +7694.3 kJ$ (the
 efficiency jumps from $3.8$ to $11.7 \%$... there is a
@@ -1504,7 +1503,7 @@ barrel will of course be crushed before that);
 10**
 2) Reading Steam Table 1 gives us $h_{\mathrm{A}}= 42.1 kJ kg^{-1}$. Through interpolation we obtain
 $h_{\mathrm{B}}= 2975 kJ kg^{-1}$ and $m = \frac{V_{\mathrm{B}}}{v_{\mathrm{B}}} = 0.7354 kg$. Thus
-we calculate $Q_{\mathrm{A}\rightarrow \mathrm{B}}= m\Delta h = +2154 kJ$ (5/8).
+we calculate $Q_{\mathrm{A}\rightarrow \mathrm{B}}= m\Delta h = +2154 kJ$ (equation 5/8).
 3) While calculating $m$ we already obtained $v_{\mathrm{B}}= 2.406 m^{3}kg^{-1}$. Thus $W_{\mathrm{piston}\rightarrow \mathrm{shaft}}= W_{\mathrm{atm}.\rightarrow \mathrm{piston}}+ W_{\mathrm{piston}\rightarrow \mathrm{steam}}= m(p_{\mathrm{C}}-p_{\mathrm{ext}.})(v_{\mathrm{D}}-v_{\mathrm{C}}) = -159 kJ$.
 4) $\eta \equiv \frac{Q_{\mathrm{supplied}}}{W_{\mathrm{useful}}} = 7.38 \%$ (realistic value).
 

@@ -196,82 +196,66 @@ Let us try to design an open system in steady flow in the most general way possi
 When entering the system, the fluid already has an internal energy $u_{1}$; therefore, the system sees its own internal energy increase with power$\dot{U}_{1}$:
 
 :::{math}
-U_{1}=\dot{m} u_{1} (3/6)
+:label: eq-3-6
+:enumerator: 3/6
+\dot{U}_{1}=\dot{m} u_{1}
 :::
 
-Similarly, the fluid has a specific mechanical energy $e_{\mathrm{mech}1}$ (1/9), and the system also receives power$\dot{E}_{\mathrm{mech}1}$:
+Similarly, the fluid has a specific mechanical energy $e_{\mathrm{mech}1}$ (equation 1/9), and the system also receives power $\dot{E}_{\mathrm{mech}1}$:
 
 :::{math}
-1
-:::
-
-:::{math}
-2 C^{2}
-:::
-
-:::{math}
-E_{\mathrm{mech}1}=\dot{m} e_{\mathrm{mech}1}=\dot{m} (\frac{}{} _{1}+ g z_{1}) (3/7)
+:label: eq-3-7
+:enumerator: 3/7
+\dot{E}_{\mathrm{mech}1}=\dot{m} e_{\mathrm{mech}1}=\dot{m} \bigl(\tfrac{1}{2} C_{1}^{2}+ g z_{1}\bigr)
 :::
 
 These expressions 3/6 and 3/7 have the opposite sign at the system’s outlet, where we assign them the index 2.
 
-At this point, we have covered all of the energy forms that can be observed crossing the boundaries of an open system together with the fluid: flow work, internal energy, and mechanical energy. Since the first law states that energy is indestructible (§1.1.2), the addition of power$\dot{Q}$ in the form of heat or$\dot{W}$ in the form of work can only vary these three forms. This results in the equation:
-
-form of heat.
-
-where all terms are expressed in watts.
+At this point, we have covered all of the energy forms that can be observed crossing the boundaries of an open system together with the fluid: flow work, internal energy, and mechanical energy. Since the first law states that energy is indestructible (§1.1.2), the addition of power $\dot{Q}$ in the form of heat or $\dot{W}$ in the form of work can only vary these three forms. This results in the equation:
 
 :::{math}
-Q_{1\rightarrow 2}+\dot{W}_{1\rightarrow 2}+\dot{m} (p_{1}v_{1}+ u_{1}+ \frac{1}{}
+:label: eq-3-8
+:enumerator: 3/8
+\dot{Q}_{1\rightarrow 2}+\dot{W}_{1\rightarrow 2}+ (\dot{W}_{\mathrm{insertion}}+\dot{U}_{1}+\dot{E}_{\mathrm{mech}1}) + (\dot{W}_{\mathrm{extraction}}+\dot{U}_{2}+\dot{E}_{\mathrm{mech}2}) = 0
 :::
 
-or:
-
-within the system.
-
-a turbine for which we know the power.
+where all terms are expressed in watts.
 
 :::{figure} ../images/fig-3-3.jpg
 :label: fig-3-3
 :enumerator: 3.3
-:alt: An arbitrary open system. The system (whose boundaries are dashed lines, in red) is crossed from left to right by the fluid flowing with a constant mass flow ratė 𝑚. It receives poweṙ 𝑊1→2 in the form of work and poweṙ 𝑄1→2 in the form of heat.
+:alt: An arbitrary open system. The system (whose boundaries are dashed lines, in red) is crossed from left to right by the fluid flowing with a constant mass flow rate $\dot{m}$. It receives power $\dot{W}_{1\rightarrow 2}$ in the form of work and power $\dot{Q}_{1\rightarrow 2}$ in the form of heat.
 
-An arbitrary open system. The system (whose boundaries are dashed lines, in red) is crossed from left to right by the fluid flowing with a constant mass flow rate$\dot{m}$. It receives power$\dot{W}_{1\rightarrow 2}$ in the form of work and power$\dot{Q}_{1\rightarrow 2}$ in the
+An arbitrary open system. The system (whose boundaries are dashed lines, in red) is crossed from left to right by the fluid flowing with a constant mass flow rate $\dot{m}$. It receives power $\dot{W}_{1\rightarrow 2}$ in the form of work and power $\dot{Q}_{1\rightarrow 2}$ in the form of heat.
 :::
-
-lines, in red) is crossed from left to right by the fluid flowing with a constant mass flow rate$\dot{m}$. It receives power$\dot{W}_{1\rightarrow 2}$ in the form of work and power$\dot{Q}_{1\rightarrow 2}$ in the
 
 *Diagram* CC-0 *Olivier Cleynen*
 
-$Q_{1\rightarrow 2}+\dot{W}_{1\rightarrow 2}+ (\dot{W}_{\mathrm{insertion}}+\dot{U}_{1}+\dot{E}_{\mathrm{mech}1}) + (\dot{W}_{\mathrm{extraction}}+\dot{U}_{2}+\dot{E}_{\mathrm{mech}2}) = 0$
-
-(3/8)
-
 We can re-express equation 3/8 in terms of directly measurable quantities:
 
-$_{1}+ g z_{1}) =\dot{m} (p_{2}v_{2}+ u_{2}+ 1 _{2}+ g z_{2})$
+:::{math}
+:label: eq-3-9
+:enumerator: 3/9
+\dot{Q}_{1\rightarrow 2}+\dot{W}_{1\rightarrow 2}+\dot{m} \bigl(p_{1}v_{1}+ u_{1}+ \tfrac{1}{2} C_{1}^{2}+ g z_{1}\bigr) =\dot{m} \bigl(p_{2}v_{2}+ u_{2}+ \tfrac{1}{2} C_{2}^{2}+ g z_{2}\bigr)
+:::
 
-$2C^{2}2C^{2}$
+or:
 
-(3/9)
+:::{math}
+:label: eq-3-10
+:enumerator: 3/10
+\dot{Q}_{1\rightarrow 2}+\dot{W}_{1\rightarrow 2}=\dot{m}\bigl[\Delta u + \Delta (pv) + \tfrac{1}{2}\Delta (C^{2}) + g \Delta z\bigr]
+:::
 
-$Q_{1\rightarrow 2}+\dot{W}_{1\rightarrow 2}=\dot{m}[\Delta u + \Delta (pv) + \frac{1}{2}\Delta (C^{2}) + g \Delta z]$ (3/10)
+:::{math}
+:label: eq-3-11
+:enumerator: 3/11
+q_{1\rightarrow 2}+ w_{1\rightarrow 2}= \Delta u + \Delta (pv) + \Delta e_{\mathrm{mech}.}
+:::
 
-$q_{1\rightarrow 2}+ w_{1\rightarrow 2}= \Delta u + \Delta (pv) + \Delta e_{\mathrm{mech}.}$ (3/11)
+where the symbols $\Delta$ indicate the change of properties between points 1 and 2 within the system.
 
-where the symbols $\Delta$ indicate the change of properties between points 1 and 2
-
-Equations 3/9 and 3/11 are extremely useful in thermodynamics, because
-
-they allow us to quantify by deduction the powers involved in flows. They
-
-allow us, in particular, to predict the properties of the fluid at the outlet of a
-
-device for which we know the mechanical power and heat emissions. For
-
-example, we can determine the remaining energy in the air at the outlet of
-
-*Engineering Thermodynamics* by Olivier Cleynen
+Equations 3/9 and 3/11 are extremely useful in thermodynamics, because they allow us to quantify by deduction the powers involved in flows. They allow us, in particular, to predict the properties of the fluid at the outlet of a device for which we know the mechanical power and heat emissions. For example, we can determine the remaining energy in the air at the outlet of a turbine for which we know the power.
 
 ````{prf:example}
 :label: ex-3-1

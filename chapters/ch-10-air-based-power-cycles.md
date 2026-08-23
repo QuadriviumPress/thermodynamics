@@ -258,7 +258,7 @@ temperature-entropy diagrams. These diagrams depict the ideal path, without comp
 
 *Diagrams* CC-0 *Olivier Cleynen*
 
-Since the heat addition $q_{\mathrm{combustion}}= c_{p}(T_{\mathrm{C}}- T_{\mathrm{B}})$ (4/17) is done simultaneously with the production of work, there is no simple expression for the efficiency $\eta _{\mathrm{Diesel}}$, which no longer depends solely on the compression ratio. It will need to be calculated by studying the cycle step by step. It will then be observed that all else being equal (same compression ratio and same maximum temperature), the Diesel cycle has a lower efficiency than the Otto cycle.
+Since the heat addition $q_{\mathrm{combustion}}= c_{p}(T_{\mathrm{C}}- T_{\mathrm{B}})$ (equation 4/17) is done simultaneously with the production of work, there is no simple expression for the efficiency $\eta _{\mathrm{Diesel}}$, which no longer depends solely on the compression ratio. It will need to be calculated by studying the cycle step by step. It will then be observed that all else being equal (same compression ratio and same maximum temperature), the Diesel cycle has a lower efficiency than the Otto cycle.
 
 :::{aside}
 « [What is needed is the] production of a very high temperature (much above the ignition temperature of the combustible) not by combustion, but by compression of the air… the combustible, therefore, must not be previously mixed with the air, but the latter must be compressed separately, otherwise, long before the required compression has been attained, ignition will be produced, and the cycle interrupted. »
@@ -554,9 +554,16 @@ A quick return to equation 3/15 allows us to quantify the final speed of the
 
 gases as a function of the available pressure difference:
 
-$q_{\mathrm{A}\rightarrow \mathrm{B}}+ w_{\mathrm{A}\rightarrow \mathrm{B}}= \Delta h + \Delta e_{\mathrm{mech}.}$ (3/15)
+:::{math}
+:label: eq-3-15-nozzle
+q_{\mathrm{A}\rightarrow \mathrm{B}}+ w_{\mathrm{A}\rightarrow \mathrm{B}}= \Delta h + \Delta e_{\mathrm{mech}.}
+:::
 
-$h_{\mathrm{A}}+ 1 _{\mathrm{A}}= h_{\mathrm{B}}+ 1 _{\mathrm{B}}$ (10/10) $2C^{2}2C^{2}$
+:::{math}
+:label: eq-10-10
+:enumerator: 10/10
+h_{\mathrm{A}}+ \tfrac{1}{2} C_{\mathrm{A}}^{2}= h_{\mathrm{B}}+ \tfrac{1}{2} C_{\mathrm{B}}^{2}
+:::
 
 *Engineering Thermodynamics* by Olivier Cleynen
 
@@ -1061,7 +1068,7 @@ Thermodynamic circuit of the air in a 2014 Formula 1 engine. The shaft of the co
 
 1) See figure 10.3 p. 273;
 $(24)/3T6^{\mathrm{B}}) \mathrm{a}=\mathrm{nd} TT_{\mathrm{CA}}(=$^{\frac{v_{\mathrm{A}}}{v_{\mathrm{B}}}}$ \frac{q)_{\mathrm{co}}^{\gamma _{\mathrm{maibru}}-_{\mathrm{st}}1_{\mathrm{ion}}}}{c_{v (\mathrm{gaz})}} =+ \frac{c6_{v (}4_{\mathrm{air}}0_{)}}{c_{v (\mathrm{gaz})}}.T6_{\mathrm{B}}K==116366.37.K5^{\circ}=C 893.3^{\circ}C = 1640 ^{\circ} F$;
-3) $T_{\mathrm{D}}= 610.16 K = 337^{\circ}C = 638.6 ^{\circ} F$ (4/36) so
+3) $T_{\mathrm{D}}= 610.16 K = 337^{\circ}C = 638.6 ^{\circ} F$ (equation 4/36) so
 $q_{\mathrm{D}\rightarrow \mathrm{A}}= c_{v (\mathrm{gaz})}(T_{\mathrm{D}}- T_{\mathrm{A}}) = -260.1 kJ kg^{-1}$;
 $4)\eta _{\mathrm{engine}}= \frac{q_{\mathrm{net}}}{q_{\mathrm{in}}} = 47.99\%(\mathrm{purely theoretical value},$
 since compressions and expansions are reversible: in practice, expect around $35 \%)$; 5) See §10.3.4 p. 276; 6)Power decreases since the air density of the atmosphere decreases with altitude. In order to increase $m_{\mathrm{air}}$, one can, for example, install a turbocharging system (see §10.3.5) as shown in figure 10.31.
@@ -1087,7 +1094,7 @@ since compressions and expansions are reversible: in practice, expect around $35
 :class: dropdown
 
 .3**
-2) $T_{\mathrm{B}}= 1205.5 K = 932.4^{\circ}C = 1710.2 ^{\circ} F$ (4/36);
+2) $T_{\mathrm{B}}= 1205.5 K = 932.4^{\circ}C = 1710.2 ^{\circ} F$ (equation 4/36);
 $3) T_{\mathrm{C}}= \frac{q_{\mathrm{combustion}}}{c_{p(\mathrm{gases})}} + \frac{c_{p(\mathrm{air})}}{c_{p(\mathrm{gases})}} T_{\mathrm{B}}= 2140.5K = 1867.3^{\circ}C = 3393.2 ^{\circ} F$;
 4) $p_{\mathrm{C}}= p_{\mathrm{B}}= 158.4 bar = 2297.4 psi$;
 $5) \mathrm{Using} \mathrm{equation} 4/36, \frac{T_{\mathrm{D}}}{T_{\mathrm{C}}} = (\frac{v_{\mathrm{D}}}{v_{\mathrm{C}}})^{\gamma _{\mathrm{gases}}-1}= (\frac{v_{\mathrm{A}}}{v_{\mathrm{B}}} \frac{v_{\mathrm{B}}}{v_{\mathrm{C}}})^{\gamma _{\mathrm{gases}}-1}= [\varepsilon \frac{R_{\mathrm{air}}}{R_{\mathrm{gases}}} \frac{T_{\mathrm{B}}}{T_{\mathrm{C}}}] \mathrm{Therefore} T_{\mathrm{D}}= \gamma _{\mathrm{gases}}-1 1053.6 K = 780.4^{\circ}C = 1436.8 ^{\circ} F$ (note that these
