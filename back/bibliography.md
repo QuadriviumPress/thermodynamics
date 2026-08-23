@@ -6,30 +6,6 @@ label: bibliography
 
 # Bibliography
 
-This book was originally written in French [[51](#ref-51)] and first published in
-2015, so the bibliography naturally reflects this. The author’s reading
-recommendations are:
-
-**To study engineering thermodynamics:**
-
-• Çengel, Boles & Lacroix 2007 [[48](#ref-48), [49](#ref-49)], provide accessible, comprehensive, and solid coverage of the topics addressed here;
-
-• Eastop & McConkey 1993 [[38](#ref-38)], an essential reference (itself based on the very robust Rogers & Mayhew 1992 [[37](#ref-37)]);
-
-**To explore thermodynamics in physics:**
-
-• Depondt 2001 [[43](#ref-43)], a playful exploration of our favorite discipline (Philippe Depondt wrote the sections §1.6, §3.6, §4.5, and §8.6 of this manual);
-
-• Feynman 1963 [[30](#ref-30), [35](#ref-35)] addresses thermodynamics several times in his reference introductory physics book, in particular with a beautiful exploration of the concept of irreversibility.
-
-**For a short time travel:**
-
-• Gay-Lussac 1807 [[3](#ref-3)] and Joule 1845 [[8](#ref-8)] for a glimpse of the meticulous work that laid the foundations of what is now called the *first law*;
-
-• Carnot 1824 [[4](#ref-4)], the stunningly modern booklet written by the first thermodynamics engineer in history;
-
-• Clausius 1854 [[13](#ref-13)] to witness the birth of the term “entropy” and see its father’s self-confidence.
-
 References are numbered in order of first appearance in the book.
 
 (ref-1)=
@@ -57,9 +33,10 @@ References are numbered in order of first appearance in the book.
 **[8]**  James Prescott Joule. “On the Changes of Temperature Produced by the Rarefaction and Condensation of Air”. In: *The London, Edinburgh, and Dublin Philosophical Magazine and Journal of Science* 26.174 (1845), pp. 369–383.
 
 (ref-9)=
-**[9]**  William Thomson Baron Kelvin. “On an Absolute Thermometric Scale founded on Carnot’s Theory of the Motive Power of Heat and calculated from Regnaut’s observations”. In: *The London, Edinburgh, and Dublin Philosophical Magazine and Journal of Science* (1848).
+**[9]**  William Thomson Baron Kelvin. “On an Absolute Thermometric Scale founded on Carnot’s Theory of the Motive Power of Heat and calculated from Regnaut’s observations”. In: *The London, Edinburgh, and Dublin Philosophical Magazine and Journal of Science* (1848). 326
+
 (ref-10)=
-**[10]**  Rudolf Julius Emanuel Clausius. “Über die bewegende Kraft der Wärme und die Gesetze, welche sich daraus für die Wärmelehre selbst ableiten lassen”. German. In: *Annalen der Physik* 79 (1850), pp. 368–397, 500–524.
+**[10]**  RudolfJuliusEmanuelClausius.“ÜberdiebewegendeKraftderWärmeunddieGesetze,welche sich daraus für die Wärmelehre selbst ableiten lassen”. German. In: *Annalen der Physik* 79 (1850), pp. 368–397, 500–524.
 
 (ref-11)=
 **[11]**  Rudolf Julius Emanuel Clausius. “On the Moving Force of Heat, and the Laws regarding the Nature of Heat itself which are deducible therefrom”. Trans. from the German by John Tyndall. In: *The London, Edinburgh, and Dublin Philosophical Magazine and Journal of Science*. 4th ser. 2 (1851), pp. 1–21, 102–119.
@@ -86,7 +63,7 @@ References are numbered in order of first appearance in the book.
 **[18]**  Rudolf Julius Emanuel Clausius. *The Mechanical Theory of Heat, with its Applications to the Steam-engine and to the Physical Properties of Bodies*. Ed. by T. Archer Hirst. Trans. from the German, with an introd., by John Tyndall. With annots. by Rudolf Julius Emanuel Clausius. J. van Voorst, 1867.
 
 (ref-19)=
-**[19]**  Rudolf Julius Emanuel Clausius. “Sur diverses formes des équations fondamentales de la théorie mécanique de la chaleur, qui sont commodes dans l’application”. French. In: *Théorie mécanique de la chaleur*. Trans. from the German, with an introd., by F. Folie. With annots. by Rudolf Julius Emanuel Clausius. Eugène Lacroix, 1868, pp. 377–420.
+**[19]**  RudolfJuliusEmanuelClausius.“Surdiversesformesdeséquationsfondamentalesdelathéorie mécanique de la chaleur, qui sont commodes dans l’application”. French. In: *Théorie mécanique de la chaleur*. Trans. from the German, with an introd., by F. Folie. With annots. by Rudolf Julius Emanuel Clausius. Eugène Lacroix, 1868, pp. 377–420.
 
 (ref-20)=
 **[20]**  Rudolf Julius Emanuel Clausius. “Sur l’application de la théorie mécanique de la chaleur à la machine à vapeur”. French. In: *Théorie mécanique de la chaleur*. Trans. from the German, with an introd., by F. Folie. With annots. by Rudolf Julius Emanuel Clausius. Eugène Lacroix, 1868, pp. 161–245.
@@ -110,9 +87,10 @@ References are numbered in order of first appearance in the book.
 **[26]**  Aurel Boreslav Stodola. *Die Dampfturbinen. mit einem Anhänge über die Aussichten der Wärmekraftmaschinen und über die Gasturbine*. German. Springer-Verlag GmbH, 1904.
 
 (ref-27)=
-**[27]**  Aurel Boreslav Stodola. *The Steam Turbine. With an appendix on gas turbines and the future of heat engines*. Trans. from the German by Louis Loewenstein. Archibald Constable & co. ltd., 1905.
+**[27]**  Aurel Boreslav Stodola. *The Steam Turbine. With an appendix on gas turbines and the future of heat engines*. Trans. from the German by Louis Loewenstein. Archibald Constable & co. ltd., 1905. 327
+
 (ref-28)=
-**[28]**  Herbert Sammons and Ernest Chatterton. *Napier Nomad Aircraft Diesel Engine*. Tech. rep. SAE International, June 1955, pp. 107–131. doi: [10.4271/550239.](https://doi.org/10.4271/550239.)
+**[28]**  Herbert Sammons and Ernest Chatterton. *Napier Nomad Aircraft Diesel Engine*. Tech. rep. SAE International, June 1955, pp. 107–131. doi: [10.4271/550239](https://doi.org/10.4271/550239).
 
 (ref-29)=
 **[29]**  Isaac Asimov. “The Last Question”. In: *Science Fiction Quarterly* (Nov. 1956). Ed. by Robert A. W. Lowndes. url: <https://www.physics.princeton.edu/ph115/LQ.pdf>.
@@ -121,7 +99,7 @@ References are numbered in order of first appearance in the book.
 **[30]**  Richard Feynman, Robert Benjamin Leighton, and Matthew Sands. *The Feynman Lectures on Physics*. 3 vols. Addison-Wesley Pub. Co, 1963. isbn: 0201020106. url: <http://feynmanlectures>. caltech.edu/.
 
 (ref-31)=
-**[31]**  AlexandreKoyré.*Études Galiléennes. Du monde clos à l’univers infin i*.French.2nded.Hermann, 1966.
+**[31]**  AlexandreKoyré.*Études Galiléennes. Du monde clos à l’univers infni i*.French.2nded.Hermann, 1966.
 
 (ref-32)=
 **[32]**  Isaac Asimov. *L’avenir commence demain*. French. Trans. from the English by Bruno Martin. Presses Pocket, 1978. isbn: 9782266006439.
@@ -160,7 +138,7 @@ References are numbered in order of first appearance in the book.
 **[43]**  Philippe Depondt. *L’Entropie et tout ça. Le roman de la thermodynamique*. French. Cassini, 2001. isbn: 2842250443.
 
 (ref-44)=
-**[44]**  Wolfgang Wagner and Andreas Pruß. “The IAPWS formulation 1995 for the thermodynamic properties of ordinary water substance for general and scientific use”. In: *Journal of Physical and Chemical Reference Data* 31.2 (2002), pp. 387–535. doi: [10.1063/1.1461829.](https://doi.org/10.1063/1.1461829.)
+**[44]**  Wolfgang Wagner and Andreas Pruß. “The IAPWS formulation 1995 for the thermodynamic properties of ordinary water substance for general and scientific use”. In: *Journal of Physical and Chemical Reference Data* 31.2 (2002), pp. 387–535. doi: [10.1063/1.1461829](https://doi.org/10.1063/1.1461829).
 
 (ref-45)=
 **[45]**  Roger Lamouline. *Du thermomètre à la température*. French. Ellipses, 2005. isbn: 2729822682.

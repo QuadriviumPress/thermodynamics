@@ -641,7 +641,11 @@ def _is_two_column_page(frags):
         return False
     left = sum(1 for f in body if f.bbox[2] < 290)
     right = sum(1 for f in body if f.bbox[0] > 298)
-    return left / len(body) >= 0.18 and right / len(body) >= 0.18
+    # Problem pages often have a large figure or caption in the left column,
+    # so the prose count there can be well below 18% even though the page is
+    # clearly set in two columns (for example, the first problem page).  A
+    # tenth is sufficient to distinguish those pages from ordinary captions.
+    return left / len(body) >= 0.10 and right / len(body) >= 0.18
 
 
 def _is_wide_page(frags):
@@ -708,8 +712,16 @@ def process_page(doc, i):
                 break
 
     cap_frag_ids = {id(fr) for c in caps for fr in c["frags"]}
+    # On two-column problem pages, caption matching can overreach into the
+    # adjacent right-hand exercise column.  Preserve ordinary prose there;
+    # only genuinely caption-like lines should be allowed to be swallowed by
+    # a figure caption assignment.
     body = [f for k, f in enumerate(frags)
-            if k not in consumed and id(f) not in cap_frag_ids]
+            if k not in consumed and (
+                id(f) not in cap_frag_ids
+                or (f.column == "margin" and not re.match(
+                    r"\s*(?:Figure|Table|Photo|Diagram)\b", f.raw, re.I))
+            )]
     notes = note_rules(page, (m0, m1, g0, g1))
     bars = fraction_bars(page, frags, clusters, notes)
     merged = merge_baselines(body, bars)
@@ -902,7 +914,11 @@ def apply_inline_fractions(frag, bars, raised_only=False):
         marker = Char(latex, bar[0], frag.baseline, frag.size,
                       "LinLibertine", 0, bar[2] - bar[0])
         rest.append(marker)
-        chars = sorted(rest, key=lambda c: c.x)
+        # Keep the same tie handling as ``layout.page_frags``.  PyMuPDF can
+        # report the second glyph of an fi/fl ligature a tiny fraction past
+        # the following glyph; sorting on the raw x-origin transposes text
+        # (for example, ``first`` becomes ``frist``).
+        chars = sorted(rest, key=lambda c: round(c.x, 1))
     return Frag(chars, frag.bbox, frag.column)
 
 

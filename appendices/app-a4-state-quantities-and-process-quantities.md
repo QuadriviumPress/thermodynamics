@@ -8,9 +8,11 @@ label: app-a4-state-quantities-and-process-quantities
 
 316 Appendix A4
 
+## A4 State Quantities and Process Quantities
+
 **Definition**
 
-Thermodynamic quantities can be classified into the following categories:
+Thermodynamic quantities can be classifeid into the following categories:
 
 • A quantity is called a *state quantity* if its value depends only on the current state of the system. Temperature $T$ is an example of a state quantity.
 
@@ -42,7 +44,7 @@ A
 
 Infinitesimal transfers of path quantities are denoted by the symbol δ; these are *inexact*
 
-*differentials* and their integral can only be quantified by knowing all states encountered
+*difefrentials* and their integral can only be quantified by knowing all states encountered
 
 along the path. For example, for work $W$, one cannot write “$W_{\mathrm{B}}-W_{\mathrm{A}}$”, or “$\Delta W$”, but only:
 
@@ -58,4 +60,4 @@ B
 
 A
 
-This notation can be confusing, since it is $d$ and not δ that becomes $\Delta$ upon integration. It may also appear as a complicated way to avoid using partial derivatives. Clifford Truesdell [[36](#ref-36)] mischievously remarks that because of this notation, equation 8/1 on page 211 might make us believe that some types of differentials are larger than others... Although this notation is widely used in French literature (which is why it is adopted in this book, which is translated from French [[51](#ref-51)]), it must be recognized that one can fully cover the field of engineering thermodynamics [[37](#ref-37), [38](#ref-38)] or physical thermodynamics and its history [[36](#ref-36)] without ever having to use the symbol δ in the above sense.
+This notation can be confusing, since it is $d$ and not δ that becomes $\Delta$ upon integration. It may also appear as a complicated way to avoid using partial derivatives. Clifofrd Truesdell [[36](#ref-36)] mischievously remarks that because of this notation, equation 8/1 on page 211 might make us believe that some types of differentials are larger than others... Although this notation is widely used in French literature (which is why it is adopted in this book, which is translated from French [[51](#ref-51)]), it must be recognized that one can fully cover the feild of engineering thermodynamics [[37](#ref-37), [38](#ref-38)] or physical thermodynamics and its history [[36](#ref-36)] without ever having to use the symbol δ in the above sense.

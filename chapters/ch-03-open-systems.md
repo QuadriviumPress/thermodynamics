@@ -57,19 +57,7 @@ example upstream and downstream of the compressor).
 (sec-3-2-1)=
 ### 3.2.1 The open system
 
-We call an *open system* an arbitrary subject of study whose boundaries are « $^{\mathrm{The} \mathrm{constructive} \mathrm{difficulties} \mathrm{that}}$ have to be overcome in a large gas mo-
-
-permeable to mass (figure 3.3). In general, its volume can change, and it can tor because of the immense piston pres-
-
-have multiple inlets and outlets, each with a different flow rate and pressure. $^{\mathrm{sures} \mathrm{and} \mathrm{heat} \mathrm{expansion} \mathrm{of} \mathrm{the} \mathrm{com}-}$ plicated cylinder heads (cracks galore!) are well known. A safe gas turbine would in this respect be an improve-
-
-:::{math}
-ment. »
-:::
-
-Aurel Stodola, 1904
-
-*Die Dampfturbinen* [[26](#ref-26), [27](#ref-27)]
+We call an *open system* an arbitrary subject of study whose boundaries are permeable to mass (figure 3.3). In general, its volume can change, and it can have multiple inlets and outlets, each with a different flow rate and pressure.
 
 :::{figure} ../images/fig-3-1.jpg
 :label: fig-3-1
@@ -79,13 +67,19 @@ Aurel Stodola, 1904
 Sign conventions for an open system. Inflows are positive, outflows are negative; they are all represented with inward arrows.
 :::
 
-*Diagram* CC-0 *Olivier Cleynen*
-
 In our study of thermodynamics, we will only use open systems:
 
 • with fixed volume;
 
 • having only one inlet and one outlet;
+
+« $^{\mathrm{The} \mathrm{constructive} \mathrm{difficulties} \mathrm{that}}$ have to be overcome in a large gas motor because of the immense piston pressures and heat expansion of the complicated cylinder heads (cracks galore!) are well known. A safe gas turbine would in this respect be an improvement. »
+
+Aurel Stodola, 1904
+
+*Die Dampfturbinen* [[26](#ref-26), [27](#ref-27)]
+
+*Diagram* CC-0 *Olivier Cleynen*
 
 • being crossed by a constant mass flow rate$\dot{m}$ (positive by convention).
 
@@ -105,7 +99,7 @@ Thus, we add up all transfers as on a bank statement.
 **3.3 The First Law in an Open System** We have seen that in a closed system, the law of conservation of energy is expressed by the equation $q+w = \Delta u$ (2/2). In an open system, the situation is a little different and we must consider additional forms of energy.
 
 (sec-3-3-1)=
-### 3.3.1 Entering and exiting the system: folw work
+### 3.3.1 Entering and exiting the system: flow work
 
 Let’s imagine an open system in steady flow, containing a small water pump. In order to insert water into the pump at a given pressure, energy must be supplied to the system. Conversely, to push the water outside (at a higher pressure), the system must supply energy. How can we quantify this energy?
 
@@ -173,7 +167,7 @@ Similarly, for the fluid to exit the system at the other end, the system must
 continuously supply a power called *extraction power*:
 
 :::{math}
-W_{\mathrm{extraction}}= -p_{2}\dot{V}_{2}=\dot{m}_{2}p_{2}v_{2}= -m\dot{p}_{2}v_{2} (3/4)
+W_{\mathrm{extraction}}= -p_{2}\dot{V}_{2}=\dot{m}_{2}p_{2}v_{2}= -\dot{m} p_{2}v_{2} (3/4)
 :::
 
 :::{math}
@@ -213,60 +207,61 @@ These expressions 3/6 and 3/7 have the opposite sign at the system’s outlet, w
 
 At this point, we have covered all of the energy forms that can be observed crossing the boundaries of an open system together with the fluid: flow work, internal energy, and mechanical energy. Since the first law states that energy is indestructible (§1.1.2), the addition of power$\dot{Q}$ in the form of heat or$\dot{W}$ in the form of work can only vary these three forms. This results in the equation:
 
-:::{figure} ../images/fig-3-3.jpg
-:label: fig-3-3
-:enumerator: 3.3
-:alt: An arbitrary open system. The system (whose boundaries are dashed lines, in red) is crossed from left to right by the fluid fol wing with a
-
-An arbitrary open system. The system (whose boundaries are dashed lines, in red) is crossed from left to right by the fluid fol wing with a constant mass flow rate$\dot{m}$. It receives power$\dot{W}_{1\rightarrow 2}$ in the form of work and power$\dot{Q}_{1\rightarrow 2}$ in the form of heat.
-:::
-
-*Diagram* CC-0 *Olivier Cleynen*
-
-:::{math}
-Q_{1\rightarrow 2}+\dot{W}_{1\rightarrow 2}+ (W\dot{} insertion +\dot{U}_{1}+\dot{E}_{\mathrm{mech}1}) + (W\dot{} extraction +\dot{U}_{2}+\dot{E}_{\mathrm{mech}2}) = 0
-:::
-
-(3/8)
+form of heat.
 
 where all terms are expressed in $watts$.
 
-We can re-express equation 3/8 in terms of directly measurable quantities:
-
 :::{math}
-Q_{1\rightarrow 2}+\dot{W}_{1\rightarrow 2}+\dot{m} (p_{1}v_{1}+ u_{1}+ \frac{1}{} _{1}+ g z_{1}) =\dot{m} (p_{2}v_{2}+ u_{2}+ \frac{1}{} _{2}+ g z_{2})
+Q_{1\rightarrow 2}+\dot{W}_{1\rightarrow 2}+\dot{m} (p_{1}v_{1}+ u_{1}+ \frac{1}{}
 :::
-
-:::{math}
-2C^{2}2C^{2}
-:::
-
-(3/9)
 
 or:
 
-:::{math}
-:label: eq-3-10
-:enumerator: 3/10
-Q_{1\rightarrow 2}+\dot{W}_{1\rightarrow 2}=\dot{m}[\Delta u + \Delta (pv) + \frac{1}{2} \Delta (C^{2}) + g \Delta z]
+within the system.
+
+a turbine for which we know the power.
+
+:::{figure} ../images/fig-3-3.jpg
+:label: fig-3-3
+:enumerator: 3.3
+:alt: An arbitrary open system. The system (whose boundaries are dashed lines, in red) is crossed from left to right by the fluid flowing with a c
+
+An arbitrary open system. The system (whose boundaries are dashed lines, in red) is crossed from left to right by the fluid flowing with a constant mass flow rate$\dot{m}$. It receives power$\dot{W}_{1\rightarrow 2}$ in the form of work and power$\dot{Q}_{1\rightarrow 2}$ in the
 :::
 
-:::{math}
-:label: eq-3-11
-:enumerator: 3/11
-q_{1\rightarrow 2}+ w_{1\rightarrow 2}= \Delta u + \Delta (pv) + \Delta e_{\mathrm{mech}.}
-:::
+lines, in red) is crossed from left to right by the fluid flowing with a constant mass flow rate$\dot{m}$. It receives power$\dot{W}_{1\rightarrow 2}$ in the form of work and power$\dot{Q}_{1\rightarrow 2}$ in the
 
-where the symbols $\Delta$ indicate the change of properties between points 1 and 2 within the system.
+*Diagram* CC-0 *Olivier Cleynen*
 
-Equations 3/9 and 3/11 are extremely useful in thermodynamics, because they allow us to quantify by deduction the powers involved in flows. They allow us, in particular, to predict the properties of the fluid at the outlet of a device for which we know the mechanical power and heat emissions. For example, we can determine the remaining energy in the air at the outlet of a turbine for which we know the power.
+$Q_{1\rightarrow 2}+\dot{W}_{1\rightarrow 2}+ (\dot{W}_{\mathrm{insertion}}+\dot{U}_{1}+\dot{E}_{\mathrm{mech}1}) + (\dot{W}_{\mathrm{extraction}}+\dot{U}_{2}+\dot{E}_{\mathrm{mech}2}) = 0$
 
-::::{admonition} A Bit of History
-:class: note
+(3/8)
+
+We can re-express equation 3/8 in terms of directly measurable quantities:
+
+$_{1}+ g z_{1}) =\dot{m} (p_{2}v_{2}+ u_{2}+ 1 _{2}+ g z_{2})$
+
+$2C^{2}2C^{2}$
+
+(3/9)
+
+$Q_{1\rightarrow 2}+\dot{W}_{1\rightarrow 2}=\dot{m}[\Delta u + \Delta (pv) + \frac{1}{2}\Delta (C^{2}) + g \Delta z]$ (3/10)
+
+$q_{1\rightarrow 2}+ w_{1\rightarrow 2}= \Delta u + \Delta (pv) + \Delta e_{\mathrm{mech}.}$ (3/11)
+
+where the symbols $\Delta$ indicate the change of properties between points 1 and 2
+
+Equations 3/9 and 3/11 are extremely useful in thermodynamics, because
+
+they allow us to quantify by deduction the powers involved in flows. They
+
+allow us, in particular, to predict the properties of the fluid at the outlet of a
+
+device for which we know the mechanical power and heat emissions. For
+
+example, we can determine the remaining energy in the air at the outlet of
 
 *Engineering Thermodynamics* by Olivier Cleynen
-
-::::
 
 ````{prf:example}
 :label: ex-3-1
@@ -276,7 +271,7 @@ The compressor of a turbofan admits $1.5 kg s^{-1}$ of air at a pressure of $0.8
 
 What is the power of the compressor if its heat transfers are negligible?
 
-We apply equation 3/10 to obtain: $W_{1\rightarrow 2}= -Q\dot{} _{1\rightarrow 2}+\dot{m}[\Delta u + \Delta (pv) + \frac{1}{2}\Delta (C^{2}) + g \Delta z] = 0 +\dot{m}[\Delta u + \Delta (pv) + 0 + 0] = 1.5 [(643.1 \times 10^{3}- 192.5 \times 10^{3}) + (30 \times 10^{5}\times 8.57 \times 10^{-2}- 0.8 \times 10^{5}\times 0.96)]$
+We apply equation 3/10 to obtain: $W_{1\rightarrow 2}= -\dot{Q}_{1\rightarrow 2}+\dot{m}[\Delta u + \Delta (pv) + \frac{1}{2}\Delta (C^{2}) + g \Delta z] = 0 +\dot{m}[\Delta u + \Delta (pv) + 0 + 0] = 1.5 [(643.1 \times 10^{3}- 192.5 \times 10^{3}) + (30 \times 10^{5}\times 8.57 \times 10^{-2}- 0.8 \times 10^{5}\times 0.96)]$
 
 $= +9.464 \times 10^{5}W = +946.4 kW$.
 
@@ -449,7 +444,7 @@ The open system has four work transfer forms:
 w_{\mathrm{insertion}}= +p v
 :::
 
-**The specific compression power** $-$δ$w_{m_{\mathrm{A}}}$ is the specific work that the open system must transfer to each mass quantity $m_{A}$ to efefctively compress it:
+**The specific compression power** $-$δ$w_{m_{\mathrm{A}}}$ is the specific work that the open system must transfer to each mass quantity $m_{A}$ to effectively compress it:
 
 :::{math}
 - δ w_{m_{\mathrm{A}}}= -(-pdv)
@@ -463,90 +458,77 @@ w_{\mathrm{insertion}}= +p v
 
 (3/18)
 
-**The specific extraction power** $w_{\mathrm{extraction}}$ is spent by the open system to continuously remove the fluid.
-
-At the outlet, the fluid properties have become $p + dp$ for pressure, and $v + dv$ for volume. Thus, we have:
-
-:::{math}
-:label: eq-3-19
-:enumerator: 3/19
-w_{\mathrm{extraction}}= -(p + dp)(v + dv)
-:::
-
-**The specific power received from the outside** δ$w_{\mathrm{O.S}.}$ is the power that feeds the compression: this is the quantity we aim to quantify.
-
-These four powers cancel each other out, since the total work transfer involved in the flow does not depend on the adopted viewpoint:
-
-:::{math}
-:label: eq-3-20
-:enumerator: 3/20
-δ w_{\mathrm{O.S}.}+ w_{\mathrm{insertion}}+ (- δ w_{m_{\mathrm{A}}}) + w_{\mathrm{extraction}}= 0
-:::
-
-Therefore, we can quantify the specific power δ$w_{\mathrm{O.S}.}$ that must be supplied
+continuously remove the fluid.
 
 to the compressor:
 
-:::{math}
-δ w_{\mathrm{O.S}.}= -w_{\mathrm{insertion}}+ δ w_{m_{\mathrm{A}}}- w_{\mathrm{extraction}}
-:::
-
-:::{math}
-δ w_{\mathrm{O.S}.}= -p v + (-pdv) + (p + dp)(v + dv)
-:::
-
-:::{math}
-= -p v - pdv + p v + pdv + dp v + dp dv
-:::
-
-:::{math}
-= dp v + dp dv
-:::
-
-And since the product $dp \times dv$ tends to zero when using infinitesimal quantities, we obtain the surprising expression:
-
-:::{math}
-:label: eq-3-21
-:enumerator: 3/21
-δ w_{\mathrm{O.S}.}= vdp
-:::
-
-The terms $dp$ and $dv$ in our study are not necessarily positive: this expression applies equally to expansions and compressions, as long as they are reversible.
-
-By integrating this expression 3/21 to apply it to the general case in steady
+reversible.
 
 flow, we obtain:
 
-:::{math}
-:label: eq-3-22
-:enumerator: 3/22
-w_{\mathrm{O.S}.}= \int vdp
-:::
+in steady flow, when the process is reversible, and regardless of the heat input.
+
+figure 3.6.
+
+**The specific extraction power** $w_{\mathrm{extraction}}$ is spent by the open system to
+
+At the outlet, the fluid properties have become $p + dp$ for pressure,
+
+and $v + dv$ for volume. Thus, we have:
+
+$w_{\mathrm{extraction}}= -(p + dp)(v + dv)$ (3/19)
+
+**The specific power received from the outside** δ$w_{\mathrm{O.S}.}$ is the power that
+
+feeds the compression: this is the quantity we aim to quantify.
+
+These four powers cancel each other out, since the total work transfer
+
+involved in the flow does not depend on the adopted viewpoint:
+
+δ$w_{\mathrm{O.S}.}+ w_{\mathrm{insertion}}+ (-$δ$w_{m_{\mathrm{A}}}) + w_{\mathrm{extraction}}= 0$ (3/20)
+
+Therefore, we can quantify the specific power δ$w_{\mathrm{O.S}.}$ that must be supplied
+
+δ$w_{\mathrm{O.S}.}= -w_{\mathrm{insertion}}+$ δ$w_{m_{\mathrm{A}}}- w_{\mathrm{extraction}}$
+
+δ$w_{\mathrm{O.S}.}= -p v + (-pdv) + (p + dp)(v + dv)$
+
+$= -p v - pdv + p v + pdv + dp v + dp dv$
+
+$= dp v + dp dv$
+
+And since the product $dp \times dv$ tends to zero when using infinitesimal
+
+quantities, we obtain the surprising expression:
+
+δ$w_{\mathrm{O.S}.}= vdp$ (3/21)
+
+The terms $dp$ and $dv$ in our study are not necessarily positive: this expres-
+
+sion applies equally to expansions and compressions, as long as they are
+
+By integrating this expression 3/21 to apply it to the general case in steady
+
+$w_{\mathrm{O.S}.}= \int vdp$ (3/22)
 
 B
 
-:::{math}
-:label: eq-3-23
-:enumerator: 3/23
-W_{\mathrm{A}\rightarrow \mathrm{B}}=\dot{m}\int vdp
-:::
+$W_{\mathrm{A}\rightarrow \mathrm{B}}=\dot{m}\int vdp$ (3/23) A
 
-A
+Thus, when we want to quantify reversible work in an open system, it is the
 
-in steady flow, when the process is reversible, and regardless of the heat input.
+integral $+ \int vdp$ that needs to be calculated, and not $-\int pdv$.
 
-Thus, when we want to quantify reversible work in an open system, it is the integral $+ \int vdp$ that needs to be calculated, and not $-\int pdv$.
+On a pressure-volume diagram, we can visualize this work by adding the
 
-On a pressure-volume diagram, we can visualize this work by adding the insertion work and extraction work to the compression work, as shown in figure 3.6.
+insertion work and extraction work to the compression work, as shown in
 
-The reversible work done in steady, reversible flow is thus visualized by the area enclosed *to the left* of the curve, as shown in figure 3.7.
+The reversible work done in steady, reversible flow is thus visualized by the
 
-::::{admonition} A Bit of History
-:class: note
+area enclosed *to the left* of the curve, as shown in figure 3.7.
 
 *Engineering Thermodynamics* by Olivier Cleynen
-
-::::
 
 :::{figure} ../images/fig-3-6.jpg
 :label: fig-3-6
@@ -615,35 +597,14 @@ The process can be drawn qualitatively on a pressure-volume diagram as follows:
 
 ````{prf:example}
 
-Here the specific volume is a function of pressure: we have $v = 1$
-
-$(\frac{k}{p} )^{1.35}= k ^{\frac{1}{1.35}} p^{-}^{\frac{1}{1.35}}$. We start from equation 3/23:
+Here the specific volume is a function of pressure: we have $v = \left(\frac{k}{p}\right)^{\frac{1}{1.35}}= k^{\frac{1}{1.35}} p^{-\frac{1}{1.35}}$. We start from equation 3/23:
 
 :::{math}
-p_{\mathrm{B}}
+\dot{W}_{\mathrm{A}\rightarrow \mathrm{B}}=\dot{m}\int _{\mathrm{A}}^{\mathrm{B}}v\,\mathrm{d}p =\dot{m}\, k^{\frac{1}{1.35}} \int _{\mathrm{A}}^{\mathrm{B}}p^{-\frac{1}{1.35}}\,\mathrm{d}p =\dot{m}\, k^{\frac{1}{1.35}} \left[\frac{1}{-\frac{1}{1.35}+1}\,p^{-\frac{1}{1.35}+1}\right]_{p_{\mathrm{A}}}^{p_{\mathrm{B}}}
+= \dot{m}\,(p_{\mathrm{A}} v_{\mathrm{A}}^{1.35})^{\frac{1}{1.35}}\frac{1}{0.25926}\left[p^{0.25926}\right]_{p_{\mathrm{A}}}^{p_{\mathrm{B}}}
+= 2\,(1\times 10^{5}\times 0.8^{1.35})^{\frac{1}{1.35}}\frac{1}{0.25926}\left[(20\times 10^{5})^{0.25926}-(1\times 10^{5})^{0.25926}\right]
+= +7.247 \times 10^{5}\,\mathrm{W} = +724.7\,\mathrm{kW}.
 :::
-
-$W_{\mathrm{A}\rightarrow \mathrm{B}}=\dot{m}\int _{\mathrm{A}}^{\mathrm{B}}vdp =\dot{m} k ^{\frac{1}{1.35}} \int _{\mathrm{A}}^{\mathrm{B}}p^{-_{$^{\frac{1}{1.35}}$}}dp =\dot{m} k ^{\frac{1}{1.35}} [^{$\frac{1}{-_{1.}^{1}_{35}+1}$}p^{-_{$^{\frac{1}{1.35}}$}+1}]_{p_{\mathrm{A}}}$
-
-:::{math}
-1
-:::
-
-:::{math}
-p_{\mathrm{B}}
-:::
-
-$== \dot{m}2 (1(p\times ^{\mathrm{A}}1v0^{\mathrm{A}15. 3 5}\times) 0^{1.}.^{3}8^{5 1}^{\frac{1}{0.25926_{1}}}.35) ^{1.3 5}[_{$\frac{1}{0.25926}$}p^{0. 2 59 2}[^{6}(]2^{p}0^{\mathrm{A}}\times 10^{5})^{0.259 26}- (1 \times 10^{5})$
-
-:::{math}
-0.259 26
-:::
-
-:::{math}
-]
-:::
-
-$= +7.247 \times 10^{5}W = +724.7 kW$.
 
 Here the key is to correctly describe the function $v_{(p)}$ before
 
@@ -743,7 +704,7 @@ Once again, the main challenge in quantifying a heat transfer is predicting and 
 
 ::::{admonition} A Bit of History: Temperature
 :class: note
-:label: hist-3-7
+:label: hist-3-5
 
 and Amount of Heat
 
@@ -830,6 +791,8 @@ then disappear as such and become “latent”.
 Joseph Black conducting an experiment on latent heat during a university lecture in Edinburgh. One can imagine that he had no difficulty engaging the students, since it was about thermodynamics...
 :::
 
+latent heat during a university lecture in Edinburgh. One can imagine that he had no difficulty engaging the students, since it was about thermodynamics...
+
 *Engraving by unknown author published by Louis Figuier in 1867 (public domain)*
 
 ## Problems
@@ -843,7 +806,7 @@ Joseph Black conducting an experiment on latent heat during a university lecture
 :::{admonition} Answer
 :class: dropdown
 
-1) $w_{\mathrm{A}\rightarrow \mathrm{B}}= -730.3 kJ kg^{-1} 2)\dot{m} =\dot{\frac}{W_{\mathrm{A}\rightarrow \mathrm{B}}}{w_{\mathrm{A}\rightarrow \mathrm{B}}} = 5.477kgs^{-1}$
+1) $w_{\mathrm{A}\rightarrow \mathrm{B}}= -730.3 kJ kg^{-1} 2)\dot{m} =\frac{\dot{W}_{\mathrm{A}\rightarrow \mathrm{B}}}{\dot{w}_{\mathrm{A}\rightarrow \mathrm{B}}} = 5.477kgs^{-1}$
 
 :::
 ```
@@ -860,13 +823,13 @@ Joseph Black conducting an experiment on latent heat during a university lecture
 :label: prob-3-2
 :enumerator: 3.2
 
-**Electric Power Generator In a portable electricity-generating power plant, the electric generator is driven by a mechanical shaft. Along this shaft, there is an air compressor and a turbine (figure 3.11). This type of device, sometimes simply called a “gas turbine”, is particularly compact and efficient; however, it requires the use of refni ed fuels. Schematic diagram of an electricity-Diagram* CC-by-sa *Olivier Cleynen* The compressor brings the air from atmospheric conditions to a high pressure and temperature. Compressor inlet: • Pressure: $1 bar (14.5 psi)$ • Specific volume: $0.751 m^{3}kg^{-1}$ • Internal energy: $206.78 kJ kg^{-1}$ Compressor outlet: • Pressure: $35 bar (507.6 psi)$ • Specific volume: $6.602 \times 10^{-2}m^{3}kg^{-1}$ • Internal energy: $578.13 kJ kg^{-1}$ Between the compressor and the turbine, the combustion chamber raises the temperature. The combustion takes place at constant pressure; it brings the gases to a specific volume of $0.1168 m^{3}kg^{-1}$ and an internal energy of $1028.8 kJ kg^{-1}$. At the turbine outlet, the gases are ready to be cooled in a catalytic exhaust system designed, among other things, to reduce noise emissions. Turbine outlet: • Pressure: $1.2 bar (17.4 psi)$ • Specific volume: $1.526 m^{3}kg^{-1}$ • Internal energy: $460.88 kJ kg^{-1}$ The air flow rate admitted into the machine is $8 kg s^{-1}$; the changes in its mechanical energy are nearly zero. Heat losses through the walls of the machine are negligible. Mechanical losses are $2 \%$ of the power transmitted to the generator. The electric generator itself has an efficiency of $85 \%$. 1. What power is received or rejected by the air in the compressor? 2. What power is received or rejected by the air in the turbine? 3. What is the electric power generated by the power plant? 4. Represent the processes undergone by the air as it passes through the engine on a pressure-volume diagram, qualitatively (that is, without showing numerical values). 5. What is the power lost in the form of heat together with the exhaust gases? [hint: it is the heat that the gases should lose to return to their state at the inlet of the compressor]**
+**Electric Power Generator In a portable electricity-generating power plant, the electric generator is driven by a mechanical shaft. Along this shaft, there is an air compressor and a turbine (figure 3.11). This type of device, sometimes simply called a “gas turbine”, is particularly compact and efficient; however, it requires the use of refined fuels. Schematic diagram of an electricity-generating turboshaft engine *Diagram* CC-by-sa *Olivier Cleynen* The compressor brings the air from atmospheric conditions to a high pressure and temperature. Compressor inlet: • Pressure: $1 bar (14.5 psi)$ • Specific volume: $0.751 m^{3}kg^{-1}$ • Internal energy: $206.78 kJ kg^{-1}$ Compressor outlet: • Pressure: $35 bar (507.6 psi)$ • Specific volume: $6.602 \times 10^{-2}m^{3}kg^{-1}$ • Internal energy: $578.13 kJ kg^{-1}$ Between the compressor and the turbine, the combustion chamber raises the temperature. The combustion takes place at constant pressure; it brings the gases to a specific volume of $0.1168 m^{3}kg^{-1}$ and an internal energy of $1028.8 kJ kg^{-1}$. At the turbine outlet, the gases are ready to be cooled in a catalytic exhaust system designed, among other things, to reduce noise emissions. Turbine outlet: • Pressure: $1.2 bar (17.4 psi)$ • Specific volume: $1.526 m^{3}kg^{-1}$ • Internal energy: $460.88 kJ kg^{-1}$ The air flow rate admitted into the machine is $8 kg s^{-1}$; the changes in its mechanical energy are nearly zero. Heat losses through the walls of the machine are negligible. Mechanical losses are $2 \%$ of the power transmitted to the generator. The electric generator itself has an efficiency of $85 \%$. 1. What power is received or rejected by the air in the compressor? 2. What power is received or rejected by the air in the turbine? 3. What is the electric power generated by the power plant? 4. Represent the processes undergone by the air as it passes through the engine on a pressure-volume diagram, qualitatively (that is, without showing numerical values). 5. What is the power lost in the form of heat together with the exhaust gases? [hint: it is the heat that the gases should lose to return to their state at the inlet of the compressor]**
 
 :::{admonition} Answer
 :class: dropdown
 
 .2**
-$1)\dot{W}_{\mathrm{A}\rightarrow \mathrm{B}}= +4.219 MW 2)\dot{W}_{\mathrm{C}\rightarrow \mathrm{D}}= -6.349 MW 3)\dot{E}_{\mathrm{generator}}= \eta _{\mathrm{generator}}\eta _{\mathrm{transmission}}(\dot{W}_{\mathrm{A}\rightarrow \mathrm{B}}+\dot{W}_{\mathrm{C}\rightarrow \mathrm{D}}) = -1.774 MW 5)\dot{Q}_{\mathrm{cooling}}= -W\dot{} _{\mathrm{A}\rightarrow \mathrm{B}}-\dot{Q}_{\mathrm{combustion}}-\dot{W}_{\mathrm{C}\rightarrow \mathrm{D}}= -2.897 MW$ (so more than half of the combustion heat… )
+$1)\dot{W}_{\mathrm{A}\rightarrow \mathrm{B}}= +4.219 MW 2)\dot{W}_{\mathrm{C}\rightarrow \mathrm{D}}= -6.349 MW 3)\dot{E}_{\mathrm{generator}}= \eta _{\mathrm{generator}}\eta _{\mathrm{transmission}}(\dot{W}_{\mathrm{A}\rightarrow \mathrm{B}}+\dot{W}_{\mathrm{C}\rightarrow \mathrm{D}}) = -1.774 MW 5)\dot{Q}_{\mathrm{cooling}}= -\dot{W}_{\mathrm{A}\rightarrow \mathrm{B}}-\dot{Q}_{\mathrm{combustion}}-\dot{W}_{\mathrm{C}\rightarrow \mathrm{D}}= -2.897 MW$ (so more than half of the combustion heat… )
 
 :::
 ```
@@ -932,6 +895,8 @@ $2)\dot{V}_{1}=\dot{m} v_{1}= 35.4 m^{3}s^{-1}\&\dot{V}_{2}= 66.3 m^{3}s^{-1}$.
    Schematic diagram of a nozzle and installation (with variable geometry) on the *Pratt & Whitney* F100 engine of a Lockheed Martin F-16.
    :::
 
+tion (with variable geometry) on the *Pratt & Whitney* F100 engine of a Lockheed Martin F-16.
+
 *Diagram* CC-0 *Olivier Cleynen; Photo* CC-by-sa *Ad Meskens (edited)*
 
 • Internal energy: $781.85 kJ kg^{-1}$
@@ -952,7 +917,7 @@ At the outlet, the air is brought back down to atmospheric pressure $(1 bar)$. I
 :label: prob-3-5
 :enumerator: 3.5
 
-**Water Turbine An engineer is working on a small hydroelectric power plant project. The objective is to harness the flow of a river $(3170 US gal/s$ or $12 m^{3}s^{-1})$ with a turbine connected to an electric generator (figure 3.14). *Diagram* CC-0 *Olivier Cleynen* In its liquid state, water is essentially incompressible (meaning its density does not change when its pressure changes). Its internal energy also varies negligibly 2. How much fuel flow rate should be injected into during adiabatic compressions and expansions. the burners, in $kg/h$? The engineer first considers placing the turbine at the 3. What is the volumetric flow rate of air after its foot of a water reservoir, where the pressure is $4 bar$ final acceleration? and the velocity is nearly zero. The water falls through 4. What is the efficiency of the afterburner, in other a height of $2 m (6.56 ft)$ through the turbine, and its words, the ratio between the increase in gas kinetic ejection velocity is $4 m s^{-1}$ at atmospheric pressure energy and the increase in power to be supplied $(1 bar)$. in the form of heat? 1. What power could the turbine transmit to the generator? The engineer then studies a different configuration (figure 3.15). The turbine would keep the same characteristics but would be positioned further downstream from the water reservoir (shifted horizontally and vertically by $25 m$, or $82 ft$, each). *Diagram* CC-by-sa *Olivier Cleynen* plant. A rigid pipe brings water to the turbine placed lower down. *Diagram* CC-0 *Olivier Cleynen* 2. What would be the power transmitted in this case?**
+**Water Turbine An engineer is working on a small hydroelectric power plant project. The objective is to harness the flow of a river $(3170 US gal/s$ or $12 m^{3}s^{-1})$ with a turbine connected to an electric generator (figure 3.14). power plant *Diagram* CC-0 *Olivier Cleynen* In its liquid state, water is essentially incompressible (meaning its density does not change when its pressure changes). Its internal energy also varies negligibly during adiabatic compressions and expansions. The engineer first considers placing the turbine at the foot of a water reservoir, where the pressure is $4 bar$ and the velocity is nearly zero. The water falls through a height of $2 m (6.56 ft)$ through the turbine, and its ejection velocity is $4 m s^{-1}$ at atmospheric pressure $(1 bar)$. 1. What power could the turbine transmit to the generator? The engineer then studies a different configuration (figure 3.15). The turbine would keep the same characteristics but would be positioned further downstream from the water reservoir (shifted horizontally and vertically by $25 m$, or $82 ft$, each). *Diagram* CC-0 *Olivier Cleynen* 2. What would be the power transmitted in this case?**
 
 :::{admonition} Answer
 :class: dropdown
@@ -970,6 +935,32 @@ $1)\dot{W}_{\mathrm{A}\rightarrow \mathrm{B}}= -3.74 MW 2)\dot{W}_{\mathrm{A}\ri
    Schematic diagram of a hydroelectric power plant
    :::
 
+   :::{figure} ../images/fig-3-15.jpg
+   :label: fig-3-15
+   :enumerator: 3.15
+   :alt: Schematic diagram of the modified power plant. A rigid pipe brings water to the turbine placed lower down.
+   
+   Schematic diagram of the modified power plant. A rigid pipe brings water to the turbine placed lower down.
+   :::
+
+```{exercise}
+:label: prob-3-6
+:enumerator: 3.6
+
+**Afterburner System In order to increase the thrust it generates, the nozzle from problem 3.4 is modified to add and *afterburning* device (later to be studied in §10.6.2 p. 291). It consists of a set of burners that allow a second combustion of fuel to occur in the engine, just before the air enters its expansion in the nozzle (figure 3.16). After the second combustion, the air goes through its expansion and acceleration until atmospheric pressure. At the inlet, the conditions are the same as those indicated in problem 3.4. The specific power added in the form of heat by the burners reaches $1322.5 kJ kg^{-1}$. The burnt fuel has a specific thermal capacity of $30 MJ kg^{-1}$. The combustion takes place at constant pressure, and it does not increase the gas’s kinetic energy. When the air completes its acceleration, its internal energy is predicted to be $1406.4 kJ kg^{-1}$ and its specific volume to be $5.59 m^{3}kg^{-1}$. 1. What is the increase in ejection speed (and thus thrust) generated by the afterburner? 2. How much fuel flow rate should be injected into the burners, in $kg/h$? 3. What is the volumetric flow rate of air after its final acceleration? 4. What is the efficiency of the afterburner, in other words, the ratio between the increase in gas kinetic energy and the increase in power to be supplied in the form of heat? tem. Its operation is studied in §10.6.2 p. 291. *Diagram* CC-by-sa *Olivier Cleynen***
+
+:::{admonition} Answer
+:class: dropdown
+
+1) $+52\%$ compared to dry thrust ($C_{3\mathrm{b}}= 950.1\,\mathrm{m\,s^{-1}}$)
+2) $\dot{m}_{\mathrm{fuel}}= \dot{m}_{\mathrm{air}}\frac{q_{1\rightarrow 2\mathrm{b}}}{q_{\mathrm{fuel}}}= 4126\,\mathrm{kg/h} = 9096\,\mathrm{lb/h}$
+3) $\dot{V}_{3\mathrm{b}}= 145.3\,\mathrm{m^{3}\,s^{-1}}$
+4) $\eta_{\mathrm{afterburning}}= \frac{\tfrac{1}{2}(C_{3\mathrm{b}}^{2}-C_{2}^{2})}{q_{1\rightarrow 2\mathrm{b}}} = 19.2\%$ (one reason
+why it is never used on civilian aircraft)
+
+:::
+```
+
    :::{figure} ../images/fig-3-16.jpg
    :label: fig-3-16
    :enumerator: 3.16
@@ -978,25 +969,21 @@ $1)\dot{W}_{\mathrm{A}\rightarrow \mathrm{B}}= -3.74 MW 2)\dot{W}_{\mathrm{A}\ri
    Schematic diagram of an afterburner system. Its operation is studied in §10.6.2 p. 291.
    :::
 
-   :::{figure} ../images/fig-3-15.jpg
-   :label: fig-3-15
-   :enumerator: 3.15
-   :alt: Schematic diagram of the modified power
-   
-   Schematic diagram of the modified power
-   :::
-
 ```{exercise}
-:label: prob-3-6
-:enumerator: 3.6
+:label: prob-3-8
+:enumerator: 3.8
 
-**Afterburner System In order to increase the thrust it generates, the nozzle from problem 3.4 is modified to add and *afterburning* device (later to be studied in §10.6.2 p. 291). It consists of a set of burners that allow a second combustion of fuel to occur in the engine, just before the air enters its 3.8 Theoretical and Actual Turbines expansion in the nozzle (figure 3.16). After the second combustion, the air goes through its expansion and In the free turbine of a helicopter’s turboshaft engine, acceleration until atmospheric pressure. air is expanded to extract work which is transmitted to At the inlet, the conditions are the same as those the two rotors. The characteristics are as follows: indicated in problem 3.4. • Mass flow rate: $2 kg s^{-1}$ The specific power added in the form of heat by the • Heat losses: negligible burners reaches $1322.5 kJ kg^{-1}$. The burnt fuel has a • Inlet: $4 bar$ and $0.41 m^{3}kg^{-1}$ specific thermal capacity of $30 MJ kg^{-1}$. The combus- • Outlet pressure: $1.1 bar$ tion takes place at constant pressure, and it does not increase the gas’s kinetic energy. In the most favorable case, the expansion would take place reversibly, and the air would follow a relationship When the air completes its acceleration, its internal of the form $pv^{1.4}= k$ (where $k$ is a constant). energy is predicted to be $1406.4 kJ kg^{-1}$ and its specific volume to be $5.59 m^{3}kg^{-1}$. 1. Which conditions must be met for the expansion 1. What is the increase in ejection speed (and thus to be reversible? thrust) generated by the afterburner? 2. What would be the power supplied by the turbine in this case? In practice, it is observed that the power supplied by the turbine is $20 \%$ lower than the value calculated above. An engineer installs probes at the inlet and outlet of the turbine and observes that the pressure there indeed reaches the theoretically expected values. S/he also measures the heat transfer from the air to the turbine and confrims that it is negligible. 3. Draw the processes undergone by the air in the reversible and real cases on a pressure-volume diagram, qualitatively. 4. In which form will the engineer find (and measure) the missing $20 \%$ of power?**
+**Theoretical and Actual Turbines In the free turbine of a helicopter’s turboshaft engine, air is expanded to extract work which is transmitted to the two rotors. The characteristics are as follows: • Mass flow rate: $2 kg s^{-1}$ • Heat losses: negligible • Inlet: $4 bar$ and $0.41 m^{3}kg^{-1}$ • Outlet pressure: $1.1 bar$ In the most favorable case, the expansion would take place reversibly, and the air would follow a relationship of the form $pv^{1.4}= k$ (where $k$ is a constant). 1. Which conditions must be met for the expansion to be reversible? 2. What would be the power supplied by the turbine in this case? In practice, it is observed that the power supplied by the turbine is $20 \%$ lower than the value calculated above. An engineer installs probes at the inlet and outlet of the turbine and observes that the pressure there indeed reaches the theoretically expected values. S/he also measures the heat transfer from the air to the turbine and confirms that it is negligible. 3. Draw the processes undergone by the air in the reversible and real cases on a pressure-volume diagram, qualitatively. 4. In which form will the engineer find (and measure) the missing $20 \%$ of power?**
 
 :::{admonition} Answer
 :class: dropdown
 
-1) $+52 \%$ compared to dry thrust $(C_{3\mathrm{b}}= 950.1ms^{-}2)\dot{m}_{\mathrm{fuel}}=\dot{}3)\dot{V}_{3\mathrm{b}}= 1 \frac{1)_{m_{\mathrm{air}}q_{1\rightarrow 2\mathrm{b}}}}{45.3m^{3q_{\mathrm{fuel}}}} s^{-1}= 4126kg/h = 9096lb/h 4) \eta _{\mathrm{afterburning}}= \frac{(^{C_{3}^{2}_{\mathrm{b}}-C_{2}^{2}})}{$^{\frac{1}{2}}$ q_{1\rightarrow 2\mathrm{b}}} = 19.2\% (\mathrm{one} \mathrm{reason}$
-why it is never used on civilian aircraft)
+.8**
+1) see §2.4.4 p. 49
+2) $\dot{W}_{\mathrm{A}\rightarrow \mathrm{B}}=\dot{m}\,k^{\frac{1}{1.4}}\left[\frac{1}{-\frac{1}{1.4}+1} p^{-\frac{1}{1.4}+1}\right]_{p_{\mathrm{A}}}^{p_{\mathrm{B}}}= -354.1\,\mathrm{kW}$
+4) In the form of $\Delta h$ – the outlet air will have
+higher specific volume and temperature (internal
+energy), and maybe also higher kinetic energy.
 
 :::
 ```
@@ -1011,8 +998,9 @@ why it is never used on civilian aircraft)
 :class: dropdown
 
 1) $w_{\mathrm{A}\rightarrow \mathrm{B}}\ge \int ^{\mathrm{B}}_{\mathrm{A}}vdp = +312 kJ kg^{-1}$
-2) & 3) see fgi. 3.8 p. 71;
-4) $w_{\mathrm{C}\rightarrow \mathrm{D}}= -729.3 kJ kg^{-1} 5)\dot{m}_{\mathrm{air}}=\dot{} \frac{W_{\mathrm{propeller}}}{w_{\mathrm{propeller}}} = _{w_{\mathrm{A}}}^{W_{\rightarrow \mathrm{pBr}}}_{+^{\mathrm{op}}w^{\mathrm{ell}}_{\mathrm{C}}^{\mathrm{er}}_{\rightarrow \mathrm{D}}}= 1.438 kg s^{-1}$.
+2) & 3) see fig. 3.8 p. 71;
+4) $w_{\mathrm{C}\rightarrow \mathrm{D}}= -729.3\,\mathrm{kJ\,kg^{-1}}
+5) $\dot{m}_{\mathrm{air}}= \frac{\dot{W}_{\mathrm{propeller}}}{w_{\mathrm{propeller}}} = \frac{\dot{W}_{\mathrm{propeller}}}{w_{\mathrm{A}\rightarrow \mathrm{B}}+w_{\mathrm{C}\rightarrow \mathrm{D}}}= 1.438\,\mathrm{kg\,s^{-1}}$$.
 *Engineering Thermodynamics* by Olivier Cleynen
 
 :::

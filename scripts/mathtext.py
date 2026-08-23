@@ -253,7 +253,30 @@ def _tidy_math(s: str) -> str:
     s = re.sub(r"\\(ln|log|exp|sin|cos|tan|max|min|arctan)\s+", r"\\\1 ", s)
     s = re.sub(r"\s+", " ", s).strip()
     s = s.replace(" }", "}")
-    s = re.sub(r"\\dot\{\}\s*(\\?[A-Za-z]+)", r"\\dot{\1}", s)
+    # Attach a bare combining-dot command to the next single token only.
+    # Do not swallow multi-letter TeX macros such as \frac (that produced
+    # the bogus form \dot{\frac}{num}{den} throughout the book).
+    s = re.sub(r"\\dot\{\}\s*(\\[A-Za-z]+|[A-Za-z])(?![A-Za-z])", r"\\dot{\1}", s)
+    # Repair any \dot{\frac}{num}{den} that already slipped through.
+    def _fix_dot_frac(m: re.Match[str]) -> str:
+        num, den = m.group(1), m.group(2)
+
+        def dotted(x: str) -> str:
+            x = x.strip()
+            if x.startswith(r"\dot{"):
+                return x
+            tok = re.match(r"^(\\[A-Za-z]+|[A-Za-z])(.*)$", x)
+            if tok:
+                return r"\dot{" + tok.group(1) + "}" + tok.group(2)
+            return r"\dot{" + x + "}"
+
+        den_bare = re.sub(r"_\{[^}]*\}|\\mathrm\{[^}]*\}", "", den).strip()
+        if re.fullmatch(r"\\?[a-z]", den_bare):
+            return r"\frac{" + dotted(num) + "}{" + den + "}"
+        return r"\frac{" + dotted(num) + "}{" + dotted(den) + "}"
+
+    s = re.sub(r"\\dot\{\\frac\}\{([^{}]*(?:\{[^{}]*\}[^{}]*)*)\}\{([^{}]*(?:\{[^{}]*\}[^{}]*)*)\}",
+               _fix_dot_frac, s)
     for _ in range(6):
         merged = re.sub(r"\\mathrm\{([^{}]*)\}([./,-]?)\\mathrm\{",
                         lambda m: "\\mathrm{" + m.group(1) + m.group(2), s)

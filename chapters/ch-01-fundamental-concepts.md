@@ -9,24 +9,20 @@ label: ch-01-fundamental-concepts
 (ch-1)=
 
 :::{figure} ../images/art-p009-1.svg
-:alt: Decorative typographic rendering of the chapter's opening epigraph text, set as vector artwork on the chapter title page, reading "Chapter 1 — Fundamental Concepts, or The Indispensable Playset of the Little Thermodynamicist."
-:::
-
-:::{admonition} Executive summary
-:class: tip
-The first law states that energy is constant and indestructible: we transform it from one form to another. Work is a transfer involving a force and a displacement. Heat is a chaotic transfer associated with a potential, temperature.
+:alt: Illustration from the original text
 :::
 
 ## Introduction
 
-We are presenting here the essential concepts that we will use in the following chapters, attempting to answer two questions:
+We are presenting here the essential concepts that we will use in the
+
+following chapters, attempting to answer two questions:
 
 • What does energy represent?
 
 • Which forms of energy are manipulated in a machine?
 
-(sec-1-1)=
-## 1.1 Concept of Energy
+**1.1 Concept of Energy**
 
 (sec-1-1-1)=
 ### 1.1.1 Energy
@@ -40,7 +36,7 @@ We have learned to quantify the amount of energy present in any arbitrary volume
 :::{figure} ../images/fig-1-1.jpg
 :label: fig-1-1
 :enumerator: 1.1
-:alt: The chemical energy stored in the fuel that has been burned is exactly equal to the energy rejected by the exhaust pipe, plus the energy dissipated by friction, plus the kinetic energy of the moving car. All this energy is transformed into heat, *but never destroyed*, once the car is stopped (whichever the means!).
+:alt: The chemical energy stored in the fuel that has been burned is exactly equal to the energy rejected by the exhaust pipe, plus the energy dis
 
 The chemical energy stored in the fuel that has been burned is exactly equal to the energy rejected by the exhaust pipe, plus the energy dissipated by friction, plus the kinetic energy of the moving car. All this energy is transformed into heat, *but never destroyed*, once the car is stopped (whichever the means!).
 :::
@@ -49,7 +45,7 @@ The chemical energy stored in the fuel that has been burned is exactly equal to 
 
 Thus, energy is primarily a concept that we use to describe the transformations we observe in the world: we could say that it is “what does not change when things change.” For the engineer, it represents above all the ability of one body to set another in motion, in a unified way (for example, with a displacement) or in a disordered way (for example, with chaotic excitation).
 
-We measure energy in *joules* (J).
+We measure energy in $joules (J)$.
 
 (sec-1-1-2)=
 ### 1.1.2 The first law
@@ -58,17 +54,15 @@ The *first law of thermodynamics* simply states:
 
 Energy is indestructible.
 
-One can also state that “the energy of the universe is constant”, or “energy is always conserved”: it can neither be created nor destroyed. In other words, when an object receives a *joule* of energy, it can either store it or deliver it back to the surroundings; but in no case can it destroy it. There are only two important laws in thermodynamics; the second one (to which we devote chapters 7 and 8) also deals with the nature of energy. Their implications are enormous and they are the result of deep and laborious intellectual work, spanning several centuries. There is no proof or demonstration of their truth, but all our observations and experiments corroborate them, so they are now universally accepted.
+« It is important to realize that in physics today, we have no knowledge of what energy *is*. We do not have a picture that energy comes in little blobs of a definite amount. It is not that way. However, there are formulas for calculating some numerical quantity, and when we add it all together it gives “28”—always the same number. It is an abstract thing in that it does not tell us the mechanism or the *reasons* for the various formulas. »
 
-:::{aside}
-*Photo* CC-by-sa *by Tommi Nummelin (cropped)*
-:::
+Richard Feynman, 1963 [[30](#ref-30), [35](#ref-35)]
 
-:::{aside}
-It is important to realize that in physics today, we have no knowledge of what energy *is*. We do not have a picture that energy comes in little blobs of a definite amount. It is not that way. However, there are formulas for calculating some numerical quantity, and when we add it all together it gives “28” —always the same number. It is an abstract thing in that it does not tell us the mechanism or the *reasons* for the various formulas.
+*The Feynman Lectures on Physics*
 
-Richard Feynman, 1963 [[30](#ref-30), [35](#ref-35)] *The Feynman Lectures on Physics*
-:::
+One can also state that “the energy of the universe is constant”, or “energy is always conserved”: it can neither be created nor destroyed. In other words, when an object receives a joule of energy, it can either store it or deliver it back to the surroundings; but in no case can it destroy it.
+
+There are only two important laws in thermodynamics; the second one (to which we devote chapters 7 and 8) also deals with the nature of energy. Their implications are enormous and they are the result of deep and laborious intellectual work, spanning several centuries. There is no proof or demonstration of their truth, but all our observations and experiments corroborate them, so they are now universally accepted.
 
 We will express the first law quantitatively in two different ways, one for a closed system (in chapter 2, equation 2/2) and the other for an open system (in chapter 3, equation 3/15).
 
@@ -79,7 +73,7 @@ The different forms of energy that we usually identify have been revealed one by
 
 *Kinetic energy* is possessed by a body due to its velocity (see §1.2 below). It is the easiest form of energy to identify. It has long been called *vis viva* (“living force”).
 
-*Potential energy* is stored due to the interaction between two objects linked by a conservative force.[^1] On a macroscopic scale, its most palpable form is the potential energy of altitude, resulting from the work done on a mass against its weight (it is this work that makes climbing stairs more tiring than going down, for example). By compressing a spring, potential energy of compression is stored, which can be recovered by letting it expand again.
+*Potential energy* is stored due to the interaction between two objects linked by a conservative force.$^{1}$ On a macroscopic scale, its most palpable form is the potential energy of altitude, resulting from the work done on a mass against its weight (it is this work that makes climbing stairs more tiring than going down, for example). By compressing a spring, potential energy of compression is stored, which can be recovered by letting it expand again.
 
 *Chemical energy* is a combination of potential energy and kinetic energy *between atoms*. Human metabolism, as well as the combustion of hydrocarbons with atmospheric oxygen used in almost all our vehicles, are both based on chemical energy transfers.
 
@@ -87,7 +81,9 @@ In the 20th century, it was discovered that mass, at the sub-atomic level, was a
 
 In thermodynamics, we will focus on three forms of energy, identifiable at the macroscopic scale:
 
-[^1]: A force is called *conservative* when it remains the same in one direction as in the other. For example, gravity is conservative (it is the same whether going up or down) but friction is not (it always opposes the motion).
+$^{1}\mathrm{A}$ force is called *conservative* when it remains the same in one direction as in
+
+the other. For example, gravity is conservative (it is the same whether going up or down) but friction is not (it always opposes the motion).
 
 ::::{admonition} A Bit of History
 :class: note
@@ -107,7 +103,7 @@ In general, the thermodynamic engineer wishes to capture heat from bodies that s
 (sec-1-1-4)=
 ### 1.1.4 Power
 
-*Power* represents a flow of energy in time. Its SI unit is the *joule per second*, which we name the *watt* (W):
+*Power* represents a flow of energy in time. Its SI unit is the $joule per second$, which we name the $watt (W)$:
 
 :::{math}
 1 W \equiv 1 J s^{-1} (1/1)
@@ -126,7 +122,7 @@ In everyday language, the term “power” is used to quantify *the maximum usef
 :::{figure} ../images/fig-1-2.svg
 :label: fig-1-2
 :enumerator: 1.2
-:alt: A trailer, with zero power but capable of delivering a lot of energy. The combustion of 20 t of kerosene releases about 800 GJ as heat; a Trent 900 turbofan engine, with very high power (able to supply 14 MW to a commercial aircraft) but devoid of energy (0 J).
+:alt: A trailer, with zero power but capable of delivering a lot of energy. The combustion of of kerosene releases about as heat; A Trent 900 turb
 
 A trailer, with zero power $(\dot{Q} = 0 W)$ but capable of delivering a lot of energy. The combustion of $20 t$ of kerosene releases about $Q = 800 GJ$ as heat; A *Trent 900* turbofan engine, with very high power (able to supply$\dot{W} = 14 MW$ to a commercial aircraft) but devoid of energy $(0 J)$.
 :::
@@ -138,12 +134,20 @@ A trailer, with zero power $(\dot{Q} = 0 W)$ but capable of delivering a lot of 
 
 In many thermodynamic applications, it is interesting to quantify energy transfers independently of the amount of mass inside the machine. For example, if we want to compare the *operation* of the engines of a motorcycle and of a truck, it will be wise to divide each of the energy transfers (during compression, combustion, expansion) by the quantity of air in the cylinders, to eliminate the scale effects. To this end, we use quantities called *specific* (sometimes called *mass-specific*); and we denote them in lowercase.
 
-**Specific energy** (sometimes called mass-specific energy), is measured in *joules per kilogram* $(J kg^{-1})$:
+**Specific energy** (sometimes called mass-specific energy), is measured in
+
+:::{math}
+joules per kilogram (J kg^{-1}) :
+:::
 
 :::{math}
 :label: eq-1-3
 :enumerator: 1/3
-e \equiv \frac{E}{m}
+e \equiv E
+:::
+
+:::{math}
+m
 :::
 
 where $e$ is the specific energy $(J kg^{-1})$, $E$ is the energy $(J)$,
@@ -160,7 +164,15 @@ The heat required will be $Q_{\mathrm{comb}.1}= m_{1}q_{\mathrm{comb}.}= 0.5 \ti
 
 ````
 
-**Specific power** (sometimes also called mass-specific power), has the same units as specific energy: we divide *watts* (joules per second) by a mass flow rate (kilos per second).
+**Specific power** (sometimes also called mass-specific power), has the same
+
+:::{math}
+units as specific energy: we divide watts (joules per second) by a mass
+:::
+
+:::{math}
+flow rate (kilos per second) .
+:::
 
 :::{math}
 :label: eq-1-4
@@ -195,211 +207,117 @@ Power$\dot{Q}$ and mass flow$\dot{m}$ are written with a dot (flow in
 
 time) but not the specific power as heat $q$, which is measured in $J kg^{-1}$ just like specific heat.
 
-Thanks to the concepts of specific energy and specific power, we can compare the same physical process (air heated up by combustion) in this example with the previous one, in two very different machines.
+Thanks to the concepts of specific energy and specific
+
+power, we can compare the same physical process (air heated up by combustion) in this example with the previous one, in two very different machines.
 
 ````
 
 It should be noted that in practice, the adjectives “specific” or “mass-specific” are often simply omitted, and that the lowercase notation is not systematically used in scientific literature.
 
-(sec-1-2)=
-## 1.2 Mechanical Energy
-
-The student will have no difficulty quantifying *kinetic energy*:
-
-:::{math}
-:label: eq-1-5
-:enumerator: 1/5
-E_{k}= \frac{1}{2} m C^{2}
-:::
-
-where $E_{k}$ is the kinetic energy $(J)$, $m$ is the mass of the body $(kg)$, and $C$ is the velocity $(m s^{-1}$, see Appendix A6 p. 319 for other units).
-
-Of course, we also define *specific kinetic energy* correspondingly:
-
-:::{math}
-:label: eq-1-6
-:enumerator: 1/6
-e_{k}\equiv \frac{E_{k}}{m} = \frac{1}{2} C^{2}
-:::
-
-In thermodynamics, we are mainly interested in the changes in the energy of fluids within machines. The kinetic energy of gases varies negligibly in piston/cylinder engines, but it plays a major role in jet engines, as we will see in chapter 10 (*air-based power cycles*).
-
-The expression for *potential energy due to altitude* should also not cause any concern for the student:
-
-:::{math}
-:label: eq-1-7
-:enumerator: 1/7
-E_{p}= m g z
-:::
-
-:::{math}
-:label: eq-1-8
-:enumerator: 1/8
-e_{p}\equiv \frac{E_{p}}{m} = g z
-:::
-
-where $g$ is the gravitational acceleration (usually $9.81 m s^{-2})$, and $z$ is the altitude relative to the reference point $(m$, see Appendix A5 p. 317 for other units).
-
-We will show that in machines, the change of the potential energy of the air due to altitude is always negligible, and that this is often also true for water. Kinetic energy and potential energy due to altitude are often combined into a single term, called *mechanical energy*:
-
-:::{math}
-:label: eq-1-9
-:enumerator: 1/9
-e_{m}\equiv e_{k}+ e_{p}= \frac{1}{2} C^{2}+ g z
-:::
+**1.2 Mechanical Energy** The student will have no difficulty quantifying *kinetic energy*: $E_{k}= \frac{1}{2} m C^{2}(1/5)$ where $E_{k}$ is the kinetic energy $(J)$, $m$ is the mass of the body $(kg)$, and $C$ is the velocity $(m s^{-1}$, see Appendix A6 p. 319 for other units). Of course, we also define *specific kinetic energy* correspondingly: $e_{k}\equiv \frac{E_{k}}{} \frac{}{} (1/6) m = ^{\frac{1}{2}} C^{2}$ In thermodynamics, we are mainly interested in the changes in the energy of fluids within machines. The kinetic energy of gases varies negligibly in piston/cylinder engines, but it plays a major role in jet engines, as we will see in chapter 10 (*air-based power cycles*). The expression for *potential energy due to altitude* should also not cause any concern for the student: $E_{p}= m g z$ (1/7) $e_{p}\equiv \frac{E_{p}}{m} = g z (1/8)$ where $g$ is the gravitational acceleration (usually $9.81 m s^{-2})$, and $z$ is the altitude relative to the reference point $(m$, see Appendix A5 p. 317 for other units). We will show that in machines, the change of the potential energy of the air due to altitude is always negligible, and that this is often also true for water. Kinetic energy and potential energy due to altitude are often combined into a single term, called *mechanical energy*: $e_{m}\equiv e_{k}+ e_{p}= \frac{1}{2} C^{2}+ g z (1/9)$
 
 ````{prf:example}
-:label: ex-1-3
-:enumerator: 1.3
 
-A student is coasting down a mountain road with a bicycle. At a point with an altitude of $540 m (1772 ft)$, his/her speed is $10 km/h (6.214 mph)$. A few moments later, passing a point at an altitude of $490 m (1608 ft)$, his/her speed is $45 km/h (27.96 mph)$. The mass of the cyclist together with his/her equipment is $70 kg (154.3 lb)$.
+$\Delta E_{m}= E_{m2}- E_{m1}= m(e_{m2}- e_{m1}) = m(gz_{2}- gz_{1}+ \frac{1}{2}C^{2}$
 
-How much energy has s/he dissipated in the form of friction?
+$= 70 [9.81(490 - 540) + ^{1}$
 
-The student’s mechanical energy changed by $\Delta E_{m}= E_{m2}- E_{m1}= m(e_{m2}- e_{m1}) = m(gz_{2}- gz_{1}+ \frac{1}{2}C_{2}^{2}- \frac{1}{2}C_{1}^{2}) = m[g(z_{2}- z_{1}) + \frac{1}{2}(C_{2}^{2}- C_{1}^{2})]$
-
-:::{math}
-2 2
-:::
-
-$= 70 [9.81(490 - 540) + \frac{1}{2} ((\frac{45\times 10^{3}}{3600} ) - (\frac{10\times 10^{3}}{3600} ))]$
-
-$= 70 [-490.5 + 74.3] = -2.91 \times 10^{4}J = -29.1 kJ$.
-
-The student has lost $29.1 kJ$ of mechanical energy. This quantity was transferred to the atmosphere in the form of turbulence and heat, and to the bicycle’s bearings and tires in the form of heat.
-
-Energy changes may well be negative. Kinetic energy is however always positive.
-
-Refer to Appendix A5 p. 317 for converting to and from SI units.
-
-The passage of the bicycle through the air causes observable disturbances on a macroscopic scale that we call *turbulence*. After a short time, this kinetic energy has dissipated down to a microscopic scale, warming up the atmosphere.
+always positive.
 
 ````
 
-(sec-1-3)=
-## 1.3 Work
+**1.3 Work** quantified using vectors: where $W$ is the work $(J)$, and $l$ particularities: *that does the work*; Example 1.3 A student is coasting down a mountain road with a bicycle. At a point with an altitude of $540 m (1772 ft)$, his/her speed is $10 km/h (6.214 mph)$. A few moments later, passing a point at an altitude of $490 m (1608 ft)$, his/her speed is $45 km/h (27.96 mph)$. The mass of the cyclist together with his/her equipment is $70 kg (154.3 lb)$. How much energy has s/he dissipated in the form of friction? The student’s mechanical energy changed by $_{2}- \frac{1}{2}C_{1}^{2}) = m[g(z_{2}- z_{1}) + \frac{1}{2}(C_{2}^{2}- C_{1}^{2})] 2 2 ^{2}((^{\frac{45\times 10^{3}}{3600}} ) - (^{\frac{10\times 10^{3}}{3600}} ))] = 70 [-490.5 + 74.3] = -2.91 \times 10^{4}J = -29.1 kJ$. The student has lost $29.1 kJ$ of mechanical energy. This quantity was transferred to the atmosphere in the form of turbulence and heat, and to the bicycle’s bearings and tires in the form of heat. Energy changes may well be negative. Kinetic energy is however Refer to Appendix A5 p. 317 for converting to and from SI units. The passage of the bicycle through the air causes observable disturbances on a macroscopic scale that we call *turbulence*. After a short time, this kinetic energy has dissipated down to a microscopic scale, warming up the atmosphere. *Work* is a transfer of energy. An object does work (and thus loses energy) when it exerts a force over a displacement. In mechanics, this work is $W \equiv \vec{F} ⋅\vec{l}$ (1/10) $F$ is the vector representing the force (of magnitude $F$ in $N)$, is the vector representing the displacement (of magnitude $l$ in $m)$. In thermodynamics, we will use this equation 1/10 to quantify the work done by fluids. In order to do this, we will rewrite it by adding three • We will measure the displacement *as the change in length of the object* • We will only consider cases where the vectors$\vec{F}$ and$\vec{l}$ are collinear; • We will take into account the fact that$\vec{F}$ can vary as a function of$\vec{l}$. *Engineering Thermodynamics* by Olivier Cleynen With these three constraints, equation 1/10 becomes: B $W_{\mathrm{A}\rightarrow \mathrm{B}}= \int F ⋅ \mathrm{d}\vec{l}$ A Since $\mathrm{d}\vec{l}$ is measured from the length of the object performing the work, $dl$ will be negative when $W$ is positive (work is then done *to* the object, causing its length to decrease). Finally, since$\vec{F}$ is always collinear with $\mathrm{d}\vec{l}$ in our case, we can write: B $W_{\mathrm{A}\rightarrow \mathrm{B}}= -\int F dl$ (1/11) A where $W_{\mathrm{A}\rightarrow \mathrm{B}}$ is the work done between two points A and B $(J)$, $F$ is the force $(N)$, and $dl$ is the infinitesimal change in the length of the considered object $(m)$. On a diagram representing the force as a function of distance, this work $W_{\mathrm{A}\rightarrow \mathrm{B}}$ is represented by the area under the curve from A to B (figure 1.3). The shape of the curve, in other words, the relationship $F_{(l)}$ between $F$ and $l$ during the process, will determine the quantity $W_{\mathrm{A}\rightarrow \mathrm{B}}$. *Diagram* CC-0 *Olivier Cleynen*
 
-*Work* is a transfer of energy. An object does work (and thus loses energy) when it exerts a force over a displacement. In mechanics, this work is quantified using vectors: $W \equiv ⃗ F ⋅⃗ l$ where $W$ is the work $(J)$, $F$ is the vector representing the force (of magnitude $F$ in $N)$, and $l$ is the vector representing the displacement (of magnitude $l$ in $m)$. In thermodynamics, we will use this equation 1/10 to quantify the work done by fluids. In order to do this, we will rewrite it by adding three particularities: • We will measure the displacement *as the change in length of the object that does the work*; • We will only consider cases where the vectors$⃗ F$ and$⃗ l$ are collinear; • We will take into account the fact that$⃗ F$ can vary as a function of$⃗ l$.
-
-::::{admonition} A Bit of History
-:class: note
-
-*Engineering Thermodynamics* by Olivier Cleynen
-
-::::
-
-With these three constraints, equation 1/10 becomes:
-
-B
-
-:::{math}
-W_{\mathrm{A}\rightarrow \mathrm{B}}= \int F ⋅ d⃗l
-:::
-
-A
-
-Since $dl⃗$ is measured from the length of the object performing the work, $dl$ will be negative when $W$ is positive (work is then done *to* the object, causing its length to decrease). Finally, since$⃗ F$ is always collinear with $d⃗l$ in our case, we can write:
-
-B
-
-:::{math}
-W_{\mathrm{A}\rightarrow \mathrm{B}}= -\int F dl (1/11)
-:::
-
-A where $W_{\mathrm{A}\rightarrow \mathrm{B}}$ is the work done between two points A and B $(J)$, $F$ is the force $(N)$,
-
-and $dl$ is the infinitesimal change in the length of the considered object $(m)$.
-
-On a diagram representing the force as a function of distance, this work $W_{\mathrm{A}\rightarrow \mathrm{B}}$ is represented by the area under the curve from A to B (figure 1.3). The shape of the curve, in other words, the relationship $F_{(l)}$ between $F$ and $l$ during the process, will determine the quantity $W_{\mathrm{A}\rightarrow \mathrm{B}}$.
-
-:::{figure} ../images/fig-1-3.jpg
-:label: fig-1-3
-:enumerator: 1.3
-:alt: On a force-distance diagram, the work done by an object can be visualized by the area under the curve. In the case shown here, the object’s length $l$ increases, and the work will be negative (done by the object).
-
-On a force-distance diagram, the work done by an object can be visualized by the area under the curve. In the case shown here, the object’s length $l$ increases, and the work will be negative (done by the object).
-:::
-
-*Diagram* CC-0 *Olivier Cleynen*
+   :::{figure} ../images/fig-1-3.jpg
+   :label: fig-1-3
+   :enumerator: 1.3
+   :alt: On a force-distance diagram, the work done by an object can be visualized by the area under the curve. In the case shown here, the object’s
+   
+   On a force-distance diagram, the work done by an object can be visualized by the area under the curve. In the case shown here, the object’s length $l$ increases, and the work will be negative (done by the object).
+   :::
 
 ````{prf:example}
 :label: ex-1-4
 :enumerator: 1.4
 
-A spring is compressed from a length of $30 cm (11.81 in)$ down to a length of $5 cm (1.968 in)$. The spring is such that it exerts a force (in *newtons*) independent of its length and equal to:
+A spring is compressed from a length of $30 cm (11.81 in)$ down to a length of $5 cm (1.968 in)$. The spring is such that it exerts a force (in $newtons)$ independent of its length and equal to:
 
 :::{math}
 F_{(l)}= 6 \times 10^{3}N
 :::
 
-What is the energy supplied to the spring in the form of work during compression?
+compression?
 
-The work done is obtained using equation 1/11, making sure to set the boundaries in si units: $W_{\mathrm{A}\rightarrow \mathrm{B}}= -\int ^{\mathrm{B}}_{\mathrm{A}}F_{(l)}dl = -\int ^{\mathrm{B}}_{\mathrm{A}}6 \times 10^{3}dl = -6 \times 10^{3}\int ^{\mathrm{B}}_{\mathrm{A}}dl = -6\times 10^{3}[l]^{l_{\mathrm{B}}}_{l_{\mathrm{A}}}= -6\times 10^{3}(0.05-0.3) = +1.5\times 10^{3}J = +1.5 kJ.$
+boundaries in si units: $W_{\mathrm{A}\rightarrow \mathrm{B}}= -\int ^{\mathrm{B}} 10^{3}\int ^{\mathrm{B}}_{\mathrm{A}}dl = -6\times 10^{3}[l]^{l_{\mathrm{B}}}$
 
-The sign of the transferred work is positive: the spring has
-
-*received* energy. This does not suprise us: its length has decreased as it was compressed.
-
-Springs with such a characteristic (independent of their length)
-
-are often ribbon springs, like those used in mechanical watches.
+as it was compressed.
 
 ````
 
 ````{prf:example}
-:label: ex-1-5
-:enumerator: 1.5
 
-Another spring is also compressed from a length of $30 cm$ down to a length of $5 cm$. It is such that it exerts a force (in $N)$ related to its length $l$ (in $m)$ by the relation:
+length $l$ (in $m)$ by the relation:
 
-:::{math}
-F_{(l)}= 9 \times 10^{3}- 14 \times 10^{3}l
-:::
+compression?
 
-What is the energy supplied to the spring in the form of work during compression?
-
-The work done is still obtained using equation 1/11, and the integral is only slightly more complex: $W_{\mathrm{A}\rightarrow \mathrm{B}}= -\int ^{\mathrm{B}}_{\mathrm{A}}(9 \times 10^{3}- 14 \times 10^{3}l) dl =$
-
-:::{math}
-l_{\mathrm{B}}0.05
-:::
-
-$-[9 \times 10^{3}l - \frac{1}{2}14 \times 10^{3}l^{2}]_{l_{\mathrm{A}}}= -10^{3}[9l - 7l^{2}]_{0.3}= -10^{3}(0.4325 - 2.07) = +1.6375 \times 10^{3}J = +1.638 kJ.$
-
-Springs with such a characteristic (force proportional to length)
+$-[9 \times 10^{3}l - ^{1} 2.07) = +1.6375 \times 10^{3}J = +1.638 kJ.$
 
 have regular coils.
 
 ````
 
 ````{prf:example}
-:label: ex-1-6
-:enumerator: 1.6
 
-One final spring is compressed from a length of $30 cm$ down to a length of $5 cm$. It is such that it exerts a force (in $N)$ related to its length $l$ (in $m)$ by the relation:
+$m)$ by the relation:
 
-:::{math}
-F_{(l)}= 14 \times 10^{3}- 12 \times 10^{3}l^{0.3}
-:::
+compression?
 
-What is the energy supplied to the spring in the form of work during compression?
-
-The work done is still obtained using equation 1/11, $W_{\mathrm{A}\rightarrow \mathrm{B}}= -\int ^{\mathrm{B}}_{\mathrm{A}}(14\times$
-
-:::{math}
-0.05
-:::
-
-$10^{3}-12 \times 10^{3}l^{0.3}) dl = -10^{3}[14 l - \frac{1}{0.3+1} 12 l^{0.3+1}]_{0.3}= -10^{3}(0.5121 - 2.2703) = +1.7582 \times 10^{3}J = +1.758 kJ.$
+$10^{3}-12 \times 10^{3}l^{0.3}) dl = -10^{3}[14 l - 2.2703) = +1.7582 \times 10^{3}J = +1.758 kJ.$
 
 ````
 
-::::{admonition} A Bit of History
-:class: note
+What is the energy supplied to the spring in the form of work during
+
+The work done is obtained using equation 1/11, making sure to set the $_{\mathrm{A}}F_{(l)}dl = -\int ^{\mathrm{B}}_{\mathrm{A}}6 \times 10^{3}dl = -6 \times$
+
+$_{l_{\mathrm{A}}}= -6\times 10^{3}(0.05-0.3) = +1.5\times 10^{3}J = +1.5 kJ.$
+
+The sign of the transferred work is positive: the spring has
+
+*received* energy. This does not suprise us: its length has decreased
+
+Springs with such a characteristic (independent of their length)
+
+are often ribbon springs, like those used in mechanical watches.
+
+Example 1.5
+
+Another spring is also compressed from a length of $30 cm$ down to a length of $5 cm$. It is such that it exerts a force (in $N)$ related to its
+
+$F_{(l)}= 9 \times 10^{3}- 14 \times 10^{3}l$
+
+What is the energy supplied to the spring in the form of work during
+
+The work done is still obtained using equation 1/11, and the integral is only slightly more complex: $W_{\mathrm{A}\rightarrow \mathrm{B}}= -\int ^{\mathrm{B}}_{\mathrm{A}}(9 \times 10^{3}- 14 \times 10^{3}l) dl = l_{\mathrm{B}}0.05$
+
+$_{2}14 \times 10^{3}l^{2}]_{l_{\mathrm{A}}}= -10^{3}[9l - 7l^{2}]_{0.3}= -10^{3}(0.4325 -$
+
+Springs with such a characteristic (force proportional to length)
+
+Example 1.6
+
+One final spring is compressed from a length of $30 cm$ down to a length of $5 cm$. It is such that it exerts a force (in $N)$ related to its length $l$ (in
+
+$F_{(l)}= 14 \times 10^{3}- 12 \times 10^{3}l^{0.3}$
+
+What is the energy supplied to the spring in the form of work during
+
+The work done is still obtained using equation 1/11, $W_{\mathrm{A}\rightarrow \mathrm{B}}= -\int ^{\mathrm{B}}_{\mathrm{A}}(14\times 0.05$
+
+$\frac{1}{0.3+1} 12 l^{0.3+1}]_{0.3}= -10^{3}(0.5121 -$
 
 *Engineering Thermodynamics* by Olivier Cleynen
-
-::::
 
 ````{prf:example}
 
@@ -409,8 +327,7 @@ very soft at first, but increasing rapidly in hardness. They are often used in a
 
 ````
 
-(sec-1-4)=
-## 1.4 Heat
+**1.4 Heat**
 
 (sec-1-4-1)=
 ### 1.4.1 Temperature
@@ -439,7 +356,7 @@ T(^{\circ}C) \equiv T(K) - 273.15 (1/12)
 T(K) = T(^{\circ}C) + 273.15 (1/13)
 :::
 
-• the Fahrenheit scale $(^{\circ} F)$. The translation to *kelvins* is a little more
+• the Fahrenheit scale $(^{\circ} F)$. The translation to $kelvins$ is a little more
 
 complex:
 
@@ -451,7 +368,7 @@ T(^{\circ} F) = 1.8 \times [T(K) - 273.15] + 32 (1/14)
 T(K) = \frac{T(^{\circ} F) - 32}{1.8} + 273.15 (1/15)
 :::
 
-Both of those scales precede the Kelvin scale, and they were cleverly redefined and synchronized with it in 1848 (we will have the opportunity to study this clever manipulation in chapter 7, see §7.4 p. 191). Purists will note that the absolute unit is named *kelvin* and not “degree Kelvin”. Some indicative temperatures are listed in table 1.1.
+Both of those scales precede the Kelvin scale, and they were cleverly redefined and synchronized with it in 1848 (wee will have the opportunity to study this clever manipulation in chapter 7, see §7.4 p. 191). Purists will note that the absolute unit is named $kelvin$ and not “degree Kelvin”. Some indicative temperatures are listed in table 1.1.
 
 :::{table} Examples of temperatures. Values with an asterisk are converted approximately.
 :label: tab-1-1
@@ -462,65 +379,86 @@ Both of those scales precede the Kelvin scale, and they were cleverly redefined 
 | $0$ | $-273.15$ | Absolute zero (by definition) |
 | $10^{-10}$ | $-273.1499999999$ | Lowest temperature ever reached (only a few particles) |
 | $4.22$ | $-268.93$ | Helium boiling at atmospheric pressure |
-| $44$ | $-229$ | Average temperature of the surface of Pluto\* |
-| $184$ | $-89.4$ | Lowest recorded atmospheric temperature on Earth\* |
+| $44$ | $-229$ | Average temperature of the surface of Pluto* |
+| $184$ | $-89.4$ | Lowest recorded atmospheric temperature on Earth* |
 | $273.15$ | $0$ | Water melting at atmospheric pressure |
-| $327$ | $54$ | Highest recorded atmospheric temperature on Earth\* |
+| $327$ | $54$ | Highest recorded atmospheric temperature on Earth* |
 | $373.15$ | $100$ | Water boiling at atmospheric pressure |
-| $400$ | $127$ | Nose of a Concorde in cruise flight\* |
-| $483$ | $200$ | Ordinary household oven\* |
-| $485$ | $210$ | Autoignition of diesel fuel\* |
-| $753$ | $480$ | Leading edges of a Lockheed SR-71 Blackbird in cruise\* |
-| $1 100$ | $830$ | Wood fire\* |
-| $1 900$ | $1 600$ | Space Shuttle heat shield on atmospheric re-entry\* |
-| $2 500$ | | Incandescent lamp filament |
-| $5 000$ | | Melting point of diamond (at $12 GPa)$ |
-| $5 800$ | | Surface of the Sun |
+| $400$ | $127$ | Nose of a Concorde in cruise flight* |
+| $483$ | $200$ | Ordinary household oven* |
+| $485$ | $210$ | Autoignition of diesel fuel* |
+| $753$ | $480$ | Leading edges of a Lockheed SR-71 Blackbird in cruise* |
+| $1100$ | $830$ | Wood fire* |
+| $1900$ | $1600$ | Space Shuttle heat shield on atmospheric re-entry* |
+| $2500$ | | Incandescent lamp filament |
+| $5000$ | | Melting point of diamond (at $12\,\mathrm{GPa}$) |
+| $5800$ | | Surface of the Sun |
 | $16 \times 10^{6}$ | | Center of the Sun |
 | $3 \times 10^{9}$ | | Within a nuclear weapon detonation |
 | $3 \times 10^{9}$ | | Core of a massive star on its last day |
 | $1 \times 10^{12}$ | | Particles colliding within the RHIC |
-| $1.417 \times 10^{32}$ | | The Universe $5.391 \times 10^{-44}s$ after the Big Bang |
-
+| $1.417 \times 10^{32}$ | | The Universe $5.391 \times 10^{-44}\,\mathrm{s}$ after the Big Bang |
 :::
 
 (sec-1-4-2)=
 ### 1.4.2 Heat
 
-When two bodies of different temperatures are brought into contact, their temperatures tend to equalize during a spontaneous transfer of energy. We call this form of energy *heat*. Heat, written $Q$, is **a form of energy** (measured in *joules*). On a macroscopic scale, it is a transfer of energy in chaotic form. It can be caused in several ways, the most relevant for the engineer being:
+« These results are inexplicable if heat be a substance. »
 
-• loss of internal energy of a body, by coming into contact with a lower temperature body;
+James Joule, 1845
 
-• friction;
+*On the Changes of Temperature Produced by the Rarefaction and Condensation of Air* [[8](#ref-8)]
+
+« These circumstances ... pressingly demand a comparison between heat and work, to be undertaken with reference to the divergent assumption that the production of work is not only due to an alteration in the *distribution* of heat, but to an actual *consumption* thereof; and inversely, that by the consumption of work heat may be *produced*. »
+
+Rudolf Clausius, 1850 [[10](#ref-10), [11](#ref-11), [21](#ref-21)]
+
+When two bodies of different temperatures are brought into contact, their
+
+temperatures tend to equalize during a spontaneous transfer of energy. We
+
+Heat, written $Q$, is **a form of energy** (measured in $joules)$. On a macro-
+
+scopic scale, it is a transfer of energy in chaotic form. It can be caused in
+
+several ways, the most relevant for the engineer being:
+
+• loss of internal energy of a body, by coming into contact with a lower
 
 • disappearance of mass in a nuclear reaction;
 
-• transformation of potential energy between atoms, by chemical reaction (especially the combustion of hydrocarbons with atmospheric oxygen).
+• transformation of potential energy between atoms, by chemical reaction
+
+(especially the combustion of hydrocarbons with atmospheric oxygen).
 
 Just like we denote heat as $Q (J)$, we denote *specific heat* as $q (J kg^{-1})$.
 
-:::{aside}
-These results are inexplicable if heat be a substance. »
+The concept of heat is very difficult to understand. It was long believed to be
 
-James Joule, 1845 *On the Changes of Temperature* *Produced by the Rarefaction and Condensation of Air* [[8](#ref-8)]
-:::
+a fluid (the *caloric*) of very low density, capable of permeating all materials.
 
-:::{aside}
-« These circumstances pressingly demand a comparison between heat and work, to be undertaken with reference to the divergent assumption that the production of work is not only due to an alteration in the *distribution* of heat, but to an actual *consumption* thereof; and inversely, that by the consumption of work heat may be *produced*. »
+This theory was abandoned in the mid-19th century, when it was shown
 
-Rudolf Clausius, 1850 [[10](#ref-10), [11](#ref-11), [21](#ref-21)]
-:::
+that *heat is not conserved*, that is, it has the ability to disappear or appear.
 
-The concept of heat is very difficult to understand. It was long believed to be a fluid (the *caloric*) of very low density, capable of permeating all materials. This theory was abandoned in the mid-19th century, when it was shown that *heat is not conserved*, that is, it has the ability to disappear or appear. For example, an engine in operation receives heat (through combustion) but releases less than it received. It transforms part of it into work, which we can then use to propel a vehicle.
+For example, an engine in operation receives heat (through combustion) but
 
-On a microscopic scale, in other words, when we consider the movement of individual particles, the concepts of temperature and heat are even more difficult to define (Richard Feynman [[30](#ref-30), [35](#ref-35)] explores this beautifully). However, this is beyond the scope of this book.
+releases less than it received. It transforms part of it into work, which we
+
+On a microscopic scale, in other words, when we consider the movement of
+
+individual particles, the concepts of temperature and heat are even more diffi-
+
+*Engineering Thermodynamics* by Olivier Cleynen
+
+cult to define (Richard Feynman [[30](#ref-30), [35](#ref-35)] explores this beautifully). However, this is beyond the scope of this book.
 
 (sec-1-4-3)=
 ### 1.4.3 Thermal capacity
 
-When the same amount of heat is supplied to two different bodies, their temperature can increase in different ways – for example, it takes less heat to raise the temperature of a *kilogram* of steel than a *kilogram* of aluminum. This tendency of a body’s temperature to increase is called its *thermal capacity* (or *heat capacity*).
+When the same amount of heat is supplied to two different bodies, their temperature can increase in different ways – for example, it takes less heat to raise the temperature of a $kilogram$ of steel than a $kilogram$ of aluminum. This tendency of a body’s temperature to increase is called its *thermal capacity* (or *heat capacity*).
 
-The specific thermal capacity of a body is defined as the amount of heat required to raise the temperature of one *kilogram* of the substance by one *kelvin*:
+The specific thermal capacity of a body is defined as the amount of heat required to raise the temperature of one $kilogram$ of the substance by one $kelvin$:
 
 :::{math}
 c \equiv \frac{\mathrm{δ}q}{dT} = \frac{1}{m} \frac{\mathrm{δ}Q}{dT} (1/16)
@@ -568,18 +506,21 @@ During integration, $\int ^{\mathrm{B}}_{\mathrm{A}}dT$ becomes $\Delta T$ (a te
 
 ence), while $\int ^{\mathrm{B}}_{\mathrm{A}}$ δ$Q$ becomes simply $Q_{\mathrm{A}\rightarrow \mathrm{B}}$ (a transfer between two states). Heat, a *path quantity*, is transferred, while temperature, a *state quantity*, is increased (see Appendix A4 on this topic).
 
-In this book, when we quantify energy transfers, we convene to make their sign explicit (so we add a “+” in positive transfers).
+In this book, when we quantify energy transfers, we convene to
 
-A conversion of the temperatures to *kelvins* would not have changed the value of $\Delta T$. The result would then have been the same.
+make their sign explicit (so we add a “+” in positive transfers).
 
-With an electrical resistance of the power of a standard domestic heater $(2 kW)$, it would take $\Delta t = \frac{Q_{\mathrm{A}\rightarrow \mathrm{B}}}{Q} = \frac{308.8\times 10^{3}}{2\times 10^{3}} = 154 s$ to warm up the steel, just over two minutes. We will see in chapter 4 (*the ideal gas*) that air at constant pressure has a specific thermal capacity three times greater than that of steel.
+A conversion of the temperatures to $kelvins$ would not have
+
+changed the value of $\Delta T$. The result would then have been the same.
+
+With an electrical resistance of the power of a standard domestic
+
+heater $(2 kW)$, it would take $\Delta t = \frac{Q_{\mathrm{A}\rightarrow \mathrm{B}}}{Q} = \frac{308.8\times 10^{3}}{2\times 10^{3}} = 154 s$ to warm up the steel, just over two minutes. We will see in chapter 4 (*the ideal gas*) that air at constant pressure has a specific thermal capacity three times greater than that of steel.
 
 ````
 
-(sec-1-5)=
-## 1.5 Hot and Cold
-
-We conclude this chapter by revisiting some common language terms, as they are understood in thermodynamics. *Hot* — For us, “hot” is not a property of objects: instead of “this object is hot”, we say that its temperature is high. Instead of “this object is heating up/cooling down” we say that its temperature is increasing or decreasing. In everyday language, phrases like “it is hot” or “heat wave” also refer to temperature. *To heat* — For us, “to heat up” means to supply heat. We can “heat up” an object while its temperature drops. We can also raise the temperature of an object without supplying heat (figure 1.4). *Cold* — For us, the sensation of “cold” denotes a low temperature. We do not consider “cold” to be something that can be manufactured or measured. Instead, we would say that we are transfering heat away from an object (for example, a refrigerator extracts heat from a warm food item). *Fire* — Fire is the term given to the emission of light (electromagnetic radiation) from a gas at high temperatures. In thermodynamics, “fire” does not have any special properties. For us, it is the same heat whether it is generated by the combustion of wood or kerosene, by friction in a brake, or by a nuclear reaction. Ultimately, the only thing that matters is the temperature at which it is transmitted!
+**1.5 Hot and Cold** We conclude this chapter by revisiting some common language terms, as they are understood in thermodynamics. *Hot* — For us, “hot” is not a property of objects: instead of “this object is hot”, we say that its temperature is high. Instead of “this object is heating up/cooling down” we say that its temperature is increasing or decreasing. In everyday language, phrases like “it is hot” or “heat wave” also refer to temperature. *To heat* — For us, “to heat up” means to supply heat. We can “heat up” an object while its temperature drops. We can also raise the temperature of an object without supplying heat (figure 1.4). *Cold* — For us, the sensation of “cold” denotes a low temperature. We do not consider “cold” to be something that can be manufactured or measured. Instead, we would say that we are transfering heat away from an object (for example, a refrigerator extracts heat from a warm food item). *Fire* — Fire is the term given to the emission of light (electromagnetic radiation) from a gas at high temperatures. In thermodynamics, “fire” does not have any special properties. For us, it is the same heat whether it is generated by the combustion of wood or kerosene, by friction in a brake, or by a nuclear reaction. Ultimately, the only thing that matters is the temperature at which it is transmitted!
 
 ::::{admonition} A Bit of History
 :class: note
@@ -591,7 +532,7 @@ We conclude this chapter by revisiting some common language terms, as they are u
 :::{figure} ../images/fig-1-4.svg
 :label: fig-1-4
 :enumerator: 1.4
-:alt: Left: when air is compressed in a compressor, air gives heat away through the sides and the fins of the cylinders; and yet, its temperature increases. Right: by contrast, when liquid oxygen is expanded in a vane, liquid oxygen receives heat from the atmosphere (as evidenced by the condensation and frost from atmospheric air on the piping); in spite of this, its temperature drops.
+:alt: Left: when air is compressed in a compressor, air gives heat away through the sides and the fins of the cylinders; and yet, its temperature
 
 Left: when air is compressed in a compressor, air gives heat away through the sides and the fins of the cylinders; and yet, its temperature increases. Right: by contrast, when liquid oxygen is expanded in a vane, liquid oxygen receives heat from the atmosphere (as evidenced by the condensation and frost from atmospheric air on the piping); in spite of this, its temperature drops.
 :::
@@ -600,21 +541,19 @@ Left: when air is compressed in a compressor, air gives heat away through the si
 
 *Liquid oxygen photo public domain Jensen Stidham / USAF*
 
+« The principle to be followed in constructing a thermometric scale might at first sight seem to be obvious, as it might appear that a perfect thermometer would indicate equal additions of heat, as corresponding to equal elevations of temperature, estimated by the numbered divisions of its scale. It is however now recognized (from the variations in the specific heats of bodies) as an experimentally demonstrated fact that thermometry under this condition is impossible, and we are left without any principle on which to found an absolute thermometric scale. »
+
+William Thomson (not yet crowned *Baron Kelvin*…) 1848 [[9](#ref-9)]
+
 *Thermometer* — We leave it to the student to explore how thermometers work: how can we *know* in absolute terms that a temperature is high or low?
 
 We simply note that we humans are ourselves very poor thermometers: since the human body attempts to maintain a constant temperature, our sensations of “hot” or “cold” are intrinsically linked to heat transfer.
 
-Even though this vocabulary probably puts us among the unsociable scientists relegated to the end of the table, it equips us better to face what's next, because in the next chapter, we will be dealing with *closed systems*.
-
-:::{aside}
-The principle to be followed in constructing a thermometric scale might at first sight seem to be obvious, as it might appear that a perfect thermometer would indicate equal additions of heat, as corresponding to equal elevations of temperature, estimated by the numbered divisions of its scale. It is however now recognized (from the variations in the specific heats of bodies) as an experimentally demonstrated fact that thermometry under this condition is impossible, and we are left without any principle on which to found an absolute thermometric scale. »
-
-William Thomson (not yet crowned *Baron Kelvin*…) 1848 [[9](#ref-9)]
-:::
+Even though this vocabulary probably puts us among the unsociable scientists relegated to the end of the table, it equips us better to face what’s next, because in the next chapter, we will be dealing with *closed systems*.
 
 ::::{admonition} A Bit of History:
 :class: note
-:label: hist-1-6
+:label: hist-1-4
 
 Measuring the Degree of Heat
 
@@ -641,53 +580,91 @@ It seems that the first thermometer was invented around 1605 by a Dutchman named
 
 ::::
 
-downwards and immersed in a colored liquid. If the sphere was heated, the liquid was pushed downwards by the expansion of the air, and conversely, if it was cooled, the liquid rose in the tube. It was thus an air thermometer (figure 1.5). This thermometer was later used to monitor fever in patients (figure 1.6), but it had the drawback of being as sensitive to changes in atmospheric pressure as to temperature.
+downwards and immersed in a colored liquid. If
+
+the sphere was heated, the liquid was pushed down-
+
+wards by the expansion of the air, and conversely,
+
+if it was cooled, the liquid rose in the tube. It was
+
+thus an air thermometer (figure 1.5). This ther-
+
+mometer was later used to monitor fever in patients
+
+(figure 1.6), but it had the drawback of being as
+
+sensitive to changes in atmospheric pressure as to
+
+temperature.
 
 :::{figure} ../images/fig-1-5.jpg
 :label: fig-1-5
 :enumerator: 1.5
-:alt: An air thermometer from the early 17th century. The ball was filled with air whose volume varies with its temperature, pushing the water from the reservoir below whose surface is at atmospheric pressure. The liquid could be colored, and its changes height were measured using a scale. Since atmospheric pressure varies with meteorological conditions, it affected the measurements: it was, in a way, a baro-thermometer.
+:alt: An air thermometer from the early 17th century. The ball was filled with air whose volume varies with its temperature, pushing the water fro
 
 An air thermometer from the early 17th century. The ball was filled with air whose volume varies with its temperature, pushing the water from the reservoir below whose surface is at atmospheric pressure. The liquid could be colored, and its changes height were measured using a scale. Since atmospheric pressure varies with meteorological conditions, it affected the measurements: it was, in a way, a baro-thermometer.
 :::
+
+tury. The ball was filled with air whose volume varies with its temperature, pushing the water from the reservoir below whose surface is at atmospheric pressure. The liquid could be colored, and its changes height were measured using a scale. Since atmospheric pressure varies with meteorological conditions, it affected the measurements: it was, in a way, a baro-thermometer.
 
 *Engraving by Robert Fludd (1626, public domain), selected by Lamouline 2005 [[45](#ref-45)]*
 
 :::{figure} ../images/fig-1-6.jpg
 :label: fig-1-6
 :enumerator: 1.6
-:alt: A medical thermometer from the early 17th century. The gas bulb was placed in the patient’s mouth. One can well imagine that the thermometer’s sensitivity to atmospheric pressure was not the biggest obstacle to its adoption...
+:alt: A medical thermometer from the early 17th century. The gas bulb was placed in the patient’s mouth. One can well imagine that the thermometer
 
 A medical thermometer from the early 17th century. The gas bulb was placed in the patient’s mouth. One can well imagine that the thermometer’s sensitivity to atmospheric pressure was not the biggest obstacle to its adoption...
 :::
 
+century. The gas bulb was placed in the patient’s mouth. One can well imagine that the thermometer’s sensitivity to atmospheric pressure was not the biggest obstacle to its adoption...
+
 *Drawing by Santori & Avicenne (Commentaria in primam Fen primi libr Avicennae, 1625, public domain), selected by Lamouline 2005 [[45](#ref-45)]*
 
-In the middle of the century, liquid thermometers would prove to be much more reliable and easier to use. The glass bulb was now placed at the bottom of the device and filled with colored liquid that rose in a graduated tube; this tube was initially open, but it was found that by closing it, evaporation of the liquid could be prevented (figure 1.7). These improvements had been strongly supported by the Italian grand duke Ferdinando II de’ Medici, and these devices were thus called “Florence thermometers.”
+In the middle of the century, liquid thermometers
 
-However, all these thermometers remained difficult to use, significantly limiting their dissemination.
+would prove to be much more reliable and easier to
 
-René-Antoine Ferchault de Réaumur, around the middle of the 18th century, developed a water-alcohol mixture thermometer in which the alcohol level is precisely fixed to ensure the reproducibility of the instrument. He calibrated it by choosing two references (melting ice and boiling water) and dividing this interval into 80 degrees. This scale is called the “Réaumur scale.”
+use. The glass bulb was now placed at the bottom course, the measurements needed to be corrected of the device and filled with colored liquid that rose by simultaneously measuring atmospheric pressure. in a graduated tube; this tube was initially open, This system allowed Amontons to make a major but it was found that by closing it, evaporation of discovery: if the gas pressure increases as the de-the liquid could be prevented (figure 1.7). These im- gree of heat increases, conversely, it decreases as provements had been strongly supported by the Ital- the degree of heat decreases. At a minimum, this ian grand duke Ferdinando II de’ Medici, and these pressure must become zero, as well as the degree devices were thus called “Florence thermometers.” of heat. This extrapolated minimum corresponds to, in modern units, $-239.5^{\circ}C$... A first measure of absolute zero!
+
+However, all these thermometers remained difficult to use, significantly limiting their dissemination. René-Antoine Ferchault de Réaumur, around the middle of the 18th century, developed a water-alcohol mixture thermometer in which the alcohol level is precisely fixed to ensure the reproducibility of the instrument. He calibrated it by choosing two references (melting ice and boiling water) and dividing this interval into 80 degrees. This scale is called the “Réaumur scale.”
 
 In 1724, in Danzig, the German Daniel Gabriel Fahrenheit described a thermometer that used the expansion of mercury and introduced a scale in which melting ice is at 32 degrees and the temperature of blood at 96 degrees; a mixture of ice, water, and sal ammoniac gave him the zero of his scale (see also section §7.4.3 p. 191).
 
-In 1741, the Swedish Anders Celsius adopted the Réaumur scale but divided it into 100 intervals instead of 80. This convention was widely spread in France, and in 1794, at the time of the adoption of the metric system by the Convention, the Celsius scale was chosen as the official temperature scale.
+In 1741, the Swedish Anders Celsius adopted the Réaumur scale but divided it into 100 intervals instead of 80. This convention was widely spread in
 
 :::{figure} ../images/fig-1-7.jpg
 :label: fig-1-7
 :enumerator: 1.7
-:alt: A Florence thermometer from the mid-17th century. This time, it was the liquid, contained in the lower bulb, that contracted and expanded with temperature. Its changes in volume were such that a long spiral-blown glass tube was needed to measure them.
+:alt: A Florence thermometer from the mid-17th
 
-A Florence thermometer from the mid-17th century. This time, it was the liquid, contained in the lower bulb, that contracted and expanded with temperature. Its changes in volume were such that a long spiral-blown glass tube was needed to measure them.
+A Florence thermometer from the mid-17th
 :::
 
-*Engraving by the Accademia del cimento (Staggi di naturali esperientze, 1667, public domain), selected by Lamouline 2005 [[45](#ref-45)]*
+century. This time, it was the liquid, contained in the France, and in 1794, at the time of the adoption of
 
-The issue of graduations remained. The number of graduations varied widely, with artisans merely attempting to reproduce what they had already created themselves; at best, thermometers built by the same person gave roughly similar results. Due to the lack of a universally accepted scale, it was impossible to make measurements in different locations with different instruments for comparison.
+lower bulb, that contracted and expanded with temperthe metric system by the Convention, the Celsius
 
-The transition from the subjective sensation of hot and cold to the objective measurement of temperature with reliable instruments and a universal scale led to a large number of observations that were not self-evident until then: the temperature of a cellar is not higher in winter than in summer, iron is not “colder” than wood, etc., and all in all, this is quite recent!
+ature. Its changes in volume were such that a long spiral-blown glass tube was needed to measure them. scale was chosen as the official temperature scale. *Engraving by the Accademia del cimento (Staggi di naturali esperientze,* The transition from the subjective sensation of hot
 
-In the early 18th century, the Frenchman Guillaume Amontons built an air thermometer based on the measurement of a pressure difference rather than volume. Having observed that if boiling water continued to be heated, its degree of heat did not increase, he used this as a fixed point of reference. Of course, the measurements needed to be corrected by simultaneously measuring atmospheric pressure. This system allowed Amontons to make a major discovery: if the gas pressure increases as the degree of heat increases, conversely, it decreases as the degree of heat decreases. At a minimum, this pressure must become zero, as well as the degree of heat. This extrapolated minimum corresponds to, in modern units, $-239.5^{\circ}C$... A first measure of absolute zero!
+*1667, public domain), selected by Lamouline 2005 [[45](#ref-45)]* and cold to the objective measurement of tempera-
+
+The issue of graduations remained. The number ture with reliable instruments and a universal scale
+
+of graduations varied widely, with artisans merely led to a large number of observations that were not
+
+attempting to reproduce what they had already self-evident until then: the temperature of a cellar
+
+created themselves; at best, thermometers built is not higher in winter than in summer, iron is not
+
+by the same person gave roughly similar results. “colder” than wood, etc., and all in all, this is quite
+
+Due to the lack of a universally accepted scale, it recent!
+
+was impossible to make measurements in different locations with different instruments for comparison.
+
+In the early 18th century, the Frenchman Guillaume Amontons built an air thermometer based on the measurement of a pressure difference rather than volume. Having observed that if boiling water continued to be heated, its degree of heat did not increase, he used this as a fixed point of reference. Of
 
 ## Problems
 
@@ -740,9 +717,9 @@ The water flow rate circulating in the plant is $15 kg s^{-1}$.
 
 1. What is the specific power rejected in the form of heat in the condenser?
 
-2. What is the power (in *watts*) rejected by the condenser?
+2. What is the power (in $watts)$ rejected by the condenser?
 
-3. What is the power (in *watts*) generated by the turbine in the form of work?
+3. What is the power (in $watts)$ generated by the turbine in the form of work?
 
 4. What is the efficiency $\eta _{\mathrm{plant}}$ of the power plant, that is, the ratio between its net power and the power it receives as heat?
 
@@ -750,12 +727,12 @@ The water flow rate circulating in the plant is $15 kg s^{-1}$.
 :label: prob-1-3
 :enumerator: 1.3
 
-**Compression of Springs In the laboratory of a company manufacturing automotive suspension systems, an engineer compares the characteristics of three springs of different geometry. To do this, s/he measures the force $F$ (in $N)$ exerted by each spring as a function of its length $l$ (in $m)$, and models these behaviors as follows: • $F_{\mathrm{A} (l)}= 8 \times 10^{3}- 2 \times 10^{3}l$ • $F_{\mathrm{B} (l)}= 8 \times 10^{3}- 3 \times 10^{3}l^{1.6}$ • $F_{\mathrm{C} (l)}= 0.1 \times 10^{3}l^{-3}$ What is the amount of work required to compress each of these springs from a length of $40 cm (15.74 in)$ down to a length of $12 cm (4.724 in)$? *Photo* CC-by-sa *Jean-Jacques Milan***
+**Compression of Springs In the laboratory of a company manufacturing automotive suspension systems, an engineer compares the characteristics of three springs of different geometry. To do this, s/he measures the force $F$ (in $N)$ exerted by each spring as a function of its length $l$ (in $m)$, and models these behaviors as follows: • $F_{\mathrm{A} (l)}= 8 \times 10^{3}- 2 \times 10^{3}l$ • $F_{\mathrm{B} (l)}= 8 \times 10^{3}- 3 \times 10^{3}l^{1.6}$ • $F_{\mathrm{C} (l)}= 0.1 \times 10^{3}l^{-3}$ What is the amount of work required to compress each of these springs from a length of $40 cm (15.74 in)$ down to a length of $12 cm (4.724 in)$? exponentially when compressed. We will see in chapter 2 (*closed systems*) that when fluids are compressed and expanded slowly, they behave similarly to spring C, which has a conical geometry like those shown here. *Photo* CC-by-sa *Jean-Jacques Milan***
 
 :::{admonition} Answer
 :class: dropdown
 
-1) $W_{\mathrm{A}}= \int _{l_{1}}^{l_{2}}F_{(l)}dl = -10^{3}[8l - \frac{1}{2}2l^{2}]^{0}_{0}^{,}_{,}^{1}_{4}^{2}= +2.094 kJ$. 2) $W_{\mathrm{B}}= +2.138 kJ$ 3) $W_{\mathrm{C}}= +3.157 kJ$.
+1) $W_{\mathrm{A}}= \int _{l_{1}}^{l_{2}}F_{(l)}\,\mathrm{d}l = -10^{3}\left[8l - \frac{1}{2}2l^{2}\right]_{0.4}^{0.12}= +2.094\,\mathrm{kJ}$. 2) $W_{\mathrm{B}}= +2.138\,\mathrm{kJ}$ 3) $W_{\mathrm{C}}= +3.157\,\mathrm{kJ}$.
 
 :::
 ```
@@ -772,37 +749,7 @@ The water flow rate circulating in the plant is $15 kg s^{-1}$.
 :label: prob-1-4
 :enumerator: 1.4
 
-**Spring-Powered Engine** We model the operation of a gasoline engine by replacing the air in a cylinder with a spring. We want to quantify the energy received and then rejected by a powerful spring during a back-and-forth motion (similar to the air during the compression and expansion phases of a piston engine cycle). The experiment proceeds cyclically with the following four steps (figure 1.10):
-
-**From 1 to 2:** The experimenter compresses a spring from a length of $25 cm$ to a length of $8 cm$. The spring exerts a force related to its length (in meters) by the relation:
-
-:::{math}
-:label: eq-1-17
-:enumerator: 1/17
-F = 25.4 \times 10^{3}- 40 \times 10^{3}l
-:::
-
-where $F$ is the force (in $N)$; and $l$ is the length of the spring (in $m)$.
-
-**From 2 to 3:** When the length of the spring reaches $8 cm$, the experimenter blocks the piston's movement. A solid block is then inserted between the piston wall and the spring. The force on the piston (which has not moved) increases until reaching $32 kN$.
-
-**From 3 to 4:** Once the block has been inserted, the experimenter reverses the motion with the piston until the final length reaches again $25 cm$.
-
-**From 4 to 1:** The block is removed without moving the piston, and the force on the piston returns to the value it had at the beginning of the experiment.
-
-We want to quantify the energy received and then rejected by the {spring + block} assembly during one back and forth motion.
-
-1. Draw the process on a diagram showing the force as a function of the inner length, qualitatively (that is, without showing numerical values).
-
-2. How much energy did the spring receive from the experimenter during the outbound journey (from 1 to 2)?
-
-3. What is the characteristic $F_{(l)}$ of the {spring + block} assembly during the return journey (from 3 to 4)?
-
-4. How much energy did the spring receive from the piston during the return journey (from 3 to 4)?
-
-5. In the end, how much energy did the experimenter receive or spend during the experiment?
-
-6. At what frequency should the experiment be repeated for the power to reach $25 hp$, that is, $18.4 kW$?
+**Spring-Powered Engine We model the operation of a gasoline engine by replacing the air in a cylinder with a spring. We want to quantify the energy received and then rejected by a powerful spring during a back-and-forth motion (similar to the air during the compression and expansion phases of a piston engine cycle). The experiment proceeds cyclically with the following four steps (figure 1.10): **From 1 to 2:** The experimenter compresses a spring from a length of $25 cm$ to a length of $8 cm$. The spring exerts a force related to its length (in meters) by the relation: $F = 25.4 \times 10^{3}- 40 \times 10^{3}l$ where $F$ is the force (in $N)$; and $l$ is the length of the spring (in $m)$. *Diagram* CC-by-sa *Olivier Cleynen* **From 2 to 3:** When the length of the spring reaches $8 cm$, the experimenter blocks the piston’s movement. A solid block is then inserted between the piston wall and the spring. The force on the piston (which has not moved) increases until reaching $32 kN$. **From 3 to 4:** Once the block has been inserted, the experimenter reverses the motion with the piston until the final length reaches again $25 cm$. **From 4 to 1:** The block is removed without moving the piston, and the force on the piston returns to the value it had at the beginning of the experiment. We want to quantify the energy received and then rejected by the {spring + block} assembly during one back and forth motion. 1. Draw the process on a diagram showing the force as a function of the inner length, qualitatively (that is, without showing numerical values). 2. How much energy did the spring receive from the experimenter during the outbound journey (from 1 to 2)? 3. What is the characteristic $F_{(l)}$ of the {spring + block} assembly during the return journey (from 3 to 4)? 4. How much energy did the spring receive from the piston during the return journey (from 3 to 4)? 5. In the end, how much energy did the experimenter receive or spend during the experiment? 6. At what frequency should the experiment be repeated for the power to reach $25 hp$, that is, $18.4 kW$?**
 
 :::{admonition} Answer
 :class: dropdown
@@ -815,24 +762,10 @@ We want to quantify the energy received and then rejected by the {spring + block
    :::{figure} ../images/fig-1-10.jpg
    :label: fig-1-10
    :enumerator: 1.10
-   :alt: Experiment conducted with a powerful spring. The piston compresses the spring from 1 to 2, then the spring pushes back the piston from 3 to 4. On the return path, the force exerted by the spring is greater.
+   :alt: Experiment conducted with a powerful spring. The piston compresses the spring from to , then the spring pushes back the piston from to . On
    
    Experiment conducted with a powerful spring. The piston compresses the spring from $1$ to $2$, then the spring pushes back the piston from $3$ to $4$. On the return path, the force exerted by the spring is greater.
    :::
-
-```{exercise}
-:label: prob-1-5
-:enumerator: 1.5
-
-**Preparing a Bath** A student exhausted from doing integral calculus with springs wishes to take a bath.
-
-Tap water arrives at a temperature of $10^{\circ}C (50 ^{\circ} F)$ in the electric water heater; it has a constant thermal capacity of $c_{\mathrm{liquid} \mathrm{water}}= 4.2 kJ kg^{-1}K^{-1}$ and a constant density $\rho_{\mathrm{liquid} \mathrm{water}}= 10^{3}kg m^{-3}$.
-
-1. How much energy is needed to heat the water to $40^{\circ}C (104 ^{\circ} F)$ in order to fill a bathtub of $270 L (10.57 US gal)$?
-
-2. How long will it take the heater to increase the temperature of the water if its heating power is $\dot{Q} = +2 kW$?
-
-```
 
 ```{exercise}
 :label: prob-1-6
@@ -887,13 +820,13 @@ Tap water arrives at a temperature of $10^{\circ}C (50 ^{\circ} F)$ in the elect
    Schematic diagram of a water turbine. Water enters at the top left, rotates the turbine blades, is heated by internal friction, and exits at the bottom right of the machine.
    :::
 
-*Diagram* CC-by-sa *Olivier Cleynen*
+ter enters at the top left, rotates the turbine blades, is heated by internal friction, and exits at the bottom right of the machine. *Diagram* CC-by-sa *Olivier Cleynen*
 
 1. What is the specific mechanical power received or supplied by the water as it passes through the power plant?
 
 2. What is the specific power provided as heat by internal friction?
 
-3. What is the power (in *watts*) released in the form of work by the turbine?
+3. What is the power (in $watts)$ released in the form of work by the turbine?
 
 ```{exercise}
 :label: prob-1-8
@@ -904,7 +837,7 @@ Tap water arrives at a temperature of $10^{\circ}C (50 ^{\circ} F)$ in the elect
 :::{admonition} Answer
 :class: dropdown
 
-$1)\dot{m}_{\mathrm{kerosene}}= \frac{Q_{\mathrm{kerosene}}}{q_{\mathrm{kerosene}}} = ^{-Q\dot{}}_{q^{\mathrm{w}}_{\mathrm{k}}^{\mathrm{a}}_{\mathrm{e}}^{\mathrm{t}}_{\mathrm{r}}^{\mathrm{e}}_{\mathrm{o}}^{\mathrm{r}}_{\mathrm{s}}}^{-_{\mathrm{en}}Q\dot{}_{\mathrm{e} \mathrm{air}}}= 2.51 \times 10^{-3}kg s^{-1}= 9.1 kg h^{-1}$
+$1)\;\dot{m}_{\mathrm{kerosene}}= \frac{\dot{Q}_{\mathrm{kerosene}}}{q_{\mathrm{kerosene}}} = \frac{-\dot{Q}_{\mathrm{water}}-\dot{Q}_{\mathrm{air}}}{q_{\mathrm{kerosene}}}= 2.51 \times 10^{-3}\,\mathrm{kg\,s^{-1}}= 9.1\,\mathrm{kg\,h^{-1}}$
 
 :::
 ```

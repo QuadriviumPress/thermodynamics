@@ -10,7 +10,7 @@ project:
     accounting.
   authors:
     - name: Olivier Cleynen
-  date: 2025
+  date: 2025-01-01
   license:
     content: CC-BY-SA-4.0
   open_access: true
@@ -57,8 +57,6 @@ project:
 site:
   template: book-theme
   title: Engineering Thermodynamics
-  options:
-    favicon: images/favicon.svg
   actions:
     - title: Original textbook
       url: https://thermodynamicsbook.com

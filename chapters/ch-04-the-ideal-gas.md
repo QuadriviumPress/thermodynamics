@@ -38,7 +38,7 @@ This chapter is incompatible with chapter 5 (*liquids and vapors*), where we
 
 will have to forget everything learned here.
 
-**4.1 Defni ition**
+**4.1 Definition**
 
 (sec-4-1-1)=
 ### 4.1.1 The manometer as a thermometer
@@ -86,7 +86,7 @@ Sadi Carnot, 1824 [[4](#ref-4)]
 
 « $^{\mathrm{M}. \mathrm{S}. \mathrm{Carnot}, \mathrm{avoiding} \mathrm{the} \mathrm{use} \mathrm{of}}$ mathematical analysis, arrives through a series of subtle and hard to grasp reasonings at results which are without difficulty deduced from a more general law, which I shall endeavor to establish. »
 
-(4/1) $^{\mathrm{Émile} \mathrm{Clapeyron}, 1834 [5]}$
+(4/1) $^{\text{\'{E}mile} \mathrm{Clapeyron}, 1834 [5]}$
 
 (4/2)
 
@@ -118,7 +118,7 @@ Atmospheric air can be modeled as an ideal gas with $R_{\mathrm{air}}= 287 J kg^
 
 We start from Equation 4/1 to express the specific volume: $v = \frac{R T}{p} =$
 
-$^{2}\frac{1}{v}^{87}=^{\times (12}1^{\times 0}.^{1+}1^{0}8^{2_{5}7}9^{3.}k^{15}g^{)}m=_{- 3}0..841 m^{3}kg^{-1}$. The density then follows simply: $\rho =$
+$^{2}\frac{1}{v}^{87}=^{\times (12}1^{\times 0}.^{+1}1^{02}8^{57}9^{3.}k^{15}g^{)}m=_{- 3}0..841 m^{3}kg^{-1}$. The density then follows simply: $\rho =$
 
 Once again, forgetting to convert the temperature units to
 
@@ -173,29 +173,13 @@ If these two proposals are combined into a single equation, we obtain a simple m
 (sec-4-1-4)=
 ### 4.1.4 What does an ideal gas** *not* **represent?
 
-The behavior of molecules when they are close to each other is actually very « $^{\mathrm{Anyone} \mathrm{who} \mathrm{wants} \mathrm{to} \mathrm{analyze}}$ the properties of matter in a real prob-
+The behavior of molecules when they are close to each other is actually very complex, since the attractive forces then play a decisive role. The influence of these forces is all the more significant when the molecules are slow and structurally complex (the interaction between two hydrocarbon molecules, for example, is more difficult to model than the interaction between two helium molecules).
 
-complex, since the attractive forces then play a decisive role. The influence lem might want to start by writing down the fundamental equations and
+The macroscopic consequences of these interactions, and the conditions under which they should no longer be neglected, are addressed in chapter 5 (*liquids and vapors*).
 
-of these forces is all the more significant when the molecules are slow and then try to solve them mathematically.
+« $^{\mathrm{Anyone} \mathrm{who} \mathrm{wants} \mathrm{to} \mathrm{analyze}}$ the properties of matter in a real problem might want to start by writing down the fundamental equations and then try to solve them mathematically. Although there are people who try to use such an approach, these people are the failures in this field; the real successes come to those who start from a *physical* point of view, people who have a rough idea where they are going and then begin by making the right kind of approximations, knowing what is big and what is small in a given complicated situation. »
 
-structurally complex (the interaction between two hydrocarbon molecules, Although there are people who try to use such an approach, these people are
-
-for example, is more difficult to model than the interaction between two the failures in this feild; the real suc-
-
-helium molecules). cesses come to those who start from a *physical* point of view, people who
-
-The macroscopic consequences of these interactions, and the conditions have a rough idea where they are going and then begin by making the right
-
-under which they should no longer be neglected, are addressed in chapter 5 kind of approximations, knowing what
-
-(*liquids and vapors*). is big and what is small in a given
-
-:::{math}
-complicated situation. »
-:::
-
-Richard Feynman, 1963 [[30](#ref-30), [35](#ref-35)] *The Feynman Lectures on Physics* 86 [Chapter 4](#ch-4)
+Richard Feynman, 1963 [[30](#ref-30), [35](#ref-35)] *The Feynman Lectures on Physics*
 
 For now, we will remember that the ideal gas model works better:
 
@@ -279,9 +263,9 @@ These two quantities are properties (or state quantities, see Appendix A4 p. 316
 :::{figure} ../images/fig-4-3.jpg
 :label: fig-4-3
 :enumerator: 4.3
-:alt: Defni itions of heat capacities. On the left, the volume is fixed and the specific thermal capacity will be . On the right, the pressure is
+:alt: Definitions of heat capacities. On the left, the volume is fixed and the specific thermal capacity will be . On the right, the pressure is c
 
-Defni itions of heat capacities. On the left, the volume is fixed and the specific thermal capacity will be $c_{v}$. On the right, the pressure is constant and the capacity will be $c_{p}$.
+Definitions of heat capacities. On the left, the volume is fixed and the specific thermal capacity will be $c_{v}$. On the right, the pressure is constant and the capacity will be $c_{p}$.
 :::
 
 *Diagram* CC-0
@@ -314,10 +298,6 @@ we have q_{1\rightarrow 2}+ w_{1\rightarrow 2}= \Delta u (2/2). For body A on th
 done and the process is at constant volume, we can write:
 
 :::{math}
-{
-:::
-
-:::{math}
 q_{\mathrm{A}}= c_{v}\Delta T
 :::
 
@@ -335,10 +315,6 @@ q_{\mathrm{A}}= c_{v}\Delta T
 ::::
 
 For body B on the right, with constant pressure $p_{\mathrm{cst}.}$, we can write:
-
-:::{math}
-{
-:::
 
 :::{math}
 q_{\mathrm{B}}= c_{p}\Delta T
@@ -413,7 +389,7 @@ dredths[...] The vacuum having being was measured and... nothing happened! Joule
 
 made in both balloons, and having assured myself that they retained it ex-neither heat transfer nor temperature variation.
 
-actly, I fliled one of them with the gas upon which I wished to operate. About twelve hours later, I established communication between them by means of a lead pipe, and upon opening the faucets, the gas then precipitated itself into the empty balloon until the pressure equilibrium was re-established on both sides. During this time, the thermometer experienced variations which I carefully noted. »
+actly, I filled one of them with the gas upon which I wished to operate. About twelve hours later, I established communication between them by means of a lead pipe, and upon opening the faucets, the gas then precipitated itself into the empty balloon until the pressure equilibrium was re-established on both sides. During this time, the thermometer experienced variations which I carefully noted. »
 
 Louis Joseph Gay-Lussac, 1807 [[3](#ref-3)]
 
@@ -472,7 +448,7 @@ On the other hand, it should be noted that this equation 4/11, which results fro
 
 The specific thermal capacity at constant volume for air is measured at $c_{v (\mathrm{air})}= 718 J kg^{-1}K^{-1}$. We take a mass of $0.5 kg$ of air at $20^{\circ}C$ and transfer $+15 kJ$ as heat and $-10 kJ$ as work. What is its final temperature?
 
-We know that the energy has varied with the transfers: $\Delta U = W_{\mathrm{A}\rightarrow \mathrm{B}}+ Q_{\mathrm{A}\rightarrow \mathrm{B}}= m c_{v}\Delta T$. Thus, the temperature has varied proportionally: $T_{\mathrm{B}}= T_{\mathrm{A}}+ \frac{\Delta U}{m c_{v}} = T_{\mathrm{A}}+ ^{W_{\mathrm{A}\rightarrow}}_{m^{\mathrm{B}}}^{+}_{c}^{Q_{v \mathrm{A}\rightarrow \mathrm{B}}}= 20 + ^{-10\times 10^{3}+(+15\times 10^{3})}$
+We know that the energy has varied with the transfers: $\Delta U = W_{\mathrm{A}\rightarrow \mathrm{B}}+ Q_{\mathrm{A}\rightarrow \mathrm{B}}= m c_{v}\Delta T$. Thus, the temperature has varied proportionally: $T_{\mathrm{B}}= T_{\mathrm{A}}+ \frac{\Delta U}{m c_{v}} = T_{\mathrm{A}}+ \frac{W_{\mathrm{A}\rightarrow \mathrm{B}}+ Q_{\mathrm{A}\rightarrow \mathrm{B}}}{m c_{v}}= 20 + \frac{-10\times 10^{3}+(+15\times 10^{3})}{0.5\times 718}$
 
 Good old James! We just only need to quantify the energy
 
@@ -495,7 +471,7 @@ Indeed, we have $h \equiv u + pv$ (3/12); with a quick insertion of equations 4/
 h = u + pv = c_{v}T + RT = (c_{v}+ R) T
 :::
 
-« $^{\mathrm{The} \mathrm{difference} \mathrm{between} \mathrm{the}}$ means of tile experiments and interpolations being exactly such as was found to be due to the increased efefct of the temperature of the room in the latter case, we arrive at the conclusion, that *no change of temperature occurs when air is allowed to expand in such a manner as not to develope mechanical*
+« $^{\mathrm{The} \mathrm{difference} \mathrm{between} \mathrm{the}}$ means of tile experiments and interpolations being exactly such as was found to be due to the increased effect of the temperature of the room in the latter case, we arrive at the conclusion, that *no change of temperature occurs when air is allowed to expand in such a manner as not to develope mechanical*
 
 (4/11) *power*. »
 
@@ -507,38 +483,45 @@ $_{0.5\times 718}= 33.92^{\circ}C$.
 
 (4/13)
 
-Using the equation 4/8 that we developed earlier, we can simplify this expression to obtain:
+expression to obtain:
 
-:::{math}
-:label: eq-4-14
-:enumerator: 4/14
-h = c_{p}T
-:::
+For any ideal gas,
 
-For any ideal gas, regardless of the process (reversible or not), where $h$ is the specific enthalpy $(J kg^{-1})$; $T$ is the temperature $(K)$;
+where $h$ is the specific enthalpy $(J kg^{-1})$; $T$ is the temperature $(K)$;
 
-and $c_{p}$ is the specific thermal capacity at constant pressure $(J kg^{-1}K^{-1})$.
+and
 
 ````{prf:example}
-:label: ex-4-4
-:enumerator: 4.4
 
-The specific thermal capacity at constant pressure for air is measured at $c_{p (\mathrm{air})}= 1005 J kg^{-1}K^{-1}$. A flow rate of $2 kg s^{-1}$ of air passes through a compressor, where its temperature increases by $150^{\circ}C$. What is the power supplied by the compressor to the air?
+at $c_{p (\mathrm{air})}= 1005 J kg^{-1}K^{-1}$.
 
-We know that the change energy is directly proportional to the change in temperature. Using equations 3/14 and 4/14, we obtain:$\dot{W}_{\mathrm{A}\rightarrow \mathrm{B}}+\dot{} Q_{\mathrm{A}\rightarrow \mathrm{B}}=\dot{m} \Delta h =\dot{m} c_{p}\Delta T = 2 \times 1005 \times (+150) = +301.5 kW$.
-
-With an ideal gas, a simple thermometer is enough to quantify
+compressor to the air?
 
 energy…
 
-...but not to differentiate work and heat. Here we cannot
-
-separate$\dot{W}_{\mathrm{A}\rightarrow \mathrm{B}}$ from$\dot{Q}_{\mathrm{A}\rightarrow \mathrm{B}}$. We also cannot predict the state of the gas at the outlet, that is its pressure $p$ and specific volume $v$ (only their product). For this, a precise description of what happens between the inlet and the outlet would be needed.
-
 ````
 
-(sec-4-3-4)=
-### 4.3.4 Interlude: what to remember so far
+### 4.3.4
+
+temperature $T$:
+
+quantify these three forms of energy.
+
+```{exercise}
+:label: prob-4-4
+:enumerator: 4.4
+
+Using the equation 4/8 that we developed earlier, we can simplify this $h = c_{p}T$ (4/14) regardless of the process (reversible or not), $c_{p}$ is the specific thermal capacity at constant pressure $(J kg^{-1}K^{-1})$. Example 4.4 The specific thermal capacity at constant pressure for air is measured A flow rate of $2 kg s^{-1}$ of air passes through a compressor, where its temperature increases by $150^{\circ}C$. What is the power supplied by the We know that the change energy is directly proportional to the change in temperature. Using equations 3/14 and 4/14, we obtain:$\dot{W}_{\mathrm{A}\rightarrow \mathrm{B}}+\dot{} Q_{\mathrm{A}\rightarrow \mathrm{B}}=\dot{m} \Delta h =\dot{m} c_{p}\Delta T = 2 \times 1005 \times (+150) = +301.5 kW$. With an ideal gas, a simple thermometer is enough to quantify...but not to differentiate work and heat. Here we cannot separate$\dot{W}_{\mathrm{A}\rightarrow \mathrm{B}}$ from$\dot{Q}_{\mathrm{A}\rightarrow \mathrm{B}}$. We also cannot predict the state of the gas at the outlet, that is its pressure $p$ and specific volume $v$ (only their product). For this, a precise description of what happens between the inlet and the outlet would be needed.
+
+:::{admonition} Answer
+:class: dropdown
+
+$w_{1\rightarrow 2}= \Delta h = c_{p}\Delta T = +85.4 kJ kg^{-1}$ (3/15 & 4/13)
+
+:::
+```
+
+**Interlude: what to remember so far**
 
 The ideal gas is a model for quantifying the temperature of a gas. According
 
@@ -546,30 +529,23 @@ to this model, the three main forms of energy we have used so far — internal
 
 energy $u$, enthalpy $h$, and the term $pv$ — are directly proportional to the
 
-temperature $T$:
+$u = c_{v}T (J kg^{-1})$
 
-:::{math}
-u = c_{v}T (J kg^{-1})
-:::
+$h = c_{p}T (J kg^{-1})$
 
-:::{math}
-h = c_{p}T (J kg^{-1})
-:::
+$pv = RT (J kg^{-1})$
 
-:::{math}
-pv = RT (J kg^{-1})
-:::
+If we measure the absolute temperature of a gas, then we can immediately
 
-If we measure the absolute temperature of a gas, then we can immediately quantify these three forms of energy.
+**Elementary Reversible Processes**
 
-**4.4 Elementary Reversible Processes** Here we intend to calculate the properties of an ideal gas, as well as the energy transfers involved, when it is compressed or expanded under completely arbitrary constraints of volume, pressure, or temperature.
+Here we intend to calculate the properties of an ideal gas, as well as
 
-::::{admonition} A Bit of History
-:class: note
+the energy transfers involved, when it is compressed or expanded under
+
+completely arbitrary constraints of volume, pressure, or temperature.
 
 *Engineering Thermodynamics* by Olivier Cleynen
-
-::::
 
 (sec-4-4-1)=
 ### 4.4.1 What is this chapter section for?
@@ -716,7 +692,7 @@ For air, we have $c_{p (\mathrm{air})}= 1005 J kg^{-1}K^{-1}, c_{v (\mathrm{air}
 
 The heating will likely take place at constant pressure (unless the apartment is hermetically sealed, the pressure will be atmospheric everywhere and the air will “leak” under the doors). We assume a pressure of $1 bar$ and a ceiling height of $2.5 m$. We use a closed system encompassing all the heated air.
 
-We have a volume of $75 m^{3}$, which leads to the total mass of air as $m_{\mathrm{A}}= \frac{p_{\mathrm{A}}V_{\mathrm{A}}}{R T_{\mathrm{A}}} = _{287\times}^{1}_{(}^{\times}_{1}^{1}_{0}^{0}_{+^{5}}^{\times}_{27}^{7}_{3}^{5}_{.15)}= 92.29 kg = 203.5 lb$. The heat required to heat this amount of air at constant pressure can be quantified with equation 4/17: $Q_{\mathrm{A}\rightarrow \mathrm{B}}= m c_{p}\Delta T = 93.29 \times 1005 \times (20 - 10) = +9.28 \times 10^{5}J = +928 kJ$.
+We have a volume of $75 m^{3}$, which leads to the total mass of air as $m_{\mathrm{A}}= \frac{p_{\mathrm{A}}V_{\mathrm{A}}}{R T_{\mathrm{A}}} = \frac{1\times 10^{5}\times 75}{287\times (10+273.15)}= 92.29\,\mathrm{kg} = 203.5\,\mathrm{lb}$. The heat required to heat this amount of air at constant pressure can be quantified with equation 4/17: $Q_{\mathrm{A}\rightarrow \mathrm{B}}= m c_{p}\Delta T = 93.29 \times 1005 \times (20 - 10) = +9.28 \times 10^{5}J = +928 kJ$.
 
 This result represents the final *net* heat transfer to the air (after
 
@@ -778,6 +754,8 @@ volume diagram.
 
 A constant-volume (isochoric) process undergone by an ideal gas. In a closed system (left), the volume is fixed and no work is done. In an open system (right), the gas must be compressed while heating and expanded while cooling, to
 :::
+
+closed system (left), the volume is fixed and no work is done. In an open system (right), the gas must be compressed while heating and expanded while cooling, to
 
 *Diagram* CC-0 *Olivier Cleynen*
 
@@ -1045,7 +1023,7 @@ w_{\mathrm{A}\rightarrow \mathrm{B}}= R T_{\mathrm{cst}.}\ln (\frac{v_{\mathrm{A
 = \exp [\frac{-100 \times 10^{3}}{2.5 \times 287 \times (800 + 273.15)}] = 0.878207
 :::
 
-Aobntda isnin ac ef ni$V$a$^{\mathrm{A}}$l $=$vo l$^{\frac{m R T_{\mathrm{A}}}{p_{\mathrm{A}}}}$um e $V=_{\mathrm{B}}=^{2.5\times}\frac{V_{\mathrm{A}}2\times 10}{0.878207}^{287\times (800 _{5}+}= ^{2 7}4^{3}.^{.1}3^{5}8^{)}4= m 3_{3}. 8=5 1m1^{3}5 8= U 1S0 1g7a lU. S gal$, we Finally, the final pressure is obtained by comparing the final and initial states: $p_{\mathrm{A}}V_{\mathrm{A}}= m R T_{\mathrm{A}}= m R T_{\mathrm{B}}= p_{\mathrm{B}}V_{\mathrm{B}}$ (or with equation 4/27): $p_{\mathrm{B}}= p_{\mathrm{A}} \frac{V_{\mathrm{A}}}{V_{\mathrm{B}}} = 2\times 10^{5}\times 0.878 207 = 1.756\times 10^{5}Pa = 1.756 bar = 25.47 psi$.
+Aobntda isnin ac ef in$V$a$^{\mathrm{A}}$l $=$vo l$^{\frac{m R T_{\mathrm{A}}}{p_{\mathrm{A}}}}$um e $V=_{\mathrm{B}}=^{2.5\times}\frac{V_{\mathrm{A}}2\times 10}{0.878207}^{287\times (800 _{5}+}= ^{2 7}4^{3}.^{.1}3^{5}8^{)}4= m 3_{3}. 8=5 1m1^{3}5 8= U 1S0 1g7a lU. S gal$, we Finally, the final pressure is obtained by comparing the final and initial states: $p_{\mathrm{A}}V_{\mathrm{A}}= m R T_{\mathrm{A}}= m R T_{\mathrm{B}}= p_{\mathrm{B}}V_{\mathrm{B}}$ (or with equation 4/27): $p_{\mathrm{B}}= p_{\mathrm{A}} \frac{V_{\mathrm{A}}}{V_{\mathrm{B}}} = 2\times 10^{5}\times 0.878 207 = 1.756\times 10^{5}Pa = 1.756 bar = 25.47 psi$.
 
 The volume increases and the pressure decreases, since the gas
 
@@ -1079,7 +1057,7 @@ A reversible adiabatic (isentropic) process undergone by an ideal gas. In a clos
 
 A *reversible adiabatic* process is carried out infinitely slowly. A piston in a cylinder will need to be moved infinitely slowly for this, and a steady-flow compressor will need to be infinitely long. Later, in chapter 8 (*entropy*), we will call these processes *isentropic*.
 
-It must be noted that even though there is absolutely no heat transfer, the temperature must necessarily vary in such a process, since the work is non-zero. This temperature change is often the intended efefct, as we will see in chapter 7 (*the second law*).
+It must be noted that even though there is absolutely no heat transfer, the temperature must necessarily vary in such a process, since the work is non-zero. This temperature change is often the intended effect, as we will see in chapter 7 (*the second law*).
 
 In a closed system, we have $q_{1\rightarrow 2}+w_{1\rightarrow 2}= \Delta u$and, if the process is reversible, heat and work are quantified without any difficulty:
 
@@ -1282,15 +1260,7 @@ For air, we have $c_{p (\mathrm{air})}= 1005 J kg^{-1}K^{-1}, c_{v (\mathrm{air}
 
 The maximum work will be obtained if the expansion is reversible. Since we are not allowed to supply heat, our best option here is to perform a reversible adiabatic expansion from $40 bar$ to $1 bar$. We want to calculate the final temperature, since it will give us the change in energy, thus the work done by the gas. Among the three daunting relations 4/36 to 4/38, it is the second one that interests us:
 
-:::{math}
-\frac{\gamma -1}{}
-:::
-
-:::{math}
-- \frac{\gamma -1}{}
-:::
-
-$(\frac{T_{\mathrm{A}}}{T_{\mathrm{B}}} ) = (\frac{p_{\mathrm{A}}}{p_{\mathrm{B}}} ) ^{\gamma}$. Thus: $T_{\mathrm{B}}= T_{\mathrm{A}}(\frac{p_{\mathrm{A}}}{p_{\mathrm{B}}} ) ^{\gamma}= (50 + 273.15) ( \frac{40}{1} )^{-}^{\frac{1.4-1}{1.4}} = 112.6 K = -160.5^{\circ}C = -257 ^{\circ} F$. The work done by the closed system composed of the gas is therefore $w_{\mathrm{A}\rightarrow \mathrm{B}}= \Delta u - q_{\mathrm{A}\rightarrow \mathrm{B}}= c_{v}\Delta T - 0 = 718 \times (-160.5 - 50) = -1.5115 \times 10^{5}J kg^{-1}= -151.1 kJ kg^{-1}$. By calculating the mass $m_{\mathrm{A}}= \frac{p_{\mathrm{A}}V_{\mathrm{A}}}{R T_{\mathrm{A}}} = _{287}^{4}_{\times}^{0}_{(}^{\times}_{5}^{1}_{0}^{0}_{+^{5}}^{\times}_{2}^{0}_{7}^{.}_{3}^{2}_{.15)}= 8.626 kg$, we obtain $W_{\mathrm{A}\rightarrow \mathrm{B}}= m_{\mathrm{A}}w_{\mathrm{A}\rightarrow \mathrm{B}}= 8.626 \times -151.1 \times 10^{3}= -1.3038 \times 10^{6}J = -1.304 MJ$.
+With $\left(\frac{T_{\mathrm{A}}}{T_{\mathrm{B}}}\right) = \left(\frac{p_{\mathrm{A}}}{p_{\mathrm{B}}}\right)^{\frac{\gamma-1}{\gamma}}$. Thus: $T_{\mathrm{B}}= T_{\mathrm{A}}(\frac{p_{\mathrm{A}}}{p_{\mathrm{B}}} ) ^{\gamma}= (50 + 273.15) ( \frac{40}{1} )^{-\frac{1.4-1}{1.4}} = 112.6 K = -160.5^{\circ}C = -257 ^{\circ} F$. The work done by the closed system composed of the gas is therefore $w_{\mathrm{A}\rightarrow \mathrm{B}}= \Delta u - q_{\mathrm{A}\rightarrow \mathrm{B}}= c_{v}\Delta T - 0 = 718 \times (-160.5 - 50) = -1.5115 \times 10^{5}J kg^{-1}= -151.1 kJ kg^{-1}$. By calculating the mass $m_{\mathrm{A}}= \frac{p_{\mathrm{A}}V_{\mathrm{A}}}{R T_{\mathrm{A}}} = \frac{40\times 10^{5}\times 0.2}{287\times (50+273.15)}= 8.626\,\mathrm{kg}$, we obtain $W_{\mathrm{A}\rightarrow \mathrm{B}}= m_{\mathrm{A}}w_{\mathrm{A}\rightarrow \mathrm{B}}= 8.626 \times -151.1 \times 10^{3}= -1.3038 \times 10^{6}J = -1.304 MJ$.
 
 This amount of energy is enough to accelerate, without friction,
 
@@ -1340,7 +1310,7 @@ We have focused on four specific processes of ideal gases, since each plays an i
 
 ::::{admonition} A Bit of History:
 :class: note
-:label: hist-4-11
+:label: hist-4-10
 
 the sum of the masses multiplied by the squares of
 
@@ -1440,7 +1410,7 @@ to what it was at the origin of the movement, plus
 
 of free heat in the simple mixing of bodies is thus independent of any hypothesis regarding the nature of heat; it has been generally accepted by physicists, and we shall adopt it in the following research.”
 
-At the time when this text was written, the atomic hypothesis remained largely speculative due to the lack of adequate experimental means: the experiment by Jean Perrin that fin ally settled the issue only took place in the early years of the 20th century, and the X-ray diffraction experiments suggested by Max von Laue occurred in 1912.
+At the time when this text was written, the atomic hypothesis remained largely speculative due to the lack of adequate experimental means: the experiment by Jean Perrin that finally settled the issue only took place in the early years of the 20th century, and the X-ray diffraction experiments suggested by Max von Laue occurred in 1912.
 
 ::::
 
@@ -1459,7 +1429,7 @@ At the time when this text was written, the atomic hypothesis remained largely s
 
    4.3 Energy and Temperature
 
-   There is air in a felxible compartment at a pressure
+   There is air in a flexible compartment at a pressure
 
    of $3bar (43.51psi)$. Its internal energy is $836kJkg^{-1}$.
 
@@ -1504,10 +1474,9 @@ $3) p_{4}= \frac{RT_{4}m_{4}}{V_{4}} = 1.67bar.$
 ```
 
 ```{exercise}
-:label: prob-4-4
 :enumerator: 4.4
 
-**Power of an Air Pump An air pump (figure 4.15) compresses air adiabatically, with a steady flow. The air temperature increases from $15^{\circ}C$ to $100^{\circ}C$. What is the specific power input? *Photo by Commons User:Grikalmis (retouched, public domain)***
+**Power of an Air Pump An air pump (figure 4.15) compresses air adiabatically, with a steady flow. The air temperature increases from $15^{\circ}C$ to $100^{\circ}C$. What is the specific power input? portable air tank *Photo by Commons User:Grikalmis (retouched, public domain)***
 
 :::{admonition} Answer
 :class: dropdown
@@ -1570,7 +1539,7 @@ Among the processes above, which ones are:
 :label: prob-4-10
 :enumerator: 4.10
 
-**Elementary Processes: Pressure and Volume Among the reversible processes described on each of the diagrams in figure 4.16, identify (without having to justify) the process at constant temperature, at constant pressure, reversible adiabatic, and at constant volume. *Diagram* CC-0 *Olivier Cleynen***
+**Elementary Processes: Pressure and Volume Among the reversible processes described on each of the diagrams in figure 4.16, identify (without having to justify) the process at constant temperature, at constant pressure, reversible adiabatic, and at constant volume. perfect gas *Diagram* CC-0 *Olivier Cleynen***
 
 :::{admonition} Answer
 :class: dropdown
@@ -1595,7 +1564,7 @@ reversible adiabatic, isochoric $(v$ constant).
 :label: prob-4-11
 :enumerator: 4.11
 
-**Compressor of a Turbofan Inside one of the engines of a commercial aircraft, the compressor (figure 4.17) is almost adiabatic. During cruise at $33 000 ft$, the atmosphere is at $-50^{\circ}C (-58 ^{\circ} F)$ and $0.25 bar (3.626 psi)$. The fan is driven by the turbine through a mechanical shaft. It receives $55 kg s^{-1}$ of air at atmospheric conditions, and compresses this flow up until $8 bar (116 psi)$. 1. Starting from the following relation, $p_{1}v_{2}^{\gamma}$ (4/38) $(p_{2}) = (v_{1})$ *Photo* CC-by-sa *Olivier Cleynen* valid for a reversible adiabatic process undergone by a perfect gas, show (without using equation 4/36) that: under license by Sulzer in Switzerland $\frac{\gamma -1}{\gamma} \mathrm{Photo} \mathrm{CC-by-sa} \mathrm{Sulzer} \mathrm{AG} \frac{T_{1}}{} \frac{p_{1}}{} ^{(}T_{2}) = (p_{2})$ 4.12 Compression and Combustion (4/37) in a Diesel Engine 2. What is the minimum theoretical power to be supplied to the compressor? In 1890, a young German engineer with a passion 3. Under what conditions would this power be ob- for thermodynamics (§7.6) developed a low-power, tained? low-speed, and high-efficiency engine in a laboratory (figure 4.18). The engine was designed to be robust and In reality, the compressor requires significantly more simple; it had only one cylinder. Here, we study part of power to operate. We model the actual process inside its operating cycle. the compressor with two distinct phases: The piston inside the cylinder periodically varies the • A heating at constant pressure, conducted by fric- volume between $3 L$ (*bottom dead center*, piston at the tion, with power representing $15 \%$ of the theoretical bottom of its stroke) and $0.3 L$ (*top dead center*, piston power calculated earlier; at the top of its stroke). • Then, an ideal compression up to $8 bar$. The engine starts its cycle at bottom dead center, when it is fliled with air at $20^{\circ}C$ and $1 bar (68 ^{\circ} F$ and $14.5 psi)$. 4. Compare the theoretical compression from ques- The piston compresses this air to top dead center. tion 2 and this new process on a pressure-volume The compression is done reversibly (very slowly), but diagram. Graphically represent the work done on non-adiabatically: the air receives heat through the one of the processes. walls throughout the process. The engineer predicted 5. What is the power supplied to the compressor in that its properties would vary according to the relation this new scenario? $p v^{1.5}=$ constant. 1. The work done by a force$⃗ F$ along a displacement $l$ is expressed as $W \equiv ⃗ F ⋅⃗ l$ Starting from this equation, express the work done on a fixed mass body in terms of its specific volume and internal pressure. 2. How much energy in the form of work will the gas compression have cost? 110 Chapter 4 3. How much energy in the form of heat will the gas have received during compression? When the piston reaches the top of its stroke, fuel is progressively injected into the cylinder to allow for combustion to occur. The amount of injected fuel provides for a total heat input of $2 kJ$. The combustion takes place at constant pressure. 4. Draw the processes undergone by the gas during compression and combustion on a pressure-volume diagram, qualitatively (that is, without showing numerical values). 5. What will be the maximum temperature reached within the engine? 6. In order to avoid structural failure, the engineer must ensure that the force transmitted by the piston never exceeds $10 kN (2248 lbf)$. What constraint must be respected for this?**
+**Compressor of a Turbofan Inside one of the engines of a commercial aircraft, the compressor (figure 4.17) is almost adiabatic. During cruise at $33 000 ft$, the atmosphere is at $-50^{\circ}C (-58 ^{\circ} F)$ and $0.25 bar (3.626 psi)$. The fan is driven by the turbine through a mechanical shaft. It receives $55 kg s^{-1}$ of air at atmospheric conditions, and compresses this flow up until $8 bar (116 psi)$. 1. Starting from the following relation, $p_{1}v_{2}^{\gamma}$ (4/38) $(p_{2}) = (v_{1})$ *Photo* CC-by-sa *Olivier Cleynen* valid for a reversible adiabatic process undergone by a perfect gas, show (without using equation 4/36) that: $\frac{\gamma -1}{\gamma} \frac{T_{1}}{} \frac{p_{1}}{} (T_{2}) = (p_{2})$ (4/37) 2. What is the minimum theoretical power to be supplied to the compressor? 3. Under what conditions would this power be obtained? In reality, the compressor requires significantly more power to operate. We model the actual process inside the compressor with two distinct phases: • A heating at constant pressure, conducted by friction, with power representing $15 \%$ of the theoretical power calculated earlier; • Then, an ideal compression up to $8 bar$. 4. Compare the theoretical compression from question 2 and this new process on a pressure-volume diagram. Graphically represent the work done on one of the processes. 5. What is the power supplied to the compressor in this new scenario? under license by Sulzer in Switzerland *Photo* CC-by-sa *Sulzer AG***
 
 :::{admonition} Answer
 :class: dropdown
@@ -1623,10 +1592,30 @@ $W_{\mathrm{real} \mathrm{compressor}}=\dot{W}_{\mathrm{friction} \mathrm{losses
    :::{figure} ../images/fig-4-18.jpg
    :label: fig-4-18
    :enumerator: 4.18
-   :alt: Diesel Engine from 1898, manufactured
+   :alt: Diesel Engine from 1898, manufactured under license by Sulzer in Switzerland
    
-   Diesel Engine from 1898, manufactured
+   Diesel Engine from 1898, manufactured under license by Sulzer in Switzerland
    :::
+
+```{exercise}
+:label: prob-4-12
+:enumerator: 4.12
+
+**Compression and Combustion in a Diesel Engine In 1890, a young German engineer with a passion for thermodynamics (§7.6) developed a low-power, low-speed, and high-efficiency engine in a laboratory (figure 4.18). The engine was designed to be robust and simple; it had only one cylinder. Here, we study part of its operating cycle. The piston inside the cylinder periodically varies the volume between $3 L$ (*bottom dead center*, piston at the bottom of its stroke) and $0.3 L$ (*top dead center*, piston at the top of its stroke). The engine starts its cycle at bottom dead center, when it is filled with air at $20^{\circ}C$ and $1 bar (68 ^{\circ} F$ and $14.5 psi)$. The piston compresses this air to top dead center. The compression is done reversibly (very slowly), but non-adiabatically: the air receives heat through the walls throughout the process. The engineer predicted that its properties would vary according to the relation $p v^{1.5}=$ constant. 1. The work done by a force$\vec{F}$ along a displacement $l$ is expressed as $W \equiv \vec{F} ⋅\vec{l}$ (1/11) Starting from this equation, express the work done on a fixed mass body in terms of its specific volume and internal pressure. 2. How much energy in the form of work will the gas compression have cost? 3. How much energy in the form of heat will the gas have received during compression? When the piston reaches the top of its stroke, fuel is progressively injected into the cylinder to allow for combustion to occur. The amount of injected fuel provides for a total heat input of $2 kJ$. The combustion takes place at constant pressure. 4. Draw the processes undergone by the gas during compression and combustion on a pressure-volume diagram, qualitatively (that is, without showing numerical values). 5. What will be the maximum temperature reached within the engine? 6. In order to avoid structural failure, the engineer must ensure that the force transmitted by the piston never exceeds $10 kN (2248 lbf)$. What constraint must be respected for this?**
+
+:::{admonition} Answer
+:class: dropdown
+
+12**
+1) see §1.3 p. 16 & §2.4.1 p. 36;
+2) $W_{\mathrm{A}\rightarrow \mathrm{B}}= -m\int ^{\mathrm{B}}_{\mathrm{A}}pdv = +1.298 kJ$
+3) Wth $p_{\mathrm{B}}= kv^{-1.5}= 31.6 bar$, we have $T_{\mathrm{B}}=$ B
+$926.3 K$. Then, $Q_{\mathrm{A}\rightarrow \mathrm{B}}= \Delta U -W_{\mathrm{A}\rightarrow \mathrm{B}}= +0.3254 kJ$.
+5) With constant pressure, with equation 4/17,
+$T6)^{\mathrm{C}}S= <^{\frac{Q_{\mathrm{B}\rightarrow \mathrm{C}}}{F_{\mathrm{ma}}m c_{p}}} _{p_{\mathrm{C}}^{\mathrm{x}}}+_{.}=T _{\mathrm{B}}3 =.1 6144 8\times 3 1.70 K_{-3}(m12_{2}1 (1\mathrm{d}^{\circ}$i$C$am).eter $D_{\max}= 6.35 cm)$.
+
+:::
+```
 
 ```{exercise}
 :label: prob-4-13
@@ -1637,7 +1626,7 @@ $W_{\mathrm{real} \mathrm{compressor}}=\dot{W}_{\mathrm{friction} \mathrm{losses
 :::{admonition} Answer
 :class: dropdown
 
-2) With equation 4/37, $T_{\mathrm{B}}= 664.83 K$ 3) With equation 3/15, $w_{\mathrm{compressor}}= w_{\mathrm{A}\rightarrow \mathrm{B}}= +388.61 kJ kg^{-1}$ 4) $T_{\mathrm{C}}= 1373.15 K$; thus $q_{\mathrm{combustion}}= q_{\mathrm{B}\rightarrow \mathrm{C}}= +711.86 kJ kg^{-1}$ 5) Since $w_{\mathrm{turbine}}= -w_{\mathrm{compressor}}$, we have $T_{D}= 986.47 K$ 6) With equation 4/37, $p_{\mathrm{D}}= 5.97 bar$ 7) Idem, with equation 4/37, $T_{\mathrm{E}}= 574.49 K$ 8) With equation 3/15, $C_{\mathrm{E}}= (-2\Delta h)^{\frac{1}{2}} = 909.98 m s^{-1}$ Of course, these values do not account for the irre- versibilities in an actual turbojet. These efefcts are approached in problem 4.11 p. 108 and formalized in chapter 10 (*air-based power cycles*).
+2) With equation 4/37, $T_{\mathrm{B}}= 664.83 K$ 3) With equation 3/15, $w_{\mathrm{compressor}}= w_{\mathrm{A}\rightarrow \mathrm{B}}= +388.61 kJ kg^{-1}$ 4) $T_{\mathrm{C}}= 1373.15 K$; thus $q_{\mathrm{combustion}}= q_{\mathrm{B}\rightarrow \mathrm{C}}= +711.86 kJ kg^{-1}$ 5) Since $w_{\mathrm{turbine}}= -w_{\mathrm{compressor}}$, we have $T_{D}= 986.47 K$ 6) With equation 4/37, $p_{\mathrm{D}}= 5.97 bar$ 7) Idem, with equation 4/37, $T_{\mathrm{E}}= 574.49 K$ 8) With equation 3/15, $C_{\mathrm{E}}= (-2\Delta h)^{\frac{1}{2}} = 909.98 m s^{-1}$ Of course, these values do not account for the irre- versibilities in an actual turbojet. These effects are approached in problem 4.11 p. 108 and formalized in chapter 10 (*air-based power cycles*).
 *Engineering Thermodynamics* by Olivier Cleynen
 
 :::
@@ -1701,5 +1690,7 @@ $(T_{2}) = (p_{2})$
    
    Compressor of a dissected snecma Atar turbojet engine (1948). Air flows from the left to the center of the image.
    :::
+
+turbojet engine (1948). Air flows from the left to the center of the image.
 
 *Photo* CC-by-sa *Olivier Cleynen*

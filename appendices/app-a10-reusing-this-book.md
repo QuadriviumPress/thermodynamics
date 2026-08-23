@@ -6,6 +6,10 @@ label: app-a10-reusing-this-book
 
 # A10. Reusing This Book
 
+Appendix A10 323
+
+## A10 Reusing This Book
+
 This book is protected by copyright.
 
 The text content of the book is licensed under a Creative Commons by-sa license. This license allows its reuse under two conditions:
