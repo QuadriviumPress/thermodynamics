@@ -291,9 +291,9 @@ When a fluid receives or supplies work in a reversible adiabatic manner, then $\
 :::{figure} ../images/fig-8-4.svg
 :label: fig-8-4
 :enumerator: 8.4
-:alt: elementary processes on temperature-entropy diagrams.
+:alt: Elementary processes on temperature-entropy diagrams.
 
-elementary processes on temperature-entropy diagrams.
+Elementary processes on temperature-entropy diagrams.
 :::
 
 *Diagrams* CC-0 *Olivier Cleynen*
@@ -307,8 +307,6 @@ Note also that when a fluid completes a cycle, the temperature at which entropy 
 When the processes are reversible, this net heat is represented by the area enclosed by the path taken by the fluid on a temperature-entropy diagram (figure 8.5).
 
 Finally, we are pleased to note that the Carnot cycle, consisting of two isothermal phases $(T =$ constant) separated by two isentropic phases $(s =$ constant), benefits greatly from being represented on a temperature-entropy diagram, as shown in figure 8.6.
-
-Figure 8.5: Thermodynamiccycleduringwhichheathasbeenabsorbed, andtherefore transformed into work. When the path is reversed, heat is rejected (and work absorbed) by the fluid. *Diagram* CC-0 *Olivier Cleynen*
 
 :::{figure} ../images/fig-8-6.svg
 :label: fig-8-6
@@ -354,7 +352,7 @@ T\, ds - p\, dv = du
 ds = \frac{du}{T} + \frac{p}{T}\, dv
 :::
 
-along any reversible process.[^ch8-fn1]
+during any reversible process.[^ch8-fn1]
 
 Now, if we use an ideal gas, we have $u = c_{v}T$ (equation 4/11) and $p = \frac{RT}{v}$ (equation 4/1), thus:
 
@@ -494,9 +492,7 @@ In order to quantify $\Delta S$ we start from equation 8/11, $\Delta s = c_{p}\l
 
 Since the process is reversible, the heat removed is obtained using equation 8/7: $Q_{\mathrm{A}\rightarrow \mathrm{B}}= \int ^{\mathrm{B}}_{\mathrm{A}}T dS = T_{\mathrm{cst}.}\int ^{\mathrm{B}}_{\mathrm{A}}dS = T_{\mathrm{cst}.}\Delta S = (50 + 273, 15) \times -231 = -74.6 kJ$.
 
-We already knew how to quantify $Q_{\mathrm{A}\rightarrow \mathrm{B}}$ without using entropy,
-
-using equations 4/27 and 4/28.
+We already knew how to quantify $Q_{\mathrm{A}\rightarrow \mathrm{B}}$ without using entropy, using equations 4/27 and 4/28.
 
 ````
 
@@ -650,9 +646,7 @@ A quick look at the steam tables allows us to draw the process qualitatively on 
 
 ````{prf:example}
 
-Since the process is reversible, we can calculate $Q_{\mathrm{A}\rightarrow \mathrm{B}}$ by integrating the term $T ds$ between A and B. We read $s_{\mathrm{A}}$ in Steam Table 2: $s_{\mathrm{A}}= s_{L300^{\circ}C}= 3.2552 kJ kg^{-1}$. At the end, the specific volume is $v_{\mathrm{B}}= \frac{V_{\mathrm{B}}}{m} = \frac{2}{2} = 1 m^{3}kg^{-1}$; in order to obtain $s_{\mathrm{B}}$ we must interpolate between two blocks of Steam Table 1 (between $0.2 MPa$ and $0.4 MPa$ at $300^{\circ}C)._{v_{300}^{\circ} C \& 0.4 MPa-v_{300}^{\circ} C \& 0.2 MPav_{\mathrm{B}}-v_{300}^{\circ} C \& 0.2 MPa}= _{0.654 89-1.3162}^{1-1.3162}= 0.4781$ and correspond-Let $y \equiv$
-
-ingly, $s_{\mathrm{B}}= s_{300^{\circ}C \& 0.2 MPa}+ y(s_{300^{\circ}C \& 0.4 MPa}- s_{300^{\circ}C \& 0.2 MPa}) = 7.8941 +0.4781(7.5677 - 7.8941) = 7.738 kJ K^{-1}kg^{-1}$.
+Since the process is reversible, we can calculate $Q_{\mathrm{A}\rightarrow \mathrm{B}}$ by integrating the term $T ds$ between A and B. We read $s_{\mathrm{A}}$ in Steam Table 2: $s_{\mathrm{A}}= s_{L300^{\circ}C}= 3.2552 kJ kg^{-1}K^{-1}$. At the end, the specific volume is $v_{\mathrm{B}}= \frac{V_{\mathrm{B}}}{m} = \frac{2}{2} = 1 m^{3}kg^{-1}$; in order to obtain $s_{\mathrm{B}}$ we must interpolate between two blocks of Steam Table 1 (between $0.2 MPa$ and $0.4 MPa$ at $300^{\circ}C)$. Let $y \equiv \frac{v_{\mathrm{B}}-v_{300^{\circ}C \& 0.2 MPa}}{v_{300^{\circ}C \& 0.4 MPa}-v_{300^{\circ}C \& 0.2 MPa}}= \frac{1-1.3162}{0.65489-1.3162}= 0.4781$ and correspondingly, $s_{\mathrm{B}}= s_{300^{\circ}C \& 0.2 MPa}+ y(s_{300^{\circ}C \& 0.4 MPa}- s_{300^{\circ}C \& 0.2 MPa}) = 7.8941 +0.4781(7.5677 - 7.8941) = 7.738 kJ K^{-1}kg^{-1}$.
 
 ````
 
@@ -814,16 +808,7 @@ Thus, we can translate the second law as follows:
 :alt: Illustration from the original text
 :::
 
-We can always decrease the entropy of a system to bring it back to its initial value (by returning the system itself to its initial state, whatever the method
-
-::::{admonition} A Bit of History
-:class: note
-
-*Engineering Thermodynamics* by Olivier Cleynen
-
-::::
-
-used), but this will necessarily be at the expense of an increase *at least as large* in the entropy of another system.
+We can always decrease the entropy of a system to bring it back to its initial value (by returning the system itself to its initial state, whatever the method used), but this will necessarily be at the expense of an increase *at least as large* in the entropy of another system.
 
 We could also say, in the same way that we described energy as “a quantity that does not change during transformations” (§1.1.1), that entropy is conceptualized as “a quantity that always increases during transformations.” This is the indicator we were looking for in §8.1.1 to determine the direction of processes.
 
@@ -953,9 +938,7 @@ Whenever we produce an increase in overall entropy, we have to proceed ultimatel
 (sec-8-5-2)=
 ### 8.5.2 Context: the direction of time
 
-The examples we have studied in this chapter to determine the direction of processes are very academic, however the approach remains valid for any process: a stone thrown into a pond, a food plate breaking when it falls, etc. If we go back to the three photos in figure 8.1, we could determine their order by finding the initial and final states of the water around the diver,
-
-and comparing $\Delta s$ with the integral $\int (\frac{\mathrm{δ}q}{T})_{\mathrm{real} \mathrm{path}}$ carried out during the entry into the water.
+The examples we have studied in this chapter to determine the direction of processes are very academic, however the approach remains valid for any process: a stone thrown into a pond, a food plate breaking when it falls, etc. If we go back to the three photos in figure 8.1, we could determine their order by finding the initial and final states of the water around the diver, and comparing $\Delta s$ with the integral $\int (\frac{\mathrm{δ}q}{T})_{\mathrm{real} \mathrm{path}}$ carried out during the entry into the water.
 
 This desire to find the absolute order in which states succeed one another, in other words, the direction of time, led the German physicist Rudolf Clausius to propose the concept of *entropy* in 1865 in a masterly publication — *Über verschiedene für die Anwendung bequeme Formen der Hauptgleichungen der mechanischen Wärmetheorie* [[17](#ref-17), [18](#ref-18), [19](#ref-19)]. Concluding a decade of work around the quantity $\frac{Q}{T}$, he formalized a concept that his French colleague Frédéric Reech and Scottish counterpart William Rankine had only touched upon [[36](#ref-36)], and synthesized all the contemporary knowledge of his discipline.
 
@@ -1028,52 +1011,33 @@ Rudolf Clausius, 1865 [[17](#ref-17), [18](#ref-18), [19](#ref-19)]
 
 Is the theory of refrigerators and engines capable of predicting the end of the world? To explore this question in a fun way, students may read *The Last Question* by Isaac Asimov [[29](#ref-29), [32](#ref-32)] or *Entropy and all that* by Philippe Depondt [[43](#ref-43)]. For a more formal answer, one must refer to a good physics textbook.
 
-::::{admonition} A Bit of History:
+::::{admonition} A Bit of History
 :class: note
 :label: hist-8-10
 
 The history of science also includes some rather romantic figures!
 
-Rumford, an Adventurer
-
-Who Weighed Heat
-
-\*
+**Rumford, an Adventurer Who Weighed Heat**
 
 *By Philippe Depondt*
 
 *Pierre and Marie Curie University, Paris*
 
-He was actually named Benjamin Thompson (1753-1814) and was an American from Woburn, Massachusetts [[40](#ref-40)]. He initially had many diverse occupations: clerk in a store, teacher, medical stuexperimenter, cosmopolitan seducer, and of course, ther-
-
-::::
+He was actually named Benjamin Thompson (1753-1814) and was an American from Woburn, Massachusetts [[40](#ref-40)]. He initially had many diverse occupations: clerk in a store, teacher, medical student... However, when the American Revolution broke out, New England where he lived was at the heart of the conflict; Thompson chose the Loyalist side and became a secret agent for the British. At the time of the Declaration of Independence of the United States of America in 1776, cautiously, he left for England.
 
 :::{figure} ../images/fig-8-12.jpg
 :label: fig-8-12
 :enumerator: 8.12
 :alt: Sir Benjamin Thompson of Rumford, militia fighter, secret agent, architect, Minister of War, bold experimenter, cosmopolitan seducer, and of course, thermodynamicist.
 
-Sir Benjamin Thompson of Rumford, militia fgi hter, secret agent, architect, Minister of War, bold
+Sir Benjamin Thompson of Rumford, militia fighter, secret agent, architect, Minister of War, bold experimenter, cosmopolitan seducer, and of course, thermodynamicist.
 :::
 
-::::{admonition} dent... However, when the American Revolution
-:class: note
-:label: hist-8-11
+*Engraving by J. P. P. Rauschmayr, 1797 (public domain)*
 
-modynamicist.
-
-broke out, New England where he lived was at the *Engraving by J. P. P. Rauschmayr, 1797 (public domain)* heart of the conflict; Thompson chose the Loyalist side and became a secret agent for the British. At the time of the Declaration of Independence of the United States of America in 1776, cautiously, he left for England.
-
-He then undertook research on projectiles and joined the *Royal Society* in 1779. He nevertheless returned to America in 1782 still to fight on the British side, but peace was declared the following year. He was ennobled as Baron Rumford by King George iii in reward for his services. He then became an advisor to the Elector of Bavaria, and later the Minister of War. During his 14 years spent in Bavaria, he reformed the army, established assistance for the needy, and created the famous *Englischer Garten* in Munich. He then returned to England, and f-i nally settled in France in 1805 where he had a –disastrous– marriage with Marie Lavoisier, the widow of the chemist who was guillotined during the French Revolution.
+He then undertook research on projectiles and joined the *Royal Society* in 1779. He nevertheless returned to America in 1782 still to fight on the British side, but peace was declared the following year. He was ennobled as Baron Rumford by King George iii in reward for his services. He then became an advisor to the Elector of Bavaria, and later the Minister of War. During his 14 years spent in Bavaria, he reformed the army, established assistance for the needy, and created the famous *Englischer Garten* in Munich. He then returned to England, and finally settled in France in 1805 where he had a –disastrous– marriage with Marie Lavoisier, the widow of the chemist who was guillotined during the French Revolution.
 
 During his adventurous life, he managed to make at least two important discoveries. Within the framework of the caloric theory, he attempted to weigh heat by measuring the weight of bodies at different temperatures. From these unsuccessful attempts, he concluded that heat has no weight. Later, during his tenure as Minister of War, he oversaw the drilling of cannons and observed in 1798 that the drilling process heated the barrels to the point of boiling water. He realized that the amount of heat released was not limited by the quantity of matter containing it. From this, he deduced that the heat was not stored in the material but rather *produced* by the work of the horses driving the drill—a foreshadowing of Joule’s first law.
-
-::::
-
-::::{admonition} A Bit of History
-:class: note
-
-*Engineering Thermodynamics* by Olivier Cleynen
 
 ::::
 
@@ -1081,17 +1045,13 @@ During his adventurous life, he managed to make at least two important discoveri
 
    8.3 Expansion of a Liquid/Vapor
 
-   We have $10kg (22lb)$ of water at $45bar$ and $600^{\circ}C$
+   We have $10 kg (22 lb)$ of water at $45 bar$ and $600^{\circ}C$ $(653 psi$ and $1112^{\circ} F)$.
 
-   $(653psi$and$1112^{\circ} F)$.
+   1. What is the maximum amount of work that can be extracted from this mass of water without supplying heat, if it can expand to $4 bar (58 psi)$?
 
-   1. What is the maximum amount of work that can be extracted from this mass of water without supplyingheat,ifitcanexpandto$4bar(58psi)$?
+   2. If the expansion were continued to a lower pressure, at what temperature would the water condense?
 
-   2. If the expansion were continued to a lower pressure,
-
-   atwhattemperaturewouldthewatercondense?
-
-   3. Draw the process qualitatively (that is, without showing numerical values)onatemperatureentropydiagram,showing the saturation curve.
+   3. Draw the process qualitatively (that is, without showing numerical values) on a temperature-entropy diagram, showing the saturation curve.
 
 ```{exercise}
 :label: prob-8-1

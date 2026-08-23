@@ -211,78 +211,62 @@ Initially, we model the fluid inside the system with a metal spring.
 **Pressure** is defined as a force divided by an area:
 
 :::{math}
-p \equiv \frac{F}{}
+:label: eq-2-5
+:enumerator: 2/5
+p \equiv \frac{F}{A}
 :::
 
-:::{math}
-A
-:::
+where $p$ is the pressure $(Pa)$, $F$ is the force $(N)$, and $A$ is the area of the surface on which the force acts $(m^{2})$.
 
-where $p$ is the pressure $(Pa)$, $F$ is the force $(N)$,
-
-and $A$ is the area of the surface on which the force acts $(m^{2})$.
-
-The SI unit of pressure is the $Pascal$,
+The SI unit of pressure is the *Pascal*,
 
 :::{math}
+:label: eq-2-6
+:enumerator: 2/6
 1 Pa \equiv 1 N m^{-2}
 :::
 
 but three other units are commonly used instead:
 
-- the bar
-
+- the *bar*:
 
 :::{math}
+:label: eq-2-7
+:enumerator: 2/7
 1 bar \equiv 1 \times 10^{5}Pa
 :::
 
-- the kilogram-force per square centimeter, which is almost equal to the bar
+- the *kilogram-force per square centimeter*, which is almost equal to the *bar*:
 
 :::{math}
+:label: eq-2-8
+:enumerator: 2/8
 1 kg_{f}/cm^{2}= 9.806 65 \times 10^{4}Pa
 :::
 
-- and the pound per square inch
-
+- and the *pound per square inch*:
 
 :::{math}
+:label: eq-2-9
+:enumerator: 2/9
 1 psi = 6.894 757 \times 10^{3}Pa
 :::
 
-Note that atmospheric pressure at low altitude is of the order of one bar or one kilogram-force per square centimeter $(p_{\mathrm{atm.std}.}\equiv 1 atm \equiv$
-
-:::{math}
-1.013 25 bar \approx 14.7 psi) . Care is needed when reading pressure on
-:::
-
-measurement devices, which often indicate *gauge pressure* and not real pressure. This difference is described in Appendix A2 p. 314.
+Note that atmospheric pressure at low altitude is of the order of one bar or one kilogram-force per square centimeter $(p_{\mathrm{atm.std}.}\equiv 1 atm \equiv 1.013 25 bar \approx 14.7 psi)$. Care is needed when reading pressure on measurement devices, which often indicate *gauge pressure* and not real pressure. This difference is described in Appendix A2 p. 314.
 
 **Volume** can also be easily expressed. If the system is deformed by a piston with area $A$, such that its length varies by $dl$, we have:
 
 :::{math}
+:label: eq-2-10
+:enumerator: 2/10
 dV = Adl
 :::
 
-where $dV$ is the infinitesimal change in volume $(m^{3})$, $A$ is the area of the piston surface being displaced $(m^{2})$,
+where $dV$ is the infinitesimal change in volume $(m^{3})$, $A$ is the area of the piston surface being displaced $(m^{2})$, and $dl$ is the infinitesimal change in length of the system corresponding to the piston displacement $(m)$.
 
-and $dl$ is the infinitesimal change in length of the system corresponding to the piston displacement $(m)$.
-
-In the si system of units, volume is measured in $m^{3}$, but the student is likely accustomed to using at least one of three common units:
+In the SI system of units, volume is measured in $m^{3}$, but the student is likely accustomed to using at least one of three common units:
 
 *Diagram* CC-by-sa *Olivier Cleynen*
-
-(2/5)
-
-(2/6)
-
-(2/7)
-
-(2/8)
-
-(2/9)
-
-(2/10)
 
 - The liter
 
@@ -786,67 +770,53 @@ $Q_{1\rightarrow 2}= \Delta U - W_{1\rightarrow 2}$ (2/16)
 
 $q_{1\rightarrow 2}= \Delta u - w_{1\rightarrow 2}$ (2/17)
 
-The entire difficulty in quantifying a heat transfer is now to predict and quantify the change in internal energy, $\Delta U$. For gases, $U$ is simply proportional to temperature; for liquids and vapors, the relationship is more complex. We will learn to quantify energy in fluids in chapters 4 (*the ideal*
+The entire difficulty in quantifying a heat transfer is now to predict and quantify the change in internal energy, $\Delta U$. For gases, $U$ is simply proportional to temperature; for liquids and vapors, the relationship is more complex. We will learn to quantify energy in fluids in chapters 4 (*the ideal gas*) and 5 (*liquids and vapors*).
 
-*Engineering Thermodynamics* by Olivier Cleynen
-
-::::{admonition} A Bit of History:
+::::{admonition} A Bit of History
 :class: note
 :label: hist-2-8
 
-the Compound Engine
+**the Compound Engine**
 
-\*
-
-In the 1830s, the steam engine had just revolutionized the landscape and the economic network of Great Britain. Almost everything traveled by rail: passengers, crops, coal, industrial products. These trains were hauled by steam engines, of monumental dimensions and deplorable efficiency — ninetyseven percent of the energy released by coal was lost in the chimneys. This was not a big issue: coal and water were abundant, and it was sufficient transatlantic crossing in 1819, which was completed
-
-::::
+In the 1830s, the steam engine had just revolutionized the landscape and the economic network of Great Britain. Almost everything traveled by rail: passengers, crops, coal, industrial products. These trains were hauled by steam engines, of monumental dimensions and deplorable efficiency — ninety-seven percent of the energy released by coal was lost in the chimneys. This was not a big issue: coal and water were abundant, and it was sufficient to make punctual stops along the railway lines to replenish the machines.
 
 :::{figure} ../images/fig-2-16.jpg
 :label: fig-2-16
 :enumerator: 2.16
-:alt: SS Savannah, in the first steam-powered
+:alt: SS Savannah, in the first steam-powered transatlantic crossing in 1819, which was completed under sail.
 
-*SS Savannah*, in the first steam-powered
+*SS Savannah*, in the first steam-powered transatlantic crossing in 1819, which was completed under sail.
 :::
 
-::::{admonition} to make punctual stops along the railway lines to
-:class: note
-:label: hist-2-9
+*Image by Hunter Wood (public domain, 1819)*
 
-under sail.
+At sea, however, wind was still being used for propulsion. In order to connect two continents by engine power (meaning without tacking!), two problems had to be solved.
 
-replenish the machines. *Image by Hunter Wood (public domain, 1819)*
+The first problem is that the engines consumed a lot of water. Sea water, although abundant, was unusable in its natural state because the salt and limestone deposits resulting from its boiling clogged the boilers and posed a serious risk of explosion. In order to use it in boilers, it was therefore necessary to desalinate it, a very energy-intensive operation. The problem was solved with the use of *condensers*, which locomotives had done away with because of space constraints. Now, when steam had done its work in the cylinders, it was no longer simply discharged into the atmosphere, but instead cooled in large condensers before being compressed and reintroduced into the boiler. The water circulated cyclically throughout the engine – one would only need to compensate for leaks.
 
-At sea, however, wind was still being used for B propulsion. In order to connect two continents
+The second problem was more serious and more difficult to solve: how to increase efficiency? It was not just a financial question: the first steam-powered transatlantic ship, the *SS Savannah*, was so inefficient that it completed its crossing under sail, even though it was carrying *only* the coal for its engine!
+
+In order to increase the efficiency of an engine of given capacity, we seek to increase the amount of work generated by each kilogram of steam, which can be approximated by the relation 2/15:
 
 :::{math}
-w_{\mathrm{A}\rightarrow \mathrm{B}}= -\int pdv
+w_{\mathrm{A}\rightarrow \mathrm{B}}= -\int_{\mathrm{A}}^{\mathrm{B}} p\, dv
 :::
 
-by engine power (meaning without tacking!), two $_{\mathrm{A}}$ problems had to be solved. The first thing to do is to increase the pressure $p_{\mathrm{A}}$
+The first thing to do is to increase the pressure $p_{\mathrm{A}}$ of the steam, that is, its pressure before it begins to expand in the cylinders. This is not an easy task: raising the boiler pressure increases the structural stresses it undergoes, hence its cost, and reduces its efficiency as the walls must be thickened and strengthened.
 
-The first problem is that the engines consumed a of the steam, that is, its pressure before it begins to lot of water. Sea water, although abundant, was expand in the cylinders. This is not an easy task: unusable in its natural state because the salt and raising the boiler pressure increases the structural limestone deposits resulting from its boiling clogged stresses it undergoes, hence its cost, and reduces the boilers and posed a serious risk of explosion. In its efficiency as the walls must be thickened and order to use it in boilers, it was therefore necessary strengthened. to desalinate it, a very energy-intensive operation. Next, one can try to increase $\Delta v$, the total change
+Next, one can try to increase $\Delta v$, the total change in volume during the piston movement. In other words, it is necessary to increase the volume swept by the cylinders. Once again, this is not an easy task.
 
-The problem was solved with the use of *condensers*, in volume during the piston movement. In other which locomotives had done away with because words, it is necessary to increase the volume swept of space constraints. Now, when steam had done by the cylinders. Once again, this is not an easy its work in the cylinders, it was no longer simply task. discharged into the atmosphere, but instead cooled On one hand, increasing the cylinder diameter (in in large condensers before being compressed and order to increase the area $A)$ subjects the pistons to reintroduced into the boiler. The water circulated a greater force $F_{\mathrm{A}}$ for a given pressure $p_{\mathrm{A}}$ (2/5):
-
-cyclically throughout the engine – one would only need to compensate for leaks.
+On one hand, increasing the cylinder diameter (in order to increase the area $A$) subjects the pistons to a greater force $F_{\mathrm{A}}$ for a given pressure $p_{\mathrm{A}}$ (2/5):
 
 :::{math}
-p \equiv \frac{F}{}
+p \equiv \frac{F}{A}
 :::
 
-:::{math}
-A
-:::
+By increasing the transmitted force, the structural limits of the engine mechanics are quickly reached.
 
-The second problem was more serious and more difficult to solve: how to increase efficiency? It By increasing the transmitted force, the structural was not just a financial question: the first steamlimits of the engine mechanics are quickly reached. powered transatlantic ship, the *SS Savannah*, was On the other hand, increasing the piston travel so inefficient that it completed its crossing under lengthens the pistons and makes the connecting sail, even though it was carrying *only* the coal for rod and crankshaft mechanisms significantly heavits engine! ier. Additionally, the pressure and volume of the
-
-In order to increase the efficiency of an engine of steam are linked: they roughly follow a relation-given capacity, we seek to increase the amount of ship of the form $pv^{k_{1}}= k_{2}$ during expansion. In work generated by each kilogram of steam, which other words, pressure decreases when the volume can be approximated by the relation 2/15: is increased: as the cylinder is lengthened, the work gains become increasingly small. 52 [Chapter 2](#ch-2)
+On the other hand, increasing the piston travel lengthens the pistons and makes the connecting rod and crankshaft mechanisms significantly heavier. Additionally, the pressure and volume of the steam are linked: they roughly follow a relationship of the form $pv^{k_{1}}= k_{2}$ during expansion. In other words, pressure decreases when the volume is increased: as the cylinder is lengthened, the work gains become increasingly small.
 
 The *compound* engine addresses this issue by using multiple cylinders *in series* (see figure 2.17). The high-pressure steam first drives a piston of small diameter (thus limiting the force exerted on the mechanism). It is then transferred to another cylinder of larger diameter. This cylinder allows for the same force to be obtained with a lower pressure; it sweeps a larger volume.
-
-::::
 
 :::{figure} ../images/fig-2-17.jpg
 :label: fig-2-17
@@ -856,17 +826,13 @@ The *compound* engine addresses this issue by using multiple cylinders *in serie
 Cylinders in series, known as *compound*.
 :::
 
-::::{admonition} *Diagram* CC-by-sa *Olivier Cleynen*
-:class: note
-:label: hist-2-10
+*Diagram* CC-by-sa *Olivier Cleynen*
 
 By increasing the total volume swept by the expanding steam, more work can be extracted from the compressed steam without oversizing the crankshaft or overloading the pistons.
 
 With such an engine, the merchant navy was able to look beyond coastal shipping: it seized upon this new technology which experienced immediate success. From two cylinders in series (*double compound*) it moved to three, and sometimes even four (*quadruple compound*!), in order to extract ever more energy from steam, in the form of work.
 
 Enthusiastic shipowners could now boast that they now only needed to burn one sheet of paper to move one ton of cargo one mile. Even though it was understood that the said paper is very thick, progress had been made. Soon, the tea from the East Indies would arrive in the Londonian teacups – the British Empire now had the machinery required to power its formidable economic network.
-
-::::
 
 :::{figure} ../images/fig-2-18.svg
 :label: fig-2-18
@@ -876,20 +842,11 @@ Enthusiastic shipowners could now boast that they now only needed to burn one sh
 Different steam compound systems.
 :::
 
-::::{admonition} *Images by Prof. William Ripper, 1889 (public domain)*
-:class: note
-:label: hist-2-11
+*Images by Prof. William Ripper, 1889 (public domain)*
 
 ::::
 
-::::{admonition} A Bit of History
-:class: note
-
-*Engineering Thermodynamics* by Olivier Cleynen
-
-::::
-
-Problems
+## Problems
 
 2.1 Simple Processes
 

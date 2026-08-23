@@ -204,24 +204,13 @@ Building mathematical models to describe the state of real gases is an important
 (sec-4-2-1)=
 ### 4.2.1 Two important thermal capacities
 
-We have already discussed the concept of thermal capacity in the first chapter (1/16). It is defined as the amount of heat required to increase the temperature of one kilogram of the substance by one Kelvin (or one degree
-
-::::{admonition} A Bit of History
-:class: note
-
-*Engineering Thermodynamics* by Olivier Cleynen
-
-::::
-
-Celsius, since these temperature differences are equal). Thus, we have:
+We have already discussed the concept of thermal capacity in the first chapter (1/16). It is defined as the amount of heat required to increase the temperature of one kilogram of the substance by one Kelvin (or one degree Celsius, since these temperature differences are equal). Thus, we have:
 
 :::{math}
 c = \frac{\mathrm{δ}q}{dT} (4/4)
 :::
 
-where $c$ is the specific thermal capacity $(J K^{-1}kg^{-1})$, δ$q$ the (specific) infinitesimal heat transfer $(J kg^{-1})$,
-
-and $dT$ the produced infinitesimal change in temperature $(K)$.
+where $c$ is the specific thermal capacity $(J K^{-1}kg^{-1})$, δ$q$ the (specific) infinitesimal heat transfer $(J kg^{-1})$, and $dT$ the produced infinitesimal change in temperature $(K)$.
 
 Since the temperature of a gas also varies when work is done on it or by it, there are an infinite number of different ways to change its temperature by one degree, by combining heat and work (figure 4.2). Each of these requires a unique amount of heat; thus, there are *infinitely many thermal capacities* associated with it.
 
@@ -272,13 +261,7 @@ The large number of equations we are discussing makes this short section 4.2.2 u
 
 Let us observe the amounts of energy involved in the experiment described in figure 4.3. We supply each body with a different amount of heat to achieve the same temperature change. The difference between the two required amounts of heat comes from the fact that the gas at constant pressure (on the right) has done work during the process.
 
-What is the difference between the thermal capacities of each? In both cases,
-
-:::{math}
-we have q_{1\rightarrow 2}+ w_{1\rightarrow 2}= \Delta u (2/2). For body A on the left, since no work is
-:::
-
-done and the process is at constant volume, we can write:
+What is the difference between the thermal capacities of each? In both cases, we have $q_{1\rightarrow 2}+ w_{1\rightarrow 2}= \Delta u$ (2/2). For body A on the left, since no work is done and the process is at constant volume, we can write:
 
 :::{math}
 q_{\mathrm{A}}= c_{v}\Delta T
@@ -289,13 +272,6 @@ q_{\mathrm{A}}= c_{v}\Delta T
 :::{math}
 \Delta u = q_{\mathrm{A}}
 :::
-
-::::{admonition} A Bit of History
-:class: note
-
-*Engineering Thermodynamics* by Olivier Cleynen
-
-::::
 
 For body B on the right, with constant pressure $p_{\mathrm{cst}.}$, we can write:
 
@@ -315,7 +291,7 @@ By combining the two systems 4/5 and 4/6, we obtain
 c_{v}\Delta T = c_{p}\Delta T - p_{\mathrm{cst}.}\Delta v (4/7)
 :::
 
-which simply states that the difference between the two amounts of heat supplied to the gas is found in the work done by the gas on the right. (To be truly rigorous, in order to assert that $\Delta u_{A}$ and $\Delta u_{B}$ are equal, we would need to wait for equation 4/11 which comes in the next section.)
+This simply states that the difference between the two amounts of heat supplied to the gas is found in the work done by the gas on the right. (To be truly rigorous, in order to assert that $\Delta u_{A}$ and $\Delta u_{B}$ are equal, we would need to wait for equation 4/11 which comes in the next section.)
 
 A little algebra leads to:
 
@@ -514,10 +490,10 @@ It is possible to heat or cool a gas while maintaining its pressure constant (fi
 When the pressure is constant, the properties of the gas vary according to the relation
 
 :::{math}
-T
+:label: eq-4-15
+:enumerator: 4/15
+\frac{T}{v} = \mathrm{constant}
 :::
-
-$v =$ constant (4/15)
 
 :::{figure} ../images/fig-4-6.jpg
 :label: fig-4-6
@@ -539,22 +515,12 @@ Heating at constant pressure of an ideal gas, represented on a pressure-volume d
 
 *Diagram* CC-0 *Olivier Cleynen*
 
-:::{math}
-In a closed system, we have q_{1\rightarrow 2}+ w_{1\rightarrow 2}= \Delta u (2/2) and, if the process is
-:::
-
-reversible, heat and work can be easily related to the temperature:
+In a closed system, we have $q_{1\rightarrow 2}+ w_{1\rightarrow 2}= \Delta u$ (2/2) and, if the process is reversible, heat and work can be easily related to the temperature:
 
 :::{math}
-2 2
-:::
-
-:::{math}
-w_{1\rightarrow 2}= -\int pdv = -p_{\mathrm{cst}.}\int dv = -p_{\mathrm{cst}.}\Delta v
-:::
-
-:::{math}
-1 1
+\begin{aligned}
+w_{1\rightarrow 2}&= -\int_{1}^{2} pdv = -p_{\mathrm{cst}.}\int_{1}^{2} dv = -p_{\mathrm{cst}.}\Delta v
+\end{aligned}
 :::
 
 :::{math}
@@ -565,7 +531,7 @@ w_{1\rightarrow 2}= -R \Delta T
 
 during a reversible process at constant pressure $p_{\mathrm{cst}.}$, in a closed system.
 
-and we notice that the work is of opposite sign to the change in temperature.
+We notice that the work is of opposite sign to the change in temperature.
 
 Heat can be easily quantified:
 
@@ -581,20 +547,12 @@ q_{1\rightarrow 2}= c_{p}\Delta T
 
 during a reversible process at constant pressure, in a closed system.
 
-When the process takes place in an open system, we have $q_{1\rightarrow 2}+ w_{1\rightarrow 2}=$
-
-$\Delta h$ (3/15), and, if the process is reversible, heat and work can be easily quantified:
+When the process takes place in an open system, we have $q_{1\rightarrow 2}+ w_{1\rightarrow 2}= \Delta h$ (3/15), and, if the process is reversible, heat and work can be easily quantified:
 
 :::{math}
-2
-:::
-
-:::{math}
-w_{1\rightarrow 2}= \int vdp
-:::
-
-:::{math}
-1
+\begin{aligned}
+w_{1\rightarrow 2}&= \int_{1}^{2} vdp
+\end{aligned}
 :::
 
 :::{math}
@@ -620,13 +578,6 @@ q_{1\rightarrow 2}= c_{p}\Delta T
 :::
 
 during a reversible process at constant pressure, in an open system.
-
-::::{admonition} A Bit of History
-:class: note
-
-*Engineering Thermodynamics* by Olivier Cleynen
-
-::::
 
 ````{prf:example}
 :label: ex-4-5
@@ -656,25 +607,19 @@ It is possible to heat or cool a gas while maintaining its volume constant (figu
 When the specific volume of a perfect gas is constant, its properties vary according to the relation
 
 :::{math}
-T
+:label: eq-4-20
+:enumerator: 4/20
+\frac{T}{p} = \mathrm{constant}
 :::
 
-$p =$ constant (4/20)
-
-In a closed system, we have $q_{1\rightarrow 2}+w_{1\rightarrow 2}= \Delta u$and, if the process is reversible, heat and work can be easily related to temperature.
+In a closed system, we have $q_{1\rightarrow 2}+w_{1\rightarrow 2}= \Delta u$ and, if the process is reversible, heat and work can be easily related to temperature.
 
 Since the volume does not change, the work is of course zero:
 
 :::{math}
-2
-:::
-
-:::{math}
-w_{1\rightarrow 2}= -\int pdv
-:::
-
-:::{math}
-1
+\begin{aligned}
+w_{1\rightarrow 2}&= -\int_{1}^{2} pdv = 0
+\end{aligned}
 :::
 
 :::{math}
@@ -683,33 +628,25 @@ w_{1\rightarrow 2}= 0 (4/21)
 
 during a reversible process at constant volume, in a closed system.
 
-maintain the specific volume constant.
-
-volume diagram.
-
 :::{figure} ../images/fig-4-8.jpg
 :label: fig-4-8
 :enumerator: 4.8
-:alt: A constant-volume (isochoric) process undergone by a liquid-vapor. In a closed system (left), the volume is fixed and no work is done. In an open system (right), the fluid must be compressed while being heated and expanded while being cooled, in order to maintain constant specific volume.
+:alt: A constant-volume (isochoric) process undergone by an ideal gas. In a closed system (left), the volume is fixed and no work is done. In an open system (right), the gas must be compressed while heating and expanded while cooling, to maintain the specific volume constant.
 
-A constant-volume (isochoric) process undergone by an ideal gas. In a closed system (left), the volume is fixed and no work is done. In an open system (right), the gas must be compressed while heating and expanded while cooling, to
+A constant-volume (isochoric) process undergone by an ideal gas. In a closed system (left), the volume is fixed and no work is done. In an open system (right), the gas must be compressed while heating and expanded while cooling, to maintain the specific volume constant.
 :::
-
-closed system (left), the volume is fixed and no work is done. In an open system (right), the gas must be compressed while heating and expanded while cooling, to
 
 *Diagram* CC-0 *Olivier Cleynen*
 
 :::{figure} ../images/fig-4-9.jpg
 :label: fig-4-9
 :enumerator: 4.9
-:alt: Cooling of an ideal gas at constant volume, represented on a pressure-
+:alt: Cooling of an ideal gas at constant volume, represented on a pressure-volume diagram.
 
-Cooling of an ideal gas at constant volume, represented on a pressure-
+Cooling of an ideal gas at constant volume, represented on a pressure-volume diagram.
 :::
 
 *Diagram* CC-0 *Olivier Cleynen*
-
-*Engineering Thermodynamics* by Olivier Cleynen
 
 The heat transfer can be easily quantified:
 
@@ -723,9 +660,7 @@ q_{1\rightarrow 2}= c_{v}\Delta T (4/22)
 
 during a reversible process at constant volume, in a closed system.
 
-When the process occurs in an open system, we have $q_{1\rightarrow 2}+ w_{1\rightarrow 2}= \Delta h$
-
-and, if the process is reversible, heat and work can be quantified, although with a little more difficulty:
+When the process occurs in an open system, we have $q_{1\rightarrow 2}+ w_{1\rightarrow 2}= \Delta h$ and, if the process is reversible, heat and work can be quantified, although with a little more difficulty:
 
 :::{math}
 w_{1\rightarrow 2}= \int _{1}^{2}vdp = v_{\mathrm{cst}.}\int _{1}^{2}dp = v_{\mathrm{cst}.}\int _{1}^{2} \frac{R}{v_{\mathrm{cst}.}} dT = R\int _{1}^{2}dT
@@ -790,7 +725,7 @@ When the temperature of an ideal gas remains constant, its properties vary accor
 p v = constant
 :::
 
-In a closed system, we have $q_{1\rightarrow 2}+w_{1\rightarrow 2}= \Delta u$, and if the process is reversible, heat and work can be related to the properties of the gas, although not
+In a closed system, we have $q_{1\rightarrow 2}+w_{1\rightarrow 2}= \Delta u$, and if the process is reversible, heat and work can be related to the properties of the gas, although not without some difficulty.
 
 :::{figure} ../images/fig-4-10.jpg
 :label: fig-4-10
@@ -802,13 +737,6 @@ A constant-temperature (isothermal) process undergone by an ideal gas. In a clos
 
 *Diagram* CC-0 *Olivier Cleynen*
 
-::::{admonition} A Bit of History
-:class: note
-
-*Engineering Thermodynamics* by Olivier Cleynen
-
-::::
-
 :::{figure} ../images/fig-4-11.jpg
 :label: fig-4-11
 :enumerator: 4.11
@@ -817,48 +745,29 @@ A constant-temperature (isothermal) process undergone by an ideal gas. In a clos
 Expansion (heating) at constant temperature of an ideal gas, represented on a pressure-volume diagram.
 :::
 
-without some difficulty.
+*Diagram* CC-0 *Olivier Cleynen*
 
 :::{math}
-2
+\begin{aligned}
+w_{1\rightarrow 2}&= -\int_{1}^{2} pdv = -\int_{1}^{2} \frac{R T_{\mathrm{cst}.}}{v}\, dv = -R T_{\mathrm{cst}.}\int_{1}^{2} \frac{dv}{v} \\
+&= -R T_{\mathrm{cst}.}[\ln v]_{v_{1}}^{v_{2}} = R T_{\mathrm{cst}.}\ln \left(\frac{v_{1}}{v_{2}}\right)
+\end{aligned}
 :::
 
-$w_{1\rightarrow 2}= -\int pdv = -\int R T_{\mathrm{cst}.}v dv = -R T_{\mathrm{cst}.}\int$
-
 :::{math}
-1
-:::
-
-$w_{1\rightarrow 2}= R T_{\mathrm{cst}.}\ln (v_{1}$
-
-:::{math}
-v_{2})
+:label: eq-4-26
+:enumerator: 4/26
+w_{1\rightarrow 2}= R T_{\mathrm{cst}.}\ln \left(\frac{v_{1}}{v_{2}}\right)
 :::
 
 during a reversible process at constant temperature, in a closed system.
 
-One can also express work in terms of pressure, since with equation 4/25, we have:
+One can also express work in terms of pressure, since with equation 4/25, we have $\frac{v_{1}}{v_{2}} = \frac{p_{2}}{p_{1}}$. Thus:
 
 :::{math}
-= \frac{p_{2}}{}
-:::
-
-:::{math}
-\frac{v_{1}}{}
-:::
-
-:::{math}
-v_{2}p_{1}
-:::
-
-thus:
-
-:::{math}
-w_{1\rightarrow 2}= R T_{\mathrm{cst}.}\ln (\frac{p_{2}}{}
-:::
-
-:::{math}
-p_{1})
+:label: eq-4-27
+:enumerator: 4/27
+w_{1\rightarrow 2}= R T_{\mathrm{cst}.}\ln \left(\frac{p_{2}}{p_{1}}\right)
 :::
 
 during a reversible process at constant temperature, in a closed system.
@@ -866,40 +775,29 @@ during a reversible process at constant temperature, in a closed system.
 The heat transfer can be easily quantified. Indeed, the internal energy does not change:
 
 :::{math}
-q_{1\rightarrow 2}= \Delta u - w_{1\rightarrow 2}= 0 - w_{1\rightarrow 2}
-:::
-
-:::{math}
-q_{1\rightarrow 2}= -w_{1\rightarrow 2}
+:label: eq-4-28
+:enumerator: 4/28
+q_{1\rightarrow 2}= \Delta u - w_{1\rightarrow 2}= 0 - w_{1\rightarrow 2}= -w_{1\rightarrow 2}
 :::
 
 during a reversible process at constant temperature, in a closed system.
 
-When the process occurs in an open system, we have $q_{1\rightarrow 2}+ w_{1\rightarrow 2}= \Delta h$
-
-and, if the process is reversible, heat and work can be quantified in the same way:
-
-$w_{1\rightarrow 2}= \int ^{2}vdp = \int ^{2}R T_{\mathrm{cst}.}p dp = R T_{\mathrm{cst}.}\int ^{2}$
+When the process occurs in an open system, we have $q_{1\rightarrow 2}+ w_{1\rightarrow 2}= \Delta h$ and, if the process is reversible, heat and work can be quantified in the same way:
 
 :::{math}
-1 1 1
+\begin{aligned}
+w_{1\rightarrow 2}&= \int_{1}^{2} vdp = \int_{1}^{2} \frac{R T_{\mathrm{cst}.}}{p}\, dp = R T_{\mathrm{cst}.}\int_{1}^{2} \frac{dp}{p} \\
+&= R T_{\mathrm{cst}.}[\ln p]_{p_{1}}^{p_{2}} = R T_{\mathrm{cst}.}\ln \left(\frac{p_{2}}{p_{1}}\right) = R T_{\mathrm{cst}.}\ln \left(\frac{v_{1}}{v_{2}}\right)
+\end{aligned}
 :::
 
-$w_{1\rightarrow 2}= R T_{\mathrm{cst}.}\ln (\frac{p_{2}}{p_{1}} ) = R T_{\mathrm{cst}.}\ln (v_{1}$
-
 :::{math}
-v_{2})
+:label: eq-4-29
+:enumerator: 4/29
+w_{1\rightarrow 2}= R T_{\mathrm{cst}.}\ln \left(\frac{p_{2}}{p_{1}}\right) = R T_{\mathrm{cst}.}\ln \left(\frac{v_{1}}{v_{2}}\right)
 :::
 
 during a reversible process at constant temperature, in an open system.
-
-*Diagram* CC-0 *Olivier Cleynen*
-
-$2 1 v dv = -R T_{\mathrm{cst}.}[\ln v]^{v}_{v^{2}_{1}}$
-
-$1$
-
-(4/26)
 
 :::{aside}
 « *When a gas varies in volume without changing temperature, the quantities of heat absorbed or released by this gas are in arithmetic progression, if the increases or reductions in volume happen to be in geometric progression.* When one compresses a liter of air maintained at the temperature of 10°, and it is reduced to 1/2 liter, a certain quantity of heat is released. This quantity will always be the same if one again reduces the volume from 1/2 liter to 1/4 liter, from 1/4 liter to 1/8, and so on. »
@@ -943,7 +841,7 @@ w_{\mathrm{A}\rightarrow \mathrm{B}}= R T_{\mathrm{cst}.}\ln (\frac{v_{\mathrm{A
 = \exp [\frac{-100 \times 10^{3}}{2.5 \times 287 \times (800 + 273.15)}] = 0.878207
 :::
 
-Aobntda isnin ac ef in$V$aAl $=$vo l$^{\frac{m R T_{\mathrm{A}}}{p_{\mathrm{A}}}}$um e $V=_{\mathrm{B}}=^{2.5\times}\frac{V_{\mathrm{A}}2\times 10}{0.878207}^{287\times (800 _{5}+}= ^{2 7}4^{3}.^{.1}3^{5}8^{)}4= m 3_{3}. 8=5 1m1^{3}5 8= U 1S0 1g7a lU. S gal$, we Finally, the final pressure is obtained by comparing the final and initial states: $p_{\mathrm{A}}V_{\mathrm{A}}= m R T_{\mathrm{A}}= m R T_{\mathrm{B}}= p_{\mathrm{B}}V_{\mathrm{B}}$ (or with equation 4/27): $p_{\mathrm{B}}= p_{\mathrm{A}} \frac{V_{\mathrm{A}}}{V_{\mathrm{B}}} = 2\times 10^{5}\times 0.878 207 = 1.756\times 10^{5}Pa = 1.756 bar = 25.47 psi$.
+And since $V_{\mathrm{A}}= \frac{m R T_{\mathrm{A}}}{p_{\mathrm{A}}}$, we obtain a final volume $V_{\mathrm{B}}= \frac{V_{\mathrm{A}}}{0.878207}= 4.384 m^{3}= 1158 US gal$. Finally, the final pressure is obtained by comparing the final and initial states: $p_{\mathrm{A}}V_{\mathrm{A}}= m R T_{\mathrm{A}}= m R T_{\mathrm{B}}= p_{\mathrm{B}}V_{\mathrm{B}}$ (or with equation 4/27): $p_{\mathrm{B}}= p_{\mathrm{A}} \frac{V_{\mathrm{A}}}{V_{\mathrm{B}}} = 2\times 10^{5}\times 0.878 207 = 1.756\times 10^{5}Pa = 1.756 bar = 25.47 psi$.
 
 The volume increases and the pressure decreases, since the gas is doing work while it receives heat.
 
@@ -955,13 +853,6 @@ It is difficult to hide that this type of process is rarely used in practice, bu
 ### 4.4.5 Reversible adiabatic processes
 
 An *adiabatic* process is one where there is no heat transfer (figure 4.12). This can be achieved by wrapping the gas container or duct with a thick layer of thermal insulation.
-
-::::{admonition} A Bit of History
-:class: note
-
-*Engineering Thermodynamics* by Olivier Cleynen
-
-::::
 
 :::{figure} ../images/fig-4-12.jpg
 :label: fig-4-12
@@ -975,45 +866,39 @@ A *reversible adiabatic* process is carried out infinitely slowly. A piston in a
 
 It must be noted that even though there is absolutely no heat transfer, the temperature must necessarily vary in such a process, since the work is non-zero. This temperature change is often the intended effect, as we will see in chapter 7 (*the second law*).
 
-In a closed system, we have $q_{1\rightarrow 2}+w_{1\rightarrow 2}= \Delta u$and, if the process is reversible, heat and work are quantified without any difficulty:
+In a closed system, we have $q_{1\rightarrow 2}+w_{1\rightarrow 2}= \Delta u$ and, if the process is reversible, heat and work are quantified without any difficulty:
 
 :::{math}
+:label: eq-4-31
+:enumerator: 4/31
 q_{1\rightarrow 2}= 0
 :::
 
 during a reversible adiabatic process, by definition.
 
 :::{math}
-w_{1\rightarrow 2}= \Delta u - q_{1\rightarrow 2}= \Delta u
-:::
-
-:::{math}
-w_{1\rightarrow 2}= c_{v}\Delta T
+:label: eq-4-32
+:enumerator: 4/32
+w_{1\rightarrow 2}= \Delta u - q_{1\rightarrow 2}= \Delta u = c_{v}\Delta T
 :::
 
 during a reversible adiabatic process in a closed system.
 
-When the process occurs in an open system, we have $q_{1\rightarrow 2}+ w_{1\rightarrow 2}= \Delta h$
-
-and we can also write:
+When the process occurs in an open system, we have $q_{1\rightarrow 2}+ w_{1\rightarrow 2}= \Delta h$ and we can also write:
 
 :::{math}
+:label: eq-4-33
+:enumerator: 4/33
 q_{1\rightarrow 2}= 0
 :::
 
 :::{math}
+:label: eq-4-34
+:enumerator: 4/34
 w_{1\rightarrow 2}= c_{p}\Delta T
 :::
 
-*Diagram* CC-0 *Olivier Cleynen*
-
-(4/31)
-
-(4/32)
-
-(4/33)
-
-(4/34)
+during a reversible adiabatic process, in an open system.
 
 :::{figure} ../images/fig-4-13.jpg
 :label: fig-4-13
@@ -1023,7 +908,7 @@ w_{1\rightarrow 2}= c_{p}\Delta T
 Reversible adiabatic expansion of an ideal gas, represented on a pressure-volume diagram.
 :::
 
-*Diagram* CC-0 *Olivier Cleynen* during a reversible adiabatic process, in an open system.
+*Diagram* CC-0 *Olivier Cleynen*
 
 Unfortunately, these two equations 4/32 and 4/34 are of no use until we have predicted the temperature $T_{2}$ at the end of the process. However, in a reversible adiabatic process, nothing remains constant: the specific volume, pressure, and temperature all vary. How can we quantify these properties?
 
@@ -1203,57 +1088,33 @@ We have focused on four specific processes of ideal gases, since each plays an i
 
 ::::{admonition} A Bit of History
 :class: note
-
-*Engineering Thermodynamics* by Olivier Cleynen
-
-::::
-
-::::{admonition} A Bit of History:
-:class: note
 :label: hist-4-10
 
-the sum of the masses multiplied by the squares of the velocities due to the action of the accelerating
+**Lavoisier and Laplace’s Inquiries**
 
-Lavoisier and Laplace’s Inquiries forces. In the hypothesis we are examining, heat is the vis viva resulting from the imperceptible
+*By Philippe Depondt*
 
-\* movements of the molecules of a body; it is the
+*Pierre and Marie Curie University, Paris*
 
-*By Philippe Depondt* sum of the products of the mass of each molecule
+The debates on the nature of heat continued until the end of the 19th century with the gradual acceptance of atomic theories. An important step in this reflection is succinctly and eloquently presented in the *Mémoire sur la chaleur* (Memoir on Heat), 1780 [[1](#ref-1)] by the French physicists Lavoisier and Laplace:
 
-*Pierre and Marie Curie University, Paris* by the square of its velocity.
+“Physicists are divided on the nature of heat.
 
-If one brings into contact two bodies whose tem-
+Many among them regard it as a fluid spread throughout nature, and of which bodies are more or less penetrated, according to their temperature and their particular disposition to retain it; it can combine with them, and, in this state, it ceases to act on the thermometer and to transfer from one body to another; it is only in the state of freedom, which allows it to establish equilibrium within bodies, that it forms what we call *free heat*.
 
-The debates on the nature of heat continued until peratures are different, the quantities of motion the end of the 19th century with the gradual ac-they will mutually communicate will initially be ceptance of atomic theories. An important step unequal; the vis viva of the colder body will inin this reflection is succinctly and eloquently precrease by the same amount by which the vis viva sented in the *Mémoire sur la chaleur* (Memoir on of the other will decrease, and this increase will
+Other physicists think that heat is merely the result of the imperceptible movements of the molecules of matter. It is known that bodies, even the densest ones, are filled with a great number of pores or small voids, whose volume can considerably surpass that of the matter they contain; these empty spaces allow their imperceptible parts the freedom to oscillate in all directions, and it is natural to think that these parts are in continual agitation, which, if it increases to a certain point, can disunite and decompose bodies; it is this internal motion which, according to the physicists we speak of, constitutes heat.
 
-Heat), 1780 [[1](#ref-1)] by the French physicists Lavoisier continue until the quantities of motion communiand Laplace: cated from one to the other are equal; in this state, the temperature of the bodies will have reached
+To develop this hypothesis, we shall observe that, in all movements where there is no abrupt change, there exists a general law which geometers have designated under the name of the *principle of the conservation of vis viva*; this law consists in that, in a system of bodies acting upon each other in any manner, the vis viva, that is to say, the sum of the products of each mass by the square of its velocity, remains constant. If the bodies are driven by accelerating forces, the vis viva is equal to what it was at the origin of the movement, plus the sum of the masses multiplied by the squares of the velocities due to the action of the accelerating forces. In the hypothesis we are examining, heat is the vis viva resulting from the imperceptible movements of the molecules of a body; it is the sum of the products of the mass of each molecule by the square of its velocity.
 
-“Physicists are divided on the nature of heat. uniformity.
+If one brings into contact two bodies whose temperatures are different, the quantities of motion they will mutually communicate will initially be unequal; the vis viva of the colder body will increase by the same amount by which the vis viva of the other will decrease, and this increase will continue until the quantities of motion communicated from one to the other are equal; in this state, the temperature of the bodies will have reached uniformity.
 
-Many among them regard it as a fluid spread This way of regarding heat easily explains why throughout nature, and of which bodies are more the direct impulse of solar rays is negligible, while or less penetrated, according to their temperature they produce a great amount of heat. Their imand their particular disposition to retain it; it can pulse is the product of their mass by their simple combine with them, and, in this state, it ceases to velocity; now, although this velocity is excessive,
+This way of regarding heat easily explains why the direct impulse of solar rays is negligible, while they produce a great amount of heat. Their impulse is the product of their mass by their simple velocity; now, although this velocity is excessive, their mass is so small that this product is almost nil, whereas their vis viva, being the product of their mass by the square of their velocity, represents heat of an order much superior to that of their direct impulse. This impulse on a white body, which abundantly reflects light, is greater than on a black body, and yet the solar rays communicate less heat to the former because these rays, by being reflected, carry away their vis viva, which they communicate to the black body that absorbs them.
 
-act on the thermometer and to transfer from one their mass is so small that this product is almost body to another; it is only in the state of freedom, nil, whereas their vis viva, being the product of which allows it to establish equilibrium within their mass by the square of their velocity, repbodies, that it forms what we call *free heat*. resents heat of an order much superior to that
+We will not decide between the two preceding hypotheses; several phenomena seem to favor the latter; such is, for example, that of the heat produced by the friction of two solid bodies; but there are others that are more simply explained by the former; perhaps both occur simultaneously. In any case, since one can only form these two hypotheses regarding the nature of heat, one must accept the principles common to both; thus, according to both, *the quantity of free heat always remains the same in the simple mixing of bodies*.
 
-Other physicists think that heat is merely the of their direct impulse. This impulse on a white result of the imperceptible movements of the body, which abundantly reflects light, is greater molecules of matter. It is known that bodies, even than on a black body, and yet the solar rays comthe densest ones, are filled with a great number of municate less heat to the former because these pores or small voids, whose volume can consider-rays, by being reflected, carry away their vis viva,
-
-ably surpass that of the matter they contain; these which they communicate to the black body that empty spaces allow their imperceptible parts the absorbs them.
-
-freedom to oscillate in all directions, and it is We will not decide between the two preceding natural to think that these parts are in continual hypotheses; several phenomena seem to favor the agitation, which, if it increases to a certain point, latter; such is, for example, that of the heat procan disunite and decompose bodies; it is this induced by the friction of two solid bodies; but there ternal motion which, according to the physicists are others that are more simply explained by the we speak of, constitutes heat. former; perhaps both occur simultaneously. In
-
-To develop this hypothesis, we shall observe that, any case, since one can only form these two hyin all movements where there is no abrupt change, potheses regarding the nature of heat, one must there exists a general law which geometers have accept the principles common to both; thus, acdesignated under the name of the *principle of the* cording to both, *the quantity of free heat always*
-
-*conservation of vis viva*; this law consists in that, *remains the same in the simple mixing of bodies*.
-
-in a system of bodies acting upon each other in This is evident if heat is a fluid that tends to reach any manner, the vis viva, that is to say, the sum equilibrium, and if it is merely the vis viva reof the products of each mass by the square of sulting from the internal motion of matter, the its velocity, remains constant. If the bodies are principle in question follows from the principle driven by accelerating forces, the vis viva is equal of the conservation of vis viva. The conservation to what it was at the origin of the movement, plus of free heat in the simple mixing of bodies is thus independent of any hypothesis regarding the nature of heat; it has been generally accepted by physicists, and we shall adopt it in the following research.”
+This is evident if heat is a fluid that tends to reach equilibrium, and if it is merely the vis viva resulting from the internal motion of matter, the principle in question follows from the principle of the conservation of vis viva. The conservation of free heat in the simple mixing of bodies is thus independent of any hypothesis regarding the nature of heat; it has been generally accepted by physicists, and we shall adopt it in the following research.”
 
 At the time when this text was written, the atomic hypothesis remained largely speculative due to the lack of adequate experimental means: the experiment by Jean Perrin that finally settled the issue only took place in the early years of the 20th century, and the X-ray diffraction experiments suggested by Max von Laue occurred in 1912.
-
-::::
-
-::::{admonition} A Bit of History
-:class: note
-
-*Engineering Thermodynamics* by Olivier Cleynen
 
 ::::
 
@@ -1269,9 +1130,7 @@ At the time when this text was written, the atomic hypothesis remained largely s
 
    It is heated at constant pressure until $900^{\circ}C$; then it is cooled and expanded while its properties vary according to the relation $pv^{1.1}=$ const. until its temperature reaches $25^{\circ}C$.
 
-   *[Trick question]* How much energy has it received or
-
-   rejected since the beginning of the process?
+   *[Trick question]* How much energy has it received or rejected since the beginning of the process?
 
    4.1 Air Pressure
 
@@ -1465,49 +1324,32 @@ $T6)^{\mathrm{C}}S= <^{\frac{Q_{\mathrm{B}\rightarrow \mathrm{C}}}{F_{\mathrm{ma
 :label: prob-4-13
 :enumerator: 4.13
 
-**Turbojet Engine An early 1960s military aircraft is equipped with a turbojet engine (figure 4.19). We wish to calculate the theoretical maximum speed at which it could accelerate the air at the nozzle outlet. The engine is tested on a stationary test bench. When air passes through the turbojet engine, it goes through four components that we will model as if they were ideal: **The compressor** (figure 4.20) compresses the air adiabatically and reversibly. At the inlet, the air is at 0.9 bar and $5^{\circ}C$; at the outlet, the pressure is increased to 19 bar. **The combustion chamber** allows for the heating of air while maintaining its pressure constant. At the outlet of the combustion chamber, the temperature has been increased to $1100^{\circ}C$. **The turbine** extracts energy from the air to power the compressor. In the turbine, the air expands adiabatically and reversibly. **The nozzle** is a component in which no power is added or extracted from the air. As it flows across the nozzle, the air expands adiabatically *Diagram* CC-by-sa *Olivier Cleynen***
+**Turbojet Engine**
 
-:::{admonition} Answer
-:class: dropdown
+An early 1960s military aircraft is equipped with a turbojet engine (figure 4.19). We wish to calculate the theoretical maximum speed at which it could accelerate the air at the nozzle outlet. The engine is tested on a stationary test bench. When air passes through the turbojet engine, it goes through four components that we will model as if they were ideal:
 
-2) With equation 4/37, $T_{\mathrm{B}}= 664.83 K$ 3) With equation 3/15, $w_{\mathrm{compressor}}= w_{\mathrm{A}\rightarrow \mathrm{B}}= +388.61 kJ kg^{-1}$ 4) $T_{\mathrm{C}}= 1373.15 K$; thus $q_{\mathrm{combustion}}= q_{\mathrm{B}\rightarrow \mathrm{C}}= +711.86 kJ kg^{-1}$ 5) Since $w_{\mathrm{turbine}}= -w_{\mathrm{compressor}}$, we have $T_{D}= 986.47 K$ 6) With equation 4/37, $p_{\mathrm{D}}= 5.97 bar$ 7) Idem, with equation 4/37, $T_{\mathrm{E}}= 574.49 K$ 8) With equation 3/15, $C_{\mathrm{E}}= (-2\Delta h)^{\frac{1}{2}} = 909.98 m s^{-1}$ Of course, these values do not account for the irreversibilities in an actual turbojet. These effects are approached in problem 4.11 p. 108 and formalized in chapter 10 (*air-based power cycles*).
-*Engineering Thermodynamics* by Olivier Cleynen
+**The compressor** (figure 4.20) compresses the air adiabatically and reversibly. At the inlet, the air is at 0.9 bar and $5^{\circ}C$; at the outlet, the pressure is increased to 19 bar.
 
-:::
-```
+**The combustion chamber** allows for the heating of air while maintaining its pressure constant. At the outlet of the combustion chamber, the temperature has been increased to $1100^{\circ}C$.
 
-   :::{figure} ../images/fig-4-19.svg
-   :label: fig-4-19
-   :enumerator: 4.19
-   :alt: Schematic of a turbojet engine. Air flows through the machine from left to right.
-   
-   Schematic of a turbojet engine. Air flows through the machine from left to right.
-   :::
+**The turbine** extracts energy from the air to power the compressor. In the turbine, the air expands adiabatically and reversibly.
 
-::::{admonition} A Bit of History
-:class: note
-
-*Engineering Thermodynamics* by Olivier Cleynen
-
-::::
-
-and reversibly; its speed increases significantly. At the outlet of the nozzle, it has returned to atmospheric pressure and is expelled into the atmosphere.
+**The nozzle** is a component in which no power is added or extracted from the air. As it flows across the nozzle, the air expands adiabatically and reversibly; its speed increases significantly. At the outlet of the nozzle, it has returned to atmospheric pressure and is expelled into the atmosphere.
 
 The goal of the problem is to calculate the speed at which the turbojet engine is capable of releasing the air.
 
 1. Starting from the following relation,
 
-$T_{1}v_{2}^{\gamma -1}$ (4/36)
-
-$(T_{2}) = (v_{1})$
+:::{math}
+:label: eq-4-36-prob
+\left(\frac{T_{1}}{T_{2}}\right) = \left(\frac{v_{1}}{v_{2}}\right)^{\gamma -1}
+:::
 
 valid for a reversible adiabatic process undergone by a perfect gas, show (without using equation 4/38) that:
 
-$\frac{\gamma -1}{\gamma}$
-
-$T_{1}p_{1}$ (4/37)
-
-$(T_{2}) = (p_{2})$
+:::{math}
+\left(\frac{T_{1}}{T_{2}}\right) = \left(\frac{p_{1}}{p_{2}}\right)^{\frac{\gamma -1}{\gamma}}
+:::
 
 2. What is the air temperature at the compressor outlet?
 
@@ -1527,6 +1369,22 @@ $(T_{2}) = (p_{2})$
 
 10. On the same pressure-volume diagram, plot the processes that the gas would follow if the compressor could not compress the air reversibly (real compressor, compression with internal friction).
 
+:::{admonition} Answer
+:class: dropdown
+
+2) With equation 4/37, $T_{\mathrm{B}}= 664.83 K$; 3) With equation 3/15, $w_{\mathrm{compressor}}= w_{\mathrm{A}\rightarrow \mathrm{B}}= +388.61 kJ kg^{-1}$; 4) $T_{\mathrm{C}}= 1373.15 K$; thus $q_{\mathrm{combustion}}= q_{\mathrm{B}\rightarrow \mathrm{C}}= +711.86 kJ kg^{-1}$; 5) Since $w_{\mathrm{turbine}}= -w_{\mathrm{compressor}}$, we have $T_{D}= 986.47 K$; 6) With equation 4/37, $p_{\mathrm{D}}= 5.97 bar$; 7) Idem, with equation 4/37, $T_{\mathrm{E}}= 574.49 K$; 8) With equation 3/15, $C_{\mathrm{E}}= (-2\Delta h)^{\frac{1}{2}} = 909.98 m s^{-1}$. Of course, these values do not account for the irreversibilities in an actual turbojet. These effects are approached in problem 4.11 p. 108 and formalized in chapter 10 (*air-based power cycles*).
+
+:::
+```
+
+   :::{figure} ../images/fig-4-19.svg
+   :label: fig-4-19
+   :enumerator: 4.19
+   :alt: Schematic of a turbojet engine. Air flows through the machine from left to right.
+   
+   Schematic of a turbojet engine. Air flows through the machine from left to right.
+   :::
+
    :::{figure} ../images/fig-4-20.jpg
    :label: fig-4-20
    :enumerator: 4.20
@@ -1535,6 +1393,4 @@ $(T_{2}) = (p_{2})$
    Compressor of a dissected snecma Atar turbojet engine (1948). Air flows from the left to the center of the image.
    :::
 
-turbojet engine (1948). Air flows from the left to the center of the image.
-
-*Photo* CC-by-sa *Olivier Cleynen*
+*Diagram* CC-by-sa *Olivier Cleynen*

@@ -27,20 +27,14 @@ An open system is crossed by a mass flow. Heat and work transfers cause variatio
 
 ## Introduction
 
-In the previous chapter, we quantified energy exchanges within closed systems. This chapter 3 (*open systems*) aims to answer a similar question:
-
-how to quantify energy transfers within a system when it is crossed by a mass flow?
+In the previous chapter, we quantified energy exchanges within closed systems. This chapter 3 (*open systems*) aims to answer a similar question: how to quantify energy transfers within a system when it is crossed by a mass flow?
 
 (sec-3-1)=
 ## 3.1 Why Use an Open System?
 
-In many machines, the fluid used to transfer heat and work is continuously circulating. It can then be difficult to identify a particular amount of mass,
+In many machines, the fluid used to transfer heat and work is continuously circulating. It can then be difficult to identify a particular amount of mass, making it a closed system, in order to quantify energy transfers to and from it. For example, in a jet engine nozzle, air expands and accelerates continuously: at any given moment, there is no identifiable volume that would have *one* specific speed or *one* particular pressure.
 
-making it a closed system, in order to quantify energy transfers to and from it. For example, in a jet engine nozzle, air expands and accelerates continuously: at any given moment, there is no identifiable volume that would have *one* specific speed or *one* particular pressure.
-
-Using an open system is very useful to account for energy in flows. Rather than separating stages in time (for example before and after compression),
-
-we quantify work and heat transfers by separating stages in space (for example upstream and downstream of the compressor).
+Using an open system is very useful to account for energy in flows. Rather than separating stages in time (for example before and after compression), we quantify work and heat transfers by separating stages in space (for example upstream and downstream of the compressor).
 
 (sec-3-2)=
 ## 3.2 Accounting Conventions
@@ -365,8 +359,6 @@ Care must be used with conversions: in the equations, velocities and energies ar
 (sec-3-4)=
 ## 3.4 Quantifying Work with an Open System
 
-## System
-
 (sec-3-4-1)=
 ### 3.4.1 Work of a fluid in a slow process
 
@@ -418,72 +410,72 @@ w_{\mathrm{insertion}}= +p v
 **The specific compression power** $-$δ$w_{m_{\mathrm{A}}}$ is the specific work that the open system must transfer to each mass quantity $m_{A}$ to effectively compress it:
 
 :::{math}
-- δ w_{m_{\mathrm{A}}}= -(-pdv)
+:label: eq-3-18
+:enumerator: 3/18
+-\delta w_{m_{\mathrm{A}}}= -(-pdv)
 :::
 
-*Diagram* CC-0 *Olivier Cleynen*
+**The specific extraction power** $w_{\mathrm{extraction}}$ is spent by the open system to continuously remove the fluid. At the outlet, the fluid properties have become $p + dp$ for pressure, and $v + dv$ for volume. Thus, we have:
 
-*Diagram* CC-0 *Olivier Cleynen*
-
-(3/17)
-
-(3/18) continuously remove the fluid.
-
-to the compressor:
-
-reversible.
-
-flow, we obtain:
-
-in steady flow, when the process is reversible, and regardless of the heat input.
-
-figure 3.6.
-
-**The specific extraction power** $w_{\mathrm{extraction}}$ is spent by the open system to
-
-At the outlet, the fluid properties have become $p + dp$ for pressure,
-
-and $v + dv$ for volume. Thus, we have:
-
-$w_{\mathrm{extraction}}= -(p + dp)(v + dv)$ (3/19)
+:::{math}
+:label: eq-3-19
+:enumerator: 3/19
+w_{\mathrm{extraction}}= -(p + dp)(v + dv)
+:::
 
 **The specific power received from the outside** δ$w_{\mathrm{O.S}.}$ is the power that feeds the compression: this is the quantity we aim to quantify.
 
 These four powers cancel each other out, since the total work transfer involved in the flow does not depend on the adopted viewpoint:
 
-δ$w_{\mathrm{O.S}.}+ w_{\mathrm{insertion}}+ (-$δ$w_{m_{\mathrm{A}}}) + w_{\mathrm{extraction}}= 0$ (3/20)
+:::{math}
+:label: eq-3-20
+:enumerator: 3/20
+\delta w_{\mathrm{O.S}.}+ w_{\mathrm{insertion}}+ (-\delta w_{m_{\mathrm{A}}}) + w_{\mathrm{extraction}}= 0
+:::
 
-Therefore, we can quantify the specific power δ$w_{\mathrm{O.S}.}$ that must be supplied
+Therefore, we can quantify the specific power δ$w_{\mathrm{O.S}.}$ that must be supplied to the compressor:
 
-δ$w_{\mathrm{O.S}.}= -w_{\mathrm{insertion}}+$ δ$w_{m_{\mathrm{A}}}- w_{\mathrm{extraction}}$
+:::{math}
+\delta w_{\mathrm{O.S}.}= -w_{\mathrm{insertion}}+ \delta w_{m_{\mathrm{A}}}- w_{\mathrm{extraction}}
+:::
 
-δ$w_{\mathrm{O.S}.}= -p v + (-pdv) + (p + dp)(v + dv)$
-
-$= -p v - pdv + p v + pdv + dp v + dp dv$
-
-$= dp v + dp dv$
+:::{math}
+\begin{aligned}
+\delta w_{\mathrm{O.S}.}&= -p v + (-pdv) + (p + dp)(v + dv) \\
+&= -p v - pdv + p v + pdv + dp v + dp dv \\
+&= dp v + dp dv
+\end{aligned}
+:::
 
 And since the product $dp \times dv$ tends to zero when using infinitesimal quantities, we obtain the surprising expression:
 
-δ$w_{\mathrm{O.S}.}= vdp$ (3/21)
+:::{math}
+:label: eq-3-21
+:enumerator: 3/21
+\delta w_{\mathrm{O.S}.}= vdp
+:::
 
-The terms $dp$ and $dv$ in our study are not necessarily positive: this expression applies equally to expansions and compressions, as long as they are
+The terms $dp$ and $dv$ in our study are not necessarily positive: this expression applies equally to expansions and compressions, as long as they are reversible.
 
-By integrating this expression 3/21 to apply it to the general case in steady
+By integrating this expression 3/21 to apply it to the general case in steady flow, we obtain:
 
-$w_{\mathrm{O.S}.}= \int vdp$ (3/22)
+:::{math}
+:label: eq-3-22
+:enumerator: 3/22
+w_{\mathrm{O.S}.}= \int vdp
+:::
 
-B
+:::{math}
+:label: eq-3-23
+:enumerator: 3/23
+W_{\mathrm{A}\rightarrow \mathrm{B}}=\dot{m}\int vdp
+:::
 
-$W_{\mathrm{A}\rightarrow \mathrm{B}}=\dot{m}\int vdp$ (3/23) A
+in steady flow, when the process is reversible, and regardless of the heat input.
 
 Thus, when we want to quantify reversible work in an open system, it is the integral $+ \int vdp$ that needs to be calculated, and not $-\int pdv$.
 
-On a pressure-volume diagram, we can visualize this work by adding the insertion work and extraction work to the compression work, as shown in
-
-The reversible work done in steady, reversible flow is thus visualized by the area enclosed *to the left* of the curve, as shown in figure 3.7.
-
-*Engineering Thermodynamics* by Olivier Cleynen
+On a pressure-volume diagram, we can visualize this work by adding the insertion work and extraction work to the compression work, as shown in figure 3.6. The reversible work done in steady, reversible flow is thus visualized by the area enclosed *to the left* of the curve, as shown in figure 3.7.
 
 :::{figure} ../images/fig-3-6.jpg
 :label: fig-3-6
@@ -614,27 +606,20 @@ Thus, the properties gradually shift on the pressure-volume diagram. Unless the 
 
 ````
 
-::::{admonition} A Bit of History
-:class: note
-
-*Engineering Thermodynamics* by Olivier Cleynen
-
-::::
-
 (sec-3-5)=
 ## 3.5 Quantifying Heat with an Open System
 
-## System
-
-With an open system, we will use the same method as with a closed system:
-
-since we cannot quantify heat transfers directly, we will always proceed by deduction. Mathematically, we simply reuse equation 3/14 to obtain:
+With an open system, we will use the same method as with a closed system: since we cannot quantify heat transfers directly, we will always proceed by deduction. Mathematically, we simply reuse equation 3/14 to obtain:
 
 :::{math}
+:label: eq-3-24
+:enumerator: 3/24
 Q_{1\rightarrow 2}=\dot{m}(\Delta h + \Delta e_{\mathrm{mech}.}) -\dot{W}_{1\rightarrow 2}
 :::
 
 :::{math}
+:label: eq-3-25
+:enumerator: 3/25
 q_{1\rightarrow 2}= \Delta h + \Delta e_{\mathrm{mech}.}- w_{1\rightarrow 2}
 :::
 
@@ -642,17 +627,11 @@ for an open system.
 
 Once again, the main challenge in quantifying a heat transfer is predicting and quantifying the change in enthalpy, $\Delta h$. For gases, $h$ is almost proportional to temperature; for liquids and vapors, the relationship is more complex. We will learn how to quantify enthalpy in fluids in chapter 4 (*the ideal gas*) and chapter 5 (*liquids and vapors*).
 
-(3/24)
-
-(3/25)
-
-::::{admonition} A Bit of History: Temperature
+::::{admonition} A Bit of History
 :class: note
 :label: hist-3-5
 
-and Amount of Heat
-
-\*
+**Temperature and Amount of Heat**
 
 *By Philippe Depondt*
 
@@ -662,32 +641,16 @@ In the second half of the 17th century, we started to concern ourselves with the
 
 Our understanding of heat is largely tied to the sensation of hot or cold: we get burned from contact with boiling water, we feel cold when holding an ice cube in our hand. We can “feel” more or less hot, or more or less cold, an object containing “heat” would “be” more or less hot, all of this was a bit the same... In this context, the idea of a materiality of heat, the idea that a measurable quantity of heat could be transferred from one body to another and induce predictable and measurable temperature changes, remained far off!
 
-Joseph Black (1728-1799), in Edinburgh, Scotland, then took a decisive step forward: he observed that snow does not instantly melt even though the ambient temperature can be well above the melting temperature of ice. Piles of snow, even in full sun-light, can take several days to disappear... He then posed the question: what is the temperature of the water capable of completely melting its own weight of snow at $0^{\circ}C (32 ^{\circ} F)$ without changing its temperature? The experiment provided the answer: $78^{\circ}C (172.4 ^{\circ} F)$! The lukewarm water cooled down, while the snow remained at the same temperature: the 78 degrees of heat brought by the lukewarm water were incorporated into the ice. The conclusion drawn was that the melting of the snow required the supply of these 78 degrees of heat by the liquid water. He called this heat *latent heat* [[39](#ref-39)], to differentiate it from *sensible heat* associated with measurable temperature changes. Beyond a clever experiment and a brilliant interpretation, a new concept had emerged.
+Joseph Black (1728-1799), in Edinburgh, Scotland, then took a decisive step forward: he observed that snow does not instantly melt even though the ambient temperature can be well above the melting temperature of ice. Piles of snow, even in full sunlight, can take several days to disappear... He then posed the question: what is the temperature of the water capable of completely melting its own weight of snow at $0^{\circ}C (32 ^{\circ} F)$ without changing its temperature? The experiment provided the answer: $78^{\circ}C (172.4 ^{\circ} F)$! The lukewarm water cooled down, while the snow remained at the same temperature: the 78 degrees of heat brought by the lukewarm water were incorporated into the ice. The conclusion drawn was that the melting of the snow required the supply of these 78 degrees of heat by the liquid water. He called this heat *latent heat* [[39](#ref-39)], to differentiate it from *sensible heat* associated with measurable temperature changes. Beyond a clever experiment and a brilliant interpretation, a new concept had emerged.
 
-Black continued his activities by conducting a whole series of calorimetry experiments, mixing water at different temperatures, mixing bodies of different natures at different temperatures; each time he
+Black continued his activities by conducting a whole series of calorimetry experiments, mixing water at different temperatures, mixing bodies of different natures at different temperatures; each time he demonstrated that the specific heat depends on the nature of the body:
 
-::::
+> We must, therefore, conclude that different bodies, although they be of the same size, or even of the same weight, when they are reduced to the same temperature or degree of heat, whatever that be, may contain very different quantities of the matter of heat; which different quantities are necessary to bring them to this level, or equilibrium, with one another.
+> 
+> — Joseph Black, 1807 [[2](#ref-2)]
 
-::::{admonition} A Bit of History
-:class: note
 
-*Engineering Thermodynamics* by Olivier Cleynen
-
-::::
-
-demonstrated that the specific heat depends on the nature of the body:
-
-We must, therefore, conclude that different bodies, although they be of the same size, or even of the same weight, when they are reduced to the same temperature or degree of heat, whatever that be, may contain very different quantities of the matter of heat; which different quantities are necessary to bring them to this level, or equilibrium,
-
-with one another.
-
-Joseph Black, 1807 [[2](#ref-2)]
-
-He did not make any assumptions about the nature of this heat that he characterized. For most of his contemporaries, however, its apparent conservation indicated that it was a material fluid devoid of mass which Lavoisier later named *caloric*. In this view,
-
-this substance could be transferred from one body to another to raise the temperature of the receiving body and lower that of the giving body: some bodies
-
-(such as water) contained more of it at a given temperature than others (like oil), resulting in different specific heats. On the other hand, Black believed that the fusion of a solid or the vaporization of a liquid could be a kind of chemical combination of the caloric fluid with the matter: the caloric would then disappear as such and become “latent”.
+He did not make any assumptions about the nature of this heat that he characterized. For most of his contemporaries, however, its apparent conservation indicated that it was a material fluid devoid of mass which Lavoisier later named *caloric*. In this view, this substance could be transferred from one body to another to raise the temperature of the receiving body and lower that of the giving body: some bodies (such as water) contained more of it at a given temperature than others (like oil), resulting in different specific heats. On the other hand, Black believed that the fusion of a solid or the vaporization of a liquid could be a kind of chemical combination of the caloric fluid with the matter: the caloric would then disappear as such and become “latent”.
 
 :::{figure} ../images/fig-3-9.jpg
 :label: fig-3-9
@@ -697,9 +660,9 @@ this substance could be transferred from one body to another to raise the temper
 Joseph Black conducting an experiment on latent heat during a university lecture in Edinburgh. One can imagine that he had no difficulty engaging the students, since it was about thermodynamics...
 :::
 
-latent heat during a university lecture in Edinburgh. One can imagine that he had no difficulty engaging the students, since it was about thermodynamics...
-
 *Engraving by unknown author published by Louis Figuier in 1867 (public domain)*
+
+::::
 
 ## Problems
 
@@ -743,9 +706,9 @@ $1)\dot{W}_{\mathrm{A}\rightarrow \mathrm{B}}= +4.219 MW 2)\dot{W}_{\mathrm{C}\r
    :::{figure} ../images/fig-3-11.jpg
    :label: fig-3-11
    :enumerator: 3.11
-   :alt: generating turboshaft engine
+   :alt: Schematic diagram of an electricity-generating turboshaft engine
    
-   generating turboshaft engine
+   Schematic diagram of an electricity-generating turboshaft engine
    :::
 
 ```{exercise}
@@ -786,13 +749,6 @@ $2)\dot{V}_{1}=\dot{m} v_{1}= 35.4 m^{3}s^{-1}\&\dot{V}_{2}= 66.3 m^{3}s^{-1}$.
 :::
 ```
 
-::::{admonition} A Bit of History
-:class: note
-
-*Engineering Thermodynamics* by Olivier Cleynen
-
-::::
-
    :::{figure} ../images/fig-3-13.png
    :label: fig-3-13
    :enumerator: 3.13
@@ -800,8 +756,6 @@ $2)\dot{V}_{1}=\dot{m} v_{1}= 35.4 m^{3}s^{-1}\&\dot{V}_{2}= 66.3 m^{3}s^{-1}$.
    
    Schematic diagram of a nozzle and installation (with variable geometry) on the *Pratt & Whitney* F100 engine of a Lockheed Martin F-16.
    :::
-
-tion (with variable geometry) on the *Pratt & Whitney* F100 engine of a Lockheed Martin F-16.
 
 *Diagram* CC-0 *Olivier Cleynen; Photo* CC-by-sa *Ad Meskens (edited)*
 

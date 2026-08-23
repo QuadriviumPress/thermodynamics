@@ -363,31 +363,22 @@ This quantity of work $W_{\mathrm{net}}$ represents the maximum that can be obta
 :::{figure} ../images/fig-7-8.jpg
 :label: fig-7-8
 :enumerator: 7.8
-:alt: The four stages of the Carnot engine, executed with a constant mass flow by separating them in space. Here too, the cycle is such that when the flow direction is reversed (becoming 1 →4 →3 →2 →1), the transfers are exactly opposite.
+:alt: The four stages of the Carnot engine, executed with a fixed mass quantity by separating them in time. The cycle is such that when the stages are performed in reverse order $(1 \rightarrow 4 \rightarrow 3 \rightarrow 2 \rightarrow 1)$, the transfers are exactly opposite.
 
-The four stages of the Carnot engine, executed with a fixed mass quantity by separating them in time. The cycle is such that when the stages are performed in reverse
+The four stages of the Carnot engine, executed with a fixed mass quantity by separating them in time. The cycle is such that when the stages are performed in reverse order $(1 \rightarrow 4 \rightarrow 3 \rightarrow 2 \rightarrow 1)$, the transfers are exactly opposite.
 :::
 
-order $(1 \rightarrow 4 \rightarrow 3 \rightarrow 2 \rightarrow 1)$, the transfers are exactly opposite.
-
-::::{admonition} A Bit of History
-:class: note
-
-*Engineering Thermodynamics* by Olivier Cleynen
-
-::::
-
-*Diagram* CC-by-sa *Olivier Cleynen*
+*Diagram* CC-0 *Olivier Cleynen*
 
 :::{figure} ../images/fig-7-9.jpg
 :label: fig-7-9
 :enumerator: 7.9
-:alt: The four stages of the Carnot engine, executed with a constant mass flow by separating them in space. Here too, the cycle is such that when the flow direction is reversed (becoming 1 →4 →3 →2 →1), the transfers are exactly opposite.
+:alt: The four stages of the Carnot engine, executed with a constant mass flow by separating them in space. Here too, the cycle is such that when the flow direction is reversed (becoming $1 \rightarrow 4 \rightarrow 3 \rightarrow 2 \rightarrow 1)$, the transfers are exactly opposite.
 
-The four stages of the Carnot engine, executed with a constant mass flow by separating them in space. Here too, the cycle is such that when the flow direction is reversed
+The four stages of the Carnot engine, executed with a constant mass flow by separating them in space. Here too, the cycle is such that when the flow direction is reversed (becoming $1 \rightarrow 4 \rightarrow 3 \rightarrow 2 \rightarrow 1)$, the transfers are exactly opposite.
 :::
 
-(becoming $1 \rightarrow 4 \rightarrow 3 \rightarrow 2 \rightarrow 1)$, the transfers are exactly opposite.
+*Diagram* CC-by-sa *Olivier Cleynen*
 
 The Carnot engine cycle can be plotted on a pressure-volume diagram (for example in figure 7.10 with a perfect gas). It can be observed that the compression phases occur at lower pressure and volume than the expansion phases: the cycle is work-producing. Since all processes are reversible, the area enclosed in the path 1-2-3-4-1 represents the net work quantity $W_{\mathrm{net}}$ produced.
 
@@ -699,11 +690,9 @@ In summary, we can answer Carnot’s question as follows: heat loss from the eng
 
 The maximum achievable temperature in an engine is $600^{\circ}C (1112 ^{\circ} F)$, and the temperature at which exhaust gases are discharged is $100^{\circ}C (212 ^{\circ} F)$. What is the maximum efficiency achievable by the engine?
 
-In order to achieve the most efficient conversion, the engine must be reversible. Thus, with equation 7/6: $\eta _{\mathrm{engine}}= \eta _{\mathrm{Carnot} \mathrm{engine}}= 1 - \frac{T_{L}}{T_{H}} = 1 - ^{100+273.15}_{600+273.15}= 57.3 \%$.
+In order to achieve the most efficient conversion, the engine must be reversible. Thus, with equation 7/6: $\eta _{\mathrm{engine}}= \eta _{\mathrm{Carnot} \mathrm{engine}}= 1 - \frac{T_{L}}{T_{H}} = 1 - \frac{100+273.15}{600+273.15}= 57.3 \%$.
 
-Make sure to use absolute temperatures here – at this point,
-
-using $degrees Celsius$ or $Fahrenheit$ in the calculation would be unforgivable.
+Make sure to use absolute temperatures here – at this point, using $degrees Celsius$ or $Fahrenheit$ in the calculation would be unforgivable.
 
 The technological specifics of the engine (displacement, injection method, etc.) may possibly bring it close to $57.3 \%$, but will never bring it beyond that value.
 
@@ -734,16 +723,7 @@ When it comes to a Carnot refrigerator, this efficiency is a function of tempera
 
 for a reversible refrigerator, where temperatures are absolute $(K)$.
 
-The same remarks as above apply here: firstly, the efficiency of a refrigerator or an air conditioner never reaches infinity (an infinite cop refrigerator would operate without any work input). Secondly, this efficiency reduces when the refrigeration temperature $T_{L}$ is reduced. In other words, when cooling an object with an ideal refrigerator, selecting a lower temperature is
-
-::::{admonition} A Bit of History
-:class: note
-
-*Engineering Thermodynamics* by Olivier Cleynen
-
-::::
-
-more expensive, not merely because more heat needs to be extracted from the object, but also because the efficiency of the extraction decreases.
+The same remarks as above apply here: firstly, the efficiency of a refrigerator or an air conditioner never reaches infinity (an infinite cop refrigerator would operate without any work input). Secondly, this efficiency reduces when the refrigeration temperature $T_{L}$ is reduced. In other words, when cooling an object with an ideal refrigerator, selecting a lower temperature is more expensive, not merely because more heat needs to be extracted from the object, but also because the efficiency of the extraction decreases.
 
 ````{prf:example}
 :label: ex-7-4
@@ -790,34 +770,17 @@ The maximum efficiency would be achieved with a reversible heat pump, allowing u
 
 ````
 
-::::{admonition} A Bit of History:
+::::{admonition} A Bit of History
 :class: note
 :label: hist-7-11
 
-Rudolf Diesel’s Dream
-
-\*
+**Rudolf Diesel's Dream**
 
 This is the story of an engine born in the margin of thermodynamics lecture notes. “*Kann man Dampfmaschinen konstruieren, welche den vollkommenen Kreisprozess ausführen, ohne zu sehr kompliziert zu sein?*”: can we build steam engines that can perform the ideal cycle without being too very complex? The student Rudolf Diesel asked himself this question in the margin of his notes in 1878 in Munich, realizing that the engine cycle followed by the steam engines of his time inevitably condemned them to mediocre efficiencies.
 
-In this way, the concept of a *rational heat engine* would mature over the years, an engine whose characteristics were fin ally published in 1893 [[23](#ref-23), [24](#ref-24)]. Rudolf Diesel is unequivocal: “an examination of their operating theory will show that gas and air engines operate on a defective principle, and no improvement will produce better results as long as this principle is retained”. He was no kinder to the designers of steam engines. The main features of the proposed engine strictly stemmed from physical precepts: it was about getting as close as possible to the Carnot cycle, by “*producing the highest temperature of the cycle (the combustion temperature) not through and during combustion, but before and independently of it, entirely through the compression of ordinary air*”. This was followed by combustion at constant temperature, controlled by progressive fuel injection. Only the exhaust and intake (done at constant pressure with a four-stroke cycle) deviated from the Carnot cycle.
+In this way, the concept of a *rational heat engine* would mature over the years, an engine whose characteristics were finally published in 1893 [[23](#ref-23), [24](#ref-24)]. Rudolf Diesel is unequivocal: “an examination of their operating theory will show that gas and air engines operate on a defective principle, and no improvement will produce better results as long as this principle is retained”. He was no kinder to the designers of steam engines. The main features of the proposed engine strictly stemmed from physical precepts: it was about getting as close as possible to the Carnot cycle, by “*producing the highest temperature of the cycle (the combustion temperature) not through and during combustion, but before and independently of it, entirely through the compression of ordinary air*”. This was followed by combustion at constant temperature, controlled by progressive fuel injection. Only the exhaust and intake (done at constant pressure with a four-stroke cycle) deviated from the Carnot cycle.
 
-The characteristics announced on paper give food for thought: the maximum compression pressure
-
-:::{math}
-\gamma
-:::
-
-must be at least $p_{2}= p_{1}(\frac{T_{\mathrm{combustion}}}{T_{\mathrm{initial}}} )^{\gamma -1}$ (equation 4/37), which lead Rudolf Diesel to $300 bar (4350 psi)$ – twenty times more than existing engines! The concept of direct injection, which is made necessary by the high temperatures reached during compression to avoid premature combustion, is convincing. However, many details were lacking on how to handle coal dust – the fuel chosen by Rudolf Diesel for its abundance and low cost – so as to allow its direct injection into the cylinders in practice.
-
-::::
-
-::::{admonition} A Bit of History
-:class: note
-
-*Engineering Thermodynamics* by Olivier Cleynen
-
-::::
+The characteristics announced on paper give food for thought: the maximum compression pressure must be at least $p_{2}= p_{1}(\frac{T_{\mathrm{combustion}}}{T_{\mathrm{initial}}} )^{\gamma -1}$ (equation 4/37), which lead Rudolf Diesel to $300 bar (4350 psi)$ – twenty times more than existing engines! The concept of direct injection, which is made necessary by the high temperatures reached during compression to avoid premature combustion, is convincing. However, many details were lacking on how to handle coal dust – the fuel chosen by Rudolf Diesel for its abundance and low cost – so as to allow its direct injection into the cylinders in practice.
 
 :::{figure} ../images/fig-7-13.jpg
 :label: fig-7-13
@@ -829,82 +792,63 @@ Rudolf Diesel in 1883.
 
 *Photo by unknown author (public domain)*
 
-Despite everything, Rudolf Diesel, after a promising start in the design of refrigeration systems, managed to convince the *Maschinenfabrik Augsburg-*
-
-*Nürnberg* company, known today as man, to finance his research. They would be challenging: the transition from theory to practice took four years. Many ambitions were scaled back: the maximum pressure decreased to $90$ and then $40 bar (580 psi)$, the coal dust was abandoned in favor of a crude oil for easier handling. Since the structural limits of the engine constrained the cycle, the isothermal combustion was replaced by isobaric at maximum pressure. The second prototype, a single-cylinder engine nearly three meters tall (figure 7.14), was the first to operate autonomously: eight minutes in
-
-February 1894. The performance of the third prototype (figure 7.15) was independently measured in
-
-1897: $17 hp$ at $154 rpm$, and an efficiency of $26.2 \%$.
+Despite everything, Rudolf Diesel, after a promising start in the design of refrigeration systems, managed to convince the *Maschinenfabrik Augsburg-Nürnberg* company, known today as man, to finance his research. They would be challenging: the transition from theory to practice took four years. Many ambitions were scaled back: the maximum pressure decreased to $90$ and then $40 bar (580 psi)$, the coal dust was abandoned in favor of a crude oil for easier handling. Since the structural limits of the engine constrained the cycle, the isothermal combustion was replaced by isobaric at maximum pressure. The second prototype, a single-cylinder engine nearly three meters tall (figure 7.14), was the first to operate autonomously: eight minutes in February 1894. The performance of the third prototype (figure 7.15) was independently measured in 1897: $17 hp$ at $154 rpm$, and an efficiency of $26.2 \%$.
 
 This efficiency was twice that of its contemporaries with internal combustion, and four times that of the best steam engines!
 
-Man quickly started sales of the *rational engine*,
-
-renamed as *Diesel engine*, which gradually met success in Europe. Its operational regularity, reliability,
-
-and especially its low fuel consumption justified its significant purchase cost: due to the materials and precision manufacturing it required, its price per watt of power was about three times higher than its competitors. The patents filed by Rudolf Diesel brought him a significant income.
+Man quickly started sales of the *rational engine*, renamed as *Diesel engine*, which gradually met success in Europe. Its operational regularity, reliability, and especially its low fuel consumption justified its significant purchase cost: due to the materials and precision manufacturing it required, its price per watt of power was about three times higher than its competitors. The patents filed by Rudolf Diesel brought him a significant income.
 
 The numerous documents left behind make Diesel a compelling figure: cultivated, diligent, and intelligent (he excelled in all his studies), he had a very keen perception of the economic and social upheavals caused by the rapid mechanization of industry and transportation at the end of the 19th century [[33](#ref-33), [34](#ref-34), [41](#ref-41)]. After a harsh and miserable childhood, expelled from France and then England, he nurtured a strong social ideal that lead him to write *Solidarismus* (“*the rational and economic salvation of humanity*”, 1903 [[25](#ref-25)]). For him, the decentralization of mechanical power production, for small businesses or collectives, for example, would constitute a decisive social advancement.
 
-Despite the remarkable success achieved in fifteen years, Rudolf Diesel struggled to find fulflilment. He was constantly the target of legal disputes, since his critics and competitors argued – not entirely without merit – that the engines he commercialized were ultimately very different from the machine described in his patent. The nationalist tensions leading up to the outbreak of World War I shook
+Despite the remarkable success achieved in fifteen years, Rudolf Diesel struggled to find fulfillment. He was constantly the target of legal disputes, since his critics and competitors argued – not entirely without merit – that the engines he commercialized were ultimately very different from the machine described in his patent. The nationalist tensions leading up to the outbreak of World War I shook him. A poor financial manager, he made multiple unreasonable expenses and ruinous investments, and, to top it all, he was plagued by severe migraines and medical problems. In 1913, the man seemed tormented by his own ethical and philosophical questions. His engines exclusively produced power in factories and power plants: did they ultimately contribute to the emancipation or the servitude of the working classes? He ended his life in September.
+
+The tragic disappearance of its creator would not suffice to slow down the progression of the Diesel engine. The technological obstacles to its adoption in transportation, in particular the delicate fuel injection system, were overcome one by one.
 
 :::{figure} ../images/fig-7-14.jpg
 :label: fig-7-14
 :enumerator: 7.14
-:alt: The second prototype developed at man by
+:alt: The second prototype developed at man by Rudolf Diesel, and the first to operate independently, in February 1894. It has only one cylinder with a diameter of $22 cm$, and the direct fuel injection is done by a compressed air circuit. The engine is now exhibited at the headquarters of the man company.
 
-The second prototype developed at man by
+The second prototype developed at man by Rudolf Diesel, and the first to operate independently, in February 1894. It has only one cylinder with a diameter of $22 cm$, and the direct fuel injection is done by a compressed air circuit. The engine is now exhibited at the headquarters of the man company.
 :::
 
-Rudolf Diesel, and the first to operate independently, in him. A poor fin ancial manager, he made multiple February 1894. It has only one cylinder with a diameter unreasonable expenses and ruinous investments, of $22 cm$, and the direct fuel injection is done by a com-and, to top it all, he was plagued by severe migraines pressed air circuit. The engine is now exhibited at the and medical problems. In 1913, the man seemed headquarters of the man company. tormented by his own ethical and philosophical
-
-*Photo* CC-by-sa *MAN SE* questions. His engines exclusively produced power in factories and power plants: did they ultimately contribute to the emancipation or the servitude of the working classes? He ended his life in September.
-
-The tragic disappearance of its creator would not suffice to slow down the progression of the Diesel engine. The technological obstacles to its adoption in transportation, in particular the delicate fuel injection system, were overcome one by one.
+*Photo* CC-by-sa *MAN SE*
 
 :::{figure} ../images/fig-7-15.jpg
 :label: fig-7-15
 :enumerator: 7.15
-:alt: Diesel’s third prototype, and his first operational engine. The cylinder diameter was 25 cm and the stroke reached 40 cm. It would be tested at the technical Figure 7.16: A nine-cylinder Sulzer RTA76 Diesel engine university of Munich where it achieved 26.2 % efficiency producing 25 MW of power at 95 rpm. This unit is inin 1897. It is exhibited at the Deutsches Museum. stalled here in a factory but the model is commonly used to propel merchant ships.
+:alt: Diesel's third prototype, and his first operational engine. The cylinder diameter was $25 cm$ and the stroke reached $40 cm$. It would be tested at the technical university of Munich where it achieved $26.2 \%$ efficiency in 1897. It is exhibited at the *Deutsches Museum*.
 
-Diesel’s third prototype, and his first operational engine. The cylinder diameter was $25 cm$ and the stroke reached $40 cm$. It would be tested at the technical
+Diesel's third prototype, and his first operational engine. The cylinder diameter was $25 cm$ and the stroke reached $40 cm$. It would be tested at the technical university of Munich where it achieved $26.2 \%$ efficiency in 1897. It is exhibited at the *Deutsches Museum*.
 :::
+
+*Photo* CC-by-sa *Olivier Cleynen*
 
 :::{figure} ../images/fig-7-16.jpg
 :label: fig-7-16
 :enumerator: 7.16
-:alt: A nine-cylinder Sulzer RTA76 Diesel engine
+:alt: A nine-cylinder Sulzer RTA76 Diesel engine producing $25 MW$ of power at $95 rpm$. This unit is installed here in a factory but the model is commonly used to propel merchant ships.
 
-A nine-cylinder *Sulzer RTA76* Diesel engine
+A nine-cylinder *Sulzer RTA76* Diesel engine producing $25 MW$ of power at $95 rpm$. This unit is installed here in a factory but the model is commonly used to propel merchant ships.
 :::
 
-university of Munich where it achieved $26.2 \%$ efficiency producing $25 MW$ of power at $95 rpm$. This unit is inin 1897. It is exhibited at the *Deutsches Museum*. stalled here in a factory but the model is commonly used
-
-*Photo* CC-by-sa *Olivier Cleynen* to propel merchant ships. *Photo* CC-by-sa *by de:Wikipedia User:Sleipnir* 200 [Chapter 7](#ch-7)
+*Photo* CC-by-sa *by de:Wikipedia User:Sleipnir*
 
 Today, it is used wherever constraints of economy and durability take precedence over lightness and responsiveness. In merchant ships, Diesel engines several stories high operate on highly turbocharged two-stroke cycles. In these engines exceeding 2000 tons and $18 000 hp$ (figure 7.16), the cylinders move slowly on strokes of over two meters, allowing for nearly isothermal combustion at $80 rpm$ and an efficiency exceeding $50 \%$.
 
 At the other end of the spectrum, Diesels powering the smallest utility vehicles benefit from numerous systems to increase their responsiveness and extend their power and torque ranges. In these tiny machines of $80 hp$ rotating beyond $2000 rpm$, electronic control systems perform up to four fuel injections at 2000 bar directly into the cylinder for each combustion, optimizing combustion based on the demanded power [[46](#ref-46)].
 
-Ultimately, there is probably not a product in today’s industry that we manufacture whose materials or components have not been extracted, assembled, and transported without the contribution of power from a Diesel engine. A great achievement for a curious student!
-
-::::{admonition} A Bit of History
-:class: note
-
-*Engineering Thermodynamics* by Olivier Cleynen
+Ultimately, there is probably not a product in today's industry that we manufacture whose materials or components have not been extracted, assembled, and transported without the contribution of power from a Diesel engine. A great achievement for a curious student!
 
 ::::
 
-7.2 Maximum Efficiency of a
-
-Refrigerator
-
-What is the theoretical maximum efficiency that a household freezer could reach when operating between temperatures of $-6^{\circ}C$ and $20^{\circ}C (21.2^{\circ} F$ and $68^{\circ} F)$?
-
-For what reason(s) is the cop reached by conventional freezers (around $3)$ lower than this value?
-
 ## Problems
+
+   7.2 Maximum Efficiency of a Refrigerator
+
+   What is the theoretical maximum efficiency that a household freezer could reach when operating between temperatures of $-6^{\circ}C$ and $20^{\circ}C (21.2^{\circ} F$ and $68^{\circ} F)$?
+
+   For what reason(s) is the cop reached by conventional freezers (around $3)$ lower than this value?
 
    :::{figure} ../images/art-p200-1.svg
    :alt: Illustration from the original text

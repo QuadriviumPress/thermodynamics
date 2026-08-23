@@ -172,10 +172,10 @@ def c_dangling(text):
         # mass ... (kg)." -- so these are house style, not stitched fragments.
         if re.match(r"(where|with|and|in which|is)\b", head) and re.search(r"\$.+\$\s+is\s+(the|a|an)\b", head):
             continue
-        if before.rstrip().endswith(":::") and re.match(r"(where|with|and|in which)\b", head):
+        if before.rstrip().endswith(":::") and re.match(r"(where|with|and|in which|during|but)\b", head):
             continue
         # Equation glosses and glossary/table cross-refs are house style, not fragments.
-        if re.match(r"(for a|for an|for any|for the|tab\.|fig\.|eq\.|p\.|see |cf\.)", head):
+        if re.match(r"(for a|for an|for any|for the|valid for|tab\.|fig\.|eq\.|p\.|see |cf\.)", head):
             continue
         # list-of-symbols abbreviation rows start lowercase by design
         if re.match(r"[a-z]{2,4}\s+[A-Z]", head) and len(head) < 120:

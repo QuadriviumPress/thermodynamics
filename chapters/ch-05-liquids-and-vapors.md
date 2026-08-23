@@ -398,23 +398,23 @@ François-Marie Guyonneau de Pambour, 1835
 
 Here the measurements are made at $1.6 MPa$, in other words, $16 bar (232 psi)$.
 
-A discontinuity is observed between $200^{\circ}C$ and $300^{\circ}C$: this is the state change that occurred at $T_{\mathrm{sat}.}= 201.37^{\circ}C$, the saturation temperature for this
+A discontinuity is observed between $200^{\circ}C$ and $300^{\circ}C$: this is the state change that occurred at $T_{\mathrm{sat}.}= 201.37^{\circ}C$, the saturation temperature for this pressure.
 
-This steam table allows us to answer many questions. Here are a few
+This steam table allows us to answer many questions. Here are a few examples:
 
-Example 5.1
+````{prf:example}
+:label: ex-5-1
+:enumerator: 5.1
 
 At 16 bar and $600^{\circ}C$, what is the volume occupied by $2 kg$ of water?
 
-The pressure is $1.6 MPa$. In Steam Table 1, at this pressure, at $600^{\circ}C$, we can read its specific volume as $v = 0.249 99 m^{3}kg^{-1}$. The total volume will thus be $V = m v = 0.499 98 m^{3}$, which we confidently
+The pressure is $1.6 MPa$. In Steam Table 1, at this pressure, at $600^{\circ}C$, we can read its specific volume as $v = 0.249 99 m^{3}kg^{-1}$. The total volume will thus be $V = m v = 0.499 98 m^{3}$, which we confidently round to $0.5 m^{3}$.
 
-Note that the temperature is higher than the saturation temperature $(201.37^{\circ}C)$, indicating that the water is in the superheated
+Note that the temperature is higher than the saturation temperature $(201.37^{\circ}C)$, indicating that the water is in the superheated vapor state.
 
-With an ideal gas, we could simply *calculate* the result $(v = \frac{RT}{p}$);
+With an ideal gas, we could simply *calculate* the result $(v = \frac{RT}{p})$; but this method does not work for liquid/vapor mixtures.
 
-but this method does not work for liquid/vapor mixtures.
-
-*Engineering Thermodynamics* by Olivier Cleynen
+````
 
 ````{prf:example}
 :label: ex-5-2
@@ -450,17 +450,10 @@ After interpolating, always quickly check the order of magnitude of the results.
 
 ````
 
-### 5.3.2
+(sec-5-3-2)=
+### 5.3.2 Saturation points
 
-temperature.
-
-pressure instead of temperature.
-
-**Saturation points**
-
-In order to precisely quantify the properties of water when it changes phase,
-
-we use Steam Tables 2 and 3. The properties of water in the form of saturated liquid (subscript $L)$ and saturated vapor (subscript $V)$ are tabulated for each
+In order to precisely quantify the properties of water when it changes phase, we use Steam Tables 2 and 3. The properties of water in the form of saturated liquid (subscript $L)$ and saturated vapor (subscript $V)$ are tabulated for each temperature.
 
 In Steam Table 2 (see pp. 310-311), the data is sorted by pressure (with each pressure corresponding to a single saturation temperature). Steam Table 3
 
@@ -579,20 +572,7 @@ h_{x}= (1 - x)h_{L}+ x h_{V}
 h_{x}= h_{L}+ x h_{LV}
 :::
 
-where $h_{x}$ is the specific enthalpy of the mixture at hand $(J kg^{-1})$, $x$ is its dryness fraction (unitless),
-
-:::{math}
-\mathrm{and} h_{LV}\equiv \Delta h_{L} \frac{}{)} _{V}\equiv h_{V}- h_{L}(\mathrm{tabulated} \mathrm{value}) \mathrm{is} \mathrm{the} \mathrm{specific} \mathrm{enthalpy} \mathrm{of}
-:::
-
-vaporization at its temperature $(J kg^{-1})$.
-
-::::{admonition} A Bit of History
-:class: note
-
-*Engineering Thermodynamics* by Olivier Cleynen
-
-::::
+where $h_{x}$ is the specific enthalpy of the mixture at hand $(J kg^{-1})$, $x$ is its dryness fraction (unitless), and $h_{LV}\equiv \Delta h_{L)V}\equiv h_{V}- h_{L}$ (tabulated value) is the specific enthalpy of vaporization at its temperature $(J kg^{-1})$.
 
 :::{figure} ../images/fig-5-12.jpg
 :label: fig-5-12
@@ -610,13 +590,7 @@ Enthalpy $h_{x}$ of a mixture as a function of the enthalpies in the saturated s
 u_{x}= u_{L}+ x u_{LV} (5/5)
 :::
 
-where $u_{x}$ is the specific energy of the mixture under study $(J kg^{-1})$, $x$ is its dryness fraction (unitless),
-
-:::{math}
-\mathrm{and} u_{LV}\equiv \Delta u_{L} \frac{}{)} _{V}\equiv u_{V}-u_{L}(\mathrm{tabulated} \mathrm{value}) \mathrm{is} \mathrm{the} \mathrm{difference} \mathrm{of} \mathrm{specific}
-:::
-
-internal energies at saturation, at its temperature $(J kg^{-1})$.
+where $u_{x}$ is the specific energy of the mixture under study $(J kg^{-1})$, $x$ is its dryness fraction (unitless), and $u_{LV}\equiv \Delta u_{L)V}\equiv u_{V}-u_{L}$ (tabulated value) is the difference of specific internal energies at saturation, at its temperature $(J kg^{-1})$.
 
 **The specific volume** of a liquid-vapor mixture, finally, is quantified even more simply. The total volume of the mixture equals the volume of the gas plus the volume of the liquid, thus:
 
@@ -630,73 +604,43 @@ However, the specific volume $v_{L}$ of the saturated liquid is usually small co
 v_{x}\approx x v_{V} (5/6)
 :::
 
-where $v_{x}$ is the specific volume of the mixture under study $(m^{3}kg^{-1})$, $x$ is its dryness fraction (unitless),
-
-and $v_{V}$ (tabulated value) is the specific volume of the saturated vapor
-
-:::{math}
-at its temperature (m^{3}kg^{-1}) .
-:::
+where $v_{x}$ is the specific volume of the mixture under study $(m^{3}kg^{-1})$, $x$ is its dryness fraction (unitless), and $v_{V}$ (tabulated value) is the specific volume of the saturated vapor at its temperature $(m^{3}kg^{-1})$.
 
 This approximation is illustrated in figure 5.13.
 
 We can now use the same Steam Tables 2 and 3 to quantify what happens between the saturation points.
 
-graphically emphasized.
-
-````{prf:example}
-
-of $115^{\circ}C$.
-
-$482.4 + 0.75 \times 2041 = 2013.15 kJ kg^{-1}$.
-
-$0.776 85 m^{3}kg^{-1}$.
-
-$820.89 US gal$.
-
-````
-
-````{prf:example}
-
-equation 5/4. From there, we get: $x = ^{h_{x}-h_{L}}$
-
-$h_{L}\approx 500$ and $h_{V}\approx 2700 kJ kg^{-1}$.
-
-````
-
 :::{figure} ../images/fig-5-13.jpg
 :label: fig-5-13
 :enumerator: 5.13
-:alt: Approximations used in calculating the volume occupied by a liquidvapor mixture. It should be noted that the abscissa scale is logarithmic: 𝑣𝐿is generally several hundred times smaller than 𝑣𝑉, and the approximation is not graphically emphasized.
+:alt: Approximations used in calculating the volume occupied by a liquid-vapor mixture. It should be noted that the abscissa scale is logarithmic: $v_{L}$ is generally several hundred times smaller than $v_{V}$, and the approximation is not graphically emphasized.
 
-Approximations used in calculating the volume occupied by a liquid-vapor mixture. It should be noted that the abscissa scale is logarithmic: $v_{L}$ is generally several hundred times smaller than $v_{V}$, and the approximation is not
+Approximations used in calculating the volume occupied by a liquid-vapor mixture. It should be noted that the abscissa scale is logarithmic: $v_{L}$ is generally several hundred times smaller than $v_{V}$, and the approximation is not graphically emphasized.
 :::
 
-vapor mixture. It should be noted that the abscissa scale is logarithmic: $v_{L}$ is generally several hundred times smaller than $v_{V}$, and the approximation is not *Diagram* CC-0 *Olivier Cleynen*
+*Diagram* CC-0 *Olivier Cleynen*
 
-Example 5.8
+````{prf:example}
+:label: ex-5-8
+:enumerator: 5.8
 
 What is the internal energy and volume occupied by a mass of $4 kg$ of water, $75 \%$ vaporized, at $115^{\circ}C (239 ^{\circ} F)$?
 
-We have a liquid-vapor mixture and the dryness is $0.75$. We refer to Steam Table 2 (excerpt in table 5.3) to find the saturation temperature
+We have a liquid-vapor mixture and the dryness is $0.75$. We refer to Steam Table 2 (excerpt in table 5.3) to find the saturation temperature of $115^{\circ}C$. Then, we simply apply equation 5/5: $u_{x}= u_{L}+ 0.75 \times u_{LV}= 482.4 + 0.75 \times 2041 = 2013.15 kJ kg^{-1}$. Similarly, with equation 5/6: $v_{x}= 0.75 \times v_{V}= 0.75 \times 1.0358 = 0.776 85 m^{3}kg^{-1}$. Therefore, we have $U = m u = 8052.6 kJ$ and $V = m v = 3.1074 m^{3}= 820.89 US gal$.
 
-Then, we simply apply equation 5/5: $u_{x}= u_{L}+ 0.75 \times u_{LV}=$
+````
 
-Similarly, with equation 5/6: $v_{x}= 0.75 \times v_{V}= 0.75 \times 1.0358 =$
-
-Therefore, we have $U = m u = 8052.6 kJ$ and $V = m v = 3.1074 m^{3}=$
-
-Example 5.9
+````{prf:example}
+:label: ex-5-9
+:enumerator: 5.9
 
 What is the dryness of water at 2.5 bar whose enthalpy is $1500 kJ kg^{-1}$?
 
-We have a liquid-vapor mixture; we look in Steam Table 3 (excerpt in table 5.4) for the line corresponding to $p_{\mathrm{sat}.}= 0.25 MPa$. We use
+We have a liquid-vapor mixture; we look in Steam Table 3 (excerpt in table 5.4) for the line corresponding to $p_{\mathrm{sat}.}= 0.25 MPa$. We use equation 5/4. From there, we get: $x = \frac{h_{x}-h_{L}}{h_{LV}}= \frac{1500-535.3}{2181.1}= 0.442$.
 
-$h_{LV}= ^{1500-535.3}_{2181.1}= 0.442$.
+A quick check: at $1500 kJ kg^{-1}$ we are roughly halfway between $h_{L}\approx 500$ and $h_{V}\approx 2700 kJ kg^{-1}$.
 
-A quick check: at $1500 kJ kg^{-1}$ we are roughly halfway between
-
-*Engineering Thermodynamics* by Olivier Cleynen
+````
 
 (sec-5-4)=
 ## 5.4 Elementary Reversible Processes
@@ -802,7 +746,9 @@ Constant-pressure (isobaric) process undergone by a liquid/vapor. In a closed sy
 Heating at constant pressure of a liquid/vapor, represented on a pressure-volume diagram.
 :::
 
-*Diagram* CC-0 *Olivier Cleynen* in a reversible process at constant pressure, in an open system.
+*Diagram* CC-0 *Olivier Cleynen*
+
+in a reversible process at constant pressure, in an open system.
 
 :::{math}
 q_{1\rightarrow 2}= \Delta h - w_{1\rightarrow 2}
@@ -833,9 +779,7 @@ We start from the saturated liquid state, with $v_{1}= v_{L}$ and $h_{1}= h_{L}$
 
 We notice that $v_{2}$ is less than $v_{V}$ at our temperature. At the end of the heating process, the water will still be partially liquid, and we will need to calculate its dryness fraction.
 
-Liquid-vapor mixture? We are heading towards Steam Tables 2
-
-and 3. We know the pressure $(0.3 MPa)$, therefore we need Steam Table 3.
+Liquid-vapor mixture? We are heading towards Steam Tables 2 and 3. We know the pressure $(0.3 MPa)$, therefore we need Steam Table 3.
 
 The final dryness fraction is $x_{2}\approx \frac{v_{x}}{v_{V}} = \frac{0.5}{0.60576} = 0.825$ (equation 5/6). Therefore, $h_{2}= h_{L}+ x_{2}h_{LV}= 561.4 + 0.825 \times 2163.5 = 2347.2 kJ kg^{-1}$ (5/4).
 
@@ -845,9 +789,7 @@ Finally, the heat transfer is calculated using equation 5/10: $Q_{1\rightarrow 2
 
 The heat transfer involved is ten times more significant than the work done. In this case, we are heating a lot, and the fluid, at low pressure, does little work.
 
-It is probably simpler and less risky to derive these equations 5/9
-
-and 5/10 by hand rather than trying to memorize them.
+It is probably simpler and less risky to derive these equations 5/9 and 5/10 by hand rather than trying to memorize them.
 
 ````
 
@@ -964,8 +906,6 @@ However, as soon as we cross the saturation curve, things change. Once the satur
 
 The consequence is that for now, we cannot quantify the work and heat involved when evolving steam at constant temperature! We must wait until chapter 8, where we will use the concept of *entropy* to tackle the problem.
 
-sented on a pressure-volume diagram.
-
 :::{figure} ../images/fig-5-18.jpg
 :label: fig-5-18
 :enumerator: 5.18
@@ -974,21 +914,17 @@ sented on a pressure-volume diagram.
 A constant-temperature (isothermal) process undergone by a liquid-vapor. In a closed system (left), the gas is allowed to do work on a piston while being heated, and conversely, work is done on it when cooling. In an open system (right), the same manipulations are carried out continuously.
 :::
 
-vapor. In a closed system (left), the gas is allowed to do work on a piston while being heated, and conversely, work is done on it when cooling. In an open system (right), the same manipulations are carried out continuously.
-
 *Diagram* CC-by-sa *Olivier Cleynen*
 
 :::{figure} ../images/fig-5-19.jpg
 :label: fig-5-19
 :enumerator: 5.19
-:alt: Expansion (heating) at constant temperature of a liquid-vapor, repre-
+:alt: Expansion (heating) at constant temperature of a liquid-vapor, represented on a pressure-volume diagram.
 
-Expansion (heating) at constant temperature of a liquid-vapor, repre-
+Expansion (heating) at constant temperature of a liquid-vapor, represented on a pressure-volume diagram.
 :::
 
 *Diagram* CC-0 *Olivier Cleynen*
-
-*Engineering Thermodynamics* by Olivier Cleynen
 
 ````{prf:example}
 :label: ex-5-11
@@ -1121,36 +1057,17 @@ A completely arbitrary process undergone by a liquid-vapor represented on a pres
 
 ::::{admonition} A Bit of History
 :class: note
-
-*Engineering Thermodynamics* by Olivier Cleynen
-
-::::
-
-::::{admonition} A Bit of History:
-:class: note
 :label: hist-5-10
 
-ate) meant that these engines could only operate with very low pressures.
+**The Horsepower**
 
-the Horsepower For these engines, water is an excellent choice for a working fluid. When steam at moderate pressure
+We traditionally associate the word *engine* with automobile propulsion: machines running on air and gasoline. However, the very first engines were quite different. Heavy, slow, incredibly large, running on coal and water, they were only used to pump water.
 
-\* is cooled (for example by mixing it with cold liquid
+Let’s go back to the beginning of the 19th century. At that time, Europe was heated by coal, which was extracted with great difficulty from constantly flooded mines. The water was removed by working horses through a primitive pumping mechanism. The first engines were installed to replace these horses – but they were hardly less expensive, and required just as much attention!
 
-We traditionally associate the word *engine* with auwater), it condenses and its pressure drops abruptly tomobile propulsion: machines running on air and (figure 5.23). This is an opportunity to drive a pisgasoline. However, the very first engines were quite ton that, subjected to atmospheric pressure on its different. Heavy, slow, incredibly large, running on other side, can supply work. Thus, one could almost coal and water, they were only used to pump water. speak of “implosion engines”, since they make the
+For these engines, water is an excellent choice for a working fluid. When steam at moderate pressure is cooled (for example by mixing it with cold liquid water), it condenses and its pressure drops abruptly (figure 5.23). This is an opportunity to drive a piston that, subjected to atmospheric pressure on its other side, can supply work. Thus, one could almost speak of “implosion engines”, since they make the atmosphere work on a cylinder of depressurized steam to produce work.
 
-Let’s go back to the beginning of the 19th century. atmosphere work on a cylinder of depressurized
-
-At that time, Europe was heated by coal, which steam to produce work.
-
-was extracted with great difficulty from constantly With this operating mode, the pressure difference flooded mines. The water was removed by working obtained reaches a maximum of 1 bar, and the pace horses through a primitive pumping mechanism. is lamentably slow. But these machines operated
-
-The first engines were installed to replace these at reasonable temperatures and pressures, and the horses – but they were hardly less expensive, and operators lacked neither coal nor water.
-
-required just as much attention! It is a young employee of the University of Manchester who first realized the tremendous development potential of the steam engine. By studying a scale model of an engine owned by the university, he made a series of modifications that doubled its efficiency.
-
-The first and most important of these modifications was to separate in space the heating and cooling phases of the steam. Previously, condensation by injection of cold water also lowered the temperature
-
-::::
+With this operating mode, the pressure difference obtained reaches a maximum of 1 bar, and the pace is lamentably slow. But these machines operated at reasonable temperatures and pressures, and the operators lacked neither coal nor water. The level of development of metallurgy (cylinders were made of copper, by hand) and mechanical technology (valves had to be successively opened and closed by hand, one by one, to let the engine operate) meant that these engines could only operate with very low pressures.
 
 :::{figure} ../images/fig-5-23.jpg
 :label: fig-5-23
@@ -1160,37 +1077,25 @@ The first and most important of these modifications was to separate in space the
 Cross-section diagram of one of the first steam engines (Newcomen engine, $\sim 1720)$. The condensation caused by water injection into the cylinder led to a drop in internal pressure.
 :::
 
-::::{admonition} *Engraving by Newton Henry Black & Harvey Nathaniel Davis,*
-:class: note
-:label: hist-5-11
+*Engraving by Newton Henry Black & Harvey Nathaniel Davis, published in 1913 (public domain)*
 
-*published in 1913 (public domain)*
+It is a young employee of the University of Manchester who first realized the tremendous development potential of the steam engine. By studying a scale model of an engine owned by the university, he made a series of modifications that doubled its efficiency.
 
-The level of development of metallurgy (cylinders were made of copper, by hand) and mechanical technology (valves had to be successively opened and closed by hand, one by one, to let the engine opercondensation and double-acting piston. *Engraving by Robert Henry Thurston (1878, public domain)*
-
-::::
+The first and most important of these modifications was to separate in space the heating and cooling phases of the steam. Previously, condensation by injection of cold water also lowered the temperature of the metallic piston and cylinder, which had to be heated again at each cycle, with a significant energy cost. Now instead, the steam was cooled in a chamber maintained at low temperature by immersion in water (figure 5.24), while the engine cylinder was kept at a high temperature above the boiler.
 
 :::{figure} ../images/fig-5-24.jpg
 :label: fig-5-24
 :enumerator: 5.24
-:alt: The Boulton & Watt engine with separate
+:alt: The Boulton & Watt engine with separate condensation and double-acting piston.
 
-The *Boulton & Watt* engine with separate
+The *Boulton & Watt* engine with separate condensation and double-acting piston.
 :::
 
-::::{admonition} of the metallic piston and cylinder, which had to
-:class: note
-:label: hist-5-12
-
-be heated again at each cycle, with a significant energy cost. Now instead, the steam was cooled in a chamber maintained at low temperature by immersion in water (figure 5.24), while the engine cylinder was kept at a high temperature above the boiler.
+*Engraving by Robert Henry Thurston (1878, public domain)*
 
 The second modification consisted of exploiting the two faces of the piston. By using a system of pipes controlled by valves, it became possible to increase the pressure difference driving the piston movement. While the steam condensed at $0.2 bar (2.9 psi)$ on one side, the other face now met steam pressurized at $1.4 bar (20.3 psi)$. Not only was the work done during each piston movement greater, but also the speed (and thus the power) was doubled, since the piston was providing work in both the upward and downward movements.
 
-Finally, a series of mechanical devices reduced the attention that had to be paid to the formidable machinery thus assembled. A large flywheel maintained speed, valve openings were mechanically linked to the engine’s advancement, and the centrifugal ball governor, a technology imported from water mills, prevented engine runaway or stalling.
-
-The young laboratory assistant, who went by the name of James Watt, found fortune by partnering with a cannon manufacturer and expert coppersmith, Matthew Boulton. The rest is history: *Boulton & Watt* captured the lion’s share of the emerging market for heat engines.
-
-::::
+Finally, a series of mechanical devices reduced the attention that had to be paid to the formidable machinery thus assembled. A large flywheel maintained speed, valve openings were mechanically linked to the engine’s advancement, and the centrifugal ball governor, a technology imported from water mills, prevented engine runaway or stalling (figure 5.25).
 
 :::{figure} ../images/fig-5-25.jpg
 :label: fig-5-25
@@ -1200,38 +1105,21 @@ The young laboratory assistant, who went by the name of James Watt, found fortun
 The ball governor, a mechanism originating from windmills and integrated into steam engines by James Watt.
 :::
 
-::::{admonition} *Engraving by R. Routledge (1900, public domain)*
-:class: note
-:label: hist-5-13
+*Engraving by R. Routledge (1900, public domain)*
+
+The young laboratory assistant, who went by the name of James Watt, found fortune by partnering with a cannon manufacturer and expert coppersmith, Matthew Boulton. The rest is history: *Boulton & Watt* captured the lion’s share of the emerging market for heat engines.
+
+Their success, unfortunately, would come much less from the technological innovations they brought than from the high-profile lawsuits they led to monetize them. Indeed, the two partners excelled in political connections and were at home in the peculiar world of patents and the royalties that result from them. The two Scotsmen in top hats, for example, received a percentage of the coal savings generated by the machines they sold across the country. And it would take nearly fifteen years before the legal possibility, in the United Kingdom, to use the “expansive power of steam” became finally open to everyone, a process deviously patented by the two partners!
+
+Regardless, the *General Conference on Weights and Measures* assigned the unit watt to power in the si system in 1960. It then dethroned the *horsepower* $(hp)$... a unit introduced by the very James Watt nearly a century earlier, while he was comparing his machines with the draft horses they were to replace.
+
+$1 hp_{\mathrm{imperial}}\equiv 33 000 ft lb_{f}\min ^{-1} = 745.6999 W$
 
 ::::
 
-::::{admonition} A Bit of History
-:class: note
+## Problems
 
-*Engineering Thermodynamics* by Olivier Cleynen
-
-::::
-
-Their success, unfortunately, would come much less from the technological innovations they brought than from the high-profile lawsuits they led to monetize them. Indeed, the two partners excelled in political connections and were at home in the peculiar world of patents and the royalties that result from them. The two Scotsmen in top hats, for example,
-
-received a percentage of the coal savings generated by the machines they sold across the country. And it would take nearly fifteen years before the legal possibility, in the United Kingdom, to use the “expansive power of steam” became finally open to everyone, a process deviously patented by the two partners!
-
-Regardless, the *General Conference on Weights and*
-
-*Measures* assigned the unit watt to power in the si system in 1960. It then dethroned the *horsepower*
-
-$(hp)$... a unit introduced by the very James Watt nearly a century earlier, while he was comparing his machines with the draft horses they were to replace.
-
-$1 hp_{\mathrm{imperial}}\equiv 33 000 ft lb_{f}\min ^{-1}$
-
-$= 745.6999 W$
-
-Problems
-
-The properties of water are tabulated in Steam
-
-Tables 1, 2, and 3 (see AppendixA1 p.305)
+The properties of water are tabulated in Steam Tables 1, 2, and 3 (see Appendix A1 p. 305)
 
 ```{exercise}
 :label: prob-5-1

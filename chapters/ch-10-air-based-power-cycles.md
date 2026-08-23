@@ -178,17 +178,10 @@ The German engineer Nicolaus Otto is credited with the development of the engine
 :alt: Illustration from the original text
 :::
 
-Figure 10.3: Otto’s theoretical cycle represented on pressure-volume and temperature-entropy diagrams. These diagrams depict the ideal path, without irreversibilities in the compression or expansion. *Diagrams* CC-0 *Olivier Cleynen*
 
 The Otto cycle is designed to allow for a simple implementation of the heat addition phase. The fuel is mixed with air before being inserted into the engine, and a very rapid combustion is triggered with a spark when the volume in the cylinder is minimal: this is known as *spark ignition*. Otto originally intended his engine for stationary applications, but its relative simplicity and responsiveness would ensure its success in transportation (notably through his son Gustav Otto, an aircraft manufacturer whose company would later become bmw).
 
-The efficiency of the theoretical Otto cycle is easily calculable. The heat
-
-:::{math}
-input q_{\mathrm{combustion}}= c_{v}(T_{\mathrm{C}}- T_{\mathrm{B}}) is performed at constant volume (4/22). The
-:::
-
-heat rejection, in practice, is done outside the engine, after exiting the exhaust pipe. From a thermodynamic point of view, the air continues its cycle in the atmosphere before re-entering the engine (§6.2.1), and thus the heat rejected is $q_{\mathrm{cooling}}= c_{v}(T_{\mathrm{A}}-T_{\mathrm{D}})$. Thus, since in theory no heat transfer takes place in the compression and expansion phases, and if we consider that the properties $(c_{v})$ of the gas do not change during combustion, the efficiency $\eta _{\mathrm{Otto}}$ of the theoretical cycle is simply given by:
+The efficiency of the theoretical Otto cycle is easily calculable. The heat input $q_{\mathrm{combustion}}= c_{v}(T_{\mathrm{C}}- T_{\mathrm{B}})$ is performed at constant volume (equation 4/22). The heat rejection, in practice, is done outside the engine, after exiting the exhaust pipe. From a thermodynamic point of view, the air continues its cycle in the atmosphere before re-entering the engine (§6.2.1), and thus the heat rejected is $q_{\mathrm{cooling}}= c_{v}(T_{\mathrm{A}}-T_{\mathrm{D}})$. Thus, since in theory no heat transfer takes place in the compression and expansion phases, and if we consider that the properties $(c_{v})$ of the gas do not change during combustion, the efficiency $\eta _{\mathrm{Otto}}$ of the theoretical cycle is simply given by:
 
 :::{math}
 :label: eq-10-2
@@ -234,14 +227,12 @@ The *Diesel engine*, the child of his patient and hard-working inventor, German 
 
 From a strictly thermodynamic point of view, the theoretical Diesel cycle differs from the Otto cycle only in its combustion mode: heat addition occurs at constant pressure and not at constant volume, as shown in figure 10.4.
 
-Theoretical Diesel cycle represented on pressure-volume and
-
 :::{figure} ../images/fig-10-4.svg
 :label: fig-10-4
 :enumerator: 10.4
-:alt: temperature-entropy diagrams. These diagrams depict the ideal path, without compression or expansion irreversibilities.
+:alt: Theoretical Diesel cycle represented on pressure-volume and temperature-entropy diagrams. These diagrams depict the ideal path, without compression or expansion irreversibilities.
 
-temperature-entropy diagrams. These diagrams depict the ideal path, without compression or expansion irreversibilities.
+Theoretical Diesel cycle represented on pressure-volume and temperature-entropy diagrams. These diagrams depict the ideal path, without compression or expansion irreversibilities.
 :::
 
 *Diagrams* CC-0 *Olivier Cleynen*
@@ -294,16 +285,7 @@ A realistic representation of the pressure and volume changes during a cycle in 
 (sec-10-3-5)=
 ### 10.3.5 Number of cylinders and turbocharging
 
-An important drawback of reciprocating engines is that the irreversibility of compressions and expansions increases significantly with the piston
-
-::::{admonition} A Bit of History
-:class: note
-
-*Engineering Thermodynamics* by Olivier Cleynen
-
-::::
-
-speed in the cylinders. The traditional approach to overcome this issue is to increase the number of cylinders operating simultaneously in the engine (figure 10.6). This way, the stroke traveled by each piston for a given displacement volume can be reduced. An advantage associated with this approach is that the motion of mechanical parts is better balanced (and the engine sounds more harmonious!).
+An important drawback of reciprocating engines is that the irreversibility of compressions and expansions increases significantly with the piston speed in the cylinders. The traditional approach to overcome this issue is to increase the number of cylinders operating simultaneously in the engine (figure 10.6). This way, the stroke traveled by each piston for a given displacement volume can be reduced. An advantage associated with this approach is that the motion of mechanical parts is better balanced (and the engine sounds more harmonious!).
 
 :::{figure} ../images/fig-10-6.png
 :label: fig-10-6
@@ -396,19 +378,7 @@ For air, we have $c_{p (\mathrm{air})}= 1005 J kg^{-1}K^{-1}, c_{v (\mathrm{air}
 
 The process can be qualitatively represented on a $T - s$ diagram as shown below.
 
-We start by calculating the power of an ideal (isentropic) compressor:
-
-:::{math}
-\frac{\gamma -1}{}
-:::
-
-the outlet temperature in that case would be (4/37): $T_{\mathrm{B}^{'}}= T_{\mathrm{A}}(\frac{p_{\mathrm{B}}}{p_{\mathrm{A}}} ) ^{\gamma}=$
-
-:::{math}
-\frac{0.4}{}
-:::
-
-$(5 + 273.15) (40)^{1.4}= 798 K = 524.9^{\circ}C = 976.7 ^{\circ} F$. The ideal compressor would then receive $w_{\mathrm{isentropic} \mathrm{compressor}}= c_{p(\mathrm{air})}(T_{\mathrm{B}^{'}}-T_{\mathrm{A}}) = 1005 (798 - 278.15) = +5.225 \times 10^{5}J kg^{-1}= +522.5 kJ kg^{-1}$.
+We start by calculating the power of an ideal (isentropic) compressor; the outlet temperature in that case would be (4/37): $T_{\mathrm{B}^{'}}= T_{\mathrm{A}}(\frac{p_{\mathrm{B}}}{p_{\mathrm{A}}} ) ^{\frac{\gamma-1}{\gamma}}= (5 + 273.15) (40)^{\frac{0.4}{1.4}}= 798 K = 524.9^{\circ}C = 976.7 ^{\circ} F$. The ideal compressor would then receive $w_{\mathrm{isentropic} \mathrm{compressor}}= c_{p(\mathrm{air})}(T_{\mathrm{B}^{'}}-T_{\mathrm{A}}) = 1005 (798 - 278.15) = +5.225 \times 10^{5}J kg^{-1}= +522.5 kJ kg^{-1}$.
 
 ````
 
@@ -488,8 +458,6 @@ w_{\mathrm{turbine}}= c_{p(\mathrm{gases})}(T_{2 \mathrm{actual}}- T_{1}) = \eta
 :::
 
 As the gases flow downstream through the turbine, they expand and their specific volume increases. The size of the blades (hence their weight and cost) must also increase, while the power they can extract decreases. Gases are often rejected at the outlet of a turbomachine with residual pressure because it is not economically viable to extract any more work from them.
-
-approximately $500 MW$ of shaft power.
 
 (sec-10-4-4)=
 ### 10.4.4 Nozzle
@@ -575,15 +543,7 @@ Ideally, the nozzle expands the gases to ambient pressure and converts all the c
 
 For burnt gases, we have $c_{p (\mathrm{gases})}= 1150 J kg^{-1}K^{-1}, c_{v (\mathrm{gases})}= 823 J kg^{-1}K^{-1}, R_{\mathrm{gases}}= 327 J kg^{-1}K^{-1}$, and $\gamma _{\mathrm{gases}}= 1.333$. A nozzle is fed with a steady flow of combustion gases at $2 bar, 10 m s^{-1}$, and $400^{\circ}C (29 psi, 33 ft/s, 752 ^{\circ} F)$. At what speed can it accelerate these gases when they are rejected at 1 bar, if we neglect irreversibilities?
 
-The process which would allow the highest ejection speed is an
-
-:::{math}
-\frac{\gamma -1}{}
-:::
-
-isentropic expansion; therefore, $T_{\mathrm{B}}= T_{\mathrm{A}}(\frac{p_{\mathrm{B}}}{p_{\mathrm{A}}} ) ^{\gamma}= (400 +$
-
-$273.15) (\frac{1}{2})^{\frac{0.333}{1.333}} = 566.1 K = 293^{\circ}C = 559 ^{\circ} F$. Such a process can be qualitatively represented on a $T - s$ diagram as follows:
+The process which would allow the highest ejection speed is an isentropic expansion; therefore, $T_{\mathrm{B}}= T_{\mathrm{A}}(\frac{p_{\mathrm{B}}}{p_{\mathrm{A}}} ) ^{\frac{\gamma-1}{\gamma}}= (400 + 273.15) (\frac{1}{2})^{\frac{0.333}{1.333}} = 566.1 K = 293^{\circ}C = 559 ^{\circ} F$. Such a process can be qualitatively represented on a $T - s$ diagram as follows:
 
 ````
 
@@ -596,16 +556,8 @@ $273.15) (\frac{1}{2})^{\frac{0.333}{1.333}} = 566.1 K = 293^{\circ}C = 559 ^{\c
 With equation 10/11, the outlet speed would therefore be:
 
 :::{math}
-\frac{1}{}
+C_{\mathrm{B}}= [-2 c_{p(\mathrm{gases})}(T_{\mathrm{B}}- T_{\mathrm{A}}) + C^{2}_{\mathrm{A}}]^{0.5}= [-2 \times 1150 \times (293 - 400) + 10^{2}]^{0.5} = 496.2 m s^{-1}= 1786 km/h = 1110 mph.
 :::
-
-$C_{\mathrm{B}}= [-2 c_{p(\mathrm{gases})}(T_{\mathrm{B}}- T_{\mathrm{A}}) + C^{2}_{\mathrm{A}}]^{2}$
-
-:::{math}
-0.5
-:::
-
-$= [-2 \times 1150 \times (293 - 400) + 10^{2}] = 496.2 m s^{-1}= 1786 km/h = 1110 mph$.
 
 In practice, the gases would never reach this speed. Indeed, a large part of the expansion takes place *downstream* of the nozzle, where it is very turbulent and therefore highly irreversible. This nevertheless does not inful ence the thrust generated by the nozzle, whose outlet orifcie pressure is in fact higher than atmospheric pressure. The speed calculation performed here remains a good thermodynamic “indicator” of the phenomena at play. A full description of the fluid dynamics of the nozzle is outside of the scope of this book.
 
@@ -623,12 +575,7 @@ Finally, we note that the *air intake* of aeronautical engines often serves as a
 
 Within the realm of *turbomachinery* (machines which transfer power between a fluid and a rotating shaft), we call *gas turbine* the complete internal-combustion, turbine-powered machine, and not merely the component of the same name. The word “gas” here refers to the working fluid, not to the fuel, which may be any kind of combustible liquid or gas. Gas turbines have two major advantages over piston engines:
 
-::::{admonition} A Bit of History
-:class: note
 
-*Engineering Thermodynamics* by Olivier Cleynen
-
-::::
 
 • The power-to-weight ratio of turbomachines is approximately three times higher, since the number of moving parts is reduced, and their movement is very simple, allowing them to be lighter;
 
@@ -795,16 +742,7 @@ A turboshaft generator with intercooler and reheat system (schematic and tempera
 
 *Schematic* CC-by-sa *Olivier Cleynen Diagram* CC-0 *Olivier Cleynen*
 
-The compression of a gas between two given pressures imposes a *ratio* between the initial and final temperatures (4/36). On the other hand, the
-
-::::{admonition} A Bit of History
-:class: note
-
-*Engineering Thermodynamics* by Olivier Cleynen
-
-::::
-
-power required to compress a gas between these two pressures depends on the *difference* between these two temperatures (10/6). Therefore, the lower the initial temperature, and the lower the power required to reach a given pressure.
+The compression of a gas between two given pressures imposes a *ratio* between the initial and final temperatures (4/36). On the other hand, the power required to compress a gas between these two pressures depends on the *difference* between these two temperatures (10/6). Therefore, the lower the initial temperature, and the lower the power required to reach a given pressure.
 
 In the same vein, we can increase the specific power supplied by the turbine by carrying out a second combustion with the gases before the end of the expansion: this is called *reheat*. The process is similar to the reheating of steam in steam power plants (§9.4.4 p. 256).
 
@@ -846,11 +784,7 @@ The outrageous loss of efficiency caused by the use of afterburners, as well as 
 
 Because an increase in combustion temperature increases efficiency and specific power, engine designers are driven to develop technologies to maximize the temperature at the outlet of the combustion chamber (tet, for *turbine entry temperature*).
 
-One of the used strategies is to cool the turbine with bleed air from the compressor (figure 10.25). The bleed air is passed through the turbine blades themselves, allowing for an increase in combustion temperature without risking damage to the blades. The most efficient and advanced cooling systems wrap the turbine blades with this cooler air. This allows, in modern engines, the tet temperature exceeds the melting temperature of the blades
-
-:::{math}
-by more than 100^{\circ}C , or 180 ^{\circ} F !
-:::
+One of the used strategies is to cool the turbine with bleed air from the compressor (figure 10.25). The bleed air is passed through the turbine blades themselves, allowing for an increase in combustion temperature without risking damage to the blades. The most efficient and advanced cooling systems wrap the turbine blades with this cooler air. This allows, in modern engines, the tet temperature exceeds the melting temperature of the blades by more than $100^{\circ}C$, or $180 ^{\circ} F$!
 
 Such turbine cooling comes at a significant cost. First, in a real engine, less work is recovered from the expansion of this bleed air than was required for its compression (in the limiting case where compression and expansion
 
@@ -873,9 +807,7 @@ Turbine cooling using air taken from the compressor (schematic and temperature-e
 
 Turbine cooling is a major research area in aeronautical propulsion. Techniques from a handful of fields (materials, fluid mechanics, mechanical design, combustion chemistry) are combined there in order to improve the thermodynamics of the engines.
 
-alone maintain the aircraft flying while supplying many systems (pressurization, de-icing, heating, electrical and pneumatic generation) for several hours with demonstrated reliability.
-
-*Diagram* CC-by-sa *Olivier Cleynen* cooling, and two main air flows. It is left to the student to trace the cycle on a temperature-entropy diagram. On twin-engine aircraft qualified for etops flights, each engine must be able to
+On twin-engine aircraft qualified for etops flights, each engine must be able to alone maintain the aircraft flying while supplying many systems (pressurization, de-icing, heating, electrical and pneumatic generation) for several hours with demonstrated reliability.
 
 :::{figure} ../images/fig-10-26.jpg
 :label: fig-10-26
@@ -887,70 +819,37 @@ Thermodynamic circuit of a modern turbofan engine. The machine combines multiple
 
 ::::{admonition} A Bit of History
 :class: note
-
-*Engineering Thermodynamics* by Olivier Cleynen
-
-::::
-
-::::{admonition} A Bit of History:
-:class: note
 :label: hist-10-13
 
-the Napier Nomad
-
-\*
+**The Napier Nomad**
 
 At the end of the Second World War, the British government issued a call for tenders for the development of a highly efficient, $6000 hp$ aeronautical engine, in order to foster the development of military and civilian aircraft. The British engine manufacturer Napier & Son then carried out research that led to the development of a curious and remarkable device: the *Napier Nomad*.
 
-Based on a twelve-cylinder two-stroke Diesel engine with direct injection, the *Nomad* also featured all the elements of a turboprop engine. In order to increase the pressure and temperature at which heat was supplied, the two units were mounted *in series*; however, in order to allow for a high efficiency at all speeds, each drove one of the two contra-rotating propellers ([Figures 10.27](#fig-10-27) and 10.28). Finally, in order to achieve high powers and increase responsiveness throughout the flight envelope, an intercooler and reheat system were added. The result: an astonishing and extravagant mechanical-thermal assembly seemingly produced by the out-of-control fantasy of thermodynamic engineers on a quest for efficiency.
-
-::::
-
-:::{figure} ../images/fig-10-28.png
-:label: fig-10-28
-:enumerator: 10.28
-:alt: The prototype of the Napier Nomad I. The displacement was and the weight exceeded 2 tons.
-
-The prototype of the *Napier Nomad I*. The displacement was $40 L$ and the weight exceeded 2 tons.
-:::
-
-::::{admonition} *Images edited from photos (1 and 2)* CC-by-sa *by Nigel Ish*
-:class: note
-:label: hist-10-14
-
-the other with a turbine, were now connected to the same propeller. Both elements were connected with an ingenious but complex continuously-variable mechanical and hydraulic reducer that allowed each unit to operate at its optimal speed.
-
-In an enlightening paper from 1954 [[28](#ref-28)], the engine designers showed a very clear vision and de-
-
-::::
+Based on a twelve-cylinder two-stroke Diesel engine with direct injection, the *Nomad* also featured all the elements of a turboprop engine. In order to increase the pressure and temperature at which heat was supplied, the two units were mounted *in series*; however, in order to allow for a high efficiency at all speeds, each drove one of the two contra-rotating propellers (Figures 10.27 and 10.28). Finally, in order to achieve high powers and increase responsiveness throughout the flight envelope, an intercooler and reheat system were added. The result: an astonishing and extravagant mechanical-thermal assembly seemingly produced by the out-of-control fantasy of thermodynamic engineers on a quest for efficiency.
 
 :::{figure} ../images/fig-10-27.jpg
 :label: fig-10-27
 :enumerator: 10.27
-:alt: Schematic diagram of the thermodynamic
+:alt: Schematic diagram of the thermodynamic circuit of the Napier Nomad I. The shafts of the turboshaft and of the Diesel engine each drove one propeller. However, the two units were mounted in series: the air first passed through the compressors, then through the cylinders, and finally through the turbine(s). The engine power, as was customary in 1950, was controlled using a single mechanical control lever!
 
-Schematic diagram of the thermodynamic
+Schematic diagram of the thermodynamic circuit of the Napier *Nomad I*. The shafts of the turboshaft and of the Diesel engine each drove one propeller. However, the two units were mounted in series: the air first passed through the compressors, then through the cylinders, and finally through the turbine(s). The engine power, as was customary in 1950, was controlled using a single mechanical control lever!
 :::
 
-::::{admonition} circuit of the Napier *Nomad I*. The shafts of the turboshaft
-:class: note
-:label: hist-10-15
+*Diagram by users* $\cdot$ *Commons Tataroko-common, Aaa3-other & Nimbus227 (public domain)*
 
-sign approach. According to them, a simple turand of the Diesel engine each drove one propeller. Howbocharged Diesel engine could only benefit from ever, the two units were mounted in series: the air first passed through the compressors, then through the cyl. turbocharging over a very narrow power range — ders, and finally through the turbine(s). The engine power, outside of this range, the turbine power would be as was customary in 1950, was controlled using a single either in surplus (and therefore lost) or insufficient mechanical control lever! to power the compressor. A different arrangement,
+:::{figure} ../images/fig-10-28.png
+:label: fig-10-28
+:enumerator: 10.28
+:alt: The prototype of the Napier Nomad I. The displacement was $40 L$ and the weight exceeded 2 tons.
 
-*Diagram by users* $⋅$ *Commons Tataroko-common, Aaa3-other &*
-
-:::{math}
-^{\mathrm{Nimbus}227 (\mathrm{public} \mathrm{domain})} in which the propeller would be driven solely by
+The prototype of the *Napier Nomad I*. The displacement was $40 L$ and the weight exceeded 2 tons.
 :::
 
-the turbine (with the Diesel engine then only pro-
+*Images edited from photos (1 and 2)* CC-by-sa *by Nigel Ish*
 
-Napier & Son rapidly corrected course: the second viding supercharging and heat supply) would be prototype of the engine, the *Nomad II*, was greatly far too inefficient at low power and unnecessarily simplified. The intercooling, reheat, and centrifugal strain the Diesel engine at high power. The simple supercharger were all abandoned (figure 10.29). The turboprop, unable to reach the high pressures and two large mechanical units, one with pistons and
+Napier & Son rapidly corrected course: the second prototype of the engine, the *Nomad II*, was greatly simplified. The intercooling, reheat, and centrifugal supercharger were all abandoned (figure 10.29). The two large mechanical units, one with pistons and the other with a turbine, were now connected to the same propeller. Both elements were connected with an ingenious but complex continuously-variable mechanical and hydraulic reducer that allowed each unit to operate at its optimal speed.
 
-Schematic diagram of the thermody-
-
-::::
+In an enlightening paper from 1954 [[28](#ref-28)], the engine designers showed a very clear vision and design approach. According to them, a simple turbocharged Diesel engine could only benefit from turbocharging over a very narrow power range — outside of this range, the turbine power would be either in surplus (and therefore lost) or insufficient to power the compressor. A different arrangement, in which the propeller would be driven solely by the turbine (with the Diesel engine then only providing supercharging and heat supply) would be far too inefficient at low power and unnecessarily strain the Diesel engine at high power. The simple turboprop, unable to reach the high pressures and temperatures of a Diesel engine, would be too inefficient. Only in the chosen arrangement, called *Diesel turbo-compound*, could the cylinder engine and the turboprop unit both contribute at all power levels, each always running at its optimal speed.
 
 :::{figure} ../images/fig-10-29.jpg
 :label: fig-10-29
@@ -960,38 +859,23 @@ Schematic diagram of the thermody-
 Schematic diagram of the thermodynamic circuit of the *Napier Nomad II*. A variable-ratio mechanical-hydraulic reducer connected the two units, which now drove the same propeller.
 :::
 
-::::{admonition} *Diagram by users* $⋅$ *Commons Tataroko-common, Aaa3-other &*
-:class: note
-:label: hist-10-16
-
-*Nimbus227 (public domain)* temperatures of a Diesel engine, would be too inef-fi cient. Only in the chosen arrangement, called *Diesel turbo-compound*, could the cylinder engine and the turboprop unit both contribute at all power levels, each always running at its optimal speed.
+*Diagram by users* $\cdot$ *Commons Tataroko-common, Aaa3-other & Nimbus227 (public domain)*
 
 The performance of the *Nomad II* was indeed impressive —with its efficiency of $40 \%$, it used a third less fuel than its contemporaries— but its commercial failure was brutal: the project was abandoned in 1955 without a single sale. The engine was terribly heavy (with over $1600 kg$ for $2 MW$, its power-to-weight ratio was three times lower than that of a turboprop), which erased a large part of the fuel savings it could have generated. Also, it was both too complex for regional aircraft and far too slow for jet airliners, and aircraft manufacturers were never interested.
 
-The curious arrangement conceived by Napier & Son fell into obscurity but, sixty years later, it made a thunderous comeback in racing cars. In 2014, the International Automobile Federation, organizer of the Formula One races, sought to make it easier for new teams to join the sport, by limiting development expenses, increasing technological spin-ofsf applicable to the industry, and fin ding itself a (new-found) ecological conscience. The regulations were thus modified: turbocharging would be allowed, but the cars’ fuel consumption was limited to $100 L/h$. Most importantly, engine manufacturers would be allowed to use the turbocharger to recover energy in the form of electricity, as well as, conversely, accelerate the turbo by reinvesting this electrical energy into it (figure 10.30). Thus, the engine efficiency (and therefore, given the regulatory consumption limit, its power) can be increased at all speeds without sacrificing responsiveness. The sys-
-
-::::
-
-::::{admonition} A Bit of History
-:class: note
-
-*Engineering Thermodynamics* by Olivier Cleynen
-
-::::
-
-tem is poetically named mgu-h, but one could say that it is the unexpected revenge of the Anglo-Saxon
-
-*turbo-compounding*!
+The curious arrangement conceived by Napier & Son fell into obscurity but, sixty years later, it made a thunderous comeback in racing cars. In 2014, the International Automobile Federation, organizer of the Formula One races, sought to make it easier for new teams to join the sport, by limiting development expenses, increasing technological spin-offs applicable to the industry, and finding itself a (new-found) ecological conscience. The regulations were thus modified: turbocharging would be allowed, but the cars' fuel consumption was limited to $100 L/h$. Most importantly, engine manufacturers would be allowed to use the turbocharger to recover energy in the form of electricity, as well as, conversely, accelerate the turbo by reinvesting this electrical energy into it (figure 10.30). Thus, the engine efficiency (and therefore, given the regulatory consumption limit, its power) can be increased at all speeds without sacrificing responsiveness. The system is poetically named mgu-h, but one could say that it is the unexpected revenge of the Anglo-Saxon *turbo-compounding*!
 
 :::{figure} ../images/fig-10-30.jpg
 :label: fig-10-30
 :enumerator: 10.30
-:alt: Thermodynamic circuit of the air in a 2014 Formula 1 engine. The shaft of the compressor (left) is not connected to the six-cylinder engine (center block) or the car’s wheels. However, an electric motor/generator (named mgu-h) allows for extraction or addition of electrical energy. During high power phases, the power of the turbine (right) is in surplus and can be used to charge onboard batteries or drive the wheels with an electric motor. During low power phases, the turbine power is in deficit and the turbo can be driven by the generator to maintain the compression ratio and increase responsiveness.
+:alt: Thermodynamic circuit of the air in a 2014 Formula 1 engine. The shaft of the compressor (left) is not connected to the six-cylinder engine (center block) or the car's wheels. However, an electric motor/generator (named mgu-h) allows for extraction or addition of electrical energy. During high power phases, the power of the turbine (right) is in surplus and can be used to charge onboard batteries or drive the wheels with an electric motor. During low power phases, the turbine power is in deficit and the turbo can be driven by the generator to maintain the compression ratio and increase responsiveness.
 
-Thermodynamic circuit of the air in a 2014 Formula 1 engine. The shaft of the compressor (left) is not connected to the six-cylinder engine (center block) or the car’s wheels. However, an electric motor/generator (named mgu-h) allows for extraction or addition of electrical energy. During high power phases, the power of the turbine (right) is in surplus and can be used to charge onboard batteries or drive the wheels with an electric motor. During low power phases, the turbine power is in deficit and the turbo can be driven by the generator to maintain the compression ratio and increase responsiveness.
+Thermodynamic circuit of the air in a 2014 Formula 1 engine. The shaft of the compressor (left) is not connected to the six-cylinder engine (center block) or the car's wheels. However, an electric motor/generator (named mgu-h) allows for extraction or addition of electrical energy. During high power phases, the power of the turbine (right) is in surplus and can be used to charge onboard batteries or drive the wheels with an electric motor. During low power phases, the turbine power is in deficit and the turbo can be driven by the generator to maintain the compression ratio and increase responsiveness.
 :::
 
 *Diagram* CC-by-sa *Olivier Cleynen*
+
+::::
 
 ## Problems
 

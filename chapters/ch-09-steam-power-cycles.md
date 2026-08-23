@@ -264,13 +264,7 @@ The wondrous behavior of fluids when they change phase works to our advantage he
 
 Because it operates at high pressure (beyond 60 bar in modern power plants) and is the scene of significant heat transfer and temperature gradients, the boiler is an expensive and heavy component (figures 9.3 and 9.4), even though its operating principle is simple.
 
-When the heat in the power plant comes from combustion, the thermal energy of the gases can only be transferred to the water in the circuit when the temperature of the water is lower. Thus, the higher the minimum temperature of the water, and the greater the amount of heat lost above the
-
-:::{math}
-\mathrm{boiler}. \mathrm{The} \mathrm{efficiency} \eta _{\mathrm{boiler}}= \frac{Q_{\mathrm{water}}}{Q_{\mathrm{heat} \mathrm{source}}} \mathrm{of} \mathrm{a} \mathrm{high-performance} \mathrm{gas} \mathrm{boiler} \mathrm{is}
-:::
-
-typically around $80 \%$.
+When the heat in the power plant comes from combustion, the thermal energy of the gases can only be transferred to the water in the circuit when the temperature of the water is lower. Thus, the higher the minimum temperature of the water, and the greater the amount of heat lost above the boiler. The efficiency $\eta _{\mathrm{boiler}}= \frac{Q_{\mathrm{water}}}{Q_{\mathrm{heat} \mathrm{source}}}$ of a high-performance gas boiler is typically around $80 \%$.
 
 Since no work is supplied in the boiler, the power$\dot{Q}_{\mathrm{boiler}}$ supplied to the water by the boiler is expressed as:
 
@@ -658,10 +652,8 @@ In practice, many bleeds (sometimes called *steam extractions*) are performed in
 :enumerator: 9.22
 :alt: A steam power plant circuit combining superheating, reheat, regeneration, and discharge ducts. It is left to the curious student the pleasure of tracing the processes on a temperature-entropy diagram, and imagining themselves at the controls of the machine supplying their coffee maker with electricity.
 
-A steam power plant circuit combining superheating, reheat, regeneration, and discharge ducts. It is left to the curious student the pleasure of tracing the processes on a
+A steam power plant circuit combining superheating, reheat, regeneration, and discharge ducts. It is left to the curious student the pleasure of tracing the processes on a temperature-entropy diagram, and imagining themselves at the controls of the machine supplying their coffee maker with electricity.
 :::
-
-temperature-entropy diagram, and imagining themselves at the controls of the machine supplying their coffee maker with electricity.
 
 ::::{admonition} A Bit of History
 :class: note
@@ -724,47 +716,43 @@ $A_{\mathrm{ref}.}$ of the wing surface and the ambient density $\rho$
 
 (by gaining altitude), the flight speed $C_{\mathrm{flight}}$ can be increased *while keeping the drag* $F_{D}$ *constant*. The energy cost of moving the aircraft remains constant
 
-– however, the required power$\dot{W}_{\mathrm{engine}}= F_{x}C_{\mathrm{flight}}$
+– however, the required power $\dot{W}_{\mathrm{engine}}= F_{x}C_{\mathrm{flight}}$ increases proportionally to the speed. These characteristics make aircraft relatively energy-efficient machines, but very power-hungry, since they need to maintain the same thrust at very high speeds.
 
-increases proportionally to the speed. These characteristics make aircraft relatively energy-efficient machines, but very power-hungry, since they need to maintain the same thrust at very high speeds.
-
-The jet engine had two advantages to address this issue. Firstly, it was compact, lightweight, and vibration-free, which is highly desirable for an application where drag (and thus the thrust to be provided) increases proportionally with the weight of the aircraft. Secondly, the propeller, which is very efficient at low speeds but with whose tips reach supersonic speeds early, thus limiting the speed of aircraft, was completely eliminated. Because of these qualities, the low efficiencies due to irreversible compressions and expansions, low pressure ratios,
-
-and excessively high gas speeds in the nozzles were acceptable.
+The jet engine had two advantages to address this issue. Firstly, it was compact, lightweight, and vibration-free, which is highly desirable for an application where drag (and thus the thrust to be provided) increases proportionally with the weight of the aircraft. Secondly, the propeller, which is very efficient at low speeds but with whose tips reach supersonic speeds early, thus limiting the speed of aircraft, was completely eliminated. Because of these qualities, the low efficiencies due to irreversible compressions and expansions, low pressure ratios, and excessively high gas speeds in the nozzles were acceptable.
 
 Thus, the graceful Lockheed *Constellation*, the culmination of the era of propeller aviation, was instantly rendered obsolete by the arrival of the much faster De Havilland *Comet* in 1949, a remarkable quad-jet of the same size (figure 9.26). Even though it was initially unable to cover the same distance and it featured higher fuel consumption per kilometer, the *Comet* left no chance for its competitors. Its speed was an obvious quality for passengers, but also for the airlines, significantly increasing their productivity.
 
-The *Comet*, after a serious design flaw was corrected, was itself surpassed by the Boeing *707* in
+The *Comet*, after a serious design flaw was corrected, was itself surpassed by the Boeing *707* in 1957. Capable of flying further while carrying more payload, and even faster (at $900 km/h$, the speed that all airliners have adopted since, the air on the wing's upper surface barely reaches the speed of sound), the *707* marked the entry into the *jet age*, where airliners were no longer built by dozens but by thousands. Thus, in just twenty-five years, the gas turbine engine doubled the speed of aircraft and divided the price of tickets by four.
 
-1957. Capable of flying further while carrying more payload, and even faster (at $900 km/h$, the speed that all airliners have adopted since, the air on the wing’s upper surface barely reaches the speed of sound), the *707* marked the entry into the *jet age*,
-
-where airliners were no longer built by dozens but sides. The rudder, precise. “V1.” Another 20 knots to reach before the machine can fly. I can see end of the runway coming up, over there ahead. “Rotate.” At 170 knots, I pull gently, then more firmly. Five degrees of pitch. Ten degrees. It’s no longer rolling, the needle is at 185 knots. Twelve-degree pitch. Come on, my dear, we must climb. “Positive climb.” “Landing gear up.” The truth lies tonight between twelve and thirteen degrees of pitch, where the airspeed indicator needle comes to a standstill. We pass the hill, and three hundred feet below, the *747* fyl ing by must feel like an earthquake.
+:::{aside}
+"Ready?" "Takeoff time!" The flight engineer pushes the throttle levers with me. NNggnniiiaavvrrooooooaaaaaaarrrrooouuummmmm... "N1s green." It's pushing hard, but accelerates ever so gently, given the weight of the behemoth. "Eighty knots" "Thrust set." I have the tips of my feet on the rudder pedals, a precision similar to a kickboxing move. I'm enjoying every bit of it. 120 knots. I'm in control, guys. 432 passengers and 15 crew members are strapped in the back, ears and senses alert. 140 knots. Two bursts of light beacons pass by on the sides. The rudder, precise. "V1." Another 20 knots to reach before the machine can fly. I can see end of the runway coming up, over there ahead. "Rotate." At 170 knots, I pull gently, then more firmly. Five degrees of pitch. Ten degrees. It's no longer rolling, the needle is at 185 knots. Twelve-degree pitch. Come on, my dear, we must climb. "Positive climb." "Landing gear up." The truth lies tonight between twelve and thirteen degrees of pitch, where the airspeed indicator needle comes to a standstill. We pass the hill, and three hundred feet below, the *747* flying by must feel like an earthquake.
 
 Jacques Darolles, 1998
 
 *Le plus beau bureau du monde* [[42](#ref-42)]
+:::
 
-Nearly sixty years after the first flight of the *707*, airliners still fyl at the same speed, but jet engine technology has continued to advance [[47](#ref-47)]. With their carbon-epoxy or blown titanium fan blades, turbine stators printed in ceramics, their multiple laser-drilled pneumatic turbine cooling circuits, their electronic control, diagnostic and remote monitoring systems, they slowly but surely continue to increase in efficiency. Reliability is also remarkable: a modern engine on average only experiences an in-flight failure every $200 000$ flight hours, and is
+Nearly sixty years after the first flight of the *707*, airliners still fly at the same speed, but jet engine technology has continued to advance [[47](#ref-47)]. With their carbon-epoxy or blown titanium fan blades, turbine stators printed in ceramics, their multiple laser-drilled pneumatic turbine cooling circuits, their electronic control, diagnostic and remote monitoring systems, they slowly but surely continue to increase in efficiency. Reliability is also remarkable: a modern engine on average only experiences an in-flight failure every $200 000$ flight hours, and is separated from the aircraft for maintenance only every $20 000$ hours or $10 000$ flights. Will a new type of engine ever render the jet engine obsolete and propel aviation forward into a new era?
 
 :::{figure} ../images/fig-9-26.png
 :label: fig-9-26
 :enumerator: 9.26
-:alt: From top to bottom:
+:alt: From top to bottom: The 1943 Lockheed Constellation, the culmination of the propeller aircraft era: four Wright Duplex-Cyclone supercharged 18-cylinder engines, capable of covering 3700 km (2300 mi) at 500 km/h (310 mph). The 1949 De Havilland Comet, the first jet airliner: four Halford Ghost turbojet engines, capable of covering 2400 km (1500 mi) at 740 km/h (460 mph). The 1957 Boeing 707, with a configuration and performances anticipating those of all its successors: four Pratt & Whitney JT3C turbojet engines, capable of covering 4300 km (2700 mi) at 900 km/h (560 mph).
 
 From top to bottom:
+
+The 1943 Lockheed *Constellation*, the culmination of the propeller aircraft era: four Wright *Duplex-Cyclone* supercharged 18-cylinder engines, capable of covering $3700 km (2300 mi)$ at $500 km/h (310 mph)$.
+
+The 1949 De Havilland *Comet*, the first jet airliner: four Halford *Ghost* turbojet engines, capable of covering $2400 km (1500 mi)$ at $740 km/h (460 mph)$.
+
+The 1957 Boeing *707*, with a configuration and performances anticipating those of all its successors: four Pratt & Whitney *JT3C* turbojet engines, capable of covering $4300 km (2700 mi)$ at $900 km/h (560 mph)$.
 :::
 
-The 1943 Lockheed *Constellation*, the culmination of the propeller aircraft era: four Wright *Duplex-Cyclone* superseparated from the aircraft for maintenance only charged 18-cylinder engines, capable of covering $3700 km$ every $20 000$ hours or $10 000$ flights. Will a new type
+*Constellation Photo* CC-by-sa *by Bill Larkins*
 
-$(2300 mi)$ at $500 km/h (310 mph)$. of engine ever render the jet engine obsolete and
+*Comet Photo and 707 (edited)* CC-by-sa *by Piergiuliano Chesi*
 
-The 1949 De Havilland *Comet*, the first jet airliner: four propel aviation forward into a new era?
-
-Halford *Ghost* turbojet engines, capable of covering $2400 km (1500 mi)$ at $740 km/h (460 mph)$. The 1957 Boeing *707*, with a configuration and performances anticipating those of all its successors: four Pratt & Whitney *JT3C* turbojet engines, capable of covering $4300 km (2700 mi)$ at $900 km/h (560 mph)$. *Constellation Photo* CC-by-sa *by Bill Larkins*
-
-*Comet Photo and 707 (edited)* CC-by-sa *by Piergiuliano Chesi* by thousands. Thus, in just twenty-five years, the gas turbine engine doubled the speed of aircraft and divided the price of tickets by four.
-
-“Ready?” “Takeoff time!” The flight engineer pushes the throttle levers with me. NNggnniiiaavvrrooooooaaaaaaarrrrooouuummmmm... “N1s green.” It’s pushing hard, but accelerates ever so gently, given the weight of the behemoth. “Eighty knots” “Thrust set.” I have the tips of my feet on the rudder pedals, a precision similar to a kickboxing move. I’m enjoying every bit of it. 120 knots. I’m in control, guys. 432 passengers and 15 crew members are strapped in the back, ears and senses alert. 140 knots. Two bursts of light beacons pass by on the
+::::
 
 Problems
 
