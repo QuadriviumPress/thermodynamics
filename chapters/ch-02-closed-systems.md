@@ -91,13 +91,6 @@ In order to quantify transfers, we will use the following sign convention, illus
 
 • When they are positive, transfers $Q$ and $W$ indicate a *receipt* by the system.
 
-::::{admonition} A Bit of History
-:class: note
-
-*Engineering Thermodynamics* by Olivier Cleynen
-
-::::
-
 • Conversely, when they are negative, transfers $Q$ and $W$ indicate a *loss* from the system. The system then supplies work $W$ and rejects heat $Q$.
 
 :::{figure} ../images/fig-2-4.jpg
@@ -193,13 +186,6 @@ A
 
 Today, since we are using a fluid, we want to express work in terms of *pressure* and *volume* rather than force and length.
 
-::::{admonition} A Bit of History
-:class: note
-
-*Engineering Thermodynamics* by Olivier Cleynen
-
-::::
-
 :::{figure} ../images/fig-2-5.jpg
 :label: fig-2-5
 :enumerator: 2.5
@@ -207,6 +193,8 @@ Today, since we are using a fluid, we want to express work in terms of *pressure
 
 Initially, we model the fluid inside the system with a metal spring.
 :::
+
+*Diagram* CC-by-sa *Olivier Cleynen*
 
 **Pressure** is defined as a force divided by an area:
 
@@ -266,10 +254,7 @@ where $dV$ is the infinitesimal change in volume $(m^{3})$, $A$ is the area of t
 
 In the SI system of units, volume is measured in $m^{3}$, but the student is likely accustomed to using at least one of three common units:
 
-*Diagram* CC-by-sa *Olivier Cleynen*
-
 - The liter
-
 
 :::{math}
 :label: eq-2-11
@@ -279,7 +264,6 @@ In the SI system of units, volume is measured in $m^{3}$, but the student is lik
 
 - The US gallon
 
-
 :::{math}
 :label: eq-2-12
 :enumerator: 2/12
@@ -287,7 +271,6 @@ In the SI system of units, volume is measured in $m^{3}$, but the student is lik
 :::
 
 - The imperial gallon
-
 
 :::{math}
 :label: eq-2-13
@@ -298,22 +281,16 @@ In the SI system of units, volume is measured in $m^{3}$, but the student is lik
 Let’s now express the work of a closed system in terms of volume and pressure. By inserting equations 2/5 and 2/10 into equation 1/11, we obtain:
 
 :::{math}
-B B F
+W_{\mathrm{A}\rightarrow \mathrm{B}}= -\int_{A}^{B} F dl = -\int_{A}^{B} \frac{F}{A} Adl
 :::
-
-:::{math}
-W_{\mathrm{A}\rightarrow \mathrm{B}}= -\int F dl = -\int \frac{}{A} Adl
-:::
-
-A A B
 
 :::{math}
 :label: eq-2-14
 :enumerator: 2/14
-W_{\mathrm{A}\rightarrow \mathrm{B}}= -\int pdV
+W_{\mathrm{A}\rightarrow \mathrm{B}}= -\int_{A}^{B} pdV
 :::
 
-A for a closed system modeled by a spring, where $W_{\mathrm{A}\rightarrow \mathrm{B}}$ is the work received by the system $(J)$, $p$ is the (uniform) internal pressure $(Pa)$,
+for a closed system modeled by a spring, where $W_{\mathrm{A}\rightarrow \mathrm{B}}$ is the work received by the system $(J)$, $p$ is the (uniform) internal pressure $(Pa)$,
 
 and $dV$ is the change in volume $(m^{3})$.
 
@@ -330,13 +307,6 @@ Pressure-volume diagram of a closed system modeled by a spring. In the case show
 :::
 
 *Diagram* CC-0 *Olivier Cleynen*
-
-::::{admonition} A Bit of History
-:class: note
-
-*Engineering Thermodynamics* by Olivier Cleynen
-
-::::
 
 ````{prf:example}
 :label: ex-2-1
@@ -441,13 +411,6 @@ A for a closed system when volume changes are infinitely slow; where $w_{\mathrm
 
 and $dv$ is the change in specific volume $(m^{3}kg^{-1})$.
 
-::::{admonition} A Bit of History
-:class: note
-
-*Engineering Thermodynamics* by Olivier Cleynen
-
-::::
-
 On a diagram representing pressure as a function of specific volume, this work $w_{\mathrm{A}\rightarrow \mathrm{B}}$ is represented by the area under the curve from A to B, just like in figure 2.6. The shape of the curve, that is, the relationship between $p$ and $v$ as the fluid undergoes the process, will ultimately determine the quantity $w_{\mathrm{A}\rightarrow \mathrm{B}}$.
 
 How exactly do fluids behave when they are compressed – in other words, by what type of “spring” can they be modeled? Experimentally, it is observed that when compressed, most gases have their pressure and volume related by a relation of the form $p v^{k}=$ cst. with $k$ being a constant (figure 2.9). (An exception to this trend is found with liquid/vapors when they change phase, as we will see in chapter 5.)
@@ -506,13 +469,6 @@ First, we need to calculate the value of $k$ to determine quantitatively the rel
 
 ````
 
-::::{admonition} A Bit of History
-:class: note
-
-*Engineering Thermodynamics* by Olivier Cleynen
-
-::::
-
 ````{prf:example}
 
 The physical quantity represented by $k$ is confusing: it is measured in $Pa m^{3.6}kg^{-1.2}$. This is not important for us, and it is sufficient (after properly converting the input units to si!) to indicate “in si units” or $u.$si.
@@ -570,15 +526,23 @@ We multiply by the mass of the gas to obtain the work: $W_{\mathrm{A}\rightarrow
 
 This calculation can be done more quickly without calculating the values of $v_{\mathrm{A}}$, $v_{\mathrm{B}}$, and $k_{2}$. However, to ensure reaching the correct result, it is safer and easier to quantify $p$ and $v$ (in SI) at all stages of the process before starting an integration.
 
-Example 2.5
+````
 
-A gas confined in a sealed container is slowly heated. Its volume remains at $12 L$, and its pressure changes from 1 bar to 40 bar. What is
+````{prf:example}
+:label: ex-2-5
+:enumerator: 2.5
 
-The process can be drawn qualitatively on a pressure-volume diagram
+A gas confined in a sealed container is slowly heated. Its volume remains at $12 L$, and its pressure changes from 1 bar to 40 bar. What is the work done?
+
+The process can be drawn qualitatively on a pressure-volume diagram as follows:
+
+:::{figure} ../images/art-p043-1.jpg
+:alt: Illustration from the original text
+:::
 
 The work is zero, of course. Since the volume does not change, $dV$ is zero throughout the process. We can heat or cool as we wish, but as long as no wall is moved, there will be no work done.
 
-*Engineering Thermodynamics* by Olivier Cleynen
+````
 
 (sec-2-4-3)=
 ### 2.4.3 Work of a fluid in a fast process
@@ -639,13 +603,6 @@ The process traced on a pressure-volume diagram (figure 2.14) is much more compl
 
 During expansion, the opposite phenomenon occurs (figure 2.15): a zone of lower pressure forms in front of the piston wall, and the work done by the fluid on the piston is less than it would have been in the reversible case.
 
-::::{admonition} A Bit of History
-:class: note
-
-*Engineering Thermodynamics* by Olivier Cleynen
-
-::::
-
 :::{figure} ../images/fig-2-14.jpg
 :label: fig-2-14
 :enumerator: 2.14
@@ -702,13 +659,6 @@ Thus, the pressure gradually rises on the pressure-volume diagram: the excess wo
 
 ````
 
-::::{admonition} A Bit of History
-:class: note
-
-*Engineering Thermodynamics* by Olivier Cleynen
-
-::::
-
 (sec-2-4-4)=
 ### 2.4.4 Reversibility
 
@@ -734,41 +684,24 @@ These three conditions obviously exclude any real process—and in particular, a
 Richard Feynman, 1963 [[30](#ref-30), [35](#ref-35)] *The Feynman Lectures on Physics*
 :::
 
-```{exercise}
-:label: prob-2-5
-:enumerator: 2.5
+(sec-2-5)=
+## 2.5 Quantifying Heat with a Closed System
 
-:::{admonition} Answer
-:class: dropdown
+At the risk of frustrating the student, we must immediately admit that *we cannot directly quantify heat transfers*. We will always proceed by deduction: by quantifying the change in energy and subtracting the work transfers, we obtain the amount of heat that has been transferred. Mathematically, in a closed system, we simply reuse equation 2/1 to obtain:
 
-.5**
-$2) V_{\mathrm{A}}= 3.149 \times 10^{-4}m^{3}; \mathrm{so} m_{\mathrm{A}}= \frac{V_{\mathrm{A}}}{v_{\mathrm{A}}} = 3.748 \times 10^{-4}kg$
-3) $k_{1}= 1.3699$ and $k_{2}= 7.8753 \times 10^{4}u.$si; so
-$w_{\mathrm{A}\rightarrow \mathrm{B}}= -k_{2}[\frac{1}{-k_{1}+1} v^{-k_{1}+1}]^{v_{\mathrm{B}}}_{v_{\mathrm{A}}}= +260.7kJkg^{-1}.$
-4) $q_{\mathrm{B}\rightarrow \mathrm{C}}= \Delta u-w_{\mathrm{B}\rightarrow \mathrm{C}}= \Delta u-0 = +1543.3 kJ kg^{-1} 5) w_{\mathrm{C}\rightarrow \mathrm{D}}= -k_{3}[\frac{1}{-k_{1}+1} v^{-k_{1}+1}]^{v_{\mathrm{D}}}_{v_{\mathrm{C}}}= - \frac{k_{3}}{k_{2}} w_{\mathrm{A}\rightarrow \mathrm{B}}= - \frac{p_{\mathrm{C}}}{p_{\mathrm{B}}} w_{\mathrm{A}\rightarrow \mathrm{B}}= -1152.2kJkg^{-1}$
-6) $q_{\mathrm{D}\rightarrow \mathrm{A}}= -w_{\mathrm{A}\rightarrow \mathrm{B}}- q_{\mathrm{B}\rightarrow \mathrm{C}}- w_{\mathrm{C}\rightarrow \mathrm{D}}= -651.8kJkg^{-}7) \eta _{\mathrm{engine}}= |||8) f = \frac{1w_{\mathrm{A}\rightarrow \mathrm{B}}+w_{\mathrm{C}\rightarrow \mathrm{D}}q_{\mathrm{B}\rightarrow \mathrm{C}}W_{\mathrm{engine}}||| = 5}{m_{\mathrm{A}}(w_{\mathrm{A}\rightarrow \mathrm{B}}+w_{\mathrm{C}\rightarrow \mathrm{D}})} 7.8\% (\mathrm{very} \mathrm{honorable})= 176.1Hz (176$
-combustions per second), so approximately
-5300 rotations per minute with a four-stroke,
-four-cylinder engine.
-
+:::{math}
+:label: eq-2-16
+:enumerator: 2/16
+Q_{1\rightarrow 2}= \Delta U - W_{1\rightarrow 2}
 :::
-```
 
-## System for a closed system.
+:::{math}
+:label: eq-2-17
+:enumerator: 2/17
+q_{1\rightarrow 2}= \Delta u - w_{1\rightarrow 2}
+:::
 
-*gas*) and 5 (*liquids and vapors*).
-
-**Quantifying Heat with a Closed**
-
-At the risk of frustrating the student, we must immediately admit that *we*
-
-*cannot directly quantify heat transfers*. We will always proceed by deduction:
-
-by quantifying the change in energy and subtracting the work transfers, we obtain the amount of heat that has been transferred. Mathematically, in a closed system, we simply reuse equation 2/1 to obtain:
-
-$Q_{1\rightarrow 2}= \Delta U - W_{1\rightarrow 2}$ (2/16)
-
-$q_{1\rightarrow 2}= \Delta u - w_{1\rightarrow 2}$ (2/17)
+for a closed system.
 
 The entire difficulty in quantifying a heat transfer is now to predict and quantify the change in internal energy, $\Delta U$. For gases, $U$ is simply proportional to temperature; for liquids and vapors, the relationship is more complex. We will learn to quantify energy in fluids in chapters 4 (*the ideal gas*) and 5 (*liquids and vapors*).
 
@@ -848,29 +781,34 @@ Different steam compound systems.
 
 ## Problems
 
-2.1 Simple Processes
+```{exercise}
+:label: prob-2-1
+:enumerator: 2.1
 
-(An exercise simply designed to practice the sign conventions and vocabulary of the chapter.)
+**Simple Processes** *(An exercise simply designed to practice the sign conventions and vocabulary of the chapter.)* A mass of $400 g$ of water is placed in a sealed reservoir. It undergoes a process during which it receives $50 kJ kg^{-1}$ of heat, and so its internal energy increases by $4 kJ$. 1. Did it receive or supply work, and how much? This same mass is then supplied with $800 J$ of work in an adiabatic manner. 2. What is the change in its specific internal energy?
 
-A mass of $400g$ of water is placed in a sealed reservoir. It undergoes a process during which it receives
+:::{admonition} Answer
+:class: dropdown
 
-$50kJkg^{-1}$ of heat, and so its internal energy increases by $4kJ$.
+1) $W_{\mathrm{A}\rightarrow \mathrm{B}}= \Delta U - mq_{\mathrm{A}\rightarrow \mathrm{B}}= -16 kJ$ (so the work is done)
+2) $\Delta u = q_{\mathrm{B}\rightarrow \mathrm{C}}+ w_{\mathrm{B}\rightarrow \mathrm{C}}= 0 + \frac{W_{\mathrm{B}\rightarrow \mathrm{C}}}{m} = +2 kJ kg^{-1}$.
 
-1. Did it receive or supply work, and how much?
+:::
+```
 
-This same mass is then supplied with $800J$ of work in an adiabatic manner.
+```{exercise}
+:label: prob-2-2
+:enumerator: 2.2
 
-2. What is the change in its specific internal energy?
+**Arbitrary Processes of a Gas in the Laboratory** A mass of $80 g$ of helium is contained in a cylinder of $0.04 m^{3}$. The gas is first cooled reversibly at constant pressure until $0.02 m^{3}$ and $2 bar$; then heated at constant volume until $4 bar$. 1. Plot the process on a pressure-volume diagram. 2. What is the work supplied or received by the gas?
 
-2.2 Arbitrary Processes of a Gas in the Laboratory
+:::{admonition} Answer
+:class: dropdown
 
-A mass of $80g$ of helium is contained in a cylinder of
+2) $W_{\mathrm{A}\rightarrow \mathrm{C}}= W_{\mathrm{A}\rightarrow \mathrm{B}}+ W_{\mathrm{B}\rightarrow \mathrm{C}}= -p_{\mathrm{cst}.}\left[V\right]_{V_{\mathrm{A}}}^{V_{\mathrm{B}}} + 0 = +4 kJ$
 
-$0.04m^{3}$. The gas is first cooled reversibly at constant pressureuntil$0.02m^{3}$ and$2bar$;then heated at constant volume until $4bar$.
-
-1. Plot the process on a pressure-volume diagram.
-
-2. What is the work supplied or received by the gas?
+:::
+```
 
 ```{exercise}
 :label: prob-2-3
@@ -922,6 +860,7 @@ $2) m = \frac{V_{\mathrm{A}}}{v_{\mathrm{A}}} = 3.534 \times 10^{-4}kg 3) \frac{
    :::
 
 ```{exercise}
+:label: prob-2-5
 :enumerator: 2.5
 
 **Cycle of a Gasoline Engine We want to study the operation of a four-cylinder gasoline engine (figure 2.21). Like all reciprocating heat engines, it supplies work by varying the pressure and volume of small amounts of air trapped in its cylinders. Here, we simplify the details of its operation to reduce it to the ideal case, where all processes are reversible. The engine has a displacement of $1.1 L$; it is equipped with four cylinders of diameter $7 cm$ and has a compression ratio (ratio between maximum and minimum volumes in a cylinder) of $7.9$. Air enters the engine under atmospheric conditions $(14.5 psi$ or $1 bar, 0.84 m^{3}kg^{-1})$. We can describe a cycle inside a cylinder with the following four steps: **From A to B** the air is adiabatically compressed from the bottom dead center to the top dead center. During this process, we know that its properties are related by the relation $p v^{k_{1}}= k_{2}$. At B, the pressure has reached $246.1 psi (16.97 bar)$. **From B to C** it is heated at constant volume (as if the piston were stationary) until the pressure reaches $1087.8 psi (75 bar)$. By measuring temperature, it is found that its specific internal energy increases by $1543.3 kJ kg^{-1}$. **From C to D** the air is adiabatically expanded from the top dead center to the bottom dead center. Its properties are related by the relation $p v^{k_{1}}= k_{3}$.**
@@ -929,25 +868,17 @@ $2) m = \frac{V_{\mathrm{A}}}{v_{\mathrm{A}}} = 3.534 \times 10^{-4}kg 3) \frac{
 :::{admonition} Answer
 :class: dropdown
 
-.5**
 $2) V_{\mathrm{A}}= 3.149 \times 10^{-4}m^{3}; \mathrm{so} m_{\mathrm{A}}= \frac{V_{\mathrm{A}}}{v_{\mathrm{A}}} = 3.748 \times 10^{-4}kg$
 3) $k_{1}= 1.3699$ and $k_{2}= 7.8753 \times 10^{4}u.$si; so
 $w_{\mathrm{A}\rightarrow \mathrm{B}}= -k_{2}[\frac{1}{-k_{1}+1} v^{-k_{1}+1}]^{v_{\mathrm{B}}}_{v_{\mathrm{A}}}= +260.7kJkg^{-1}.$
-4) $q_{\mathrm{B}\rightarrow \mathrm{C}}= \Delta u-w_{\mathrm{B}\rightarrow \mathrm{C}}= \Delta u-0 = +1543.3 kJ kg^{-1} 5) w_{\mathrm{C}\rightarrow \mathrm{D}}= -k_{3}[\frac{1}{-k_{1}+1} v^{-k_{1}+1}]^{v_{\mathrm{D}}}_{v_{\mathrm{C}}}= - \frac{k_{3}}{k_{2}} w_{\mathrm{A}\rightarrow \mathrm{B}}= - \frac{p_{\mathrm{C}}}{p_{\mathrm{B}}} w_{\mathrm{A}\rightarrow \mathrm{B}}= -1152.2kJkg^{-1}$
-6) $q_{\mathrm{D}\rightarrow \mathrm{A}}= -w_{\mathrm{A}\rightarrow \mathrm{B}}- q_{\mathrm{B}\rightarrow \mathrm{C}}- w_{\mathrm{C}\rightarrow \mathrm{D}}= -651.8kJkg^{-}7) \eta _{\mathrm{engine}}= |||8) f = \frac{1w_{\mathrm{A}\rightarrow \mathrm{B}}+w_{\mathrm{C}\rightarrow \mathrm{D}}q_{\mathrm{B}\rightarrow \mathrm{C}}W_{\mathrm{engine}}||| = 5}{m_{\mathrm{A}}(w_{\mathrm{A}\rightarrow \mathrm{B}}+w_{\mathrm{C}\rightarrow \mathrm{D}})} 7.8\% (\mathrm{very} \mathrm{honorable})= 176.1Hz (176$
-combustions per second), so approximately
-5300 rotations per minute with a four-stroke,
-four-cylinder engine.
+4) $q_{\mathrm{B}\rightarrow \mathrm{C}}= \Delta u-w_{\mathrm{B}\rightarrow \mathrm{C}}= \Delta u-0 = +1543.3 kJ kg^{-1}$
+5) $w_{\mathrm{C}\rightarrow \mathrm{D}}= -k_{3}[\frac{1}{-k_{1}+1} v^{-k_{1}+1}]^{v_{\mathrm{D}}}_{v_{\mathrm{C}}}= - \frac{k_{3}}{k_{2}} w_{\mathrm{A}\rightarrow \mathrm{B}}= - \frac{p_{\mathrm{C}}}{p_{\mathrm{B}}} w_{\mathrm{A}\rightarrow \mathrm{B}}= -1152.2kJkg^{-1}$
+6) $q_{\mathrm{D}\rightarrow \mathrm{A}}= -w_{\mathrm{A}\rightarrow \mathrm{B}}- q_{\mathrm{B}\rightarrow \mathrm{C}}- w_{\mathrm{C}\rightarrow \mathrm{D}}= -651.8 kJ kg^{-1}$
+7) $\eta _{\mathrm{engine}}= \left|\frac{w_{\mathrm{A}\rightarrow \mathrm{B}}+w_{\mathrm{C}\rightarrow \mathrm{D}}}{q_{\mathrm{B}\rightarrow \mathrm{C}}}\right| = 57.8\%$ (very honorable)
+8) $f = \frac{\dot{W}_{\mathrm{engine}}}{m_{\mathrm{A}}(w_{\mathrm{A}\rightarrow \mathrm{B}}+w_{\mathrm{C}\rightarrow \mathrm{D}})} = 176.1 Hz$ (176 combustions per second), so approximately 5300 rotations per minute with a four-stroke, four-cylinder engine.
 
 :::
 ```
-
-::::{admonition} A Bit of History
-:class: note
-
-*Engineering Thermodynamics* by Olivier Cleynen
-
-::::
 
 :::{figure} ../images/fig-2-21.jpg
 :label: fig-2-21
@@ -1029,9 +960,3 @@ $p_{\mathrm{D}1}= 194.8\,\mathrm{bar} = 2825\,\mathrm{psi}$.
 :::
 ```
 
-::::{admonition} A Bit of History
-:class: note
-
-*Engineering Thermodynamics* by Olivier Cleynen
-
-::::

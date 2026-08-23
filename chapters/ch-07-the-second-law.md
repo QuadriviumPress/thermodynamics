@@ -92,13 +92,6 @@ Production of work with heat from a body at $100^{\circ}C$. The heat transfer al
 
 Once it has done some work (at B in figure 7.1), the fluid has increased in volume. If we want to continue converting heat into work and do not want the engine to “infalte” indefinitely, we need to cool this gas to return it to its initial volume.
 
-::::{admonition} A Bit of History
-:class: note
-
-*Engineering Thermodynamics* by Olivier Cleynen
-
-::::
-
 Unfortunately, *the only way* to extract heat from the gas is to put it in contact with a “cooler” body, as shown in figure 7.2. In particular, it is impossible to return the accumulated heat in the gas to the “hot” body – for that to happen, the gas temperature would need to be higher than this body. This accumulated energy is therefore irretrievably lost.
 
 :::{aside}
@@ -163,13 +156,6 @@ An example of energy transfers to a thermal engine.
 *Diagram* CC-0 *Olivier Cleynen*
 
 In power plants, the two temperature zones are easily identifiable: the steam takes heat from the core of the plant (nuclear reactor, gas boiler, or coal boiler) and releases heat through the large cooling chimneys.
-
-::::{admonition} A Bit of History
-:class: note
-
-*Engineering Thermodynamics* by Olivier Cleynen
-
-::::
 
 Automotive and aeronautical engines, on the other hand, must discharge the air that serves as their working fluid because of the combustion products that prevent its reuse. For this reason, cooling takes place in the atmosphere, outside the engine casing. Their “cooling zone” is not easily distinguishable.
 
@@ -242,13 +228,6 @@ In thermodynamic terms, the machine he conceptualized is not only *bidirectional
 
 [^ch7-fn1]: Carnot figured out the second law correctly, but not the first law: he still used Antoine Lavoisier’s *caloric theory*, which was to be dismantled by James Prescott Joule twenty years later.
 
-::::{admonition} A Bit of History
-:class: note
-
-*Engineering Thermodynamics* by Olivier Cleynen
-
-::::
-
 :::{figure} ../images/fig-7-6.jpg
 :label: fig-7-6
 :enumerator: 7.6
@@ -320,13 +299,6 @@ In this stage, we aim to raise the temperature of the fluid to a high level with
 The cycle starts at 1, when the fluid is in the cylinder at the low temperature $T_{L}$. In order to raise it to a high temperature (thus enabling a reversible heat transfer in the following phase $2 \rightarrow 3)$, the fluid is reversibly adiabatically compressed (§4.4.5 & §5.4.5). The fluid’s temperature increases from $T_{L}$ to $T_{H}$.
 
 This phase requires work *input* $(W_{1\rightarrow 2}> 0)$.
-
-::::{admonition} A Bit of History
-:class: note
-
-*Engineering Thermodynamics* by Olivier Cleynen
-
-::::
 
 **Isothermal heating from 2 to 3** In this stage, we aim to absorb a quantity $Q_{TH}$ of heat from the high-temperature source.
 
@@ -412,13 +384,6 @@ This phase’s sole purpose is to raise the temperature so that we can later abs
 
 ````
 
-::::{admonition} A Bit of History
-:class: note
-
-*Engineering Thermodynamics* by Olivier Cleynen
-
-::::
-
 ````{prf:example}
 
 We can now absorb heat at constant temperature $(2 \rightarrow 3)$. We choose to expand the gas to $p_{3}= 4 bar$. Thus the heat transfer is $q_{2\rightarrow 3}= -R T_{2}\ln (\frac{p_{3}}{p_{2}} ) =$
@@ -480,13 +445,6 @@ Pressure-volume diagram for a reversed Carnot cycle, namely, in refrigeration mo
 :::
 
 *Diagram* CC-0 *Olivier Cleynen*
-
-::::{admonition} A Bit of History
-:class: note
-
-*Engineering Thermodynamics* by Olivier Cleynen
-
-::::
 
 (sec-7-4)=
 ## 7.4 Thermodynamic Temperature Scale
@@ -557,13 +515,6 @@ Thomson’s proposition is as follows: consider a body at a temperature $T_{1}$ 
 
 [^ch7-fn2]: In fact, the records are again not that simple. Thomson initially proposed (in 1848 [[9](#ref-9)]) a scale in which $\frac{\dot{Q}_{TH}}{\dot{Q}_{TL}}$ is proportional to the *difference* of temperatures; making it a logarithmic scale from our current perspective. He revised this with the help of James Prescott Joule to arrive at proposition 7/4 six years later [[14](#ref-14)].
 
-::::{admonition} A Bit of History
-:class: note
-
-*Engineering Thermodynamics* by Olivier Cleynen
-
-::::
-
 in a Carnot engine (actually, for any machine performing a reversible transformation), where$\dot{Q}_{TH}$ is the heat transfer rate absorbed or rejected at high temperature $(\dot{Q}_{TL}$, at low temperature), and where the temperatures are *absolute* (measured in $K)$.
 
 :::{figure} ../images/fig-7-12.jpg
@@ -618,13 +569,6 @@ In order to illustrate the nature of the Kelvin scale, we carry out the followin
 $T_{B}= -\frac{Q_{\mathrm{out}}}{\dot{Q}_{\mathrm{in}}} T_{H}= -\frac{-155}{200} (1668 + 273.15) = 1504.4 K = 1231.2^{\circ}C$.
 
 ````
-
-::::{admonition} A Bit of History
-:class: note
-
-*Engineering Thermodynamics* by Olivier Cleynen
-
-::::
 
 ````{prf:example}
 
@@ -701,14 +645,13 @@ We have indeed found the result obtained previously in example 7.1 p. 188, with 
 ````
 
 (sec-7-5-2)=
-### 7.5.2 Efcfiiency of the Carnot refrigerator
+### 7.5.2 Efficiency of the Carnot refrigerator
 
 We saw in §6.3.3 that the efficiency of a refrigerator is the comparison between the heat extracted from the cold source (useful transfer,$\dot{Q}_{\mathrm{in}})$ and the work input (energy expenditure,$\dot{W}_{\mathrm{net}})$. We had expressed this efficiency with the obscure expression:
 
 :::{math}
-:label: eq-6-7
 :enumerator: 6/7
-\eta _{\mathrm{refrigerator}}= ||| \frac{Q_{TH}1}{Q_{TL}} ||| - 1
+\eta _{\mathrm{refrigerator}}= \frac{1}{\left|\dfrac{\dot{Q}_{TH}}{\dot{Q}_{TL}}\right| - 1}
 :::
 
 for all refrigerators.
@@ -718,7 +661,7 @@ When it comes to a Carnot refrigerator, this efficiency is a function of tempera
 :::{math}
 :label: eq-7-7
 :enumerator: 7/7
-\eta _{\mathrm{Carnot} \mathrm{refrigerator}}= \frac{T_{H}}{T_{L}} - 11
+\eta _{\mathrm{Carnot\ refrigerator}}= \frac{1}{\dfrac{T_{H}}{T_{L}} - 1}
 :::
 
 for a reversible refrigerator, where temperatures are absolute $(K)$.
@@ -731,7 +674,7 @@ The same remarks as above apply here: firstly, the efficiency of a refrigerator 
 
 A refrigerator must bring the cold chamber to $5 ^{\circ} F (-15^{\circ}C)$ in a room at $77 ^{\circ} F (25^{\circ}C)$. What is the maximum achievable efficiency?
 
-The maximum efficiency would be achieved with a reversible refrigerator, allowing us to obtain, with equation 7/7, $\eta _{\mathrm{refrigerator}}= \eta _{\mathrm{Carnot} \mathrm{refrigerator}}= \frac{1}{^{TH}_{TL}-1} = \frac{25+271_{3.15}}{-15+273.15}-1 = 6.45$.
+The maximum efficiency would be achieved with a reversible refrigerator, allowing us to obtain, with equation 7/7, $\eta _{\mathrm{refrigerator}}= \eta _{\mathrm{Carnot\ refrigerator}}= \dfrac{1}{\dfrac{T_{H}}{T_{L}}-1} = \dfrac{1}{\dfrac{25+273.15}{-15+273.15}-1} = 6.45$.
 
 By carrying out the same calculation between temperatures of
 
@@ -745,7 +688,9 @@ $365 ^{\circ} F$ and $437 ^{\circ} F (185^{\circ}C$ and $225^{\circ}C)$, we obta
 We saw in §6.3.4 that the efficiency (or Coefficient of Performance, cop) of a heat pump is defined as the ratio of the heat supplied at high temperature to the work input (6/8). We had then transformed this definition with the expression:
 
 :::{math}
-\eta _{\mathrm{heat} \mathrm{pump}}= \frac{1}{1 - ||| \frac{Q_{TL}}{Q_{TH}} |||} (6/9)
+:label: eq-6-9
+:enumerator: 6/9
+\eta _{\mathrm{heat\ pump}}= \frac{1}{1 - \left|\dfrac{\dot{Q}_{TL}}{\dot{Q}_{TH}}\right|}
 :::
 
 for all heat pumps.
@@ -753,7 +698,9 @@ for all heat pumps.
 Using relation 7/4, when the machine is reversible, we can express this efficiency solely based on the high and low temperatures:
 
 :::{math}
-\eta _{\mathrm{Carnot} \mathrm{heat} \mathrm{pump}}= \frac{1}{1 - \frac{T_{L}}{T_{H}}} (7/8)
+:label: eq-7-8
+:enumerator: 7/8
+\eta _{\mathrm{Carnot\ heat\ pump}}= \frac{1}{1 - \dfrac{T_{L}}{T_{H}}}
 :::
 
 for a reversible heat pump, where temperatures are absolute $(K)$.
@@ -844,46 +791,117 @@ Ultimately, there is probably not a product in today's industry that we manufact
 
 ## Problems
 
-   7.2 Maximum Efficiency of a Refrigerator
+The properties of water are tabulated in Steam Tables 1, 2, and 3 (see Appendix A1 p. 305)
 
-   What is the theoretical maximum efficiency that a household freezer could reach when operating between temperatures of $-6^{\circ}C$ and $20^{\circ}C (21.2^{\circ} F$ and $68^{\circ} F)$?
+Air is considered an ideal gas.
 
-   For what reason(s) is the cop reached by conventional freezers (around $3)$ lower than this value?
+$c_{v (\mathrm{air})}= 718 J kg^{-1}K^{-1} \qquad R_{\mathrm{air}}= 287 J kg^{-1}K^{-1}$
+
+$c_{p (\mathrm{air})}= 1005 J kg^{-1}K^{-1} \qquad \gamma _{\mathrm{air}}= 1.4$
+
+We assume that for a reversible adiabatic process (without heat transfer and infinitely slow), the properties of air are linked according to the following three relationships:
+
+:::{math}
+\left(\frac{T_{1}}{T_{2}}\right) = \left(\frac{v_{2}}{v_{1}}\right)^{\gamma -1} \qquad (4/36)
+:::
+
+:::{math}
+\left(\frac{T_{1}}{T_{2}}\right) = \left(\frac{p_{1}}{p_{2}}\right)^{\frac{\gamma -1}{\gamma}} \qquad (4/37)
+:::
+
+:::{math}
+\left(\frac{p_{1}}{p_{2}}\right) = \left(\frac{v_{2}}{v_{1}}\right)^{\gamma} \qquad (4/38)
+:::
+
+We also assume that during a reversible isothermal process (at constant temperature and infinitely slow) of an ideal gas, the work done in an open or closed system is:
+
+:::{math}
+w_{1\rightarrow 2}= RT_{\mathrm{cst}.}\ln \left(\frac{p_{2}}{p_{1}}\right) = RT_{\mathrm{cst}.}\ln \left(\frac{v_{1}}{v_{2}}\right) \qquad (4/29)
+:::
+
+Finally, we assume that the efficiencies of thermal machines based on a Carnot cycle are expressed as a function of the absolute temperatures as follows:
+
+:::{math}
+\eta _{\mathrm{Carnot\ engine}}= 1 - \frac{T_{L}}{T_{H}} \qquad (7/6)
+:::
+
+:::{math}
+\eta _{\mathrm{Carnot\ refrigerator}}= \frac{1}{\dfrac{T_{H}}{T_{L}} - 1} \qquad (7/7)
+:::
+
+:::{math}
+\eta _{\mathrm{Carnot\ heat\ pump}}= \frac{1}{1 - \dfrac{T_{L}}{T_{H}}} \qquad (7/8)
+:::
 
    :::{figure} ../images/art-p200-1.svg
    :alt: Illustration from the original text
    :::
 
-   7.4 Carnot Cycle
+```{exercise}
+:label: prob-7-1
+:enumerator: 7.1
 
-   Since this cycle plays a central role in thermodynamics,
+**Maximum Efficiency of an Engine** What is the maximum efficiency that a steam power plant can reach when operating in the atmosphere at room temperature $(15^{\circ}C$ or $59^{\circ} F)$, with a maximum temperature of $800^{\circ}C (1472^{\circ} F)$?
 
-   it is useful to be able to describe it precisely:
+:::{admonition} Answer
+:class: dropdown
 
-   1. Describe briefly the four phases of a Carnot engine cycle, describing the direction of heat transfers.
+$\eta _{\max.}= 73.1\%$ (eq. 7/6, see example 7.3 p. 196).
 
-   2. Why are heat transfers isothermal?
+:::
+```
 
-   3. Is it preferable to use a perfect gas or a liquidvapor mixture to perform this cycle?
+```{exercise}
+:label: prob-7-2
+:enumerator: 7.2
 
-   4. What practical problems does the Carnot cycle pose?
+**Maximum Efficiency of a Refrigerator** What is the theoretical maximum efficiency that a household freezer could reach when operating between temperatures of $-6^{\circ}C$ and $20^{\circ}C (21.2^{\circ} F$ and $68^{\circ} F)$? For what reason(s) is the cop reached by conventional freezers (around $3)$ lower than this value?
 
-   7.1 Maximum Efficiency of an
+:::{admonition} Answer
+:class: dropdown
 
-   Engine
+1) $\mathrm{cop}_{\max.}= 10.3$ (eq. 7/7, see example 7.4 p. 197);
+2) Non-reversible compressions and expansions (thus $w_{4\rightarrow 3}+ w_{2\rightarrow 1}> 0$), especially if a valve is used (§6.2.3); Non-isothermal heat transfers.
 
-   What is the maximum efficiency that a steam power plant can reach when operating in the atmosphere at room temperature $(15^{\circ}C$ or $59^{\circ} F)$, with a maximum temperature of $800^{\circ}C (1472^{\circ} F)$?
+:::
+```
 
 ```{exercise}
 :label: prob-7-3
 :enumerator: 7.3
 
-**Maximum Efficiency of a Heat Pump A person wants to install a heat pump to heat their home with a power of $10 kW$. 1. Explain briefly why the performance of a heat pump is expressed as: 2. Estimate the theoretical minimum consumption of the pump on a very cold evening $(T_{\mathrm{ext}.}= -12^{\circ}C = 10.4 ^{\circ} F$; $T_{\mathrm{int}.}= 20^{\circ}C = 68 ^{\circ} F)$. 3. What will be the minimum consumption of the heat pump when the internal and external temperatures are $17^{\circ}C$ and $16^{\circ}C$ respectively? 4. What will be the theoretical minimum consumption of the heat pump in the case where the internal and external temperatures are identical? What happens in theory if the external temperature is higher than inside?**
+**Maximum Efficiency of a Heat Pump** A person wants to install a heat pump to heat their home with a power of $10 kW$. 1. Explain briefly why the performance of a heat pump is expressed as:
+
+:::{math}
+:enumerator: 7/9
+\eta _{\mathrm{heat\ pump}}= \left|\frac{\dot{Q}_{\mathrm{out}}}{\dot{W}_{\mathrm{net}}}\right|
+:::
+
+2. Estimate the theoretical minimum consumption of the pump on a very cold evening $(T_{\mathrm{ext}.}= -12^{\circ}C = 10.4 ^{\circ} F$; $T_{\mathrm{int}.}= 20^{\circ}C = 68 ^{\circ} F)$. 3. What will be the minimum consumption of the heat pump when the internal and external temperatures are $17^{\circ}C$ and $16^{\circ}C$ respectively? 4. What will be the theoretical minimum consumption of the heat pump in the case where the internal and external temperatures are identical? What happens in theory if the external temperature is higher than inside?**
 
 :::{admonition} Answer
 :class: dropdown
 
-1) see §6.3.4; $2)\dot{W}_{\mathrm{net}}=\dot{} \frac{Q_{\mathrm{out}}}{\eta _{\max.}} = +1.09 kW$; $3)\dot{W}_{\mathrm{net}}= +34.5 W$ (!), $W_{\mathrm{net}}= 0 W$; and when $T_{\mathrm{ext}.}> T_{\mathrm{int}.},\dot{W}_{\mathrm{net}}$ becomes negative: the heat pump operates as an engine…
+1) see §6.3.4;
+2) $\dot{W}_{\mathrm{net}}= \frac{\dot{Q}_{\mathrm{out}}}{\eta _{\max.}} = +1.09 kW$;
+3) $\dot{W}_{\mathrm{net}}= +34.5 W$ (!), $\dot{W}_{\mathrm{net}}= 0 W$; and when $T_{\mathrm{ext}.}> T_{\mathrm{int}.},\dot{W}_{\mathrm{net}}$ becomes negative: the heat pump operates as an engine…
+
+:::
+```
+
+```{exercise}
+:label: prob-7-4
+:enumerator: 7.4
+
+**Carnot Cycle** Since this cycle plays a central role in thermodynamics, it is useful to be able to describe it precisely: 1. Describe briefly the four phases of a Carnot engine cycle, describing the direction of heat transfers. 2. Why are heat transfers isothermal? 3. Is it preferable to use a perfect gas or a liquid-vapor mixture to perform this cycle? 4. What practical problems does the Carnot cycle pose?
+
+:::{admonition} Answer
+:class: dropdown
+
+1) see §7.3.4, especially figures 7.8 and 7.9;
+2) see §7.3.3;
+3) It doesn't matter at all!
+4) Its volume and its power ratio are very large, and its power is infinitely small…
 
 :::
 ```
@@ -897,8 +915,10 @@ Ultimately, there is probably not a product in today's industry that we manufact
 :::{admonition} Answer
 :class: dropdown
 
-We see that when performed under the saturation curve, the Carnot cycle is already easier to perform in practice, since heat transfers occur at constant pressure (and thus do not require a moving part); 2) $T_{B}= (1 - \eta)T_{H}= 55.74^{\circ}C$; thus by interpolation between $55$ and $60^{\circ}C$ we get $p_{\mathrm{sat}. 55.74^{\circ}C}= 0.1285 bar$. The condenser is thus depressurized; 3) $q_{\mathrm{in}}= h_{\mathrm{LV} 275^{\circ}C}= +1574.3 kJ kg^{-1}$: we obtain $W_{\mathrm{net}}= -m\dot{\eta} q_{\mathrm{in}}= -566.7 kW$; 4) The power ratio and the complexity of the machine will increase, but the efficiency will remain unchanged!
-*Engineering Thermodynamics* by Olivier Cleynen
+We see that when performed under the saturation curve, the Carnot cycle is already easier to perform in practice, since heat transfers occur at constant pressure (and thus do not require a moving part);
+2) $T_{B}= (1 - \eta)T_{H}= 55.74^{\circ}C$; thus by interpolation between $55$ and $60^{\circ}C$ we get $p_{\mathrm{sat}. 55.74^{\circ}C}= 0.1285 bar$. The condenser is thus depressurized;
+3) $q_{\mathrm{in}}= h_{\mathrm{LV} 275^{\circ}C}= +1574.3 kJ kg^{-1}$: we obtain $\dot{W}_{\mathrm{net}}= -\dot{m}\eta q_{\mathrm{in}}= -566.7 kW$;
+4) The power ratio and the complexity of the machine will increase, but the efficiency will remain unchanged!
 
 :::
 ```
@@ -911,12 +931,19 @@ We see that when performed under the saturation curve, the Carnot cycle is alrea
    Schematic representation of a steam power plant operating with the Carnot cycle.
    :::
 
-::::{admonition} A Bit of History
-:class: note
+```{exercise}
+:label: prob-7-6
+:enumerator: 7.6
 
-*Engineering Thermodynamics* by Olivier Cleynen
+**Reversibility of Machines** Briefly show that it is impossible to design a heat pump with efficiency higher than that achieved by a reversible machine, for example in the same way we did with an engine in fig. 7.7 p. 183.
 
-::::
+:::{admonition} Answer
+:class: dropdown
+
+A heat pump like this could be powered by a Carnot engine; together, they would form a machine capable of carrying heat from $T_{L}$ to $T_{H}$ without the need for external work (with the arbitrary values shown here, $\dot{Q}_{\mathrm{out\ together}}= -40 W$).
+
+:::
+```
 
 ```{exercise}
 :label: prob-7-7
@@ -927,10 +954,8 @@ We see that when performed under the saturation curve, the Carnot cycle is alrea
 :::{admonition} Answer
 :class: dropdown
 
-.7**
 1) This is the arrangement shown in fig. 7.9 p. 187;
-2) By starting from the definition 6/4: $\eta _{\mathrm{engine}}\equiv$
-at the requested equation 7/6;
+2) By starting from the definition 6/4: $\eta _{\mathrm{engine}}\equiv \left|\frac{\dot{W}_{\mathrm{net}}}{\dot{Q}_{\mathrm{in}}}\right| = -\frac{\dot{W}_{\mathrm{net}}}{\dot{Q}_{\mathrm{in}}} = -\frac{-\dot{Q}_{\mathrm{in}}-\dot{Q}_{\mathrm{out}}}{\dot{Q}_{\mathrm{in}}} = 1+\frac{\dot{Q}_{\mathrm{out}}}{\dot{Q}_{\mathrm{in}}} = 1-\left|\frac{\dot{Q}_{\mathrm{out}}}{\dot{Q}_{\mathrm{in}}}\right| = 1-\left|\frac{\dot{Q}_{TH}}{\dot{Q}_{TL}}\right|$; with definition eq. 7/4 p. 192 we arrive at the requested equation 7/6;
 3) $q_{\mathrm{in}}= -\frac{w_{\mathrm{net}}}{\eta _{\mathrm{engine}}} = +105.4 kJ kg^{-1}$;
 4) $q_{\mathrm{out}}= -w_{\mathrm{net}}- q_{\mathrm{in}}= -35.4 kJ kg^{-1}$;
 6) The isothermal compressor is removed, the adiabatic turbine is truncated. $T_{E}= T_{C}(\frac{p_{E}}{p_{C}} )^{\frac{\gamma -1}{\gamma}} = 330.4 K = 57.3^{\circ}C$ (eq. 4/37);

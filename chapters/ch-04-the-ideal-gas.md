@@ -120,13 +120,6 @@ In one cubic meter $(220 gal imp)$, we have only $1.2 kg (2.6 lb)$ of air. This 
 
 [^ch4-fn1]: Sometimes in other books, the constant in $J K^{-1}kg^{-1}$ is denoted as $r$. The quantity then denoted $R = 8.3143 J K^{-1}mol^{-1}$ is universal, and gases adopt different values of $r$ depending on their molar mass $M \equiv \frac{m}{n}$. In this book, we do not quantify amounts of substance.
 
-::::{admonition} A Bit of History
-:class: note
-
-*Engineering Thermodynamics* by Olivier Cleynen
-
-::::
-
 (sec-4-1-3)=
 ### 4.1.3 What does an ideal gas represent?
 
@@ -304,7 +297,9 @@ A little algebra leads to:
 :::
 
 :::{math}
-c_{p}- c_{v}= R (4/8)
+:label: eq-4-8
+:enumerator: 4/8
+c_{p}- c_{v}= R
 :::
 
 This expression only serves to simplify equation 4/13 that we will write below.
@@ -315,11 +310,9 @@ This expression only serves to simplify equation 4/13 that we will write below.
 The ratio of thermal capacities at constant pressure and constant volume is named $\gamma$. Thus:
 
 :::{math}
-\gamma \equiv \frac{c_{p}}{} (4/9)
-:::
-
-:::{math}
-c_{v}
+:label: eq-4-9
+:enumerator: 4/9
+\gamma \equiv \frac{c_{p}}{c_{v}}
 :::
 
 By returning to figure 4.3 it quickly appears that $c_{p}$ must be greater than $c_{v}$; thus $\gamma$ is always greater than $1$. We take $\gamma _{\mathrm{air}}= 1.4$.
@@ -368,13 +361,6 @@ Mathematically, we can write it as:
 :enumerator: 4/10
 u = f(T)
 :::
-
-::::{admonition} A Bit of History
-:class: note
-
-*Engineering Thermodynamics* by Olivier Cleynen
-
-::::
 
 The function $f$ can be evaluated with an experiment in which the change of $u$ is quantified. For example, during a process at constant volume $q = \Delta u$ and $q = c_{v}\Delta T$. We can thus assert that the function $f$ is a simple proportional relation. With the internal energy arbitrarily set to zero at zero temperature $(u = 0 J kg^{-1}$ when $T = 0 K)$, we obtain:
 
@@ -914,7 +900,7 @@ Unfortunately, these two equations 4/32 and 4/34 are of no use until we have pre
 
 Let us start with an infinitely small adiabatic process in a closed system.
 
-When the process is reversible, δ$w = -pdv$ and then:
+When the process is reversible, $δw = -pdv$ and then:
 
 :::{math}
 δ q = du - δ w = 0
@@ -931,68 +917,29 @@ c_{v}dT + \frac{RT}{v} dv = 0
 :::
 
 :::{math}
-1 1
-:::
-
-:::{math}
-\frac{}{T} dT + \frac{R}{} \frac{}{v} dv = 0
-:::
-
-:::{math}
-c_{v}
+\frac{1}{T} dT + \frac{R}{c_{v}} \frac{1}{v} dv = 0
 :::
 
 By integrating between two states 1 and 2:
 
 :::{math}
-\ln (\frac{T_{2}}{} \frac{}{} \ln (\frac{v_{2}}{v_{1}}) = 0
+\ln (\frac{T_{2}}{T_{1}}) + \frac{R}{c_{v}} \ln (\frac{v_{2}}{v_{1}}) = 0
 :::
 
 :::{math}
-T_{1}) + ^{\frac{R}{c_{v}}}
-:::
-
-:::{math}
-\frac{R}{}
-:::
-
-:::{math}
-\ln (\frac{T_{2}}{T_{1}}) + \ln (\frac{v_{2}}{} ^{cv}= 0
-:::
-
-:::{math}
-v_{1})
-:::
-
-:::{math}
-\frac{R}{}
+\ln (\frac{T_{2}}{T_{1}}) + \ln \left(\frac{v_{2}}{v_{1}}\right) ^{\frac{R}{c_{v}}} = 0
 :::
 
 :::{math}
 :label: eq-4-35
 :enumerator: 4/35
-\ln (\frac{T_{2}}{T_{1}}) = \ln (\frac{v_{1}}{} cv
+\ln (\frac{T_{2}}{T_{1}}) = \ln \left(\frac{v_{1}}{v_{2}}\right) ^{\frac{R}{c_{v}}}
 :::
-
-:::{math}
-v_{2})
-:::
-
-::::{admonition} A Bit of History
-:class: note
-
-*Engineering Thermodynamics* by Olivier Cleynen
-
-::::
 
 And since $R = c_{p}- c_{v}$ (equation 4/8) and $\gamma \equiv c_{p}/c_{v}$ (equation 4/9), we have $\frac{R}{c_{v}} = \gamma - 1$, which allows us to reformulate equation 4/35 above as:
 
 :::{math}
-\frac{T_{2}}{} \frac{v_{1}}{} \gamma -1
-:::
-
-:::{math}
-(T_{1}) = (v_{2})
+\left(\frac{T_{2}}{T_{1}}\right) = \left(\frac{v_{1}}{v_{2}}\right) ^{\gamma -1}
 :::
 
 Thus, we have linked temperature and specific volume when the process is reversible adiabatic (devoid of heat transfer and infinitely slow).
@@ -1000,46 +947,34 @@ Thus, we have linked temperature and specific volume when the process is reversi
 Some algebraic manipulations, which are left to the student to revise, allow us to derive this expression in terms of pressure. We thus obtain the following three relations:
 
 :::{math}
-\frac{T_{1}}{} \frac{v_{2}}{} \gamma -1
+:label: eq-4-36
+:enumerator: 4/36
+\left(\frac{T_{1}}{T_{2}}\right) = \left(\frac{v_{2}}{v_{1}}\right) ^{\gamma -1}
 :::
 
 :::{math}
-(T_{2}) = (v_{1})
-:::
-
-(4/36)
-
-:::{math}
-\frac{\gamma -1}{}
+:label: eq-4-37
+:enumerator: 4/37
+\left(\frac{T_{1}}{T_{2}}\right) = \left(\frac{p_{1}}{p_{2}}\right) ^{\frac{\gamma -1}{\gamma}}
 :::
 
 :::{math}
-\frac{T_{1}}{} \frac{p_{1}}{}
+:label: eq-4-38
+:enumerator: 4/38
+\left(\frac{p_{1}}{p_{2}}\right) = \left(\frac{v_{2}}{v_{1}}\right) ^{\gamma}
 :::
 
-:::{math}
-\gamma
-:::
-
-:::{math}
-(T_{2}) = (p_{2})
-:::
-
-(4/37)
-
-:::{math}
-\frac{p_{1}}{} \frac{v_{2}}{} \gamma
-:::
-
-:::{math}
-(p_{2}) = (v_{1})
-:::
-
-(4/38) for any reversible adiabatic process.
+for any reversible adiabatic process.
 
 This last equation 4/38 is equivalent to the expression:
 
-$pv^{\gamma}=$ constant (4/39) for any reversible adiabatic process.
+:::{math}
+:label: eq-4-39
+:enumerator: 4/39
+p v^{\gamma}= constant
+:::
+
+for any reversible adiabatic process.
 
 ````{prf:example}
 :label: ex-4-8
@@ -1049,15 +984,9 @@ For air, we have $c_{p (\mathrm{air})}= 1005 J kg^{-1}K^{-1}, c_{v (\mathrm{air}
 
 The maximum work will be obtained if the expansion is reversible. Since we are not allowed to supply heat, our best option here is to perform a reversible adiabatic expansion from 40 bar to 1 bar. We want to calculate the final temperature, since it will give us the change in energy, thus the work done by the gas. Among the three daunting relations 4/36 to 4/38, it is the second one that interests us:
 
-With $\left(\frac{T_{\mathrm{A}}}{T_{\mathrm{B}}}\right) = \left(\frac{p_{\mathrm{A}}}{p_{\mathrm{B}}}\right)^{\frac{\gamma-1}{\gamma}}$. Thus: $T_{\mathrm{B}}= T_{\mathrm{A}}(\frac{p_{\mathrm{A}}}{p_{\mathrm{B}}} ) ^{\gamma}= (50 + 273.15) ( \frac{40}{1} )^{-\frac{1.4-1}{1.4}} = 112.6 K = -160.5^{\circ}C = -257 ^{\circ} F$. The work done by the closed system composed of the gas is therefore $w_{\mathrm{A}\rightarrow \mathrm{B}}= \Delta u - q_{\mathrm{A}\rightarrow \mathrm{B}}= c_{v}\Delta T - 0 = 718 \times (-160.5 - 50) = -1.5115 \times 10^{5}J kg^{-1}= -151.1 kJ kg^{-1}$. By calculating the mass $m_{\mathrm{A}}= \frac{p_{\mathrm{A}}V_{\mathrm{A}}}{R T_{\mathrm{A}}} = \frac{40\times 10^{5}\times 0.2}{287\times (50+273.15)}= 8.626\,\mathrm{kg}$, we obtain $W_{\mathrm{A}\rightarrow \mathrm{B}}= m_{\mathrm{A}}w_{\mathrm{A}\rightarrow \mathrm{B}}= 8.626 \times -151.1 \times 10^{3}= -1.3038 \times 10^{6}J = -1.304 MJ$.
+With $\left(\frac{T_{\mathrm{A}}}{T_{\mathrm{B}}}\right) = \left(\frac{p_{\mathrm{A}}}{p_{\mathrm{B}}}\right)^{\frac{\gamma-1}{\gamma}}$. Thus: $T_{\mathrm{B}}= T_{\mathrm{A}}\left(\frac{p_{\mathrm{A}}}{p_{\mathrm{B}}}\right) ^{-\frac{\gamma-1}{\gamma}}= (50 + 273.15) ( \frac{40}{1} )^{-\frac{1.4-1}{1.4}} = 112.6 K = -160.5^{\circ}C = -257 ^{\circ} F$. The work done by the closed system composed of the gas is therefore $w_{\mathrm{A}\rightarrow \mathrm{B}}= \Delta u - q_{\mathrm{A}\rightarrow \mathrm{B}}= c_{v}\Delta T - 0 = 718 \times (-160.5 - 50) = -1.5115 \times 10^{5}J kg^{-1}= -151.1 kJ kg^{-1}$. By calculating the mass $m_{\mathrm{A}}= \frac{p_{\mathrm{A}}V_{\mathrm{A}}}{R T_{\mathrm{A}}} = \frac{40\times 10^{5}\times 0.2}{287\times (50+273.15)}= 8.626\,\mathrm{kg}$, we obtain $W_{\mathrm{A}\rightarrow \mathrm{B}}= m_{\mathrm{A}}w_{\mathrm{A}\rightarrow \mathrm{B}}= 8.626 \times -151.1 \times 10^{3}= -1.3038 \times 10^{6}J = -1.304 MJ$.
 
-This amount of energy is enough to accelerate, without friction,
-
-:::{math}
-0.5
-:::
-
-a vehicle weighing $1 t$ to a speed $C = [\frac{1.3038\times 10^{6}}{^{1}_{2}\times 1000} ] = 51.1 m s^{-1}\approx 180 km/h \approx 114 mph$.
+This amount of energy is enough to accelerate, without friction, a vehicle weighing $1 t$ to a speed $C = \left[\frac{1.3038\times 10^{6}}{\frac{1}{2}\times 1000}\right]^{0.5} = 51.1 m s^{-1}\approx 180 km/h \approx 114 mph$.
 
 The final temperature, $-160^{\circ}C$ (!), reminds us not to confuse
 
@@ -1120,27 +1049,50 @@ At the time when this text was written, the atomic hypothesis remained largely s
 
 ## Problems
 
-   :::{figure} ../images/art-p106-1.svg
-   :alt: Illustration from the original text
-   :::
+:::{figure} ../images/art-p106-1.svg
+:alt: Illustration from the original text
+:::
 
-   4.3 Energy and Temperature
+Air is considered an ideal gas.
 
-   There is air in a flexible compartment at a pressure of $3bar (43.51psi)$. Its internal energy is $836kJkg^{-1}$.
+$c_{v (\mathrm{air})}= 718 J kg^{-1}K^{-1} \qquad R_{\mathrm{air}}= 287 J kg^{-1}K^{-1}$
 
-   It is heated at constant pressure until $900^{\circ}C$; then it is cooled and expanded while its properties vary according to the relation $pv^{1.1}=$ const. until its temperature reaches $25^{\circ}C$.
+$c_{p (\mathrm{air})}= 1005 J kg^{-1}K^{-1} \qquad \gamma _{\mathrm{air}}= 1.4$
 
-   *[Trick question]* How much energy has it received or rejected since the beginning of the process?
+We assume that for a reversible adiabatic process (without heat transfer and infinitely slow), the properties of air are linked according to the following three relationships:
 
-   4.1 Air Pressure
+:::{math}
+\left(\frac{T_{1}}{T_{2}}\right) = \left(\frac{v_{2}}{v_{1}}\right)^{\gamma -1} \qquad (4/36)
+:::
 
-   A mass of $5kg (11lb)$ of air is enclosed in a tank of $2m^{3}$
+:::{math}
+\left(\frac{T_{1}}{T_{2}}\right) = \left(\frac{p_{1}}{p_{2}}\right)^{\frac{\gamma -1}{\gamma}} \qquad (4/37)
+:::
 
-   $(528.3US gal)$.
+:::{math}
+\left(\frac{p_{1}}{p_{2}}\right) = \left(\frac{v_{2}}{v_{1}}\right)^{\gamma} \qquad (4/38)
+:::
 
-   1. What are its specific volume and density?
+We also assume that during a reversible isothermal process (at constant temperature and infinitely slow) of an ideal gas, the work done in an open or closed system is:
 
-   2. What is the pressure if the temperature is $20^{\circ}C$?
+:::{math}
+w_{1\rightarrow 2}= RT_{\mathrm{cst}.}\ln \left(\frac{p_{2}}{p_{1}}\right) = RT_{\mathrm{cst}.}\ln \left(\frac{v_{1}}{v_{2}}\right) \qquad (4/29)
+:::
+
+```{exercise}
+:label: prob-4-1
+:enumerator: 4.1
+
+**Air Pressure** A mass of $5 kg (11 lb)$ of air is enclosed in a tank of $2 m^{3}(528.3 US gal)$. 1. What are its specific volume and density? 2. What is the pressure if the temperature is $20^{\circ}C$?
+
+:::{admonition} Answer
+:class: dropdown
+
+1) $v_{1}= \frac{V_{1}}{m_{1}} = 0.4 m^{3}kg^{-1}$; $\rho _{1}= \frac{1}{v_{1}} = 2.5 kg m^{-3}$
+2) $p_{1}= \frac{RT_{1}}{v_{1}} = 2.103 bar$.
+
+:::
+```
 
 ```{exercise}
 :label: prob-4-2
@@ -1161,6 +1113,21 @@ $3) p_{4}= \frac{RT_{4}m_{4}}{V_{4}} = 1.67bar.$
 ```
 
 ```{exercise}
+:label: prob-4-3
+:enumerator: 4.3
+
+**Energy and Temperature** There is air in a flexible compartment at a pressure of $3 bar (43.51 psi)$. Its internal energy is $836 kJ kg^{-1}$. It is heated at constant pressure until $900^{\circ}C$; then it is cooled and expanded while its properties vary according to the relation $p v^{1.1}=$ const. until its temperature reaches $25^{\circ}C$. *[Trick question]* How much energy has it received or rejected since the beginning of the process?
+
+:::{admonition} Answer
+:class: dropdown
+
+$\Delta u = c_{v}T_{3}- u_{1}= -622 kJ kg^{-1}$ (easily calculated with the final temperature and does not depend on the process or intermediate states).
+
+:::
+```
+
+```{exercise}
+:label: prob-4-4
 :enumerator: 4.4
 
 **Power of an Air Pump An air pump (figure 4.15) compresses air adiabatically, with a steady flow. The air temperature increases from $15^{\circ}C$ to $100^{\circ}C$. What is the specific power input? portable air tank *Photo by Commons User:Grikalmis (retouched, public domain)***
@@ -1190,7 +1157,52 @@ $w_{1\rightarrow 2}= \Delta h = c_{p}\Delta T = +85.4 kJ kg^{-1}$ (3/15 & 4/13)
 :::{admonition} Answer
 :class: dropdown
 
-1) With equation 3/15, $w_{\mathrm{turbine}}= c_{p}(T_{\mathrm{B}}- T_{\mathrm{A}}) + \frac{1}{2^{2}})\dot{m} =\dot{}(C^{2}_{\mathrm{B}}- \frac{W_{\mathrm{turbine}}C^{2}_{\mathrm{A}}) -}{w_{\mathrm{turbine}}} = 3.64kgs^{-1}q_{\mathrm{A}\rightarrow \mathrm{B}}= -275kJkg^{-1}$
+1) With equation 3/15, $w_{\mathrm{turbine}}= c_{p}(T_{\mathrm{B}}- T_{\mathrm{A}}) + \frac{1}{2}(C_{\mathrm{B}}^{2}- C_{\mathrm{A}}^{2}) - q_{\mathrm{A}\rightarrow \mathrm{B}}= -275 kJ kg^{-1}$
+2) $\dot{m}= \frac{\dot{W}_{\mathrm{turbine}}}{w_{\mathrm{turbine}}} = 3.64 kg s^{-1}$
+
+:::
+```
+
+```{exercise}
+:label: prob-4-6
+:enumerator: 4.6
+
+**Elementary Processes: Isothermal Compression** A mass of $3.5 kg (7.716 lb)$ of air is compressed reversibly in an isothermal manner (constant temperature) from $2 bar$ and $15^{\circ}C$ to $45 bar$ (from $29.01 psi$ and $59^{\circ} F$ to $652.7 psi)$ 1. Draw the process qualitatively (that is, without showing numerical values) on a pressure-volume diagram. 2. What are the amounts of work and heat involved? 3. If the compression were carried out in a reversible adiabatic manner, would the final volume be different?
+
+:::{admonition} Answer
+:class: dropdown
+
+2) With equation 4/26, $w_{1\rightarrow 2}= +257.58 kJ kg^{-1}$ (so, an amount of work received); $W_{1\rightarrow 2}= +901.2 kJ$; $Q_{1\rightarrow 2}= -W_{1\rightarrow 2}$ (so, an amount of heat expended)
+3) Yes, we would have $v_{2 \mathrm{ad.rev}.}= v_{1}\left(\frac{p_{1}}{p_{2}}\right)^{\frac{1}{\gamma}} > v_{2 \mathrm{isoth}.}= v_{1}\left(\frac{p_{1}}{p_{2}}\right)$.
+
+:::
+```
+
+```{exercise}
+:label: prob-4-7
+:enumerator: 4.7
+
+**Elementary Processes: Isobaric and Isochoric Coolings** A mass of $2 kg$ of air in a deformable reservoir is at a pressure of $4.5 bar (65.27 psi)$ and occupies a volume of $800 L (211.3 US gal)$. It is cooled, and the reservoir maintains constant pressure until the volume has been reduced by $40\%$. After this, the cooling is continued at constant volume until the temperature reaches $25^{\circ}C (77 ^{\circ} F)$. 1. Sketch the process on a pressure-volume diagram. 2. What is the work done by the air? 3. What is the heat cost for the entire process?
+
+:::{admonition} Answer
+:class: dropdown
+
+2) $W_{1\rightarrow 3}= -\int_{1}^{2} pdV - \int_{2}^{3} pdV = -p_{\mathrm{cst}.}\Delta V - 0 = +144 kJ$
+3) $Q_{1\rightarrow 3}= U_{3}- U_{1}- W_{1\rightarrow 3}= mc_{v}\left(T_{3}- \frac{p_{1}V_{1}}{mR}\right) - W_{1\rightarrow 3}= -616.5 kJ$
+
+:::
+```
+
+```{exercise}
+:label: prob-4-8
+:enumerator: 4.8
+
+**Elementary Processes: Isentropic Compression** What is the minimum amount of work required to compress $5 kg$ of air at $1 bar$ and $20^{\circ}C$ to $50 bar$ without heat transfer? Plot the process undergone by the air on a pressure-volume diagram, qualitatively (that is, without showing numerical values).
+
+:::{admonition} Answer
+:class: dropdown
+
+Optimal case: reversible adiabatic compression. Using equation 4/37, we calculate $T_{\mathrm{B}}= 896.4 K$; $W_{\mathrm{minimal}}= mc_{v}(T_{\mathrm{B}}- T_{\mathrm{A}}) = +2.166 MJ$.
 
 :::
 ```
@@ -1208,13 +1220,6 @@ Isothermal $2 \rightarrow 3$, isochoric $1 \rightarrow 2$.
 
 :::
 ```
-
-::::{admonition} A Bit of History
-:class: note
-
-*Engineering Thermodynamics* by Olivier Cleynen
-
-::::
 
 Among the processes above, which ones are:
 

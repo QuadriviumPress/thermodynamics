@@ -103,13 +103,6 @@ In the end, the fluid has done more work when it was expended than was done onto
 
 There are infinitely many possible cycles to perform this process, but they all involve at least four energy transfers: compression, heating, expansion, and cooling. We can separate these processes in space, as shown in figure 6.3, or
 
-::::{admonition} A Bit of History
-:class: note
-
-*Engineering Thermodynamics* by Olivier Cleynen
-
-::::
-
 in time, as illustrated in figure 6.2. Depending on technological and practical constraints, some of these transfers may be performed simultaneously.
 
 :::{figure} ../images/fig-6-2.jpg
@@ -159,13 +152,6 @@ In a refrigeration cycle, the fluid has a larger volume when compressed (after h
 
 In practice in refrigeration systems, a trick is often used to lower the temperature: instead of a turbine, a simple valve (sometimes called a *throttling valve*) is used. In this component without moving parts, the fluid does not do work (therefore the power to be supplied to the machine is increased),
 
-::::{admonition} A Bit of History
-:class: note
-
-*Engineering Thermodynamics* by Olivier Cleynen
-
-::::
-
 :::{figure} ../images/fig-6-5.jpg
 :label: fig-6-5
 :enumerator: 6.5
@@ -213,13 +199,6 @@ Arrangement of a heat pump. The machine is configured to reject heat inside (whe
 :::
 
 *Diagram* CC-0 *Olivier Cleynen*
-
-::::{admonition} A Bit of History
-:class: note
-
-*Engineering Thermodynamics* by Olivier Cleynen
-
-::::
 
 :::{figure} ../images/fig-6-9.jpg
 :label: fig-6-9
@@ -285,13 +264,6 @@ According to definition 6/3, the efficiency $\eta _{\mathrm{engine}}$ of the the
 :::
 
 [^ch6-fn1]: Some authors make a distinction between the efficiency $\eta$ defined in 6/3 and a *relative efficiency* or *effectiveness* $\Phi \equiv \frac{\eta _{\mathrm{real}}}{\eta _{\mathrm{theoretical}}}$ comparing the efficiency achieved in practice with the maximum achievable efficiency by the machine in theory. It is then necessary to carefully define the assumptions associated with the calculation of the maximum efficiency.
-
-::::{admonition} A Bit of History
-:class: note
-
-*Engineering Thermodynamics* by Olivier Cleynen
-
-::::
 
 ````{prf:example}
 :label: ex-6-1
@@ -494,31 +466,68 @@ Crankcase intake system. The intake air, laden with fuel for combustion and oil 
 
 ## Problems
 
-   6.1 Engine Efficiency
+Air is considered an ideal gas.
 
-   The Diesel engine of an excavator has an efficiency of
-   $40\%$ and delivers a continuous power of $60\,\mathrm{kW}$ (approximately $80\,\mathrm{hp}$). It is powered by fuel with a calorific
-   value of $35\,\mathrm{MJ\,kg^{-1}}$.
+$c_{v (\mathrm{air})}= 718 J kg^{-1}K^{-1} \qquad R_{\mathrm{air}}= 287 J kg^{-1}K^{-1}$
 
-   1. What is the hourly fuel consumption of the machine?
+$c_{p (\mathrm{air})}= 1005 J kg^{-1}K^{-1} \qquad \gamma _{\mathrm{air}}= 1.4$
 
-   2. What is the power rejected as heat in the exhaust pipe?
+We assume that for a reversible adiabatic process (without heat transfer and infinitely slow), the properties of air are linked according to the following three relationships:
 
-   6.2 Refrigerator Efficiency
+:::{math}
+\left(\frac{T_{1}}{T_{2}}\right) = \left(\frac{v_{2}}{v_{1}}\right)^{\gamma -1} \qquad (4/36)
+:::
 
-   A refrigerator with a COP of$1.2$mustextract$100kJ$from food placed in the cold chamber. How much electrical energy must be provided for this? How much heat will it have rejected at the end of the cooling process?
+:::{math}
+\left(\frac{T_{1}}{T_{2}}\right) = \left(\frac{p_{1}}{p_{2}}\right)^{\frac{\gamma -1}{\gamma}} \qquad (4/37)
+:::
 
-   6.3 Heat Pump Efficiency
+:::{math}
+\left(\frac{p_{1}}{p_{2}}\right) = \left(\frac{v_{2}}{v_{1}}\right)^{\gamma} \qquad (4/38)
+:::
 
-   A heat pump with a cop of $3.1$ provides a power of $4000W$ to an apartment. What is the electrical power required? What is the power absorbed from the atmosphere?
+```{exercise}
+:label: prob-6-1
+:enumerator: 6.1
 
-   6.5 Operation of a Heat Pump
+**Engine Efficiency** The Diesel engine of an excavator has an efficiency of $40\%$ and delivers a continuous power of $60 kW$ (approximately $80 hp$). It is powered by fuel with a calorific value of $35 MJ kg^{-1}$. 1. What is the hourly fuel consumption of the machine? 2. What is the power rejected as heat in the exhaust pipe?
 
-   Describe the path followed by the fluid inside a heat pump, indicating the direction of heat flows and the location (inside/outside) of the different components.
+:::{admonition} Answer
+:class: dropdown
 
-   Why do we let the fluid expand in a valve instead of using a turbine that could supply work?
+1) $\dot{Q}_{\mathrm{in}}= \frac{-\dot{W}_{\mathrm{net}}}{\eta _{\mathrm{engine}}} = \frac{-(60\times 10^{3})}{0.4} = +150 kW$; thus $\dot{m}= \frac{\dot{Q}_{\mathrm{in}}}{c_{\mathrm{fuel}}} = 15.4 kg h^{-1}$ (about 12 liters or 3 US gallons per hour);
+2) $\dot{Q}_{\mathrm{out}}= -\dot{Q}_{\mathrm{in}}- \dot{W}_{\mathrm{net}}= -90 kW$.
 
-   (One can also practice by focusing on the cycles and configurations of an air conditioner, a refrigerator, or an engine: which part is heated and where?)
+:::
+```
+
+```{exercise}
+:label: prob-6-2
+:enumerator: 6.2
+
+**Refrigerator Efficiency** A refrigerator with a cop of $1.2$ must extract $100 kJ$ from food placed in the cold chamber. How much electrical energy must be provided for this? How much heat will it have rejected at the end of the cooling process?
+
+:::{admonition} Answer
+:class: dropdown
+
+$W_{\mathrm{net}}= \frac{Q_{\mathrm{in}}}{\eta _{\mathrm{refrigeration}}} = +83.3 kJ$; $Q_{\mathrm{out}}= -Q_{\mathrm{in}}- W_{\mathrm{net}}= -183.3 kJ$.
+
+:::
+```
+
+```{exercise}
+:label: prob-6-3
+:enumerator: 6.3
+
+**Heat Pump Efficiency** A heat pump with a cop of $3.1$ provides a power of $4000 W$ to an apartment. What is the electrical power required? What is the power absorbed from the atmosphere?
+
+:::{admonition} Answer
+:class: dropdown
+
+$\dot{W}_{\mathrm{net}}= \frac{-\dot{Q}_{\mathrm{out}}}{\eta _{\mathrm{heat\ pump}}} = \frac{-(-4\times 10^{3})}{3.1} = +1.29 kW$; $\dot{Q}_{\mathrm{in}}= -\dot{W}_{\mathrm{net}}- \dot{Q}_{\mathrm{out}}= +2.71 kW$.
+
+:::
+```
 
 ```{exercise}
 :label: prob-6-4
@@ -543,7 +552,10 @@ The local electricity grid operator applies a tariff of $0.15$ AC$/(kW h)$.
 :::{admonition} Answer
 :class: dropdown
 
-1) If we assume that the density of the liquid is equal to that of liquid water $(\rho _{\mathrm{liquid}}= 10^{3}kg m^{-3})$, the heat $Q_{\mathrm{in}}$ absorbed by the refrigerator is $Q_{\mathrm{in}}= -Q_{\mathrm{glass}}- Q_{\mathrm{liquid}}- Q_{\mathrm{walls}}= -n_{\mathrm{bottles}}(m_{\mathrm{glass}}c_{\mathrm{glass}}+ m_{\mathrm{liquid}}c_{\mathrm{liquid}})(\Delta T)_{\mathrm{packs}}-\dot{Q}_{\mathrm{walls}}\Delta t = -60(0.172 \times 0.75\times 10^{3}+0.25\times 4.2\times 10^{3})\times (5-19)-10\times 4\times 3600 = +2)1 1W34_{\mathrm{n}}._{\mathrm{e}}4_{\mathrm{t}}kJ.=$ T hu$+\mathrm{s}1, 1W94^{\mathrm{n}}.^{\mathrm{e}}1^{\mathrm{t}}k=J \frac{Q_{\mathrm{in}}}{\eta _{\mathrm{refrigeration}}}= + 1=19 +4.111 k9W4.1 s k J.= +0.332 kW h$. Thus the cost adds up to $0.05$AC (!). 3) The room will be heated up by the heat rejection $Q_{\mathrm{out}}= -Q_{\mathrm{in}}- W_{\mathrm{net}}= -2.329 MJ$. 4) Opening the door only increases the heat $Q_{\mathrm{in}}$ that needs to be extracted from the cold chamber, which will consequently increase $Q_{\mathrm{out}}$ and the warming of the room (with a net power$\dot{Q}_{\mathrm{net}}=\dot{} Q_{\mathrm{in}}+\dot{Q}_{\mathrm{out}}= -\dot{W}_{\mathrm{net}})$.
+1) If we assume that the density of the liquid is equal to that of liquid water $(\rho _{\mathrm{liquid}}= 10^{3}kg m^{-3})$, the heat $Q_{\mathrm{in}}$ absorbed by the refrigerator is $Q_{\mathrm{in}}= -Q_{\mathrm{glass}}- Q_{\mathrm{liquid}}- Q_{\mathrm{walls}}= -n_{\mathrm{bottles}}(m_{\mathrm{glass}}c_{\mathrm{glass}}+ m_{\mathrm{liquid}}c_{\mathrm{liquid}})(\Delta T)_{\mathrm{packs}}-\dot{Q}_{\mathrm{walls}}\Delta t = -60(0.172 \times 0.75\times 10^{3}+0.25\times 4.2\times 10^{3})\times (5-19)-10\times 4\times 3600 = +1134.4 kJ$. Thus, $W_{\mathrm{net}}= \frac{Q_{\mathrm{in}}}{\eta _{\mathrm{refrigeration}}} = +1194.1 kJ$.
+2) $W_{\mathrm{net}}= +1194.1 kJ = +1194.1 kW s = +0.332 kW h$. Thus the cost adds up to $0.05$AC (!).
+3) The room will be heated up by the heat rejection $Q_{\mathrm{out}}= -Q_{\mathrm{in}}- W_{\mathrm{net}}= -2.329 MJ$.
+4) Opening the door only increases the heat $Q_{\mathrm{in}}$ that needs to be extracted from the cold chamber, which will consequently increase $Q_{\mathrm{out}}$ and the warming of the room (with a net power $\dot{Q}_{\mathrm{net}}= \dot{Q}_{\mathrm{in}}+\dot{Q}_{\mathrm{out}}= -\dot{W}_{\mathrm{net}})$.
 
 :::
 ```
@@ -555,6 +567,40 @@ The local electricity grid operator applies a tariff of $0.15$ AC$/(kW h)$.
    
    A pack of six bottles containing a liquid used to drown the exasperation resulting from the study of thermodynamics
    :::
+
+```{exercise}
+:label: prob-6-5
+:enumerator: 6.5
+
+**Operation of a Heat Pump** Describe the path followed by the fluid inside a heat pump, indicating the direction of heat flows and the location (inside/outside) of the different components. Why do we let the fluid expand in a valve instead of using a turbine that could supply work? (One can also practice by focusing on the cycles and configurations of an air conditioner, a refrigerator, or an engine: which part is heated and where?)
+
+:::{admonition} Answer
+:class: dropdown
+
+See §6.2.3 p. 154, and in particular figures 6.6, 6.7 and 6.8.
+
+:::
+```
+
+```{exercise}
+:label: prob-6-6
+:enumerator: 6.6
+
+**Algebra** Show, starting from the definition of the efficiency of an air conditioner, that it can be expressed as the relation:
+
+:::{math}
+\eta _{\mathrm{air\ conditioner}}= \frac{1}{\left|\dfrac{\dot{Q}_{\mathrm{out}}}{\dot{Q}_{\mathrm{in}}}\right| - 1}
+:::
+
+(6/7) *(This demonstration will be useful in the next chapter (§7.5). One can also practice by attacking in the same way equations eq. 6/5 p. 159 and eq. 6/9 p. 161. Pay attention to absolute values!)*
+
+:::{admonition} Answer
+:class: dropdown
+
+$\eta _{\mathrm{conditioner}}\equiv \left|\frac{\dot{Q}_{\mathrm{in}}}{\dot{W}_{\mathrm{net}}}\right| = \frac{\dot{Q}_{\mathrm{in}}}{\dot{W}_{\mathrm{net}}} = \frac{\dot{Q}_{\mathrm{in}}}{-\dot{Q}_{\mathrm{in}}-\dot{Q}_{\mathrm{out}}} = \frac{1}{-1-\dfrac{\dot{Q}_{\mathrm{out}}}{\dot{Q}_{\mathrm{in}}}}$. Now, by definition $\dot{Q}_{\mathrm{out}}< 0$ and $\dot{Q}_{\mathrm{in}}> 0$; thus $\dfrac{\dot{Q}_{\mathrm{out}}}{\dot{Q}_{\mathrm{in}}} = -\left|\dfrac{\dot{Q}_{\mathrm{out}}}{\dot{Q}_{\mathrm{in}}}\right|$. We thus have $\eta _{\mathrm{conditioner}}= \dfrac{1}{-1+\left|\dfrac{\dot{Q}_{\mathrm{out}}}{\dot{Q}_{\mathrm{in}}}\right|}$. It is now your turn, with equations 6/5 et 6/9!
+
+:::
+```
 
 ```{exercise}
 :label: prob-6-7
@@ -655,13 +701,6 @@ must be compared to the required investment and the costs incurred (including th
 
 :::
 ```
-
-::::{admonition} A Bit of History
-:class: note
-
-*Engineering Thermodynamics* by Olivier Cleynen
-
-::::
 
 What would be the annual financial savings generated by changing the refrigerator model?
 

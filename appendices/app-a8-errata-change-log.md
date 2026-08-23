@@ -58,153 +58,57 @@ A small number of page breaks in the original PDF caused section headings to mer
 • Indentation and spacing around figures and code blocks may vary
 • Table rendering is optimized for web display and may wrap differently than in the PDF's two-column format
 
-### Detailed Rendering Issues by Chapter
+### Conversion Defects: Found and Fixed (2026-08-23)
 
-A comprehensive audit of all 10 chapters identified **22+ rendering issues** from the PDF-to-Markdown conversion process. These are documented in detail below:
+The issues described below were identified by a comprehensive audit of the PDF-to-Markdown conversion, and have now been **corrected by hand against the original source PDF**, equation by equation. They are kept here as a record of what was wrong and how it was resolved, not as an outstanding list.
 
-#### Chapters 1–2: Foundational Issues (6 issues)
-- **Chapter 1**: Split fractions (e ≡ E/m), body text in math blocks, orphaned bounds
-- **Chapter 2**: Broken work derivations, orphaned integral limits, diagram attribution errors
-- **Impact**: Medium — affects understanding of core concepts
-- **Fix Status**: Known and documented
+**Broken equations and derivations.** In chapters 1–5, 7, 8, 9, and 10, a number of equations were fragmented across multiple `:::{math}` blocks during conversion, sometimes with numerators, denominators, or integral bounds left empty or stranded in their own block (e.g. `\frac{}{T}`, an orphaned `A` or `B` next to an integral, a bare digit in its own block). These have been reconstructed as single, correctly-formed equations checked against the PDF, including:
+- Chapter 1: the specific-energy relation $e \equiv E/m$ (1/3), and the exercise 1.8/1.9 problem statements and answers, which had been interleaved with each other by the column-based extraction.
+- Chapter 2: the spring/pressure-volume work derivation (2/14), the heat-quantification section heading and equations 2/16–2/17 (which had been scrambled into a garbled heading "## System for a closed system."), a duplicated and broken copy of exercise 2.5's answer, and an unclosed `prf:example` fence that had silently swallowed the following worked example and several unrelated sections into one block.
+- Chapter 3: the enthalpy equations (3/12–3/15, including a Stodola pull-quote that had absorbed two of the equation numbers), and the nozzle-exit-velocity worked example (ex-3-2).
+- Chapter 4: the reversible-adiabatic derivation and relations 4/35–4/39, equations 4/8–4/9, and a worked example whose final velocity calculation was missing an exponent.
+- Chapter 5: the constant-pressure and constant-volume process derivations (5/7–5/9, 5/11–5/14).
+- Chapter 7: the refrigerator and heat-pump efficiency equations (6/7, 7/7, 6/9, 7/8), where the absolute-value bars `|...|` had been mis-extracted as literal `|||` characters.
+- Chapter 8: the entropy definition and its ideal-gas consequences (8/1–8/13), a duplicated/garbled copy of that same derivation left over from conversion, and examples 8.2, 8.8, and 8.9, one of which had been split into two disconnected example blocks with a misplaced attribution line in between.
+- Chapter 9: the efficiency prose in §9.2.1, where several sentences and equation 6/4 had been wrongly enclosed in `:::{math}` blocks (rendering as code instead of prose), and a stray, unmatched closing fence before the Problems section.
+- Chapter 10: the compressor isentropic-efficiency relation (10/5–10/6), which had an empty `\frac{1}{}`.
 
-#### Chapters 3–4: Most Severe Issues (9 issues)
-- **Chapter 3**: Kinetic energy equation split across 8 separate math blocks (CRITICAL)
-- **Chapter 4**: Multiple empty fractions in ideal gas equations (CRITICAL)
-  - Line 938: `\frac{}{T} dT + \frac{R}{} \frac{}{v} dv = 0` (missing numerators/denominators)
-  - Line 948: Integration result with broken fractions: `\ln(\frac{T_2}{}) ... \frac{}{}...`
-- **Impact**: Severe — key equations unreadable; learning heavily impacted
-- **Fix Status**: Documented; requires manual reconstruction from PDF
+**Misplaced diagram captions and figures.** A figure attribution line in chapter 2 (figure 2.5) was missing while an identical, unrelated line sat several paragraphs later; a figure caption in chapter 8 (figure 8.7) was truncated mid-sentence. Both have been restored to their correct locations, and a diagram belonging to chapter 2's example 2.5 (previously unreferenced in the book) has been placed correctly.
 
-#### Chapter 5: Medium Complexity Issues (3 issues)
-- Reversible process derivations fragmented across multiple blocks
-- Orphaned integral bounds (upper/lower limits as separate blocks)
-- Impact: Medium — equations difficult to follow but conclusions remain visible
+**Result**: all equations, worked examples, and problem/answer text identified as broken during the audit now match the original PDF.
 
-#### Chapters 6–10: Minimal Issues (0–2 per chapter)
-- Well-formed equations throughout
-- Minimal conversion artifacts
-- **Status**: Safe to use; no blocking issues
+### Missing End-of-Chapter Exercises: Found and Restored (2026-08-23)
 
-### Issue Categories
+Independently of the equation-level defects above, a structural check of every chapter's Problems section (comparing labeled exercises against the source PDF's numbering) turned up a real, separate class of content loss: **27 end-of-chapter exercises across 8 chapters were entirely absent from the web edition**, not merely mis-rendered — in most cases the problem statement, the worked answer, or both were missing outright, and in a few cases the statement survived as unlabeled, out-of-order floating text with no answer at all.
 
-**Type A — Orphaned Integral Bounds** (8 instances)
-- Integration limit numbers (1, 2, A, B) appear outside math blocks
-- Example: `∫ F dl` followed by orphaned "A" on next line
-- Chapters affected: 1, 2, 3, 5
+Restored, with problem statement and answer checked against the PDF:
+- Chapter 1: exercise 1.5 (*Preparing a Bath*).
+- Chapter 2: exercises 2.1 and 2.2 (*Simple Processes*, *Arbitrary Processes of a Gas in the Laboratory*).
+- Chapter 3: exercise 3.7 (*Steam Turbine*).
+- Chapter 4: exercises 4.1, 4.3, 4.6, 4.7, and 4.8, plus the chapter's Problems-section preamble (air properties and equations 4/36–4/38, 4/29), which was missing entirely.
+- Chapter 5: exercises 5.3 and 5.4 (*Simple Recap Exercise*, *High-Pressure Steam Generation*).
+- Chapter 6: exercises 6.1, 6.2, 6.3, 6.5, and 6.6, plus the missing Problems-section preamble.
+- Chapter 7: exercises 7.1, 7.2, 7.4, and 7.6, plus the missing Problems-section preamble (including equations 7/6–7/8, which chapter 7's own worked examples already depended on).
+- Chapter 8: exercises 8.3, 8.4, 8.5, 8.6, 8.8, 8.9, and 8.10, plus the missing Problems-section preamble, and the second half of exercise 8.7's statement, which had been left stranded as orphaned text after its own answer and figure.
 
-**Type B — Empty/Broken Fractions** (6 instances)
-- Fractions missing numerator and/or denominator
-- Example: `\frac{}{T}`, `\frac{R}{}`, `2 \frac{}{2}`
-- Chapters affected: 2, 3, 4 (most severe)
+Several exercises that were present but garbled have also been repaired in the same pass, including scrambled or duplicated answer text for exercises 2.5, 4.5, 6.4, 7.3, 7.5, and 7.7.
 
-**Type C — Split Complex Equations** (4 instances)
-- Single equation fragmented across 5–8 separate math blocks
-- Most severe: Chapter 3 (square root equation), Chapter 4 (derivatives)
-- Example: Square root for C₂ shown as: `1`, `2(C²`, `\frac{1}{}`, etc. across 8 blocks
+A `scripts/verify_book.py` structural check (comparing labeled exercise numbers per chapter against the PDF-derived `outline.json` counts) now passes for all ten chapters; it did not before this fix.
 
-**Type D — Body Text in Math Blocks** (2 instances)
-- Prose descriptions incorrectly placed in math blocks
-- Example: "joules per kilogram (J kg⁻¹):" in math block instead of prose
-- Chapter: 1
+### Historical Asides: Correction of a Previous Errata Entry
 
-**Type E — Orphaned Variables** (5+ instances)
-- Single variables/subscripts appearing alone in math blocks
-- Chapters: 5, 8, 10
+A previous revision of this document (dated 2026-08-23, earlier the same day) claimed that 74 of 84 "A Bit of History" sidebar sections were missing their content, calling it "critical content loss." **That claim was incorrect and has been retracted.**
 
-### Severity & Recommendations
+On inspection of the source PDF directly, the book contains exactly **ten** "A Bit of History" essays — one per chapter — and all ten were already present, in full, in the web edition (labeled `hist-1-4` through `hist-10-13`). What the previous audit mistook for "74 missing essays" were 73 empty `admonition` placeholder blocks scattered through the chapters, each containing only the heading and the boilerplate attribution line "*Engineering Thermodynamics* by Olivier Cleynen," with no title, author, or body text. These placeholders did not correspond to any content in the PDF at any point — they were spurious blocks produced by the conversion pipeline (most likely a false-positive match against the shaded-box fill color also used for an unrelated footer decoration that repeats on every page), not evidence of lost text.
 
-**CRITICAL (Fix Immediately)**
-- Chapter 4, line 938: Ideal gas differential equation with empty fractions
-- Chapter 4, line 948: Integration result with broken notation
-- Chapter 3, lines 320–351: Kinetic energy equation fragmented into 8 blocks
-- **Fix Time**: 2–3 hours
+These 73 spurious placeholders have now been removed from all ten chapters. Each chapter retains exactly the one genuine "A Bit of History" essay that exists in the source book.
 
-**HIGH (Fix Before Full Release)**
-- Chapter 2, lines 300–316: Work derivation split across 3 blocks
-- Chapter 1, lines 148–155: Fraction split across 2 blocks
-- Chapter 5, lines 670–680: Reversible process derivation broken
-- **Fix Time**: 1–2 hours
+### Technical Notes on the Conversion Pipeline
 
-**MEDIUM (Consider Fixing)**
-- Chapter 1, line 144: Unit description in math block
-- Multiple orphaned integral bounds throughout chapters 3, 5
-- **Fix Time**: 30–45 minutes
+For future PDF re-conversions, the defects found in this audit point to a few recurring failure modes in `scripts/extract.py` / `scripts/mathtext.py`:
+- Fractions and integral bounds spanning a layout boundary (e.g. a page or column break) were sometimes split into separate blocks instead of being re-joined.
+- Absolute-value bars (`|...|`) were occasionally tripled (`|||...|||`) by the glyph-extraction step.
+- The shaded-box color used to detect "A Bit of History" sidebars is also used by a decorative footer bar repeated on every page, which appears to have caused the pipeline to emit an empty history placeholder far more often than the source actually contains one.
+- Two-column problem/answer pages occasionally had adjacent exercises' text interleaved during column reconstruction.
 
-**LOW (Polish)**
-- Chapter 2, line 269: Orphaned diagram caption
-- Chapter 8, line 140: Awkward variable formatting
-- **Fix Time**: 15–20 minutes
-
-### Missing Historical Asides (CRITICAL CONTENT LOSS)
-
-**Issue**: The most significant loss from the PDF-to-Markdown conversion is the omission of **74 historical essay sections** ("A Bit of History" sidebars) across all 10 chapters.
-
-**Scope**: 
-- **Total "A Bit of History" sections in chapters 1–10**: 84
-- **Sections with full content**: 10 (one per chapter, labeled hist-1-4 through hist-10-13)
-- **Empty placeholder sections**: 74 (completely missing all content)
-
-**Distribution by Chapter**:
-
-| Chapter | Total | With Content | Missing |
-|---------|-------|---|---------|
-| 1 | 6 | 1 | 5 |
-| 2 | 10 | 1 | 9 |
-| 3 | 5 | 1 | 4 |
-| 4 | 5 | 1 | 4 |
-| 5 | 10 | 1 | 9 |
-| 6 | 6 | 1 | 5 |
-| 7 | 10 | 1 | 9 |
-| 8 | 10 | 1 | 9 |
-| 9 | 11 | 1 | 10 |
-| 10 | 11 | 1 | 10 |
-| **TOTAL** | **84** | **10** | **74** |
-
-**What's Present**:
-- Chapter 1: "Measuring the Degree of Heat" — history of thermometer development by Philippe Depondt
-- Chapter 2: "the Compound Engine" — development of compound steam engines
-- Chapter 3: "Temperature and Amount of Heat" — Joseph Black's experiments with heat
-- Chapter 4: "Lavoisier and Laplace's Inquiries" — philosophical views on heat
-- Chapters 5–10: One substantive historical essay each (similar quality and depth)
-
-**What's Missing**:
-The remaining 74 sections appear as empty placeholder blocks with only the header and author attribution ("*Engineering Thermodynamics* by Olivier Cleynen") but no actual content. Each of these was supposed to contain a historical sidebar or anecdote related to the surrounding material.
-
-**Root Cause**:
-During the PDF-to-Markdown automated conversion, the PDF extraction process created placeholder blocks for all historical sections but failed to extract the actual content for most of them. Evidence from git history shows these sections were initially corrupted/mangled by the conversion pipeline and subsequently abandoned rather than restored.
-
-**Impact**:
-- **Severity**: HIGH (content loss, not just rendering)
-- **Type**: Missing pedagogical content (historical context and interesting asides)
-- **Readability**: Readers see empty boxes labeled "A Bit of History" which may appear to be formatting errors or placeholders
-- **Learning**: Students miss engaging historical narratives that illustrate how thermodynamic concepts developed
-- **Completeness**: Web version is objectively missing ~90% of the historical content that exists in the PDF
-
-**Recommendation**: 
-1. **For readers**: Use the PDF for complete historical context and interesting sidebar content
-2. **For authors**: Either restore the 74 missing historical essays from the PDF source, or remove all empty placeholder sections to reduce visual clutter
-3. **For future conversions**: Improve PDF extraction to handle sidebar/callout content more robustly
-
-### Readers Comparing PDF and Web Versions
-
-Readers may notice these differences:
-1. Complex equations in chapters 3–4 render differently and may appear incorrect in the web version
-2. Integral notation may show bounds separately instead of as subscripts/superscripts
-3. Multi-step derivations appear fragmented rather than as cohesive flows
-4. Some unit descriptions have different visual styling
-5. **Missing "A Bit of History" sidebar content** — Most historical essays (74 out of 84) are absent from the web version; only the main one per chapter is included
-
-**Recommendation**: For chapters 1–5, refer to the PDF as the authoritative version while the web version's rendering is improved. Chapters 6–10 are safe to use in either format for equations, but the PDF remains the complete source for historical asides throughout all chapters.
-
-### Technical Details
-
-The issues arise from the PDF-to-Markdown conversion pipeline where:
-- **Fractions spanning layout boundaries** get split across blocks
-- **Integral limits** are parsed as separate elements from the integral symbol
-- **Multi-line equations** in the PDF's two-column layout become fragmented
-- **Complex mathematics** (derivatives, nested fractions) are most affected
-
-This is a known limitation of the automated conversion process and affects approximately 3–5% of all equations, concentrated in chapters with complex mathematical content (chapters 1–5).
-
-These rendering differences are purely presentational. All equations, figures, data, and explanatory text remain faithful to the original source. The mathematical content and accuracy of the textbook are unaffected; only the visual presentation in the web version differs from the PDF in these specific locations.
+These are noted for anyone improving the pipeline; they do not affect the current, hand-corrected text.
