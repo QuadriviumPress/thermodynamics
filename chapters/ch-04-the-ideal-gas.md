@@ -1259,7 +1259,7 @@ reversible adiabatic, isochoric $(v$ constant).
 **Compressor of a Turbofan Inside one of the engines of a commercial aircraft, the compressor (figure 4.17) is almost adiabatic. During cruise at $33 000 ft$, the atmosphere is at $-50^{\circ}C (-58 ^{\circ} F)$ and $0.25 bar (3.626 psi)$. The fan is driven by the turbine through a mechanical shaft. It receives $55 kg s^{-1}$ of air at atmospheric conditions, and compresses this flow up until $8 bar (116 psi)$. 1. Starting from the following relation,
 
 :::{math}
-:label: eq-4-38
+:label: eq-4-38-r
 :enumerator: 4/38
 \left(\frac{p_{1}}{p_{2}}\right) = \left(\frac{v_{2}}{v_{1}}\right)^{\gamma}
 :::
@@ -1267,7 +1267,7 @@ reversible adiabatic, isochoric $(v$ constant).
 valid for a reversible adiabatic process undergone by a perfect gas, show (without using equation 4/36) that:
 
 :::{math}
-:label: eq-4-37
+:label: eq-4-37-r
 :enumerator: 4/37
 \left(\frac{T_{1}}{T_{2}}\right) = \left(\frac{p_{1}}{p_{2}}\right)^{\frac{\gamma -1}{\gamma}}
 :::

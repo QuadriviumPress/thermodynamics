@@ -28,32 +28,20 @@ Infinitesimal changes in state quantities are denoted by the symbol $d$; these a
 
 *differentials* and can be integrated by only knowing their initial and final values. For example, for temperature $T$:
 
-B
-
 :::{math}
-dT = \Delta T = T_{\mathrm{B}}- T_{\mathrm{A}} (A4/1)
+:label: eq-a4-1
+:enumerator: A4/1
+\int_{\mathrm{A}}^{\mathrm{B}} dT = \Delta T = T_{\mathrm{B}}- T_{\mathrm{A}}
 :::
-
-:::{math}
-\int
-:::
-
-A
 
 Infinitesimal transfers of path quantities are denoted by the symbol δ; these are *inexact*
 
 *differentials* and their integral can only be quantified by knowing all states encountered along the path. For example, for work $W$, one cannot write “$W_{\mathrm{B}}-W_{\mathrm{A}}$”, or “$\Delta W$”, but only:
 
-B
-
 :::{math}
-δ W = W_{\mathrm{A}\rightarrow \mathrm{B}} (A4/2)
+:label: eq-a4-2
+:enumerator: A4/2
+\int_{\mathrm{A}}^{\mathrm{B}} \delta W = W_{\mathrm{A}\rightarrow \mathrm{B}}
 :::
-
-:::{math}
-\int
-:::
-
-A
 
 This notation can be confusing, since it is $d$ and not δ that becomes $\Delta$ upon integration. It may also appear as a complicated way to avoid using partial derivatives. Clifford Truesdell [[36](#ref-36)] mischievously remarks that because of this notation, equation 8/1 on page 211 might make us believe that some types of differentials are larger than others... Although this notation is widely used in French literature (which is why it is adopted in this book, which is translated from French [[51](#ref-51)]), it must be recognized that one can fully cover the field of engineering thermodynamics [[37](#ref-37), [38](#ref-38)] or physical thermodynamics and its history [[36](#ref-36)] without ever having to use the symbol δ in the above sense.

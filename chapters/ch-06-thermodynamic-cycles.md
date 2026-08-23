@@ -101,9 +101,7 @@ Let us start by compressing a fluid: we increase its pressure and reduce its spe
 
 In the end, the fluid has done more work when it was expended than was done onto it when it was compressed. Over a cycle, it will thus have *produced* work and *absorbed* heat (part of which it transformed). This is the operating principle of an engine.
 
-There are infinitely many possible cycles to perform this process, but they all involve at least four energy transfers: compression, heating, expansion, and cooling. We can separate these processes in space, as shown in figure 6.3, or
-
-in time, as illustrated in figure 6.2. Depending on technological and practical constraints, some of these transfers may be performed simultaneously.
+There are infinitely many possible cycles to perform this process, but they all involve at least four energy transfers: compression, heating, expansion, and cooling. We can separate these processes in space, as shown in figure 6.3, or in time, as illustrated in figure 6.2. Depending on technological and practical constraints, some of these transfers may be performed simultaneously.
 
 :::{figure} ../images/fig-6-2.jpg
 :label: fig-6-2

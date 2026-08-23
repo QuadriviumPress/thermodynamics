@@ -20,6 +20,8 @@ This document was generated on June 7, 2026. Since its initial release in June 2
 
 • The text in §1.3 is clarified. Thanks to Patrice Krakow.
 
+The most recent version of this book, its full change log, and a contact form to report any remaining errors to the author can all be found on the book's website, https://thermodynamicsbook.com/. The author can also be reached by email at olivier@cleynen.fr.
+
 ## Web Rendering Differences
 
 The web version of this textbook (built with MyST Markdown) differs from the original PDF in several ways due to the automated conversion process from PDF to structured markdown. Readers comparing the two versions should be aware of the following known differences:

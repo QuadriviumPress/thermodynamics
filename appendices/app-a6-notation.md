@@ -14,6 +14,11 @@ Appendix A6 319
 :alt: Illustration from the original text
 :::
 
+:::{admonition} In short
+:class: tip
+**twelve thousand point three** is written $12 000.3$
+:::
+
 **Numbers** are written with a dot as the decimal separator and a thin space as a thousands separator. Digits are grouped by three so that $12.3456 \times 10^{3}= 12 345.6$. When only four digits are present, grouping is omitted. This follows the recommendations of the bipm in the 9th edition of the *SI Brochure* [[50](#ref-50)]. In tables, in order to increase readability, integers are always grouped, and decimals never grouped. Rounding is done as late as possible and never in series. Leading and trailing zeros are not indicated.
 
 **Units** are in upright characters and colored in gray $(1 kg)$. In sentences, units are written out in full and in lowercase (one hundred watts). The liter is written with a capital $(L)$ to make it more readable $(1 L \equiv 10^{-3}m^{3})$. The units in equations are from the International System of Units (SI) [[50](#ref-50)] unless otherwise indicated, and non-si units are listed in Appendix A5 p. 317.
@@ -22,7 +27,7 @@ Appendix A6 319
 
 $\equiv$ means “by definition”. The symbol $\equiv$ sets the definition of the term on its left (which does not depend on previous equations).
 
-(dot above a symbol) means the time rate: $\equiv \frac{d}{dt}$. For example, $\dot{Q}$ is the power as heat (in watts) representing an amount $Q$ (in joules) per second.
+$\dot{}$ (dot above a symbol) means the time rate: $\dot{} \equiv \frac{d}{dt}$. For example, $\dot{Q}$ is the power as heat (in watts) representing an amount $Q$ (in joules) per second.
 
 $\Delta$ means the net difference between two state quantities: $(\Delta X)_{\mathrm{A}\rightarrow \mathrm{B}}= X_{\mathrm{B}}- X_{\mathrm{A}}$. It can be negative. See the Appendix A4 p. 316.
 

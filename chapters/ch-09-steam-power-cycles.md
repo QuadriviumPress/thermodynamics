@@ -133,7 +133,7 @@ François-Marie Guyonneau de Pambour, 1839 [[7](#ref-7)]
 :::
 
 :::{math}
-:label: eq-3-15
+:label: eq-3-15-r
 :enumerator: 3/15
 q_{1\rightarrow 2}+ w_{1\rightarrow 2}= \Delta h
 :::
@@ -145,7 +145,7 @@ From our study of chapter 3, we recall that when the process is reversible, the 
 B
 
 :::{math}
-:label: eq-3-22
+:label: eq-3-22-r
 :enumerator: 3/22
 w_{\mathrm{A}\rightarrow \mathrm{B}}= \int vdp
 :::

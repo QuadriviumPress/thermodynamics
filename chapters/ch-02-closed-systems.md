@@ -177,7 +177,7 @@ Calculating work with fluids is delicate. We will proceed in three steps of incr
 Let’s start by imagining that the fluid within a closed system behaves like a metal spring (figure 2.5). This is an interesting modeling approach to begin our study. We had seen in §1.3 that the work supplied or received by a spring is expressed as:
 
 :::{math}
-:label: eq-1-11
+:label: eq-1-11-r
 :enumerator: 1/11
 W_{\mathrm{A}\rightarrow \mathrm{B}}= -\int F dl
 :::
