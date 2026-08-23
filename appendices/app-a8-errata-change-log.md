@@ -136,6 +136,56 @@ A comprehensive audit of all 10 chapters identified **22+ rendering issues** fro
 - Chapter 8, line 140: Awkward variable formatting
 - **Fix Time**: 15–20 minutes
 
+### Missing Historical Asides (CRITICAL CONTENT LOSS)
+
+**Issue**: The most significant loss from the PDF-to-Markdown conversion is the omission of **74 historical essay sections** ("A Bit of History" sidebars) across all 10 chapters.
+
+**Scope**: 
+- **Total "A Bit of History" sections in chapters 1–10**: 84
+- **Sections with full content**: 10 (one per chapter, labeled hist-1-4 through hist-10-13)
+- **Empty placeholder sections**: 74 (completely missing all content)
+
+**Distribution by Chapter**:
+
+| Chapter | Total | With Content | Missing |
+|---------|-------|---|---------|
+| 1 | 6 | 1 | 5 |
+| 2 | 10 | 1 | 9 |
+| 3 | 5 | 1 | 4 |
+| 4 | 5 | 1 | 4 |
+| 5 | 10 | 1 | 9 |
+| 6 | 6 | 1 | 5 |
+| 7 | 10 | 1 | 9 |
+| 8 | 10 | 1 | 9 |
+| 9 | 11 | 1 | 10 |
+| 10 | 11 | 1 | 10 |
+| **TOTAL** | **84** | **10** | **74** |
+
+**What's Present**:
+- Chapter 1: "Measuring the Degree of Heat" — history of thermometer development by Philippe Depondt
+- Chapter 2: "the Compound Engine" — development of compound steam engines
+- Chapter 3: "Temperature and Amount of Heat" — Joseph Black's experiments with heat
+- Chapter 4: "Lavoisier and Laplace's Inquiries" — philosophical views on heat
+- Chapters 5–10: One substantive historical essay each (similar quality and depth)
+
+**What's Missing**:
+The remaining 74 sections appear as empty placeholder blocks with only the header and author attribution ("*Engineering Thermodynamics* by Olivier Cleynen") but no actual content. Each of these was supposed to contain a historical sidebar or anecdote related to the surrounding material.
+
+**Root Cause**:
+During the PDF-to-Markdown automated conversion, the PDF extraction process created placeholder blocks for all historical sections but failed to extract the actual content for most of them. Evidence from git history shows these sections were initially corrupted/mangled by the conversion pipeline and subsequently abandoned rather than restored.
+
+**Impact**:
+- **Severity**: HIGH (content loss, not just rendering)
+- **Type**: Missing pedagogical content (historical context and interesting asides)
+- **Readability**: Readers see empty boxes labeled "A Bit of History" which may appear to be formatting errors or placeholders
+- **Learning**: Students miss engaging historical narratives that illustrate how thermodynamic concepts developed
+- **Completeness**: Web version is objectively missing ~90% of the historical content that exists in the PDF
+
+**Recommendation**: 
+1. **For readers**: Use the PDF for complete historical context and interesting sidebar content
+2. **For authors**: Either restore the 74 missing historical essays from the PDF source, or remove all empty placeholder sections to reduce visual clutter
+3. **For future conversions**: Improve PDF extraction to handle sidebar/callout content more robustly
+
 ### Readers Comparing PDF and Web Versions
 
 Readers may notice these differences:
@@ -143,8 +193,9 @@ Readers may notice these differences:
 2. Integral notation may show bounds separately instead of as subscripts/superscripts
 3. Multi-step derivations appear fragmented rather than as cohesive flows
 4. Some unit descriptions have different visual styling
+5. **Missing "A Bit of History" sidebar content** — Most historical essays (74 out of 84) are absent from the web version; only the main one per chapter is included
 
-**Recommendation**: For chapters 1–5, refer to the PDF as the authoritative version while the web version's rendering is improved. Chapters 6–10 are safe to use in either format.
+**Recommendation**: For chapters 1–5, refer to the PDF as the authoritative version while the web version's rendering is improved. Chapters 6–10 are safe to use in either format for equations, but the PDF remains the complete source for historical asides throughout all chapters.
 
 ### Technical Details
 
