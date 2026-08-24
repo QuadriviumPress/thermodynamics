@@ -96,6 +96,8 @@ Despite this, we can already crudely assess the size and acquisition cost of an 
 In industry, it is more common to measure the inverse parameter, which we call *specific steam consumption*. This consumption indicates the steam flow rate required to supply one watt of useful power. We denote it as ssc:
 
 :::{math}
+:label: eq-9-2
+:enumerator: 9/2
 \mathrm{ssc} \equiv \frac{1}{|w_{\mathrm{net}}|}
 :::
 
@@ -194,7 +196,9 @@ A pump from the manufacturer ksb delivering $2500 t/h$ of water at 350 bar in a 
 The specific power required to compress a fluid flow from a pressure $p_{\mathrm{A}}$ to a pressure $p_{\mathrm{B}}$, in a reversible process, is expressed from the relation 3/22. Since the specific volume $v_{L}$ of pure saturated liquid water (approximately $v_{L}= 1 \times 10^{-3}m^{3}kg^{-1})$ varies very little with its pressure, we can write:
 
 :::{math}
-w_{\mathrm{liquid} \mathrm{pump}}\approx v_{L}\int _{\mathrm{A}}^{\mathrm{B}} dp = v_{L}(p_{\mathrm{B}}- p_{\mathrm{A}}) (9/4)
+:label: eq-9-4
+:enumerator: 9/4
+w_{\mathrm{liquid} \mathrm{pump}}\approx v_{L}\int _{\mathrm{A}}^{\mathrm{B}} dp = v_{L}(p_{\mathrm{B}}- p_{\mathrm{A}})
 :::
 
 in the case of an approximately reversible pump operating with liquid water.
@@ -266,16 +270,22 @@ The turbine (figures 9.5 and 9.6) is the centerpiece of any steam power plant. S
 The efficiency of a turbine is measured by comparing its power with that of an ideal turbine (a turbine that would be isentropic). We call this parameter the *isentropic efficiency* $\eta _{\mathrm{T}}$:
 
 :::{math}
-\eta _{\mathrm{T}}\equiv \frac{\dot{W}_{\mathrm{actual} \mathrm{turbine}}}{\dot{W}_{\mathrm{isentropic} \mathrm{turbine}}} (9/6)
+:label: eq-9-6
+:enumerator: 9/6
+\eta _{\mathrm{T}}\equiv \frac{\dot{W}_{\mathrm{actual} \mathrm{turbine}}}{\dot{W}_{\mathrm{isentropic} \mathrm{turbine}}}
 :::
 
 where$\dot{W}_{\mathrm{actual} \mathrm{turbine}}$ is the actual power supplied by the turbine, and $W_{\mathrm{isentropic} \mathrm{turbine}}$ is the power of an isentropic turbine operating with the same mass flow rate and between the same pressures.
 
 :::{figure} ../images/art-p247-1.jpg
-:alt: Illustration from the original text
+:label: fig-9-5
+:enumerator: 9.5
+:alt: Turbine of a medium-sized steam power plant. As the water passes through the turbine, it loses energy in the form of work and its specific volume increases, requiring increasingly larger blades.
+
+Turbine of a medium-sized steam power plant. As the water passes through the turbine, it loses energy in the form of work and its specific volume increases, requiring increasingly larger blades.
 :::
 
-Figure 9.5: Turbine of a medium-sized steam power plant. As the water passes through the turbine, it loses energy in the form of work and its specific volume increases, requiring increasingly larger blades. *Photo* CC-by-sa man se
+*Photo* CC-by-sa *MAN SE*
 
 :::{figure} ../images/fig-9-6.jpg
 :label: fig-9-6
@@ -357,15 +367,21 @@ Technologically, the condenser is a simple element: the steam pipeline is simply
 Since the pressure of the steam inside the condenser is often very low (down to 0.1 bar or $0.15 psi)$ so as to reduce the minimum temperature of the power plant cycle, care must be taken to ensure the tightness of the condenser to prevent external air or water from entering the main circuit.
 
 :::{figure} ../images/art-p250-1.jpg
-:alt: Illustration from the original text
+:label: fig-9-9
+:enumerator: 9.9
+:alt: Cooling towers of the Eggborough coal power plant (1967, 1960 MW) in the United Kingdom. In these towers, the heat extracted from the water in the condenser is dissipated into the atmosphere. This cooling is done through a secondary water circuit, which is brought into contact with the atmosphere and partially evaporates.
+
+Cooling towers of the Eggborough coal power plant ($1967$, $1960 MW$) in the United Kingdom. In these towers, the heat extracted from the water in the condenser is dissipated into the atmosphere. This cooling is done through a secondary water circuit, which is brought into contact with the atmosphere and partially evaporates.
 :::
 
-Figure 9.9: Cooling towers of the Eggborough coal power plant$(1967,1960 MW)$inthe United Kingdom. In these towers, the heat extracted from the water in the condenser is dissipated into the atmosphere. This cooling is done through a secondary water circuit, which is brought into contact with the atmosphere and partially evaporates. *Photo* CC-by-sa *Steve Fareham*
+*Photo* CC-by-sa *Steve Fareham*
 
 The power rejected by the steam in the condenser is expressed as:
 
 :::{math}
-Q_{\mathrm{condenser}}=\dot{m} (h_{2}- h_{1}) (9/8)
+:label: eq-9-8
+:enumerator: 9/8
+\dot{Q}_{\mathrm{condenser}}=\dot{m} (h_{2}- h_{1})
 :::
 
 (sec-9-4)=
@@ -541,10 +557,14 @@ In practice, such a device is difficult to implement, because it requires adding
 In order to implement regeneration, the *turbine bleed* technique is used. Steam is drawn off from the turbine and mixed with the liquid feedwater at the pump outlet (figures 9.20 and 9.21). This results in a heat transfer that is easier to implement.
 
 :::{figure} ../images/art-p258-1.jpg
-:alt: Illustration from the original text
+:label: fig-9-20
+:enumerator: 9.20
+:alt: Diagram of a steam power plant with steam bleed. The steam prematurely extracted from the turbine is used to heat the liquid water during pumping.
+
+Diagram of a steam power plant with steam bleed. The steam prematurely extracted from the turbine is used to heat the liquid water during pumping.
 :::
 
-Figure 9.20: Diagram of a steam power plant with steam bleed. The steam prematurely extracted from the turbine is used to heat the liquid water during pumping. *Diagram* CC-by-sa *Olivier Cleynen*
+*Diagram* CC-by-sa *Olivier Cleynen*
 
 :::{figure} ../images/fig-9-21.jpg
 :label: fig-9-21
@@ -602,6 +622,16 @@ The *Turbinia*, Charles Parsons’ yacht used as a demonstrator for his research
 *Photo by Alfred John West, 1897 (public domain)*
 
 In the realm of air-based engines, the situation was quite different: until the late 1930s, all engines were piston-cylinder based. Piston technology peaked in the aeronautical sector, where cylinders were arranged in a star pattern behind the propellers to reduce bulkiness and vibrations. In these machines, such as the *Twin Wasp* by Pratt & Whitney, the mechanical arrangement of cylinders, connecting rods, and crankshafts was absolutely phenomenal (figure 9.24), and the intake and exhaust systems going to and back from dozens of combustion chambers were labyrinthine.
+
+:::{figure} ../images/art-p260-1.jpg
+:label: fig-9-24
+:enumerator: 9.24
+:alt: Cross-section of a Pratt & Whitney Twin Wasp engine (1932), showing the internal arrangement with connecting rods and crankshafts connecting the two rows of seven pistons arranged in a star pattern. The engine, with a displacement of 30 L, produced over 1000 hp and was produced in over 170 000 units.
+
+Cross-section of a *Pratt & Whitney Twin Wasp* engine (1932), showing the internal arrangement with connecting rods and crankshafts connecting the two rows of seven pistons arranged in a star pattern. The engine, with a displacement of $30 L$, produced over $1000 hp$ and was produced in over $170 000$ units.
+:::
+
+*Photo* CC-by-sa *Olivier Cleynen*
 
 :::{aside}
 We saw in §9.4.2 that using liquid compression is not without consequences – it must be compensated by greater power at the boiler and reduces the thermodynamic efficiency – but it greatly facilitates the development of the engine. Since almost all of the net power of the engine comes from the turbine, a highly irreversible or incomplete expansion only affects the power and efficiency of the engine. In a gas turbomachine, on the other hand, the turbine also powers the compressor: it plays a dual role. For as long as it does not supply enough power to match that of the compressor, the engine will not run at all. The isentropic efficiency of the turbine and compressor thus become paramount parameters (we will revisit this in §10.2.2 with the concept of *work ratio*) and it follows that the development of a gas turbomachine is an ambitious undertaking.
