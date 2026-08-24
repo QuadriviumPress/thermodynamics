@@ -59,7 +59,9 @@ W_{\mathrm{net}}\equiv \dot{W}_{\mathrm{in}}+\dot{W}_{\mathrm{out}}
 :::
 
 :::{math}
-w_{\mathrm{net}}\equiv w_{\mathrm{in}}+ w_{\mathrm{out}} (6/1)
+:label: eq-6-1
+:enumerator: 6/1
+w_{\mathrm{net}}\equiv w_{\mathrm{in}}+ w_{\mathrm{out}}
 :::
 
 We define the *net heat* in the same way:
@@ -269,11 +271,9 @@ According to definition 6/3, the efficiency $\eta _{\mathrm{engine}}$ of the the
 
 A car engine receives $100 kW$ in the form of heat from gasoline combustion; it supplies $55 kW$ as work at the transmission shaft. What is its efficiency?
 
-:::{math}
-This engine rejects \dot{Q}_{\mathrm{out}}= -\dot{W}_{\mathrm{net}}-\dot{Q}_{\mathrm{in}}= -(-55 \times 10^{3}) - 100 \times
-:::
+The efficiency is $\eta _{\mathrm{engine}}= \left|\frac{\dot{W}_{\mathrm{net}}}{\dot{Q}_{\mathrm{in}}}\right| = \left|\frac{-55 \times 10^{3}}{+100 \times 10^{3}}\right| = 0.55 = 55 \%$.
 
-$10^{3}= -45 kW$ as heat. Most of this energy is carried away with the exhaust gases.
+This engine rejects $\dot{Q}_{\mathrm{out}}= -\dot{W}_{\mathrm{net}}-\dot{Q}_{\mathrm{in}}= -(-55 \times 10^{3}) - 100 \times 10^{3}= -45 kW$ as heat. Most of this energy is carried away with the exhaust gases.
 
 Since one must always supply at least as much heat$\dot{Q}_{\mathrm{in}}$ as the engine outputs in work$\dot{W}_{\mathrm{net}}$, the efficiency of an engine will always necessarily be less than $1$.
 
@@ -286,7 +286,9 @@ W_{\mathrm{net}}=\dot{W}_{\mathrm{in}}+\dot{W}_{\mathrm{out}}= -Q\dot{} _{\mathr
 :::
 
 :::{math}
-\eta _{\mathrm{engine}}= 1 - \left|\frac{\dot{Q}_{\mathrm{out}}}{\dot{Q}_{\mathrm{in}}}\right| (6/5)
+:label: eq-6-5
+:enumerator: 6/5
+\eta _{\mathrm{engine}}= 1 - \left|\frac{\dot{Q}_{\mathrm{out}}}{\dot{Q}_{\mathrm{in}}}\right|
 :::
 
 This equation 6/5 will be very useful in the next chapter (§7.5.1 p. 195), where we will want to relate the heat transfers$\dot{Q}_{\mathrm{in}}$ and$\dot{Q}_{\mathrm{out}}$ to the temperatures at which they occur.
@@ -299,7 +301,9 @@ The function of a refrigerator or an air conditioner is to extract heat, and thu
 According to the definition 6/3, the efficiency of a refrigerator or an air conditioner, also called the *coefficient of performance* cop$_{\mathrm{refrigeration}}$, is therefore:
 
 :::{math}
-\eta _{\mathrm{refrigerator}}= \eta _{\mathrm{air} \mathrm{conditioner}}\equiv \left|\frac{\dot{Q}_{\mathrm{in}}}{\dot{W}_{\mathrm{net}}}\right| (6/6)
+:label: eq-6-6
+:enumerator: 6/6
+\eta _{\mathrm{refrigerator}}= \eta _{\mathrm{air} \mathrm{conditioner}}\equiv \left|\frac{\dot{Q}_{\mathrm{in}}}{\dot{W}_{\mathrm{net}}}\right|
 :::
 
 :::{figure} ../images/fig-6-12.jpg
@@ -352,7 +356,9 @@ Energy transfers associated with a heat pump. We aim to obtain a large transfer$
 The efficiency $\eta _{\mathrm{heat} \mathrm{pump}}$ of the heat pump, also known as the *coefficient of performance* cop$_{\mathrm{heat} \mathrm{pump}}$, is thus defined as:
 
 :::{math}
-\eta _{\mathrm{heat} \mathrm{pump}}\equiv \left|\frac{\dot{Q}_{\mathrm{out}}}{\dot{W}_{\mathrm{net}}}\right| (6/8)
+:label: eq-6-8
+:enumerator: 6/8
+\eta _{\mathrm{heat} \mathrm{pump}}\equiv \left|\frac{\dot{Q}_{\mathrm{out}}}{\dot{W}_{\mathrm{net}}}\right|
 :::
 
 ````{prf:example}
@@ -368,7 +374,9 @@ The heat pump rejects more energy as heat than it receives as work – that is i
 Just as we did for the previous sections, we can express this efficiency in terms of heat flows only:
 
 :::{math}
-\eta _{\mathrm{heat} \mathrm{pump}}= \frac{1}{1 - \left|\frac{Q_{\mathrm{in}}}{Q_{\mathrm{out}}}\right|} (6/9)
+:label: eq-6-9
+:enumerator: 6/9
+\eta _{\mathrm{heat} \mathrm{pump}}= \frac{1}{1 - \left|\frac{Q_{\mathrm{in}}}{Q_{\mathrm{out}}}\right|}
 :::
 
 (sec-6-3-5)=
