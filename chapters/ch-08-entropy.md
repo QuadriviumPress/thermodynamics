@@ -253,10 +253,14 @@ for any process, where the subscript *rev.* indicates the calculation is done al
 In this way, we are able to represent the processes on a *temperature-entropy diagram*. As shown in figure 8.3, the area under the curve of a process will represent the heat transferred in cases where the process is reversible; but in cases where the process is irreversible, it does not.
 
 :::{figure} ../images/art-p213-1.jpg
-:alt: Illustration from the original text
+:label: fig-8-3
+:enumerator: 8.3
+:alt: Temperature-entropy diagram. During a reversible process, the area under the curve of a T-s diagram represents the transmitted heat Q_{1→2'}; but not when it is irreversible.
+
+Temperature-entropy diagram. During a reversible process, the area under the curve of a $T-s$ diagram represents the transmitted heat $Q_{1\rightarrow 2^{'}}$; but not when it is irreversible.
 :::
 
-Figure 8.3: Temperature-entropy diagram. During a reversible process, theareaunder the curve of a $T-s$diagram represents the transmitted heat $Q_{1\rightarrow 2^{'}}$; but not when it is *Diagram* CC-0 *Olivier Cleynen* irreversible.
+*Diagram* CC-0 *Olivier Cleynen*
 
 (sec-8-3-2)=
 ### 8.3.2 Temperature-entropy diagrams
@@ -281,7 +285,7 @@ When the system loses heat, its entropy decreases and we move from right to left
 
 Note also that when a fluid completes a cycle, the temperature at which entropy decreases can be lower than the temperature at which it increases (just like volume with pressure). The net heat transfer is then negative: the fluid has *absorbed* heat which has been converted into work. If it were to follow the reverse path, the fluid cycle would be a source of heat: this is the operating principle of the refrigerator (§6.2.3).
 
-When the processes are reversible, this net heat is represented by the area enclosed by the path taken by the fluid on a temperature-entropy diagram (figure 8.5).
+When the processes are reversible, this net heat is represented by the area enclosed by the path taken by the fluid on a temperature-entropy diagram (figure 8.5): a thermodynamic cycle during which heat has been absorbed, and therefore transformed into work; when the path is reversed, heat is rejected (and work absorbed) by the fluid.
 
 Finally, we are pleased to note that the Carnot cycle, consisting of two isothermal phases $(T =$ constant) separated by two isentropic phases $(s =$ constant), benefits greatly from being represented on a temperature-entropy diagram, as shown in figure 8.6.
 
