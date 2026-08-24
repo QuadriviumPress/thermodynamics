@@ -128,7 +128,9 @@ Thus, the thermal machine in its most general representation looks like figure 7
 Regardless of the operation mode and efficiency of the machine, it cannot create or destroy energy (§1.1.2); and we will always have:
 
 :::{math}
-Q_{TH}+\dot{Q}_{TL}+\dot{W}_{\mathrm{net}}= 0 (7/1)
+:label: eq-7-1
+:enumerator: 7/1
+\dot{Q}_{TH}+\dot{Q}_{TL}+\dot{W}_{\mathrm{net}}= 0
 :::
 
 :::{figure} ../images/fig-7-3.jpg
@@ -168,7 +170,9 @@ Applied to the engine, the second law can be expressed as follows:
 Purists will express this corollary, called the *Kelvin-Planck corollary*, with the following inequality:
 
 :::{math}
-Q_{TH}> -W\dot{} _{\mathrm{net}} (7/2)
+:label: eq-7-2
+:enumerator: 7/2
+\dot{Q}_{TH}> -\dot{W}_{\mathrm{net}}
 :::
 
 for any thermal engine.
@@ -455,7 +459,9 @@ Pressure-volume diagram for a reversed Carnot cycle, namely, in refrigeration mo
 Kelvin defines a temperature scale, called *absolute temperature*. Within a Carnot engine, the ratio of the maximum temperature $T_{H}$ and minimum temperature $T_{L}$ is defined to be equal to the ratio of the heat transfer rates, that is:
 
 :::{math}
-\left|\frac{\dot{Q}_{TH}}{\dot{Q}_{TL}}\right| \equiv \frac{T_{H}}{T_{L}} (7/4)
+:label: eq-7-4
+:enumerator: 7/4
+\left|\frac{\dot{Q}_{TH}}{\dot{Q}_{TL}}\right| \equiv \frac{T_{H}}{T_{L}}
 :::
 
 by definition, in a Carnot engine, where$\dot{Q}_{TH}$ is the heat transfer rate absorbed or rejected at high temperature $(\dot{Q}_{TL}$, at low temperature), and where the temperatures are absolute (measured in $K)$.
@@ -508,8 +514,6 @@ William Thomson, 1854 [[15](#ref-15)]
 Thomson’s proposition is as follows: consider a body at a temperature $T_{1}$ (for example, a thousand units, as shown in figure 7.12). A Carnot engine is attached to it, which will supply work and reject heat at a lower temperature $T_{2}$. This temperature $T_{2}$ is half of $T_{1}$ if the engine rejects half of the heat it receives; it is one-fourth when it rejects one fourth, and so on. In mathematical terms, Thomson proposed:[^ch7-fn2]
 
 :::{math}
-:label: eq-7-4
-:enumerator: 7/4
 \left|\frac{\dot{Q}_{TH}}{\dot{Q}_{TL}}\right| \equiv \frac{T_{H}}{T_{L}}
 :::
 
@@ -595,6 +599,8 @@ for any thermal engine.
 In the case of a Carnot engine, with relation 7/4, this expression makes sense by becoming:
 
 :::{math}
+:label: eq-7-6
+:enumerator: 7/6
 \eta _{\mathrm{Carnot} \mathrm{engine}}= 1 - \frac{T_{L}}{T_{H}}
 :::
 
@@ -688,7 +694,6 @@ $365 ^{\circ} F$ and $437 ^{\circ} F (185^{\circ}C$ and $225^{\circ}C)$, we obta
 We saw in §6.3.4 that the efficiency (or Coefficient of Performance, cop) of a heat pump is defined as the ratio of the heat supplied at high temperature to the work input (6/8). We had then transformed this definition with the expression:
 
 :::{math}
-:label: eq-6-9
 :enumerator: 6/9
 \eta _{\mathrm{heat\ pump}}= \frac{1}{1 - \left|\dfrac{\dot{Q}_{TL}}{\dot{Q}_{TH}}\right|}
 :::
