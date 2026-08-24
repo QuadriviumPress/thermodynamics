@@ -369,6 +369,8 @@ u = f(T)
 The function $f$ can be evaluated with an experiment in which the change of $u$ is quantified. For example, during a process at constant volume $q = \Delta u$ and $q = c_{v}\Delta T$. We can thus assert that the function $f$ is a simple proportional relation. With the internal energy arbitrarily set to zero at zero temperature $(u = 0 J kg^{-1}$ when $T = 0 K)$, we obtain:
 
 :::{math}
+:label: eq-4-11
+:enumerator: 4/11
 u = c_{v}T
 :::
 
@@ -379,6 +381,8 @@ and $c_{v}$ is the specific thermal capacity at constant volume $(J kg^{-1}K^{-1
 For a mass $m$ of ideal gas, we have of course:
 
 :::{math}
+:label: eq-4-12
+:enumerator: 4/12
 U = m c_{v}T
 :::
 
