@@ -103,13 +103,17 @@ In general, the thermodynamic engineer wishes to capture heat from bodies that s
 *Power* represents a flow of energy in time. Its SI unit is the joule per second, which we name the watt (W):
 
 :::{math}
-1 W \equiv 1 J s^{-1} (1/1)
+:label: eq-1-1
+:enumerator: 1/1
+1 W \equiv 1 J s^{-1}
 :::
 
 Other units are often used, such as the horsepower. One horsepower is approximately the power that a strong horse can deliver as work in full effort (the story in §5.5 p. 141 reveals the name of the creator of this unit). Note that several definitions for horsepower exist (see Appendix A5 p. 317); here we refer to the din 66036 standard used in the automotive industry:
 
 :::{math}
-1 hp = 735.5 W (1/2)
+:label: eq-1-2
+:enumerator: 1/2
+1 hp = 735.5 W
 :::
 
 We will denote power by placing a dot above the symbol for energy; thus we write$\dot{E}$ as a power (for example, mechanical) delivering an amount of energy $E$ every second.
@@ -408,21 +412,29 @@ Students will likely be familiar with at least one of two temperature scales:
 • the Celsius scale $(^{\circ}C)$. Simply subtracting $273.15$ units from an absolute temperature (in kelvins) gives a temperature in degrees Celsius:
 
 :::{math}
-T(^{\circ}C) \equiv T(K) - 273.15 (1/12)
+:label: eq-1-12
+:enumerator: 1/12
+T(^{\circ}C) \equiv T(K) - 273.15
 :::
 
 :::{math}
-T(K) = T(^{\circ}C) + 273.15 (1/13)
+:label: eq-1-13
+:enumerator: 1/13
+T(K) = T(^{\circ}C) + 273.15
 :::
 
 • the Fahrenheit scale $(^{\circ} F)$. The translation to kelvins is a little more complex:
 
 :::{math}
-T(^{\circ} F) = 1.8 \times [T(K) - 273.15] + 32 (1/14)
+:label: eq-1-14
+:enumerator: 1/14
+T(^{\circ} F) = 1.8 \times [T(K) - 273.15] + 32
 :::
 
 :::{math}
-T(K) = \frac{T(^{\circ} F) - 32}{1.8} + 273.15 (1/15)
+:label: eq-1-15
+:enumerator: 1/15
+T(K) = \frac{T(^{\circ} F) - 32}{1.8} + 273.15
 :::
 
 Both of those scales precede the Kelvin scale, and they were cleverly redefined and synchronized with it in 1848 (wee will have the opportunity to study this clever manipulation in chapter 7, see §7.4 p. 191). Purists will note that the absolute unit is named kelvin and not “degree Kelvin”. Some indicative temperatures are listed in table 1.1.
@@ -506,7 +518,9 @@ When the same amount of heat is supplied to two different bodies, their temperat
 The specific thermal capacity of a body is defined as the amount of heat required to raise the temperature of one kilogram of the substance by one kelvin:
 
 :::{math}
-c \equiv \frac{\mathrm{δ}q}{dT} = \frac{1}{m} \frac{\mathrm{δ}Q}{dT} (1/16)
+:label: eq-1-16
+:enumerator: 1/16
+c \equiv \frac{\mathrm{δ}q}{dT} = \frac{1}{m} \frac{\mathrm{δ}Q}{dT}
 :::
 
 where $c$ is the *specific thermal capacity* of the substance $(J kg^{-1}K^{-1})$, δ$q$ is a (specific) infinitesimal quantity of heat $(J kg^{-1})$, δ$Q$ is an infinitesimal quantity of heat $(J)$, $m$ is the mass $(kg)$,
