@@ -530,6 +530,8 @@ When water is either in a saturated liquid or dry steam state, values of entropy
 Within the saturation curve, in other words, when a mix of phases is present, we interpolate values for entropy between those of $s_{L}$ (saturated liquid) and $s_{V}$ (saturated vapor) using the concept of *dryness fraction*, exactly as with equation 5/5:
 
 :::{math}
+:label: eq-8-14
+:enumerator: 8/14
 s_{x}= s_{L}+ x s_{LV}
 :::
 
@@ -726,6 +728,14 @@ We have stated in chapter 7 (*the second law*) that heat spontaneously moves onl
 **During a work transfer** any irreversibility results in a higher final temperature than it could have been (see §2.4.3). Achieving the same final state with a reversible path thus requires a heat input, in other words, a positive term $\int (\frac{\mathrm{δ}Q}{T})_{\mathrm{rev}.}$. An irreversibility therefore leads to an increase in total entropy.
 
 Thus, we can translate the second law as follows:
+
+When an energetically-isolated system undergoes a process, its entropy $s$ changes in such a way that
+
+:::{math}
+:label: eq-8-16
+:enumerator: 8/16
+\Delta s \geq 0
+:::
 
 :::{figure} ../images/art-p225-1.svg
 :alt: Illustration from the original text
