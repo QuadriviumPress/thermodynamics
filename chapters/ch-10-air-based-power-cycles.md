@@ -161,8 +161,14 @@ On the other hand, the weight and complexity of mechanisms of piston engines (co
 The German engineer Nicolaus Otto is credited with the development of the engine known today as the *petrol* or *gasoline engine* in 1864. The basic cycle of this engine, called the *Otto cycle*, consists of two isentropic phases framed by two isochoric phases; it is described in figure 10.3.
 
 :::{figure} ../images/art-p272-1.svg
-:alt: Illustration from the original text
+:label: fig-10-3
+:enumerator: 10.3
+:alt: Otto's theoretical cycle represented on pressure-volume and temperature-entropy diagrams. These diagrams depict the ideal path, without irreversibilities in the compression or expansion.
+
+Otto's theoretical cycle represented on pressure-volume and temperature-entropy diagrams. These diagrams depict the ideal path, without irreversibilities in the compression or expansion.
 :::
+
+*Diagrams* CC-0 *Olivier Cleynen*
 
 The Otto cycle is designed to allow for a simple implementation of the heat addition phase. The fuel is mixed with air before being inserted into the engine, and a very rapid combustion is triggered with a spark when the volume in the cylinder is minimal: this is known as *spark ignition*. Otto originally intended his engine for stationary applications, but its relative simplicity and responsiveness would ensure its success in transportation (notably through his son Gustav Otto, an aircraft manufacturer whose company would later become bmw).
 
@@ -277,7 +283,15 @@ A commonly adopted solution for this is *turbocharging*. It involves delegating 
 
 Since the use of a turbocharger negatively affects the responsiveness of an engine, it is possible to allow the intake air to bypass it while the engine speed is changing. Furthermore, temperature changes in the turbo can be compensated for by cooling before insertion into the cylinders (this technique is studied further in §10.6.1). These processes make modern engines complex thermodynamic systems capable of performing a wide range of very different cycles depending on operating conditions.
 
-Figure 10.7: A cutaway view of a turbo to show its internal arrangement. Atmospheric air enters from the right and is compressed as it is propelled outward by the centrifugal compressor; it is then fed into the engine. Exhaust gases enter from the center left and exit to the left after spinning the centripetal turbine, which powers the compressor via the central rotating shaft. Since the only moving part is very compact (about $20 cm$ here), very high rotation speeds can be achieved, typically exceeding $200 000 rpm$. *Photo* nasa *(public domain)*
+:::{figure} ../images/art-p277-1.jpg
+:label: fig-10-7
+:enumerator: 10.7
+:alt: A cutaway view of a turbo to show its internal arrangement. Atmospheric air enters from the right and is compressed as it is propelled outward by the centrifugal compressor; it is then fed into the engine. Exhaust gases enter from the center left and exit to the left after spinning the centripetal turbine, which powers the compressor via the central rotating shaft. Since the only moving part is very compact (about 20 cm here), very high rotation speeds can be achieved, typically exceeding 200 000 rpm.
+
+A cutaway view of a turbo to show its internal arrangement. Atmospheric air enters from the right and is compressed as it is propelled outward by the centrifugal compressor; it is then fed into the engine. Exhaust gases enter from the center left and exit to the left after spinning the centripetal turbine, which powers the compressor via the central rotating shaft. Since the only moving part is very compact (about $20 cm$ here), very high rotation speeds can be achieved, typically exceeding $200 000 rpm$.
+:::
+
+*Photo* nasa *(public domain)*
 
 (sec-10-4)=
 ## 10.4 Components of Gas Turbomachinery
@@ -395,7 +409,9 @@ No work is done in the combustion chamber, and the pressure remains approximatel
 The power delivered in the combustion chamber is quantified rather easily by modifying equation 4/19 to account for the change in air properties during combustion, which increases the value of $c_{p}$ by about $10 \%$:
 
 :::{math}
-q_{\mathrm{chamber}}= h_{\mathrm{B}}- h_{\mathrm{A}}= c_{p(\mathrm{gases})}T_{\mathrm{B}}- c_{p(\mathrm{air})}T_{\mathrm{A}} (10/7)
+:label: eq-10-7
+:enumerator: 10/7
+q_{\mathrm{chamber}}= h_{\mathrm{B}}- h_{\mathrm{A}}= c_{p(\mathrm{gases})}T_{\mathrm{B}}- c_{p(\mathrm{air})}T_{\mathrm{A}}
 :::
 
 Fluid flow within the combustion chamber depends in a correlated manner on combustion chemistry and the spatial distribution of velocities and pressure: it is therefore difficult to model. In practice, a slight pressure drop is generated between the inlet and outlet of the chambers. The influence on the turbine power of the fuel mass flow rate$\dot{m}_{\mathrm{fuel}}$, always much lower than that of air, can be safely neglected.
@@ -408,13 +424,17 @@ The primary role of the turbine (figures 10.12 and 10.13) is to power the compre
 Just like for liquids/vapors (eq. 9/6 p. 247), we measure the performance of a turbine by quantifying its *isentropic efficiency* $\eta _{T}$:
 
 :::{math}
-\eta _{T}\equiv \frac{\dot{W}_{\mathrm{actual} \mathrm{turbine}}}{\dot{W}_{\mathrm{isentropic} \mathrm{turbine}}} (10/8)
+:label: eq-10-8
+:enumerator: 10/8
+\eta _{T}\equiv \frac{\dot{W}_{\mathrm{actual} \mathrm{turbine}}}{\dot{W}_{\mathrm{isentropic} \mathrm{turbine}}}
 :::
 
 The power extracted by the turbine is thus easily expressed in terms of the actual $T_{2 \mathrm{real}}$ and ideal $T_{2^{'}}$ temperatures at its outlet:
 
 :::{math}
-w_{\mathrm{turbine}}= c_{p(\mathrm{gases})}(T_{2 \mathrm{actual}}- T_{1}) = \eta _{T}c_{p(\mathrm{gases})}(T_{2^{'}}- T_{1}) (10/9)
+:label: eq-10-9
+:enumerator: 10/9
+w_{\mathrm{turbine}}= c_{p(\mathrm{gases})}(T_{2 \mathrm{actual}}- T_{1}) = \eta _{T}c_{p(\mathrm{gases})}(T_{2^{'}}- T_{1})
 :::
 
 As the gases flow downstream through the turbine, they expand and their specific volume increases. The size of the blades (hence their weight and cost) must also increase, while the power they can extract decreases. Gases are often rejected at the outlet of a turbomachine with residual pressure because it is not economically viable to extract any more work from them.
@@ -490,7 +510,9 @@ Schematic representation of a nozzle.
 In the case of an ideal nozzle, the expansion is isentropic, and we can relate the temperatures $T_{\mathrm{A}}$ and $T_{\mathrm{B}}$ just like in a turbine or a compressor, using the dreadful relations 4/36 to 4/38. Thus, knowing the inlet conditions $h_{\mathrm{A}}$ and $p_{\mathrm{A}}$, for a given outlet pressure $p_{\mathrm{B}}$ (atmospheric pressure), we can quantify the change in gas velocity:
 
 :::{math}
-C^{2}_{\mathrm{B}}- C^{2}_{\mathrm{A}}= -2 c_{p(\mathrm{gas})}(T_{\mathrm{B}}- T_{\mathrm{A}}) (10/11)
+:label: eq-10-11
+:enumerator: 10/11
+C^{2}_{\mathrm{B}}- C^{2}_{\mathrm{A}}= -2 c_{p(\mathrm{gas})}(T_{\mathrm{B}}- T_{\mathrm{A}})
 :::
 
 Ideally, the nozzle expands the gases to ambient pressure and converts all the change in enthalpy of the gases into kinetic energy. In practice, of course, some of this energy is converted into heat due to friction. The efficiency of nozzles is quantified in a similar way to that of compressors and turbines, and is not studied in this book.
