@@ -463,11 +463,15 @@ In Steam Table 2 (see pp. 310-311), the data is sorted by pressure (with each pr
 
 We can already answer simple questions using these tables:
 
-Example 5.5
+````{prf:example}
+:label: ex-5-5
+:enumerator: 5.5
 
 What is the boiling temperature of water when the pressure is 3 bar?
 
 Water is boiling, so it is at saturation (liquid-vapor mixture). We refer to Steam Table 3 (excerpt in table 5.4) where the data is sorted by pressure. At $0.3 MPa$, the saturation temperature is $133.52^{\circ}C$.
+
+````
 
 ````{prf:example}
 
@@ -557,7 +561,9 @@ Enthalpy $h_{x}$ of a mixture as a function of the enthalpies in the saturated s
 **The internal energy** $u$ of a liquid-vapor mixture is quantified in exactly the same way:
 
 :::{math}
-u_{x}= u_{L}+ x u_{LV} (5/5)
+:label: eq-5-5
+:enumerator: 5/5
+u_{x}= u_{L}+ x u_{LV}
 :::
 
 where $u_{x}$ is the specific energy of the mixture under study $(J kg^{-1})$, $x$ is its dryness fraction (unitless), and $u_{LV}\equiv \Delta u_{L)V}\equiv u_{V}-u_{L}$ (tabulated value) is the difference of specific internal energies at saturation, at its temperature $(J kg^{-1})$.
@@ -571,7 +577,9 @@ v_{x}= (1 - x)v_{L}+ x v_{V}
 However, the specific volume $v_{L}$ of the saturated liquid is usually small compared to that of the vapor. A brief examination of Steam Table 2 will reveal that this is approximately a factor of $10^{3}$ (this factor is not very well highlighted by the $T - v$ and $p - v$ diagrams in this chapter, whose abscissa scales are logarithmic). We can therefore neglect $v_{L}$ and simply write:
 
 :::{math}
-v_{x}\approx x v_{V} (5/6)
+:label: eq-5-6
+:enumerator: 5/6
+v_{x}\approx x v_{V}
 :::
 
 where $v_{x}$ is the specific volume of the mixture under study $(m^{3}kg^{-1})$, $x$ is its dryness fraction (unitless), and $v_{V}$ (tabulated value) is the specific volume of the saturated vapor at its temperature $(m^{3}kg^{-1})$.
@@ -945,7 +953,9 @@ Reversible adiabatic expansion of a liquid-vapor, represented on a pressure-volu
 *Diagram* CC-0 *Olivier Cleynen*
 
 :::{math}
-w_{1\rightarrow 2}= \Delta h (5/17)
+:label: eq-5-17
+:enumerator: 5/17
+w_{1\rightarrow 2}= \Delta h
 :::
 
 for any adiabatic process in an open system.
