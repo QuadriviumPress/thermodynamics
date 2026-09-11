@@ -16,10 +16,6 @@ Steam Power Cycles
 
 *The Understated Charm of Thermal Power Plant Water Circuits*
 
-:::{figure} ../images/art-p239-1.svg
-:alt: Illustration from the original text
-:::
-
 :::{admonition} Executive summary
 :class: tip
 Steam engines are used in stationary applications. Many modifications are made to ideal cycles to reduce cost and increase machine power.
@@ -704,10 +700,6 @@ Air is considered an ideal gas.
 $c_{v (\mathrm{air})}= 718Jkg^{-1}K^{-1} R_{\mathrm{air}}= 287Jkg^{-1}K^{-1}$
 
 $c_{p (\mathrm{air})}= 1005Jkg^{-1}K^{-1} \gamma _{\mathrm{air}}= 1.4$
-
-:::{figure} ../images/art-p263-1.svg
-:alt: Illustration from the original text
-:::
 
 ```{exercise}
 :label: prob-9-1

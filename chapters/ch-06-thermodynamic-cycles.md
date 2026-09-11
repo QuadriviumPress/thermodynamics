@@ -12,10 +12,6 @@ Thermodynamic Cycles
 
 *A Foray into the Sorcery of Heat Mechanics*
 
-:::{figure} ../images/art-p149-1.svg
-:alt: Illustration from the original text
-:::
-
 :::{admonition} Executive summary
 :class: tip
 When heating a compressed fluid, it provides more work upon expansion than was spent during compression. By expanding a fluid, its temperature drops and thus we can absorb heat from a relatively “cooler” body. With these two processes, we transform heat into work and vice versa.

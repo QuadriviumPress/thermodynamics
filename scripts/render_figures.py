@@ -98,6 +98,13 @@ def _add_backdrop(svg, width, height):
     return svg[:m.end()] + "\n" + rect + svg[m.end():]
 
 
+def is_text_only_svg(path):
+    """True for PDF text that mutool exported as glyph-outline artwork."""
+    with open(path) as fh:
+        svg = fh.read()
+    return 'data-text=' in svg and not re.search(r'<image\b', svg)
+
+
 def write_raster(doc, xref, path_base):
     """Write an embedded photograph, downsampled to a web-sensible width."""
     info = doc.extract_image(xref)
@@ -205,6 +212,9 @@ def main():
                     fname = write_raster(doc, xref, base)
                 else:
                     write_svg(doc, pno, rect, base + ".svg")
+                    if is_text_only_svg(base + ".svg"):
+                        os.unlink(base + ".svg")
+                        continue
                     fname = name + ".svg"
                     if os.path.getsize(base + ".svg") > SVG_BUDGET:
                         os.unlink(base + ".svg")

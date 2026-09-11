@@ -16,10 +16,6 @@ Air-Based Power Cycles
 
 *Build Your Own Combustion Cycle: the Essential Starter Pack*
 
-:::{figure} ../images/art-p267-1.svg
-:alt: Illustration from the original text
-:::
-
 :::{admonition} Executive summary
 :class: tip
 Air-based engines are more compact and lighter than steam engines. Many modifications are made to ideal cycles to reduce bulk and adapt to the temperature limits of engine components.
@@ -862,14 +858,6 @@ since compressions and expansions are reversible: in practice, expect around $35
 
 :::
 ```
-
-   :::{figure} ../images/fig-10-31.svg
-   :label: fig-10-31
-   :enumerator: 10.31
-   :alt: The six-cylinder gasoline fuel injection Continental io-550, in production since 1983. It equips among others the Cirrus sr22 aircraft. This
-   
-   The $300 hp$ six-cylinder gasoline fuel injection Continental io-550, in production since 1983. It equips among others the Cirrus sr22 aircraft. This photo shows the turbocharged version of the engine, with the intercooler visible in the top left corner.
-   :::
 
 ```{exercise}
 :label: prob-10-3

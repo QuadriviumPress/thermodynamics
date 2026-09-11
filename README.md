@@ -11,7 +11,7 @@ MyST, and deployed to GitHub Pages.
 
 - **Live site**: [quadriviumpress.com/thermodynamics](https://quadriviumpress.com/thermodynamics/)
 - **Pipeline**: PDF → `build/document.json` → 24 Markdown files (10 chapters,
-  11 appendices, front/back matter); 321 figure images + 9 steam-table page PNGs.
+  11 appendices, front/back matter); 321 figure images and selectable steam tables.
 - **Conventions**: `{prf:example}`, `{exercise}` with collapsible `{dropdown}`
   answers, history admonitions, `(N/M)` equation labels; index omitted.
 - **QA**: `npm run verify` checks structure against `outline.json` and flags OCR

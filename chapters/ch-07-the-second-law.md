@@ -16,10 +16,6 @@ The Second Law
 
 *Engineer Carnot’s Troubling Discovery*
 
-:::{figure} ../images/art-p175-1.svg
-:alt: Illustration from the original text
-:::
-
 :::{admonition} Executive summary
 :class: tip
 Heat only moves towards a body at a lower temperature. This poses a fundamental limit on the efficiency of work-heat transformations. This limit depends on the maximum and minimum temperatures at which a machine operates, and is usually very low. Carnot described an engine of maximum efficiency.
@@ -42,11 +38,7 @@ The *second law of thermodynamics* is expressed as follows:
 
 Heat spontaneously moves only towards a lower temperature.
 
-This statement can be made more specific as follows:
-
-:::{figure} ../images/art-p176-1.svg
-:alt: Illustration from the original text
-:::
+This statement can be made more specific: heat can transfer to a higher temperature only when energy is supplied.
 
 We will see that this simple observation has multiple, profound consequences for engineers. In particular, it determines the maximum efficiency of all engines and refrigeration machines!
 
@@ -161,11 +153,7 @@ In power plants, the two temperature zones are easily identifiable: the steam ta
 
 Automotive and aeronautical engines, on the other hand, must discharge the air that serves as their working fluid because of the combustion products that prevent its reuse. For this reason, cooling takes place in the atmosphere, outside the engine casing. Their “cooling zone” is not easily distinguishable.
 
-Applied to the engine, the second law can be expressed as follows:
-
-:::{figure} ../images/art-p180-1.svg
-:alt: Illustration from the original text
-:::
+Applied to the engine, the second law states that no engine can continuously convert heat into work from a single heat source. Every engine rejects heat at a lower temperature, so continuous operation requires two reservoirs at different temperatures.
 
 Purists will express this corollary, called the *Kelvin-Planck corollary*, with the following inequality:
 
@@ -189,11 +177,7 @@ An example of energy transfers in a refrigerator, air conditioner, or heat pump 
 
 *Diagram* CC-0 *Olivier Cleynen*
 
-Applied to a refrigerator, the second law can be expressed as follows:
-
-:::{figure} ../images/art-p181-1.svg
-:alt: Illustration from the original text
-:::
+Applied to a refrigerator, the second law states that any machine that transfers heat to a higher-temperature body receives work.
 
 Purists will enjoy translating this corollary, called the *Clausius corollary*, as follows:
 
@@ -531,11 +515,7 @@ Experiment illustrating the absolute temperature scale proposed by William Thoms
 
 $\frac{1000}{500} = 50 \%$ of the heat it receives. If the low temperature is four times lower, this rejection is four times lower ( $\frac{1000}{250}$ ) than the heat received. *Diagram* CC-0 *Olivier Cleynen*
 
-By manipulating equations 7/4 and 7/1, we can reformulate Kelvin’s definition as follows:
-
-:::{figure} ../images/art-p192-1.svg
-:alt: Illustration from the original text
-:::
+By manipulating equations 7/4 and 7/1, we can reformulate Kelvin’s definition: a Carnot engine operating between reservoirs separated by one degree and supplied with one unit of heat defines the hot-source temperature as the inverse of the work it produces.
 
 The temperatures in this scale, called the *absolute temperature* scale or *thermodynamic temperature* scale, are always positive and vary from zero to infinity.
 
@@ -837,10 +817,6 @@ Finally, we assume that the efficiencies of thermal machines based on a Carnot c
 :::{math}
 \eta _{\mathrm{Carnot\ heat\ pump}}= \frac{1}{1 - \dfrac{T_{L}}{T_{H}}} \qquad (7/8)
 :::
-
-   :::{figure} ../images/art-p200-1.svg
-   :alt: Illustration from the original text
-   :::
 
 ```{exercise}
 :label: prob-7-1

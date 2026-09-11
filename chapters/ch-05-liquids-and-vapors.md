@@ -12,10 +12,6 @@ Liquids and Vapors
 
 *The Dissociative Disorder of Liquefying Fluids*
 
-:::{figure} ../images/art-p113-1.svg
-:alt: Illustration from the original text
-:::
-
 :::{admonition} Executive summary
 :class: tip
 Water generally follows the same trends as an ideal gas, but when it condenses or evaporates, its properties change abruptly. They cannot be calculated like those of an ideal gas: they must be tabulated.
@@ -510,11 +506,7 @@ It is worth mentioning that the term $h_{LV}\equiv \Delta h_{L)V}\equiv h_{L}- h
 
 Finally, we want to quantify the properties of water *between* the saturation points, in other words, when it is only partially liquid. Experiment shows that in this region, fluids behave linearly, and its properties can be easily quantified.
 
-In order to “position” a liquid-vapor mixture between the two saturation points, we define the *quality* or *dryness fraction* as follows:
-
-:::{figure} ../images/art-p127-1.svg
-:alt: Illustration from the original text
-:::
+In order to “position” a liquid-vapor mixture between the two saturation points, we define the *quality* or *dryness fraction* $x$ as the mass fraction of saturated vapor in the mixture.
 
 For example, a mass of $1 kg$ of water with a dryness fraction of $0.2$ contains $0.8 kg$ of saturated liquid and $0.2 kg$ of saturated vapor. This $0.2 kg$ does occupy the majority of the available volume. We could say that the dryness fraction quantifies the progression of a liquid-vapor mixture between its two saturation points (figure 5.11). The concept of dryness fraction applies only to two-phase mixtures, thus we always have $0 \le x \le 1$.
 

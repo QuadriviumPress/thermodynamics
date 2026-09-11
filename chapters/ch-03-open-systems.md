@@ -16,10 +16,6 @@ Open Systems
 
 *Measuring the Intangible in the Ungraspable*
 
-:::{figure} ../images/art-p059-1.svg
-:alt: Illustration from the original text
-:::
-
 :::{admonition} Executive summary
 :class: tip
 An open system is crossed by a mass flow. Heat and work transfers cause variations in the enthalpy of the fluid. For work to be reversible, the movement must be infinitely slow.

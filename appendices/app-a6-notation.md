@@ -10,10 +10,6 @@ Appendix A6 319
 
 ## A6 Notation
 
-:::{figure} ../images/art-p318-1.svg
-:alt: Illustration from the original text
-:::
-
 :::{admonition} In short
 :class: tip
 **twelve thousand point three** is written $12 000.3$

@@ -8,10 +8,6 @@ label: ch-01-fundamental-concepts
 
 (ch-1)=
 
-:::{figure} ../images/art-p009-1.svg
-:alt: Illustration from the original text
-:::
-
 :::{admonition} Executive summary
 :class: tip
 The first law states that energy is constant and indestructible: we transform it from one form to another. Work is a transfer involving a force and a displacement. Heat is a chaotic transfer associated with a potential, temperature.

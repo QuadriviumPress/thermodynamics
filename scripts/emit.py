@@ -487,16 +487,13 @@ Writer.symbols = _symbols_writer
 def _steam_tables_writer(self, spec):
     self.emit(
         "The thermodynamic properties of water across a wide range of pressures and "
-        "temperatures, from the NIST IAPWS-1995 model. The tables below are page "
-        "images from the original PDF for numerical fidelity."
+        "temperatures, from the NIST IAPWS-1995 model. The tables below are "
+        "selectable text extracted from the original PDF."
     )
     self.emit()
-    for pno in spec.get("steam_pages") or []:
-        name = f"steam-table-p{pno + 1:03d}.png"
-        self.emit(f":::{{figure}} ../images/{name}")
-        self.emit(f":alt: Steam tables page {pno + 1}")
-        self.emit(":::")
-        self.emit()
+    self.emit("```{literalinclude} steam-tables.txt")
+    self.emit(":language: text")
+    self.emit("```")
 
 
 Writer.steam_tables = _steam_tables_writer

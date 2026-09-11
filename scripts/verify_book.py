@@ -173,13 +173,14 @@ def main():
         if depth[3] or depth[4]:
             fail(f"{os.path.basename(path)}: unbalanced directive fences {depth}")
 
-    # ---- steam table page images -----------------------------------------
+    # ---- selectable steam tables -----------------------------------------
     steam = os.path.join(ROOT, "appendices", "app-a1-steam-tables.md")
     if os.path.exists(steam):
-        pages = outline["appendices"][0]["end_page"] - outline["appendices"][0]["start_page"] + 1
-        imgs = len(re.findall(r"steam-table-p\d+\.png", texts[steam]))
-        if imgs < pages:
-            fail(f"steam tables: {imgs}/{pages} page images embedded")
+        table_text = os.path.join(ROOT, "appendices", "steam-tables.txt")
+        if not os.path.exists(table_text):
+            fail("steam tables: selectable source is missing")
+        elif not re.search(r"Steam Table [123]", open(table_text).read()):
+            fail("steam tables: selectable source has no table data")
 
     if problems:
         print("verification failed:")

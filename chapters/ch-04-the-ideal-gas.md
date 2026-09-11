@@ -16,10 +16,6 @@ The Ideal Gas
 
 *The Improbable Thermometer of Scholar Clapeyron*
 
-:::{figure} ../images/art-p081-1.svg
-:alt: Illustration from the original text
-:::
-
 :::{admonition} Executive summary
 :class: tip
 The ideal gas is a mathematical model that allows us to predict the properties (internal energy, enthalpy) of a gas simply based on its temperature. By approximation, air is an ideal gas.
@@ -43,11 +39,8 @@ This chapter is incompatible with chapter 5 (*liquids and vapors*), where we wil
 (sec-4-1-1)=
 ### 4.1.1 The manometer as a thermometer
 
-Let us start with the most important point:
-
-:::{figure} ../images/art-p082-1.svg
-:alt: Illustration from the original text
-:::
+Let us start with the most important point: the ideal gas is a mathematical
+model that lets us predict a gas's temperature from its pressure.
 
 The ideal gas model defines by itself a temperature scale. It is proposed to measure the absolute temperature $T$ very simply with a manometer, stating that it is directly proportional to the pressure $p$ and inversely proportional to the density $\rho$.
 
@@ -1064,10 +1057,6 @@ At the time when this text was written, the atomic hypothesis remained largely s
 ::::
 
 ## Problems
-
-:::{figure} ../images/art-p106-1.svg
-:alt: Illustration from the original text
-:::
 
 Air is considered an ideal gas.
 

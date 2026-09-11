@@ -12,10 +12,6 @@ Closed Systems
 
 *A Short Treatise for Energy Accounting*
 
-:::{figure} ../images/art-p031-1.svg
-:alt: Illustration from the original text
-:::
-
 :::{admonition} Executive summary
 :class: tip
 A closed system contains a fixed amount of mass. Heat and work transfers cause variations in the internal energy of the fluid. For work to be reversible, the movement must be infinitely slow.
@@ -926,4 +922,3 @@ $p_{\mathrm{D}1}= 194.8\,\mathrm{bar} = 2825\,\mathrm{psi}$.
 
 :::
 ```
-

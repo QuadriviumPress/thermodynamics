@@ -16,10 +16,6 @@ Entropy
 
 *The Terrifying Prophecy of Professor Clausius*
 
-:::{figure} ../images/art-p207-1.svg
-:alt: Illustration from the original text
-:::
-
 :::{admonition} Executive summary
 :class: tip
 Entropy is a property of bodies. We quantify its changes in order to measure the irreversibility of energy transfers (always undesirable for the engineer). The total entropy always increases during irreversible transfers: of work (with abrupt motion), of heat (with temperature gradient).
@@ -741,10 +737,6 @@ When an energetically-isolated system undergoes a process, its entropy $s$ chang
 \Delta s \geq 0
 :::
 
-:::{figure} ../images/art-p225-1.svg
-:alt: Illustration from the original text
-:::
-
 We can always decrease the entropy of a system to bring it back to its initial value (by returning the system itself to its initial state, whatever the method used), but this will necessarily be at the expense of an increase *at least as large* in the entropy of another system.
 
 We could also say, in the same way that we described energy as “a quantity that does not change during transformations” (§1.1.1), that entropy is conceptualized as “a quantity that always increases during transformations.” This is the indicator we were looking for in §8.1.1 to determine the direction of processes.
@@ -1016,14 +1008,6 @@ Finally, we assume that the efficiencies of thermal machines based on a Carnot c
 
 :::
 ```
-
-   :::{figure} ../images/fig-8-13.svg
-   :label: fig-8-13
-   :enumerator: 8.13
-   :alt: Reversible elementary processes of an ideal gas, represented on a temperature-entropy diagram.
-   
-   Reversible elementary processes of an ideal gas, represented on a temperature-entropy diagram.
-   :::
 
 ```{exercise}
 :label: prob-8-3
