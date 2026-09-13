@@ -60,4 +60,6 @@ site:
   actions:
     - title: Original textbook
       url: https://thermodynamicsbook.com
-  nav: []
+  nav:
+    - title: Sources & Attribution
+      url: https://github.com/QuadriviumPress/thermodynamics/blob/main/SOURCES.md

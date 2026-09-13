@@ -33,7 +33,9 @@ merged heading/body lines on a few pages.
 ```bash
 npm install
 npm run start          # preview at :3000
+npm run verify         # structural and conversion checks
 npm run build          # static site in _build/html/
+npm run check          # verify and build
 ```
 
 ## Convert from PDF
