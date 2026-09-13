@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img" aria-labelledby="title desc">
+  <title id="title">Thermodynamics</title>
+  <desc id="desc">A pale piston cylinder above an amber flame on a deep brown background.</desc>
+  <rect width="512" height="512" rx="96" fill="#2a1810"/>
+  <rect x="176" y="110" width="160" height="220" rx="18" fill="#3b2418" stroke="#fdba74" stroke-width="18"/>
+  <rect x="196" y="150" width="120" height="70" rx="10" fill="#f59e0b"/>
+  <path d="M256 360 c-28 0-52 34-52 70 0 40 28 62 52 86 24-24 52-46 52-86 0-36-24-70-52-70z" fill="#fb923c"/>
+  <circle cx="256" cy="412" r="16" fill="#fde68a"/>
+</svg>
