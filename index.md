@@ -13,7 +13,7 @@ the operation of heat engines and refrigeration systems.
 This MyST edition is a faithful web-native conversion of the free PDF from
 [thermodynamicsbook.com](https://thermodynamicsbook.com). The Markdown under
 `chapters/`, `appendices/`, `front/`, and `back/` is generated from that PDF
-by the scripts in [`scripts/`](scripts/) and is the editable source for this site.
+by the scripts in `scripts/` and is the editable source for this site.
 
 ## Source and license
 
