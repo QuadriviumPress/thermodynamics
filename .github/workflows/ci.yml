@@ -13,3 +13,4 @@ jobs:
     uses: QuadriviumPress/bindery/.github/workflows/ci.yml@main
     with:
       build-command: npm run check
+      install-hunspell: true
