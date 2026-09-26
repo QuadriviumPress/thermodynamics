@@ -621,7 +621,7 @@ The $50 MW$ expended by the fan are entirely dissipated as friction in the wind 
    :::{figure} ../images/fig-6-20.svg
    :label: fig-6-20
    :enumerator: 6.20
-   :alt: Buildings of the etw (European Transonic Windtunnel) in Cologne and test section of the National Transonic Facility of NASA, of similar size
+   :alt: Buildings of the etw (European Transonic Windtunnel) in Cologne and test section of the National Transonic Facility of NASA, of similar size and capabilities.
    
    Buildings of the etw (European Transonic Windtunnel) in Cologne and test section of the National Transonic Facility of NASA, of similar size and capabilities.
    :::
@@ -654,7 +654,7 @@ efficiency also decreases.
    :::{figure} ../images/fig-6-21.jpg
    :label: fig-6-21
    :enumerator: 6.21
-   :alt: A static gas turbine engine, in this configuration named turboshaft, powering an electric generator. The gas is typically expanded (in the t
+   :alt: A static gas turbine engine, in this configuration named turboshaft, powering an electric generator. The gas is typically expanded (in the turbine, between C and D) to atmospheric pressure.
    
    A static gas turbine engine, in this configuration named *turboshaft*, powering an electric generator. The gas is typically expanded (in the turbine, between C and D) to atmospheric pressure.
    :::
@@ -732,7 +732,7 @@ $\dot{m}_{\mathrm{external\,air\,min.}}= \dfrac{-\dot{Q}_{\mathrm{out\,air\,cond
    :::{figure} ../images/fig-6-22.jpg
    :label: fig-6-22
    :enumerator: 6.22
-   :alt: Schematic diagram of an air conditioner. The air in the air conditioner circuit circulates in a steady flow (A B C D A), without ever leavin
+   :alt: Schematic diagram of an air conditioner. The air in the air conditioner circuit circulates in a steady flow (A $\rightarrow$ B $\rightarrow$ C $\rightarrow$ D $\rightarrow$ A), without ever leaving the machine.
    
    Schematic diagram of an air conditioner. The air in the air conditioner circuit circulates in a steady flow (A $\rightarrow$ B $\rightarrow$ C $\rightarrow$ D $\rightarrow$ A), without ever leaving the machine.
    :::

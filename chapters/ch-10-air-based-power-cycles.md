@@ -229,7 +229,7 @@ In order to understand the interest of this cycle and the true difference betwee
 
 To achieve this, Diesel had to wait until the end of compression to inject the fuel, in order to avoid premature ignition. The isothermal heat addition requires a progressive combustion. Thus, the original Diesel engine is inherently equipped with *direct fuel injection*, independent of air intake. The Diesel cycle is interesting because it *enables* a higher compression ratio and combustion quality compared to the Otto cycle.
 
-Diesel’s engine evolved continuously from the impractical concept described in the 1893 *Theory and Construction of a Rational Heat Engine Intended to Replace the Steam Engines and Combustion Engines Known to Date* [[23](#ref-23), [24](#ref-24)] $(400 bar$ and isothermal combustion of coal powder) to the first production models he developed at the manufacturer man $(40 bar$ and isobaric combustion of petroleum). Like Otto, Diesel initially focused on stationary engines (his first prototypes were single-cylinder and over three meters high), but it was ultimately applications in commercial transportation, where its excellent efficiency and operating economics gave him the advantage over spark-ignition engines, that brought his work fame.
+Diesel’s engine evolved continuously from the impractical concept described in the 1893 *Theory and Construction of a Rational Heat Engine Intended to Replace the Steam Engines and Combustion Engines Known to Date* [[23](#ref-23), [24](#ref-24)] $(400 bar$ and isothermal combustion of coal powder) to the first production models he developed at the manufacturer MAN $(40 bar$ and isobaric combustion of petroleum). Like Otto, Diesel initially focused on stationary engines (his first prototypes were single-cylinder and over three meters high), but it was ultimately applications in commercial transportation, where its excellent efficiency and operating economics gave him the advantage over spark-ignition engines, that brought his work fame.
 
 (sec-10-3-4)=
 ### 10.3.4 Implementation of the cycles
@@ -303,7 +303,7 @@ Before delving into the cycles of turbine engines, we will briefly review the op
 Sadi Carnot, 1824 [[4](#ref-4)]
 :::
 
-The compression and expansion phases in engines are often adiabatic, and always irreversible. It is difficult to achieve high-quality flow in the compressor, moreso than in the turbine because the pressure gradient promotes boundary layer separation. It is a heavy, bulky component with complex geometry ([Figures 10.8](#fig-10-8) and 10.9). Most compressors are *axial*, meaning that the air passes through them parallel to the axis of rotation, but sometimes *centrifugal* compressors are used, which sling the air radially; regardless of the method used, the thermodynamic process undergone by the air remains the same.
+The compression and expansion phases in engines are often adiabatic, and always irreversible. It is difficult to achieve high-quality flow in the compressor, more so than in the turbine because the pressure gradient promotes boundary layer separation. It is a heavy, bulky component with complex geometry ([Figures 10.8](#fig-10-8) and [10.9](#fig-10-9)). Most compressors are *axial*, meaning that the air passes through them parallel to the axis of rotation, but sometimes *centrifugal* compressors are used, which sling the air radially; regardless of the method used, the thermodynamic process undergone by the air remains the same.
 
 :::{figure} ../images/fig-10-8.jpg
 :label: fig-10-8
@@ -927,7 +927,7 @@ $+0.174 kg s^{-1})$.
    :::{figure} ../images/fig-10-34.png
    :label: fig-10-34
    :enumerator: 10.34
-   :alt: A Pratt & Whitney Canada pwc123 turboprop engine powering a Bombardier Dash 8. The pwc123 is configured with three concentric rotating assemblies
+   :alt: A Pratt & Whitney Canada pwc123 turboprop engine powering a BombardierDash 8. The pwc123 is configured with three concentric rotating assemblies, with the engine shaft powered by a free turbine, but its operation principle remains similar to that described in figure 10.33.
    
    A Pratt & Whitney Canada pwc123 turboprop engine powering a Bombardier*Dash 8*. The pwc123 is configured with three concentric rotating assemblies, with the engine shaft powered by a free turbine, but its operation principle remains similar to that described in figure 10.33.
    :::
@@ -1013,7 +1013,7 @@ an interesting compromise!
    :::{figure} ../images/fig-10-38.jpg
    :label: fig-10-38
    :enumerator: 10.38
-   :alt: Top: schematic diagram of a turboshaft based on the cf6 from which the fan has been removed. Bottom: the same turboshaft engine modified by
+   :alt: Top: schematic diagram of a turboshaft based on the cf6 from which the fan has been removed. Bottom: the same turboshaft engine modified by the addition of an intercooling system.
    
    Top: schematic diagram of a turboshaft based on the cf6 from which the fan has been removed. Bottom: the same turboshaft engine modified by the addition of an intercooling system.
    :::

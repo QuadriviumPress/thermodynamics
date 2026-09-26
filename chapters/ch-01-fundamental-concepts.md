@@ -693,7 +693,7 @@ In the early 18th century, the Frenchman Guillaume Amontons built an air thermom
    :::{figure} ../images/fig-1-8.jpg
    :label: fig-1-8
    :enumerator: 1.8
-   :alt: Simplified diagram of the water circuit inside a steam power plant. The water follows a complete cycle through four processes. This circuit
+   :alt: Simplified diagram of the water circuit inside a steam power plant. The water follows a complete cycle through four processes. This circuit, called the Rankine cycle, is studied in more detail in chapter 9 (steam power cycles) (section 9.4.2 p. 252).
    
    Simplified diagram of the water circuit inside a steam power plant. The water follows a complete cycle through four processes. This circuit, called the Rankine cycle, is studied in more detail in chapter 9 (*steam power cycles*) (section 9.4.2 p. 252).
    :::
@@ -733,7 +733,7 @@ The water flow rate circulating in the plant is $15 kg s^{-1}$.
    :::{figure} ../images/fig-1-9.jpg
    :label: fig-1-9
    :enumerator: 1.9
-   :alt: Conical springs, whose stiffness increases exponentially when compressed. We will see in chapter 2 (closed systems) that when fluids are com
+   :alt: Conical springs, whose stiffness increases exponentially when compressed. We will see in chapter 2 (closed systems) that when fluids are compressed and expanded slowly, they behave similarly to spring C, which has a conical geometry like those shown here.
    
    Conical springs, whose stiffness increases exponentially when compressed. We will see in chapter 2 (*closed systems*) that when fluids are compressed and expanded slowly, they behave similarly to spring C, which has a conical geometry like those shown here.
    :::
@@ -755,7 +755,7 @@ The water flow rate circulating in the plant is $15 kg s^{-1}$.
    :::{figure} ../images/fig-1-10.jpg
    :label: fig-1-10
    :enumerator: 1.10
-   :alt: Experiment conducted with a powerful spring. The piston compresses the spring from to , then the spring pushes back the piston from to . On
+   :alt: Experiment conducted with a powerful spring. The piston compresses the spring from $1$ to $2$, then the spring pushes back the piston from $3$ to $4$. On the return path, the force exerted by the spring is greater.
    
    Experiment conducted with a powerful spring. The piston compresses the spring from $1$ to $2$, then the spring pushes back the piston from $3$ to $4$. On the return path, the force exerted by the spring is greater.
    :::
@@ -816,7 +816,7 @@ The water flow rate circulating in the plant is $15 kg s^{-1}$.
    :::{figure} ../images/fig-1-12.jpg
    :label: fig-1-12
    :enumerator: 1.12
-   :alt: Schematic diagram of a water turbine. Water enters at the top left, rotates the turbine blades, is heated by internal friction, and exits at
+   :alt: Schematic diagram of a water turbine. Water enters at the top left, rotates the turbine blades, is heated by internal friction, and exits at the bottom right of the machine.
    
    Schematic diagram of a water turbine. Water enters at the top left, rotates the turbine blades, is heated by internal friction, and exits at the bottom right of the machine.
    :::
@@ -876,7 +876,7 @@ taken into account).
    :::{figure} ../images/fig-1-14.svg
    :label: fig-1-14
    :enumerator: 1.14
-   :alt: A Sikorsky S-76B helicopter, equipped with two P&WC pt-6b turboshaft engines, each with . The airflow through the engines is shown in a sche
+   :alt: A Sikorsky S-76B helicopter, equipped with two P&WC pt-6b turboshaft engines, each with $980 hp$. The airflow through the engines is shown in a schematic diagram. We will study these engines in more detail in chapter 10 (air-based power cycles).
    
    A Sikorsky S-76B helicopter, equipped with two *P&WC* pt-6b turboshaft engines, each with $980 hp$. The airflow through the engines is shown in a schematic diagram. We will study these engines in more detail in chapter 10 (*air-based power cycles*).
    :::

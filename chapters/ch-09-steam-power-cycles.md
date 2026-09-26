@@ -757,7 +757,7 @@ The *50 Let Podeby* actually operates between $29 a$nd 0.75 bar, but these value
    :::{figure} ../images/fig-9-28.jpg
    :label: fig-9-28
    :enumerator: 9.28
-   :alt: The 50 Let Podeby, a 25,000-ton nuclear-turbo-electric powered icebreaker (two reactors of , three engines of . Its construction started in
+   :alt: The 50 Let Podeby, a 25,000-ton nuclear-turbo-electric powered icebreaker (two reactors of $171 MW_{\mathrm{heat}}$, three engines of $17.6 MW_{\mathrm{mech}.})$. Its construction started in 1989 but it only entered service in 2007.
    
    The *50 Let Podeby*, a 25,000-ton nuclear-turbo-electric powered icebreaker (two reactors of $171 MW_{\mathrm{heat}}$, three engines of $17.6 MW_{\mathrm{mech}.})$. Its construction started in 1989 but it only entered service in 2007.
    :::

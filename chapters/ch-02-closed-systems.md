@@ -41,9 +41,9 @@ The use of a closed system is appropriate for analyzing machines with reciprocat
 :::{figure} ../images/fig-2-1.jpg
 :label: fig-2-1
 :enumerator: 2.1
-:alt: A cutaway in a truck engine reveals three pistons in their cylinders. A closed system is a useful tool for studying the air trapped in a cylinder. The photographed engine is a diesel V8 from man.
+:alt: A cutaway in a truck engine reveals three pistons in their cylinders. A closed system is a useful tool for studying the air trapped in a cylinder. The photographed engine is a diesel V8 from MAN.
 
-A cutaway in a truck engine reveals three pistons in their cylinders. A closed system is a useful tool for studying the air trapped in a cylinder. The photographed engine is a diesel V8 from man.
+A cutaway in a truck engine reveals three pistons in their cylinders. A closed system is a useful tool for studying the air trapped in a cylinder. The photographed engine is a diesel V8 from MAN.
 :::
 
 *Photo* CC-by-sa *Olivier Cleynen*
@@ -817,7 +817,7 @@ $w_{\mathrm{A}\rightarrow \mathrm{B}}= -k[\frac{1}{-0.4} v^{-0.4}]^{v_{\mathrm{B
    :::{figure} ../images/fig-2-19.jpg
    :label: fig-2-19
    :enumerator: 2.19
-   :alt: Schematic modeling of a truck pneumatic suspension system. The piston, at the center, compresses a mass of air (in blue) when the trailer is
+   :alt: Schematic modeling of a truck pneumatic suspension system. The piston, at the center, compresses a mass of air (in blue) when the trailer is loaded.
    
    Schematic modeling of a truck pneumatic suspension system. The piston, at the center, compresses a mass of air (in blue) when the trailer is loaded.
    :::
@@ -898,7 +898,7 @@ $p_{\mathrm{D}1}= 194.8\,\mathrm{bar} = 2825\,\mathrm{psi}$.
    :::{figure} ../images/fig-2-22.jpg
    :label: fig-2-22
    :enumerator: 2.22
-   :alt: Schematic representation of the operation of a four-cylinder engine. Pistons A and C are going up, and pistons B and D are going down. They
+   :alt: Schematic representation of the operation of a four-cylinder engine. Pistons A and C are going up, and pistons B and D are going down. They are all connected to the same motor shaft, not shown here.
    
    Schematic representation of the operation of a four-cylinder engine. Pistons A and C are going up, and pistons B and D are going down. They are all connected to the same motor shaft, not shown here.
    :::

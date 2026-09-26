@@ -724,7 +724,7 @@ Rudolf Diesel in 1883.
 
 *Photo by unknown author (public domain)*
 
-Despite everything, Rudolf Diesel, after a promising start in the design of refrigeration systems, managed to convince the *Maschinenfabrik Augsburg-Nürnberg* company, known today as man, to finance his research. His research would be challenging: the transition from theory to practice took four years. Many ambitions were scaled back: the maximum pressure decreased to $90$ and then $40 bar (580 psi)$, the coal dust was abandoned in favor of a crude oil for easier handling. Since the structural limits of the engine constrained the cycle, the isothermal combustion was replaced by isobaric combustion at maximum pressure. The second prototype, a single-cylinder engine nearly three meters tall (figure 7.14), was the first to operate autonomously: eight minutes in February 1894. The performance of the third prototype (figure 7.15) was independently measured in 1897: $17 hp$ at $154 rpm$, and an efficiency of $26.2 \%$.
+Despite everything, Rudolf Diesel, after a promising start in the design of refrigeration systems, managed to convince the *Maschinenfabrik Augsburg-Nürnberg* company, known today as MAN, to finance his research. His research would be challenging: the transition from theory to practice took four years. Many ambitions were scaled back: the maximum pressure decreased to $90$ and then $40 bar (580 psi)$, the coal dust was abandoned in favor of a crude oil for easier handling. Since the structural limits of the engine constrained the cycle, the isothermal combustion was replaced by isobaric combustion at maximum pressure. The second prototype, a single-cylinder engine nearly three meters tall (figure 7.14), was the first to operate autonomously: eight minutes in February 1894. The performance of the third prototype (figure 7.15) was independently measured in 1897: $17 hp$ at $154 rpm$, and an efficiency of $26.2 \%$.
 
 This efficiency was twice that of its contemporaries with internal combustion, and four times that of the best steam engines!
 
@@ -739,9 +739,9 @@ The tragic disappearance of its creator would not suffice to slow down the progr
 :::{figure} ../images/fig-7-14.jpg
 :label: fig-7-14
 :enumerator: 7.14
-:alt: The second prototype developed at man by Rudolf Diesel, and the first to operate independently, in February 1894. It has only one cylinder with a diameter of $22 cm$, and the direct fuel injection is done by a compressed air circuit. The engine is now exhibited at the headquarters of the man company.
+:alt: The second prototype developed at MAN by Rudolf Diesel, and the first to operate independently, in February 1894. It has only one cylinder with a diameter of $22 cm$, and the direct fuel injection is done by a compressed air circuit. The engine is now exhibited at the headquarters of the MAN company.
 
-The second prototype developed at man by Rudolf Diesel, and the first to operate independently, in February 1894. It has only one cylinder with a diameter of $22 cm$, and the direct fuel injection is done by a compressed air circuit. The engine is now exhibited at the headquarters of the man company.
+The second prototype developed at MAN by Rudolf Diesel, and the first to operate independently, in February 1894. It has only one cylinder with a diameter of $22 cm$, and the direct fuel injection is done by a compressed air circuit. The engine is now exhibited at the headquarters of the MAN company.
 :::
 
 *Photo* CC-by-sa *MAN SE*

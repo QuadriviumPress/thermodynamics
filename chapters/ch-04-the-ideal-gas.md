@@ -1303,7 +1303,7 @@ $W_{\mathrm{real} \mathrm{compressor}}=\dot{W}_{\mathrm{friction} \mathrm{losses
    :::{figure} ../images/fig-4-17.jpg
    :label: fig-4-17
    :enumerator: 4.17
-   :alt: Air intake of one of the four General Electric GEnx-2B turbofans equipping a Boeing 747-8. The two-color fan blades are visible in the foreg
+   :alt: Air intake of one of the four General Electric GEnx-2B turbofans equipping a Boeing 747-8. The two-color fan blades are visible in the foreground; behind, the air flow is divided between the compressor inlet (internal) and the cold flow rectifier stators (external).
    
    Air intake of one of the four General Electric GEnx-2B turbofans equipping a Boeing 747-8. The two-color fan blades are visible in the foreground; behind, the air flow is divided between the compressor inlet (internal) and the cold flow rectifier stators (external).
    :::

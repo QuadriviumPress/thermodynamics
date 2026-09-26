@@ -427,7 +427,7 @@ In Steam Table 2 (see pp. 310-311), the data is sorted by temperature (with each
 
 (see pp. 312-313) presents exactly the same data, but sorted by pressure
 
-(with each pressure corresponding to a single saturation temperature). Excerpts from these steam tables are presented in [Tables 5.3](#tab-5-3) and 5.4.
+(with each pressure corresponding to a single saturation temperature). Excerpts from these steam tables are presented in [Tables 5.3](#tab-5-3) and [5.4](#tab-5-4).
 
 :::{table} Excerpt from Steam Table 2 (see in Appendix A1 pp. 310-311). Subscript $L$ corresponds to saturated liquid, and subscript $V$ corresponds to saturated vapor. The difference between these values is sometimes noted with an index $LV$: for example $u_{LV}\equiv \Delta u_{L)V}\equiv u_{V}- u_{L}$.
 :label: tab-5-3
@@ -1141,7 +1141,7 @@ $T_{\mathrm{sat}.p=2.0797 bar}= 121.37^{\circ}C = 250.47 ^{\circ} F$.
    :::{figure} ../images/fig-5-28.jpg
    :label: fig-5-28
    :enumerator: 5.28
-   :alt: A pressure cooker, in which the increased pressure results in higher boiling temperature and thus faster cooking. It is affectionately known
+   :alt: A pressure cooker, in which the increased pressure results in higher boiling temperature and thus faster cooking. It is affectionately known as a cocotte minute in France.
    
    A pressure cooker, in which the increased pressure results in higher boiling temperature and thus faster cooking. It is affectionately known as a *cocotte minute* in France.
    :::
@@ -1195,7 +1195,7 @@ For $\Delta p_{\mathrm{boiling}}= 9.9127 \times 10^{4}Pa, \Delta z_{\mathrm{boil
    :::{figure} ../images/fig-5-30.jpg
    :label: fig-5-30
    :enumerator: 5.30
-   :alt: Water pumping from a reservoir located below. The first observation of the height limit calculated in this problem was made in 1630 by Giova
+   :alt: Water pumping from a reservoir located below. The first observation of the height limit calculated in this problem was made in 1630 by Giovanni Battista Baliani.
    
    Water pumping from a reservoir located below. The first observation of the height limit calculated in this problem was made in 1630 by Giovanni Battista Baliani.
    :::
