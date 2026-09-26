@@ -24,6 +24,6 @@ and $p_{\mathrm{atm}.}$ is the ambient atmospheric pressure $(Pa)$.
 
 A pressure gauge left exposed to the atmosphere will therefore read 0 bar regardless of ambient pressure. The pressure indicated during a measurement will depend on the ambient atmospheric pressure; it can be positive (for example, in a car tire) or sometimes negative (for example, in a water or oil pipeline).
 
-Gauge pressure is interesting because it indicates the difference in pressure between each side of the reservoir walls (tire, pipeline); it is therefore indicative of the stresses they undergo.
+Gauge pressure is interesting because it indicates the difference in pressure between the two sides of the reservoir walls (tire, pipeline); it is therefore indicative of the stresses they undergo.
 
 However, it is the actual, real pressure that we need to predict the state of fluids. In our thermodynamic calculations, we always use real pressure, simply noted $p$.

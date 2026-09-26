@@ -114,7 +114,7 @@ Other units are often used, such as the horsepower. One horsepower is approximat
 
 We will denote power by placing a dot above the symbol for energy; thus we write$\dot{E}$ as a power (for example, mechanical) delivering an amount of energy $E$ every second.
 
-In everyday language, the term “power” is used to quantify *the maximum useful power* of a system. For example, when we say that a car has “100 horsepower”, it means has an engine capable of providing it with a power of$\dot{W}_{\mathrm{mech}.}= 100 hp$ for a few moments—but for this, the engine receives about$\dot{Q}_{\mathrm{combustion}}= 300 hp$ in the form of heat. Furthermore, on the road, the average mechanical power supplied by the engine probably does not exceed $20 hp$.
+In everyday language, the term “power” is used to quantify *the maximum useful power* of a system. For example, when we say that a car has “100 horsepower”, it means the car has an engine capable of providing it with a power of$\dot{W}_{\mathrm{mech}.}= 100 hp$ for a few moments—but for this, the engine receives about$\dot{Q}_{\mathrm{combustion}}= 300 hp$ in the form of heat. Furthermore, on the road, the average mechanical power supplied by the engine probably does not exceed $20 hp$.
 
 :::{figure} ../images/fig-1-2.svg
 :label: fig-1-2
@@ -131,7 +131,7 @@ A trailer, with zero power $(\dot{Q} = 0 W)$ but capable of delivering a lot of 
 
 In many thermodynamic applications, it is interesting to quantify energy transfers independently of the amount of mass inside the machine. For example, if we want to compare the *operation* of the engines of a motorcycle and of a truck, it will be wise to divide each of the energy transfers (during compression, combustion, expansion) by the quantity of air in the cylinders, to eliminate the scale effects. To this end, we use quantities called *specific* (sometimes called *mass-specific*); and we denote them in lowercase.
 
-**Specific energy** (sometimes called mass-specific energy), is measured in joules per kilogram ($J kg^{-1}$):
+**Specific energy** (sometimes called mass-specific energy) is measured in joules per kilogram ($J kg^{-1}$):
 
 :::{math}
 :label: eq-1-3
@@ -153,7 +153,7 @@ The heat required will be $Q_{\mathrm{comb}.1}= m_{1}q_{\mathrm{comb}.}= 0.5 \ti
 
 ````
 
-**Specific power** (sometimes also called mass-specific power), has the same units as specific energy: we divide watts (joules per second) by a mass flow rate (kilos per second).
+**Specific power** (sometimes also called mass-specific power) has the same units as specific energy: we divide watts (joules per second) by a mass flow rate (kilos per second).
 
 :::{math}
 :label: eq-1-4
@@ -433,7 +433,7 @@ T(^{\circ} F) = 1.8 \times [T(K) - 273.15] + 32
 T(K) = \frac{T(^{\circ} F) - 32}{1.8} + 273.15
 :::
 
-Both of those scales precede the Kelvin scale, and they were cleverly redefined and synchronized with it in 1848 (wee will have the opportunity to study this clever manipulation in chapter 7, see §7.4 p. 191). Purists will note that the absolute unit is named kelvin and not “degree Kelvin”. Some indicative temperatures are listed in table 1.1.
+Both of those scales precede the Kelvin scale, and they were cleverly redefined and synchronized with it in 1848 (we will have the opportunity to study this clever manipulation in chapter 7, see §7.4 p. 191). Purists will note that the absolute unit is named kelvin and not “degree Kelvin”. Some indicative temperatures are listed in table 1.1.
 
 :::{table} Examples of temperatures. Values with an asterisk are converted approximately.
 :label: tab-1-1
@@ -555,7 +555,7 @@ Since the capacity $c_{\mathrm{steel}}$ is independent of $T$, this integral bec
 
 During integration, $\int ^{\mathrm{B}}_{\mathrm{A}}dT$ becomes $\Delta T$ (a temperature difference), while $\int ^{\mathrm{B}}_{\mathrm{A}}$ δ$Q$ becomes simply $Q_{\mathrm{A}\rightarrow \mathrm{B}}$ (a transfer between two states). Heat, a *path quantity*, is transferred, while temperature, a *state quantity*, is increased (see Appendix A4 on this topic).
 
-In this book, when we quantify energy transfers, we convene to make their sign explicit (so we add a “+” in positive transfers).
+In this book, when we quantify energy transfers, we use the convention of making their sign explicit (so we add a “+” in positive transfers).
 
 A conversion of the temperatures to kelvins would not have changed the value of $\Delta T$. The result would then have been the same.
 
@@ -566,7 +566,7 @@ With an electrical resistance of the power of a standard domestic heater $(2 kW)
 (sec-1-5)=
 ## 1.5 Hot and Cold
 
-We conclude this chapter by revisiting some common language terms, as they are understood in thermodynamics. *Hot* — For us, “hot” is not a property of objects: instead of “this object is hot”, we say that its temperature is high. Instead of “this object is heating up/cooling down” we say that its temperature is increasing or decreasing. In everyday language, phrases like “it is hot” or “heat wave” also refer to temperature. *To heat* — For us, “to heat up” means to supply heat. We can “heat up” an object while its temperature drops. We can also raise the temperature of an object without supplying heat (figure 1.4). *Cold* — For us, the sensation of “cold” denotes a low temperature. We do not consider “cold” to be something that can be manufactured or measured. Instead, we would say that we are transfering heat away from an object (for example, a refrigerator extracts heat from a warm food item). *Fire* — Fire is the term given to the emission of light (electromagnetic radiation) from a gas at high temperatures. In thermodynamics, “fire” does not have any special properties. For us, it is the same heat whether it is generated by the combustion of wood or kerosene, by friction in a brake, or by a nuclear reaction. Ultimately, the only thing that matters is the temperature at which it is transmitted!
+We conclude this chapter by revisiting some common language terms, as they are understood in thermodynamics. *Hot* — For us, “hot” is not a property of objects: instead of “this object is hot”, we say that its temperature is high. Instead of “this object is heating up/cooling down” we say that its temperature is increasing or decreasing. In everyday language, phrases like “it is hot” or “heat wave” also refer to temperature. *To heat* — For us, “to heat up” means to supply heat. We can “heat up” an object while its temperature drops. We can also raise the temperature of an object without supplying heat (figure 1.4). *Cold* — For us, the sensation of “cold” denotes a low temperature. We do not consider “cold” to be something that can be manufactured or measured. Instead, we would say that we are transferring heat away from an object (for example, a refrigerator extracts heat from a warm food item). *Fire* — Fire is the term given to the emission of light (electromagnetic radiation) from a gas at high temperatures. In thermodynamics, “fire” does not have any special properties. For us, it is the same heat whether it is generated by the combustion of wood or kerosene, by friction in a brake, or by a nuclear reaction. Ultimately, the only thing that matters is the temperature at which it is transmitted!
 
 :::{figure} ../images/fig-1-4.svg
 :label: fig-1-4

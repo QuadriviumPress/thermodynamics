@@ -19,9 +19,9 @@ Water generally follows the same trends as an ideal gas, but when it condenses o
 
 ## Introduction
 
-This chapter 5 has exactly the same objectives as chapter 4 (*the ideal gas*), but applied to the study of fluids that liquefy and evaporate. It aims to answer two questions:
+Chapter 5 has exactly the same objectives as chapter 4 (*the ideal gas*), but applied to the study of fluids that liquefy and evaporate. It aims to answer two questions:
 
-• How can we describe the behavior of a liquid or vapor they are heated or compressed?
+• How can we describe the behavior of a liquid or vapor when it is heated or compressed?
 
 • How can we predict the values of$u$and$h$when we use water in machines?
 
@@ -126,7 +126,7 @@ Historically, water has been used in the very first engines in history for these
 
 **In power plants** where liquids/vapors allow efficient heat extraction from external sources (waste combustion, nuclear reactions, geothermal energy). Water is used there, because it is abundant and easy to manipulate. [Chapter 9](#ch-9) (*steam power cycles*) is entirely dedicated to these machines.
 
-**In refrigeration systems** where liquids/vapors enable the use of compact components, especially pumps. The use of liquids/vapors also allows to drop the temperature of the fluid without having to use moving parts, using a simple valve, which is not possible with an ideal gas (see §4.3.2). A variety of fluids (then called “refrigerants,” although they are nothing extraordinary) are used for these purposes, selected according to their range of physical properties, cost, impact on the ozone layer, and contribution to global warming.
+**In refrigeration systems** where liquids/vapors enable the use of compact components, especially pumps. The use of liquids/vapors also allows us to drop the temperature of the fluid without having to use moving parts, using a simple valve, which is not possible with an ideal gas (see §4.3.2). A variety of fluids (then called “refrigerants,” although they are nothing extraordinary) are used for these purposes, selected according to their range of physical properties, cost, impact on the ozone layer, and contribution to global warming.
 
 In this book, we focus on water, but the phenomena and calculation methods apply equally well to other liquids/vapors.
 
@@ -250,7 +250,7 @@ We propose to vary the volume of a given mass of fluid, again here water, while 
 
 As long as the water is liquid, we observe that the pressure drops sharply as we increase its volume. Then, suddenly, the pressure stops decreasing and remains perfectly constant, while the volume continues to increase: inside the cylinder, the water starts to boil and we have a liquid-vapor mixture. Finally, once the last drop of liquid water has evaporated in the cylinder, the pressure again starts to decrease.
 
-If we replicate the experiment at different temperatures, we observe that the higher the temperature, and the shorter the phase change range becomes. Above a certain temperature, which we call *critical temperature* $(T_{\mathrm{cr}.})$, the range disappears completely.
+If we replicate the experiment at different temperatures, we observe that the higher the temperature, the shorter the phase change range becomes. Above a certain temperature, which we call *critical temperature* $(T_{\mathrm{cr}.})$, the range disappears completely.
 
 The behavior of a liquid-vapor in this experiment can be described on a pressure-volume $(p - v)$ diagram as shown in figure 5.9. The student is also encouraged to reconstruct this diagram.
 
@@ -318,7 +318,7 @@ The visible water above a container of hot liquid, sometimes called “steam”,
 
 *Photo by Jorge Barrios (public domain, cropped)*
 
-• Air is partially composed of water vapor (and its ability to carry water increases with temperature). When boiling liquid water in open air, it must not be forgotten that it is the air that hosts the water vapor; thus, the evaporation unfolds quite differently from the experiment described in figure 5.4. For example, the temperature of liquid water drops significantly during evaporation at constant pressure in the air. Another particularityis that condensation is catalyzed by the presence of dust particles in the air.
+• Air is partially composed of water vapor (and its ability to carry water increases with temperature). When boiling liquid water in open air, it must not be forgotten that it is the air that hosts the water vapor; thus, the evaporation unfolds quite differently from the experiment described in figure 5.4. For example, the temperature of liquid water drops significantly during evaporation at constant pressure in the air. Another particularity is that condensation is catalyzed by the presence of dust particles in the air.
 
 (sec-5-3)=
 ## 5.3 Quantifying the Properties of Water
@@ -338,7 +338,7 @@ François-Marie Guyonneau de Pambour, 1835
 *Theoretical and Practical Treatise on Locomotive Engines* [[6](#ref-6)]
 :::
 
-:::{table} Excerpt from Steam Table 1 (see in Appendix A1 pp. 306-309). Here the measurements are made at $1.6 MPa$, in other words, $16 bar (232 psi)$. A discontinuity is observed between $200^{\circ}C$ and $300^{\circ}C$: this is the state change that occurred at $T_{\mathrm{sat}.}= 201.37^{\circ}C$, the saturation temperature for this
+:::{table} Excerpt from Steam Table 1 (see in Appendix A1 pp. 306-309). Here the measurements are made at $1.6 MPa$, in other words, $16 bar (232 psi)$. A discontinuity is observed between $200^{\circ}C$ and $300^{\circ}C$: this is the state change that occurred at $T_{\mathrm{sat}.}= 201.37^{\circ}C$, the saturation temperature for this pressure.
 :label: tab-5-2
 :enumerator: 5.2
 
@@ -392,7 +392,7 @@ How much energy does this water lose as it undergoes a process from $600^{\circ}
 
 From Steam Table 1, at $1.6 MPa$ and $600^{\circ}C$, we read $u_{1}= 3293.9 kJ kg^{-1}$. For a pressure of $0.6 MPa$ at $20^{\circ}C$, we read $u_{2}= 83.9 kJ kg^{-1}$. We can then quantify the change in energy as $\Delta U = m(u_{2}- u_{1}) = -6420 kJ$ (hence a loss by the water).
 
-We were able to quantify $\Delta U$, but we cannot determine the proportions of heat $(Q_{1\rightarrow 2})$ and work $(W_{1\rightarrow 2})$ in this change. The less reversible the process, and the smaller the work $W_{1\rightarrow 2}$ will be compared to $Q_{1\rightarrow 2}$. After chapter 8 (*entropy*), we will be able to use *entropy* to quantify the maximum amount of work that can be obtained between $1$ and $2$.
+We were able to quantify $\Delta U$, but we cannot determine the proportions of heat $(Q_{1\rightarrow 2})$ and work $(W_{1\rightarrow 2})$ in this change. The less reversible the process, the smaller the work $W_{1\rightarrow 2}$ will be compared to $Q_{1\rightarrow 2}$. After chapter 8 (*entropy*), we will be able to use *entropy* to quantify the maximum amount of work that can be obtained between $1$ and $2$.
 
 ````
 
@@ -423,11 +423,11 @@ After interpolating, always quickly check the order of magnitude of the results.
 
 In order to precisely quantify the properties of water when it changes phase, we use Steam Tables 2 and 3. The properties of water in the form of saturated liquid (subscript $L)$ and saturated vapor (subscript $V)$ are tabulated for each temperature.
 
-In Steam Table 2 (see pp. 310-311), the data is sorted by pressure (with each pressure corresponding to a single saturation temperature). Steam Table 3
+In Steam Table 2 (see pp. 310-311), the data is sorted by temperature (with each temperature corresponding to one saturation pressure). Steam Table 3
 
-(see pp. 312-313) presents exactly the same data, but sorted by temperature
+(see pp. 312-313) presents exactly the same data, but sorted by pressure
 
-(with each temperature corresponding to one saturation pressure). Excerpts from these steam tables are presented in [Tables 5.3](#tab-5-3) and 5.4.
+(with each pressure corresponding to a single saturation temperature). Excerpts from these steam tables are presented in [Tables 5.3](#tab-5-3) and 5.4.
 
 :::{table} Excerpt from Steam Table 2 (see in Appendix A1 pp. 310-311). Subscript $L$ corresponds to saturated liquid, and subscript $V$ corresponds to saturated vapor. The difference between these values is sometimes noted with an index $LV$: for example $u_{LV}\equiv \Delta u_{L)V}\equiv u_{V}- u_{L}$.
 :label: tab-5-3
@@ -504,7 +504,7 @@ It is worth mentioning that the term $h_{LV}\equiv \Delta h_{L)V}\equiv h_{L}- h
 (sec-5-3-3)=
 ### 5.3.3 The liquid-vapor mixture
 
-Finally, we want to quantify the properties of water *between* the saturation points, in other words, when it is only partially liquid. Experiment shows that in this region, fluids behave linearly, and its properties can be easily quantified.
+Finally, we want to quantify the properties of water *between* the saturation points, in other words, when it is only partially liquid. Experiment shows that in this region, fluids behave linearly, and their properties can be easily quantified.
 
 In order to “position” a liquid-vapor mixture between the two saturation points, we define the *quality* or *dryness fraction* $x$ as the mass fraction of saturated vapor in the mixture.
 
@@ -620,7 +620,7 @@ We are now able to quantify the terms $pv, u$, and $h$ of a liquid/vapor in all 
 (sec-5-4-1)=
 ### 5.4.1 What is this chapter section for?
 
-The answer is the same as in chapter chapter 4 (*the ideal gas*) (§4.4.1). The liquid/vapor processes we study here are highly hypothetical but interesting for two reasons:
+The answer is the same as in chapter 4 (*the ideal gas*) (§4.4.1). The liquid/vapor processes we study here are highly hypothetical but interesting for two reasons:
 
 1. The behavior of a liquid/vapor is intrinsically complex. These elementary processes serve as exercises to learn how to describe it step by step;
 
@@ -798,7 +798,7 @@ in a constant volume process, in a closed system.
 
 When the process occurs in an open system, we have $q_{1\rightarrow 2}+ w_{1\rightarrow 2}= \Delta h$.
 
-if the process is reversible, the heat and work can each be quantified as follows:
+If the process is reversible, the heat and work can each be quantified as follows:
 
 :::{math}
 w_{1\rightarrow 2}= \int_{1}^{2} vdp = v_{\mathrm{cst}.}\int_{1}^{2} dp
@@ -865,7 +865,7 @@ How much work and heat are required to slowly heat $2 kg (4.41 lb)$ of saturated
 
 We first observe the final state. The final volume will be $v_{2}= \frac{V_{2}}{m} = 0.5 m^{3}kg^{-1}$, which is less than $v_{V}$ at our temperature. Therefore, at the end of the heating process, the water will still be partially liquid.
 
-The process will also occur at constant pressure (at the saturation pressure, $p_{\mathrm{sat}130^{\circ}C}= 0.270 28 MPa)$. The calculation is exactly the same as for example 5.10 p. 133. We obtain a dryness fraction of $0.749$, the work (done) is $W_{1\rightarrow 2}= -269.7 kJ$, and a heat (received) amounts to $Q_{1\rightarrow 2}= +3256.2 kJ$.
+The process will also occur at constant pressure (at the saturation pressure, $p_{\mathrm{sat}130^{\circ}C}= 0.270 28 MPa)$. The calculation is exactly the same as for example 5.10 p. 133. We obtain a dryness fraction of $0.749$, the work (done) is $W_{1\rightarrow 2}= -269.7 kJ$, and the heat received amounts to $Q_{1\rightarrow 2}= +3256.2 kJ$.
 
 As long as we are in a liquid-vapor mixture (inside the saturation curve), constant temperature = constant pressure. No problem.
 
@@ -1127,7 +1127,7 @@ see §5.2.3 p. 121 & figure 5.9.
 :label: prob-5-5
 :enumerator: 5.5
 
-**Everything Depends On the Valve A student decides to maintain a balanced diet, and to do so, cooks food in a pressure cooker (figure 5.28). The valve of the pressure cooker is a small metal cylinder that is partly hollowed out, and sits freely on top of a small vertical exhaust pipe on the lid. The valve weighs $0.476 lb (216 g)$; it is placed on an exhaust pipe with a diameter of $5 mm (0.197 in)$. The ambient atmospheric pressure is $1.122 kg_{f}/cm^{2}(1.1 bar)$. 1. At which temperature does the pressure cooker allow the student to food their cook? 2. What temperature and pressure could a person generate inside the pressure cooker by pressing on the valve? How could an accident be then prevented? *Photo* CC-by-sa *by Commons User:rama***
+**Everything Depends On the Valve A student decides to maintain a balanced diet, and to do so, cooks food in a pressure cooker (figure 5.28). The valve of the pressure cooker is a small metal cylinder that is partly hollowed out, and sits freely on top of a small vertical exhaust pipe on the lid. The valve weighs $0.476 lb (216 g)$; it is placed on an exhaust pipe with a diameter of $5 mm (0.197 in)$. The ambient atmospheric pressure is $1.122 kg_{f}/cm^{2}(1.1 bar)$. 1. At which temperature does the pressure cooker allow the student to cook their food? 2. What temperature and pressure could a person generate inside the pressure cooker by pressing on the valve? How could an accident then be prevented? *Photo* CC-by-sa *by Commons User:rama***
 
 :::{admonition} Answer
 :class: dropdown
@@ -1178,7 +1178,7 @@ lead to follow here...)
 :label: prob-5-7
 :enumerator: 5.7
 
-**Pumping Water A pump is installed to draw liquid water at $5^{\circ}C$ located up from a lower tank (figure 5.30). 1. Up to what height $\Delta z$ can the pumping be done? 2. How could we change the setup to pump water to a greater height? below. The first observation of the height limit calculated in this problem was made in 1630 by Giovanni Battista Baliani. *Sketch* CC-0 *by Olivier Cleynen***
+**Pumping Water A pump is installed to draw liquid water at $5^{\circ}C$ up from a lower tank (figure 5.30). 1. Up to what height $\Delta z$ can the pumping be done? 2. How could we change the setup to pump water to a greater height? The first observation of the height limit calculated in this problem was made in 1630 by Giovanni Battista Baliani. *Sketch* CC-0 *by Olivier Cleynen***
 
 :::{admonition} Answer
 :class: dropdown
@@ -1204,7 +1204,7 @@ For $\Delta p_{\mathrm{boiling}}= 9.9127 \times 10^{4}Pa, \Delta z_{\mathrm{boil
 :label: prob-5-8
 :enumerator: 5.8
 
-**Steam Turbine On a Portable Power Plant A company is developing a small steam power plant that can be carried in a standard-sized shipping container. Once connected to an external boiler, it is capable of converting heat from unrefined fuels (such as wood, paper, or coal) into electricity with a relatively high efficiency. Within this power plant, the turbine is adiabatic and receives $5 t/h (11 023 lb/h)$ of steam at 90 bar and $510^{\circ}C$ from the boiler. The outlet pressure is barely above atmospheric pressure (we will take $1 bar)$. An engineer predicts, as we will also be able to do after chapter 8 (*entropy*), that the outlet specific internal energy of the steam will then be $2676.6 kJ kg^{-1}$. The turbine is mechanically connected to a power generator with an efficiency of $85 \%$. 1. What is the power output of the generator? At the other end of the container, an electric pump (the only other mechanical element in the plant) collects the condensed water in saturated liquid state $(1 bar)$ and increases its pressure back to 90 bar to feed the boiler. It is assumed that during pumping, the specific volume of water varies negligibly, and that the compression is reversible. 2. What is the power required to power the pump?**
+**Steam Turbine On a Portable Power Plant A company is developing a small steam power plant that can be carried in a standard-sized shipping container. Once connected to an external boiler, it is capable of converting heat from unrefined fuels (such as wood, paper, or coal) into electricity with a relatively high efficiency. Within this power plant, the turbine is adiabatic and receives $5 t/h (11 023 lb/h)$ of steam at 90 bar and $510^{\circ}C$ from the boiler. The outlet pressure is barely above atmospheric pressure (we will take $1 bar)$. An engineer predicts, as we will also be able to do after chapter 8 (*entropy*), that the outlet specific internal energy of the steam will then be $2676.6 kJ kg^{-1}$. The turbine is mechanically connected to a power generator with an efficiency of $85 \%$. 1. What is the power output of the generator? At the other end of the container, an electric pump (the only other mechanical element in the plant) collects the condensed water in a saturated liquid state $(1 bar)$ and increases its pressure back to 90 bar to feed the boiler. It is assumed that during pumping, the specific volume of water varies negligibly, and that the compression is reversible. 2. What is the power required to power the pump?**
 
 :::{admonition} Answer
 :class: dropdown
@@ -1220,7 +1220,7 @@ $2)\dot{W}_{\mathrm{pump}}=\dot{m}\int vdp \approx \dot{mv}_{L}\Delta p = +12.9 
 :label: prob-5-9
 :enumerator: 5.9
 
-**The Crushed Barrel In order to perform a physics demonstration, a group of students bring water to boil at ambient pressure in a steel drum. The drum’s capacity is $55 US gal (208 L)$ and it is $34.6 in (88 cm)$ high. The barrel is removed from the heat source and hermetically sealed. The purpose of the operation is to observe the barrel being crushed by the atmosphere due to the change of internal pressure as the contained water condenses. 1. Which pressure can be generated inside the barrel by letting it cool down? 2. What would be the vertical force exerted on the upper wall of the barrel at that point? *Some more challenging questions:* 3. There are $5 L (1.32 US gal)$ of liquid left at the bottom of the barrel when the lid is closed. What is the steam dryness fraction? 4. How much steam has condensed during cooling? 5. How much heat had to be removed in order to reach the final pressure?**
+**The Crushed Barrel In order to perform a physics demonstration, a group of students bring water to a boil at ambient pressure in a steel drum. The drum’s capacity is $55 US gal (208 L)$ and it is $34.6 in (88 cm)$ high. The barrel is removed from the heat source and hermetically sealed. The purpose of the operation is to observe the barrel being crushed by the atmosphere due to the change of internal pressure as the contained water condenses. 1. Which pressure can be generated inside the barrel by letting it cool down? 2. What would be the vertical force exerted on the upper wall of the barrel at that point? *Some more challenging questions:* 3. There are $5 L (1.32 US gal)$ of liquid left at the bottom of the barrel when the lid is closed. What is the steam dryness fraction? 4. How much steam has condensed during cooling? 5. How much heat had to be removed in order to reach the final pressure?**
 
 :::{admonition} Answer
 :class: dropdown
@@ -1312,7 +1312,7 @@ $m_{\mathrm{secondary}}\ge 1062.4 kg s^{-1}$ or $2342.2 lb/s$. 2) Into the atmos
 :label: prob-5-13
 :enumerator: 5.13
 
-**Turbine of a Nuclear Power Plant In a nuclear power plant, the electricity generator is driven by a steam turbine (figure 5.34). Most of the steam (heated by the nuclear reactor) passes through the entire turbine. However, in the middle of the turbine, a steam bleed is carried out. It allows, on one hand, to heat the water in another part of the circuit (§9.4.5), and on the other hand, to precisely control the mass flow rate in circulation. The total flow rate at the inlet is $317 t/h$ of steam. We measure the following steam properties: Inlet: 120 bar; $565^{\circ}C$ Extraction: 10 bar; $250^{\circ}C$; $1.2 kg s^{-1}$ Outlet: 1 bar; $115^{\circ}C$ What is the shaft power of the turbine? akovo nuclear power station $(\sim 1 GW$ plant power), in maintenance (top) and during installation (bottom). *Photos 1 and 2* CC-by-sa *The Centre of the Public Information Balakovo NPP***
+**Turbine of a Nuclear Power Plant In a nuclear power plant, the electricity generator is driven by a steam turbine (figure 5.34). Most of the steam (heated by the nuclear reactor) passes through the entire turbine. However, in the middle of the turbine, a steam bleed is carried out. It allows, on one hand, to heat the water in another part of the circuit (§9.4.5), and on the other hand, to precisely control the mass flow rate in circulation. The total flow rate at the inlet is $317 t/h$ of steam. We measure the following steam properties: Inlet: 120 bar; $565^{\circ}C$ Extraction: 10 bar; $250^{\circ}C$; $1.2 kg s^{-1}$ Outlet: 1 bar; $115^{\circ}C$ What is the shaft power of the turbine? Balakovo nuclear power station $(\sim 1 GW$ plant power), in maintenance (top) and during installation (bottom). *Photos 1 and 2* CC-by-sa *The Centre of the Public Information Balakovo NPP***
 
 :::{admonition} Answer
 :class: dropdown

@@ -72,7 +72,7 @@ Irreversible processes in fluids invariably lead to states where the temperature
 Rudolf Clausius, 1856 [[16](#ref-16), [18](#ref-18), [20](#ref-20)]
 :::
 
-In order to quantify the irreversibility of a process, we will quantify *the amount of heat that one would need to remove from the body to bring it back to its initial state reversibly*. By subtracting to this amount the heat that was actually transferred, we obtain the heat that was somehow needlessly created during the process. Moreover, the lower the temperature at which this heat is created, and the less of it can be transformed into work (§7.5.1). We will thus “penalize” the heat cost by dividing it by the temperature. In this way, we will obtain a quantity in joules per kelvin – the entropy created during the process – which will be zero during reversible processes and will always be positive during irreversible processes. It is this creation that will be the unmistakable sign that the process is possible only in one direction.
+In order to quantify the irreversibility of a process, we will quantify *the amount of heat that one would need to remove from the body to bring it back to its initial state reversibly*. By subtracting from this amount the heat that was actually transferred, we obtain the heat that was somehow needlessly created during the process. Moreover, the lower the temperature at which this heat is created, the less of it can be transformed into work (§7.5.1). We will thus “penalize” the heat cost by dividing it by the temperature. In this way, we will obtain a quantity in joules per kelvin – the entropy created during the process – which will be zero during reversible processes and will always be positive during irreversible processes. It is this creation that will be the unmistakable sign that the process is possible only in one direction.
 
 (sec-8-2)=
 ## 8.2 Definition
@@ -352,7 +352,7 @@ Rudolf Clausius, 1865 [[17](#ref-17), [18](#ref-18), [19](#ref-19)]
 
 This equation is interesting because it indicates that the entropy change $\Delta s$ during a process from $1$ to $2$ depends only on the initial and final states. Even though we started this demonstration along a reversible process, we obtain an expression 8/10 in which the path used does not appear.
 
-It is therefore possible to easily calculate the change entropy of an ideal gas if its other properties are known. Unlike the internal energy $u$ which depends only on temperature, changes in entropy $(\Delta s)$ also depend on the gas pressure.
+It is therefore possible to easily calculate the change in entropy of an ideal gas if its other properties are known. Unlike the internal energy $u$ which depends only on temperature, changes in entropy $(\Delta s)$ also depend on the gas pressure.
 
 In the case where pressure or specific volume is kept constant, these equations 8/10 and 8/11 become respectively:
 
@@ -402,7 +402,7 @@ Isobaric and isochoric curves on a $T-s$ diagram, for an ideal gas. Here $p_{1}>
 
 Example 8.2
 
-What is the change in specific entropy of a mass of $2 kg (4.4 lb)$ of air, when it is heated at constant pressure of 2 bar, from $50 ^{\circ} F$ to $212 ^{\circ} F (10^{\circ}C$
+What is the change in specific entropy of a mass of $2 kg (4.4 lb)$ of air, when it is heated at constant pressure of 2 bar, from $50 ^{\circ} F$ ($10^{\circ}C$) to $212 ^{\circ} F$ ($100^{\circ}C$)?
 
 The process can be drawn qualitatively (that is, without showing numerical values) on a temperature-entropy diagram as shown below.
 
@@ -485,16 +485,16 @@ Using the reasoning “adiabatic reversible = isentropic” did not actually bri
 (sec-8-3-4)=
 ### 8.3.4 Entropy changes of a liquid/vapor mixture
 
-For a liquid/vapor mixture, the changes of $s$ cannot be predicted with a calculation because there is no simple mathematical model to describe temperature as a function of other properties. The saturation curve and the path of process at constant pressure are represented in figure 8.8; this figure closely resembles the temperature-volume diagram we plotted in figure 5.7.
+For a liquid/vapor mixture, the changes of $s$ cannot be predicted with a calculation because there is no simple mathematical model to describe temperature as a function of other properties. The saturation curve and the path of a process at constant pressure are represented in figure 8.8; this figure closely resembles the temperature-volume diagram we plotted in figure 5.7.
 
-In order to quantify changes in entropy, we we will proceed exactly as we did with internal energy $u$ in chapter 5 (*liquids and vapors*): by tabulating values for $s$. Since there is no way to measure $s$ directly, all the tabulated values of entropy are relative to a reference point for which $s$ is arbitrarily set to $0 J K^{-1}kg^{-1}$; in our case, it is the triple point of water. This does not matter for our calculations, since we are only interested in the changes of entropy.
+In order to quantify changes in entropy, we will proceed exactly as we did with internal energy $u$ in chapter 5 (*liquids and vapors*): by tabulating values for $s$. Since there is no way to measure $s$ directly, all the tabulated values of entropy are relative to a reference point for which $s$ is arbitrarily set to $0 J K^{-1}kg^{-1}$; in our case, it is the triple point of water. This does not matter for our calculations, since we are only interested in the changes of entropy.
 
 :::{figure} ../images/fig-8-8.jpg
 :label: fig-8-8
 :enumerator: 8.8
 :alt: Temperature-entropy diagram of a liquid/vapor mixture. This figure closely resembles fgi. 5.7 p. 121.
 
-Temperature-entropy diagram of a liquid/vapor mixture. This figure closely resembles fgi. 5.7 p. 121.
+Temperature-entropy diagram of a liquid/vapor mixture. This figure closely resembles fig. 5.7 p. 121.
 :::
 
 *Diagram* CC-0 *Olivier Cleynen*
@@ -565,7 +565,7 @@ $0.228$; thus with equation 8/14 we can calculate the entropy: $s_{\mathrm{B}}= 
 
 We see that the entropy has decreased: $\Delta s = s_{\mathrm{B}}- s_{\mathrm{A}}= -4.268 kJ K^{-1}kg^{-1}$.
 
-We do not know what process took place. The less reversible it was, and the more heat had to be removed from the steam in order to bring it from A to B.
+We do not know what process took place. The less reversible it was, the more heat had to be removed from the steam in order to bring it from A to B.
 
 ````
 
@@ -591,7 +591,7 @@ Since the process is reversible, we can calculate $Q_{\mathrm{A}\rightarrow \mat
 
 ````{prf:example}
 
-We can fin ally calculate $q_{\mathrm{A}\rightarrow \mathrm{B}}$ with equation 8/8: $Q_{\mathrm{A}\rightarrow \mathrm{B}}= \int ^{2}_{1}T dS = m T \Delta s = 2 \times (300 + 273.15) \times (7.738 - 3.2552) = +5.139 kJ$.
+We can finally calculate $q_{\mathrm{A}\rightarrow \mathrm{B}}$ with equation 8/8: $Q_{\mathrm{A}\rightarrow \mathrm{B}}= \int ^{2}_{1}T dS = m T \Delta s = 2 \times (300 + 273.15) \times (7.738 - 3.2552) = +5.139 kJ$.
 
 This somewhat laborious calculation may not be spectacular, but it is important to realize that without the use of entropy, we had *no way* to quantify $Q_{\mathrm{A}\rightarrow \mathrm{B}}$ without conducting an experiment. We had gotten stuck on this issue in example 5.12 page 137.
 
@@ -784,7 +784,7 @@ On the other hand, the integral $\int _{\mathrm{X}}^{\mathrm{Y}}\left(\frac{\del
 
 Therefore, we have $\Delta s > \int _{\mathrm{X}}^{\mathrm{Y}}\left(\frac{\delta q}{T}\right)_{\mathrm{real}\,\mathrm{path}}$ and the process is irreversible. If we wanted to reverse the process, from Y to X, we would have to remove heat.
 
-diagram as follows:
+The process can be drawn qualitatively on a temperature-entropy diagram as follows:
 
 ````
 
@@ -796,7 +796,7 @@ diagram as follows:
 :label: ex-8-9
 :enumerator: 8.9
 
-Water undergoes a process during which $1 MJ kg^{-1}$ of heat is added to it at while its temperature is fixed at $130^{\circ}C (266 ^{\circ} F)$. There are two states, one at the beginning and the other at the end:
+Water undergoes a process during which $1 MJ kg^{-1}$ of heat is added to it while its temperature is fixed at $130^{\circ}C (266 ^{\circ} F)$. There are two states, one at the beginning and the other at the end:
 
 • State X as liquid at $130^{\circ}C$ and saturated;
 
@@ -990,7 +990,7 @@ Finally, we assume that the efficiencies of thermal machines based on a Carnot c
 :::{admonition} Answer
 :class: dropdown
 
-1) See §8.2.2 page 211; 2) Yes, a simple heat extraction is enough: see example 8.1 page 211; 3) Specific thermal capacity: heat per unit mass δ$q$ needed to generate a temperature change $dT$ (equation 1/16 page 21: $c \equiv \frac{\mathrm{δ}q}{dT}$). Specific entropy: specific heat divided by the temperature at which it issuppliedduring a reversible process(equation8/2 page 211); 4) Both temperatures change until they equalize; $\Delta s_{\mathrm{A}}+ \Delta s_{\mathrm{B}}> 0$.
+1) See §8.2.2 page 211; 2) Yes, a simple heat extraction is enough: see example 8.1 page 211; 3) Specific thermal capacity: heat per unit mass δ$q$ needed to generate a temperature change $dT$ (equation 1/16 page 21: $c \equiv \frac{\mathrm{δ}q}{dT}$). Specific entropy: specific heat divided by the temperature at which it is supplied during a reversible process(equation8/2 page 211); 4) Both temperatures change until they equalize; $\Delta s_{\mathrm{A}}+ \Delta s_{\mathrm{B}}> 0$.
 
 :::
 ```
@@ -1140,7 +1140,7 @@ $1)\dot{W}_{\mathrm{pump}}=\dot{mc}_{p}\Delta T = +5.493 kW$ (equations 3/15
 $78.1^{\circ}C$ or $172.7 ^{\circ} F$, thus$\dot{W}_{\mathrm{ideal}}= +4.231 kW$;
 3) One possibility: isentropic expansion to obtain
 $W_{2\rightarrow 1}= -4.231 kW$, then a necessary cooling without work of$\dot{Q}_{2\rightarrow 1}= -1.262 kW$. All reversible
-processes with a net sum of transfers taking these values(for example during a cooled expansion)will allow to return to 1.
+processes with a net sum of transfers taking these values (for example during a cooled expansion) will allow the air to return to state 1.
 
 :::
 ```
@@ -1157,7 +1157,7 @@ processes with a net sum of transfers taking these values(for example during a c
 :label: prob-8-12
 :enumerator: 8.12
 
-**Theoretical Power Plant During the design of an power plant, a group of enthusiastic engineers is studying the possibility of having water follow a Carnot cycle. The heat released by coal combustion is transferred to a steam boiler. The steam is expanded in a turbine, which powers an electric generator. **From A to B** Water is compressed in an isentropic pump. At A, the liquid-vapor mixture is at a pressure of $0.04 bar (0.58 psi)$. At B, the water is in the saturated liquid state, at a pressure of $40 bar (580 psi)$. **From B to C** Water is heated at constant pressure $(40 bar)$ in the boiler. At C, the water is in the saturated vapor state. **From C to D** Water is expanded in an isentropic turbine. At D, the water is at the initial pressure, that is, 0.04 bar. **From D to A** Water is cooled in a condenser at constant pressure $(0.04 b$ar). 1. Sketch the elements of the circuit followed by the steam, and draw the process qualitatively on a temperature-entropy diagram, showing the saturation curve. 2. What is the dryness fraction of the water when condensation is interrupted (at A)? What is the specific enthalpy at that point? 3. What is the dryness fraction at the turbine outlet (at D) and the specific enthalpy at this point? 4. What is the power delivered by the turbine? 5. What is the power of the boiler? 6. What is the power of the pump? 7. What is the efficiency of the power plant?**
+**Theoretical Power Plant During the design of a power plant, a group of enthusiastic engineers is studying the possibility of having water follow a Carnot cycle. The heat released by coal combustion is transferred to a steam boiler. The steam is expanded in a turbine, which powers an electric generator. **From A to B** Water is compressed in an isentropic pump. At A, the liquid-vapor mixture is at a pressure of $0.04 bar (0.58 psi)$. At B, the water is in the saturated liquid state, at a pressure of $40 bar (580 psi)$. **From B to C** Water is heated at constant pressure $(40 bar)$ in the boiler. At C, the water is in the saturated vapor state. **From C to D** Water is expanded in an isentropic turbine. At D, the water is at the initial pressure, that is, 0.04 bar. **From D to A** Water is cooled in a condenser at constant pressure $(0.04 b$ar). 1. Sketch the elements of the circuit followed by the steam, and draw the process qualitatively on a temperature-entropy diagram, showing the saturation curve. 2. What is the dryness fraction of the water when condensation is interrupted (at A)? What is the specific enthalpy at that point? 3. What is the dryness fraction at the turbine outlet (at D) and the specific enthalpy at this point? 4. What is the power delivered by the turbine? 5. What is the power of the boiler? 6. What is the power of the pump? 7. What is the efficiency of the power plant?**
 
 :::{admonition} Answer
 :class: dropdown
@@ -1177,7 +1177,7 @@ $2) x_{\mathrm{A}}= \frac{s_{\mathrm{B}}-s_{L}}{s_{LV}} = 0.2949; \mathrm{thus} 
 :label: prob-8-13
 :enumerator: 8.13
 
-**Irreversible Heat Transfers A steam engine operates on a Carnot cycle, with a steady flow rate of $2 kg s^{-1}$, between the saturation points of water. The engine is designed to exploit a heat source at a moderate temperature $(300^{\circ}C)$, from the combustion of industrial waste, and it rejects heat into a river at a low temperature $(5^{\circ}C)$. The boiler has thick walls to reduce the impact of manufacturing imperfections and to withstand the high pressure of the water. This thickness imposes a significant temperaturegradientacrossthewalls,addingupto$10^{\circ}C$. The same applies to the condenser (also $10^{\circ}C$ across the walls). 1. What is the rate of increase of entropy of the {heat source + water} system? 2. What is the rate of increase of entropy of the {heat sink + water} system? 3. What is the power loss associated with this increase in entropy? 4. Which physical properties of the boiler wall material are most desirable to minimize this issue?**
+**Irreversible Heat Transfers A steam engine operates on a Carnot cycle, with a steady flow rate of $2 kg s^{-1}$, between the saturation points of water. The engine is designed to exploit a heat source at a moderate temperature $(300^{\circ}C)$, from the combustion of industrial waste, and it rejects heat into a river at a low temperature $(5^{\circ}C)$. The boiler has thick walls to reduce the impact of manufacturing imperfections and to withstand the high pressure of the water. This thickness imposes a significant temperature gradient across the walls, adding up to$10^{\circ}C$. The same applies to the condenser (also $10^{\circ}C$ across the walls). 1. What is the rate of increase of entropy of the {heat source + water} system? 2. What is the rate of increase of entropy of the {heat sink + water} system? 3. What is the power loss associated with this increase in entropy? 4. Which physical properties of the boiler wall material are most desirable to minimize this issue?**
 
 :::{admonition} Answer
 :class: dropdown
@@ -1197,7 +1197,7 @@ of course not the only quality required of them… ).
 :label: prob-8-14
 :enumerator: 8.14
 
-**Irreversible Compressions and Expansions The team of engineers in charge of the engine from the previous problem (Carnot cycle operating between $290^{\circ}C$ and $15^{\circ}C$, problem 8.13) discovers that the compression and expansion phases are not reversible. The compressor does bring the water to a high temperature, but its energy consumption is $10 \%$ higher than expected. The turbine does bring the water to a low temperature,butitsupplies$10 \%$less work than expected. 1. What is the rate of increase of entropy of the steam in each of these two components? 2. By how much do the heat rejections increase? 3. What is the efficiency loss of the system compared to a reversible system?**
+**Irreversible Compressions and Expansions The team of engineers in charge of the engine from the previous problem (Carnot cycle operating between $290^{\circ}C$ and $15^{\circ}C$, problem 8.13) discovers that the compression and expansion phases are not reversible. The compressor does bring the water to a high temperature, but its energy consumption is $10 \%$ higher than expected. The turbine does bring the water to a low temperature, but it supplies$10 \%$less work than expected. 1. What is the rate of increase of entropy of the steam in each of these two components? 2. By how much do the heat rejections increase? 3. What is the efficiency loss of the system compared to a reversible system?**
 
 :::{admonition} Answer
 :class: dropdown

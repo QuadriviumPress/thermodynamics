@@ -14,7 +14,7 @@ Thermodynamic Cycles
 
 :::{admonition} Executive summary
 :class: tip
-When heating a compressed fluid, it provides more work upon expansion than was spent during compression. By expanding a fluid, its temperature drops and thus we can absorb heat from a relatively “cooler” body. With these two processes, we transform heat into work and vice versa.
+When a compressed fluid is heated, it provides more work upon expansion than was spent during compression. As a fluid expands, its temperature drops and thus we can absorb heat from a relatively “cooler” body. With these two processes, we transform heat into work and vice versa.
 :::
 
 ## Introduction
@@ -44,7 +44,7 @@ New graphical and notation conventions for energy transfers. The white arrows ar
 
 We use large white arrows to represent *the physical direction of transfers*. We do not change our sign convention (transfers are positive when directed toward the system and negative when coming from it), but only the graphical convention for their orientation, in order to make the visualization of transfers in machines more intuitive.
 
-The algebraic sum of the work $W_{\mathrm{in}}$ received by a machine and $W_{\mathrm{out}}$ it supplies is named the *net work* $W_{\mathrm{net}}$. The net work can be positive (done onto the the machine from external sources) or negative (done by the machine to an external receiver), depending on the application.
+The algebraic sum of the work $W_{\mathrm{in}}$ received by a machine and $W_{\mathrm{out}}$ it supplies is named the *net work* $W_{\mathrm{net}}$. The net work can be positive (done on the machine from external sources) or negative (done by the machine to an external receiver), depending on the application.
 
 :::{math}
 W_{\mathrm{net}}\equiv W_{\mathrm{in}}+ W_{\mathrm{out}}
@@ -97,7 +97,7 @@ Therefore, every time we analyze the operation of a thermodynamic machine, we wi
 
 Let us start by compressing a fluid: we increase its pressure and reduce its specific volume, which requires a certain amount of work. After that, we heat up this fluid: its pressure and volume tend to increase. By expanding the fluid back to its initial pressure, we will recover more work than what we initially invested. Finally, in order to bring the fluid back to its initial state, it needs to be cooled down.
 
-In the end, the fluid has done more work when it was expended than was done onto it when it was compressed. Over a cycle, it will thus have *produced* work and *absorbed* heat (part of which it transformed). This is the operating principle of an engine.
+In the end, the fluid has done more work when it was expanded than was done onto it when it was compressed. Over a cycle, it will thus have *produced* work and *absorbed* heat (part of which it transformed). This is the operating principle of an engine.
 
 There are infinitely many possible cycles to perform this process, but they all involve at least four energy transfers: compression, heating, expansion, and cooling. We can separate these processes in space, as shown in figure 6.3, or in time, as illustrated in figure 6.2. Depending on technological and practical constraints, some of these transfers may be performed simultaneously.
 
@@ -144,9 +144,9 @@ By performing these steps one after the other, we obtain a *refrigeration cycle*
 
 Careful examination of these two figures will reveal a major surprise: they are exactly the same arrangement as for an engine! The only difference lies in the operating temperatures. The temperature reached during compression must be **higher than the high temperature** $T_{H}$, and the temperature reached during expansion must be **lower than the low temperature** $T_{L}$. Unless these conditions are met, the heat transfers will occur in the wrong direction.
 
-In a refrigeration cycle, the fluid has a larger volume when compressed (after having being heated) than when expanded (after having being cooled): this time, the compression requires more power than the expansion. The net power$\dot{W}_{\mathrm{net}}$ in the form of work is therefore positive, meaning that the machine must be powered by an external source of work.
+In a refrigeration cycle, the fluid has a larger volume when compressed (after having been heated) than when expanded (after having being cooled): this time, the compression requires more power than the expansion. The net power$\dot{W}_{\mathrm{net}}$ in the form of work is therefore positive, meaning that the machine must be powered by an external source of work.
 
-In practice in refrigeration systems, a trick is often used to lower the temperature: instead of a turbine, a simple valve (sometimes called a *throttling valve*) is used. In this component without moving parts, the fluid does not do work (therefore the power to be supplied to the machine is increased),
+In practice in refrigeration systems, a trick is often used to lower the temperature: instead of a turbine, a simple valve (sometimes called a *throttling valve*) is used. In this component without moving parts, the fluid does not do work (therefore the power to be supplied to the machine is increased), but it is much simpler to manufacture and use.
 
 :::{figure} ../images/fig-6-5.jpg
 :label: fig-6-5
@@ -166,7 +166,7 @@ A refrigeration cycle, for use in refrigerators, air conditioners, and heat pump
 A refrigeration cycle carried out by separating the stages in time (rather than in space as shown in figure 6.5)
 :::
 
-*Diagram* CC-0 *Olivier Cleynen* but it is much simpler to manufacture and use. This modification is depicted in figure 6.7.
+*Diagram* CC-0 *Olivier Cleynen*. This modification is depicted in figure 6.7.
 
 The throttle valve, in thermodynamic terms, allows for a completely irreversible expansion, increasing the volume and reducing the pressure without extracting work. If a perfect gas were used, this would have no effect on the temperature (as in the experiments of Joule and Gay-Lussac studied in §4.3.2 p. 90) and therefore no interest; but when liquids/vapors are used, the throttling expansion is a technologically simple way to lower the temperature.
 
@@ -384,7 +384,7 @@ Just as we did for the previous sections, we can express this efficiency in term
 Sadi Carnot, 1824 [[4](#ref-4)]
 :::
 
-In all the cases we have studied above, for each cycle, we have included an undesirable transfer. In the engine cycle, some of the energy is wasted in the form of heat rejection $(\dot{Q}_{\mathrm{out}})$. In refrigeration cycles, work must be supplied $(\dot{W}_{\mathrm{in}})$ to carry out a heat transfer that *a priori* could have seemed “free” $(\dot{Q}_{\mathrm{out}}$ then being equal to$\dot{Q}_{\mathrm{in}})$. Engineering students will certainly be indignant about the role played by these losses in this chapter – and about the modest efficiencies achieved by the machines described in the examples. Why are the efficiencies calculated in the examples and in the following problems so low, and more importantly, how can we design cycles with greater efficiency? We take these worries to our heart, and will address them in chapter 7 (*the second law*).
+In all the cases we have studied above, for each cycle, we have included an undesirable transfer. In the engine cycle, some of the energy is wasted in the form of heat rejection $(\dot{Q}_{\mathrm{out}})$. In refrigeration cycles, work must be supplied $(\dot{W}_{\mathrm{in}})$ to carry out a heat transfer that *a priori* could have seemed “free” $(\dot{Q}_{\mathrm{out}}$ then being equal to$\dot{Q}_{\mathrm{in}})$. Engineering students will certainly be indignant about the role played by these losses in this chapter – and about the modest efficiencies achieved by the machines described in the examples. Why are the efficiencies calculated in the examples and in the following problems so low, and more importantly, how can we design cycles with greater efficiency? We take these worries to heart, and will address them in chapter 7 (*the second law*).
 
 ::::{admonition} A Bit of History
 :class: note
@@ -398,7 +398,7 @@ When the fluid is water, heat is supplied in a boiler and the steam is then tran
 
 However, in order to achieve internal combustion, a new problem had to be solved: since the oxygen in the air is used, the combustion can only be carried out once. After each combustion, it is therefore essential to expel the reaction products (CO$_{2}$ and H$_{2}$O primarily) from the cylinder and to reintroduce “fresh” air containing the oxygen O$_{2}$ necessary for breaking the hydrocarbon molecules $\mathrm{C}_{x}$H$_{y}$ that produce heat. Two different solutions were then adopted.
 
-The most common method dedicates one piston movement to each step: the first one for compression, the second one for expansion (after or during combustion), the third one for exhaust gases expulsion (exhaust), and the last one for admitting fresh air (intake). Engines following this process are called *four-stroke* (figure 6.14), and they have always been the most widely used.
+The most common method dedicates one piston movement to each step: the first one for compression, the second one for expansion (after or during combustion), the third one for expelling exhaust gases (exhaust), and the last one for admitting fresh air (intake). Engines following this process are called *four-stroke* (figure 6.14), and they have always been the most widely used.
 
 The second method is bound to offend purists: it performs these four operations in *two strokes* only. In these engines, part of the gas expansion is used to perform the exhaust, and it is carried out simultaneously with the air intake (figures 6.15 and 6.16). Certainly, none of the four steps can be optimally performed: the compression and expansion phases are only carried out over a portion of the stroke, and the scavenging is necessarily incomplete due to the mixing of fresh and exhaust gases. On the other hand, the combustions are twice as frequent, since there is no need for intake and exhaust strokes during which no thermodynamic operation takes place. Thus, for the same displacement and speed of rotation, two-stroke engines are much more powerful than their four-stroke counterparts, even though they are also significantly less efficient.
 
@@ -599,7 +599,7 @@ See §6.2.3 p. 154, and in particular figures 6.6, 6.7 and 6.8.
 :::{admonition} Answer
 :class: dropdown
 
-$\eta _{\mathrm{conditioner}}\equiv \left|\frac{\dot{Q}_{\mathrm{in}}}{\dot{W}_{\mathrm{net}}}\right| = \frac{\dot{Q}_{\mathrm{in}}}{\dot{W}_{\mathrm{net}}} = \frac{\dot{Q}_{\mathrm{in}}}{-\dot{Q}_{\mathrm{in}}-\dot{Q}_{\mathrm{out}}} = \frac{1}{-1-\dfrac{\dot{Q}_{\mathrm{out}}}{\dot{Q}_{\mathrm{in}}}}$. Now, by definition $\dot{Q}_{\mathrm{out}}< 0$ and $\dot{Q}_{\mathrm{in}}> 0$; thus $\dfrac{\dot{Q}_{\mathrm{out}}}{\dot{Q}_{\mathrm{in}}} = -\left|\dfrac{\dot{Q}_{\mathrm{out}}}{\dot{Q}_{\mathrm{in}}}\right|$. We thus have $\eta _{\mathrm{conditioner}}= \dfrac{1}{-1+\left|\dfrac{\dot{Q}_{\mathrm{out}}}{\dot{Q}_{\mathrm{in}}}\right|}$. It is now your turn, with equations 6/5 et 6/9!
+$\eta _{\mathrm{conditioner}}\equiv \left|\frac{\dot{Q}_{\mathrm{in}}}{\dot{W}_{\mathrm{net}}}\right| = \frac{\dot{Q}_{\mathrm{in}}}{\dot{W}_{\mathrm{net}}} = \frac{\dot{Q}_{\mathrm{in}}}{-\dot{Q}_{\mathrm{in}}-\dot{Q}_{\mathrm{out}}} = \frac{1}{-1-\dfrac{\dot{Q}_{\mathrm{out}}}{\dot{Q}_{\mathrm{in}}}}$. Now, by definition $\dot{Q}_{\mathrm{out}}< 0$ and $\dot{Q}_{\mathrm{in}}> 0$; thus $\dfrac{\dot{Q}_{\mathrm{out}}}{\dot{Q}_{\mathrm{in}}} = -\left|\dfrac{\dot{Q}_{\mathrm{out}}}{\dot{Q}_{\mathrm{in}}}\right|$. We thus have $\eta _{\mathrm{conditioner}}= \dfrac{1}{-1+\left|\dfrac{\dot{Q}_{\mathrm{out}}}{\dot{Q}_{\mathrm{in}}}\right|}$. It is now your turn, with equations 6/5 and 6/9!
 
 :::
 ```
@@ -630,7 +630,7 @@ The $50 MW$ expended by the fan are entirely dissipated as friction in the wind 
 :label: prob-6-8
 :enumerator: 6.8
 
-**Electricity Generation With a Gas Turbine A gas turbine (in English the term *gas turbine* can be used to describe the engine as a whole) is set up to operate an electric generator (figure 6.21); it operates with a flow rate of $0.5 kg s^{-1}$ of atmospheric air. uration named *turboshaft*, powering an electric generator. The gas is typically expanded (in the turbine, between C and D) to atmospheric pressure. *Diagram* CC-by-sa *Olivier Cleynen* • The air enters the machine at $20^{\circ}C (68 ^{\circ} F)$ and 1 bar; it is compressed (A $\rightarrow$ B) to 30 bar in the compressor. • The air then receives heat through combustion, at constant pressure (B $\rightarrow$ C), until its temperature reaches $1000^{\circ}C$. • Finally, the air is expanded in a turbine (C $\rightarrow$ D) until it reaches atmospheric pressure and is discharged outside. The compressor is mechanically powered by the turbine, and the shaft connecting them also drives the electric current generator. In order to quantify the maximum efficiency that could be achieved by the machine, we consider that the compressor and the turbine are reversible adiabatic (meaning that compression and expansion occur very slowly and without heat transfer). 1. Draw the process undergone by the air during one cycle on a pressure-volume diagram, qualitatively (that is, without showing numerical values). 2. At what temperature does the air exit the compressor? 3. What is the power of the compressor? 4. At what temperature is the air rejected into the atmosphere? What power is rejected as heat into the atmosphere? 5. What is the efficiency of the machine? 6. How do the four energy transfers of this theoretical machine compare to those of a real machine, where the compressor and the turbine cannot be reversible?**
+**Electricity Generation With a Gas Turbine A gas turbine (in English the term *gas turbine* can be used to describe the engine as a whole) is set up to operate an electric generator (figure 6.21); it operates with a flow rate of $0.5 kg s^{-1}$ of atmospheric air. The gas is typically expanded (in the turbine, between C and D) to atmospheric pressure. *Diagram* CC-by-sa *Olivier Cleynen* • The air enters the machine at $20^{\circ}C (68 ^{\circ} F)$ and 1 bar; it is compressed (A $\rightarrow$ B) to 30 bar in the compressor. • The air then receives heat through combustion, at constant pressure (B $\rightarrow$ C), until its temperature reaches $1000^{\circ}C$. • Finally, the air is expanded in a turbine (C $\rightarrow$ D) until it reaches atmospheric pressure and is discharged outside. The compressor is mechanically powered by the turbine, and the shaft connecting them also drives the electric current generator. In order to quantify the maximum efficiency that could be achieved by the machine, we consider that the compressor and the turbine are reversible adiabatic (meaning that compression and expansion occur very slowly and without heat transfer). 1. Draw the process undergone by the air during one cycle on a pressure-volume diagram, qualitatively (that is, without showing numerical values). 2. At what temperature does the air exit the compressor? 3. What is the power of the compressor? 4. At what temperature is the air rejected into the atmosphere? What power is rejected as heat into the atmosphere? 5. What is the efficiency of the machine? 6. How do the four energy transfers of this theoretical machine compare to those of a real machine, where the compressor and the turbine cannot be reversible?**
 
 :::{admonition} Answer
 :class: dropdown
@@ -640,8 +640,6 @@ The $50 MW$ expended by the fan are entirely dissipated as friction in the wind 
 4) With equation 4/37, $T_{\mathrm{D}}= T_{\mathrm{C}}(\frac{p_{\mathrm{D}}}{p_{\mathrm{C}}} )^{\frac{\gamma -1}{\gamma}} = T_{\mathrm{C}}(\frac{p_{\mathrm{B}}}{p_{\mathrm{A}}} )^{-\frac{\gamma -1}{\gamma}} = 481.8 K$. Therefore, the rejected
 air must lose$\dot{Q}_{\mathrm{D}\rightarrow \mathrm{A}}= c_{p}\Delta T = -94.8 kW$ in order
 to return to its initial state (§6.2.1);
-honorable, only attainable with perfect turbine
-and compressor);
 6) With a real compressor$\dot{W}_{\mathrm{A}\rightarrow \mathrm{B}_{2}}>\dot{W}_{\mathrm{A}\rightarrow \mathrm{B}}$ and
 $T_{\mathrm{B}_{2}}> T_{\mathrm{B}}$. It follows that if $T_{\mathrm{C}}$ is kept constant,$\dot{Q}_{\mathrm{B}\rightarrow \mathrm{C}_{2}}<\dot{Q}_{\mathrm{B}\rightarrow \mathrm{C}}$. Nevertheless, we still have
 $W_{\mathrm{C}\rightarrow \mathrm{D}_{2}}<\dot{W}_{\mathrm{C}\rightarrow \mathrm{D}}$ and $T_{\mathrm{D}_{2}}> T_{\mathrm{D}}$ in the turbine. The
@@ -757,7 +755,7 @@ As it enters the pack, this air passes through a heat exchanger where it loses h
 
 After passing through the heat exchanger, the air can follow three distinct circuits in the conditioning pack before reaching the cabin:
 
-- **Circuit A** is used in cold weather when one wants to raise or maintain the cabin at a higher temperature than the outside temperature;
+- **Circuit A** is used in cold weather when one wants to raise the cabin temperature or maintain it at a higher temperature than the outside temperature;
 - **Circuit B** is used in moderate weather when the cabin needs to be kept at a temperature close to the outside temperature;
 - **Circuit C** is used in hot weather when there is a high demand for cabin air cooling.
 
@@ -829,7 +827,7 @@ Finally, it is expanded in a turbine (in practice, this is the turbine used in c
 
 13) We first calculate $T_{4\mathrm{C}}= T_{3\mathrm{C}}(\frac{p_{4\mathrm{C}}}{p_{3\mathrm{C}}} )^{\frac{\gamma -1}{\gamma}} = 728.4 K$. In the pack, the work transfers are $w_{\mathrm{pack}}= w_{\mathrm{pack} \mathrm{compressor}}+ w_{\mathrm{pack} \mathrm{turbine}}= c_{p}(T_{4\mathrm{C}}- T_{3\mathrm{C}}) + c_{p}(T_{6\mathrm{C}}- T_{5\mathrm{C}}) = -138.9 kJ kg^{-1}$; Thus, the air supplies net work in the pack, which in this case has a net surplus of shaft power.
 
-14) In order to calculate these cop, the cycles must be completed by returning the air from the cabin condition back to the inlet condition (§6.2.1). In question 3 we have $\eta _{\mathrm{heat} \mathrm{pump}}= \left|\frac{q_{\mathrm{out}}}{w_{\mathrm{in}}}\right| = -\frac{c_{p}(T_{4\mathrm{A}}-T_{1\mathrm{A}})}{c_{p}(T_{2\mathrm{A}}-T_{1\mathrm{A}})} = 0.424$ (a rare application where a cop less than $100 \%$ is acceptable).
+14) In order to calculate these cop values, the cycles must be completed by returning the air from the cabin condition back to the inlet condition (§6.2.1). In question 3 we have $\eta _{\mathrm{heat} \mathrm{pump}}= \left|\frac{q_{\mathrm{out}}}{w_{\mathrm{in}}}\right| = -\frac{c_{p}(T_{4\mathrm{A}}-T_{1\mathrm{A}})}{c_{p}(T_{2\mathrm{A}}-T_{1\mathrm{A}})} = 0.424$ (a rare application where a cop less than $100 \%$ is acceptable).
 
 15) In question 12 we have $\eta_{\mathrm{conditioner}}= \left|\frac{q_{\mathrm{in}}}{w_{\mathrm{in}}}\right|= \frac{c_{p}(T_{1\mathrm{C}}-T_{6\mathrm{C}})}{c_{p}(T_{2\mathrm{C}}-T_{1\mathrm{C}}+T_{4\mathrm{C}}-T_{3\mathrm{C}}+T_{6\mathrm{C}}-T_{5\mathrm{C}})} = 0.842$. In practice, however, the net work done by the air in the pack is not recovered: it is dissipated through friction into the ram air. We thus have $w_{\mathrm{net}}= c_{p}(T_{2\mathrm{C}}- T_{1\mathrm{C}})$ and the cop is decreased.
 
@@ -841,9 +839,9 @@ A few final comments: 1) In reality, adiabatic processes are not reversible, whi
    :::{figure} ../images/fig-6-23.jpg
    :label: fig-6-23
    :enumerator: 6.23
-   :alt: A ecs intended for a Comac C919, approximately in length.
+   :alt: An ecs intended for a Comac C919, approximately 1.5 m in length.
    
-   A ecs intended for a Comac C919, approximately $1.5 m$ in length.
+   An ecs intended for a Comac C919, approximately $1.5 m$ in length.
    :::
 
    :::{figure} ../images/fig-6-24.jpg

@@ -18,7 +18,7 @@ Olivier Cleynen wrote the book, starting with the French original [[51](#ref-51)
 
 • Christophe Masutti and Mireille Bernex (Framabook/Framasoft) contributed significantly to the finalization of the first edition of the book;
 
-• Many persons, by correcting errors or suggesting improvements, have kindly reduced the entropy of this book, among whom: Antoine L., Hamassala David Dicko, Kévin R., Florianne B., Julien D., Anthony Jouny, Thomas N., Amazigh.L.H, Victor D., Daniel C.-N., Pierrick Degardin, Arthur A., Ulrick M., Solène J., Florian Paupert, Gatien Bovyn, Mehdi Z., Jean-Bernard Marcon, Luc Benoit, Thibault Mattera, Arnaud Gallant, Olivier Kim Hak, Gwen Messé, Laurent Prost, Christophe Valerio, Bruno Turgeon, Saou Ibrahim, Jean Claude Cailton, Philippe Godard, Robert Tomczak, Dimitrios Anagnostou, Sallah Azzdine, Selim Fikri, Frédéric Novel and Patrice Krakow.
+• Many persons, by correcting errors or suggesting improvements, have kindly reduced the entropy of this book, among whom are Antoine L., Hamassala David Dicko, Kévin R., Florianne B., Julien D., Anthony Jouny, Thomas N., Amazigh.L.H, Victor D., Daniel C.-N., Pierrick Degardin, Arthur A., Ulrick M., Solène J., Florian Paupert, Gatien Bovyn, Mehdi Z., Jean-Bernard Marcon, Luc Benoit, Thibault Mattera, Arnaud Gallant, Olivier Kim Hak, Gwen Messé, Laurent Prost, Christophe Valerio, Bruno Turgeon, Saou Ibrahim, Jean Claude Cailton, Philippe Godard, Robert Tomczak, Dimitrios Anagnostou, Sallah Azzdine, Selim Fikri, Frédéric Novel and Patrice Krakow.
 
 • Many creators, by publishing their photos and diagrams under a free license, have helped illustrate the book, although they are not associated with it.
 

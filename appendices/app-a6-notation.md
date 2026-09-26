@@ -25,7 +25,7 @@ $\equiv$ means “by definition”. The symbol $\equiv$ sets the definition of t
 
 $\dot{}$ (dot above a symbol) means the time rate: $\dot{} \equiv \frac{d}{dt}$. For example, $\dot{Q}$ is the power as heat (in watts) representing an amount $Q$ (in joules) per second.
 
-$\Delta$ means the net difference between two state quantities: $(\Delta X)_{\mathrm{A}\rightarrow \mathrm{B}}= X_{\mathrm{B}}- X_{\mathrm{A}}$. It can be negative. See the Appendix A4 p. 316.
+$\Delta$ means the net difference between two state quantities: $(\Delta X)_{\mathrm{A}\rightarrow \mathrm{B}}= X_{\mathrm{B}}- X_{\mathrm{A}}$. It can be negative. See Appendix A4 p. 316.
 
 **δ** means the inexact differential. See Appendix A4 p. 316.
 

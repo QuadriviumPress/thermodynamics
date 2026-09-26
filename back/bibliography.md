@@ -10,7 +10,7 @@ This book was originally written in French [[51](#ref-51)] and first published i
 
 **To study engineering thermodynamics:**
 
-• Çengel, Boles & Lacroix 2007 [[48](#ref-48), [49](#ref-49)], provide accessible, comprehensive, and solid coverage of the topics addressed here;
+• Çengel, Boles & Lacroix 2007 [[48](#ref-48), [49](#ref-49)] provide accessible, comprehensive, and solid coverage of the topics addressed here;
 
 • Eastop & McConkey 1993 [[38](#ref-38)], an essential reference (itself based on the very robust Rogers & Mayhew 1992 [[37](#ref-37)]);
 
@@ -68,7 +68,7 @@ This book was originally written in French [[51](#ref-51)] and first published i
 **[13]**  Rudolf Julius Emanuel Clausius. “Über eine veränderte Form des zweiten Hauptsatzes der mechanischen Wärmetheorie”. German. In: *Annalen der Physik* 169.12 (1854), pp. 481–506.
 
 (ref-14)=
-**[14]**  James Prescott Joule and William Thomson Baron Kelvin. “On the Thermal Efefcts of Fluids in Motion, Part II”. In: *Philosophical Transactions of the Royal Society of London*. 1st ser. 144 (1854), pp. 321–364.
+**[14]**  James Prescott Joule and William Thomson Baron Kelvin. “On the Thermal Effects of Fluids in Motion, Part II”. In: *Philosophical Transactions of the Royal Society of London*. 1st ser. 144 (1854), pp. 321–364.
 
 (ref-15)=
 **[15]**  William Thomson Baron Kelvin. “On the Dynamical Theory of Heat, Part VI”. In: *Transactions of the Royal Society of Edinburgh* 21.1 (1854).

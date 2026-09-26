@@ -20,9 +20,9 @@ Engineering programs in universities are designed to bring out academic performa
 
 • Don’t learn all by yourself. You can be intentional about meeting new people and spending time with them. Unlike the physical relationships we describe with equations, relationships between humans take an infinite variety of forms. Try studying with different people. Talk to them; build a cohort.
 
-• Cultivate yourself. Confront yourself with differing opinions, spend time with people who are studying other things. Get interested in someone else’s religion, go to a concert, get involved in an organization, visit an elderly, read a book.
+• Cultivate yourself. Confront yourself with differing opinions, spend time with people who are studying other things. Get interested in someone else’s religion, go to a concert, get involved in an organization, visit an elderly person, read a book.
 
-• Clearing thermodynamics is a requisite for most engineering degrees, but not for attaining happiness. You are allowed to fail. Even after you have made it this far. Remember that billions of people on this planet have no idea what an isentropic expansion is, and they are doing just fin e. If everything feels too tight, step away for a moment. Go outside, take long breaths and relax.
+• Clearing thermodynamics is a requisite for most engineering degrees, but not for attaining happiness. You are allowed to fail. Even after you have made it this far. Remember that billions of people on this planet have no idea what an isentropic expansion is, and they are doing just fine. If everything feels too tight, step away for a moment. Go outside, take long breaths and relax.
 
 In short, contrary to engineering thermodynamics, human life is not a single-path problem. If you feel stuck, look for possibilities you can’t immediately see. Paying attention to what makes you happy or unhappy and adjusting accordingly is a good practice to develop. Good mental health will also help you learn thermodynamics faster, and apply it more wisely, to better purposes. That’s a nice side effect! I wish you well.
 

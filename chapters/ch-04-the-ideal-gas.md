@@ -132,7 +132,7 @@ An ideal gas can be visualized as a set of balls in random motion. They collide 
 
 In this chaos, temperature is a measure of the kinetic energy of the molecules. It is quantified by measuring the time-averaged force resulting from the impact of the molecules on a wall of the container – that is, with pressure. With this model, we can propose a temperature scale such that $T \propto p$.
 
-The fewer molecules impacting the surface, and the more forcefully they must impact it in order to generate a given pressure. Thus, when the density $\rho$ decreases at a given pressure, it means that the temperature is increasing: we can also propose $T \propto \frac{1}{\rho}$.
+The fewer molecules impacting the surface, the more forcefully they must impact it in order to generate a given pressure. Thus, when the density $\rho$ decreases at a given pressure, it means that the temperature is increasing: we can also propose $T \propto \frac{1}{\rho}$.
 
 If these two proposals are combined into a single equation, we obtain a simple model to quantify temperature: $T \propto pv$.
 
@@ -182,7 +182,7 @@ This equation has the advantage of taking into account two factors ignored in th
 
 Despite the difficulties inherent in quantifying the terms $a$ and $b$, these modifications have significantly extended the range of application of equations of state. They earned their author, Johannes Diderik Van der Waals, the Nobel Prize in Physics in 1910.
 
-Building mathematical models to describe the state of real gases is an important research area in fluid mechanics. The curious student can refer to equations of state such as the Beattie-Bridgeman, Benedict-Webb-Rubin, or the Strobridge models, in order get an overview of their increasing complexity. As for us, we will stick to equation 4/1.
+Building mathematical models to describe the state of real gases is an important research area in fluid mechanics. The curious student can refer to equations of state such as the Beattie-Bridgeman, Benedict-Webb-Rubin, or the Strobridge models, in order to get an overview of their increasing complexity. As for us, we will stick to equation 4/1.
 
 (sec-4-2)=
 ## 4.2 Properties of Ideal Gases
@@ -322,7 +322,7 @@ By returning to figure 4.3 it quickly appears that $c_{p}$ must be greater than 
 
 The first research undertakings aimed at exploring the concept of temperature took place at the very beginning of the 19th century. The scientific community was then very interested in gases – it was noticed that there are *two* ways to increase their temperature: by heating them, but also by compressing them.
 
-Frenchman Joseph Louis Gay-Lussac sought to understand why the temperature of a gas drops when it expands (he actually sought, according to the concepts of the time, to identify the source of the *caloric* and the reasons why it flows). He thus endeavored to produce gas expansions that were as simple as possible, and to measure the temperature. Thirty years later, the Englishman James Prescott Joule resumed and deepened these experiments, but this time, by quantifying heat as *work equivalence*. These experiments with gas balloons and thermometers are anything but spectacular – but they would play a pivotal role in thermodynamics, because they allowed for the first time to distinguish heat, work, energy, and temperature. Joule’s meticulous work lead to the first formal expression of the first law of thermodynamics, and to the end of the caloric theory according to which heat was a very low-density and invisible fluid. Our modern unit for energy is named after him as a tribute to these results.
+Frenchman Joseph Louis Gay-Lussac sought to understand why the temperature of a gas drops when it expands (he actually sought, according to the concepts of the time, to identify the source of the *caloric* and the reasons why it flows). He thus endeavored to produce gas expansions that were as simple as possible, and to measure the temperature. Thirty years later, the Englishman James Prescott Joule resumed and deepened these experiments, but this time, by quantifying heat as *work equivalence*. These experiments with gas balloons and thermometers are anything but spectacular – but they would play a pivotal role in thermodynamics, because they allowed for the first time to distinguish heat, work, energy, and temperature. Joule’s meticulous work led to the first formal expression of the first law of thermodynamics, and to the end of the caloric theory according to which heat was a very low-density and invisible fluid. Our modern unit for energy is named after him as a tribute to these results.
 
 (sec-4-3-2)=
 ### 4.3.2 Joule’s law
@@ -340,7 +340,7 @@ In their most remarkable experiment, Joule and Gay-Lussac were seeking to vary t
 :enumerator: 4.5
 :alt: The expansion of Joule and Gay-Lussac. A gas is initially trapped in a reservoir on the left; it is allowed to expand by opening the valve (in the center) which separates it from a completely empty reservoir on the right. Joule and Gay-Lussac are interested in the temperature changes measured in each reservoir. The closer the gas properties resemble the behavior of ideal gases model (§4.1.4), the smaller the temperature changes they measure, becoming undetectable for some simple gases at high temperatures.
 
-The expansion of Joule and Gay-Lussac. A gas is initially trapped in a reservoir on the left; it is allowed to expand by opening the valve (in the center) which separates it from a completely empty reservoir on the right. Joule and Gay-Lussac are interested in the temperature changes measured in each reservoir. The closer the gas properties resemble the behavior of ideal gases model (§4.1.4), the smaller the temperature changes they measure, becoming undetectable for some simple gases at high temperatures.
+The expansion of Joule and Gay-Lussac. A gas is initially trapped in a reservoir on the left; it is allowed to expand by opening the valve (in the center) which separates it from a completely empty reservoir on the right. Joule and Gay-Lussac are interested in the temperature changes measured in each reservoir. The closer the gas properties resemble the behavior predicted by the ideal gas model (§4.1.4), the smaller the temperature changes they measure, becoming undetectable for some simple gases at high temperatures.
 :::
 
 *Diagram* CC-0 *Olivier Cleynen*
@@ -381,7 +381,7 @@ U = m c_{v}T
 
 As long as our fluid behaves as an ideal gas, this relation 4/11 remains true. It works for any process, reversible or not, and regardless of volume, pressure, or temperature constraints.
 
-On the other hand, it should be noted that this equation 4/11, which results from Joule’s law, does not work all for liquids and vapors. For example, we can add energy to a mass of boiling water without its temperature increasing. We will study liquids and vapors in chapter 5.
+On the other hand, it should be noted that this equation 4/11, which results from Joule’s law, does not work at all for liquids and vapors. For example, we can add energy to a mass of boiling water without its temperature increasing. We will study liquids and vapors in chapter 5.
 
 ````{prf:example}
 :label: ex-4-3
@@ -391,7 +391,7 @@ The specific thermal capacity at constant volume for air is measured at $c_{v (\
 
 We know that the energy has varied with the transfers: $\Delta U = W_{\mathrm{A}\rightarrow \mathrm{B}}+ Q_{\mathrm{A}\rightarrow \mathrm{B}}= m c_{v}\Delta T$. Thus, the temperature has varied proportionally: $T_{\mathrm{B}}= T_{\mathrm{A}}+ \frac{\Delta U}{m c_{v}} = T_{\mathrm{A}}+ \frac{W_{\mathrm{A}\rightarrow \mathrm{B}}+ Q_{\mathrm{A}\rightarrow \mathrm{B}}}{m c_{v}}= 20 + \frac{-10\times 10^{3}+(+15\times 10^{3})}{0.5\times 718}= 33.92^{\circ}C$.
 
-Good old James! We just only need to quantify the energy changes to know the temperature, and vice versa.
+Good old James! We only need to quantify the energy changes to know the temperature, and vice versa.
 
 Here the temperatures in degrees Celsius are only added and a conversion to kelvins would not have changed the result. In case of doubt, it is better not to take this shortcut.
 
@@ -400,7 +400,7 @@ Here the temperatures in degrees Celsius are only added and a conversion to kelv
 (sec-4-3-3)=
 ### 4.3.3 Enthalpy of an ideal gas
 
-Because we have just linked the internal energy $u$ to the temperature, and because and the product $pv$ also depends on the temperature, we can now easily express the enthalpy $h$ of an ideal gas in terms of temperature only.
+Because we have just linked the internal energy $u$ to the temperature, and because the product $pv$ also depends on the temperature, we can now easily express the enthalpy $h$ of an ideal gas in terms of temperature only.
 
 Indeed, we have $h \equiv u + pv$ (3/12); with a quick insertion of equations 4/1 and 4/11 we can write, for any ideal gas:
 
@@ -951,7 +951,7 @@ And since $R = c_{p}- c_{v}$ (equation 4/8) and $\gamma \equiv c_{p}/c_{v}$ (equ
 \left(\frac{T_{2}}{T_{1}}\right) = \left(\frac{v_{1}}{v_{2}}\right) ^{\gamma -1}
 :::
 
-Thus, we have linked temperature and specific volume when the process is reversible adiabatic (devoid of heat transfer and infinitely slow).
+Thus, we have linked temperature and specific volume when the process is reversible and adiabatic (devoid of heat transfer and infinitely slow).
 
 Some algebraic manipulations, which are left to the student to revise, allow us to derive this expression in terms of pressure. We thus obtain the following three relations:
 
@@ -993,7 +993,7 @@ For air, we have $c_{p (\mathrm{air})}= 1005 J kg^{-1}K^{-1}, c_{v (\mathrm{air}
 
 The maximum work will be obtained if the expansion is reversible. Since we are not allowed to supply heat, our best option here is to perform a reversible adiabatic expansion from 40 bar to 1 bar. We want to calculate the final temperature, since it will give us the change in energy, thus the work done by the gas. Among the three daunting relations 4/36 to 4/38, it is the second one that interests us:
 
-With $\left(\frac{T_{\mathrm{A}}}{T_{\mathrm{B}}}\right) = \left(\frac{p_{\mathrm{A}}}{p_{\mathrm{B}}}\right)^{\frac{\gamma-1}{\gamma}}$. Thus: $T_{\mathrm{B}}= T_{\mathrm{A}}\left(\frac{p_{\mathrm{A}}}{p_{\mathrm{B}}}\right) ^{-\frac{\gamma-1}{\gamma}}= (50 + 273.15) ( \frac{40}{1} )^{-\frac{1.4-1}{1.4}} = 112.6 K = -160.5^{\circ}C = -257 ^{\circ} F$. The work done by the closed system composed of the gas is therefore $w_{\mathrm{A}\rightarrow \mathrm{B}}= \Delta u - q_{\mathrm{A}\rightarrow \mathrm{B}}= c_{v}\Delta T - 0 = 718 \times (-160.5 - 50) = -1.5115 \times 10^{5}J kg^{-1}= -151.1 kJ kg^{-1}$. By calculating the mass $m_{\mathrm{A}}= \frac{p_{\mathrm{A}}V_{\mathrm{A}}}{R T_{\mathrm{A}}} = \frac{40\times 10^{5}\times 0.2}{287\times (50+273.15)}= 8.626\,\mathrm{kg}$, we obtain $W_{\mathrm{A}\rightarrow \mathrm{B}}= m_{\mathrm{A}}w_{\mathrm{A}\rightarrow \mathrm{B}}= 8.626 \times -151.1 \times 10^{3}= -1.3038 \times 10^{6}J = -1.304 MJ$.
+We have $\left(\frac{T_{\mathrm{A}}}{T_{\mathrm{B}}}\right) = \left(\frac{p_{\mathrm{A}}}{p_{\mathrm{B}}}\right)^{\frac{\gamma-1}{\gamma}}$. Thus: $T_{\mathrm{B}}= T_{\mathrm{A}}\left(\frac{p_{\mathrm{A}}}{p_{\mathrm{B}}}\right) ^{-\frac{\gamma-1}{\gamma}}= (50 + 273.15) ( \frac{40}{1} )^{-\frac{1.4-1}{1.4}} = 112.6 K = -160.5^{\circ}C = -257 ^{\circ} F$. The work done by the closed system composed of the gas is therefore $w_{\mathrm{A}\rightarrow \mathrm{B}}= \Delta u - q_{\mathrm{A}\rightarrow \mathrm{B}}= c_{v}\Delta T - 0 = 718 \times (-160.5 - 50) = -1.5115 \times 10^{5}J kg^{-1}= -151.1 kJ kg^{-1}$. By calculating the mass $m_{\mathrm{A}}= \frac{p_{\mathrm{A}}V_{\mathrm{A}}}{R T_{\mathrm{A}}} = \frac{40\times 10^{5}\times 0.2}{287\times (50+273.15)}= 8.626\,\mathrm{kg}$, we obtain $W_{\mathrm{A}\rightarrow \mathrm{B}}= m_{\mathrm{A}}w_{\mathrm{A}\rightarrow \mathrm{B}}= 8.626 \times -151.1 \times 10^{3}= -1.3038 \times 10^{6}J = -1.304 MJ$.
 
 This amount of energy is enough to accelerate, without friction, a vehicle weighing $1 t$ to a speed $C = \left[\frac{1.3038\times 10^{6}}{\frac{1}{2}\times 1000}\right]^{0.5} = 51.1 m s^{-1}\approx 180 km/h \approx 114 mph$.
 
@@ -1180,7 +1180,7 @@ $w_{1\rightarrow 2}= \Delta h = c_{p}\Delta T = +85.4 kJ kg^{-1}$ (3/15 & 4/13)
 :label: prob-4-6
 :enumerator: 4.6
 
-**Elementary Processes: Isothermal Compression** A mass of $3.5 kg (7.716 lb)$ of air is compressed reversibly in an isothermal manner (constant temperature) from $2 bar$ and $15^{\circ}C$ to $45 bar$ (from $29.01 psi$ and $59^{\circ} F$ to $652.7 psi)$ 1. Draw the process qualitatively (that is, without showing numerical values) on a pressure-volume diagram. 2. What are the amounts of work and heat involved? 3. If the compression were carried out in a reversible adiabatic manner, would the final volume be different?
+**Elementary Processes: Isothermal Compression** A mass of $3.5 kg (7.716 lb)$ of air is compressed reversibly in an isothermal manner (constant temperature) from $2 bar$ and $15^{\circ}C$ to $45 bar$ (from $29.01 psi$ and $59^{\circ} F$ to $652.7 psi)$. 1. Draw the process qualitatively (that is, without showing numerical values) on a pressure-volume diagram. 2. What are the amounts of work and heat involved? 3. If the compression were carried out in a reversible adiabatic manner, would the final volume be different?
 
 :::{admonition} Answer
 :class: dropdown
@@ -1244,7 +1244,7 @@ Isothermal $2 \rightarrow 3$, isochoric $1 \rightarrow 2$.
 :label: prob-4-10
 :enumerator: 4.10
 
-**Elementary Processes: Pressure and Volume Among the reversible processes described on each of the diagrams in figure 4.16, identify (without having to justify) the process at constant temperature, at constant pressure, reversible adiabatic, and at constant volume. perfect gas *Diagram* CC-0 *Olivier Cleynen***
+**Elementary Processes: Pressure and Volume Among the reversible processes described on each of the diagrams in figure 4.16, identify (without having to justify) the process at constant temperature, the process at constant pressure, the reversible adiabatic process, and the process at constant volume. perfect gas *Diagram* CC-0 *Olivier Cleynen***
 
 :::{admonition} Answer
 :class: dropdown

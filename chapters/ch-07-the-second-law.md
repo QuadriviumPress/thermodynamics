@@ -23,7 +23,7 @@ Heat only moves towards a body at a lower temperature. This poses a fundamental 
 
 ## Introduction
 
-In chapter 6 (*thermodynamic cycles*), we studied the nature of different cycles for converting heat and work. We now aim to study, explain, and quantify theirverylimits. Thischapter7(*thesecondlaw*)aims to answer two questions:
+In chapter 6 (*thermodynamic cycles*), we studied the nature of different cycles for converting heat and work. We now aim to study, explain, and quantify their very limits. Chapter 7 (*the second law*) aims to answer two questions:
 
 • Why do all heat engines always have an efficiency less than $100\%$?
 
@@ -45,7 +45,7 @@ We will see that this simple observation has multiple, profound consequences for
 (sec-7-1-2)=
 ### 7.1.2 The evidence of the second law
 
-The statement above seems so obvious that it is almost ofefnding. Two remarks are necessary here.
+The statement above seems so obvious that it is almost offending. Two remarks are necessary here.
 
 • The second law can be stated in multiple ways. It is more striking to talk about “increase in entropy” than the spontaneous behavior of heat; yet these different statements, which we will gradually address, are all equivalent.
 
@@ -82,7 +82,7 @@ Production of work with heat from a body at $100^{\circ}C$. The heat transfer al
 
 *Diagram* CC-0 *Olivier Cleynen*
 
-Once it has done some work (at B in figure 7.1), the fluid has increased in volume. If we want to continue converting heat into work and do not want the engine to “infalte” indefinitely, we need to cool this gas to return it to its initial volume.
+Once it has done some work (at B in figure 7.1), the fluid has increased in volume. If we want to continue converting heat into work and do not want the engine to “inflate” indefinitely, we need to cool this gas to return it to its initial volume.
 
 Unfortunately, *the only way* to extract heat from the gas is to put it in contact with a “cooler” body, as shown in figure 7.2. In particular, it is impossible to return the accumulated heat in the gas to the “hot” body – for that to happen, the gas temperature would need to be higher than this body. This accumulated energy is therefore irretrievably lost.
 
@@ -274,7 +274,7 @@ The essentials are here. Carnot outlined a theoretical thermodynamic cycle which
 (sec-7-3-4)=
 ### 7.3.4 The four stages of the Carnot engine
 
-We can describe the *Carnot cycle* with a fixed amount of mass maintained inside a cylinder undergoing four processes (figure 7.8). It commutes between temperatures $T_{H}$ (“hot” source at high temperature) and $T_{L}$ (“cold” source at low temperature), in order to to produce a net work:
+We can describe the *Carnot cycle* with a fixed amount of mass maintained inside a cylinder undergoing four processes (figure 7.8). It commutes between temperatures $T_{H}$ (“hot” source at high temperature) and $T_{L}$ (“cold” source at low temperature), in order to produce net work:
 
 :::{figure} ../images/art-p183-1.svg
 :alt: Illustration from the original text
@@ -422,7 +422,7 @@ The transposition of the Carnot engine to reality, where eventually the fluid wi
 
 By reversing the operating direction of the engine described above, we create a refrigerator, air conditioner, or heat pump of the same efficiency. The fluid then passes through the same states, but by following the reverse path (1-4-3-2-1) as shown in figure 7.11. The heat $Q_{TL}> 0$ is *captured* from the cold source, the work $W_{\mathrm{net}}> 0$ is *received* by the machine, and the heat $Q_{TH}< 0$ is rejected by the machine towards the high-temperature source.
 
-This cycle allows obtaining the maximum efficiency (the “least bad” ef-fi ciency, since it is not infinite) of an air conditioning system or a heat pump operating between two given temperatures $T_{H}$ and $T_{L}$.
+This cycle allows obtaining the maximum efficiency (the “least bad” efficiency, since it is not infinite) of an air conditioning system or a heat pump operating between two given temperatures $T_{H}$ and $T_{L}$.
 
 :::{figure} ../images/fig-7-11.jpg
 :label: fig-7-11
@@ -463,7 +463,7 @@ In order to quantify a property in physics (for example, quantify “mass” or 
 
 **A standard** which serves as a reference gauge (for example, an object of one pound mass, one meter length);
 
-**A scale** which allows to *define* the property between the zero point and the standard (for example, what is “twice as much” or “half as much” mass, light, etc.).
+**A scale** which allows us to *define* the property between the zero point and the standard (for example, what is “twice as much” or “half as much” mass, light, etc.).
 
 (sec-7-4-3)=
 ### 7.4.3 The limits of the Celsius and Fahrenheit
@@ -472,15 +472,15 @@ In order to quantify a property in physics (for example, quantify “mass” or 
 
 At the beginning of the 19th century, the two temperature scales that we use today in everyday life, those of the Swedish Anders Celsius and the German Daniel Gabriel Fahrenheit, were already in use. How are these scales defined from a physical point of view?
 
-• The zero point is rather easy to define e (it is the point where bodies are completely frozen, unable to supply heat) but neither Fahrenheit nor Celsius could accurately locate it with certainty;
+• The zero point is rather easy to define (it is the point where bodies are completely frozen, unable to supply heat) but neither Fahrenheit nor Celsius could accurately locate it with certainty;
 
 • The standards of Celsius and Fahrenheit differ significantly. Celsius chose the freezing point of pure water, Fahrenheit of saltwater, at atmospheric pressure, and each assigned it the relative “zero” graduation.
 
 • However, the scales of Celsius and Fahrenheit are strictly identical. In fact, to *measure* temperatures around their standards, both scientists measured the contraction and expansion of a liquid in a tube. Between his relative zero point and the boiling point of water at atmospheric pressure, Celsius drew 100 graduations; Fahrenheit, 212 graduations. As always, the history of thermodynamics is full of trivia: Celsius initially used a reversed scale, going from $100$ at freezing to $0$ at boiling! As for Fahrenheit, he likely chose 212 graduations in order to easily realign with his *first* graduation, calibrated on the freezing point of pure water (32) and the temperature of the human body (96), standards that were quite difficult to reproduce. We must not let ourselves be distracted: in a physical sense, these are only graduations and not a scale, which was already determined by using a liquid thermometer.
 
-The main problem with these two scales is that the temperature is well defined only in the range of existence of liquid thermometers. Whatever fluid is used (mercury, alcohol, water), it always ends up freezing or boiling at some point; and the graduations then no longer provide useful information. For example, Celsius could not *define e* or even describe what allows recognizing a temperature of $1200^{\circ}C$.
+The main problem with these two scales is that the temperature is well defined only in the range of existence of liquid thermometers. Whatever fluid is used (mercury, alcohol, water), it always ends up freezing or boiling at some point; and the graduations then no longer provide useful information. For example, Celsius could not *define* or even describe what allows recognizing a temperature of $1200^{\circ}C$.
 
-In addition to this, neither scale is intuitive in the negative range. If one were to admit, for example, that $40^{\circ}C$ could be “twice as much temperature” as $20^{\circ}C$, then what temperature would be twice as much as $-10^{\circ}C$? This amounts to asking the question: can we write $\frac{40^{\circ}C}{20^{\circ}C}$ and is it equal to $\frac{80^{\circ}C}{40^{\circ}C}$? As an inquisitive Scott would soon explain, the modern answer to this question is no.
+In addition to this, neither scale is intuitive in the negative range. If one were to admit, for example, that $40^{\circ}C$ could be “twice as much temperature” as $20^{\circ}C$, then what temperature would be twice as much as $-10^{\circ}C$? This amounts to asking the question: can we write $\frac{40^{\circ}C}{20^{\circ}C}$ and is it equal to $\frac{80^{\circ}C}{40^{\circ}C}$? As an inquisitive Scot would soon explain, the modern answer to this question is no.
 
 (sec-7-4-4)=
 ### 7.4.4 William Thomson’s thermometer
@@ -690,7 +690,7 @@ Using relation 7/4, when the machine is reversible, we can express this efficien
 
 for a reversible heat pump, where temperatures are absolute $(K)$.
 
-As with a refrigerator, the cop of a heat pump cannot be infinite: it is bounded by the extreme temperatures reached in the cycle. The higher the temperature at which heat $Q_{\mathrm{out}}$ is delivered, and the lower the efficiency that can be achieved.
+As with a refrigerator, the cop of a heat pump cannot be infinite: it is bounded by the extreme temperatures reached in the cycle. The higher the temperature at which heat $Q_{\mathrm{out}}$ is delivered, the lower the efficiency that can be achieved.
 
 ````{prf:example}
 :label: ex-7-5
@@ -708,7 +708,7 @@ The maximum efficiency would be achieved with a reversible heat pump, allowing u
 
 **Rudolf Diesel's Dream**
 
-This is the story of an engine born in the margin of thermodynamics lecture notes. “*Kann man Dampfmaschinen konstruieren, welche den vollkommenen Kreisprozess ausführen, ohne zu sehr kompliziert zu sein?*”: can we build steam engines that can perform the ideal cycle without being too very complex? The student Rudolf Diesel asked himself this question in the margin of his notes in 1878 in Munich, realizing that the engine cycle followed by the steam engines of his time inevitably condemned them to mediocre efficiencies.
+This is the story of an engine born in the margin of thermodynamics lecture notes. “*Kann man Dampfmaschinen konstruieren, welche den vollkommenen Kreisprozess ausführen, ohne zu sehr kompliziert zu sein?*”: can we build steam engines that can perform the ideal cycle without being too complex? The student Rudolf Diesel asked himself this question in the margin of his notes in 1878 in Munich, realizing that the engine cycle followed by the steam engines of his time inevitably condemned them to mediocre efficiencies.
 
 In this way, the concept of a *rational heat engine* would mature over the years, an engine whose characteristics were finally published in 1893 [[23](#ref-23), [24](#ref-24)]. Rudolf Diesel is unequivocal: “an examination of their operating theory will show that gas and air engines operate on a defective principle, and no improvement will produce better results as long as this principle is retained”. He was no kinder to the designers of steam engines. The main features of the proposed engine strictly stemmed from physical precepts: it was about getting as close as possible to the Carnot cycle, by “*producing the highest temperature of the cycle (the combustion temperature) not through and during combustion, but before and independently of it, entirely through the compression of ordinary air*”. This was followed by combustion at constant temperature, controlled by progressive fuel injection. Only the exhaust and intake (done at constant pressure with a four-stroke cycle) deviated from the Carnot cycle.
 
@@ -724,13 +724,13 @@ Rudolf Diesel in 1883.
 
 *Photo by unknown author (public domain)*
 
-Despite everything, Rudolf Diesel, after a promising start in the design of refrigeration systems, managed to convince the *Maschinenfabrik Augsburg-Nürnberg* company, known today as man, to finance his research. They would be challenging: the transition from theory to practice took four years. Many ambitions were scaled back: the maximum pressure decreased to $90$ and then $40 bar (580 psi)$, the coal dust was abandoned in favor of a crude oil for easier handling. Since the structural limits of the engine constrained the cycle, the isothermal combustion was replaced by isobaric at maximum pressure. The second prototype, a single-cylinder engine nearly three meters tall (figure 7.14), was the first to operate autonomously: eight minutes in February 1894. The performance of the third prototype (figure 7.15) was independently measured in 1897: $17 hp$ at $154 rpm$, and an efficiency of $26.2 \%$.
+Despite everything, Rudolf Diesel, after a promising start in the design of refrigeration systems, managed to convince the *Maschinenfabrik Augsburg-Nürnberg* company, known today as man, to finance his research. His research would be challenging: the transition from theory to practice took four years. Many ambitions were scaled back: the maximum pressure decreased to $90$ and then $40 bar (580 psi)$, the coal dust was abandoned in favor of a crude oil for easier handling. Since the structural limits of the engine constrained the cycle, the isothermal combustion was replaced by isobaric combustion at maximum pressure. The second prototype, a single-cylinder engine nearly three meters tall (figure 7.14), was the first to operate autonomously: eight minutes in February 1894. The performance of the third prototype (figure 7.15) was independently measured in 1897: $17 hp$ at $154 rpm$, and an efficiency of $26.2 \%$.
 
 This efficiency was twice that of its contemporaries with internal combustion, and four times that of the best steam engines!
 
 Man quickly started sales of the *rational engine*, renamed as *Diesel engine*, which gradually met success in Europe. Its operational regularity, reliability, and especially its low fuel consumption justified its significant purchase cost: due to the materials and precision manufacturing it required, its price per watt of power was about three times higher than its competitors. The patents filed by Rudolf Diesel brought him a significant income.
 
-The numerous documents left behind make Diesel a compelling figure: cultivated, diligent, and intelligent (he excelled in all his studies), he had a very keen perception of the economic and social upheavals caused by the rapid mechanization of industry and transportation at the end of the 19th century [[33](#ref-33), [34](#ref-34), [41](#ref-41)]. After a harsh and miserable childhood, expelled from France and then England, he nurtured a strong social ideal that lead him to write *Solidarismus* (“*the rational and economic salvation of humanity*”, 1903 [[25](#ref-25)]). For him, the decentralization of mechanical power production, for small businesses or collectives, for example, would constitute a decisive social advancement.
+The numerous documents left behind make Diesel a compelling figure: cultivated, diligent, and intelligent (he excelled in all his studies), he had a very keen perception of the economic and social upheavals caused by the rapid mechanization of industry and transportation at the end of the 19th century [[33](#ref-33), [34](#ref-34), [41](#ref-41)]. After a harsh and miserable childhood, expelled from France and then England, he nurtured a strong social ideal that led him to write *Solidarismus* (“*the rational and economic salvation of humanity*”, 1903 [[25](#ref-25)]). For him, the decentralization of mechanical power production, for small businesses or collectives, for example, would constitute a decisive social advancement.
 
 Despite the remarkable success achieved in fifteen years, Rudolf Diesel struggled to find fulfillment. He was constantly the target of legal disputes, since his critics and competitors argued – not entirely without merit – that the engines he commercialized were ultimately very different from the machine described in his patent. The nationalist tensions leading up to the outbreak of World War I shook him. A poor financial manager, he made multiple unreasonable expenses and ruinous investments, and, to top it all, he was plagued by severe migraines and medical problems. In 1913, the man seemed tormented by his own ethical and philosophical questions. His engines exclusively produced power in factories and power plants: did they ultimately contribute to the emancipation or the servitude of the working classes? He ended his life in September.
 
@@ -930,7 +930,7 @@ A heat pump like this could be powered by a Carnot engine; together, they would 
 :label: prob-7-7
 :enumerator: 7.7
 
-**Ideal Turbine Engine A group of engineers in an engineering company is working on an air engine concept, operating in a steady-flow state using turbines and compressors. The engineers are using the Carnot cycle as a starting point. They plan to be able to supply heat at a temperature of $600^{\circ}C$ and reject heat at a temperature of $20^{\circ}C$. The pressure is 1 bar at the inlet of the adiabatic compressor and 30 bar at the inlet of the adiabatic turbine. These characteristics give the engine a specific net power of $70 kJ kg^{-1}$. 1. Represent schematically the general arrangement of this hypothetical engine, showing the path followed by the air, and all heat and work transfers. 2. Starting from the definition of the efficiency of an engine, show that the efficiency of a reversible engine can be quantified by the equation $\eta _{\mathrm{Carnot\,engine}}= 1 - \dfrac{T_{L}}{T_{H}}$ (equation 7/6) 3. What power will need to be supplied to the engine in the form of heat? 4. What will be the power rejected in the form of heat? Of course, the Carnot cycle is impractical in an industrial application and the group of engineers immediately adopts a modification. In order to be able to supply heat by internal combustion, it is necessary to later vent the air from the engine. Thus, in the modified engine, the expansion in the adiabatic turbine is interrupted when the pressure reaches 1 bar, and the “used” air is then rejected into the atmosphere. The rest of the engine is not affected. 5. Draw the new engine cycle on a pressure-volume diagram, qualitatively, comparing it to that of the Carnot cycle. 6. What is the temperature of the air when it is rejected from the engine? 7. What is the reduction in power of the adiabatic turbine compared to the ideal engine? 8. What amount of power is saved by removing the compressor that was rejecting heat? 9. What is now the efficiency of the engine?**
+**Ideal Turbine Engine A group of engineers in an engineering company is working on an air engine concept, operating in a steady-flow state using turbines and compressors. The engineers are using the Carnot cycle as a starting point. They plan to be able to supply heat at a temperature of $600^{\circ}C$ and reject heat at a temperature of $20^{\circ}C$. The pressure is 1 bar at the inlet of the adiabatic compressor and 30 bar at the inlet of the adiabatic turbine. These characteristics give the engine a specific net power of $70 kJ kg^{-1}$. 1. Represent schematically the general arrangement of this hypothetical engine, showing the path followed by the air, and all heat and work transfers. 2. Starting from the definition of the efficiency of an engine, show that the efficiency of a reversible engine can be quantified by the equation $\eta _{\mathrm{Carnot\,engine}}= 1 - \dfrac{T_{L}}{T_{H}}$ (equation 7/6). 3. What power will need to be supplied to the engine in the form of heat? 4. What will be the power rejected in the form of heat? Of course, the Carnot cycle is impractical in an industrial application and the group of engineers immediately adopts a modification. In order to be able to supply heat by internal combustion, it is necessary to later vent the air from the engine. Thus, in the modified engine, the expansion in the adiabatic turbine is interrupted when the pressure reaches 1 bar, and the “used” air is then rejected into the atmosphere. The rest of the engine is not affected. 5. Draw the new engine cycle on a pressure-volume diagram, qualitatively, comparing it to that of the Carnot cycle. 6. What is the temperature of the air when it is rejected from the engine? 7. What is the reduction in power of the adiabatic turbine compared to the ideal engine? 8. What amount of power is saved by removing the compressor that was rejecting heat? 9. What is now the efficiency of the engine?**
 
 :::{admonition} Answer
 :class: dropdown
@@ -939,7 +939,7 @@ A heat pump like this could be powered by a Carnot engine; together, they would 
 2) By starting from the definition 6/4: $\eta _{\mathrm{engine}}\equiv \left|\frac{\dot{W}_{\mathrm{net}}}{\dot{Q}_{\mathrm{in}}}\right| = -\frac{\dot{W}_{\mathrm{net}}}{\dot{Q}_{\mathrm{in}}} = -\frac{-\dot{Q}_{\mathrm{in}}-\dot{Q}_{\mathrm{out}}}{\dot{Q}_{\mathrm{in}}} = 1+\frac{\dot{Q}_{\mathrm{out}}}{\dot{Q}_{\mathrm{in}}} = 1-\left|\frac{\dot{Q}_{\mathrm{out}}}{\dot{Q}_{\mathrm{in}}}\right| = 1-\left|\frac{\dot{Q}_{TH}}{\dot{Q}_{TL}}\right|$; with definition eq. 7/4 p. 192 we arrive at the requested equation 7/6;
 3) $q_{\mathrm{in}}= -\frac{w_{\mathrm{net}}}{\eta _{\mathrm{engine}}} = +105.4 kJ kg^{-1}$;
 4) $q_{\mathrm{out}}= -w_{\mathrm{net}}- q_{\mathrm{in}}= -35.4 kJ kg^{-1}$;
-6) The isothermal compressor is removed, the adiabatic turbine is truncated. $T_{E}= T_{C}(\frac{p_{E}}{p_{C}} )^{\frac{\gamma -1}{\gamma}} = 330.4 K = 57.3^{\circ}C$ (eq. 4/37);
+6) The isothermal compressor is removed; the adiabatic turbine is truncated. $T_{E}= T_{C}(\frac{p_{E}}{p_{C}} )^{\frac{\gamma -1}{\gamma}} = 330.4 K = 57.3^{\circ}C$ (eq. 4/37);
 7) $w_{\mathrm{lost}}= w_{\mathrm{isentropic} \mathrm{turbine} 1}- w_{\mathrm{isentropic} \mathrm{turbine} 2}= -37.54 kJ kg^{-1}$;
 8) $w_{\mathrm{saved}}= w_{\mathrm{isentropic} \mathrm{compressor}}= +35.4 kJ kg^{-1}$;
 9) $\eta _{\mathrm{engine} 2}= 64.4 \%$, which is a -2 point change,
@@ -976,8 +976,7 @@ the cop $= \frac{q_{\mathrm{in}}}{w_{\mathrm{net}}}$ necessarily decreases.
 
 Let’s bet that the student did better than the beginner engineer in the problem: with two reversible systems in series pumping a quantity
 $q_{\mathrm{in}}$ of heat at temperature $T_{1}= -50^{\circ}C$, with exchange temperature $T_{2}= 10^{\circ}C$ and final high temperature $T_{3}= 40^{\circ}C$, the necessary work
-is $w_{\mathrm{total}}= w_{\mathrm{net}1}+ w_{\mathrm{net}2}= \eta _{1}q_{\mathrm{in}}+ \eta _{2}(q_{\mathrm{in}}+ w_{\mathrm{net}1})= \left(\frac{T_{2}}{T_{1}} - 1\right)q_{\mathrm{in}}+ \left(\frac{T_{3}}{T_{2}} - 1\right)\left(q_{\mathrm{in}}+ \left(\frac{T_{2}}{T_{1}} - 1\right)q_{\mathrm{in}}\right)= \left(\frac{T_{3}}{T_{1}} - 1\right)q_{\mathrm{in}}$, which is the work (and thus the ineffi
-ciency of a single reversible machine operating between $T_{1}$ and $T_{3}$. Stacking two machines in series therefore brings no theoretical advantage.
+is $w_{\mathrm{total}}= w_{\mathrm{net}1}+ w_{\mathrm{net}2}= \eta _{1}q_{\mathrm{in}}+ \eta _{2}(q_{\mathrm{in}}+ w_{\mathrm{net}1})= \left(\frac{T_{2}}{T_{1}} - 1\right)q_{\mathrm{in}}+ \left(\frac{T_{3}}{T_{2}} - 1\right)\left(q_{\mathrm{in}}+ \left(\frac{T_{2}}{T_{1}} - 1\right)q_{\mathrm{in}}\right)= \left(\frac{T_{3}}{T_{1}} - 1\right)q_{\mathrm{in}}$, which is the work (and thus the inefficiency) of a single reversible machine operating between $T_{1}$ and $T_{3}$. Stacking two machines in series therefore brings no theoretical advantage.
 
 :::
 ```

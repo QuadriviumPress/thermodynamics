@@ -16,7 +16,7 @@ Thermodynamic quantities can be classified into the following categories:
 
 • A quantity is called a *state quantity* if its value depends only on the current state of the system. Temperature $T$ is an example of a state quantity.
 
-• A quantity is called a *path quantity* or if its value depends on the path taken. Heat transfer $Q$ and work $W$ are the only two path quantities used in this book.
+• A quantity is called a *path quantity* if its value depends on the path taken. Heat transfer $Q$ and work $W$ are the only two path quantities used in this book.
 
 Using the example provided by Rogers & Mayhew [[37](#ref-37)], one can illustrate the distinction as follows: a cyclist travels from A to B. Their altitude at the start $z_{\mathrm{A}}$ and at the end $z_{\mathrm{B}}$ are state quantities $(z$ being a *state function*), and we can quantify $\Delta z \equiv z_{\mathrm{B}}- z_{\mathrm{A}}$ without knowing anything about the route. However, the work $W_{\mathrm{A}\rightarrow \mathrm{B}}$ expended to go from A to B depends on the process: it will be larger, for example, if the route is longer or if there is wind. Quantifying $W$ (a *path function*) requires knowledge of all intermediate states between A and B.
 

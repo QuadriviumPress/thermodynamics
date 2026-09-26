@@ -28,4 +28,4 @@ The book features contributions from Philippe Depondt (§1.6, §3.6, §4.5, §8.
 
 • CC 0 License, or *public domain* notice: images which can be reused without conditions, https://creativecommons.org/publicdomain/zero/1.0/deed.en
 
-The pdf version of this book contains hyperlinks allowing, for most images, to find their source and contact their author. It is accessible from the book’s website:
+The pdf version of this book contains hyperlinks allowing readers, for most images, to find their source and contact their author. It is accessible from the book’s website:

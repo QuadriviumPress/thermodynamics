@@ -19,7 +19,7 @@ A closed system contains a fixed amount of mass. Heat and work transfers cause v
 
 ## Introduction
 
-We wish to develop here a method of energy accounting applied to a fixed quantity of mass. This chapter 2 (*closed systems*) aims to answer two questions:
+We wish to develop here a method of energy accounting applied to a fixed quantity of mass. Chapter 2 (*closed systems*) aims to answer two questions:
 
 • How to quantify the work that can be received and provided by a body of fixed mass?
 
@@ -73,9 +73,9 @@ We refer to a *closed system* as an arbitrary study subject with boundaries impe
 :::{figure} ../images/fig-2-3.jpg
 :label: fig-2-3
 :enumerator: 2.3
-:alt: A typical closed system: a fixed mass quantity in a closed reservoir. A movable wall allows to compress it; we will also allow it to receive and lose heat.
+:alt: A typical closed system: a fixed mass quantity in a closed reservoir. A movable wall allows us to compress it; we will also allow it to receive and lose heat.
 
-A typical closed system: a fixed mass quantity in a closed reservoir. A movable wall allows to compress it; we will also allow it to receive and lose heat.
+A typical closed system: a fixed mass quantity in a closed reservoir. A movable wall allows us to compress it; we will also allow it to receive and lose heat.
 :::
 
 *Diagram* CC-0 *Olivier Cleynen*
@@ -110,7 +110,7 @@ The first law states that energy is indestructible (§1.1.2). If we supply $100 
 Q_{1\rightarrow 2}+ W_{1\rightarrow 2}= \Delta U
 :::
 
-for a stationary closed system; where $\Delta U = U_{2}- U_{1}$ is the change of internal energy $(J)$, $W_{1\rightarrow 2}$ is the work received by the system $(J)$, and $Q_{1\rightarrow 2}$ is the heat received by the system $(J)$.
+for a stationary closed system, where $\Delta U = U_{2}- U_{1}$ is the change of internal energy $(J)$, $W_{1\rightarrow 2}$ is the work received by the system $(J)$, and $Q_{1\rightarrow 2}$ is the heat received by the system $(J)$.
 
 Unfortunately, internal energy $U$ is sometimes very difficult to measure. We shall see in chapters 4 and 5 that bodies store this internal energy in different ways, and that it is intimately related to temperature. By definition, internal energy $U$ is always positive, but its variation $\Delta U$ can also be negative.
 
@@ -122,7 +122,7 @@ Equation 2/1 can be expressed with specific quantities:
 q_{1\rightarrow 2}+ w_{1\rightarrow 2}= \Delta u
 :::
 
-for a stationary closed system; where $\Delta u = u_{2}- u_{1}$ is the change of specific internal energy $(J kg^{-1})$, $w_{1\rightarrow 2}$ is the specific work received by the system $(J kg^{-1})$, and $q_{1\rightarrow 2}$ is the specific heat received by the system $(J kg^{-1})$.
+for a stationary closed system, where $\Delta u = u_{2}- u_{1}$ is the change of specific internal energy $(J kg^{-1})$, $w_{1\rightarrow 2}$ is the specific work received by the system $(J kg^{-1})$, and $q_{1\rightarrow 2}$ is the specific heat received by the system $(J kg^{-1})$.
 
 :::{aside}
 « Let therefore be $Q$ the whole quantity of heat which one must impart to a body while it transitions on a certain path from one state into another (whereby a withdrawn quantity of heat is counted as a negatively imparted heat quantity), so we divide this into three parts, of which the first comprehends the increase of the heat actually present in the body, the second the heat consumed for internal work and the third the heat consumed for external work. Of the first part, the same holds true as has already been said of the second, that it is independent of the manner in which the change has occurred, and therefore we can represent both parts together by a function $U$, of which, even if we do not yet know it more closely, we know at least this much beforehand, that it is fully determined by the initial and final state of the body. »
@@ -140,9 +140,9 @@ We can rewrite this equation 2/2 to express it in its *differential form*:
 \delta q + \delta w = du
 :::
 
-for a stationary closed system; where $du$ is the infinitesimal change of specific internal energy $(J kg^{-1})$, $\delta w$ is the (specific) infinitesimal work transfer $(J kg^{-1})$, and $\delta q$ is the (specific) infinitesimal heat transfer $(J kg^{-1})$.
+for a stationary closed system, where $du$ is the infinitesimal change of specific internal energy $(J kg^{-1})$, $\delta w$ is the (specific) infinitesimal work transfer $(J kg^{-1})$, and $\delta q$ is the (specific) infinitesimal heat transfer $(J kg^{-1})$.
 
-In this equation 2/3, the mathematical operators $d$ and $\delta$ have slightly different meanings: $du$, an *exact differential*, represents an infinitesimal *change* that will integrate to $\Delta u = u_{2}-u_{1}$; on the other hand, an $\delta w$, *inexact differential*, represents an infinitesimal *transfer* that will integrate to $w_{1\rightarrow 2}$. This distinction is further elaborated in Appendix A4 p. 316.
+In this equation 2/3, the mathematical operators $d$ and $\delta$ have slightly different meanings: $du$, an *exact differential*, represents an infinitesimal *change* that will integrate to $\Delta u = u_{2}-u_{1}$; on the other hand, a $\delta w$, *an inexact differential*, represents an infinitesimal *transfer* that will integrate to $w_{1\rightarrow 2}$. This distinction is further elaborated in Appendix A4 p. 316.
 
 When a fluid is brought back to its initial state (same pressure, same volume, same temperature), then it contains exactly the same amount of internal energy as before. The total energy it has received (in the form of heat or work) has therefore necessarily been returned to the surroundings in one form or another. We express this statement as follows:
 
@@ -471,7 +471,7 @@ The result may seem large, but it is important to remember that it is a mass-spe
 :label: ex-2-4
 :enumerator: 2.4
 
-A mass of 0.3 gram of pressurized gas in a cylinder is slowly expanded as a piston moves. It is known that its pressure and volume are related by a relation of the form $pv^{k_{1}}= k_{2}$ (where $k_{1}$ and $k_{2}$ are two constants). At the beginning of the expansion, the pressure is at $12 bar (174 psi)$ and the volume is $0.25 L (0.22 gal imp)$. Once expanded, the gas reaches ambient pressure of $1 bar (14.5 psi)$ with a volume of $1.76 L (0.387 gal imp)$. What is the work done by the gas during the expansion?
+A mass of 0.3 grams of pressurized gas in a cylinder is slowly expanded as a piston moves. It is known that its pressure and volume are related by a relation of the form $pv^{k_{1}}= k_{2}$ (where $k_{1}$ and $k_{2}$ are two constants). At the beginning of the expansion, the pressure is at $12 bar (174 psi)$ and the volume is $0.25 L (0.22 gal imp)$. Once expanded, the gas reaches ambient pressure of $1 bar (14.5 psi)$ with a volume of $1.76 L (0.387 gal imp)$. What is the work done by the gas during the expansion?
 
 The process can be drawn qualitatively on a pressure-volume diagram as follows:
 
@@ -611,7 +611,7 @@ Irreversible adiabatic expansion on a pressure-volume diagram. The work received
 
 From a quantitative point of view, the more abrupt the movements on the fluid, the more the process will resemble one with heat input (“hardening” of the fluid and increase in the exponent $k$ during compressions, decrease in the exponent $k$ during expansions).
 
-However, the work done on or by the fluid can no longer be simply calculated by integral, since the pressure inside the cylinder is not homogeneous at all. It is the pressure at the piston surface that would allow this work to be calculated. Unfortunately, no simple mathematical relationship describes this relationship between pressure and volume. An experimental measurement must be made each time.
+However, the work done on or by the fluid can no longer be simply calculated by integration, since the pressure inside the cylinder is not homogeneous at all. It is the pressure at the piston surface that would allow this work to be calculated. Unfortunately, no simple mathematical relationship describes this relationship between pressure and volume. An experimental measurement must be made each time.
 
 ````{prf:example}
 :label: ex-2-6
@@ -800,7 +800,7 @@ Different steam compound systems.
 :label: prob-2-3
 :enumerator: 2.3
 
-**Truck Pneumatic Suspension The pneumatic suspension system of a truck trailer can be modeled with an air cylinder. When the trailer is loaded, the piston attached to the trailer descends inside the cylinder attached to the wheel axle, compressing the air trapped inside (figure 2.19). Initially, the truck is loaded very gradually. The air inside the cylinder neither loses nor receives heat. Its characteristics then change according to the relationship $pv^{1.4}= 5.438 \times 10^{4}$ (in si units). The compression starts at $p_{\mathrm{A}}= 2.5 bar (36.26 psi)$. Once the loading has been completed, the pressure has risen to $p_{\mathrm{B}}= 10 bar (146 psi)$. 1. Draw the process qualitatively (that is, without showing numerical values) on a pressure-volume diagram. 2. The work $W$ done by a force$\vec{F}$ over a displacement $l$ is expressed as $W \equiv \vec{F} ⋅\vec{l}$ suspension system. The piston, at the center, compresses a mass of air (in blue) when the trailer is loaded. *Diagram* CC-0 *Olivier Cleynen* From this equation, express the work done on a body of fixed mass in terms of its specific volume and internal pressure. 3. How much energy did the gas receive during loading? 4. How much energy would the gas give back if the truck were unloaded very gradually? The truck is unloaded abruptly and the piston rises quickly until the final pressure $p_{\mathrm{C}}$ drops back to its initial value $p_{\mathrm{C}}= p_{\mathrm{A}}= 2.5 bar$. 4. Draw the process qualitatively on the previous pressure-volume diagram. 5. What can be done to bring the gas back to the exact state it was in before loading?**
+**Truck Pneumatic Suspension The pneumatic suspension system of a truck trailer can be modeled with an air cylinder. When the trailer is loaded, the piston attached to the trailer descends inside the cylinder attached to the wheel axle, compressing the air trapped inside (figure 2.19). Initially, the truck is loaded very gradually. The air inside the cylinder neither loses nor receives heat. Its characteristics then change according to the relationship $pv^{1.4}= 5.438 \times 10^{4}$ (in si units). The compression starts at $p_{\mathrm{A}}= 2.5 bar (36.26 psi)$. Once the loading has been completed, the pressure has risen to $p_{\mathrm{B}}= 10 bar (146 psi)$. 1. Draw the process qualitatively (that is, without showing numerical values) on a pressure-volume diagram. 2. The work $W$ done by a force$\vec{F}$ over a displacement $l$ is expressed as $W \equiv \vec{F} ⋅\vec{l}$ suspension system. The piston, at the center, compresses a mass of air (in blue) when the trailer is loaded. *Diagram* CC-0 *Olivier Cleynen* From this equation, express the work done on a body of fixed mass in terms of its specific volume and internal pressure. 3. How much energy did the gas receive during loading? 4. How much energy would the gas give back if the truck were unloaded very gradually? The truck is unloaded abruptly and the piston rises quickly until the final pressure $p_{\mathrm{C}}$ drops back to its initial value $p_{\mathrm{C}}= p_{\mathrm{A}}= 2.5 bar$. 5. Draw the process qualitatively on the previous pressure-volume diagram. 6. What can be done to bring the gas back to the exact state it was in before loading?**
 
 :::{admonition} Answer
 :class: dropdown
@@ -809,7 +809,7 @@ Different steam compound systems.
 3) $v_{\mathrm{A}}= 0.336 m^{3}kg^{-1}$ and $v_{\mathrm{B}}= 0.125 m^{3}kg^{-1}$; so
 $w_{\mathrm{A}\rightarrow \mathrm{B}}= -k[\frac{1}{-0.4} v^{-0.4}]^{v_{\mathrm{B}}}_{v_{\mathrm{A}}}= +102.1kJkg^{-1}.$
 4) $w_{\mathrm{B}\rightarrow \mathrm{A}}= -w_{\mathrm{A}\rightarrow \mathrm{B}}$
-5) Cooling at constant pressure, for example.
+6) Cooling at constant pressure, for example.
 
 :::
 ```
@@ -878,7 +878,7 @@ Cutaway view of pistons and cylinders of an automobile engine.
 :label: prob-2-6
 :enumerator: 2.6
 
-**Work in a Diesel Engine We are studying the operation of a four-cylinder reciprocating engine by modeling its operation in the most favorable case, in other words, with very slow (perfectly reversible) processes. Inside the engine block schematized in figure 2.22, four pistons linked to the engine shaft by a crankshaft (not shown) are in motion. The process is different in each cylinder: **Cylinder A:** compression (the air remains trapped in the cylinder). The air compression starts at 0.8 bar and its properties are related by the equation $pV^{1.3}= k_{1}$. **Cylinder B:** intake. Air is taken in at constant pressure of 0.8 bar. **Cylinder C:** exhaust. Air is expelled at constant pressure of 1.1 bar. **Cylinder D:** expansion. The high-pressure, high-temperature air is trapped in the cylinder; its properties are also related by the equation $pV^{1.3}= k_{2}$. *Diagram* CC-by-sa *Olivier Cleynen* Of course, the role of each cylinder changes twice per revolution. Here, we are studying the work transfers over one half revolution. Even though cylinders B and C are not closed systems, for the purposes of this problem, we can model their processes as if they were, without introducing errors. The atmospheric conditions are 1 bar and $1.225 kg m^{-3}$. The engine displacement is $1.5 L$ and the compression ratio (that is, the ratio of the minimum to maximum volumes within each cylinder) is $22$. 1. Draw the process in each of the cylinders on the same pressure-volume diagram, qualitatively. 2. What is the energy required to move cylinders B and C? 3. What is the energy received by the gas in cylinder A? We want the engine to deliver a power of $30 kW$ at a speed of $2000 revolutions/\min$. Its mechanical losses are around $15 \%$. 4. What is the work that must be done by cylinder D during expansion? 5. What should be the pressure generated by combustion in cylinder D, so that the expansion may release enough energy to operate the engine?**
+**Work in a Diesel Engine We are studying the operation of a four-cylinder reciprocating engine by modeling its operation in the most favorable case, in other words, with very slow (perfectly reversible) processes. Inside the engine block schematized in figure 2.22, four pistons linked to the engine shaft by a crankshaft (not shown) are in motion. The process is different in each cylinder: **Cylinder A:** compression (the air remains trapped in the cylinder). The air compression starts at 0.8 bar and its properties are related by the equation $pV^{1.3}= k_{1}$. **Cylinder B:** intake. Air is taken in at constant pressure of 0.8 bar. **Cylinder C:** exhaust. Air is expelled at constant pressure of 1.1 bar. **Cylinder D:** expansion. The high-pressure, high-temperature air is trapped in the cylinder; its properties are also related by the equation $pV^{1.3}= k_{2}$. *Diagram* CC-by-sa *Olivier Cleynen* Of course, the role of each cylinder changes twice per revolution. Here, we are studying the work transfers over one half revolution. Even though cylinders B and C are not closed systems, for the purposes of this problem, we can model their processes as if they were, without introducing errors. The atmospheric conditions are 1 bar and $1.225 kg m^{-3}$. The engine displacement is $1.5 L$ and the compression ratio (that is, the ratio of the maximum to minimum volumes within each cylinder) is $22$. 1. Draw the process in each of the cylinders on the same pressure-volume diagram, qualitatively. 2. What is the energy required to move cylinders B and C? 3. What is the energy received by the gas in cylinder A? We want the engine to deliver a power of $30 kW$ at a speed of $2000 revolutions/\min$. Its mechanical losses are around $15 \%$. 4. What is the work that must be done by cylinder D during expansion? 5. What should be the pressure generated by combustion in cylinder D, so that the expansion may release enough energy to operate the engine?**
 
 :::{admonition} Answer
 :class: dropdown
