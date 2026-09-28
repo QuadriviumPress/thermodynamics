@@ -26,6 +26,6 @@ sort key to 0.1pt, which preserves reading order on ties.
 - Body prose: plain paragraphs. Margin notes: `:::{aside}` … `:::`.
 - Figures: `:label: fig-N-M`, `:enumerator: N.M`, `:alt:` = the full caption.
 - Display equations: `:::{math}` with `:label: eq-N-M`; the source's `(N/M)`
-  number belongs in the label, never inside the maths body.
+  number belongs in the label, never inside the math body.
 - Problems: ```{exercise}``` with `:label: prob-N-M`, answers in a `{dropdown}`.
 - Bibliography references: `[[30](#ref-30)]`.

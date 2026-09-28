@@ -897,7 +897,7 @@ A *reversible adiabatic* process is carried out infinitely slowly. For this to h
 Just like for an ideal gas, the temperature necessarily varies in such a process, since the work is non-zero. It is also noted that the curves of reversible adiabatic processes plotted on a pressure-volume diagram always intersect the saturation curve. In other words, dry steam expanded slowly without heat transfer will, sooner or later, be led to condense. This fact will have significant consequences in chapter 9 (*steam power cycles*).
 
 :::{aside}
-« I may here be allowed to refer to a fact proved by Rankine and myself, that when a quantity of vapour, at its maximum density and enclosed by a surface impenetrable to heat, expands and thereby displaces a moveable part of the enclosing surface, e.g. a piston, with its full force of expansion, a part of the vapour must undergo condensation… »
+« I may here be allowed to refer to a fact proved by Rankine and myself, that when a quantity of vapor, at its maximum density and enclosed by a surface impenetrable to heat, expands and thereby displaces a moveable part of the enclosing surface, e.g. a piston, with its full force of expansion, a part of the vapor must undergo condensation… »
 
 Rudolf Clausius, 1856
 
@@ -1312,7 +1312,7 @@ $m_{\mathrm{secondary}}\ge 1062.4 kg s^{-1}$ or $2342.2 lb/s$. 2) Into the atmos
 :label: prob-5-13
 :enumerator: 5.13
 
-**Turbine of a Nuclear Power Plant In a nuclear power plant, the electricity generator is driven by a steam turbine (figure 5.34). Most of the steam (heated by the nuclear reactor) passes through the entire turbine. However, in the middle of the turbine, a steam bleed is carried out. It allows, on one hand, to heat the water in another part of the circuit (§9.4.5), and on the other hand, to precisely control the mass flow rate in circulation. The total flow rate at the inlet is $317 t/h$ of steam. We measure the following steam properties: Inlet: 120 bar; $565^{\circ}C$ Extraction: 10 bar; $250^{\circ}C$; $1.2 kg s^{-1}$ Outlet: 1 bar; $115^{\circ}C$ What is the shaft power of the turbine? Balakovo nuclear power station $(\sim 1 GW$ plant power), in maintenance (top) and during installation (bottom). *Photos 1 and 2* CC-by-sa *The Centre of the Public Information Balakovo NPP***
+**Turbine of a Nuclear Power Plant In a nuclear power plant, the electricity generator is driven by a steam turbine (figure 5.34). Most of the steam (heated by the nuclear reactor) passes through the entire turbine. However, in the middle of the turbine, a steam bleed is carried out. It allows, on one hand, to heat the water in another part of the circuit (§9.4.5), and on the other hand, to precisely control the mass flow rate in circulation. The total flow rate at the inlet is $317 t/h$ of steam. We measure the following steam properties: Inlet: 120 bar; $565^{\circ}C$ Extraction: 10 bar; $250^{\circ}C$; $1.2 kg s^{-1}$ Outlet: 1 bar; $115^{\circ}C$ What is the shaft power of the turbine? Balakovo nuclear power station $(\sim 1 GW$ plant power), in maintenance (top) and during installation (bottom). *Photos 1 and 2* CC-by-sa *The Center of the Public Information Balakovo NPP***
 
 :::{admonition} Answer
 :class: dropdown
