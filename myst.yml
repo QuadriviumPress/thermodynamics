@@ -16,12 +16,14 @@ project:
   open_access: true
   github: QuadriviumPress/thermodynamics
   error_rules:
-    # External bibliography URLs that intermittent link checkers fail on.
+    # Remote hosts often answer 403, 404, or 5xx to the CI checker even when the
+    # page is fine in a browser. Internal links and missing files still fail.
     - rule: link-resolves
       severity: ignore
       keys:
-        - https://www.physics.princeton.edu/ph115/LQ.pdf
-        - http://feynmanlectures.caltech.edu/
+        - "{http,https}://**"
+    - rule: doi-link-valid
+      severity: ignore
   keywords:
     - thermodynamics
     - heat engines
