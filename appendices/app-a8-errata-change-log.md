@@ -125,7 +125,7 @@ A full page-by-page comparison of chapters 1 and 2 against the source PDF (using
 
 **Orphaned extraction artifacts.** Two single-character lines (`A`, `B` — leftover axis labels from margin figures) had been stranded in chapter 2's body prose, immediately before unrelated equations (§2.4.1, §2.4.2). A stray `.7**` fragment (debris from the `**2.7**` exercise-enumerator label) sat as its own line at the top of exercise 2.7's answer block. All removed.
 
-A new document, `scripts/qa/admonition-audit-notes.md`, records the detection method (cross-referencing `pdf_columns.py`'s margin-column output against each chapter's `:::{aside}` blocks) and the specific defect classes found, so the same audit can be repeated for chapters 3–10.
+The audit cross-referenced `pdf_columns.py`'s margin-column output against each chapter's `:::{aside}` blocks. The same method was subsequently applied to chapters 3–10, as recorded below.
 
 ### Chapters 3–4: Line-by-Line Audit Against the PDF (2026-08-23)
 
